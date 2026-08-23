@@ -1,145 +1,137 @@
-# CharityGraph — Current Handoff
+# CharityGraph — Codex Handoff: LLM Economics Documentation Amendment
 
 **Status:** Active execution handoff  
 **Updated:** 2026-08-23  
-**Supersedes:** all earlier current/next-action handoff sections
+**Recommended Codex model:** Luna-High
 
-## 1. Read this first
+## 1. Task in one sentence
 
-CharityGraph's public cutover is complete and live. Builder's full regression baseline is green. Read-only archaeology and product/architecture review are complete. SQLite is approved for the local operational catalogue.
+Update the existing Builder and Data product-documentation PRs so that cohort budgets, routine LLM use, Python cost orchestration, coverage-first acceptance, risk-weighted governance and the deferral of custom local NLP become controlling requirements throughout the active document set.
 
-The next task is documentation-and-skeleton work only. Do not resume the pre-rearchitecture enrichment sequence.
+This is documentation-only. Do not implement code or run paid model calls.
 
-## 2. Repositories and baseline
+## 2. Existing branches and PRs
 
-- Builder: `https://github.com/gregorycwhill/charitygraph`
-- Data: `https://github.com/gregorycwhill/charitygraph-data`
-- Viewer: `https://github.com/gregorycwhill/charitygraph-viewer`
-- live Viewer: `https://gregorycwhill.github.io/charitygraph-viewer/`
+- Builder branch `charitygraph-product-docs-vnext`, PR #3; current relevant tip includes `f38e208`.
+- Data branch `charitygraph-product-docs-vnext`, PR #2; current relevant tip includes `2ad7fe2`.
+- Viewer is out of scope.
 
-Relevant main commits:
+Update the existing PRs. Do not create replacement PRs unless a branch is unavailable or protected, and report that blocker before proceeding.
 
-- Builder: `42370a4e1978e2f0dadb9085cfe69536d6fb07d6`
-- Data: `00079d069f1ab92d31ebb9acab398d59c9a362d0`
-- Viewer: `ffaeaa3f8aed625285fc3c915070bd69a7fe47f4`
+## 3. Source packet and authority
 
-Validation baseline:
+The supplied amendment packet contains complete replacement copies or patches for active files under `builder/` and `data/`. Its controlling new source is:
 
-- Builder full suite: 119 passed;
-- focused Builder suite: 12 passed;
-- legacy compatibility: 2 passed;
-- Viewer: 21 passed;
-- Data schema/examples: passed;
-- Pages deployment: passed;
-- brand lint: passed.
+- `data/LLM_ECONOMICS_AND_COHORT_POLICY.md`.
 
-Immutable public 0.5 manifest checksum:
+Apply it with the current observation-first documentation already on the feature branches. Do not regress the complete approved Builder target architecture in `ARCHITECTURE.md`.
 
-`01D047484909B8E15941D5023749ECDB6811FA472CB04BD1B9E0272935050DFB`
+Where the older `ENRICHMENT_ECONOMICS_DESIGN.md` conflicts, retain it as historical benchmark detail with the supplied supersession notice. Do not spend tokens line-editing all 1,200+ lines.
 
-## 3. Current product authority
+## 4. Decisions that must survive integration
 
-Install and follow:
+### Cohort budgets
 
-- `DOCUMENT_AUTHORITY.md`;
-- rewritten `PRODUCT.md`;
-- rewritten `PRINCIPLES.md`;
-- rewritten `PUBLIC_COMMITMENTS.md`;
-- rewritten `EXPERIENCES.md`;
-- rewritten current state, roadmap, implementation and test plans;
-- approved Builder target architecture and product–architecture alignment review.
+- first 100 highest-total-donations charities: AUD 100 pooled total;
+- next 1,000: AUD 100 pooled total;
+- next 10,000: AUD 100 pooled total.
 
-Key product decisions:
+The budgets include text/vision extraction, judgement, classification, writing, embeddings, retries and escalations. Easy subjects may subsidise difficult ones inside a cohort. Cross-cohort transfers require explicit approval.
 
-- one-stop shop for structured, governed Australian charity data;
-- analyst/consultant as anchor design user;
-- organisation, program/service, portfolio and ecosystem scales;
-- internal `subject_id` and durable `SubjectRecord`;
-- cards as public release projections;
-- participation populated from initial production processing;
-- evaluated shadow registries as first-class claim-specific sources;
-- fundraising split into source, practice, campaign and expenditure;
-- ethos separate from service/mission orientation;
-- neutral `notable_context`;
-- downstream agents apply mandates; CharityGraph supplies adjudicable ingredients.
+Total donations is `donor_decision_exposure_proxy`: a processing-priority and assurance proxy only. It is not donor count, retail-donor count, merit, quality, credibility, effectiveness or recommendation.
 
-## 4. Public release protection
+### Architecture
 
-Public contract 0.5 is implemented compatibility authority for the immutable current release. It is not the Builder vNext internal model and is not a future-schema proposal.
+- Python controls acquisition, hashing, deterministic preparation, joins, evidence selection, batching, scheduling, caching, retries, validation, cost and release compilation.
+- LLMs routinely handle difficult OCR/vision, relevance, extraction, semantic judgement, classification, bounded writing and stronger-model adjudication.
+- Embeddings are a model-derived output inside the budgets and are cached by stable text hash/model/policy.
+- Logical tasks remain separately typed/validated even when a physical request bundles them.
+- SQLite begins as a thin task/batch/cache/cost ledger, not a full knowledge database.
+- Custom local NER/relevance/taxonomy/summarisation is deferred unless a total-cost-of-ownership benchmark includes Codex build effort, labels/evals, maintenance, drift and operations.
 
-Do not:
+### Governance and product acceptance
 
-- edit immutable release files;
-- rename literal compatibility fields in the release;
-- treat unresolved historical material as canonical;
-- change Viewer release selection;
-- propose a future public schema inside the architecture skeleton PR.
+- Coverage is the optimisation objective; defensibility is a constraint expressed through evidence, policy, method labels and corrections.
+- A model output is never human-governed, but may become canonical under an explicit benchmarked automation policy.
+- Human review is concentrated on samples, conflicts, sensitive claims and higher-exposure cases; stronger-model adjudication may replace some review.
+- A high-precision pipeline that publishes almost nothing fails.
+- Participation remains initial-production scope; shadow registries remain first-class claim-specific sources.
+- Public contract 0.5 and its immutable checksum remain untouched.
 
-## 5. Evidence archaeology
+## 5. File mapping
 
-The durable archive and archaeology findings are migration inputs. Index them in place later; do not reorganise them now.
+In Data, update/add:
 
-Known evidence includes:
+- `AGENTS.md`
+- `DOCUMENT_AUTHORITY.md`
+- `PRODUCT.md`
+- `PRINCIPLES.md`
+- `PUBLIC_COMMITMENTS.md`
+- `EXPERIENCES.md`
+- `CURRENT_STATE.md`
+- `ROADMAP.md`
+- `IMPLEMENTATION_PLAN.md`
+- `TEST_PLAN.md`
+- `CODEX_TO_CHATGPT_HANDOFF.md`
+- `LLM_ECONOMICS_AND_COHORT_POLICY.md` (new)
+- `ENRICHMENT_ECONOMICS_DESIGN.md` (supersession notice only)
 
-- 3,977 files / approximately 1.44 GB;
-- 2,575 structured artefacts;
-- 299 model-run cache records;
-- 29 governed/human artefacts;
-- 1,491 historical unbound items across 114 subjects.
+In Builder, update:
 
-Old model outputs are candidates, derivatives or benchmark evidence. They are not human decisions and must not be auto-promoted.
+- `ARCHITECTURE.md`
+- `AGENTS.md`
+- `EDITORIAL_POLICY.md`
+- `BUILD_AND_PUBLICATION.md`
+- `README.md`
 
-## 6. Immediate Codex task
+Do not modify source code, schemas, fixtures, releases, archives, runtime data, Viewer files or deployment workflows.
 
-Use Terra-High.
+## 6. Integration method
 
-1. Create a branch from current Builder main for the documentation-and-skeleton tranche.
-2. Apply the approved active documentation set in the appropriate repositories.
-3. Create `DOCUMENT_AUTHORITY.md` and update cross-links.
-4. Reclassify the existing public “vNext” documentation as implemented contract 0.5 without changing schemas or immutable bytes.
-5. Supersede old card-centric Builder architecture with the amended target architecture.
-6. Update Builder and Data agent instructions to match observation-first authority and current naming.
-7. Add only non-material package/module skeletons or no-op CLI surfaces required by the approved architecture.
-8. Move no archive files and create no runtime database.
-9. Call no LLM and make no network acquisition.
-10. Run all relevant tests, documentation checks, brand lint and immutable checksum verification.
+1. Confirm each repository worktree and branch state; preserve unrelated/untracked material.
+2. Record the immutable 0.5 manifest checksum before changes.
+3. Apply the packet semantically against the open feature branches; do not blindly overwrite any newer non-conflicting improvement.
+4. Resolve links to the actual sibling-repository layout used by the existing PRs.
+5. Lint active documents for conflicting claims, especially “LLM optional/late,” “custom local NLP first,” “human review always,” “additional processing never by donation size,” and “defensibility over coverage.”
+6. Run validation.
+7. Commit separately in Builder and Data, push to the existing branches and add concise PR comments with validation and source mapping.
 
-## 7. Required architecture amendments
+## 7. Required validation
 
-Before the target architecture becomes implementation authority, add:
+- active Markdown local links;
+- document authority/status/version consistency;
+- active brand lint, respecting immutable compatibility/history exceptions;
+- Builder full test suite (protected baseline: 119 passed);
+- focused Builder branding/config/data-contract/legacy tests;
+- Data public 0.5 schema/example validator;
+- no public/private allowlist regression;
+- immutable manifest SHA-256 before/after exactly:
+  `01D047484909B8E15941D5023749ECDB6811FA472CB04BD1B9E0272935050DFB`.
 
-- `SubjectRecord` and lifecycle;
-- scope and subject relationships distinct from lineage;
-- correction/challenge/retraction and dependent invalidation;
-- benchmark/economics artefacts;
-- complete Builder-to-Data distribution acceptance;
-- SQLite idempotency, retries, leases, resume, migrations and recovery.
-
-Also require initial participation population and claim-specific authority policies for shadow registries.
+If the baseline has changed on the feature branch, report both the expected and observed count; do not rewrite tests merely to match this handoff.
 
 ## 8. Exclusions
 
-This tranche must not:
+Do not:
 
-- implement real SQLite tables beyond an explicitly approved empty skeleton;
-- index the archive;
-- import historical evidence;
-- run the semantic benchmark;
-- change a public schema;
-- rebuild Data or Viewer content;
-- deploy;
-- delete historical documents or compatibility code;
-- touch unrelated untracked debug/runtime material.
+- implement the task contracts, scheduler, SQLite ledger or provider adapter;
+- call any LLM/embedding API or consume a cohort budget;
+- acquire or reorganise evidence;
+- create runtime/database/cache files;
+- change public schemas or immutable release bytes;
+- rebuild Data, deploy Viewer or change Pages;
+- copy prompts, responses, credentials, spend telemetry or private evidence into Git;
+- place durable reports in Temp;
+- touch unrelated untracked archaeology or debug material.
 
 ## 9. Completion report
 
 Return:
 
-- branch and commit;
-- files added, replaced, superseded or moved;
-- authority/link/brand-lint results;
-- Builder/Data/Viewer tests run and outcomes;
+- branch, commit and PR link for Builder and Data;
+- exact files added/changed;
+- confirmation that all controlling decisions in section 4 are present and no conflicting active language remains;
+- tests/checks and results;
 - immutable checksum before/after;
-- confirmation of no archive, runtime, public-release or Viewer mutation;
-- any genuine product ambiguity, without silently resolving it.
-
+- confirmation of no code/schema/release/archive/runtime/Viewer/deployment/model-call change;
+- any genuine ambiguity that prevented faithful integration.

@@ -1,5 +1,7 @@
 # CharityGraph Enrichment Economics — Benchmarking, Planning and Evaluation Design
 
+> **Status: superseded as implementation authority.** Retained as detailed benchmark-design history. `LLM_ECONOMICS_AND_COHORT_POLICY.md` controls model role, cohort order, budgets, local-NLP scope, scheduling, caching, governance and coverage-first acceptance. Any conflicting route, priority, review or stopping rule in this document does not apply.
+
 **Status:** Working product design; not yet canonical  
 **Updated:** 2026-08-22  
 **Scope:** CharityGraph Data, Builder and evaluation workflow  

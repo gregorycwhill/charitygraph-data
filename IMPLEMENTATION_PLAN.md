@@ -1,205 +1,202 @@
 # CharityGraph Implementation Plan
 
 **Status:** Active implementation sequence  
-**Version:** 1.0-draft  
+**Version:** 1.1-draft  
 **Updated:** 2026-08-23
 
-## 1. Scope
+## 1. Scope and governing outcome
 
-This plan implements the approved product contract through Builder vNext while protecting the current public 0.5 release. It does not authorise a new public schema or corpus rebuild.
+This plan implements Builder vNext as a Python-controlled, LLM-powered corpus builder while protecting immutable public contract 0.5. It is deliberately sequenced to learn the real economics of model-assisted extraction before building a large local-NLP or governance framework.
 
-Each step is a bounded PR with its own tests, migration note and explicit exclusions. Architecture-critical PRs use Terra-High. Luna-High is appropriate for mechanical work after contracts are fixed.
+The protected model budgets are pooled totals:
 
-## 2. PR 1 — documentation authority and architecture skeleton
+| Cohort | Order | Paid-model cap |
+| --- | --- | ---: |
+| first 100 charities | highest total donations | AUD 100 |
+| next 1,000 charities | next highest total donations | AUD 100 |
+| next 10,000 charities | next highest total donations | AUD 100 |
 
-**Model:** Terra-High
+The caps include text/vision extraction, judgement, writing, embeddings, retries and escalations. Total donations is used only as `donor_decision_exposure_proxy`; it is not a donor count or quality measure.
 
-Deliver:
+Every PR is bounded, tested and reversible. Use Luna-High for implementation when this plan and the typed contracts fully determine the work. Escalate to Terra-High only for unresolved architecture or semantic-policy decisions, not by default.
 
-- rewritten active product documents;
-- `DOCUMENT_AUTHORITY.md`;
-- reclassification of public contract 0.5;
-- approved Builder architecture amendments;
-- aligned Builder/Data agent instructions;
-- package/module boundary stubs and no-op CLI commands where useful.
+## 2. PR 1A — documentation economics amendment
 
-Do not:
+**Recommended model:** Luna-High
 
-- create the runtime database;
-- move or rewrite archives;
-- call a model;
-- change public schemas or releases;
-- change Viewer behaviour.
+Update the existing Builder and Data product-documentation PRs with this versioned amendment. Install `LLM_ECONOMICS_AND_COHORT_POLICY.md`, update the active architecture/product/plans/tests/handoff and mark the previous enrichment-economics design superseded where it conflicts.
 
-Validate:
+Do not add code, call a model, create a database, mutate archives, change a public schema/release or deploy.
 
-- active-document authority and link checks;
-- zero active former-brand terminology;
-- Builder 119-test baseline;
-- Viewer 21-test baseline where touched by shared links only;
-- Data schemas/examples;
-- immutable checksum.
+**Gate:** active-document/link/brand checks; Builder 119-test baseline; Data examples; immutable 0.5 checksum unchanged.
 
-## 3. PR 2 — typed internal contracts
+## 3. PR 2 — minimum knowledge, task and economics contracts
 
-**Model:** Terra-High
+**Recommended model:** Luna-High; Terra-High only for a genuine contract ambiguity
 
-Implement schema contracts for:
+Implement only the contracts needed for a model-assisted spike:
 
-- `SubjectRecord` and lifecycle;
-- `SourceBlob` and `SourceRecord`;
-- `SubjectBinding`;
-- `EvidenceFragment`;
-- `CandidateObservation`;
-- `DecisionRecord`;
-- typed `CanonicalObservation` payloads;
-- `CoverageAssessment`;
-- `DerivativeArtifact`;
-- `TaskRun`, `RunManifest` and `ReleaseProjection`;
-- artefact lineage and separate subject relationships.
+- minimum `SubjectRecord`, `SourceRecord`, `EvidenceFragment`, `CandidateObservation`, `DecisionRecord`, `CanonicalObservation` and `DerivativeArtifact` envelopes;
+- `ModelTask`, `ModelResult`, `EmbeddingResult`, `TaskRun` and separately validated logical outputs;
+- `BudgetCohort`, `donor_decision_exposure_proxy`, `PricingSnapshot`, `CostReservation`, `CostLedger` and `RunManifest`;
+- canonical serialization, typed IDs and cache identity;
+- provider-neutral interfaces and fakes; no real provider call.
 
-Add typed IDs, schema versions, canonical serialisation and hashing. Do not ingest real archives.
+Do not attempt the complete domain ontology or import archives.
 
-## 4. PR 3 — SQLite catalogue and recovery
+**Gate:** schema round trips; stable hashes; material cache changes invalidate; cost dimensions include every paid output category.
 
-**Model:** Terra-High
+## 4. PR 3 — thin SQLite operational ledger
+
+**Recommended model:** Luna-High
 
 Implement SQLite behind a narrow interface for:
 
-- artefact locations and hashes;
-- dependency edges;
-- task/run states;
-- source refresh checks;
-- retries and terminal failures;
-- locks/leases;
-- cache validity;
-- schema migrations.
+- task and physical-batch state;
+- idempotency and duplicate prevention;
+- cache hit/validity metadata;
+- cost reservations and actual reconciliation;
+- attempts, retry state, leases and resume;
+- durable artefact locations and hashes.
 
-Specify idempotency keys and transaction boundaries. Add a deterministic reindex path from durable artefacts. Prove that deleting the database loses no governed evidence.
+Knowledge remains in durable typed files. SQLite is not expanded into a domain database before evidence requires it. Provide migrations, integrity checks and deterministic reindex of evidentiary rows.
 
-Runtime path is configurable and defaults under `C:\CharityGraph-runtime\state`, never OneDrive.
+**Gate:** injected-failure rollback; process-death recovery; hard budget cap; deletion/rebuild loses no durable evidence.
 
-## 5. PR 4 — read-only archive indexer
+## 5. PR 4 — scheduler, batching and fake provider
 
-**Model:** Terra-High
+**Recommended model:** Luna-High
 
-Index existing files in place. Record hash, media/schema type, source family, known subject/run association, migration status and privacy class.
+Implement Python orchestration that:
 
-Do not move, rename, edit or auto-promote evidence. Produce durable reports under the workspace archaeology directory, never Temp.
+- ranks an approved cohort and selects pending logical tasks;
+- groups compatible work by provider, model snapshot, schema and prompt/policy version;
+- uses provider batch processing for independent asynchronous requests where advantageous;
+- optionally bundles logical tasks for one subject while preserving separate validation and lineage;
+- forbids multi-subject bundling until contamination is benchmarked;
+- reserves estimated AUD cost before submission and reconciles actual usage after completion;
+- retries safely, resumes incomplete batches and prevents duplicate paid requests;
+- stops scheduling before the cohort cap is exceeded.
 
-## 6. PR 5 — deterministic authoritative-source slice
+**Gate:** fake-provider simulations cover cache hits, partial batch failure, late completion, retry, overspend attempt, FX/pricing change and rerun idempotency.
 
-**Model:** Terra-High
+## 6. PR 5 — bounded real-model economics spike
 
-Run one structured source through plan, acquire/import, parse, bind, evidence, candidate, policy/fixture decision, canonicalise, coverage, derive and project.
+**Recommended model:** Luna-High for code; ChatGPT/product approval for task and spend design
 
-Include when present:
+Run 10–20 representative charities selected from the existing evidence archive. Use a separately approved micro-budget that is recorded against, but does not silently consume, a production cohort cap.
 
-- identity and source-native classifications;
-- registration or DGR status;
-- program records;
-- participation records;
-- financial/source-native rows.
+Exercise all intended paid-output classes:
 
-Project through the 0.5 compatibility adapter into fixtures only. Classify every difference.
+- difficult page/region recovery;
+- relevance judgement;
+- typed extraction and semantic interpretation;
+- participation/fundraising/ethos/context classification;
+- bounded card writing from accepted observations;
+- embeddings of stable derivative text.
 
-## 7. PR 6 — program, participation and scope
+Compare single-task requests with safe same-subject task bundling and provider batch execution. Publish nothing.
 
-**Model:** Terra-High for design; Luna-High for mechanical fixtures after approval
+**Gate:** reproducible cost/yield report, validated cache reuse, unsupported-claim and recoverable-recall measurement, documented routing defaults.
 
-- Implement organisation/program/service/unit scope.
-- Populate existing participation and opportunity schemas.
-- Separate stable modes from transient opportunities.
-- Add role-specific geography and action/evidence URL rules.
-- Add nested-to-durable subject promotion tests without enabling automatic promotion.
+## 7. PR 6 — LLM-powered end-to-end vertical slice
 
-## 8. PR 7 — document and website evidence
+**Recommended model:** Luna-High after spike decisions are fixed
 
-**Model:** Luna-High for adapters; Terra-High for ambiguous semantic boundaries
+Complete one path from existing source material through evidence, model candidates, policy/fixture decisions, canonical observations, coverage, writing and embeddings to a fixture-only 0.5 projection.
 
-- Reuse validated digital-text, OCR and visual extraction routes.
-- Reuse bounded website acquisition and freshness rules.
-- Create page/region/selector evidence fragments.
-- Generate reviewable candidates for activities, beneficiaries, programs, participation and geography.
-- Persist failures and assessment scope.
+The slice must prove that model output can be accepted by an explicit automation policy without being labelled human-governed. Include targeted human-review fixtures for conflict and sensitive context.
 
-No whole-card prompt and no public promotion.
+**Gate:** typed lineage, idempotent rerun, independently validated logical outputs and a classified fixture diff.
 
-## 9. PR 8 — fundraising and shadow-registry sources
+## 8. PR 7 — read-only archive index and evidence reuse
 
-**Model:** Terra-High
+**Recommended model:** Luna-High
 
-- Implement funding source, standing practice, campaign and expenditure payloads.
-- Implement source-role policies for evaluated shadow registries.
-- Add source-led enumeration adapters for already approved sources.
-- Preserve registry-defined authority and subject-binding requirements.
-- Add campaign metrics without financial reconciliation or ROI calculations.
-- Route promotional/provider claims through appropriate review.
+Index existing files in place. Record hashes, type/source family, known subject/run association, privacy class and migration status. Import historical task runs and governed cases only as typed historical evidence; do not auto-promote.
 
-## 10. PR 9 — governance and corrections
+Use the vertical-slice task needs to decide what metadata is worth indexing. Do not build a universal archaeology database.
 
-**Model:** Terra-High
+**Gate:** deterministic inventory, zero source-content mutation, reproducible reindex and no durable output in Temp.
 
-- Implement decision dispositions, authority, rationale, applicability and supersession.
-- Add private correction submission and governed proposal records.
-- Add challenge, retraction and dependent invalidation.
-- Produce bounded review packets.
-- Add expedited sensitive-context re-review.
+## 9. PR 8 — core descriptive domains
 
-## 11. PR 10 — semantic domains and taxonomy artefacts
+**Recommended model:** Luna-High with Terra-High only for unresolved domain semantics
 
-**Model:** Terra-High
+Implement generic typed observations and task schemas for:
 
-- Port ACNC external classifications as source-native schemes.
-- Port the native seven-dimension taxonomy as a governed seed, not old assignments.
-- Add taxonomy, term, classification and crosswalk artefacts.
-- Add cause centrality.
-- Add ethos and separate service/mission orientation.
-- Add `notable_context` categories and risk policy.
-- Keep descriptors and campaign vocabularies provisional until evaluated.
+- activities, beneficiaries, programs/services and role-specific geography;
+- participation modes and transient opportunities from initial processing;
+- ACNC source-native and CharityGraph-native classifications;
+- cause centrality;
+- ethos and separate service/mission orientation;
+- neutral `notable_context`.
 
-## 12. PR 11 — task runner and model boundary
+Use LLM semantic extraction routinely. Do not insert a custom NER or relevance tier.
 
-**Model:** Terra-High
+**Gate:** domain fixtures, evidence-span validation, explicit coverage and risk-weighted review policy.
 
-- Implement task-specific local/remote model clients.
-- Add schema validation, cache identity, budgets, telemetry, retries and fakes.
-- Keep model outputs as candidates/derivatives.
-- Allow bundled physical calls only under an approved benchmarked policy.
+## 10. PR 9 — fundraising and shadow registries
 
-## 13. PR 12 — historical evidence import
+**Recommended model:** Luna-High after source-role policies are approved
 
-**Model:** Luna-High after mapping rules are fixed
+Implement separate funding-source, standing-practice, campaign and expenditure payloads. Add adapters for approved industry shadow registries and preserve their claim-specific authority. Keep applicable code/fee rules distinct from compliance, member spend or fundraising volume.
 
-- Import historical model runs, governed decisions and unbound migration ledgers.
-- Preserve exact origin hashes and statuses.
-- Do not auto-promote old classifications or semantic fields.
-- Create a review/re-extraction priority ledger.
+**Gate:** identity precision, source rights, amount/scope fidelity, no ROI/effectiveness inference and no forced expenditure point.
 
-## 14. PR 13 — controlled comparison pilot
+## 11. PR 10 — governance, correction and assurance routing
 
-**Model:** Terra-High
+**Recommended model:** Luna-High for implementation; Terra-High only for new policy decisions
 
-Run the shared stratified benchmark across product domains. Produce source-opportunity, proposition/review and cost ledgers. Compare deterministic, economical-model, escalation, oracle and human conditions.
+Implement decision dispositions, benchmarked automation policies, review sampling, conflict routing, sensitive-claim holds, stronger-model adjudication, correction proposals, challenges, retractions and dependent invalidation.
 
-No production automation policy is approved by an aggregate score. Decisions are domain-specific.
+Assurance is risk-aligned: the first 100 receive proportionately more review/escalation; the next cohorts rely more heavily on benchmarked automation and sampling. Universal human review is prohibited as an implicit acceptance condition.
+
+**Gate:** no model output labelled human; review routes are reproducible; correction propagation invalidates writing, classifications and embeddings.
+
+## 12. PR 11 — first 100 production candidate
+
+Process the highest-total-donations cohort within AUD 100. The candidate should attempt all applicable core domains, writing and embeddings rather than achieve a perfect subset.
+
+**Gate:** hard cap, donor-proxy audit, anti-sparsity acceptance, source-bound claims, quality/risk sample and no public release without separate approval.
+
+## 13. PR 12 — next 1,000 production candidate
+
+Process the next cohort within AUD 100 using proven batching, caching, same-subject bundling and selective escalation. Reuse source-family and prompt caches where valid.
+
+**Gate:** hard cap, coverage and yield targets, sampled review, correction readiness and no material quality collapse by domain.
+
+## 14. PR 13 — next 10,000 production candidate
+
+Process the next cohort within AUD 100 using the economical route, concise evidence packs, cached stable instructions, batch processing and targeted escalation. Record explicit unprocessed/not-found/failed states where the cap prevents further work.
+
+**Gate:** hard cap, national-scale throughput, restartability, cache effectiveness, anti-sparsity targets and auditable routing.
 
 ## 15. PR 14 — cutover and public-contract proposal
 
-Only after the controlled pilot:
+Only after the three cohort reports:
 
-- propose production command surfaces;
-- propose deprecation of phase orchestration;
-- propose any future public contract separately;
-- provide migration fixtures and Viewer implications;
-- retain the previous valid release.
+- propose routine production commands and refresh scheduling;
+- propose phase-orchestration deprecation;
+- propose any future public schema separately;
+- supply migration fixtures and Viewer implications;
+- retain the previous valid public release.
 
-## 16. Cross-cutting constraints
+## 16. Explicitly deferred
 
-- No active former-brand terminology outside isolated compatibility/historical material.
-- No raw/private evidence, credentials, prompts, runtime state or debug material in Git.
-- No archive mutation without a separately approved migration plan and hash verification.
-- No public release mutation in place.
-- No unsupported negative claims or forced semantic values.
-- No recommendation, ranking, mandate decision or fundraising-performance inference.
+- custom local NER, relevance, taxonomy or summarisation models until total-cost-of-ownership evidence supports one;
+- PostgreSQL/distributed workers until local single-writer constraints are observed;
+- a graph database;
+- a universal human-review gate;
+- recommendation, impact, mandate-fit or fundraising-performance models;
+- destructive archive reorganisation.
 
+## 17. Cross-cutting constraints
+
+- No active former-brand terminology outside isolated compatibility/history.
+- No raw/private evidence, credentials, prompts, responses, runtime state or spend telemetry in Git or public releases.
+- No immutable release mutation.
+- Budget reserve precedes every paid request; actual cost is reconciled afterwards.
+- Cached work is reused only when the complete cache identity still matches.
+- Coverage is the objective; provenance, policy, correction and unsupported-claim limits are constraints.
+- A high-precision pipeline with trivial output does not pass.

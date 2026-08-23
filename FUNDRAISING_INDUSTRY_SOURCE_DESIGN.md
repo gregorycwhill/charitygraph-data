@@ -432,7 +432,7 @@ Private pilot candidate shape conceptually:
   "relationship_type": "fundraising_service_provider",
   "provider_name": "Example Agency",
   "provider_external_id": null,
-  "provider_causebase_id": null,
+  "provider_subject_id": null,
   "fundraising_scope": {
     "practice_term": "face_to_face",
     "campaign_id": null

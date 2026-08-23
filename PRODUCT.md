@@ -1,7 +1,7 @@
 # CharityGraph Product Contract
 
 **Status:** Canonical shared product contract  
-**Version:** 1.0-draft  
+**Version:** 1.1-draft  
 **Date:** 2026-08-23  
 **Applies to:** Builder, Data and Viewer
 
@@ -17,13 +17,13 @@ CharityGraph integrates public information about Australian charities, their pro
 
 Public charity information is spread across regulators, tax records, annual reports, websites, public inquiries, reference sources and specialist sector sources. Even when technically public, it is expensive to find, join, read and interpret.
 
-CharityGraph reduces that cost through the governed transformation:
+CharityGraph reduces that cost through a Python-controlled, model-assisted transformation:
 
 ```text
 public sources → source-native records → bounded evidence → governed observations → public projections
 ```
 
-Its distinctive value is semantic integration with provenance. It does not merely copy sources and does not hide the sources behind synthesis.
+Its distinctive value is broad semantic integration with provenance. It does not merely copy sources and does not hide the sources behind synthesis. LLMs are a routine production component for difficult extraction, semantic judgement and public writing; Python supplies the control plane that makes their use repeatable, economical and testable.
 
 ## 3. Anchor user and first-class users
 
@@ -162,7 +162,7 @@ Fundraising expenditure follows the governed ladder: direct disclosure; determin
 
 Beneficiary identity never supplies an ethos inference.
 
-**`notable_context`** records bounded institutional, historical, legal, regulatory, inquiry, recognition, criticism or relationship facts. It is never a reputation, prestige, controversy, safety or notability score. Sensitive observations require adequate underlying evidence, precise procedural status, human review and expedited correction handling.
+**`notable_context`** records bounded institutional, historical, legal, regulatory, inquiry, recognition, criticism or relationship facts. It is never a reputation, prestige, controversy, safety or notability score. Sensitive observations require adequate underlying evidence, precise procedural status, a versioned risk policy and expedited correction handling. The policy may require human review, stronger-model adjudication or publication hold; universal human review is not a prerequisite for useful coverage.
 
 ### 8.7 Participation and action
 
@@ -206,7 +206,7 @@ Every applicable capability has an explicit current state such as observed, not 
 
 `not_found_in_source` is valid only for a defined assessment scope and never means that a practice, characteristic or event does not exist. Missing output is not a negative claim.
 
-Sparse output is correct when public evidence is sparse or responsible publication is not possible.
+Sparse output is correct when public evidence is genuinely sparse or responsible publication is not possible. It is a product failure when recoverable public evidence remains unprocessed because the pipeline optimised for near-zero risk, elaborate local NLP or universal human review instead of useful coverage.
 
 ## 12. Corrections and contestability
 
@@ -216,11 +216,25 @@ Accepted corrections change governed inputs or observations and trigger dependen
 
 History is append-only except where privacy, abuse, legal requirements or accidental sensitive publication require exceptional removal. A material challenge to sensitive context triggers expedited re-review.
 
-## 13. Economics and processing equity
+## 13. Economics, processing priority and model use
 
-Every eligible subject receives a cheap common structured baseline. Additional acquisition, extraction, model use and human review are allocated by evidence opportunity, unresolved capability value and benchmarked information yield—not size, prestige, perceived effectiveness or likely donor appeal.
+CharityGraph is Python-controlled and LLM-powered. Python performs acquisition, hashing, obvious deterministic extraction, joins, evidence selection, batching, scheduling, caching, validation, cost enforcement and publication. LLMs routinely perform difficult OCR/vision recovery, relevance screening, structured extraction, semantic interpretation, classification and bounded writing. Model-derived outputs remain source-bound, typed, reviewable and correctable.
 
-CharityGraph optimises useful, defensible public knowledge per unit cost rather than field completeness. Expensive models close measured extraction gaps; they do not conceal source absence.
+The initial corpus uses three pooled paid-model budgets. Each budget includes text and vision inference, judgement, extraction, writing, embeddings, retries and escalations:
+
+| Processing cohort | Selection | Total budget | Average planning allowance |
+| --- | --- | ---: | ---: |
+| first 100 | highest total donations | AUD 100 | AUD 1.00/charity |
+| next 1,000 | next highest total donations | AUD 100 | AUD 0.10/charity |
+| next 10,000 | next highest total donations | AUD 100 | AUD 0.01/charity |
+
+Total donations is recorded as `donor_decision_exposure_proxy`: a transparent processing-priority proxy for the number and consequence of donor decisions that may rely on CharityGraph. It is not a donor count, a measure of retail donations, charity merit, credibility, effectiveness or recommendation. The highest-exposure cohort receives more model spend and assurance because errors are more likely to encounter active brand/legal scrutiny; later cohorts emphasise economical coverage.
+
+Budgets are pooled within cohorts. Easy subjects may subsidise difficult ones. Cross-cohort transfer requires explicit approval. Builder reserves estimated cost before a request, reconciles actual cost afterwards and stops new paid work before a cohort cap can be exceeded.
+
+Coverage is the optimisation objective; defensibility is a constraint. Prefer a source-linked, method-labelled model interpretation with stated uncertainty to a null selected only because it is legally safer. A high-precision system that publishes almost nothing fails the product contract.
+
+Custom local NER, relevance, taxonomy or summarisation models are not part of the initial build. Deterministic parsing and off-the-shelf OCR remain useful. A custom local NLP component may enter the roadmap only after a benchmark shows lower total cost of ownership, including implementation, labels/evaluation, maintenance and operational complexity—not merely lower API spend.
 
 ## 14. Public releases and distribution
 
@@ -254,10 +268,12 @@ Success is measured through:
 - ability to answer organisation, comparison and ecosystem questions;
 - scope, time and representation consistency;
 - provenance and public source-reference resolution;
-- semantic precision, recoverable recall and correction rate;
+- summary, program/service, participation, fundraising, ethos/service-orientation and notable-context coverage where supporting evidence exists;
+- proportion of processed subjects receiving the intended model-assisted pass and embeddings;
+- semantic precision, unsupported-claim rate, recoverable recall and correction rate;
 - explicit source-scope and public-evidence gaps;
-- human review burden and accepted observations per dollar;
+- human review burden, accepted observations per dollar and accepted observations per subject;
+- compliance with the three cohort budgets and transparent donor-exposure processing order;
 - equitable baseline coverage across subject strata;
 - successful use by analysts, consumer LLMs and downstream products;
 - reliable immutable releases and Viewer fidelity.
-

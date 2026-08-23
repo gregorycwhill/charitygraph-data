@@ -1,7 +1,7 @@
 # CharityGraph End-to-End Experiences
 
 **Status:** Canonical shared product contract  
-**Version:** 1.0-draft  
+**Version:** 1.1-draft  
 **Date:** 2026-08-23
 
 ## 1. Common experience
@@ -10,7 +10,7 @@ A person, analyst, software system or AI assistant should be able to:
 
 1. discover CharityGraph's purpose, coverage, licence, current release and non-goals;
 2. identify the relevant organisations, programs or services;
-3. inspect structured observations, source roles, evidence, time and coverage;
+3. inspect structured observations, source roles, evidence, time, coverage and whether a method was mechanical, model-assisted or human-reviewed;
 4. retrieve one subject or a defensible bulk cohort;
 5. distinguish source-native data, governed observations and derived projections;
 6. cite the release and evidence;
@@ -36,6 +36,8 @@ They can:
 - apply their own demand, effectiveness, recommendation or commercial methodology downstream.
 
 CharityGraph removes repetitive integration and evidence work. It does not replace analytical judgement.
+
+The analyst should encounter broad, consistently attempted coverage—not a tiny legally pristine subset. A model-interpreted observation is acceptable when its evidence, method, uncertainty and policy status are inspectable. Empty fields distinguish genuine public-evidence absence from retrieval, processing or budget limits.
 
 ## 3. Funder experience
 
@@ -124,4 +126,3 @@ Across all channels, CharityGraph succeeds when a user can answer:
 > Who works on X for Y in Z, through which programs and interventions; how are they structured, resourced and raising money; what context matters; and what does CharityGraph know, not know and base that on?
 
 The answer must remain useful without becoming a recommendation.
-

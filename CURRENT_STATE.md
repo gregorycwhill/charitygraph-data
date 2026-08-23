@@ -19,6 +19,8 @@ source-native records → evidence → candidates → decisions → canonical ob
 
 Cards remain stable public release objects, but are not Builder's internal knowledge store.
 
+The operating model is now explicitly Python-controlled and LLM-powered. Python manages acquisition, deterministic preparation, joins, batching, scheduling, caching, validation, cost and publication. LLMs routinely perform difficult extraction, semantic judgement, classification, bounded writing and embeddings.
+
 ## 2. Repository and public cutover
 
 The current repositories are:
@@ -76,16 +78,21 @@ Approved direction:
 - explicit program/service/unit scope;
 - candidate, decision, canonical and derivative separation;
 - typed causal lineage distinct from subject relationships;
-- task-specific deterministic, local-NLP and LLM boundaries;
+- routine task-specific LLM execution behind Python-controlled evidence, schema, batching, caching and budget boundaries;
+- no custom local NER/relevance/taxonomy/summarisation tier in the initial build;
 - existing evidence indexed and recycled rather than destructively reorganised;
 - immutable files and manifests as durable authority;
 - SQLite as local operational catalogue and rebuildable index;
 - DuckDB optional for analytical scans;
 - PostgreSQL deferred until multi-writer or distributed operation is real;
 - complete Builder-to-Data release acceptance;
-- benchmark/economics and correction workflows as first-class architecture concerns.
+- benchmark/economics and correction workflows as first-class architecture concerns;
+- pooled model budgets of AUD 100 for the first 100, AUD 100 for the next 1,000 and AUD 100 for the next 10,000 charities, including embeddings;
+- total donations used only as `donor_decision_exposure_proxy` for processing priority and assurance;
+- coverage as the optimisation objective, with defensibility as an evidence/policy/correction constraint;
+- risk-weighted automation, stronger-model review and human sampling rather than universal human approval.
 
-The approved architecture requires amendment for subject lifecycle, scope/relationships, corrections, evaluation economics, distribution and operational recovery before material implementation.
+The open Builder documentation PR already incorporates subject lifecycle, scope/relationships, corrections, evaluation economics, distribution and operational recovery. This amendment adds the controlling LLM economics, cohort and coverage-first decisions before material implementation.
 
 ## 6. Product-domain decisions
 
@@ -120,21 +127,17 @@ The archive is active CharityGraph evidence. It should be indexed in place, hash
 
 ## 8. Current next gate
 
-The next repository change is a Terra-High documentation-and-skeleton PR. It should:
+The product-documentation branches and PRs already contain the observation-first rewrite. The immediate task is to amend those open PRs with the approved LLM economics and cohort policy. This is documentation-only and should use Luna-High.
 
-1. install the approved documentation authority and rewritten active product documents;
-2. update Builder architecture with the six required amendments;
-3. align Builder and Data agent instructions;
-4. establish internal record/schema boundaries and no-op CLI surfaces;
-5. make no archive mutation, LLM call, SQLite data migration, public schema change, release change or Viewer change;
-6. prove all existing tests and the immutable checksum remain green.
+After the documentation amendment is approved, the first code PR implements minimum knowledge/task/economics contracts without a real call. The next two PRs implement the thin SQLite task/batch/cache/cost ledger and fake-provider scheduler. A bounded real-model economics spike follows before archive indexing or broad domain infrastructure.
 
-After that PR, implementation proceeds through SQLite/catalogue contracts, a read-only archive indexer and one deterministic end-to-end vertical slice.
+No production cohort budget is consumed, archive is mutated, public schema/release is changed or deployment is run during the documentation/contracts/ledger tranches.
 
 ## 9. Explicitly deferred
 
 - a new public Data contract or public identifier migration;
-- automated publication of ethos, sensitive context or unevaluated provider claims;
+- unbenchmarked automation policies for sensitive context or unevaluated provider claims;
+- custom local NER, relevance, taxonomy or summarisation unless later total-cost-of-ownership evidence supports it;
 - a harm→remedy causal graph;
 - demand, impact or funding-allocation modelling;
 - API/MCP delivery;
@@ -148,4 +151,3 @@ After that PR, implementation proceeds through SQLite/catalogue contracts, a rea
 - Literal legacy naming is isolated to immutable material, compatibility code/tests and quarantined migration evidence.
 - Runtime state belongs outside synchronised storage under `C:\CharityGraph-runtime` when implementation creates it.
 - Existing untracked debug/runtime material remains untouched unless a separately authorised cleanup identifies an exact target.
-

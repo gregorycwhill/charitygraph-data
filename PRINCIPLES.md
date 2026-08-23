@@ -1,7 +1,7 @@
 # CharityGraph Principles and Guardrails
 
 **Status:** Canonical shared product contract  
-**Version:** 1.0-draft  
+**Version:** 1.1-draft  
 **Date:** 2026-08-23
 
 ## Public purpose
@@ -32,7 +32,7 @@
 18. Evaluated shadow registries are first-class authorities for their registry-defined facts.
 19. Public accessibility does not override source rights or authorise bulk republication.
 20. Absence is not a negative claim. `not_found_in_source` requires a declared assessment scope.
-21. Sparse output is preferable to an unsupported claim.
+21. An unsupported claim is prohibited, but null-by-default is not success. Prefer a source-linked, method-labelled model interpretation with uncertainty when evidence supports it.
 
 ## Domain integrity
 
@@ -51,28 +51,30 @@
 
 ## Models and automation
 
-34. Use deterministic acquisition, parsing and validation before semantic interpretation.
-35. Model outputs are candidates or derivatives, never human decisions.
-36. Separate task contracts for OCR recovery, relevance, extraction, interpretation, taxonomy and writing.
-37. Permit benchmarked physical call bundling only when outputs retain separate schemas, lineage, validation and governance.
-38. Version material prompts, policies, models, tools and cache identities.
-39. Authorise automation by domain-specific policy and evidence, not by convenience.
+34. Use Python as the control plane and LLMs as the routine semantic engine. Deterministic work should prepare, constrain and validate model work, not postpone it until a brittle local pipeline fails.
+35. Model outputs are candidates or derivatives, never human decisions. A model candidate may become canonical only through a separately versioned, benchmarked automation policy and is never relabelled as human-governed.
+36. Separate logical task contracts for OCR/vision recovery, relevance, extraction, interpretation, taxonomy, writing and embeddings; several logical tasks may share one physical request only when benchmarked and independently validated.
+37. Treat batching, scheduling, caching, retry control, cost reservation/reconciliation and resumability as core Python responsibilities.
+38. Version material prompts, policies, task schemas, model snapshots, tools, pricing tables and cache identities.
+39. Do not build custom local NER, relevance, taxonomy or summarisation models in the initial architecture. Admit one only after a total-cost-of-ownership benchmark includes coding, labels/evaluation, maintenance and operations as well as API spend.
+40. Authorise automation by domain-specific policy and evidence, not by convenience. Use human review for samples, conflicts, sensitive claims and higher-exposure cases rather than as a universal gate.
 
 ## Corrections and releases
 
-40. Accepted corrections change governed inputs and regenerate dependent outputs.
-41. Raw correction submissions are private by default; public contestability concerns moderated proposals and decisions.
-42. Sensitive context receives heightened evidence, human review and expedited correction handling.
-43. Publish only complete, validated, allowlisted release candidates.
-44. Keep immutable releases immutable and retain a previous valid release when publication fails.
-45. Generate representations from the same release selection of observations and derivatives.
+41. Accepted corrections change governed inputs and regenerate dependent outputs.
+42. Raw correction submissions are private by default; public contestability concerns moderated proposals and decisions.
+43. Sensitive context receives heightened evidence, risk-weighted review and expedited correction handling.
+44. Publish only complete, validated, allowlisted release candidates.
+45. Keep immutable releases immutable and retain a previous valid release when publication fails.
+46. Generate representations from the same release selection of observations and derivatives.
 
 ## Economics, interface and institutional posture
 
-46. Give every eligible subject a cheap common evidence baseline.
-47. Allocate additional processing by evidence opportunity and expected information yield, never perceived worthiness.
-48. Optimise useful, defensible public knowledge per unit cost rather than field fill rate.
-49. Keep Viewer credible, utilitarian, dense, accessible and fast.
-50. Apply the anti-marketplace test: if the interface persuades users to favour, trust or donate to a subject, it has moved in the wrong direction.
-51. Keep CharityGraph inspectable, challengeable and replaceable.
-
+47. Give every eligible subject a cheap common evidence baseline and an economical model-assisted pass where the cohort policy requires it.
+48. Rank initial processing by total donations as an explicitly labelled donor-decision-exposure proxy. It determines priority and assurance spend, never merit, quality, credibility or recommendation.
+49. Enforce pooled paid-model budgets of AUD 100 for the first 100 charities, AUD 100 for the next 1,000 and AUD 100 for the next 10,000; include extraction, judgement, writing, embeddings, retries and escalations.
+50. Allocate spend within each cohort by evidence opportunity, risk and expected information yield. Easy subjects may subsidise difficult ones; cross-cohort transfer requires approval.
+51. Optimise useful coverage subject to provenance, correction and quality constraints. A near-perfect system that publishes almost nothing fails.
+52. Keep Viewer credible, utilitarian, dense, accessible and fast.
+53. Apply the anti-marketplace test: if the interface persuades users to favour, trust or donate to a subject, it has moved in the wrong direction.
+54. Keep CharityGraph inspectable, challengeable and replaceable.

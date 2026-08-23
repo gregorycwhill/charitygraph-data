@@ -1,7 +1,7 @@
 # CharityGraph Documentation Authority
 
 **Status:** Canonical project-governance document  
-**Version:** 1.0-draft  
+**Version:** 1.1-draft  
 **Date:** 2026-08-23
 
 ## 1. Purpose
@@ -21,7 +21,7 @@ Repository location does not determine product authority.
 When documents conflict, use this order:
 
 1. `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md` and `EXPERIENCES.md`;
-2. approved architecture decision records and product decision records;
+2. `LLM_ECONOMICS_AND_COHORT_POLICY.md` for model role, cohort order/budgets, cost orchestration and coverage-first acceptance, plus other approved architecture/product decision records;
 3. the applicable version-specific public Data contract and schemas;
 4. `CURRENT_STATE.md`, `ROADMAP.md`, `IMPLEMENTATION_PLAN.md` and `TEST_PLAN.md`;
 5. domain designs, evaluation designs and implementation proposals;
@@ -57,6 +57,7 @@ Every active document must state its status, version or date, scope and superses
 | Capability sequence | `ROADMAP.md` |
 | Approved implementation sequence | `IMPLEMENTATION_PLAN.md` |
 | Verification and release gates | `TEST_PLAN.md` |
+| Model economics, cohort priority and orchestration | `LLM_ECONOMICS_AND_COHORT_POLICY.md` |
 | Builder internal architecture | approved Builder target architecture and subsequent ADRs |
 | Current public release contract | `PUBLIC_CONTRACT_0_5.md`, its schemas and immutable release manifest |
 | Current machine distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
@@ -99,4 +100,3 @@ Active narrative uses neutral phrases such as “former project name”, “lega
 - Public-contract changes require versioned schemas, examples, migration analysis and Data/Viewer acceptance.
 - Domain vocabulary changes require taxonomy or schema governance and affected-observation migration analysis.
 - Immutable releases are never edited in place.
-

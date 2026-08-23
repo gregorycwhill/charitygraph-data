@@ -1,12 +1,12 @@
 # CharityGraph Test Plan
 
 **Status:** Canonical verification strategy  
-**Version:** 1.0-draft  
+**Version:** 1.1-draft  
 **Updated:** 2026-08-23
 
 ## 1. Purpose
 
-Testing must establish more than valid JSON. It must prove identity integrity, evidentiary lineage, semantic restraint, publication safety, reproducibility, recovery and cross-channel consistency.
+Testing must establish more than valid JSON. It must prove identity integrity, evidentiary lineage, useful coverage, semantic quality, publication safety, reproducibility, recovery, hard cost control and cross-channel consistency. A system can pass precision tests and still fail the product by publishing almost nothing.
 
 The current protected baseline is:
 
@@ -83,6 +83,12 @@ Test:
 - complete evidence recovery after database deletion;
 - no governed fact exists only in SQLite;
 - scale/throughput on representative national-index metadata.
+- budget reservation before scheduling and actual-cost reconciliation after completion;
+- rejection of new paid work when reserved plus actual cost would breach a cohort cap;
+- provider-currency, AUD conversion and pricing-snapshot traceability;
+- no duplicate paid request after retry, crash or rerun;
+- partial batch completion and safe resumption;
+- cache invalidation when any material identity component changes.
 
 ## 7. Source acquisition and parsing
 
@@ -176,7 +182,7 @@ Validate:
 - service/mission orientation is separate;
 - parent/network ethos does not transfer without evidence;
 - absence does not imply secular or unaffiliated;
-- first-pilot publication requires human review.
+- first-pilot publication follows the approved risk policy: sensitive/conflicting cases require the specified human or stronger-model route; ordinary supported cases may use benchmarked automation.
 
 ### Notable context
 
@@ -185,7 +191,7 @@ Validate:
 - Australian subject and global parent/network scope remain distinct;
 - absence from Wikipedia has no meaning;
 - revision/discovery lineage is retained;
-- sensitive/adverse observations require adequate underlying evidence and human review;
+- sensitive/adverse observations require adequate underlying evidence and the versioned risk route, which may require human review, stronger-model adjudication or hold;
 - correction challenges trigger expedited re-review.
 
 ## 12. Taxonomy tests
@@ -212,21 +218,40 @@ Validate:
 ## 14. Model-task tests
 
 - task types have separate schemas and cache identities;
-- exact inputs, prompt/policy, model snapshot and local-tool versions are material to cache identity;
+- cache identity equals the canonical hash of task type, task schema, evidence hashes, prompt/policy version, model snapshot, parameters and material tool versions;
 - output schema and evidence-span validation;
-- token/cost/latency budgets and safe retries;
+- logical outputs remain separately validated and attributable even when one physical request bundles several tasks;
+- multi-subject batching is disabled until a contamination benchmark approves it;
+- provider batch processing, same-subject bundling and independent requests produce equivalent logical contracts;
+- request specification, evidence, raw response, usage/cost, attempts and validity/invalidation are retained privately;
+- token/cost/latency budgets, reservation/reconciliation and safe retries;
 - fake clients in CI;
 - no raw prompts/responses or spend telemetry in public candidates;
 - editorial synthesis consumes governed observations only and cannot create new facts;
-- bundled calls retain separate logical outputs, validation and lineage.
+- embeddings are generated only from stable release-safe text and invalidate on text/model/policy change;
+- a model candidate accepted by an approved automation policy is canonical but never labelled human-governed;
+- no custom local NLP path appears in the initial route; introducing one requires a total-cost-of-ownership benchmark.
 
 ## 15. Evaluation and economics
 
-The shared benchmark stratifies size, source richness and complexity. It covers activities/beneficiaries, programs, participation, geography, fundraising, ethos, service orientation and notable context.
+The shared benchmark stratifies donor-decision exposure, source richness and complexity. It covers activities/beneficiaries, programs, participation, geography, fundraising, ethos, service orientation, notable context, bounded writing and embeddings.
 
-Validate benchmark/cohort identity, source opportunity, proposition/review and cost ledgers. Measure domain-level precision, recoverable recall, oracle gap, source-scope gap, public-evidence sparsity, review burden, accepted observations per dollar and refresh cost.
+Validate benchmark/cohort identity, total-donations ranking, the `donor_decision_exposure_proxy` label, source opportunity, proposition/review and cost ledgers. The test must prove that the proxy is not presented as donor count, retail-donor volume, merit, quality, credibility or recommendation.
 
-No aggregate score authorises automation across domains. Test that every eligible subject receives the cheap common baseline and extra compute is not allocated by worthiness proxies.
+Measure by cohort and domain:
+
+- subjects with summaries and embeddings;
+- program/service, participation, activity/beneficiary, fundraising, ethos/service-orientation and notable-context availability where evidence opportunity exists;
+- proportion receiving the intended model-assisted pass;
+- observations per charity and accepted observations per dollar;
+- recoverable recall and evidence-opportunity conversion;
+- unsupported-claim, correction and material-conflict rates;
+- human/stronger-model review burden;
+- cache savings, batch completion and refresh cost.
+
+The paid-model caps are exact acceptance tests: AUD 100 for the first 100, AUD 100 for the next 1,000 and AUD 100 for the next 10,000, including extraction, judgement, writing, embeddings, retries and escalations. Easy subjects may subsidise difficult ones inside a cohort; unapproved cross-cohort transfer fails.
+
+No aggregate score authorises automation across domains. Coverage is the optimisation objective while provenance, supported-claim quality, contestability and budget are constraints. A route with extremely high precision but trivial recoverable recall, observation yield or subject coverage fails the anti-sparsity gate.
 
 ## 16. Public release gates
 
@@ -269,4 +294,3 @@ Test:
 - unresolved historical data is never promoted by mere presence;
 - legacy identifiers remain isolated;
 - immutable public bytes and checksum remain unchanged before and after every pre-cutover PR.
-
