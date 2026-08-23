@@ -1,32 +1,35 @@
-# CauseBase Design Consolidation Decisions
+# CharityGraph Design Consolidation Decisions
 
-**Status:** Approved working decision record for the next development phase  
+**Status:** Approved decision record; propagated into canonical product documents on 2026-08-23  
 **Date:** 2026-08-22  
 **Responds to:** `DESIGN_CONSOLIDATION_QUESTIONS.md`  
-**Inputs:** `ETHOS_AND_NOTABILITY_DESIGN.md`, `AGENTIC_PHILANTHROPY_DATA_STRATEGY.md`, `FUNDRAISING_KNOWLEDGE_DESIGN.md`, `ENRICHMENT_ECONOMICS_DESIGN.md`, current CauseBase Data product/schema contracts, and the 2026-08-22 consolidation discussion.
+**Inputs:** `ETHOS_AND_NOTABILITY_DESIGN.md`, `AGENTIC_PHILANTHROPY_DATA_STRATEGY.md`, `FUNDRAISING_KNOWLEDGE_DESIGN.md`, `ENRICHMENT_ECONOMICS_DESIGN.md`, current CharityGraph Data product/schema contracts, and the 2026-08-22 consolidation discussion.
+
+
+**Propagation:** Canonical requirements now live in PRODUCT.md, PRINCIPLES.md, PUBLIC_COMMITMENTS.md, EXPERIENCES.md, ROADMAP.md, IMPLEMENTATION_PLAN.md, TEST_PLAN.md and PUBLIC_CONTRACT_0_5.md. This record retains decision rationale and traceability; it does not supersede those authorities.
 
 ## 1. Purpose and authority
 
-This document resolves the cross-product questions raised by Codex after reviewing the four working design documents against the current CauseBase contract.
+This document resolves the cross-product questions raised by Codex after reviewing the four working design documents against the current CharityGraph contract.
 
 It is intended to do two things:
 
 1. remove product/schema ambiguity before the next Builder implementation phase; and
-2. move normative product design, schema semantics and evaluation design out of Codex execution prompts and into an explicit CauseBase Data decision record.
+2. move normative product design, schema semantics and evaluation design out of Codex execution prompts and into an explicit CharityGraph Data decision record.
 
 This document does **not** mutate the immutable `v0.5.0-2026-08-15` release and does not by itself authorise publication of new semantic observations. The next implementation phase remains review-only until its human/economic gates are passed.
 
 Where this document conflicts with an older working design, this document governs the next phase. The durable decisions should subsequently be propagated into canonical documents such as `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_SCHEMA_VNEXT_SPEC.md`, `ROADMAP.md`, `IMPLEMENTATION_PLAN.md` and `TEST_PLAN.md` as appropriate.
 
-## 2. Product boundary: CauseBase makes mandates adjudicable; it does not adjudicate them
+## 2. Product boundary: CharityGraph makes mandates adjudicable; it does not adjudicate them
 
-CauseBase remains public charity-information infrastructure, not a recommender, payment product or personal-agent policy engine.
+CharityGraph remains public charity-information infrastructure, not a recommender, payment product or personal-agent policy engine.
 
 The agentic-philanthropy thesis is retained with one terminology clarification:
 
-> **CauseBase makes a charity or program mandate-adjudicable by supplying the relevant evidence-backed ingredients. A downstream personal agent applies the principal's own mandate, precedents, tolerances and matching rules.**
+> **CharityGraph makes a charity or program mandate-adjudicable by supplying the relevant evidence-backed ingredients. A downstream personal agent applies the principal's own mandate, precedents, tolerances and matching rules.**
 
-CauseBase may expose facts and classifications needed to answer mandate questions, including:
+CharityGraph may expose facts and classifications needed to answer mandate questions, including:
 
 - registration and DGR status;
 - cause/problem classifications;
@@ -40,7 +43,7 @@ CauseBase may expose facts and classifications needed to answer mandate question
 - funding/fundraising observations;
 - evidence freshness, coverage and uncertainty.
 
-CauseBase must not publish a user-independent:
+CharityGraph must not publish a user-independent:
 
 - mandate match percentage;
 - `within_scope / outside_scope / borderline` conclusion for a private mandate;
@@ -48,7 +51,7 @@ CauseBase must not publish a user-independent:
 - ranked recipient list;
 - donation allocation.
 
-A later downstream rule-evaluation product may use CauseBase ingredients, but that logic is not part of the CauseBase public data contract.
+A later downstream rule-evaluation product may use CharityGraph ingredients, but that logic is not part of the CharityGraph public data contract.
 
 ## 3. Cause centrality: separate centrality from taxonomy adjacency
 
@@ -73,7 +76,7 @@ centrality:
 
 Taxonomy adjacency or conceptual relationships between causes remain properties of taxonomy/reference mappings. A donor's willingness to treat an adjacent cause as in-scope is a downstream mandate rule.
 
-No centrality score or numerical percentage is required in CauseBase v1.
+No centrality score or numerical percentage is required in CharityGraph v1.
 
 ## 4. Harm → remedy → intervention graph
 
@@ -106,9 +109,9 @@ Extend the common observation pattern with an explicit scope object conceptually
 
 Rules:
 
-- `organisation` scope refers to the CauseBase subject itself;
+- `organisation` scope refers to the CharityGraph subject itself;
 - `program`, `service` and `organisational_unit` may initially use governed subject-local identifiers;
-- a nested program/service does not become a CauseBase subject merely because observations exist about it;
+- a nested program/service does not become a CharityGraph subject merely because observations exist about it;
 - later promotion to a durable subject requires explicit identity governance and a relationship such as `program_of`;
 - name similarity never promotes or binds a nested program to a durable subject;
 - fundraising campaigns are not programs by default and use their own campaign observations.
@@ -239,7 +242,7 @@ Wikipedia/Wikidata are authorised for a narrower role than broad charity ingesti
 
 ### 12.1 Common rules
 
-- Wikipedia/Wikidata never authoritatively resolve CauseBase identity by name alone;
+- Wikipedia/Wikidata never authoritatively resolve CharityGraph identity by name alone;
 - candidate linkage must be corroborated independently;
 - article/revision provenance must be retained;
 - section/location and inline citation path should be retained where available;
@@ -261,7 +264,7 @@ Following the underlying citation is preferred and may materially improve proven
 
 ### 12.3 Sensitive/adverse observations
 
-Before public publication, CauseBase must follow to an adequate underlying source for:
+Before public publication, CharityGraph must follow to an adequate underlying source for:
 
 - inquiry/review findings;
 - regulatory/legal matters;
@@ -274,13 +277,13 @@ Wikipedia remains discovery/editorial-admission lineage for these classes, not t
 
 ## 13. Corrections and disputed context
 
-Use the existing CauseBase correction architecture rather than inventing a separate public right-of-reply field.
+Use the existing CharityGraph correction architecture rather than inventing a separate public right-of-reply field.
 
 Rules:
 
 - correction intake remains private by default;
 - moderation can produce governed public correction/decision records where appropriate;
-- an organisation does not gain editorial veto over supported CauseBase observations;
+- an organisation does not gain editorial veto over supported CharityGraph observations;
 - a material challenge to adverse/sensitive context triggers expedited re-review;
 - unsupported or materially misleading observations should be corrected/retracted;
 - supported observations may remain with improved qualification or updated procedural status;
@@ -288,7 +291,7 @@ Rules:
 
 ## 14. Fundraising expenditure: no peer imputation
 
-Remove **peer imputation** from the CauseBase fundraising-expenditure ladder.
+Remove **peer imputation** from the CharityGraph fundraising-expenditure ladder.
 
 For fundraising expenditure, the governed ladder is:
 
@@ -305,7 +308,7 @@ There is:
 - no forced point estimate;
 - no midpoint of attribution bounds.
 
-`peer_imputation` may remain a generic derivation vocabulary item for some future separately approved domain, but it is not permitted for CauseBase fundraising expenditure.
+`peer_imputation` may remain a generic derivation vocabulary item for some future separately approved domain, but it is not permitted for CharityGraph fundraising expenditure.
 
 Canonical `PRODUCT.md` and Builder guidance/code should be reconciled accordingly.
 
@@ -322,13 +325,13 @@ Definitions:
 - **fundraising campaign**: identifiable, normally time/edition-bounded fundraising initiative or event;
 - **fundraising expenditure**: public evidence about fundraising-related costs.
 
-These objects may be analysed together downstream but CauseBase must not infer causal economics between them.
+These objects may be analysed together downstream but CharityGraph must not infer causal economics between them.
 
 A campaign result such as “raised $2m” remains a source-reported campaign metric and does not silently reconcile into annual donation income.
 
 ## 16. Fundraising campaign identity
 
-A fundraising campaign is a **nested observation/object first**, not a durable CauseBase subject by default.
+A fundraising campaign is a **nested observation/object first**, not a durable CharityGraph subject by default.
 
 It may carry:
 
@@ -346,7 +349,7 @@ It may carry:
 
 Recurring campaigns may retain edition-specific observations and a source-local recurrence relationship.
 
-Promotion to a durable CauseBase subject is deferred until there is a demonstrated cross-source identity/use case and explicit promotion criteria.
+Promotion to a durable CharityGraph subject is deferred until there is a demonstrated cross-source identity/use case and explicit promotion criteria.
 
 ## 17. Fundraising provider relationships: include in the private pilot
 
@@ -362,7 +365,7 @@ Examples of potentially strong evidence include:
 - fundraising-platform case studies;
 - listed-company statutory disclosures naming charity programs/partners.
 
-Provider entities do not need CauseBase charity IDs. They may initially be external named organisations linked through governed relationship candidates.
+Provider entities do not need CharityGraph charity IDs. They may initially be external named organisations linked through governed relationship candidates.
 
 Public promotion remains a post-pilot decision.
 
@@ -495,13 +498,13 @@ If H2 or separate source research identifies a repeatable, high-value source fam
 
 Where a high-value public source enumerates many charities/campaigns, prefer:
 
-> **source-led enumeration → conservative CauseBase subject binding → targeted detail acquisition → bounded semantic extraction**
+> **source-led enumeration → conservative CharityGraph subject binding → targeted detail acquisition → bounded semantic extraction**
 
 over:
 
 > charity-by-charity open-web search.
 
-This is an economics principle, not an authority principle. Candidate source identity never overrides CauseBase subject-resolution rules.
+This is an economics principle, not an authority principle. Candidate source identity never overrides CharityGraph subject-resolution rules.
 
 ## 25. Immediate sequencing for development
 
@@ -514,7 +517,7 @@ The next phase should proceed in this order:
    Use its adjudication as baseline evidence for semantic candidate quality and boundary handling.
 
 3. **Commit the consolidated design/source policy**  
-   Add the four working source design documents if still absent from CauseBase Data; add this decision record and `FUNDRAISING_INDUSTRY_SOURCE_DESIGN.md`; make only explicitly required canonical-document updates.
+   Add the four working source design documents if still absent from CharityGraph Data; add this decision record and `FUNDRAISING_INDUSTRY_SOURCE_DESIGN.md`; make only explicitly required canonical-document updates.
 
 4. **Implement Semantic Enrichment Benchmark v1**  
    Shared scoped observation/private-candidate structures, common source-opportunity inventory, ~40-subject review-only cohort and economic instrumentation.
@@ -574,4 +577,4 @@ The next phase does not implement:
 
 ## 28. Design principle for the next phase
 
-> **CauseBase should spend computation where public evidence opportunity exists, preserve epistemic sparsity where it does not, and represent semantic knowledge as scoped, typed, evidence-bound observations rather than scores or recommendations.**
+> **CharityGraph should spend computation where public evidence opportunity exists, preserve epistemic sparsity where it does not, and represent semantic knowledge as scoped, typed, evidence-bound observations rather than scores or recommendations.**

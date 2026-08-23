@@ -1,13 +1,29 @@
-# CauseBase public data commitments
+# CharityGraph Public Data Commitments
 
-CauseBase is a provenance-preserving public data layer for Australian charities. It helps people and software inspect public charity information without treating a single regulator view as the whole story.
+**Status:** Canonical public commitments  
+**Version:** 1.0-draft  
+**Date:** 2026-08-23
 
-- **Durable identity:** published CauseBase IDs are opaque, durable and never silently reassigned.
-- **Releases and history:** published releases remain interpretable. New observations append to history; they do not silently overwrite earlier annual observations.
-- **Provenance:** direct observations, deterministic transformations, LLM interpretations, estimates and other methods are identified separately.
-- **Coverage:** a missing field means missing, unavailable or not-yet-processed data—not a negative claim about an organisation.
-- **Sources:** CauseBase aims to make ordinary public ACNC, AIS, ABR/ATO and other relevant government data available through one integration layer while retaining source-native records where it has not canonicalised a field.
-- **Corrections:** organisations and others can inspect evidence and methods, then contest errors, stale data, classifications or derived interpretations. This is not unilateral editorial control.
-- **Neutrality:** CauseBase describes and structures information. It does not rate, recommend or rank charities.
+CharityGraph is the one-stop shop for structured, governed Australian charity data. We make fragmented public information easier to find, join, inspect and reuse without pretending that one source or one classification tells the whole story.
 
-The current Viewer is an early, selected 120-subject release. That prototype coverage must not be confused with the intended national data scope.
+We commit to:
+
+- **National purpose:** build toward a common structured baseline for eligible Australian charities, with transparent coverage where enrichment remains incomplete.
+- **Durable identity:** use stable CharityGraph subject identities and never silently reassign them.
+- **Programs and relationships:** represent programs, services, units, groups and organisational relationships where public evidence supports them.
+- **Useful breadth:** progressively cover activities, beneficiaries, geography, finances, funding, fundraising, participation, organisational ethos and notable context.
+- **Source plurality:** preserve regulator, tax, organisation, independent, reference and evaluated specialist-source roles without treating any publisher as universally authoritative.
+- **Proposition-specific authority:** treat evaluated shadow registries as authoritative for the institutional facts they establish while keeping promotional or performance claims in their proper evidentiary role.
+- **Provenance:** distinguish direct observations, mechanical derivations, inference, estimates and derivatives; identify how evidence was recovered.
+- **Explicit coverage:** make unknown, not processed, unavailable, failed, stale and not found in assessed sources distinguishable. Missing data is not a claim about a charity.
+- **History:** preserve reporting periods, effective time, source observation time, corrections and supersession rather than silently overwriting the past.
+- **Multiple taxonomies:** retain source-native classifications and governed CharityGraph classifications side by side.
+- **Participation:** populate and maintain structured participation modes and opportunities, including freshness and verified destinations, without operating a marketplace.
+- **Neutrality:** never publish charity rankings, recommendations, reputation scores, mandate-fit scores or fundraising-efficiency judgements.
+- **Contestability:** let organisations and others inspect evidence and challenge errors, stale data, classifications and interpretations through governed correction processes.
+- **Open reuse:** publish stable schemas, manifests, bulk formats and selective subject representations suitable for analysts, software and AI systems.
+- **Rights and privacy:** respect upstream licences and attribution; keep raw reports, website archives, model traces, private submissions, credentials and operational state private unless separately approved.
+- **Immutable releases:** never rewrite published release bytes in place.
+
+Our first public releases are deliberately smaller than the intended national product. Prototype coverage must not be represented as the limit of CharityGraph's ambition or as complete knowledge about the included subjects.
+

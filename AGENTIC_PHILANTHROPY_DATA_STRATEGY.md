@@ -1,25 +1,25 @@
-# CauseBase and Agentic Philanthropy — product and data strategy
+# CharityGraph and Agentic Philanthropy — product and data strategy
 
 **Date:** 17 August 2026  
-**Purpose:** Summarise the most plausible agentic-philanthropy use cases and identify the CauseBase data needed to support them, including Ethos, Notability, annual-report extraction and Wikipedia-derived context.
+**Purpose:** Summarise the most plausible agentic-philanthropy use cases and identify the CharityGraph data needed to support them, including Ethos, Notability, annual-report extraction and Wikipedia-derived context.
 
 ## Executive conclusion
 
-The most defensible role for CauseBase is not to become the donor's personal agent, telemetry collector, social network, payment gateway or universal charity evaluator.
+The most defensible role for CharityGraph is not to become the donor's personal agent, telemetry collector, social network, payment gateway or universal charity evaluator.
 
-CauseBase should become the **charity-side semantic and evidence layer used by personal agents**:
+CharityGraph should become the **charity-side semantic and evidence layer used by personal agents**:
 
-> A personal agent knows the principal, interprets the situation and applies the mandate. CauseBase knows the organisations, programs, interventions, eligibility, ethos, context and evidence.
+> A personal agent knows the principal, interprets the situation and applies the mandate. CharityGraph knows the organisations, programs, interventions, eligibility, ethos, context and evidence.
 
-This directly serves CauseBase's original mission. Personal agents can guard a principal's money while discovering smaller, unfamiliar charities. That reduces reliance on brand familiarity as a proxy for trust and gives credible right-tail organisations access to donors who would not research them manually.
+This directly serves CharityGraph's original mission. Personal agents can guard a principal's money while discovering smaller, unfamiliar charities. That reduces reliance on brand familiarity as a proxy for trust and gives credible right-tail organisations access to donors who would not research them manually.
 
-The highest-value CauseBase capability is therefore **mandate adjudication**, not payment verification:
+The highest-value CharityGraph capability is therefore **mandate adjudication**, not payment verification:
 
 > Given this ordinary-language mandate and this proposed recipient/program, is the gift clearly within scope, outside scope or legitimately borderline—and what evidence supports that conclusion?
 
 ## 1. Most plausible use cases
 
-### Tier 1: strongly aligned with CauseBase
+### Tier 1: strongly aligned with CharityGraph
 
 #### 1. Guarded discovery
 
@@ -33,11 +33,11 @@ The principal authorises a small autonomous giving budget. Their agent explores 
 - evidence freshness and minimum confidence;
 - smaller initial gifts where evidence is thin but no problem is observed.
 
-This is the clearest CauseBase mission fit: shift charitable discovery from brand recognition to evidence-backed mandate fit.
+This is the clearest CharityGraph mission fit: shift charitable discovery from brand recognition to evidence-backed mandate fit.
 
 #### 2. Causal matching with mandate verification
 
-A verified donation by one person triggers a genuinely additional donation under another person's pre-funded rule. CauseBase's distinctive job is not to prove that the first card payment settled. It is to assess whether the recipient or designated program fits the matcher's natural-language mandate.
+A verified donation by one person triggers a genuinely additional donation under another person's pre-funded rule. CharityGraph's distinctive job is not to prove that the first card payment settled. It is to assess whether the recipient or designated program fits the matcher's natural-language mandate.
 
 Example: “Match environmental causes.”
 
@@ -46,7 +46,7 @@ Example: “Match environmental causes.”
 - RSPCA unrestricted gift: 0% under a conventional environmental mandate;
 - a specifically designated habitat-restoration program: separately assessed.
 
-The matching rate is the principal's rule, not an objective percentage assigned by CauseBase. CauseBase supplies facts about primary purpose, material activities and program designation; the personal agent applies the principal's precedents.
+The matching rate is the principal's rule, not an objective percentage assigned by CharityGraph. CharityGraph supplies facts about primary purpose, material activities and program designation; the personal agent applies the principal's precedents.
 
 #### 3. Programmatic giving challenges
 
@@ -58,21 +58,21 @@ Phones, wearables, transaction data and personal agents unbundle charity challen
 - match a family member's verified donation;
 - trigger a contribution when a group completes a challenge.
 
-CauseBase resolves the resulting charitable intent into eligible organisations. It does not need the raw health, location or transaction telemetry.
+CharityGraph resolves the resulting charitable intent into eligible organisations. It does not need the raw health, location or transaction telemetry.
 
 ### Tier 2: plausible, but dependent on new geography or external data
 
 #### 4. Travel Giving / Giving Atlas
 
-Travel creates public “giving postcards” and journeys: places visited, causes encountered and organisations supported, with gift amounts private. This has a strong social product loop and avoids making CauseBase itself a photo-sharing network.
+Travel creates public “giving postcards” and journeys: places visited, causes encountered and organisations supported, with gift amounts private. This has a strong social product loop and avoids making CharityGraph itself a photo-sharing network.
 
-The major CauseBase requirement is accurate **service and impact geography**, not registered address. Overseas travel additionally requires local-charity data or vetted intermediary relationships beyond the Australian ACNC/DGR universe.
+The major CharityGraph requirement is accurate **service and impact geography**, not registered address. Overseas travel additionally requires local-charity data or vetted intermediary relationships beyond the Australian ACNC/DGR universe.
 
 #### 5. Investment offsetting
 
 Where a super fund continues to hold pokies, landmines, tobacco, fossil fuels or other contested exposures despite member lobbying, the principal's agent can direct a bounded amount to countervailing causes.
 
-The investment side requires a separate holdings/corporate-exposure data layer. CauseBase supplies the counter-harm mapping:
+The investment side requires a separate holdings/corporate-exposure data layer. CharityGraph supplies the counter-harm mapping:
 
 > harm → affected group → remedy → intervention → organisation/program
 
@@ -80,23 +80,23 @@ Offsetting must not be represented as cancelling the investment harm. It complem
 
 #### 6. See / Say / Do
 
-The personal agent interprets a photograph or spoken observation through the principal's worldview, then queries CauseBase. Two people can observe rough sleeping and infer entirely different problems: inadequate public safety, spiritual need, emergency accommodation, mental-health-system failure or structural poverty.
+The personal agent interprets a photograph or spoken observation through the principal's worldview, then queries CharityGraph. Two people can observe rough sleeping and infer entirely different problems: inadequate public safety, spiritual need, emergency accommodation, mental-health-system failure or structural poverty.
 
-CauseBase must not interpret the image or profile the affected people. It should answer structured queries produced by the personal agent.
+CharityGraph must not interpret the image or profile the affected people. It should answer structured queries produced by the personal agent.
 
-### Tier 3: useful personal-agent features, but not core CauseBase products
+### Tier 3: useful personal-agent features, but not core CharityGraph products
 
 #### 7. Pressure-aware giving and moral receipts
 
 The agent helps the principal decline checkout tips, supermarket appeals, street requests or other pressured asks while maintaining a funded giving policy. A green tick, haptic response or chime confirms that the situation was logged, allocated or settled.
 
-This is psychologically attractive, but CauseBase's contribution is downstream recipient and mandate resolution. The interaction design, screen scanning, transaction sweep and safety logic belong to the personal agent or wallet.
+This is psychologically attractive, but CharityGraph's contribution is downstream recipient and mandate resolution. The interaction design, screen scanning, transaction sweep and safety logic belong to the personal agent or wallet.
 
 #### 8. Systemic tipping in fair-wage jurisdictions
 
 In Australia and comparable jurisdictions, a user can decline platform-generated tipping prompts and allocate a fixed percentage of hospitality expenditure to worker-support, cooperative-development or structural-reform organisations.
 
-CauseBase needs an intervention taxonomy for direct relief, legal assistance, organising, advocacy, training and cooperative ownership. Jurisdictional labour-law logic and transaction classification should remain outside CauseBase.
+CharityGraph needs an intervention taxonomy for direct relief, legal assistance, organising, advocacy, training and cooperative ownership. Jurisdictional labour-law logic and transaction classification should remain outside CharityGraph.
 
 ## 2. Product boundary
 
@@ -111,7 +111,7 @@ CauseBase needs an intervention taxonomy for direct relief, legal assistance, or
 - explanations tailored to the principal;
 - decisions to donate, report, ask or abstain.
 
-### CauseBase owns
+### CharityGraph owns
 
 - canonical charity and program identity;
 - registration and DGR observations;
@@ -133,16 +133,16 @@ CauseBase needs an intervention taxonomy for direct relief, legal assistance, or
 - regulated payment custody and execution;
 - jurisdiction-specific legal conclusions.
 
-## 3. Review of the current CauseBase product
+## 3. Review of the current CharityGraph product
 
-The files attached to the conversation are a legacy/minimal pipeline and are not an accurate statement of the current product. The authoritative current product is the `gregorycwhill/CauseBase-Data` repository and its canonical shared contracts, particularly `PRODUCT.md`, `PRINCIPLES.md`, `CURRENT_STATE.md`, `PUBLIC_SCHEMA_VNEXT_SPEC.md`, `AGENT_DATA_DISTRIBUTION_CONTRACT.md`, `ROADMAP.md` and the implemented immutable release `v0.5.0-2026-08-15`.
+The files attached to the conversation are a legacy/minimal pipeline and are not an accurate statement of the current product. The authoritative current product is the `gregorycwhill/CharityGraph-Data` repository and its canonical shared contracts, particularly `PRODUCT.md`, `PRINCIPLES.md`, `CURRENT_STATE.md`, `PUBLIC_SCHEMA_VNEXT_SPEC.md`, `AGENT_DATA_DISTRIBUTION_CONTRACT.md`, `ROADMAP.md` and the implemented immutable release `v0.5.0-2026-08-15`.
 
-CauseBase v0.5 is already an agent-oriented, evidence-preserving knowledge product. The CauseBase Card is the conceptual object; JSON, Markdown, CSV, Parquet and Viewer output are projections. The current contract explicitly rejects a one-ABN/one-subject model.
+CharityGraph v0.5 is already an agent-oriented, evidence-preserving knowledge product. The CharityGraph Card is the conceptual object; JSON, Markdown, CSV, Parquet and Viewer output are projections. The current contract explicitly rejects a one-ABN/one-subject model.
 
 ### Existing strengths relevant to agentic philanthropy
 
 - Opaque stable `causebase_id` and explicit subject kinds: organisation, organisation group, legal entity, organisational unit, fund and program.
-- ABN, ACNC ID, domains and names are external identifiers, never CauseBase primary keys.
+- ABN, ACNC ID, domains and names are external identifiers, never CharityGraph primary keys.
 - Independent source-record identity and governed source-to-subject bindings, including unresolved and conflicting cases.
 - Explicit relationships and lifecycle semantics rather than implicit name/brand inference.
 - A common governed observation envelope with `claim_basis`, `extraction_method`, source/evidence references, time, confidence, warnings and derivation lineage.
@@ -154,7 +154,7 @@ CauseBase v0.5 is already an agent-oriented, evidence-preserving knowledge produ
 - Stable per-subject JSON and Markdown, direct card URLs, manifests, schemas and an explicit agent/data distribution contract.
 - A deployed immutable 120-card v0.5 release with 228 source sidecars and a passed 349-artefact manifest.
 - A Golden Corpus, real document-stack bake-off, bounded Evidence Engine pilot and active human-gated Knowledge Validation process.
-- Clear product guardrails: CauseBase is descriptive public infrastructure, not a recommendation, rating, payment or persuasion product.
+- Clear product guardrails: CharityGraph is descriptive public infrastructure, not a recommendation, rating, payment or persuasion product.
 
 ### Remaining gaps for the proposed use cases
 
@@ -166,9 +166,9 @@ These are additive capability gaps, not foundational architectural defects:
 4. **Role-specific geography.** v0.5 correctly separates descriptive from controlled navigation geography. Travel Giving will additionally need explicit service-delivery, beneficiary, impact and program geography, plus locality and confidence.
 5. **Ethos and service/mission orientation.** The design exists as a working first-class construct but is not yet part of the implemented v0.5 release contract.
 6. **Notable context.** The design exists, but neutral inquiry, legal, regulatory, historical, recognition and controversy observations are not yet a scaled governed capability.
-7. **Annual-report enrichment scale.** CauseBase has a decisive document-stack decision and a bounded seven-PDF Evidence Engine pilot; the remaining issue is governed semantic promotion and progressive corpus scale, not absence of a document pipeline concept.
+7. **Annual-report enrichment scale.** CharityGraph has a decisive document-stack decision and a bounded seven-PDF Evidence Engine pilot; the remaining issue is governed semantic promotion and progressive corpus scale, not absence of a document pipeline concept.
 8. **Selective Wikipedia context.** Broad Wikimedia ingestion was correctly deferred after the ABN-first spike. The Ethos/Notability design now identifies a narrower use as an external editorial filter, citation graph and context-discovery source.
-9. **Action/program endpoints.** Participation observations already distinguish action URLs from evidence URLs. Agentic philanthropy may need separately governed donation/program-designation endpoints, without turning CauseBase into a payment product.
+9. **Action/program endpoints.** Participation observations already distinguish action URLs from evidence URLs. Agentic philanthropy may need separately governed donation/program-designation endpoints, without turning CharityGraph into a payment product.
 10. **Agentic-philanthropy evaluation cases.** Existing consumer-LLM and Golden Corpus work should be extended with mandate-adjudication fixtures: adjacent causes, ethos exclusions, designated programs, notable-context guardrails and partial matching precedents.
 
 The appropriate next step is therefore to extend the existing v0.5 object model and common observation semantics. A replacement database architecture, EAV model, universal claim graph or return to one-row CSV thinking is neither needed nor consistent with the current product contract.
@@ -207,7 +207,7 @@ Agentic use strengthens the need to preserve procedural status. “Investigated�
 
 ### Product implication
 
-Ethos and Notability should remain descriptive evidence. The personal agent decides whether an ethos feature or notable event is disqualifying for its principal. CauseBase should not create a universal reputation, prestige, scandal or safety score.
+Ethos and Notability should remain descriptive evidence. The personal agent decides whether an ethos feature or notable event is disqualifying for its principal. CharityGraph should not create a universal reputation, prestige, scandal or safety score.
 
 ## 5. Taxonomies needed for future agentic use
 
@@ -385,7 +385,7 @@ Wikipedia is selectively valuable for **external context and source discovery**,
 
 ### Mandatory safeguards
 
-- independently resolve the CauseBase entity before attaching context;
+- independently resolve the CharityGraph entity before attaching context;
 - preserve Australian entity versus global parent/network scope;
 - pin article revision and retrieval time;
 - retain section/anchor and associated inline citations;
@@ -513,10 +513,10 @@ Not every domain uses every field, but using one observation/evidence grammar pr
 
 ## 11. Product test
 
-CauseBase is agent-ready when a personal agent can ask:
+CharityGraph is agent-ready when a personal agent can ask:
 
 > “My principal will match environmental causes, accepts food-system and wildlife adjacency at 50%, excludes compulsory religious participation, requires DGR status and permits only $10 autonomous gifts to unfamiliar recipients. Does this unrestricted gift qualify, what matching rate does the principal's precedent imply, and what evidence should I show if challenged?”
 
-CauseBase should return the organisation/program facts, scope, eligibility, relevant classifications, ethos/service orientation, notable context, uncertainty and provenance needed to answer. It should not decide the principal's values or execute the payment.
+CharityGraph should return the organisation/program facts, scope, eligibility, relevant classifications, ethos/service orientation, notable context, uncertainty and provenance needed to answer. It should not decide the principal's values or execute the payment.
 
-That capability unifies guarded discovery, causal matching, travel giving, challenges, investment offsetting and See/Say/Do while keeping CauseBase focused on its durable comparative advantage.
+That capability unifies guarded discovery, causal matching, travel giving, challenges, investment offsetting and See/Say/Do while keeping CharityGraph focused on its durable comparative advantage.

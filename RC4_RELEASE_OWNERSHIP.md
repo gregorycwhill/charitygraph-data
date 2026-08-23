@@ -1,5 +1,7 @@
 # RC4 Release Ownership Repair
 
+> **Authority status:** Historical release-ownership record. Immutable RC4 provenance is retained; current authority is `PUBLIC_CONTRACT_0_5.md` and `DOCUMENT_AUTHORITY.md`.
+
 **Status:** Completed archival/ownership repair — RC4 content unchanged
 **Authoritative Data path:** `releases/rc4-2026-08-14`
 **Dataset version:** `phase2b-2026-08-14-rc4-fundraising-projection-correction`

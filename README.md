@@ -1,19 +1,19 @@
 # CharityGraph Data
 
-CharityGraph Data is the public, versioned home for CharityGraph contracts, schemas, taxonomies, releases, cards, manifests, and shared project memory. CharityGraph publishes structured, provenance-aware Australian charity data and is unaffiliated with the unrelated Australian project using the former CauseBase name.
+CharityGraph Data publishes versioned public contracts, schemas, taxonomies, releases and shared project memory for structured, governed Australian charity data.
 
-## Architecture
+Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md). The canonical product set is [PRODUCT.md](PRODUCT.md), [PRINCIPLES.md](PRINCIPLES.md), [PUBLIC_COMMITMENTS.md](PUBLIC_COMMITMENTS.md) and [EXPERIENCES.md](EXPERIENCES.md). Current execution state and plans are linked from that authority record.
 
-The project separates source-native records, canonical observations/subject bindings/evidence, and derived projections. JSON and Markdown cards with their sidecars are authoritative; CSV and Parquet are convenience projections. See [architecture](docs/architecture.md), [data contract](docs/data-contract.md), and [naming](docs/naming.md).
+## Public contract and releases
 
-## Releases and compatibility
+[PUBLIC_CONTRACT_0_5.md](PUBLIC_CONTRACT_0_5.md) describes the implemented public compatibility contract. Its exact authority is the immutable [v0.5.0-2026-08-15](releases/v0.5.0-2026-08-15) release, schemas, examples and manifest. Literal historical field names, paths and artefact names remain only where the release requires compatibility; they are not the vocabulary for future internal work.
 
-`releases/v0.5.0-2026-08-15` is immutable historical material. Its original paths, filenames, checksums, and `causebase_id` identifiers remain intact for verification. Successor work uses CharityGraph naming; the legacy identifier is a temporary compatibility alias documented in the [migration guide](docs/migration/causebase-to-charitygraph.md).
+[PUBLIC_SCHEMA_VNEXT_SPEC.md](PUBLIC_SCHEMA_VNEXT_SPEC.md) is retained as a technical reference for implemented 0.5 schema material. It is not a future-contract proposal. Machine-distribution obligations are in [AGENT_DATA_DISTRIBUTION_CONTRACT.md](AGENT_DATA_DISTRIBUTION_CONTRACT.md).
 
-## Shared product documents
+## Repository boundary
 
-`CURRENT_STATE.md`, `ROADMAP.md`, `IMPLEMENTATION_PLAN.md`, `TEST_PLAN.md`, and `CODEX_TO_CHATGPT_HANDOFF.md` are the canonical cross-product documents. Component-specific implementation material stays with its owning repository.
+Builder creates validated release candidates; Data owns immutable public artefacts; Viewer renders an explicitly selected release. Raw upstream material, private evidence, model traces, runtime databases, caches, logs, credentials and debug output do not belong here.
 
 ## Licence and upstream material
 
-CharityGraph-originated data and content are licensed under [CC BY 4.0](LICENSE). The licence does not grant rights in third-party regulator data, annual reports, website content, trademarks, or other source evidence. Raw upstream material and private processing archives are excluded; downstream users remain responsible for applicable terms and attribution.
+CharityGraph-originated data and content are licensed under [CC BY 4.0](LICENSE). That licence does not grant rights in third-party regulator data, annual reports, website content, trademarks or other source evidence. Downstream users remain responsible for applicable terms and attribution.

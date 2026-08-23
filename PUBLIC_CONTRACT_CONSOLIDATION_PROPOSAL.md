@@ -1,6 +1,8 @@
 # CauseBase Public-Contract Consolidation Proposal
 
-**Status:** APPROVED DESIGN DIRECTION — NOT YET IMPLEMENTED AS A PUBLIC SCHEMA
+> **Authority status:** Historical consolidation proposal. Its relevant 0.5 contract decisions are now implemented in PUBLIC_CONTRACT_0_5.md; it does not propose a current public-schema change.
+
+**Historical status at the time:** approved design direction; not a current public-schema proposal.
 **Date:** 2026-08-14  
 **Basis:** accepted 120-card RC4 Viewer publication, `phase2b-2026-08-14-rc4-fundraising-projection-correction`
 

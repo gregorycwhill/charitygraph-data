@@ -1,109 +1,166 @@
 # CharityGraph Product Roadmap
 
-> Historical note: the detailed RC4 and pre-pivot roadmap below records work completed under the former CauseBase name. CharityGraph is the current name and is unaffiliated with the unrelated Australian project using that name.
+**Status:** Canonical capability roadmap  
+**Version:** 1.0-draft  
+**Updated:** 2026-08-23
 
-## Current sequence
+## 1. Roadmap principle
 
-1. Establish the CharityGraph data contract.
-2. Produce a trustworthy CharityGraph Builder.
-3. Develop CharityGraph Viewer later.
+CharityGraph is one product delivered through Builder, Data and Viewer. Work is sequenced by user capability and dependency, not repository ownership or former phase labels.
 
-The current target model is source-native records, canonical observations, and derived projections. JSON/Markdown cards and sidecars are authoritative; CSV/Parquet are projections.
+The public goal is a national, structured and governed charity-data layer. Progressive coverage is acceptable; hidden ambiguity, destructive migration and unsupported claims are not.
 
-**Status:** Accepted product direction  
-**Updated:** 2026-08-15
+## 2. Protected foundation — complete and ongoing
 
-CauseBase is one product with three sub-products: CauseBase Data, CauseBase Builder and CauseBase Viewer. The shared CauseBase product contract governs all three. Documents may live in the CauseBase Data repository for convenience, but CauseBase Data is not the parent product.
+- Maintain the immutable public 0.5 release and its checksum.
+- Maintain the live static Viewer and machine-discovery routes.
+- Keep Builder's full regression baseline green.
+- Preserve source-native ACNC/AIS/DGR evidence, financial fidelity and compatibility tests.
+- Keep raw/private archives and runtime state outside Git and public releases.
 
-## Historical roadmap through RC4
+## 3. Phase 1 — product and architecture authority
 
-The following records the roadmap that guided the work through RC4. It is retained as evidence, not as the active delivery sequence; the active post-RC4 capability roadmap follows it.
+**Outcome:** one internally consistent active documentation set and an implementation-ready Builder architecture.
 
-### Foundations (historical)
+- Adopt the canonical product, principles, public commitments and experiences.
+- Establish documentation authority and historical separation.
+- Reclassify public contract 0.5 as implemented compatibility, not future design.
+- Amend Builder target architecture with `SubjectRecord`, scope/relationships, corrections, evaluation economics, distribution and operational recovery.
+- Align Builder/Data agent instructions.
+- Establish terminology: `subject_id` internally; cards as release projections.
 
-- establish separate Builder, Data and Viewer repositories and durable/archive versus mutable/runtime storage;
-- maintain a provisional CauseBase subject, card, evidence and provenance model;
-- retain synthetic fixtures for deterministic testing and publication-safety work;
-- make Builder/Viewer baseline behaviour reproducible and credential-free;
-- establish shared documentation, release safety and agent-oriented public-data conventions.
+**Gate:** no active authority conflict, no active former-brand terminology, green baseline and unchanged 0.5 checksum.
 
-No public schema is frozen in this phase.
+## 4. Phase 2 — Builder foundation
 
-### Reality spike (historical)
+**Outcome:** a no-data-mutation Builder vNext skeleton.
 
-Process 30–50 deliberately heterogeneous Australian charities through structured ACNC/AIS/DGR evidence, representative annual or financial reports, and selected website evidence. Include identity, reporting, web-presence and accounting edge cases. Use observed failures to revise the provisional identity, card, financial-period, evidence, provenance and coverage models. Produce a product handoff before stabilising v0.x public contracts.
+- Create module boundaries for subjects, sources, evidence, candidates, decisions, observations, coverage, derivatives, evaluation and releases.
+- Define typed IDs, schema versioning, canonical hashing and lineage contracts.
+- Implement SQLite migrations behind a narrow catalogue interface.
+- Define task/run state, idempotency, retries, leases, resume and crash recovery.
+- Prove durable knowledge can rebuild the evidentiary catalogue.
+- Add no-op CLI surfaces and fixture-only tests.
 
-**Historical completion evidence:** 36 seeds processed; current ACNC/AIS outcomes retained privately; three reports and two website snapshots acquired; five governed real-card staging builds validated. DGR is explicitly deferred to a separately governed ABR national-bulk ingest, rather than inferred from its absence in a small spike.
+**Gate:** database deletion/reindex tests, migration tests and no public-output change.
 
-### National structured backbone (historical)
+## 5. Phase 3 — read-only evidence index
 
-Build national structured coverage from authoritative ACNC, AIS, DGR/ABR or equivalent sources. Record external identifiers and source relationships without assuming a one-ABN-one-subject model. This backbone may be published or downloadable before the distinctive enriched-card experience launches.
+**Outcome:** the existing evidence treasure trove becomes queryable without being reorganised.
 
-### Real enriched slice (historical)
+- Index source blobs, source records, extracts, governed decisions, model runs and historical releases in place.
+- Verify hashes and record migration status.
+- Produce explicit wrapper-required, importable and quarantined classifications.
+- Preserve privacy and source rights.
 
-Build roughly 100–1,000 real enriched cards using report and web evidence, the fundraising-estimation ladder, GPT-5-mini synthesis, CauseBase taxonomy v0, external taxonomies, real embeddings, precomputed semantic neighbours and basic correction intake. CauseBase taxonomy v0 is designed and tested in parallel with the reality spike.
+**Gate:** deterministic inventory, zero source-content mutation and reproducible reindex.
 
-### Public launch (historical)
+## 6. Phase 4 — deterministic structured vertical slice
 
-Launch CauseBase Data and Viewer around a visibly distinctive enriched-card experience: dense neutral cards, provenance, estimation method, multiple taxonomies, real semantic exploration where reliable, and a working low-friction "Suggest correction" intake. Do not present CauseBase merely as a cleaned regulator mirror.
+**Outcome:** one authoritative source flows through the complete vNext model and reproduces or explains the public 0.5 boundary.
 
-### Scale enrichment (historical)
+- Source record and durable subject binding.
+- Evidence and deterministic candidates.
+- Policy or fixture decision and canonical observations.
+- Coverage assessments.
+- Program and participation observations where present in source data.
+- Financial/source-native preservation where applicable.
+- Release projection through the explicit 0.5 adapter.
 
-Expand toward roughly 10,000 enriched cards with incremental refresh, source/evidence hashing, website and feed refresh, current opportunities, model routing/cost controls and a larger evaluation corpus.
+**Gate:** typed lineage, idempotent rerun, controlled diff and unchanged immutable release.
 
-### Governance depth (historical)
+## 7. Phase 5 — program, participation and web/document evidence
 
-Add governed public proposal records, review/status history, discussion integration, taxonomy contribution governance, richer provenance/history and correction-dependent rebuilds. Raw correction submissions remain private until moderated.
+**Outcome:** current core descriptive domains can be populated with source-level lineage.
 
-### Agent ecosystem (historical)
+- Reuse the validated document stack and bounded website acquisition.
+- Extract activities, beneficiaries, programs/services, descriptive and role-specific geography.
+- Populate participation modes and transient opportunities from the start.
+- Preserve action destinations separately from evidence links.
+- Introduce governed program/service/unit scope.
+- Add explicit retrieval failure, freshness and assessment scope.
 
-Improve discoverability, stable entity/card URLs, per-entity JSON and Markdown, licence/schema/provenance metadata, selective retrieval examples and citation conventions. Add API or MCP services only when demonstrated demand justifies them; static public artefacts remain independently usable.
+**Gate:** domain precision on governed fixtures, no name-only identity, no negative inference from absence.
 
-### Phase 2A completion note (historical)
+## 8. Phase 6 — fundraising knowledge and shadow registries
 
-A 120-card governed candidate is validated and staged for the Viewer with private website/report evidence processing, `gpt-5-mini` synthesis, Taxonomy v0, `text-embedding-3-small` neighbours, per-card JSON/Markdown, an agent guide and a configurable correction-intake contract. Human evaluation assessment and live endpoint configuration remain follow-on operational work.
+**Outcome:** CharityGraph describes how charities are funded and raise money without producing performance judgements.
 
-## Active post-RC4 capability roadmap
+- Separate funding sources, standing practices, campaigns and expenditure.
+- Implement claim-specific authority policies for evaluated industry shadow registries.
+- Use source-led enumeration where registries provide high-density records.
+- Add campaign identity, mechanics, channels, time and source-reported metrics.
+- Test provider relationships under source-role policy.
+- Preserve no-prior/no-peer-fill fundraising expenditure rules.
 
-The RC4 120-card baseline is released. The next roadmap is organised by user capability and dependency, rather than by repository ownership. Builder, Viewer and Data remain implementation owners underneath each capability.
+**Gate:** identity precision, rights policy, additivity protection, explicit metric basis and no ROI/effectiveness inference.
 
-### Phase 1 — define success
+## 9. Phase 7 — semantic domains and governance
 
-- Complete the public schema/data/agent contract and immutable v0.5 release semantics. **Complete.**
-- Establish Golden Corpus v1 spanning financials, provenance, summaries, identity and Viewer rendering. **Complete.**
+**Outcome:** governed semantic observations can be reviewed, corrected and projected.
 
-### Phase 2 — technology spikes
+- Implement candidate and decision workflows.
+- Add cause centrality and strengthen intervention/approach semantics.
+- Add ethos and separate service/mission orientation.
+- Add neutral `notable_context` with sensitive-content review policy.
+- Add taxonomy/version/term and crosswalk artefacts.
+- Add corrections, challenge, retraction and dependency invalidation.
 
-- Compare PDF/document extraction stacks against Golden Corpus v1 and record a governed decision. **Complete.**
-- Compare frontend/JavaScript framework options against the utilitarian Viewer requirements. **Complete — KEEP CURRENT.**
-- Investigate the bounded value, provenance and maintenance implications of Wikipedia/Wikidata. **Complete — broad ingestion deferred.**
+**Gate:** domain-specific review evidence; no model output labelled human-governed; sensitive observations require adequate evidence and human approval.
 
-### Phase 3 — evidence engine
+## 10. Phase 8 — task-specific NLP and LLM execution
 
-- Build document pipeline v2 from the selected stack; acquire/extract website evidence; and stress-test identity, groups and relationships. **Bounded Evidence Engine v1 pilot complete.**
+**Outcome:** difficult extraction and synthesis are economical, reproducible and governable.
 
-### Phase 4 — knowledge and distribution validation (active)
+- Separate OCR recovery, relevance, NER/extraction, interpretation, taxonomy and editorial tasks.
+- Add canonical cache identity, budgets, telemetry and fake-client tests.
+- Permit benchmarked multi-output calls only with independent validation and lineage.
+- Import historical model runs as evidence without promotion.
 
-- Validate taxonomy on a larger stratified sample.
-- Define the agent/data distribution contract.
-- Test consumer-LLM discovery and accurate interpretation using the protocol in TEST_PLAN.md.
-- Complete Knowledge Validation v1 minimum gate: 22 decisions validated/scored; no domain auto-promotable; 26 cases deferred. **Complete.** Semantic Enrichment Benchmark v1 is the active review-only next increment; no public release or schema change is authorised.
-- Consolidate approved semantic-domain and fundraising-source design decisions before implementation. **Design decision recorded; implementation remains review-only and gated.**
+**Gate:** reproducibility, budget enforcement, safe failure and domain-specific automation policies.
 
-### Phase 5 — Viewer
+## 11. Phase 9 — shared evaluation and economics
 
-- Redesign information architecture and implement it with administrative-credibility aesthetics. Viewer supports inspection, comparison and provenance; it is not a recommendation or fundraising marketplace.
+**Outcome:** architecture and source decisions are based on measured public-knowledge yield.
 
-### Phase 6 — corpus machinery
+- Run the shared stratified semantic benchmark.
+- Maintain source-opportunity, proposition/review and cost ledgers.
+- Compare structured, deterministic, economical-model, selective-escalation, oracle and human conditions.
+- Measure precision, recoverable recall, oracle gap, source-scope gap, sparsity, review burden and accepted observations per dollar.
+- Test processing equity across subject size and evidence richness.
 
-- Build a resumable, sliceable corpus engine and an operations harness that monitors completion, quality, spend, corpus health and change.
+**Gate:** approved routing policies and evidence that extra compute follows information opportunity rather than worthiness proxies.
 
-### Phase 7 — progressive scale
+## 12. Phase 10 — public-contract proposal
 
-- Process a stratified 500/1,000-card build, then a several-thousand slice. The first build is an information-generating milestone: quality, cost, source and identity findings gate any full-corpus decision.
+**Outcome:** a separately governed future public contract, only after internal architecture and pilot evidence are stable.
 
-### Phase 8 — ongoing operation
+- Decide future subject-key migration, if any.
+- Define public schemas for new domains and compact assessment scope.
+- Define migration from public 0.5 with examples and losslessness analysis.
+- Validate JSON/Markdown/bulk representation consistency.
+- Update Viewer only after Data contract approval.
 
-- Add longitudinal refresh/history and corrections/release governance. Do not over-specify this phase before the earlier gates.
+**Gate:** explicit product approval, full migration suite, public-safety validation and preserved prior release.
 
-The active capability backlog also includes schema/public-contract consolidation, golden-corpus evaluation, document and frontend bake-offs, website evidence, progressive build operations, longitudinal history, identity stress testing, agent distribution, correction governance, taxonomy validation and consumer-LLM legibility.
+## 13. Phase 11 — progressive national scale
+
+**Outcome:** move from controlled cohorts toward routine national operation.
+
+- Maintain the common structured baseline for all eligible subjects.
+- Scale source-led and evidence-opportunity enrichment in bounded cohorts.
+- Schedule refresh by source and domain freshness.
+- Monitor identity, coverage, quality, cost, change and failure clusters.
+- Expand Viewer and distribution only where real user demand requires it.
+
+## 14. Deferred research
+
+- harm→remedy reference graph;
+- comprehensive service-demand and unmet-need modelling;
+- impact/effectiveness measures;
+- international charity coverage;
+- API/MCP services;
+- distributed workers or PostgreSQL;
+- automated sensitive-context publication;
+- transactional giving or participation products.
+

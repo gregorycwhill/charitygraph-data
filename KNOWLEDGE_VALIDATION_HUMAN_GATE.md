@@ -42,7 +42,7 @@ publish fundraising efficiency or ROI.
 
 Run 8–12 fresh/new/incognito product sessions from
 `CONSUMER_LLM_EVALUATION.md`, covering unaided discovery, source discovery,
-directed CauseBase use and supplied-record interpretation. Capture the generic
+directed CharityGraph use and supplied-record interpretation. Capture the generic
 form there. Treat unaided/source-discovery misses as **INDEXING / DISCOVERY
 FAILURE** until pages have had a reasonable indexing opportunity; do not set a
 fixed deadline. Directed and supplied-record tests can proceed now.
