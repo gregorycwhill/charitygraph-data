@@ -1,102 +1,202 @@
 # CharityGraph Implementation Plan
 
-> Historical note: pre-pivot CauseBase plan items below are retained for provenance. The active identity is CharityGraph; do not treat historical product names as current public branding.
+**Status:** Active implementation sequence  
+**Version:** 1.1-draft  
+**Updated:** 2026-08-23
 
-**Status:** Active implementation plan; historical phases retained for traceability
-**Updated:** 2026-08-15
+## 1. Scope and governing outcome
 
-## Phase 2B contract
+This plan implements Builder vNext as a Python-controlled, LLM-powered corpus builder while protecting immutable public contract 0.5. It is deliberately sequenced to learn the real economics of model-assisted extraction before building a large local-NLP or governance framework.
 
-CauseBase uses a three-layer source contract: source-native public observations, selectively harmonised canonical card fields, and governed derived artefacts. Source observation time, world/effective time and CauseBase representation/release time are separate. Annual financial and regulator observations append; the current projection is a view, not an overwrite.
+The protected model budgets are pooled totals:
 
-Incremental refresh is staged: acquire/extract, deterministic change profile, dependency decision, optional bounded semantic assessment, then reuse or refresh. Reuse itself is recorded with the assessed inputs and reason. Numeric-only changes do not automatically regenerate prose or embeddings.
+| Cohort | Order | Paid-model cap |
+| --- | --- | ---: |
+| first 100 charities | highest total donations | AUD 100 |
+| next 1,000 charities | next highest total donations | AUD 100 |
+| next 10,000 charities | next highest total donations | AUD 100 |
 
-Funding sources, fundraising methods, current-campaign freshness and fundraising expenditure are distinct fields. They remain descriptive, evidence-bound and non-normative.
+The caps include text/vision extraction, judgement, writing, embeddings, retries and escalations. Total donations is used only as `donor_decision_exposure_proxy`; it is not a donor count or quality measure.
 
-The approved v0.5 design distinguishes claim basis from extraction method, treats coverage as capability availability, permits a null sparse-card summary, uses source-family sidecars rather than duplicating payloads in cards, and permits an explicit current-financial pointer over retained observations. It is implemented in the immutable v0.5 release; RC4 remains historical.
+Every PR is bounded, tested and reversible. Use Luna-High for implementation when this plan and the typed contracts fully determine the work. Escalate to Terra-High only for unresolved architecture or semantic-policy decisions, not by default.
 
-## Historical implementation record — completed reality spike through RC4
+## 2. PR 1A — documentation economics amendment
 
-### Historical — Phase 2A completion record
+**Recommended model:** Luna-High
 
-1. The 120-subject heterogeneous, reproducible cohort uses authoritative ACNC promotion only and records selection strata/provenance privately.
-2. Enrichment uses bounded current website/report evidence, cache-aware `gpt-5-mini` synthesis, CauseBase-native Taxonomy v0 and production embeddings.
-3. The public candidate is allowlisted and contains cards, indices, taxonomy, aggregate coverage, semantic neighbours and an agent retrieval guide; source archives and model inputs stay private.
-4. Viewer consumes the generated release, keeps similarity descriptive, and hands corrections to a configurable external intake URL using the documented prefill contract.
+Update the existing Builder and Data product-documentation PRs with this versioned amendment. Install `LLM_ECONOMICS_AND_COHORT_POLICY.md`, update the active architecture/product/plans/tests/handoff and mark the previous enrichment-economics design superseded where it conflicts.
 
-### Historical — Phase 2A.1 human-test hardening
+Do not add code, call a model, create a database, mutate archives, change a public schema/release or deploy.
 
-Treat published release `phase2a-2026-08-10` as historical. Any corrected public-card content uses a new release version and separately recorded Viewer deployment commit. Maintain `main` -> manual validated bundle -> static-only `gh-pages`; no ordinary push deploys. Human feedback is a private external form with generic and field-specific prefill, while the 30-case review pack remains local/private.
+**Gate:** active-document/link/brand checks; Builder 119-test baseline; Data examples; immutable 0.5 checksum unchanged.
 
-1. Establish three repository boundaries and configure these path classes:
-   - durable OneDrive archive for completed source and processed evidence;
-   - local mutable runtime for state, temp, cache, logs and staging;
-   - public Data publication destination.
-2. Replace the provisional one-ABN identity assumption with a stable opaque `causebase_id`, `subject_kind`, `external_identifiers[]` and explicit `relationships[]`.
-3. Preserve synthetic fixtures, but label all current schemas and rendered outputs as provisional.
-4. Make publication staging isolated and allowlisted; preserve the previous valid candidate on failure.
-5. Add ACNC/AIS/DGR structured-source interfaces sufficient for a 30–50 subject reality spike.
-6. Select a deliberately awkward cohort; record selection rationale rather than treating it as a representative national sample.
-7. Acquire representative structured, report and website evidence; record failures as domain findings.
-8. Produce and maintain a Codex-to-ChatGPT handoff before stabilising public v0.x card, identity or evidence schemas.
+## 3. PR 2 — minimum knowledge, task and economics contracts
 
-#### Historical — reality-spike completion record
+**Recommended model:** Luna-High; Terra-High only for a genuine contract ambiguity
 
-- The full 36-seed cohort has been processed through current ACNC and AIS extracts (8 resolved, 26 candidate, 2 ambiguous), with no name-only promotion.
-- Three reports and two web snapshots are retained/extracted privately; five governed real cards pass registry-gated staging validation.
-- The DGR source is available through the ABR national bulk extract but is intentionally deferred to a separately governed national ingest because it is not a cohort-scale feed.
+Implement only the contracts needed for a model-assisted spike:
 
-### Historical — Phase 1 completion record
+- minimum `SubjectRecord`, `SourceRecord`, `EvidenceFragment`, `CandidateObservation`, `DecisionRecord`, `CanonicalObservation` and `DerivativeArtifact` envelopes;
+- `ModelTask`, `ModelResult`, `EmbeddingResult`, `TaskRun` and separately validated logical outputs;
+- `BudgetCohort`, `donor_decision_exposure_proxy`, `PricingSnapshot`, `CostReservation`, `CostLedger` and `RunManifest`;
+- canonical serialization, typed IDs and cache identity;
+- provider-neutral interfaces and fakes; no real provider call.
 
-- National ACNC, AIS and ABR/DGR sources are privately archived with retrieval metadata, hashes and licence information.
-- National normalisation writes private source-record records and diagnostics without forcing subject resolution.
-- The safe Phase 1 staging candidate publishes only public registry and aggregate structural metadata; raw source content remains excluded.
+Do not attempt the complete domain ontology or import archives.
 
-### Historical — web evidence pipeline design
+**Gate:** schema round trips; stable hashes; material cache changes invalidate; cost dimensions include every paid output category.
 
-Website ingestion is a core enrichment stage, separate from report processing. It starts with homepage, About/What we do, programs, volunteer/get involved, events, governance, news/blog, feeds and selected opportunity pages. It produces stable-understanding evidence separately from transient current-activity and opportunity observations, each with independent freshness/refresh policies.
+## 4. PR 3 — thin SQLite operational ledger
 
-### Historical — enriched-card outputs
+**Recommended model:** Luna-High
 
-For a real enriched subject, treat classification, embedding and similarity outputs as related derived products. Use production embeddings only for real enriched cards; synthetic hash embeddings must never be presented as public semantic similarity.
+Implement SQLite behind a narrow interface for:
 
-### Historical — taxonomy maintenance lifecycle
+- task and physical-batch state;
+- idempotency and duplicate prevention;
+- cache hit/validity metadata;
+- cost reservations and actual reconciliation;
+- attempts, retry state, leases and resume;
+- durable artefact locations and hashes.
 
-Run deterministic PREPARE periodically against a frozen corpus and taxonomy. It produces a compact private packet before any optional model work. An optional model critique is advisory evidence only. Human decisions are recorded with definitions, boundaries, exclusions, cases and migration implications; implementation then creates a candidate version. VALIDATE compares that candidate with the baseline and current corpus without rebuilding or publishing. Only a separately governed reclassification/release may follow.
+Knowledge remains in durable typed files. SQLite is not expanded into a domain database before evidence requires it. Provide migrations, integrity checks and deterministic reindex of evidentiary rows.
 
-### Historical — correction delivery sequence
+**Gate:** injected-failure rollback; process-death recovery; hard budget cap; deletion/rebuild loses no durable evidence.
 
-The Phase 2/3 enriched-card release requires basic private intake with prefilled card/field/release context and a traceable acknowledgement. Public proposal records, moderation decisions and full history arrive later. No raw intake payload is automatically public.
+## 5. PR 4 — scheduler, batching and fake provider
 
-### Historical — contract discipline
+**Recommended model:** Luna-High
 
-The project is contract-led, not contract-frozen. Public schema versions may deliberately break before public 1.0, with clear versioning and migration/release notes. The historical reality spike informed the contract; the current stabilisation gate is public-contract consolidation and golden-corpus review.
+Implement Python orchestration that:
 
-## Current implementation direction — immediate post-RC4 sequence
+- ranks an approved cohort and selects pending logical tasks;
+- groups compatible work by provider, model snapshot, schema and prompt/policy version;
+- uses provider batch processing for independent asynchronous requests where advantageous;
+- optionally bundles logical tasks for one subject while preserving separate validation and lineage;
+- forbids multi-subject bundling until contamination is benchmarked;
+- reserves estimated AUD cost before submission and reconciles actual usage after completion;
+- retries safely, resumes incomplete batches and prevents duplicate paid requests;
+- stops scheduling before the cohort cap is exceeded.
 
-The public-contract gate is complete. The next work is governed evaluation before evidence-engine scale:
+**Gate:** fake-provider simulations cover cache hits, partial batch failure, late completion, retry, overspend attempt, FX/pricing change and rerun idempotency.
 
-1. **Public contract v0.5** — complete: specifications, Builder validation/migration, Data release and Viewer cutover are validated and deployed. Do not mutate `releases/v0.5.0-2026-08-15`.
-2. **Golden Corpus v1 and document-stack bake-off** — establish governed awkward cases and acceptance measures for document extraction, financial reconciliation, provenance, identity, editorial rendering and Viewer usability. Benchmark bounded extraction candidates against retained private evidence, recording availability, quality, cost and failure modes.
-3. **Document pipeline v2 and first Evidence Engine pilot** — complete: a computed decisive routed architecture retains deterministic `pdfplumber`, page-routed local Tesseract and local vector colour/geometry extraction. The bounded retained-snapshot website/identity/fundraising pilot is complete and produces review material only. Preserve every source result as private evidence rather than a public artefact.
+## 6. PR 5 — bounded real-model economics spike
 
-Then conduct bounded, decision-producing frontend and Wikipedia/Wikidata spikes. Each records alternatives, fixtures, quality/cost/accessibility evidence, a recommendation and an explicit decision gate; none silently becomes production architecture.
+**Recommended model:** Luna-High for code; ChatGPT/product approval for task and spend design
 
-**Completed distribution increment:** frontend decision is KEEP CURRENT; Wikimedia is deferred as a broad source; the agent/data contract and 16-case consumer-LLM foundation are checked in. The minimal static discovery layer is a Viewer projection of the pinned v0.5 release, not a new Data release or backend. Full consumer-product testing and larger taxonomy validation remain the next knowledge-validation work.
+Run 10–20 representative charities selected from the existing evidence archive. Use a separately approved micro-budget that is recorded against, but does not silently consume, a production cohort cap.
 
-**Knowledge Validation v1 (minimum gate complete):** 22 approved decisions were validated/scored across the deliberately difficult sample; no domain is auto-promotable and the remaining 26 cases are deferred. The active next phase is the private/review-only Semantic Enrichment Benchmark v1 implementation contract in `SEMANTIC_ENRICHMENT_BENCHMARK_V1_IMPLEMENTATION_v2.md`; no public schema, release or Viewer change is authorised.
+Exercise all intended paid-output classes:
 
-**Approved design consolidation:** the next review-only implementation may use
-scoped observations for program/service/unit evidence; separate Ethos and
-`service_or_mission_orientation`; preferred public `notable_context`; and
-fundraising practice/campaign/expenditure distinctions. A bounded
-fundraising-industry source category is authorised for experimental review
-only. Before that work, reconcile Builder's obsolete fallback-prior guidance
-and code with the canonical no-prior/no-peer-imputation fundraising policy.
-Do not change the v0.5 release or public schemas in that reconciliation.
+- difficult page/region recovery;
+- relevance judgement;
+- typed extraction and semantic interpretation;
+- participation/fundraising/ethos/context classification;
+- bounded card writing from accepted observations;
+- embeddings of stable derivative text.
 
-After those decisions, build document pipeline v2, website evidence acquisition/extraction and identity/group stress tests. Larger taxonomy validation, agent/data distribution and consumer-LLM evaluation precede the Viewer redesign. Corpus machinery follows the redesigned, validated contract; the 500/1,000-card run is a gated learning slice, not an automatic scale commitment.
+Compare single-task requests with safe same-subject task bundling and provider batch execution. Publish nothing.
 
-## Operations harness direction
+**Gate:** reproducible cost/yield report, validated cache reuse, unsupported-claim and recoverable-recall measurement, documented routing defaults.
 
-The build engine executes resumable, sliceable processing. A separate operations harness determines whether it is proceeding correctly, completely and economically. It will monitor completion (selected through published/held), quality (benchmarks, reconciliations, contradictions, outliers, links and failure clusters), spend (API/OCR/vision/synthesis usage and cost), corpus health (taxonomy/source/AIS/DGR/geography/identity distributions) and change (new evidence, invalidations, stale records and refresh backlog).
+## 7. PR 6 — LLM-powered end-to-end vertical slice
+
+**Recommended model:** Luna-High after spike decisions are fixed
+
+Complete one path from existing source material through evidence, model candidates, policy/fixture decisions, canonical observations, coverage, writing and embeddings to a fixture-only 0.5 projection.
+
+The slice must prove that model output can be accepted by an explicit automation policy without being labelled human-governed. Include targeted human-review fixtures for conflict and sensitive context.
+
+**Gate:** typed lineage, idempotent rerun, independently validated logical outputs and a classified fixture diff.
+
+## 8. PR 7 — read-only archive index and evidence reuse
+
+**Recommended model:** Luna-High
+
+Index existing files in place. Record hashes, type/source family, known subject/run association, privacy class and migration status. Import historical task runs and governed cases only as typed historical evidence; do not auto-promote.
+
+Use the vertical-slice task needs to decide what metadata is worth indexing. Do not build a universal archaeology database.
+
+**Gate:** deterministic inventory, zero source-content mutation, reproducible reindex and no durable output in Temp.
+
+## 9. PR 8 — core descriptive domains
+
+**Recommended model:** Luna-High with Terra-High only for unresolved domain semantics
+
+Implement generic typed observations and task schemas for:
+
+- activities, beneficiaries, programs/services and role-specific geography;
+- participation modes and transient opportunities from initial processing;
+- ACNC source-native and CharityGraph-native classifications;
+- cause centrality;
+- ethos and separate service/mission orientation;
+- neutral `notable_context`.
+
+Use LLM semantic extraction routinely. Do not insert a custom NER or relevance tier.
+
+**Gate:** domain fixtures, evidence-span validation, explicit coverage and risk-weighted review policy.
+
+## 10. PR 9 — fundraising and shadow registries
+
+**Recommended model:** Luna-High after source-role policies are approved
+
+Implement separate funding-source, standing-practice, campaign and expenditure payloads. Add adapters for approved industry shadow registries and preserve their claim-specific authority. Keep applicable code/fee rules distinct from compliance, member spend or fundraising volume.
+
+**Gate:** identity precision, source rights, amount/scope fidelity, no ROI/effectiveness inference and no forced expenditure point.
+
+## 11. PR 10 — governance, correction and assurance routing
+
+**Recommended model:** Luna-High for implementation; Terra-High only for new policy decisions
+
+Implement decision dispositions, benchmarked automation policies, review sampling, conflict routing, sensitive-claim holds, stronger-model adjudication, correction proposals, challenges, retractions and dependent invalidation.
+
+Assurance is risk-aligned: the first 100 receive proportionately more review/escalation; the next cohorts rely more heavily on benchmarked automation and sampling. Universal human review is prohibited as an implicit acceptance condition.
+
+**Gate:** no model output labelled human; review routes are reproducible; correction propagation invalidates writing, classifications and embeddings.
+
+## 12. PR 11 — first 100 production candidate
+
+Process the highest-total-donations cohort within AUD 100. The candidate should attempt all applicable core domains, writing and embeddings rather than achieve a perfect subset.
+
+**Gate:** hard cap, donor-proxy audit, anti-sparsity acceptance, source-bound claims, quality/risk sample and no public release without separate approval.
+
+## 13. PR 12 — next 1,000 production candidate
+
+Process the next cohort within AUD 100 using proven batching, caching, same-subject bundling and selective escalation. Reuse source-family and prompt caches where valid.
+
+**Gate:** hard cap, coverage and yield targets, sampled review, correction readiness and no material quality collapse by domain.
+
+## 14. PR 13 — next 10,000 production candidate
+
+Process the next cohort within AUD 100 using the economical route, concise evidence packs, cached stable instructions, batch processing and targeted escalation. Record explicit unprocessed/not-found/failed states where the cap prevents further work.
+
+**Gate:** hard cap, national-scale throughput, restartability, cache effectiveness, anti-sparsity targets and auditable routing.
+
+## 15. PR 14 — cutover and public-contract proposal
+
+Only after the three cohort reports:
+
+- propose routine production commands and refresh scheduling;
+- propose phase-orchestration deprecation;
+- propose any future public schema separately;
+- supply migration fixtures and Viewer implications;
+- retain the previous valid public release.
+
+## 16. Explicitly deferred
+
+- custom local NER, relevance, taxonomy or summarisation models until total-cost-of-ownership evidence supports one;
+- PostgreSQL/distributed workers until local single-writer constraints are observed;
+- a graph database;
+- a universal human-review gate;
+- recommendation, impact, mandate-fit or fundraising-performance models;
+- destructive archive reorganisation.
+
+## 17. Cross-cutting constraints
+
+- No active former-brand terminology outside isolated compatibility/history.
+- No raw/private evidence, credentials, prompts, responses, runtime state or spend telemetry in Git or public releases.
+- No immutable release mutation.
+- Budget reserve precedes every paid request; actual cost is reconciled afterwards.
+- Cached work is reused only when the complete cache identity still matches.
+- Coverage is the objective; provenance, policy, correction and unsupported-claim limits are constraints.
+- A high-precision pipeline with trivial output does not pass.

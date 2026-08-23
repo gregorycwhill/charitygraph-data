@@ -27,7 +27,7 @@ packet remain private working material.
 | Exact/near-duplicate groups | 1 group; 100 unique domain/text pairs |
 | No candidate observed | opportunities, self-description, fundraising, identity-sensitive |
 
-All 102 remain unadjudicated direct text, not CauseBase observations. 39 are
+All 102 remain unadjudicated direct text, not CharityGraph observations. 39 are
 not safely attached to a canonical subject in this review output; that is an
 identity review state, not an invitation to resolve by domain or name.
 

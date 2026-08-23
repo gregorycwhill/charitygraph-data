@@ -1,21 +1,23 @@
-# CauseBase Enrichment Economics — Benchmarking, Planning and Evaluation Design
+# CharityGraph Enrichment Economics — Benchmarking, Planning and Evaluation Design
+
+> **Status: superseded as implementation authority.** Retained as detailed benchmark-design history. `LLM_ECONOMICS_AND_COHORT_POLICY.md` controls model role, cohort order, budgets, local-NLP scope, scheduling, caching, governance and coverage-first acceptance. Any conflicting route, priority, review or stopping rule in this document does not apply.
 
 **Status:** Working product design; not yet canonical  
 **Updated:** 2026-08-22  
-**Scope:** CauseBase Data, Builder and evaluation workflow  
-**Purpose:** Specify how CauseBase should maximise useful, trustworthy enrichment coverage per dollar while distinguishing true public-information sparsity from source-scope and extraction-economics limits.
+**Scope:** CharityGraph Data, Builder and evaluation workflow  
+**Purpose:** Specify how CharityGraph should maximise useful, trustworthy enrichment coverage per dollar while distinguishing true public-information sparsity from source-scope and extraction-economics limits.
 
 ---
 
 ## 1. Product objective
 
-CauseBase aims to build as much **useful, evidence-backed enrichment coverage of relevant Australian charities as is economically justified**.
+CharityGraph aims to build as much **useful, evidence-backed enrichment coverage of relevant Australian charities as is economically justified**.
 
-If inference cost were irrelevant, a plausible reference workflow would give a strong multimodal model the last several years of regulator data, annual reports, current website evidence, Wikimedia context, all relevant taxonomies and the full CauseBase schema, then ask it to construct the card directly.
+If inference cost were irrelevant, a plausible reference workflow would give a strong multimodal model the last several years of regulator data, annual reports, current website evidence, Wikimedia context, all relevant taxonomies and the full CharityGraph schema, then ask it to construct the card directly.
 
 That is not the production design.
 
-CauseBase instead uses a staged architecture:
+CharityGraph instead uses a staged architecture:
 
 > **acquire broadly and cheaply → extract deterministically where possible → retrieve bounded evidence → use low-cost semantic interpretation where useful → selectively escalate difficult/high-yield cases → publish only governed observations**
 
@@ -23,18 +25,18 @@ The reason is economic as much as technical. Many enrichment facts can be recove
 
 The product therefore needs to answer two different questions:
 
-1. **Coverage question:** how much useful public knowledge about a charity can CauseBase represent?
-2. **Economic question:** how much of that recoverable knowledge can CauseBase obtain at an acceptable marginal cost?
+1. **Coverage question:** how much useful public knowledge about a charity can CharityGraph represent?
+2. **Economic question:** how much of that recoverable knowledge can CharityGraph obtain at an acceptable marginal cost?
 
 The central optimisation problem is:
 
-> **Maximise accepted useful observations and meaningfully enriched subjects per dollar, subject to CauseBase's precision, provenance, neutrality and safety constraints.**
+> **Maximise accepted useful observations and meaningfully enriched subjects per dollar, subject to CharityGraph's precision, provenance, neutrality and safety constraints.**
 
 This document defines how to measure that frontier and use it to plan the production pipeline.
 
 ---
 
-## 2. Alignment with existing CauseBase principles
+## 2. Alignment with existing CharityGraph principles
 
 This design extends rather than replaces the current product contract.
 
@@ -47,7 +49,7 @@ It relies especially on the existing principles that:
 - coverage states should be explicit rather than inferred from blank fields;
 - sparse cards are valid where sparse evidence is the honest public record;
 - LLMs are both an implementation technology and a major downstream distribution channel;
-- CauseBase describes before evaluating;
+- CharityGraph describes before evaluating;
 - fundraising economics, charity quality and recommendation remain downstream concerns.
 
 Economic optimisation must not weaken those rules. A cheaper pipeline that fabricates, over-generalises or loses provenance is not better.
@@ -56,7 +58,7 @@ Economic optimisation must not weaken those rules. A cheaper pipeline that fabri
 
 ## 3. The sparsity decomposition
 
-A blank or missing enrichment field can arise for fundamentally different reasons. CauseBase should distinguish them during evaluation.
+A blank or missing enrichment field can arise for fundamentally different reasons. CharityGraph should distinguish them during evaluation.
 
 ### 3.1 Public-evidence absence
 
@@ -74,7 +76,7 @@ More compute should not be spent trying indefinitely to fill these blanks.
 
 ### 3.2 Source-scope gap
 
-The relevant fact is public, but outside the source families or pages CauseBase currently acquires.
+The relevant fact is public, but outside the source families or pages CharityGraph currently acquires.
 
 Examples:
 
@@ -87,7 +89,7 @@ This is an **acquisition/scope problem**, not a model-quality problem.
 
 ### 3.3 Extraction-economic gap
 
-The relevant evidence is already inside CauseBase's acquired source bundle, but the production pipeline fails to convert it into a governed observation.
+The relevant evidence is already inside CharityGraph's acquired source bundle, but the production pipeline fails to convert it into a governed observation.
 
 Examples:
 
@@ -99,7 +101,7 @@ This is the main area where stronger extraction, better retrieval, better prompt
 
 ### 3.4 Governance/publication gap
 
-Relevant evidence exists and may be understood, but CauseBase should not publish the resulting assertion without additional support or review.
+Relevant evidence exists and may be understood, but CharityGraph should not publish the resulting assertion without additional support or review.
 
 Examples:
 
@@ -128,12 +130,12 @@ The benchmark should classify each potentially useful proposition into one of th
 | `recoverable_but_missed` | Evidence is in the acquired bundle, but production missed it and stronger/human review recovered it | Extraction-economic opportunity |
 | `outside_acquired_scope` | Public evidence exists, but not in the production source bundle | Source-acquisition opportunity |
 | `no_public_evidence_found` | Reasonable benchmark search found no publishable public evidence | Genuine public-record sparsity |
-| `present_but_non_publishable` | Evidence exists but cannot responsibly support a CauseBase observation | Governance boundary is working |
+| `present_but_non_publishable` | Evidence exists but cannot responsibly support a CharityGraph observation | Governance boundary is working |
 | `not_evaluated` | Benchmark did not assess the proposition/capability adequately | Evaluation gap; never treat as absence |
 
 These are **benchmark labels**, not necessarily new public card coverage statuses.
 
-Public CauseBase should continue to use its governed capability/coverage model. The benchmark is an internal tool for understanding why coverage looks the way it does.
+Public CharityGraph should continue to use its governed capability/coverage model. The benchmark is an internal tool for understanding why coverage looks the way it does.
 
 ---
 
@@ -170,7 +172,7 @@ Inputs:
 Processing:
 
 - local parsing;
-- document text/table/OCR/vision routing already approved by CauseBase;
+- document text/table/OCR/vision routing already approved by CharityGraph;
 - website normalisation;
 - deterministic passage retrieval;
 - deterministic candidate generation where appropriate.
@@ -223,7 +225,7 @@ Inputs:
 
 - **exactly the same source bundle available to production**;
 - substantially more complete context than P2/P3, including full relevant reports/pages where practical;
-- complete applicable CauseBase schema, taxonomy and editorial instructions.
+- complete applicable CharityGraph schema, taxonomy and editorial instructions.
 
 Processing:
 
@@ -294,7 +296,7 @@ The primary economic comparison is therefore:
 
 > **P2/P3 versus O/H1 on the same acquired evidence.**
 
-That measures how much useful information CauseBase is leaving inside sources it already paid to acquire.
+That measures how much useful information CharityGraph is leaving inside sources it already paid to acquire.
 
 The separate H2 audit measures whether the source universe itself is too narrow.
 
@@ -310,7 +312,7 @@ The benchmark should therefore maintain a **human-adjudicated proposition ledger
 
 Each accepted proposition should contain enough structure to compare pipelines:
 
-- subject/causebase ID;
+- subject/legacy public ID;
 - domain/capability;
 - scoped sub-entity if relevant;
 - concise proposition;
@@ -341,7 +343,7 @@ Production and oracle outputs are matched against this ledger as:
 - wrong temporal state;
 - prohibited inference.
 
-The benchmark should not require a universal microscopic claim graph for CauseBase production. This ledger is an evaluation device.
+The benchmark should not require a universal microscopic claim graph for CharityGraph production. This ledger is an evaluation device.
 
 ---
 
@@ -419,7 +421,7 @@ Do not allow convenience of existing cases to defeat the economic stratification
 
 ## 9. Source-opportunity inventory
 
-Before semantic extraction, CauseBase should produce a cheap **source-opportunity inventory** for every subject.
+Before semantic extraction, CharityGraph should produce a cheap **source-opportunity inventory** for every subject.
 
 Candidate features include:
 
@@ -436,7 +438,7 @@ Candidate features include:
 - relevant deterministic keyword/passages found;
 - Wikipedia/Wikidata candidate status;
 - parent/network source availability;
-- prior CauseBase observations requiring refresh;
+- prior CharityGraph observations requiring refresh;
 - known identity ambiguity.
 
 This inventory serves two purposes:
@@ -450,7 +452,7 @@ It should be deterministic and cheap enough to run across the full corpus.
 
 ## 10. Production enrichment planner
 
-CauseBase should not allocate the same LLM budget to every charity.
+CharityGraph should not allocate the same LLM budget to every charity.
 
 The planner should be a governed routing system whose purpose is to allocate expensive interpretation where evidence opportunity is highest.
 
@@ -514,7 +516,7 @@ Do not escalate merely because a public field is blank.
 
 ## 11. Economic metrics
 
-CauseBase should report both **quality-adjusted information yield** and **subject coverage**, because raw observation counts can be misleading.
+CharityGraph should report both **quality-adjusted information yield** and **subject coverage**, because raw observation counts can be misleading.
 
 ### 11.1 Accepted observations per dollar
 
@@ -661,7 +663,7 @@ against:
 
 The desired production point is not necessarily maximum recall.
 
-CauseBase should stop adding model spend when the next stage produces poor marginal value relative to alternatives.
+CharityGraph should stop adding model spend when the next stage produces poor marginal value relative to alternatives.
 
 A generic stopping rule is:
 
@@ -671,7 +673,7 @@ Thresholds should be learned empirically. Do not hard-code a universal “$X per
 
 The planner should support domain-specific stopping points.
 
-For example, CauseBase may rationally reach:
+For example, CharityGraph may rationally reach:
 
 - near-complete deterministic financial extraction;
 - high but not perfect activity/beneficiary recall;
@@ -771,7 +773,7 @@ The benchmark should explicitly compare the marginal value of three classes of i
 
 For each domain, ask:
 
-> If CauseBase had another $100 of enrichment budget, would it gain more accepted information by improving Python extraction, buying stronger-model calls, or acquiring another source family?
+> If CharityGraph had another $100 of enrichment budget, would it gain more accepted information by improving Python extraction, buying stronger-model calls, or acquiring another source family?
 
 This turns source strategy into an economic decision rather than a completeness instinct.
 
@@ -786,7 +788,7 @@ Examples:
 
 ## 16. Relevance and fairness in compute allocation
 
-CauseBase is allowed to optimise compute without ranking charities.
+CharityGraph is allowed to optimise compute without ranking charities.
 
 The planner should not equate:
 
@@ -801,7 +803,7 @@ Additional spend is justified by **evidence opportunity and unresolved capabilit
 
 Size may be a predictive feature for source richness and expected yield, but it should not be the normative allocation rule.
 
-This matters to CauseBase's mission: small “right-tail” charities should remain discoverable and interpretable where evidence exists, rather than being excluded because they cannot justify enterprise-scale inference spend.
+This matters to CharityGraph's mission: small “right-tail” charities should remain discoverable and interpretable where evidence exists, rather than being excluded because they cannot justify enterprise-scale inference spend.
 
 ---
 
@@ -813,7 +815,7 @@ Record:
 
 - benchmark ID/version;
 - cohort definition and strata;
-- selected CauseBase/Data release SHA;
+- selected CharityGraph/Data release SHA;
 - Builder SHA;
 - source acquisition snapshot/version;
 - source families made available to each condition;
@@ -828,7 +830,7 @@ Record:
 - adjudication date;
 - exclusions/failures.
 
-Private raw prompts/source text may remain local/private under existing CauseBase policy. Public or committed benchmark documentation should preserve enough lineage to explain results without publishing third-party source corpora.
+Private raw prompts/source text may remain local/private under existing CharityGraph policy. Public or committed benchmark documentation should preserve enough lineage to explain results without publishing third-party source corpora.
 
 ---
 
@@ -1061,7 +1063,7 @@ Decision:
 
 The first benchmark should not be judged by whether one preselected architecture wins.
 
-It succeeds if CauseBase can answer, with evidence:
+It succeeds if CharityGraph can answer, with evidence:
 
 1. How much useful enrichment is present in the current acquired source bundle?
 2. What share can deterministic extraction recover?
@@ -1072,7 +1074,7 @@ It succeeds if CauseBase can answer, with evidence:
 7. Which domains are genuinely sparse in the public record?
 8. What is the expected first-build and refresh cost per 1,000 charities?
 9. Which pipeline/source investments offer the highest marginal information yield?
-10. Where should CauseBase deliberately stop spending?
+10. Where should CharityGraph deliberately stop spending?
 
 A useful outcome may show that some domains should remain sparse. The goal is not to prove that every field can be filled economically.
 
@@ -1082,7 +1084,7 @@ A useful outcome may show that some domains should remain sparse. The goal is no
 
 ### Phase 1 — benchmark specification
 
-In CauseBase Data:
+In CharityGraph Data:
 
 - approve this design;
 - define the benchmark proposition domains;
@@ -1114,7 +1116,7 @@ Run O on the benchmark cohort or an economically selected subset.
 The oracle prompt should receive:
 
 - full acquired evidence bundle relevant to the benchmark;
-- current CauseBase schema/construct definitions;
+- current CharityGraph schema/construct definitions;
 - taxonomy definitions;
 - editorial/inference prohibitions;
 - explicit requirement to cite evidence and scope/time.
@@ -1208,7 +1210,7 @@ The benchmark is complete only when:
 - the report forecasts cost and coverage per 1,000 charities;
 - the report makes at least one concrete stop/invest/escalate/source-acquisition recommendation;
 - no benchmark condition mutates the current immutable public release;
-- no benchmark output is silently promoted to public CauseBase truth.
+- no benchmark output is silently promoted to public CharityGraph truth.
 
 ---
 
@@ -1227,13 +1229,13 @@ The benchmark should resolve rather than speculate about:
 9. How much source-opportunity features can predict expected enrichment yield before LLM spend.
 10. What change-detection strategy produces the best refresh economics.
 11. Whether human review can be removed for any enrichment domain after sufficient benchmark precision is demonstrated.
-12. What level of production sparsity users tolerate when CauseBase clearly exposes evidence/coverage state.
+12. What level of production sparsity users tolerate when CharityGraph clearly exposes evidence/coverage state.
 
 ---
 
 ## 28. Product principle proposed for later canonicalisation
 
-> **CauseBase optimises enrichment for useful, defensible public knowledge per unit cost, not for field completeness. Every subject receives a cheap common evidence baseline; additional processing is allocated according to available evidence and expected information yield. Sparse output is correct when the public record is sparse or a claim cannot be responsibly made.**
+> **CharityGraph optimises enrichment for useful, defensible public knowledge per unit cost, not for field completeness. Every subject receives a cheap common evidence baseline; additional processing is allocated according to available evidence and expected information yield. Sparse output is correct when the public record is sparse or a claim cannot be responsibly made.**
 
 A complementary operational principle is:
 
@@ -1243,9 +1245,9 @@ A complementary operational principle is:
 
 ## 29. Summary
 
-CauseBase should treat enrichment architecture as an empirical economic frontier.
+CharityGraph should treat enrichment architecture as an empirical economic frontier.
 
-The production system is not trying to imitate the infinite-money mega-prompt exactly. It is trying to approach the **recoverable public-knowledge ceiling** at a small fraction of the marginal cost while retaining CauseBase's stronger provenance and coverage semantics.
+The production system is not trying to imitate the infinite-money mega-prompt exactly. It is trying to approach the **recoverable public-knowledge ceiling** at a small fraction of the marginal cost while retaining CharityGraph's stronger provenance and coverage semantics.
 
 The benchmark therefore separates:
 
@@ -1255,4 +1257,4 @@ The benchmark therefore separates:
 > **what is understood but should not be published**  
 > **what the economical production pipeline successfully recovers**
 
-Once those components are measured, CauseBase can make rational decisions about whether the next dollar belongs in Python extraction, better retrieval, a low-cost LLM, selective high-spec reasoning, human review, or a new source family — and can deliberately stop where the remaining sparsity is real rather than technical.
+Once those components are measured, CharityGraph can make rational decisions about whether the next dollar belongs in Python extraction, better retrieval, a low-cost LLM, selective high-spec reasoning, human review, or a new source family — and can deliberately stop where the remaining sparsity is real rather than technical.

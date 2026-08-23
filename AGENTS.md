@@ -1,15 +1,29 @@
 # CharityGraph Data — Agent Instructions
 
-> The former CauseBase name is retained only for documented legacy compatibility and immutable release material. Current contracts, schemas, project memory, and repository links use CharityGraph.
+**Status:** Canonical repository instructions  
+**Scope:** shared product authority, public contracts and immutable releases
 
-CharityGraph Data is the canonical GitHub-visible home for shared CharityGraph project memory. It is a sibling of CharityGraph and CharityGraph Viewer, not their parent product.
+Read [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) before changing any cross-product document, contract or release. It defines precedence and the canonical document for each subject.
 
-Before cross-product work, read and maintain:
+CharityGraph Data is the GitHub-visible home for shared product memory and public data contracts. It is a sibling of Builder and Viewer, not the parent product.
 
-- `CURRENT_STATE.md`
-- `ROADMAP.md`
-- `IMPLEMENTATION_PLAN.md`
-- `TEST_PLAN.md`
-- `CODEX_TO_CHATGPT_HANDOFF.md`
+For cross-product work, read and maintain the canonical set:
 
-Keep Builder-specific and Viewer-specific implementation documentation in their owning repositories. Do not add private raw sources, local archives, runtime output, credentials or unreviewed source material to this repository.
+- [PRODUCT.md](PRODUCT.md)
+- [PRINCIPLES.md](PRINCIPLES.md)
+- [PUBLIC_COMMITMENTS.md](PUBLIC_COMMITMENTS.md)
+- [EXPERIENCES.md](EXPERIENCES.md)
+- [CURRENT_STATE.md](CURRENT_STATE.md)
+- [ROADMAP.md](ROADMAP.md)
+- [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)
+- [TEST_PLAN.md](TEST_PLAN.md)
+- [LLM_ECONOMICS_AND_COHORT_POLICY.md](LLM_ECONOMICS_AND_COHORT_POLICY.md)
+- [CODEX_TO_CHATGPT_HANDOFF.md](CODEX_TO_CHATGPT_HANDOFF.md)
+- [PUBLIC_CONTRACT_0_5.md](PUBLIC_CONTRACT_0_5.md)
+- [AGENT_DATA_DISTRIBUTION_CONTRACT.md](AGENT_DATA_DISTRIBUTION_CONTRACT.md)
+
+Public contract 0.5 is implemented compatibility authority for its immutable release. Do not edit release bytes, schemas, manifests, or literal legacy compatibility fields. Future internal Builder work uses subject_id; this does not authorise a public-identifier migration.
+
+Keep Builder- and Viewer-specific implementation material with the component that owns it. Do not add private raw sources, archives, runtime output, credentials, model traces, caches, logs, debug files or unreviewed source material to this repository.
+
+The three pooled model budgets, donor-decision-exposure proxy, Python/LLM division, local-NLP deferral and coverage-first acceptance in `LLM_ECONOMICS_AND_COHORT_POLICY.md` are controlling product requirements. Do not change them through a component implementation note.

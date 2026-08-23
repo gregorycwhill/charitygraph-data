@@ -1,5 +1,7 @@
 # Design consolidation response — workspace additions
 
+> **Authority status:** Historical question record. Its approved answers are DESIGN_CONSOLIDATION_DECISIONS.md and the canonical documents named by DOCUMENT_AUTHORITY.md.
+
 **Status:** discussion packet, not canonical product policy or implementation authority.  
 **Prepared:** 2026-08-22
 
@@ -20,8 +22,8 @@ repositories were not treated as new design inputs.
 
 ## Overall assessment
 
-The four additions fit the existing CauseBase direction unusually well: they
-keep CauseBase an evidence-and-semantic layer for downstream decisions, not a
+The four additions fit the existing CharityGraph direction unusually well: they
+keep CharityGraph an evidence-and-semantic layer for downstream decisions, not a
 donation recommender, payment product or charity-rating service. They reuse
 the current subject/source/observation/coverage model rather than proposing a
 replacement datastore.
@@ -37,7 +39,7 @@ them.
 ### Strong alignment
 
 - The proposed personal-agent boundary agrees with `PRODUCT.md` and
-  `EXPERIENCES.md`: CauseBase supplies inspectable facts and evidence; a
+  `EXPERIENCES.md`: CharityGraph supplies inspectable facts and evidence; a
   downstream agent owns personal values, matching rules, money, telemetry and
   payment execution.
 - Ethos/Notability, fundraising practices and enrichment economics all endorse
@@ -94,7 +96,7 @@ them.
 
 ### 1. Product boundary and downstream agents
 
-1. Should CauseBase expose only *mandate-fit ingredients*, or may it expose a
+1. Should CharityGraph expose only *mandate-fit ingredients*, or may it expose a
    bounded, non-normative `within_scope / outside_scope / borderline` result
    for a supplied mandate? Recommendation: ingredients only in v1; leave
    adjudication to the downstream agent unless a later policy defines a fully
@@ -202,7 +204,7 @@ them.
 ## Opportunities worth retaining
 
 - A disciplined agent-facing evidence layer can reduce brand familiarity as a
-  proxy for trust without CauseBase making donation decisions.
+  proxy for trust without CharityGraph making donation decisions.
 - Annual reports are the common high-value source across programs, geography,
   fundraising, ethos and organisational relationships; a shared extraction and
   review cohort creates leverage.
@@ -222,5 +224,5 @@ them.
 - Do not run broad Wikimedia/social-media acquisition or publish Ethos,
   notable-context or fundraising candidates.
 - Do not implement a mandate score, reputation score, fundraising performance
-  metric or payment/donation workflow inside CauseBase.
+  metric or payment/donation workflow inside CharityGraph.
 - Do not run three separate cohorts for the same semantic/economic questions.

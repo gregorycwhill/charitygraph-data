@@ -1,4 +1,4 @@
-# CauseBase Fundraising Industry Source Design
+# CharityGraph Fundraising Industry Source Design
 
 **Status:** Approved experimental source-family design for review-only integration  
 **Date:** 2026-08-22  
@@ -7,7 +7,7 @@
 
 ## 1. Executive decision
 
-CauseBase should treat the Australian fundraising industry as a distinct **experimental public enrichment source category**.
+CharityGraph should treat the Australian fundraising industry as a distinct **experimental public enrichment source category**.
 
 This is not merely a fallback web-search channel.
 
@@ -28,7 +28,7 @@ For professionally fundraised charities, these sources may be fresher and more s
 
 The preferred architecture is therefore:
 
-> **source-led enumeration → conservative CauseBase identity binding → targeted detail acquisition → bounded extraction → human review**
+> **source-led enumeration → conservative CharityGraph identity binding → targeted detail acquisition → bounded extraction → human review**
 
 rather than charity-by-charity open-web search.
 
@@ -50,13 +50,13 @@ Regulator/AIS data provide donation/bequest income and broad financial informati
 
 The fundraising industry generates public records because it needs to regulate practice, recognise work, market services, benchmark campaigns, disclose commercial relationships and demonstrate platforms/programs.
 
-That creates a public “shadow registry” of fundraising activity that CauseBase can structure without inventing performance judgements.
+That creates a public “shadow registry” of fundraising activity that CharityGraph can structure without inventing performance judgements.
 
 ## 3. Product boundary
 
 This source family expands **descriptive fundraising knowledge**, not fundraising evaluation.
 
-CauseBase may use adequately sourced industry material to represent:
+CharityGraph may use adequately sourced industry material to represent:
 
 - the existence of a fundraising practice;
 - the existence/name/type/time of a campaign;
@@ -69,7 +69,7 @@ CauseBase may use adequately sourced industry material to represent:
 - source-defined industry categories;
 - explicit start/end/discontinuation/renewal information.
 
-CauseBase must not turn vendor/industry claims into canonical measures of:
+CharityGraph must not turn vendor/industry claims into canonical measures of:
 
 - ROI;
 - ROAS;
@@ -83,13 +83,13 @@ CauseBase must not turn vendor/industry claims into canonical measures of:
 - provider quality;
 - causal effectiveness.
 
-Such metrics may be retained as source-native evidence where useful for research/audit, but are not canonical CauseBase performance observations in v1.
+Such metrics may be retained as source-native evidence where useful for research/audit, but are not canonical CharityGraph performance observations in v1.
 
 ## 4. Direct dollars are allowed, but metric basis must remain explicit
 
 Specific source-reported money can be highly useful and should not be discarded merely because it comes from a fundraising provider or industry source.
 
-CauseBase may represent direct observations such as:
+CharityGraph may represent direct observations such as:
 
 > “Provider reports that campaign X raised AUD 6,149,957 over eight years.”
 
@@ -116,14 +116,14 @@ The key epistemic design is **source role, not a universal source-quality score*
 
 A source can be excellent evidence for one proposition and poor evidence for another.
 
-For example, a fundraising agency case study can be strong evidence that the agency delivered a named campaign for a charity, while its claim of “450% uplift” is a commercial performance claim unsuitable as a canonical CauseBase metric.
+For example, a fundraising agency case study can be strong evidence that the agency delivered a named campaign for a charity, while its claim of “450% uplift” is a commercial performance claim unsuitable as a canonical CharityGraph metric.
 
 Use source/evidence roles conceptually equivalent to:
 
 | Source role | What it can strongly establish | Main cautions |
 | --- | --- | --- |
 | `industry_self_regulatory_association` | method participation, member status, compliance framework, explicit charity↔agency relationships | membership semantics must be understood; current page ≠ historic continuity unless dated |
-| `industry_award_record` | named campaign, award/category, nomination, charity↔service-provider relationship | award recognition ≠ quality rating in CauseBase; prefer official award record where available |
+| `industry_award_record` | named campaign, award/category, nomination, charity↔service-provider relationship | award recognition ≠ quality rating in CharityGraph; prefer official award record where available |
 | `industry_benchmark` | campaign identity, source-defined category, explicit reported amount/count, sector vocabulary | metrics may have source-specific definitions/coverage; aggregate performance claims not canonical |
 | `fundraising_provider_self_report` | client relationship, delivered campaign, channels/mechanics, direct reported campaign facts | commercial effectiveness/uplift claims remain source-native |
 | `fundraising_platform_self_report` | platform-client/campaign relationship, campaign mechanics, direct reported campaign facts | platform may observe only funds/data processed on its system |
@@ -132,7 +132,7 @@ Use source/evidence roles conceptually equivalent to:
 | `fundraising_trade_publication` | secondary reporting, award/event coverage, discovery/corroboration | ordinary secondary-source standards; distinguish publication from underlying award/provider claim |
 | `industry_taxonomy_reference` | vocabulary, channel/program distinctions, benchmark definitions | not evidence that a specific charity uses a method unless charity attribution is explicit |
 
-These roles should integrate with CauseBase evidence/source metadata rather than become confidence scores.
+These roles should integrate with CharityGraph evidence/source metadata rather than become confidence scores.
 
 ## 6. Initial high-value source families
 
@@ -162,7 +162,7 @@ Candidate facts:
 - `fundraising_provider_relationship` where charity and agency are explicitly connected;
 - dated practice observations from bulletins.
 
-Do **not** import PFRA statements about efficiency as CauseBase fundraising-performance metrics.
+Do **not** import PFRA statements about efficiency as CharityGraph fundraising-performance metrics.
 
 Reference examples:
 
@@ -188,7 +188,7 @@ Candidate facts:
 - provider relationship where the charity explicitly nominated the consultant/service partner;
 - recognition observation under `notable_context` where appropriate.
 
-CauseBase must not translate “award finalist/winner” into a fundraising-quality score.
+CharityGraph must not translate “award finalist/winner” into a fundraising-quality score.
 
 Prefer the official award body record. Trade-publication reproductions may act as secondary evidence/discovery when official material is unavailable.
 
@@ -304,7 +304,7 @@ Reference examples:
 
 The Benchmarking Project benchmarks transactional fundraising data from 50+ Australian and Aotearoa New Zealand charities and explicitly works to standardise fundraising terminology.
 
-Much of its detailed data is aggregate/member-restricted rather than attributable to specific public charities. Its main CauseBase value may therefore be:
+Much of its detailed data is aggregate/member-restricted rather than attributable to specific public charities. Its main CharityGraph value may therefore be:
 
 - external vocabulary/taxonomy evidence;
 - definitions of fundraising programs/streams;
@@ -331,7 +331,7 @@ deterministic source-record extraction
         ↓
 external charity/campaign/provider candidate
         ↓
-conservative CauseBase identity resolution
+conservative CharityGraph identity resolution
         ↓
 targeted detail-page acquisition if warranted
         ↓
@@ -352,7 +352,7 @@ Benefits:
 - explicit provider/campaign relationships;
 - easier refresh/diff processing.
 
-The existence of an industry-source match never overrides CauseBase identity rules.
+The existence of an industry-source match never overrides CharityGraph identity rules.
 
 ## 8. Source-family identifiers
 
@@ -432,7 +432,7 @@ Private pilot candidate shape conceptually:
   "relationship_type": "fundraising_service_provider",
   "provider_name": "Example Agency",
   "provider_external_id": null,
-  "provider_causebase_id": null,
+  "provider_subject_id": null,
   "fundraising_scope": {
     "practice_term": "face_to_face",
     "campaign_id": null
@@ -511,7 +511,7 @@ Use available corroboration such as:
 - campaign page linking to official charity site;
 - charity-side corroboration.
 
-Name-only matching never binds an observation to a CauseBase subject.
+Name-only matching never binds an observation to a CharityGraph subject.
 
 Hard cases include:
 
@@ -547,11 +547,11 @@ Use professional vocabularies from FIA, Donor Republic/Funraisin, Benchmarking P
 - lottery/raffle;
 - capital campaign.
 
-Do not adopt any one industry's taxonomy as universal CauseBase truth.
+Do not adopt any one industry's taxonomy as universal CharityGraph truth.
 
 Preserve:
 
-> source-native term → candidate CauseBase term → provenance/crosswalk
+> source-native term → candidate CharityGraph term → provenance/crosswalk
 
 Canonical vocabulary remains deliberately small and versioned, and should be frozen only after the shared pilot shows real mapping pressure.
 
@@ -584,14 +584,14 @@ Where explicit and scoped:
 - lifetime value;
 - provider “efficiency” or “performance” scores.
 
-The source-native record may preserve these values if lawful/useful, but they do not become CauseBase analytic conclusions.
+The source-native record may preserve these values if lawful/useful, but they do not become CharityGraph analytic conclusions.
 
 ### 14.3 No causal join
 
 Do not compute:
 
 ```text
-campaign dollars raised / campaign spend = CauseBase ROI
+campaign dollars raised / campaign spend = CharityGraph ROI
 ```
 
 and do not connect campaign reported money to AIS income/expense without a separate governed reconciliation method.
@@ -614,9 +614,9 @@ For every source family, record/assess:
 
 Default pilot posture:
 
-- private retained snapshot where lawful/consistent with CauseBase source policy;
+- private retained snapshot where lawful/consistent with CharityGraph source policy;
 - public evidence URL/title/date/location;
-- compact factual CauseBase observation rather than copied marketing prose;
+- compact factual CharityGraph observation rather than copied marketing prose;
 - no bulk publication of third-party case-study text.
 
 Production/public sidecar policy is decided source-family by source-family after the pilot.
@@ -804,7 +804,7 @@ Keep all candidate/source extraction review-only until the shared pilot validate
 
 ## 24. Success criteria
 
-The experimental source family is successful if it demonstrates that CauseBase can obtain materially better fundraising coverage at acceptable cost while preserving epistemic discipline.
+The experimental source family is successful if it demonstrates that CharityGraph can obtain materially better fundraising coverage at acceptable cost while preserving epistemic discipline.
 
 Specifically, the pilot should show:
 
@@ -820,4 +820,4 @@ Specifically, the pilot should show:
 
 ## 25. Governing principle
 
-> **Fundraising-industry sources are valuable because they are dense public records of who raised money, how, with whom and through which campaigns. CauseBase should structure those observable facts while refusing to inherit the industry's commercial judgements about what worked.**
+> **Fundraising-industry sources are valuable because they are dense public records of who raised money, how, with whom and through which campaigns. CharityGraph should structure those observable facts while refusing to inherit the industry's commercial judgements about what worked.**

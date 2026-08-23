@@ -4,7 +4,7 @@
 
 The new pass is taxonomy-blind before comparison: it begins with the retained
 web evidence's source text, proposed domain and provenance, not ACNC labels,
-existing CauseBase classifications, organisation names or historical proposal
+existing CharityGraph classifications, organisation names or historical proposal
 language. Its purpose is to ask whether the activity, beneficiary, geography,
 program and participation distinctions survive real heterogeneous evidence.
 
@@ -39,6 +39,6 @@ carried forward, approved or dismissed.
 
 The governed workflow remains `PREPARE → optional MODEL REVIEW → HUMAN
 DECISION → VALIDATE`. It preserves taxonomy pluralism and must not optimise
-CauseBase to mimic ACNC. A future accepted decision requires a versioned
+CharityGraph to mimic ACNC. A future accepted decision requires a versioned
 taxonomy candidate and non-mutating validation before any reclassification or
 release decision.

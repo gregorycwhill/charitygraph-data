@@ -2,9 +2,9 @@
 
 **Status:** Working product design; first-class constructs accepted, detailed contract not yet approved  
 **Updated:** 2026-08-16  
-**Scope:** Shared CauseBase product design across Data, Builder and Viewer
+**Scope:** Shared CharityGraph product design across Data, Builder and Viewer
 
-This document is the working design space for two first-class CauseBase constructs: **Ethos** and **Notability**. It deliberately precedes changes to the canonical product contract, public schema, roadmap or Viewer. Once the design is accepted, the durable decisions should be propagated into `PRODUCT.md`, `PRINCIPLES.md`, the public schema/contract material, `ROADMAP.md`, `IMPLEMENTATION_PLAN.md` and `TEST_PLAN.md` as appropriate.
+This document is the working design space for two first-class CharityGraph constructs: **Ethos** and **Notability**. It deliberately precedes changes to the canonical product contract, public schema, roadmap or Viewer. Once the design is accepted, the durable decisions should be propagated into `PRODUCT.md`, `PRINCIPLES.md`, the public schema/contract material, `ROADMAP.md`, `IMPLEMENTATION_PLAN.md` and `TEST_PLAN.md` as appropriate.
 
 The document also reopens the product-value question left narrow by `WIKIMEDIA_SOURCE_SPIKE.md`. The existing spike remains valid evidence that ABN-first Wikidata linkage is sparse. It does **not** settle whether Wikipedia is valuable as a selective contextual source, editorial filter, source-discovery graph or reciprocal public-knowledge partner.
 
@@ -12,11 +12,11 @@ The document also reopens the product-value question left narrow by `WIKIMEDIA_S
 
 A large share of the information people care about when understanding a charity is public but expensive to discover. It may be buried in a 35-page annual report, constitution, history page, inquiry report, Wikipedia article or other source that is technically available but practically high-friction.
 
-CauseBase should convert that public knowledge into low-friction, provenance-preserving public data:
+CharityGraph should convert that public knowledge into low-friction, provenance-preserving public data:
 
 > long source material → bounded evidence → structured observation → 5–30 words a person can understand → machine-readable data an agent can consume
 
-This is not an invitation to turn CauseBase into an evaluator. The product value is compression and structure, not judgement.
+This is not an invitation to turn CharityGraph into an evaluator. The product value is compression and structure, not judgement.
 
 Two information domains are important enough to be first-class:
 
@@ -27,19 +27,19 @@ Both answer questions that regulator returns are poorly designed to answer. Both
 
 ## 2. Accepted design direction so far
 
-1. Ethos and Notability are first-class CauseBase constructs, not incidental prose hidden in a summary.
+1. Ethos and Notability are first-class CharityGraph constructs, not incidental prose hidden in a summary.
 2. Ethos concerns the organisation or a scoped program/unit, **not the presumed beliefs or ideology of the people it serves**.
 3. Beneficiary/community characteristics remain separate. A Christian organisation serving a predominantly Muslim population is Christian because of evidence about the organisation, not because of the recipients.
 4. The relationship between ethos and service/mission may itself matter and should be representable separately from both organisational ethos and recipient characteristics.
 5. Ethos should distinguish self-description, formal affiliation, external characterisation and historical orientation rather than forcing them into one label.
 6. Annual reports and the organisation’s own website are strong sources for **declared current ethos**. Constitutions, governance records and parent/network relationships are strong sources for **formal affiliation**.
 7. Wikipedia and other robust secondary sources have a distinct role in external context, particularly where self-presentation is broad, selective, euphemistic or historically incomplete.
-8. Notability is a collection of notable contextual facts, **not a scalar property or score**. CauseBase must not produce a `notability_score`, “highly notable charity”, scandal score, prestige score or equivalent ranking.
-9. For Wikipedia-derived Notability candidates, CauseBase should initially rely substantially on Wikipedia’s existing editorial process instead of inventing an independent award-prestige, controversy-significance or source-credibility regime.
-10. CauseBase still owns subject binding, scope, provenance, qualification and neutral rendering. Wikipedia inclusion does not authorise attaching a global-parent fact to an Australian entity or flattening a disputed statement into an unqualified fact.
+8. Notability is a collection of notable contextual facts, **not a scalar property or score**. CharityGraph must not produce a `notability_score`, “highly notable charity”, scandal score, prestige score or equivalent ranking.
+9. For Wikipedia-derived Notability candidates, CharityGraph should initially rely substantially on Wikipedia’s existing editorial process instead of inventing an independent award-prestige, controversy-significance or source-credibility regime.
+10. CharityGraph still owns subject binding, scope, provenance, qualification and neutral rendering. Wikipedia inclusion does not authorise attaching a global-parent fact to an Australian entity or flattening a disputed statement into an unqualified fact.
 11. Absence from Wikipedia has no negative meaning. It cannot be used to infer that an organisation is unimportant, reputable, obscure or lacking notable history.
-12. Wikimedia must never become an identity authority. Loose name/alias discovery is allowed for candidate generation; CauseBase identity resolution remains governed by independent identity evidence.
-13. CauseBase should preserve circular provenance. A fact discovered from Wikipedia must not later be offered back to Wikipedia as independent corroboration merely because CauseBase republished it.
+12. Wikimedia must never become an identity authority. Loose name/alias discovery is allowed for candidate generation; CharityGraph identity resolution remains governed by independent identity evidence.
+13. CharityGraph should preserve circular provenance. A fact discovered from Wikipedia must not later be offered back to Wikipedia as independent corroboration merely because CharityGraph republished it.
 
 ## 3. User questions
 
@@ -70,7 +70,7 @@ Notability should help answer:
 - Has it undergone a merger, split, succession, renaming or other institutional change that explains its present identity?
 - Is the Australian organisation part of a larger global brand, federation or movement whose history is material to understanding the Australian operation?
 
-CauseBase answers by exposing bounded contextual facts and provenance, not by telling the user what conclusion to draw from them.
+CharityGraph answers by exposing bounded contextual facts and provenance, not by telling the user what conclusion to draw from them.
 
 ## 4. Separate but related constructs
 
@@ -105,7 +105,7 @@ The name `service_or_mission_orientation` is provisional; the distinction is mor
 
 ### 4.4 Relationships
 
-Formal relationships should continue to use CauseBase relationship semantics rather than being encoded only as ethos prose. `part_of`, `operates_as`, `program_of` or another approved relationship may provide stronger evidence than a descriptive label alone.
+Formal relationships should continue to use CharityGraph relationship semantics rather than being encoded only as ethos prose. `part_of`, `operates_as`, `program_of` or another approved relationship may provide stronger evidence than a descriptive label alone.
 
 ## 5. Ethos model
 
@@ -150,7 +150,7 @@ Avoid premature ontology design. A useful candidate representation is:
 - `observation_role`;
 - `scope`;
 - source and evidence reference;
-- claim basis, extraction method and derivation/inference method under the existing CauseBase contract;
+- claim basis, extraction method and derivation/inference method under the existing CharityGraph contract;
 - time/effective period where relevant;
 - qualification or disagreement metadata where needed.
 
@@ -184,11 +184,11 @@ A projection is a view over observations, not an independently authored truth fi
 
 **Historical archives and authoritative institutional histories** — useful where current identity differs from founding or historical orientation.
 
-CauseBase should preserve source role rather than silently applying a universal source-precedence rule.
+CharityGraph should preserve source role rather than silently applying a universal source-precedence rule.
 
 ### 6.2 Self-description is evidence, not editorial control
 
-A charity is authoritative for “we describe ourselves as X”, but not necessarily for “the organisation is best characterised as X”. CauseBase can retain both self-description and independent characterisation. Material differences are useful information and should not automatically be resolved into a winner.
+A charity is authoritative for “we describe ourselves as X”, but not necessarily for “the organisation is best characterised as X”. CharityGraph can retain both self-description and independent characterisation. Material differences are useful information and should not automatically be resolved into a winner.
 
 ### 6.3 Prohibited inference
 
@@ -206,11 +206,11 @@ Do not infer organisational ethos solely from:
 - attendance by a staff member at an event;
 - a beneficiary group associated with a religion, ethnicity, ideology or political cause.
 
-CauseBase should structure institutional evidence, not profile people or reverse-engineer ideology from demographic proxies.
+CharityGraph should structure institutional evidence, not profile people or reverse-engineer ideology from demographic proxies.
 
 ### 6.4 External characterisation and disagreement
 
-An external characterisation should be attributable. Where robust sources materially disagree, CauseBase should preserve the disagreement rather than manufacture consensus.
+An external characterisation should be attributable. Where robust sources materially disagree, CharityGraph should preserve the disagreement rather than manufacture consensus.
 
 A compact projection may say “self-described as X; independently described as Y” when that distinction is both material and well sourced.
 
@@ -238,7 +238,7 @@ This list is a candidate taxonomy, not an approved public enumeration.
 
 ### 7.2 Neutrality
 
-CauseBase records a notable fact without translating it into a performance judgement.
+CharityGraph records a notable fact without translating it into a performance judgement.
 
 - “Recipient of X Award, 2024” is context; “award-winning/high-quality charity” is evaluation.
 - “Named in the findings of Y inquiry” is context; “scandal-prone charity” is evaluation.
@@ -248,7 +248,7 @@ Positive and negative events use the same structural treatment. The construct sh
 
 ### 7.3 Time and status
 
-Notable context is often historical. Observations should retain event/effective time separately from retrieval and CauseBase representation time.
+Notable context is often historical. Observations should retain event/effective time separately from retrieval and CharityGraph representation time.
 
 Where a fact has a procedural status or outcome, preserve it. “Investigated”, “charged”, “found to have breached”, “cleared”, “apologised”, “award announced” and “award received” are not interchangeable claims.
 
@@ -256,7 +256,7 @@ Where a fact has a procedural status or outcome, preserve it. “Investigated”
 
 Relationships to notable people may be useful, but the connection must itself be material and evidence-bound. A famous founder, patron, chair or campaigner can be relevant; incidental contact should not be promoted.
 
-Contentious statements about living people require heightened sourcing discipline. CauseBase should not use a charity card as an indirect way to republish poorly sourced allegations about an individual.
+Contentious statements about living people require heightened sourcing discipline. CharityGraph should not use a charity card as an indirect way to republish poorly sourced allegations about an individual.
 
 ## 8. Wikipedia as an editorial filter for Notability
 
@@ -266,7 +266,7 @@ The shorthand “did it survive the Wikipedia article?” is useful, but should 
 
 On English Wikipedia, formal notability mainly decides whether a **topic warrants a standalone article**. Individual article content is governed by verifiability, reliable sourcing, neutral point of view, due weight and related content policies.
 
-The relevant CauseBase signal is therefore:
+The relevant CharityGraph signal is therefore:
 
 > a fact has survived Wikipedia’s public editorial process under verifiability, reliable-sourcing, neutral-point-of-view and due-weight norms.
 
@@ -274,17 +274,17 @@ This is a pragmatic external editorial admission signal, not a claim that Wikipe
 
 ### 8.2 Initial admission rule
 
-For the first Wikipedia-derived Notability pilot, a contextual fact is eligible to become a **CauseBase review candidate** when:
+For the first Wikipedia-derived Notability pilot, a contextual fact is eligible to become a **CharityGraph review candidate** when:
 
 1. it appears as substantive article content in the relevant current or revision-pinned Wikipedia article/section;
-2. it is materially about the CauseBase subject, its explicitly related parent/network, or a scoped historical predecessor/successor;
+2. it is materially about the CharityGraph subject, its explicitly related parent/network, or a scoped historical predecessor/successor;
 3. it is not merely navigation, an infobox artefact, list-like directory entry or incidental mention;
-4. it has an inline citation where the claim is contentious or otherwise requires one, or CauseBase can follow the article’s citation graph to adequate supporting evidence;
-5. CauseBase can represent the fact neutrally without collapsing material qualification.
+4. it has an inline citation where the claim is contentious or otherwise requires one, or CharityGraph can follow the article’s citation graph to adequate supporting evidence;
+5. CharityGraph can represent the fact neutrally without collapsing material qualification.
 
-This deliberately outsources the first relevance/noteworthiness filter to Wikipedia rather than asking CauseBase to invent award-prestige or controversy-significance rules before seeing the data.
+This deliberately outsources the first relevance/noteworthiness filter to Wikipedia rather than asking CharityGraph to invent award-prestige or controversy-significance rules before seeing the data.
 
-### 8.3 What Wikipedia does not buy CauseBase
+### 8.3 What Wikipedia does not buy CharityGraph
 
 Wikipedia’s editorial process does **not** mean:
 
@@ -293,8 +293,8 @@ Wikipedia’s editorial process does **not** mean:
 - every cited source is equally strong for every claim;
 - absence from Wikipedia is meaningful;
 - article text may be copied without licensing/attribution consideration;
-- CauseBase can skip subject/scope resolution;
-- CauseBase should publish current vandalism or an unstable claim immediately.
+- CharityGraph can skip subject/scope resolution;
+- CharityGraph should publish current vandalism or an unstable claim immediately.
 
 ### 8.4 Revision provenance
 
@@ -306,24 +306,24 @@ For every Wikipedia-derived candidate retain, privately or publicly as appropria
 - section/anchor or equivalent locator;
 - concise source excerpt or evidence locator subject to rights policy;
 - inline citation(s) associated with the claim where available;
-- CauseBase subject/scope decision;
+- CharityGraph subject/scope decision;
 - whether Wikipedia is the supporting source or only the discovery source.
 
 ### 8.5 Prefer underlying citation where practical
 
 Preferred provenance chain:
 
-> Wikipedia revision → discovery lead → underlying inquiry/report/news/award source → CauseBase contextual observation
+> Wikipedia revision → discovery lead → underlying inquiry/report/news/award source → CharityGraph contextual observation
 
-Where CauseBase independently acquires adequate underlying evidence, that source should normally become the observation evidence and Wikipedia should remain recorded as a discovery path.
+Where CharityGraph independently acquires adequate underlying evidence, that source should normally become the observation evidence and Wikipedia should remain recorded as a discovery path.
 
-Where Wikipedia itself remains the practical secondary synthesis, CauseBase may retain it explicitly as a community-edited secondary source, with revision provenance and appropriate attribution.
+Where Wikipedia itself remains the practical secondary synthesis, CharityGraph may retain it explicitly as a community-edited secondary source, with revision provenance and appropriate attribution.
 
 ### 8.6 Circular provenance guardrail
 
-A Wikipedia-derived observation must not later be offered back to Wikipedia as independent confirmation merely because it appears on CauseBase.
+A Wikipedia-derived observation must not later be offered back to Wikipedia as independent confirmation merely because it appears on CharityGraph.
 
-If Wikipedia led CauseBase to a Royal Commission report, CauseBase can offer the **Royal Commission report** to a future Wikimedia editor. It should not offer “CauseBase says X” as independent evidence when CauseBase learned X from Wikipedia.
+If Wikipedia led CharityGraph to a Royal Commission report, CharityGraph can offer the **Royal Commission report** to a future Wikimedia editor. It should not offer “CharityGraph says X” as independent evidence when CharityGraph learned X from Wikipedia.
 
 ## 9. Wikipedia/Wikidata discovery and identity
 
@@ -334,20 +334,20 @@ The existing 120-card spike found seven exact Wikidata ABN matches and two Engli
 A proper follow-up should measure at least:
 
 1. exact identifier-linked Wikimedia coverage;
-2. high-confidence corroborated candidate linkage after the CauseBase subject is already independently known;
+2. high-confidence corroborated candidate linkage after the CharityGraph subject is already independently known;
 3. contextual yield on charities likely to be of user interest.
 
 ### 9.2 Candidate discovery may be fuzzy; identity binding may not
 
-CauseBase may search Wikipedia/Wikidata using legal names, operating/trading names, former names and aliases, official website/domain, known parent/network names, geographic context and independently established relationships.
+CharityGraph may search Wikipedia/Wikidata using legal names, operating/trading names, former names and aliases, official website/domain, known parent/network names, geographic context and independently established relationships.
 
-These are valid candidate-generation mechanisms. They do not, by themselves, authorise CauseBase identity resolution. Ambiguity remains ambiguity.
+These are valid candidate-generation mechanisms. They do not, by themselves, authorise CharityGraph identity resolution. Ambiguity remains ambiguity.
 
 ### 9.3 Global brand and Australian entity
 
 Useful Wikipedia context may live in a dedicated Australian article, an Australian subsection of a global article, the global article’s history/organisation sections, or an article about a predecessor, movement or network.
 
-CauseBase must preserve scope explicitly. A scandal, award or political position of a global parent is not automatically an observation about the Australian legal entity. It may be useful as `related_parent_or_network` context if the relationship is independently established and the rendering makes scope clear.
+CharityGraph must preserve scope explicitly. A scandal, award or political position of a global parent is not automatically an observation about the Australian legal entity. It may be useful as `related_parent_or_network` context if the relationship is independently established and the rendering makes scope clear.
 
 ## 10. Coverage semantics
 
@@ -361,7 +361,7 @@ Failure to find an explicit ethos statement does not prove that an organisation 
 
 A negative descriptor such as “secular” should be published only when it is itself supported, not inferred from failure to find a religious affiliation.
 
-Both constructs should reuse existing CauseBase coverage states such as `observed`, `not_found_in_source`, `not_available_from_source`, `not_yet_processed`, `retrieval_failed`, `stale` and `unknown` as appropriate.
+Both constructs should reuse existing CharityGraph coverage states such as `observed`, `not_found_in_source`, `not_available_from_source`, `not_yet_processed`, `retrieval_failed`, `stale` and `unknown` as appropriate.
 
 ## 11. Representation and progressive disclosure
 
@@ -399,7 +399,7 @@ Preserve more than the Viewer projection:
 - coverage/freshness;
 - lineage sufficient to prevent citation laundering.
 
-Reuse existing CauseBase observation/evidence primitives rather than inventing a parallel provenance system.
+Reuse existing CharityGraph observation/evidence primitives rather than inventing a parallel provenance system.
 
 ### 11.3 Agent projection
 
@@ -407,10 +407,10 @@ The 5–30 word compression is particularly valuable for agents. A general-purpo
 
 ## 12. Licensing and source rights
 
-Wikipedia article prose is CC BY-SA. CauseBase should avoid unnecessary prose copying. Preferred pattern:
+Wikipedia article prose is CC BY-SA. CharityGraph should avoid unnecessary prose copying. Preferred pattern:
 
 - extract the underlying fact/relationship/event;
-- write CauseBase-neutral concise rendering;
+- write CharityGraph-neutral concise rendering;
 - retain Wikipedia revision attribution where Wikipedia is a source;
 - follow and cite the underlying source where practical;
 - preserve upstream licensing obligations.
@@ -419,7 +419,7 @@ Wikidata structured data remains useful for identifiers, aliases, relationships 
 
 ## 13. Reciprocal Wikimedia relationship
 
-### 13.1 Wikimedia → CauseBase
+### 13.1 Wikimedia → CharityGraph
 
 Potential value:
 
@@ -430,18 +430,18 @@ Potential value:
 - external descriptions of ethos;
 - discovery of scrutiny, recognition, people and events.
 
-### 13.2 CauseBase → Wikimedia
+### 13.2 CharityGraph → Wikimedia
 
 Potential future value:
 
-- stable CauseBase external identifier in Wikidata;
+- stable CharityGraph external identifier in Wikidata;
 - citation-ready regulator and annual-report facts;
 - longitudinal structured financial/regulatory observations;
 - stable identity crosswalks;
 - evidence packets for improving weak/stub charity articles;
 - source discovery for information otherwise buried in annual reports and government records.
 
-CauseBase should first be useful as structured research and citation-routing infrastructure. Becoming a source cited in its own right is something to earn through transparent methods, stability, correction governance and demonstrated reliability.
+CharityGraph should first be useful as structured research and citation-routing infrastructure. Becoming a source cited in its own right is something to earn through transparent methods, stability, correction governance and demonstrated reliability.
 
 A future Wikimedia-export path must exclude circularly sourced claims or point through to their independent underlying evidence.
 
@@ -467,7 +467,7 @@ Use roughly 30–50 deliberately selected organisations covering:
 - organisations with no useful Wikipedia presence;
 - small/local controls to test the meaninglessness of Wikimedia absence.
 
-Selection is an evaluation strategy, not a public CauseBase ranking of “important charities”.
+Selection is an evaluation strategy, not a public CharityGraph ranking of “important charities”.
 
 ### 14.2 Ethos review questions
 
@@ -556,7 +556,7 @@ Expected result: preserve exact procedural/status language and source scope. Do 
 
 Expected result: no negative conclusion. Ethos may still be well observed from primary/formal sources; Notability coverage remains a source-coverage statement only.
 
-## 16. Interaction with existing CauseBase principles
+## 16. Interaction with existing CharityGraph principles
 
 This design should extend, not bypass, existing product rules:
 
@@ -565,7 +565,7 @@ This design should extend, not bypass, existing product rules:
 - **Extract broadly, canonicalise selectively:** retain raw/source-native descriptors and selectively project them.
 - **Claim basis is separate from extraction:** a Wikipedia sentence recovered by parser/LLM does not determine whether the resulting claim is direct, inferred or derived.
 - **Coverage is not a negative claim:** missing ethos/notability evidence cannot imply secularism, good reputation or obscurity.
-- **Identity is independent of source records:** Wikipedia/Wikidata candidates cannot mint or resolve a CauseBase subject by name alone.
+- **Identity is independent of source records:** Wikipedia/Wikidata candidates cannot mint or resolve a CharityGraph subject by name alone.
 - **Viewer is an epistemic interface:** no reputation dashboard, prestige badge or red/green controversy treatment.
 - **Agents are first-class consumers:** both constructs need compact structured representations with provenance.
 
@@ -600,7 +600,7 @@ This design can be advanced largely without Codex credits.
 5. Develop candidate observation/projection examples against the existing v0.5 contract.
 6. Resolve the open schema and publication-policy questions above.
 7. Update this document as decisions settle.
-8. Once approved, propagate accepted decisions into canonical CauseBase documents in one consolidation pass.
+8. Once approved, propagate accepted decisions into canonical CharityGraph documents in one consolidation pass.
 
 ### Later Codex implementation work
 
@@ -610,7 +610,7 @@ The first implementation should remain review-only. It must not mutate the immut
 
 ## 19. Candidate acceptance tests for the design
 
-Before treating Ethos and Notability v1 as implementation-ready, the design should demonstrate that CauseBase can answer these two questions across awkward real cases:
+Before treating Ethos and Notability v1 as implementation-ready, the design should demonstrate that CharityGraph can answer these two questions across awkward real cases:
 
 > **Ethos:** “What worldview, tradition or institutional orientation characterises this organisation, and does it materially affect the way its services or mission operate?”
 
@@ -639,4 +639,4 @@ The Wikipedia-specific design should be checked against the then-current English
 - `Wikipedia:Reliable sources`
 - `Wikipedia:Neutral point of view`
 
-These are inputs to CauseBase’s policy design, not delegated governance. CauseBase remains responsible for identity, scope, provenance, licensing, public rendering and correction behaviour.
+These are inputs to CharityGraph’s policy design, not delegated governance. CharityGraph remains responsible for identity, scope, provenance, licensing, public rendering and correction behaviour.

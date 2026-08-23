@@ -1,5 +1,7 @@
 # RC3 release-gate evidence
 
+> **Authority status:** Historical release-gate evidence. It records RC3 only and does not govern the current product or release.
+
 Candidate: `phase2b-2026-08-13-rc3`.
 
 ## Automated gates

@@ -3,17 +3,17 @@ I’ve drafted it as an implementation-oriented product/design document, grounde
 The file-generation runtime is currently erroring even on trivial writes, so I can’t give you a reliable sandbox attachment this turn. Save the following verbatim as **`FUNDRAISING_KNOWLEDGE_DESIGN.md`** in the Codex directory:
 
 ````markdown
-# CauseBase Fundraising Knowledge — Design and Population Plan
+# CharityGraph Fundraising Knowledge — Design and Population Plan
 
 **Status:** Working product design; implementation-ready for a bounded review-only pilot  
 **Updated:** 2026-08-21  
-**Scope:** CauseBase Data contract design + CauseBase Builder evidence/pipeline design
+**Scope:** CharityGraph Data contract design + CharityGraph Builder evidence/pipeline design
 
 ## 0. How Codex should use this document
 
 This is a **product/design instruction**, not an invitation to rediscover the product semantics.
 
-Before implementing it, read the canonical shared CauseBase documents in `CauseBase-Data`:
+Before implementing it, read the canonical shared CharityGraph documents in `CharityGraph-Data`:
 
 - `PRODUCT.md`
 - `PRINCIPLES.md`
@@ -25,7 +25,7 @@ Before implementing it, read the canonical shared CauseBase documents in `CauseB
 - `PUBLIC_SCHEMA_VNEXT_SPEC.md`
 - `PUBLIC_CONTRACT_CONSOLIDATION_PROPOSAL.md`
 
-Then inspect the current CauseBase Builder implementation, especially:
+Then inspect the current CharityGraph Builder implementation, especially:
 
 - `src/causebase_builder/models.py`
 - `src/causebase_builder/v05/models.py`
@@ -38,7 +38,7 @@ Then inspect the current CauseBase Builder implementation, especially:
 
 Where old Builder documentation conflicts with the current Data contract, **the current Data contract wins**.
 
-In particular, old Builder material still contains obsolete instructions that fundraising expenditure must never be blank and that a fallback prior may be used. That is superseded. Current CauseBase policy permits `null`/unavailable when no defensible measurement or bound exists and explicitly prohibits a universal fallback prior.
+In particular, old Builder material still contains obsolete instructions that fundraising expenditure must never be blank and that a fallback prior may be used. That is superseded. Current CharityGraph policy permits `null`/unavailable when no defensible measurement or bound exists and explicitly prohibits a universal fallback prior.
 
 Do not mutate the immutable public release `releases/v0.5.0-2026-08-15`.
 
@@ -48,7 +48,7 @@ The first implementation of this design is **review-only**. It should produce pr
 
 # 1. Product objective
 
-CauseBase should make public fundraising information legible as a structured, longitudinal description of a charity's fundraising operating model.
+CharityGraph should make public fundraising information legible as a structured, longitudinal description of a charity's fundraising operating model.
 
 A user should be able to ask:
 
@@ -58,23 +58,23 @@ A user should be able to ask:
 - What public evidence supports those observations?
 - When were those practices or campaigns active?
 - What public evidence exists about fundraising expenditure?
-- Which public sources did CauseBase actually assess when it found nothing?
+- Which public sources did CharityGraph actually assess when it found nothing?
 
 The acceptance test is:
 
-> **Can a competent analyst understand or compare charities' fundraising approaches from CauseBase without re-scraping all the underlying source documents?**
+> **Can a competent analyst understand or compare charities' fundraising approaches from CharityGraph without re-scraping all the underlying source documents?**
 
 This is useful to donors, researchers, journalists, charity advisers, charities, sector analysts and general-purpose AI agents.
 
 Commercial users such as fundraising consultants may derive substantial value from the data. That is acceptable and desirable where it results from reuse of general-purpose public infrastructure.
 
-CauseBase should not build their consulting recommendations, prospect scores or proprietary analytics for them.
+CharityGraph should not build their consulting recommendations, prospect scores or proprietary analytics for them.
 
 ---
 
 # 2. Product boundary
 
-CauseBase may publish:
+CharityGraph may publish:
 
 - directly disclosed fundraising practices;
 - directly disclosed fundraising campaigns or activities;
@@ -87,7 +87,7 @@ CauseBase may publish:
 - longitudinal practice/campaign observations;
 - evidence and provenance.
 
-CauseBase must not publish or infer:
+CharityGraph must not publish or infer:
 
 - fundraising ROI;
 - cost to raise $1;
@@ -101,9 +101,9 @@ CauseBase must not publish or infer:
 - charity fundraising rankings;
 - "good fundraiser" / "poor fundraiser" labels;
 - consultant prospect scores;
-- claims that a practice does not exist merely because CauseBase did not observe it.
+- claims that a practice does not exist merely because CharityGraph did not observe it.
 
-Downstream products may combine CauseBase observations into evaluative or commercial analyses under their own methodology, assumptions, disclosures and branding.
+Downstream products may combine CharityGraph observations into evaluative or commercial analyses under their own methodology, assumptions, disclosures and branding.
 
 ---
 
@@ -186,7 +186,7 @@ Therefore a fundraising passage cannot currently become a fundraising-knowledge 
 
 The block classifier is also effectively mutually exclusive. Once a block matches a domain, processing stops.
 
-That is wrong for CauseBase evidence semantics.
+That is wrong for CharityGraph evidence semantics.
 
 For example:
 
@@ -232,7 +232,7 @@ Old Builder `PROVENANCE_AND_ESTIMATION.md` and `AGENTS.md` also preserve superse
 - blank is unacceptable;
 - a fallback prior is permitted.
 
-This contradicts the current CauseBase contract.
+This contradicts the current CharityGraph contract.
 
 Before scale:
 
@@ -307,7 +307,7 @@ Candidate `practice_kind` values:
 
 This facet exists to avoid putting channels, programs and mechanisms on the same conceptual level. It is not intended as a grand universal fundraising ontology.
 
-Preserve source wording separately from the CauseBase mapping.
+Preserve source wording separately from the CharityGraph mapping.
 
 For example:
 
@@ -317,7 +317,7 @@ may map to:
 
 > `fundraising.telephone`
 
-but CauseBase retains the source phrase and provenance.
+but CharityGraph retains the source phrase and provenance.
 
 If mapping is uncertain, keep an unmapped/review state rather than forcing a term.
 
@@ -528,19 +528,19 @@ Do not infer delivery relationships from logos or generic partner pages.
 
 # 7. Vocabulary strategy
 
-Apply the existing CauseBase principle:
+Apply the existing CharityGraph principle:
 
 > **Extract broadly; canonicalise selectively.**
 
 Preserve three layers:
 
 1. source-native phrase;
-2. small CauseBase canonical fundraising term where defensible;
+2. small CharityGraph canonical fundraising term where defensible;
 3. unmapped or ambiguous review state.
 
 Do not force everything into `other` for the sake of 100% categorical coverage.
 
-Treat fundraising vocabulary as distinct from the main CauseBase cause/activity taxonomy. It can still have stable term IDs and versioning.
+Treat fundraising vocabulary as distinct from the main CharityGraph cause/activity taxonomy. It can still have stable term IDs and versioning.
 
 The 30–50-case pilot should determine the minimum useful vocabulary.
 
@@ -647,7 +647,7 @@ Do not silently reconcile it to AIS donation income or a financial statement.
 
 ## 8.6 Campaign donor count is not CRM analytics
 
-CauseBase may report:
+CharityGraph may report:
 
 > Organisation states that 1,000 donors participated.
 
@@ -674,7 +674,7 @@ Expected:
 
 ## 8.8 Provider relationship does not imply effectiveness
 
-CauseBase may record an explicitly disclosed external fundraising provider.
+CharityGraph may record an explicitly disclosed external fundraising provider.
 
 No judgement about effectiveness, value or cost follows.
 
@@ -682,7 +682,7 @@ No judgement about effectiveness, value or cost follows.
 
 # 9. Coverage needs assessment scope
 
-`not_found_in_source` is useful only if the consumer knows what CauseBase actually inspected.
+`not_found_in_source` is useful only if the consumer knows what CharityGraph actually inspected.
 
 Compare:
 
@@ -727,7 +727,7 @@ Candidate:
 }
 ```
 
-This should be designed as a general CauseBase primitive, because it will also be useful for Ethos and Notability.
+This should be designed as a general CharityGraph primitive, because it will also be useful for Ethos and Notability.
 
 The rendering rule is strict:
 
@@ -742,7 +742,7 @@ Never render it as:
 
 A downstream commercial user can choose to treat "not publicly observed in assessed sources" as a prospecting signal.
 
-CauseBase does not convert that into a claim of absence.
+CharityGraph does not convert that into a claim of absence.
 
 Evaluate separate capabilities:
 
@@ -958,7 +958,7 @@ All semantic output remains review-only until the product gate is passed.
 
 # 13. Keep four fundraising domains distinct
 
-CauseBase should model separately:
+CharityGraph should model separately:
 
 1. **Funding sources** — where money comes from.
 2. **Fundraising practices** — standing ways money is sought.
@@ -975,7 +975,7 @@ A card might validly say:
 * 2025 Giving Day observed;
 * fundraising allocation = 10%.
 
-CauseBase must not conclude:
+CharityGraph must not conclude:
 
 > The 10% fundraising spend generated the 42% donation income.
 
@@ -1045,7 +1045,7 @@ Include:
 * ambiguous marketing/fundraising costs;
 * organisations where no method is publicly observed.
 
-Prefer existing CauseBase subjects where practical.
+Prefer existing CharityGraph subjects where practical.
 
 ---
 
@@ -1256,7 +1256,7 @@ The next contract should be prepared to consider:
 * explicit practice time/status;
 * campaign-result observations distinct from canonical financial metrics.
 
-Reuse existing CauseBase observation/evidence primitives.
+Reuse existing CharityGraph observation/evidence primitives.
 
 Do not create a parallel provenance architecture.
 
@@ -1528,7 +1528,7 @@ Do not stop with local-only validated changes when implementation is authorised.
 
 # 27. Design rationale
 
-> **CauseBase should describe fundraising as a longitudinal, evidence-bound operating model — funding sources, standing practices, identifiable campaigns and fundraising expenditure — while leaving effectiveness, causal economics and commercial recommendations to downstream users.**
+> **CharityGraph should describe fundraising as a longitudinal, evidence-bound operating model — funding sources, standing practices, identifiable campaigns and fundraising expenditure — while leaving effectiveness, causal economics and commercial recommendations to downstream users.**
 
 ```
 

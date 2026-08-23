@@ -1,39 +1,128 @@
-# CauseBase End-to-End Experiences
+# CharityGraph End-to-End Experiences
 
-**Status:** Canonical shared CauseBase product contract  
-**Version:** 0.1-draft
+**Status:** Canonical shared product contract  
+**Version:** 1.1-draft  
+**Date:** 2026-08-23
 
-## Discover
+## 1. Common experience
 
-A person or agent should quickly identify CauseBase’s purpose, non-goals, licence, current release, schemas, provenance conventions, correction path and available artefacts.
+A person, analyst, software system or AI assistant should be able to:
 
-## Find and inspect
+1. discover CharityGraph's purpose, coverage, licence, current release and non-goals;
+2. identify the relevant organisations, programs or services;
+3. inspect structured observations, source roles, evidence, time, coverage and whether a method was mechanical, model-assisted or human-reviewed;
+4. retrieve one subject or a defensible bulk cohort;
+5. distinguish source-native data, governed observations and derived projections;
+6. cite the release and evidence;
+7. challenge a material error or stale interpretation.
 
-Viewer provides understandable search and filters over the public index. Selecting a result presents a CauseBase Card with identity, external identifiers, neutral summary, self-description, activities, beneficiaries, geography, participation, opportunities/freshness, financials, estimates, taxonomies, evidence and release metadata.
+The Viewer, machine representations and bulk formats are channels into the same released knowledge. None independently authors it.
 
-## Explore
+## 2. Anchor experience: analyst or consultant
 
-Text/faceted retrieval and, once real enriched-card embeddings exist, semantic neighbours/search help users navigate the information space. Neither implies that a result is better or should be supported.
+An analyst starts with a question such as:
 
-## Correct
+> Which organisations and programs provide family-violence services in regional Victoria, for whom, through what interventions, and with what public evidence about scale, funding and operating relationships?
 
-A user can challenge a material field without re-entering subject, field, current value or release. First launch uses private, traceable intake. Later, moderated public proposal records show appropriate status, decisions and incorporated releases.
+They can:
 
-## Reuse
+- define a cohort using cause, beneficiary, intervention, geography, subject kind, program/service and status;
+- inspect whether geography means registration, office, service delivery, beneficiary or program reach;
+- retrieve source-native regulator and financial observations without losing labels, periods or scope;
+- distinguish organisations, legal entities, groups and programs;
+- include participation, fundraising, ethos or notable context where relevant;
+- see missing capability and assessment scope instead of interpreting empty fields as negatives;
+- export versioned analytical data and follow any observation back to evidence;
+- apply their own demand, effectiveness, recommendation or commercial methodology downstream.
 
-Researchers, developers and agents can retrieve a release manifest, compact index, individual JSON/Markdown cards, taxonomies and analytical formats. They can cite versions and provenance without downloading the whole corpus when they need one subject.
+CharityGraph removes repetitive integration and evidence work. It does not replace analytical judgement.
 
-## Downstream use
+The analyst should encounter broad, consistently attempted coverage—not a tiny legally pristine subset. A model-interpreted observation is acceptable when its evidence, method, uncertainty and policy status are inspectable. Empty fields distinguish genuine public-evidence absence from retrieval, processing or budget limits.
 
-Downstream experiences may apply their own preferences, ranking, recommendation and transaction logic. CauseBase supplies inspectable evidence and structure, not those value judgments.
+## 3. Funder experience
 
-## Intent × channel × scale
+A funder can discover and inspect unfamiliar organisations beyond the most recognised brands. They can compare a shortlist on evidence-backed dimensions without CharityGraph declaring a winner.
 
-| Intent | Viewer/web | Consumer LLM | Analytical tools | Product integration |
+They can understand:
+
+- legal and regulatory identity;
+- causes, beneficiaries, activities and interventions;
+- program designation and geography;
+- financial, funding and fundraising context;
+- organisational ethos and service orientation;
+- relevant notable context;
+- evidence freshness, uncertainty and coverage.
+
+## 4. Consumer-LLM and personal-agent experience
+
+A general-purpose LLM can discover CharityGraph through crawlable pages and retrieve compact JSON or Markdown without specialised training.
+
+A downstream personal agent can apply a principal's mandate to CharityGraph ingredients. For example, it may distinguish a core environmental organisation, an animal-welfare organisation with material environmental work and a designated habitat-restoration program.
+
+CharityGraph supplies primary purpose, centrality, program scope, intervention, geography, ethos, notable context and evidence. The downstream agent owns the mandate, adjacency rules, exclusions, matching percentages, budget, action and personalised explanation.
+
+## 5. Product-builder experience
+
+A product builder can:
+
+- select a named immutable release;
+- retrieve schemas, manifests, capability definitions and migration notes;
+- use stable subject representations and bulk formats;
+- identify provenance, freshness, corrections and compatibility boundaries;
+- build recommendation, transaction or specialised analysis under their own methodology and branding.
+
+Static artefacts remain independently useful. An API or MCP service is an optional delivery improvement, not a prerequisite for reuse.
+
+## 6. Charity and adviser experience
+
+A charity can inspect its identity, programs, public descriptions, financial observations, participation, fundraising, classifications and contextual observations.
+
+It can:
+
+- follow evidence and source roles;
+- distinguish organisation voice from CharityGraph synthesis and independent context;
+- provide an attributed current self-description;
+- challenge facts, scope, identity, classification or staleness without re-entering the release context;
+- receive a traceable proposal identifier;
+- see governed public status and incorporated release where publication is appropriate.
+
+A challenge to sensitive context receives expedited re-review. Supported public evidence is not subject to an organisational veto.
+
+## 7. Public Viewer experience
+
+The Viewer supports search, filters, direct subject routes and evidence inspection. A selected subject may show:
+
+- identity and relationships;
+- neutral summary and attributed self-description;
+- activities, beneficiaries, programs/services and geography;
+- participation modes and current opportunities;
+- financial, funding and fundraising observations;
+- multiple taxonomies;
+- ethos, service orientation and notable context where governed;
+- coverage, freshness, evidence and release metadata.
+
+Semantic neighbours and search are descriptive navigation. The Viewer avoids emotional persuasion, hero marketing, donation conversion, ratings, winners and gamification.
+
+## 8. Participation experience
+
+A user can see stable ways to engage—donating, volunteering, membership, working bees, public events or governance roles—and separately inspect current opportunities.
+
+Action destinations are verified and distinct from evidence links. Transient opportunities show dates, status, first/last observation and freshness. CharityGraph does not broker, allocate or guarantee participation.
+
+## 9. Intent × channel × scale
+
+| User intent | Viewer/web | Consumer LLM | Analytical tools | Product integration |
 | --- | --- | --- | --- | --- |
-| Funder | Inspect one organisation or compare a shortlist | Ask a realistic funding question and receive evidence-grounded synthesis | Compare a portfolio | Bring charity intelligence into a giving workflow |
-| Product builder | Inspect/reference contract behaviour | Validate downstream LLM behaviour | Explore data quality/corpus shape | Consume JSON, bulk data or future API access |
-| Researcher/analyst | Inspect records and provenance | Research with public evidence | Analyse sector, geography and ecosystem/corpus patterns | Reuse governed datasets |
-| Charity | Inspect and contest its representation | Understand how public data may be interpreted | Review/export its data | Integrate correction/release workflows |
+| Analyst/consultant | Inspect records and exceptions | Accelerate sourced research | Build cohorts, comparisons and ecosystem maps | Reuse governed data in client or public workflows |
+| Funder | Inspect a subject or shortlist | Ask evidence-grounded discovery and diligence questions | Compare a portfolio | Supply a downstream giving or mandate workflow |
+| Product builder | Inspect contract behaviour | Test downstream assistant behaviour | Explore corpus quality and economics | Consume JSON, bulk releases or future services |
+| Charity/adviser | Inspect and contest representation | Understand likely machine interpretation | Review/export its observations | Integrate corrections and release changes |
+| Public user | Discover and understand | Ask general charity questions | Download public tables | Follow stable links and citations |
 
-Organisation, portfolio/comparison and ecosystem/corpus are independent scales. Funder × consumer LLM is a first-order experience across all three: it can support discovery and ecosystem questions (for example, “Who works on X in Y?”), shortlist and portfolio comparison, and organisation-level evidence and diligence. The intended flow is funder question → consumer LLM → corpus-level CauseBase discovery → shortlist/comparison → organisation evidence/diligence. CauseBase supplies grounded evidence and never makes a value-sensitive recommendation; the Viewer remains the reference, debugging and inspection surface.
+## 10. Acceptance experience
+
+Across all channels, CharityGraph succeeds when a user can answer:
+
+> Who works on X for Y in Z, through which programs and interventions; how are they structured, resourced and raising money; what context matters; and what does CharityGraph know, not know and base that on?
+
+The answer must remain useful without becoming a recommendation.

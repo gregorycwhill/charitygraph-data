@@ -1,129 +1,137 @@
-# CharityGraph — Codex to ChatGPT Handoff
+# CharityGraph — Codex Handoff: LLM Economics Documentation Amendment
 
-> Migration status: current work uses CharityGraph. References to CauseBase in retained handoff history identify the former working name or immutable legacy material only.
+**Status:** Active execution handoff  
+**Updated:** 2026-08-23  
+**Recommended Codex model:** Luna-High
 
-## Current handoff — read this first (2026-08-15)
+## 1. Task in one sentence
 
-- The live Viewer release is `v0.5.0-2026-08-15` (Viewer commit `c1fc831`), with 120 cards. GitHub Actions run `31856788408` passed its Viewer tests, selected the immutable Data release and deployed to `gh-pages`; the public site returned HTTP 200.
-- RC4 completed source-native financial-statement preservation, selective visual allocation extraction and the narrow Funding & fundraising projection. EJA's Donations, gifts & bequests projection is AUD 2,101,817 / 41.9% of total income, using only `Donations, Fundraisings, Lectures` and `Donations - Future Fund`; Fundraising is direct 10% of expenditure with an approximate AUD 585k implication.
-- The public-contract decision gate is closed in `PUBLIC_CONTRACT_CONSOLIDATION_PROPOSAL.md`: claim basis/extraction separation, capability coverage semantics, financial signs, source-payload policy, extensible capabilities, current-financial pointers, identity continuity, sparse summaries and derivative lineage are approved direction.
-- Public contract `0.5` is implemented: `PUBLIC_SCHEMA_VNEXT_SPEC.md` defines the object/release/observation/financial/coverage/privacy contract; `RC4_TO_VNEXT_COMPATIBILITY.md` records the completed RC4 migration; `schemas/vnext/` and `examples/vnext/` provide the release-owned capability registry and frozen cases. Builder’s `causebase_builder.v05` supplies the deterministic adapter, release assembly and validators; Viewer derives its browser index from the selected Data release.
-- Gate A is passed: immutable `releases/v0.5.0-2026-08-15` has 120 v0.5 cards, 228 public source sidecars, 349 manifest artefacts and passing schema, source-reference, losslessness and manifest-hash checks. It recovers only 20 uniquely matching geography values; it preserves all other unresolved material in public `legacy_unbound` with an RC4-card SHA-256. This includes 402 activities, 226 beneficiaries, 198 geography values, 573 classifications, one funding-source record, five fundraising-method records and 86 historical AIS records whose evidence IDs have no immutable RC4 sidecar. Legacy material does not make a capability observed. See `MIGRATION_V05_AUDIT.md`.
-- The Viewer v0.5 gate is also green and deployed: its generated browser index is derived directly from the selected Data release, all Viewer tests pass and all 228 source-record links resolve in the static bundle. The workflow explicitly checks out CauseBase Data and selects `v0.5.0-2026-08-15`.
-- Golden Corpus v1 is a 21-case governed manifest (seven hard-gold, fourteen review-required) without PDFs or private extraction outputs. The superseding six-component local ecosystem bake-off selected Document Pipeline v2.3: `pdfplumber` passes EJA P&L 33/33 and financial position 32/32 with source labels, values, comparatives, signs, order and hierarchy; local Tesseract recovers genuine low-text pages; and local vector colour/geometry passes EJA’s 4/4 page-29 chart association with legend/value bounding boxes. PyMuPDF is not adopted because of AGPL/commercial licensing; Docling remains excluded in this OneDrive path because of Windows path length. The computed Document Gate is **DECISIVE**. See DOCUMENT_EXTRACTION_ECOSYSTEM_REVIEW.md and DOCUMENT_EXTRACTION_STACK_DECISION.md.
-- The first bounded Evidence Engine v1 pilot is complete. It used retained private snapshots only for twelve selected website subjects, completed Document Pipeline v2.3 across all seven retained PDFs, and exercised all 21 Golden cases for identity and fundraising review. It produced 102 review-only web candidates with source selectors and freshness metadata; did not mint any subject; retained identity ambiguity for review; kept fundraising overlap additivity-blocked; and wrote no cards. See EVIDENCE_ENGINE_PILOT.md.
-- The technology spikes are closed: retain the dependency-free static Viewer (no framework migration); defer broad Wikimedia ingestion after a 120-subject ABN-first Wikidata test found only 7 exact matches and 2 English-Wikipedia links. Wikimedia may later be an attributed discovery/corroboration source, never identity authority.
-- Machine distribution was **RED** before remediation: robots blocked indexing and hash-only, JavaScript-rendered cards had no crawlable direct route. The validated static-discovery build emits canonical `/charity/<causebase_id>/` pages, JSON/Markdown alternates, source links, sitemap, permissive robots and a current-release pointer from the same pinned immutable v0.5 Data release. Consumer-LLM protocol exists; no project-aware session is represented as a naive consumer test. See AGENT_DATA_DISTRIBUTION_CONTRACT.md and CONSUMER_LLM_EVALUATION.md.
-- Viewer commit `f198335` deployed the discovery layer in successful workflow run `31862499938`. Live direct HTML, current-release, sitemap, robots, JSON and Markdown endpoints return HTTP 200 (the original unversioned Markdown URL may be briefly CDN-cached after deployment; the deployed branch and versioned URL verify the artefact). Data release `v0.5.0-2026-08-15` remains unchanged.
-- Knowledge Validation v1 minimum gate is complete: 22 approved human decisions were validated/scored; no domain is auto-promotable and the remaining 26 stratified cases are deferred. The active next phase is the private/review-only Semantic Enrichment Benchmark v1 (Steps 1–2 deterministic scaffold and fundraising-industry source arm); no public semantic release, schema change, corpus rebuild or Viewer change is authorised. See `SEMANTIC_ENRICHMENT_BENCHMARK_V1_IMPLEMENTATION_v2.md`.
+Update the existing Builder and Data product-documentation PRs so that cohort budgets, routine LLM use, Python cost orchestration, coverage-first acceptance, risk-weighted governance and the deferral of custom local NLP become controlling requirements throughout the active document set.
 
-# Historical and superseded handoffs — evidence only
+This is documentation-only. Do not implement code or run paid model calls.
 
-All sections below record prior candidates, releases and decisions. They are not current instructions: do not execute their deployment, approval, human-gate or “next increment” language. The current handoff above is authoritative.
+## 2. Existing branches and PRs
 
-**Historical handoff snapshot:** Updated: 2026-08-10 — Phase 1 complete
+- Builder branch `charitygraph-product-docs-vnext`, PR #3; current relevant tip includes `f38e208`.
+- Data branch `charitygraph-product-docs-vnext`, PR #2; current relevant tip includes `2ad7fe2`.
+- Viewer is out of scope.
 
-## Historical — Phase 2B RC2 human-review remediation (candidate; not deployed)
+Update the existing PRs. Do not create replacement PRs unless a branch is unavailable or protected, and report that blocker before proceeding.
 
-- Candidate: `phase2b-2026-08-12-rc2`, with the existing 120-card corpus only. Failed `phase2b-2026-08-12-rc1` is retained under Viewer `public/releases/`; h1 remains retained there too.
-- Editorial migration: all 120 summaries regenerated with `gpt-5-mini`, prompt `phase2b-rc2-1`, editorial policy `0.3-rc2`, and citation-ID output. Private cache telemetry: 327,726 input tokens, 222,747 output tokens, estimated USD 0.527423. Summary validity now treats evidence hash, prompt, editorial policy and output contract as governing inputs.
-- Viewer: fixed verified Google Forms entry IDs and `usp=pp_url`; card-wide stable `[n]` reference links; independently scrollable result and inspector panes; URL-persisted search/facets/selection; ABN, ACNC search-profile, website, JSON, Markdown and source-native links; always-visible Funding & fundraising states; controlled geography; CauseBase dimensions separated from ACNC classifications.
-- EJA golden card (`cb_604da7f26c6c48dd934e713edc493e9f`): natural reader-first summary with references; ABN and ACNC public links; Australia/Victoria navigation projection; source-native ACNC and AIS records; explicit funding-source `not_available_from_source` and fundraising-method `not_yet_processed` states. It does not merge EJA with Environmental Defenders Office.
-- Validation complete: Builder 55 tests; Viewer 11 tests; RC2 publication validation; static deployment-bundle preparation.
-- **Historical former release gate (superseded):** deploy the candidate through the then-existing validated manual workflow, then in a clean/incognito browser open EJA and use **Suggest correction**. Confirm the Form visibly contains the organisation, `cb_604da7f26c6c48dd934e713edc493e9f`, `phase2b-2026-08-12-rc2`, the exact card URL, `causebase_summary`, and the displayed summary. Also confirm the selected card remains visible while scrolling the left result list. Do not treat this as a current deployment instruction.
+## 3. Source packet and authority
 
-## Historical — Phase 2A completion handoff
+The supplied amendment packet contains complete replacement copies or patches for active files under `builder/` and `data/`. Its controlling new source is:
 
-## Historical — Phase 2A.1 human-test hardening (candidate, not yet deployed)
+- `data/LLM_ECONOMICS_AND_COHORT_POLICY.md`.
 
-## Historical — Taxonomy Review v0.1 (private decision package; no taxonomy change applied)
+Apply it with the current observation-first documentation already on the feature branches. Do not regress the complete approved Builder target architecture in `ARCHITECTURE.md`.
 
-- Baseline reviewed: `0.1-phase2a`, frozen at 7 dimensions and 23 terms. The review never mutates canonical taxonomy files, existing card classifications or Viewer data.
-- First review used the 120-card `phase2a-2026-08-10-h1` candidate. Taxonomy-blind Pass A excluded ACNC classifications/labels/mappings/cohort strata, current CauseBase assignments and organisation names. Pass B received the baseline only after independent discovery; ACNC comparison is post-hoc only.
-- Private package: 8 unapproved proposals (4 HIGH, 3 MEDIUM, 1 WATCH), a complete 23-term audit, deterministic frequency/co-occurrence/coverage diagnostics, definition and boundary profiles, migration analysis, and private API telemetry. The strongest diagnostics include `geography.local_or_regional` at high frequency and major co-occurrences for local geography/organisation, events/public-events and volunteer approach/participation.
-- At that time, human taxonomy governance was required for every HIGH proposal: approve, reject, defer/watch, request more evidence or modify. Any accepted material change would have required a new taxonomy version and explicitly governed affected-card reclassification; proposals were not applied automatically.
+Where the older `ENRICHMENT_ECONOMICS_DESIGN.md` conflicts, retain it as historical benchmark detail with the supplied supersession notice. Do not spend tokens line-editing all 1,200+ lines.
 
-- Historical deployed release remains `phase2a-2026-08-10`; hardening candidate is `phase2a-2026-08-10-h1`.
-- Fixed 86 duplicate coverage-capability presentations, blanket CauseBase-classification provenance, public OpenAI operational telemetry, sparse ACNC-classification-exclusion wording, currency-hardcoded financial display, misleading enriched badge and merged taxonomy headings.
-- Nine sparse/negative-wording cards were rerun with `gpt-5-mini` prompt `phase2a-0.5`: 12,500 input tokens, 9,556 output tokens, approximately USD 0.022 estimated synthesis cost. Nine changed embedding inputs were regenerated (1,386 input tokens); 111 vectors were reused.
-- New candidate diagnostics are clean for the targeted defects; 31 cards have no neighbour above the conservative threshold, which is retained as an honest semantic-coverage state rather than padded with weak links.
-- Private 30-case local review pack is ready. Google Forms intake is configured with supplied responder endpoint and six contextual prefill fields; the form owner confirmed private/reviewer handling. Human-test deployment is live at `https://gregorycwhill.github.io/CauseBase-Viewer/`: dataset `phase2a-2026-08-10-h1`, Viewer commit `a97b99951915a3c92a03da48352f94ad727db511`.
+## 4. Decisions that must survive integration
 
-- A validated 120-card governed enriched corpus candidate is staged in CauseBase Viewer. Each automatically promoted ACNC-authoritative subject has opaque CauseBase identity, valid ABN/source provenance and `subject_kind: unknown`; no group, legal-entity or brand inference was made.
-- Evidence: 82 observed websites; explicit failure/not-available coverage otherwise; five annual-report PDFs privately page-extracted (180 pages) with one acquisition failure retained. Reports, HTML snapshots, prompts and credentials are not public.
-- Synthesis: `gpt-5-mini-2025-08-07`, `phase2a-0.4`, content-addressed evidence cache and full provenance. Final summaries are 82–192 words (median 159); 78 are 150–220 words and eight remain short because selected evidence is sparse.
-- Taxonomy v0 implements cause/problem, beneficiary, activity, approach, participation, geography and organisational-character dimensions. ACNC labels remain attributed external classifications and are excluded from native taxonomy inference and semantic text.
-- Embeddings: `text-embedding-3-small`, 120 cards and 162 thresholded descriptive neighbours; never recommendation framing. No universal fundraising fallback was introduced; unavailable estimates remain explicit.
-- The approved design consolidation is recorded in `DESIGN_CONSOLIDATION_DECISIONS.md`. It separates Ethos from `service_or_mission_orientation`, uses `notable_context` for neutral contextual observations, forbids fundraising expenditure priors and peer-imputation fills, and approves fundraising-industry sources only as a bounded review-only experimental category. The four supporting designs and industry-source design are now copied verbatim into CauseBase Data. This does not change v0.5, public schemas, Viewer or corpus scope.
-- Evaluation: private `phase2a-eval-0.1` has 30 representative cases, including report and website-failure cases, ready for human reviewer assessment.
-- Viewer: generated cards, taxonomy, coverage, agent guide and semantic artefacts validate cleanly. Correction links support a configurable external intake with documented prefill fields; no live endpoint/form is configured.
-- Validation: Builder 42 passing tests; Viewer 3 passing tests; 120-card public candidate has zero allowlist/manifest/representation validation errors.
-- **Historical former next vertical increment (superseded):** complete human evaluation-rubric assessments, broaden report-page discovery, and configure the external correction endpoint before treating the release as operationally mature.
+### Cohort budgets
 
-## Historical — Phase 1 completion record
+- first 100 highest-total-donations charities: AUD 100 pooled total;
+- next 1,000: AUD 100 pooled total;
+- next 10,000: AUD 100 pooled total.
 
-- Built a reproducible national structured backbone from current ACNC Register, ACNC AIS and ABR/DGR sources.
-- Archived source files privately with retrieval metadata, hashes, URLs, publisher and licence records.
-- Normalised source records privately with stable source-record IDs independent of CauseBase subjects.
-- Produced a validated safe staging candidate containing only public registry entries, aggregate coverage metadata, schema and manifest.
+The budgets include text/vision extraction, judgement, classification, writing, embeddings, retries and escalations. Easy subjects may subsidise difficult ones inside a cohort. Cross-cohort transfers require explicit approval.
 
-## Historical — national corpus statistics
+Total donations is `donor_decision_exposure_proxy`: a processing-priority and assurance proxy only. It is not donor count, retail-donor count, merit, quality, credibility, effectiveness or recommendation.
 
-- ACNC Register: 65,472 records / 65,472 ABNs.
-- AIS: 53,465 financial observations / 53,465 ABNs.
-- DGR: 31,593 observations from the dated 2026-08-05 ABR bulk extract, plus two independently retained ABN Lookup checks.
-- Registry: 5 durable promoted subjects.
+### Architecture
 
-## Historical — identity/resolution findings
+- Python controls acquisition, hashing, deterministic preparation, joins, evidence selection, batching, scheduling, caching, retries, validation, cost and release compilation.
+- LLMs routinely handle difficult OCR/vision, relevance, extraction, semantic judgement, classification, bounded writing and stronger-model adjudication.
+- Embeddings are a model-derived output inside the budgets and are cached by stable text hash/model/policy.
+- Logical tasks remain separately typed/validated even when a physical request bundles them.
+- SQLite begins as a thin task/batch/cache/cost ledger, not a full knowledge database.
+- Custom local NER/relevance/taxonomy/summarisation is deferred unless a total-cost-of-ownership benchmark includes Codex build effort, labels/evals, maintenance, drift and operations.
 
-- 5 ACNC records bind to existing reviewed registry promotions; 65,467 remain `candidate` with no subject promotion.
-- National normalisation performs only authoritative ABN joins between source records. It does not use name similarity to resolve a subject.
-- The Salvation Army and Royal Flying Doctor Service remain recorded multiplicity examples; no automatic group aggregation was introduced.
+### Governance and product acceptance
 
-## Historical — AIS/financial findings
+- Coverage is the optimisation objective; defensibility is a constraint expressed through evidence, policy, method labels and corrections.
+- A model output is never human-governed, but may become canonical under an explicit benchmarked automation policy.
+- Human review is concentrated on samples, conflicts, sensitive claims and higher-exposure cases; stronger-model adjudication may replace some review.
+- A high-precision pipeline that publishes almost nothing fails.
+- Participation remains initial-production scope; shadow registries remain first-class claim-specific sources.
+- Public contract 0.5 and its immutable checksum remain untouched.
 
-- 44,699 reporting periods are approximately annual; 573 are nonstandard; 8,193 lack usable report dates.
-- Consolidation values: 1,249 true, 11,719 false, 40,497 unknown.
-- 50,403 AIS records join an ACNC register ABN; 3,062 do not. This remains source coverage, not a negative claim.
-- Money uses exact decimal source and normalised values. No precedence/reconciliation scalar is derived nationally.
+## 5. File mapping
 
-## Historical — DGR findings
+In Data, update/add:
 
-- Current ABR source is retained as two private bulk archives with SHA-256 hashes and CC BY 3.0 Australia metadata.
-- DGR is a dated external tax-status observation, never CauseBase identity.
-- Absence is meaningful only relative to this dated complete bulk extract; no general negative claim is inferred.
+- `AGENTS.md`
+- `DOCUMENT_AUTHORITY.md`
+- `PRODUCT.md`
+- `PRINCIPLES.md`
+- `PUBLIC_COMMITMENTS.md`
+- `EXPERIENCES.md`
+- `CURRENT_STATE.md`
+- `ROADMAP.md`
+- `IMPLEMENTATION_PLAN.md`
+- `TEST_PLAN.md`
+- `CODEX_TO_CHATGPT_HANDOFF.md`
+- `LLM_ECONOMICS_AND_COHORT_POLICY.md` (new)
+- `ENRICHMENT_ECONOMICS_DESIGN.md` (supersession notice only)
 
-## Historical — coverage/provenance findings
+In Builder, update:
 
-- Private diagnostics include source counts, identifiers, coverage, period/consolidation distributions, duplicate patterns, parser failures, drift baseline and major identity multiplicity examples.
-- Raw source archives and private normalised source records are excluded from staging and Git publication boundaries.
+- `ARCHITECTURE.md`
+- `AGENTS.md`
+- `EDITORIAL_POLICY.md`
+- `BUILD_AND_PUBLICATION.md`
+- `README.md`
 
-## Historical — tests/validation
+Do not modify source code, schemas, fixtures, releases, archives, runtime data, Viewer files or deployment workflows.
 
-- Builder: 36 tests passing.
-- Viewer: 3 tests passing.
-- `phase1-structured-backbone` staging candidate structural validation passed.
+## 6. Integration method
 
-## Historical — decisions made locally
+1. Confirm each repository worktree and branch state; preserve unrelated/untracked material.
+2. Record the immutable 0.5 manifest checksum before changes.
+3. Apply the packet semantically against the open feature branches; do not blindly overwrite any newer non-conflicting improvement.
+4. Resolve links to the actual sibling-repository layout used by the existing PRs.
+5. Lint active documents for conflicting claims, especially “LLM optional/late,” “custom local NLP first,” “human review always,” “additional processing never by donation size,” and “defensibility over coverage.”
+6. Run validation.
+7. Commit separately in Builder and Data, push to the existing branches and add concise PR comments with validation and source mapping.
 
-- Used a compact safe public projection rather than publishing regulator rows or raw archives.
-- Used a full dated ABR bulk pass to make national DGR coverage semantics defensible.
-- Kept first-baseline source drift as `not_assessed`; meaningful drift requires a subsequent refresh.
+## 7. Required validation
 
-## Historical — questions requiring product decision
+- active Markdown local links;
+- document authority/status/version consistency;
+- active brand lint, respecting immutable compatibility/history exceptions;
+- Builder full test suite (protected baseline: 119 passed);
+- focused Builder branding/config/data-contract/legacy tests;
+- Data public 0.5 schema/example validator;
+- no public/private allowlist regression;
+- immutable manifest SHA-256 before/after exactly:
+  `01D047484909B8E15941D5023749ECDB6811FA472CB04BD1B9E0272935050DFB`.
 
-None. The remaining work is operational refresh/release design and enrichment scope under the accepted product direction.
+If the baseline has changed on the feature branch, report both the expected and observed count; do not rewrite tests merely to match this handoff.
 
-## Historical — known limitations
+## 8. Exclusions
 
-- ACNC/AIS source dates are current baseline acquisitions, not a scheduled refresh service.
-- No public national card corpus is implied by the backbone; only five reviewed subjects are promoted.
-- DGR parser currently records endorsed presence; richer fund/item/date field mapping can be added without changing identity semantics.
+Do not:
 
-## Historical — taxonomy workflow handoff
+- implement the task contracts, scheduler, SQLite ledger or provider adapter;
+- call any LLM/embedding API or consume a cohort budget;
+- acquire or reorganise evidence;
+- create runtime/database/cache files;
+- change public schemas or immutable release bytes;
+- rebuild Data, deploy Viewer or change Pages;
+- copy prompts, responses, credentials, spend telemetry or private evidence into Git;
+- place durable reports in Temp;
+- touch unrelated untracked archaeology or debug material.
 
-This historical workflow began with Builder `taxonomy-review-prepare`, not a model call. Its private packet was the human discussion input; optional advisory model output remained separate. The historical v0.1 or Sol packages were not to be altered, and candidate taxonomy implementation required an explicit human decision record followed by `taxonomy-review-validate` before any reclassification/rebuild decision.
+## 9. Completion report
 
-## Historical — former recommended Phase 2 increment (superseded)
+Return:
 
-Build a governed real enriched slice (roughly 100–1,000 subjects) using targeted report and website evidence, taxonomy work, real embeddings and correction intake, while retaining this backbone as the source/coverage layer.
+- branch, commit and PR link for Builder and Data;
+- exact files added/changed;
+- confirmation that all controlling decisions in section 4 are present and no conflicting active language remains;
+- tests/checks and results;
+- immutable checksum before/after;
+- confirmation of no code/schema/release/archive/runtime/Viewer/deployment/model-call change;
+- any genuine ambiguity that prevented faithful integration.

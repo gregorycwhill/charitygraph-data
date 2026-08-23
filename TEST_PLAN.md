@@ -1,86 +1,296 @@
 # CharityGraph Test Plan
 
-> Historical note: pre-pivot CauseBase test records below are retained for provenance. New active checks use CharityGraph names while immutable releases retain their original artefacts.
+**Status:** Canonical verification strategy  
+**Version:** 1.1-draft  
+**Updated:** 2026-08-23
 
-**Status:** Accepted product direction  
-**Updated:** 2026-08-15
+## 1. Purpose
 
-## Cross-product release gates
+Testing must establish more than valid JSON. It must prove identity integrity, evidentiary lineage, useful coverage, semantic quality, publication safety, reproducibility, recovery, hard cost control and cross-channel consistency. A system can pass precision tests and still fail the product by publishing almost nothing.
 
-- publication allowlist and absence of raw/private/working artefacts;
-- manifest integrity, versioning and artefact hashes;
-- evidence-reference and identity consistency;
-- taxonomy/version/term validity;
-- source-drift anomalies and failure isolation;
-- preservation of the previous valid release after a failed build;
-- correction-dependent regeneration when governed corrections are introduced;
-- agent usability: an unfamiliar coding/AI agent can discover the current release and correctly retrieve and interpret one subject without downloading the national corpus.
-- append-only annual observations, temporal relationship validity and current-projection selection;
-- source-native sidecar provenance and source-field/canonical-field separation;
-- deterministic change profiles, dependency decisions and recorded derivative reuse;
-- source inventory, historical-release ledger and exact deployment-bundle safety.
-- immutable-release ownership: a Data-owned release reproduces an isolated Viewer bundle from an explicitly selected path, with manifest/card/sidecar hash equality and no implicit “latest” lookup.
+The current protected baseline is:
 
-## Data tests
+- Builder: 119 tests passed;
+- focused Builder smoke: 12 passed;
+- legacy compatibility: 2 passed;
+- Viewer: 21 passed;
+- Data schema/example validation: passed;
+- immutable 0.5 checksum: `01D047484909B8E15941D5023749ECDB6811FA472CB04BD1B9E0272935050DFB`.
 
-Validate JSON, JSONL, CSV and Parquet against their shared canonical values. Treat Markdown as a rendering: test required displayed values, provenance display, renderer behaviour and absence of raw vectors rather than attempting Markdown round trips. Validate per-subject retrieval, stable URLs, coverage/capability metadata, taxonomy artefacts and release discovery.
+## 2. Test levels
 
-For an ownership repair/import, validate the source manifest hashes, entity count, card IDs, source-native records, taxonomy and selected financial fixture values before and after import. An archival import must not rewrite RC4 semantics.
+- unit tests for identifiers, hashing, schemas, parsing and policy rules;
+- contract tests across internal records and public projections;
+- fixture-based vertical slices;
+- migration and regression tests against immutable 0.5;
+- benchmark/evaluation tests against governed cases;
+- publication and distribution acceptance;
+- selected human review where product semantics cannot be safely automated.
 
-For the proposed v0.5 contract, parse every draft schema and validate EJA, sparse, identity-binding and multiple-financial-period examples. Fixture tests must additionally assert reference resolution, version agreement, coverage-state invariants, source-row label/order/sign preservation, financial-pointer coherence, direct-versus-derived separation, public/private exclusion and participation action/evidence separation. These are design-fixture tests until approved Builder validators exist.
+National raw sources and private archives are not required for routine CI.
 
-## Builder tests
+## 3. Documentation and authority tests
 
-Test opaque identity creation and external identifier/relationship handling; source parsing; archive/runtime/staging separation; evidence and provenance resolution; fundraising ladder branches; taxonomy validation; fresh isolated staging; allowlist enforcement; manifest generation; incremental invalidation; source drift; and error isolation.
+- active documents declare status, version/date and scope;
+- authority links resolve;
+- superseded material is not presented as current instruction;
+- active product and agent-instruction files contain no former-brand terminology;
+- public 0.5 material is labelled implemented compatibility, not future design;
+- Builder architecture and product documents agree that observations are internal authority and cards are projections.
 
-## Reality-spike fixtures
+## 4. Subject identity and scope
 
-Maintain small sanitised or permitted fixtures from awkward real-world cases: multiple names/identifiers, funds and branches, renamed/deregistered subjects, dead websites, scanned PDFs, separate reports, thin records, unusual accounting and no fundraising disclosure. Current retained regressions include Merri Creek's nine-month reporting transition, Fitted for Work related-record ambiguity and Red Cross non-comparable report/AIS revenue observations. These cases are regression tests for the evolving model, not a frozen schema proof.
+Test:
 
-## LLM evaluation
+- stable opaque `subject_id` generation and persistence;
+- no identity from name/domain alone;
+- source-record identity independent of subject identity;
+- binding states: resolved, candidate, ambiguous and unresolved;
+- conflict and review metadata;
+- subject lifecycle, merge/split/successor/tombstone semantics;
+- program/service/unit local scope;
+- governed nested-to-durable promotion;
+- separation of subject relationships from artefact lineage;
+- no parent/network attribute transfer without scoped evidence.
 
-Maintain a human-reviewed evaluation set for neutrality, factual grounding, PR-language suppression, activity/beneficiary/geography extraction, taxonomy assignment, uncertainty, attribution, conflicting evidence and financial/fundraising interpretation. Run it for material model or prompt changes; valid JSON alone is not a quality signal.
+## 5. Artefact and lineage contracts
 
-For the RC4→0.5 migration, gate promotion on a complete-card schema run, public source-reference resolution, manifest hash verification and a losslessness audit that counts each source domain as either canonical or `legacy_unbound`. Test exact recovery only for a unique literal public source-field match, require the origin-card hash on retained legacy material, and ensure legacy preservation never upgrades capability coverage to `observed`.
+Every persisted artefact validates its type, schema version, ID, canonical hash, creation provenance and typed input/output edges.
 
-Phase 2A adds a private 30-case representative evaluation corpus, weighted toward sparse/failed websites and report-bearing subjects. It records source evidence IDs, model/prompt/evidence hashes, review focus and a reviewer-assessment slot; it is the regression basis for later prompt/model changes.
+Test that:
 
-Phase 2A.1 adds corpus-level assertions for one effective public coverage state per capability, no public operational synthesis telemetry, no blanket CauseBase taxonomy evidence IDs, sparse-evidence wording and broken public evidence URLs. Viewer tests cover unavailable/real fundraising estimates, observation currency, conflicting financial values and friendly taxonomy separation.
+- shared subject association never becomes causal lineage;
+- candidates cannot appear as canonical observations without a decision;
+- model output cannot become a human decision;
+- supersession preserves history;
+- invalidation reaches dependent coverage, derivatives and release projections;
+- filenames are never treated as identity.
 
-## Taxonomy-review tests
+## 6. SQLite and operations
 
-Taxonomy review must preserve the frozen baseline and never mutate canonical taxonomy files or card classifications. Test deterministic corpus diagnostics and stable input hashes; exclude ACNC classification fields, current CauseBase assignments, taxonomy labels and organisation names from taxonomy-blind Pass A; validate proposal operation types, compact review limits, support-count/representative-ID bounds and proposed-term definition profiles; retain future unmapped-concept and taxonomy-ambiguity signals privately; and ensure ACNC comparison occurs only after independent discovery.
+Test:
 
-For the durable workflow, separately test that PREPARE is API-free and bounded, MODEL-REVIEW cannot create a decision record, decision outcomes validate against the governed schema, and VALIDATE reports candidate impacts without changing cards, taxonomy files or public releases.
+- clean migration from every supported catalogue version;
+- constraints and uniqueness rules;
+- deterministic idempotency keys;
+- transaction rollback after injected failure;
+- single-writer assumptions and bounded worker behaviour;
+- retry/backoff and terminal failure;
+- lock/lease expiry and process-death recovery;
+- sliced run resume;
+- held/quarantined case handling;
+- deterministic reindex from durable artefacts;
+- complete evidence recovery after database deletion;
+- no governed fact exists only in SQLite;
+- scale/throughput on representative national-index metadata.
+- budget reservation before scheduling and actual-cost reconciliation after completion;
+- rejection of new paid work when reserved plus actual cost would breach a cohort cap;
+- provider-currency, AUD conversion and pricing-snapshot traceability;
+- no duplicate paid request after retry, crash or rerun;
+- partial batch completion and safe resumption;
+- cache invalidation when any material identity component changes.
 
-## Viewer tests
+## 7. Source acquisition and parsing
 
-Test static data loading with optional-artifact failure, retrieval/search/filter semantics, deep links, exact card fidelity, estimate/provenance visibility, correction context, safe URL/text rendering, keyboard and mobile behaviour, and absence of recommendation framing.
+- status, media type and size validation before durable placement;
+- completed-byte hashing;
+- URL sanitisation and no credential/query leakage;
+- source version, retrieval, licence and attribution metadata;
+- exact structured-field preservation;
+- document page/region, table labels, order, units and signs;
+- bounded website routes, freshness and failure states;
+- explicit unavailable OCR/vision routes rather than silent fallback;
+- no archive mutation by index/import operations.
 
-Phase 2B additionally tests stacked facets, clickable taxonomy navigation, source-record links, funding/fundraising display, history/reuse display and accessible help controls.
+## 8. Source authority and shadow registries
 
-## Post-RC4 evaluation and distribution tests
+Test claim-specific policies:
 
-The golden corpus must contain governed representative and awkward cases for source-native financial preservation, reports/charts/scans, identity/group ambiguity, thin or failed websites, coverage states, derived projections and editorial/provenance review. It is the shared benchmark for document-stack, website-pipeline and Viewer changes; quality/cost evidence from it gates technology selection and scale.
+- evaluated registry membership/status, fee/code applicability and dates may be direct authoritative candidates;
+- registry code applicability does not imply compliance;
+- fee/levy rule does not imply member-specific amount or volume;
+- source-led enumeration does not bypass subject binding;
+- vendor or award material can establish a named campaign/event/relationship only within its source role;
+- promotional ROI, uplift, conversion, retention and effectiveness do not become canonical performance observations;
+- source rights and public-projection policy are enforced by source family.
 
-Golden Corpus v1 tests validate the checked-in manifest's schema/version, unique case IDs, truth-level separation and SHA-256-bound private fixture locators. Builder evaluation tests require a stable normalised document result contract, cache-key invalidation when extraction options change, explicit unavailable OCR/vision routes rather than silent fallback, and deterministic benchmark report generation. The ecosystem bake-off must use distinct screened components, output-only financial gold comparison and computed hard-gate status: EJA P&L 33/33 and financial position 32/32 require exact labels, order, values, comparatives, signs and hierarchy; OCR requires a genuine low-text page; visual requires EJA 4/4 label/value association. Benchmark acceptance separately records elapsed time, platform availability and skipped private fixtures; review-required cases remain diagnostics and cannot be silently promoted to gold.
+## 9. Common observation semantics
 
-Evidence Engine tests require bounded same-origin discovery, explicit snapshot/fetch failure records, stable/transient page classes, content hash and selector provenance, and review-only source-observation candidates. Potential action links must not become action URLs automatically. Identity tests forbid name-only/domain-only resolution and subject minting. Fundraising review tests preserve direct-source, unavailable and additivity-blocked states without calculating an estimate. Integrated-pilot tests require all applicable document cases to complete explicitly while web scope remains bounded.
+Validate:
 
-Consumer-LLM testing uses scarce genuinely naive contexts deliberately. Prepare canonical prompts and scoring criteria before use, and record model/product, date, account/context condition, exact prompt, web/search availability, selected sources, organisations returned, factual errors, citations and whether CauseBase changed the result. Test four conditions separately: unaided discovery (no CauseBase mention), source discovery, directed CauseBase use and interpretation of supplied CauseBase records/URLs. Eventual routine model familiarity/indexing is product success, not permanent contamination.
+- claim basis independently from extraction method;
+- source/evidence references;
+- subject and explicit scope;
+- event/effective, reporting, observed, assessed, generated and release time;
+- qualification, warnings and confidence;
+- derivation metadata for non-direct observations;
+- contradictory observations retained with reconciliation status;
+- no empty-list negative inference.
 
-The executable initial prompt set is `golden/distribution-evaluation-v1.json` (16 cases). Static distribution tests build from the pinned release and verify direct card routes, canonical metadata, JSON/Markdown alternates, source-record links, sitemap, robots and current-release discovery. Wikimedia tests are identifier-first and must retain unmatched/ambiguous cases rather than falling back to names.
+## 10. Coverage
 
-Knowledge Validation v1 adds deterministic review-sample selection, review-decision schema validation, exact excerpt/source-hash resolution, a prohibition on model output becoming human gold, domain-specific (not aggregate) automation policy, taxonomy-blind PREPARE input, historical-pressure comparison recording, fundraising additivity blocks, consumer answer-key criteria and explicit `AUTOMATED PROXY` labelling. Static-agent regressions must preserve enough linked v0.5 evidence to distinguish EJA's direct fundraising share from mechanical implications, APNIC period state, sparse coverage, DFWA/identity ambiguity and `legacy_unbound` material.
+- exactly one current assessment per applicable capability and policy context;
+- allowed coverage states validate;
+- `not_found_in_source` requires `assessment_scope`;
+- assessment scope records relevant source families/roles, periods and policy version;
+- unknown, not processed, failed, unavailable and stale remain distinct;
+- coverage never upgrades merely because historical material was preserved;
+- public projection is compact and private telemetry remains private.
 
-The approved next design adds documentation-level tests for: no fundraising
-prior or peer-imputation fallback; separate Ethos and service-orientation
-semantics; neutral `notable_context` naming; fundraising source-role and
-provider/campaign attribution; industry-source absence not becoming a negative
-claim; and review-only status for all industry-derived candidates. The generic
-schema derivation vocabulary may retain `peer_imputation` only as an unused,
-future-domain option; it must not be reachable by fundraising expenditure.
+## 11. Domain tests
 
-Machine-distribution acceptance includes corpus-level discoverability, crawlable semantic HTML, stable canonical URLs, per-card JSON/Markdown, manifests, taxonomy/geography semantics, direct-versus-derived and period/scope fields, provenance, coverage/absence and freshness/version. A key acceptance question is whether a general-purpose consumer AI can discover relevant CauseBase records and accurately answer a realistic funder question.
+### Activities, beneficiaries and programs
 
-Viewer human design acceptance includes the anti-marketplace test: does the interface appear to persuade a user to favour, trust or donate to an organisation? If yes, it fails. Test accessibility, density, speed and inspectability alongside this qualitative criterion.
+- observable activity differs from mission rhetoric;
+- beneficiary differs from audience, supporter or incidental person;
+- programs/services retain source-local identity, status, dates and scope;
+- name similarity cannot promote a program to subject;
+- program geography does not become organisation-wide geography automatically.
+
+### Participation and opportunities
+
+- initial structured and web/document slices attempt participation extraction;
+- stable participation modes remain separate from opportunities;
+- modes, labels, status and action URLs validate;
+- action URLs differ from evidence URLs;
+- transient opportunities carry effective dates, first/last observation and freshness;
+- closed/stale opportunities do not render as current;
+- absence after assessed sources is expressed through coverage, not “no opportunities”.
+
+### Geography
+
+- source-faithful descriptive geography and controlled navigation terms remain separate;
+- geography role distinguishes registration, office, service delivery, beneficiary, impact, fundraising and program/appeal scope;
+- granularity and confidence are preserved;
+- global-parent geography does not transfer to an Australian subject.
+
+### Funding and fundraising
+
+- funding source, practice, campaign and expenditure never collapse;
+- practice kinds distinguish channel, program, mechanism and partnership;
+- campaign type, mechanics and channels are orthogonal;
+- reported target/raised/spent/count metrics retain source wording, period and scope;
+- campaign values do not silently reconcile to accounts;
+- no ROI, cost-to-raise, acquisition efficiency or causal attribution is produced;
+- expenditure ladder permits null and prohibits universal prior, peer fill, forced point and automatic midpoint;
+- component additivity and double-counting blocks operate.
+
+### Ethos and service orientation
+
+- organisational ethos cannot be inferred from beneficiaries, names, images or model impression;
+- roles distinguish self-description, formal affiliation, external description and history;
+- service/mission orientation is separate;
+- parent/network ethos does not transfer without evidence;
+- absence does not imply secular or unaffiliated;
+- first-pilot publication follows the approved risk policy: sensitive/conflicting cases require the specified human or stronger-model route; ordinary supported cases may use benchmarked automation.
+
+### Notable context
+
+- category is contextual, never a score or polarity;
+- procedural statuses remain distinct;
+- Australian subject and global parent/network scope remain distinct;
+- absence from Wikipedia has no meaning;
+- revision/discovery lineage is retained;
+- sensitive/adverse observations require adequate underlying evidence and the versioned risk route, which may require human review, stronger-model adjudication or hold;
+- correction challenges trigger expedited re-review.
+
+## 12. Taxonomy tests
+
+- ACNC source-native schemes remain separate from CharityGraph-native assignments;
+- classifications identify taxonomy, version, term, scope, method and evidence;
+- native v0 terms are migration seeds, not automatic current assignments;
+- invalid term IDs and versions fail;
+- no invented model terms enter canonical output;
+- unmapped concepts and ambiguity remain private maintenance signals;
+- taxonomy changes produce a new version and migration analysis;
+- crosswalks have independent provenance;
+- cause centrality remains separate from taxonomy adjacency.
+
+## 13. Corrections and decisions
+
+- raw submissions remain private;
+- moderated proposals receive stable IDs and target subject/assertion/release;
+- decision authority, rationale, time and applicability validate;
+- accepted corrections regenerate dependent observations, summaries, classifications, embeddings and release projections;
+- rejection does not erase the proposal history where public retention is appropriate;
+- retraction and exceptional privacy/legal removal follow separate policies.
+
+## 14. Model-task tests
+
+- task types have separate schemas and cache identities;
+- cache identity equals the canonical hash of task type, task schema, evidence hashes, prompt/policy version, model snapshot, parameters and material tool versions;
+- output schema and evidence-span validation;
+- logical outputs remain separately validated and attributable even when one physical request bundles several tasks;
+- multi-subject batching is disabled until a contamination benchmark approves it;
+- provider batch processing, same-subject bundling and independent requests produce equivalent logical contracts;
+- request specification, evidence, raw response, usage/cost, attempts and validity/invalidation are retained privately;
+- token/cost/latency budgets, reservation/reconciliation and safe retries;
+- fake clients in CI;
+- no raw prompts/responses or spend telemetry in public candidates;
+- editorial synthesis consumes governed observations only and cannot create new facts;
+- embeddings are generated only from stable release-safe text and invalidate on text/model/policy change;
+- a model candidate accepted by an approved automation policy is canonical but never labelled human-governed;
+- no custom local NLP path appears in the initial route; introducing one requires a total-cost-of-ownership benchmark.
+
+## 15. Evaluation and economics
+
+The shared benchmark stratifies donor-decision exposure, source richness and complexity. It covers activities/beneficiaries, programs, participation, geography, fundraising, ethos, service orientation, notable context, bounded writing and embeddings.
+
+Validate benchmark/cohort identity, total-donations ranking, the `donor_decision_exposure_proxy` label, source opportunity, proposition/review and cost ledgers. The test must prove that the proxy is not presented as donor count, retail-donor volume, merit, quality, credibility or recommendation.
+
+Measure by cohort and domain:
+
+- subjects with summaries and embeddings;
+- program/service, participation, activity/beneficiary, fundraising, ethos/service-orientation and notable-context availability where evidence opportunity exists;
+- proportion receiving the intended model-assisted pass;
+- observations per charity and accepted observations per dollar;
+- recoverable recall and evidence-opportunity conversion;
+- unsupported-claim, correction and material-conflict rates;
+- human/stronger-model review burden;
+- cache savings, batch completion and refresh cost.
+
+The paid-model caps are exact acceptance tests: AUD 100 for the first 100, AUD 100 for the next 1,000 and AUD 100 for the next 10,000, including extraction, judgement, writing, embeddings, retries and escalations. Easy subjects may subsidise difficult ones inside a cohort; unapproved cross-cohort transfer fails.
+
+No aggregate score authorises automation across domains. Coverage is the optimisation objective while provenance, supported-claim quality, contestability and budget are constraints. A route with extremely high precision but trivial recoverable recall, observation yield or subject coverage fails the anti-sparsity gate.
+
+## 16. Public release gates
+
+A release candidate must pass:
+
+- schemas and referential integrity;
+- identity and domain invariants;
+- capability/assessment-scope completeness;
+- taxonomy and crosswalk validity;
+- provenance and derivative lineage;
+- public allowlist and privacy scan;
+- source-family rights policy;
+- cross-representation consistency;
+- drift/anomaly checks;
+- manifest/hash verification;
+- previous-valid-release preservation.
+
+Raw reports, scraped pages, prompts, private corrections, databases, caches, credentials, logs and debug dumps must not appear.
+
+## 17. Distribution and Viewer
+
+Test:
+
+- current-release discovery;
+- stable subject HTML routes;
+- per-subject JSON and Markdown alternatives;
+- source-record links;
+- sitemap and permissive robots policy;
+- canonical metadata and citation information;
+- bulk artefact/schema discovery;
+- consumer-LLM interpretation using genuinely naive contexts;
+- Viewer fidelity to the selected Data release;
+- accessibility, density, speed and keyboard/mobile behaviour;
+- anti-marketplace acceptance.
+
+## 18. Migration and immutable compatibility
+
+- the public 0.5 adapter has frozen fixtures;
+- historical differences are classified as input, decision, policy, derivative or defect;
+- unresolved historical data is never promoted by mere presence;
+- legacy identifiers remain isolated;
+- immutable public bytes and checksum remain unchanged before and after every pre-cutover PR.

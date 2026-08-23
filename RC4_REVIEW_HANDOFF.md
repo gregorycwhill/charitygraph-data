@@ -1,5 +1,7 @@
 # RC4 final Viewer/editorial integration review handoff
 
+> **Authority status:** Historical review handoff. The recorded local staging paths and legacy product name are provenance, not active instructions.
+
 Status: locally validated candidate; not human-approved, committed, pushed or deployed.
 
 Candidate: `C:\CauseBase-runtime\staging\phase2b-2026-08-14-rc4-final-viewer-editorial-integration`

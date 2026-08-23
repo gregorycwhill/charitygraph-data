@@ -1,7 +1,7 @@
 # Semantic Enrichment Benchmark v1 — Implementation Contract
 
 **Status:** Approved implementation contract for the next review-only Builder phase  
-**Design basis:** CauseBase Data commit `14f7e53be7db558495f5afe7ab8c707cb37d7134`  
+**Design basis:** CharityGraph Data commit `14f7e53be7db558495f5afe7ab8c707cb37d7134`  
 **Builder baseline:** `1e532ad1fbb5f5d1c89dfea1290b183673006c4d`  
 **Completed prerequisites:** fundraising safety reconciliation `f21efbb2ccf6867a5ec6cdc4eb5d76c0cbf81cd9`; Knowledge Validation 22-case governed gate `1e532ad1fbb5f5d1c89dfea1290b183673006c4d`  
 **Publication status:** Private/review-only. No new public release, public schema, corpus rebuild, or Viewer change is authorised.
@@ -10,7 +10,7 @@
 
 ## 1. Purpose
 
-Implement a bounded, economically instrumented **Semantic Enrichment Benchmark v1** that tests how much useful enrichment CauseBase can recover, at what cost, and why remaining gaps exist.
+Implement a bounded, economically instrumented **Semantic Enrichment Benchmark v1** that tests how much useful enrichment CharityGraph can recover, at what cost, and why remaining gaps exist.
 
 The benchmark must distinguish at least:
 
@@ -35,7 +35,7 @@ Do not reopen these decisions during implementation.
 
 ### 2.1 Product boundary
 
-CauseBase supplies evidence-backed charity/program facts and classifications. It does not:
+CharityGraph supplies evidence-backed charity/program facts and classifications. It does not:
 
 - adjudicate a donor's personal mandate;
 - output match percentages;
@@ -47,7 +47,7 @@ CauseBase supplies evidence-backed charity/program facts and classifications. It
 
 ### 2.2 Observation architecture
 
-Use the existing CauseBase typed-observation model and v0.5 common semantics.
+Use the existing CharityGraph typed-observation model and v0.5 common semantics.
 
 The next private candidate layer may extend the common envelope with scoped context, qualification, source role, review fields, and assessment scope. Do **not** build:
 
@@ -64,7 +64,7 @@ Semantic observations may be scoped to:
 - `service`
 - `organisational_unit`
 
-Programs/services/units may use governed subject-local identifiers. They do not become durable CauseBase subjects merely because observations exist about them.
+Programs/services/units may use governed subject-local identifiers. They do not become durable CharityGraph subjects merely because observations exist about them.
 
 No parent/network attribute transfer is permitted.
 
@@ -424,7 +424,7 @@ Manual benchmark-only research outside the acquired production source universe.
 
 Purpose:
 
-> Determine whether missing facts are absent from the public record or merely outside current CauseBase source scope.
+> Determine whether missing facts are absent from the public record or merely outside current CharityGraph source scope.
 
 H2 may inspect additional public sources manually.
 
@@ -444,7 +444,7 @@ Preferred architecture:
 source-led index/table/directory
     -> deterministic source-record extraction
     -> external charity/campaign/provider candidate
-    -> conservative CauseBase identity resolution
+    -> conservative CharityGraph identity resolution
     -> optional targeted detail acquisition
     -> deterministic + low-cost semantic extraction
     -> private typed candidates
@@ -924,7 +924,7 @@ Must remain true:
 
 Builder code/tests/docs may change.
 
-CauseBase Data should change only if explicitly required to record an implementation decision/result after review.
+CharityGraph Data should change only if explicitly required to record an implementation decision/result after review.
 
 ---
 
@@ -1097,4 +1097,4 @@ Do not stop with local-only changes. Commit and push all validated in-scope work
 
 ## Design rationale
 
-> **Semantic Enrichment Benchmark v1 measures the frontier between public-evidence sparsity and economically recoverable knowledge, so CauseBase can spend compute and source-acquisition effort where they buy the most useful, trustworthy coverage rather than trying to fill every blank indiscriminately.**
+> **Semantic Enrichment Benchmark v1 measures the frontier between public-evidence sparsity and economically recoverable knowledge, so CharityGraph can spend compute and source-acquisition effort where they buy the most useful, trustworthy coverage rather than trying to fill every blank indiscriminately.**

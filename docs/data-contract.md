@@ -1,7 +1,10 @@
-# CharityGraph data contract
+# CharityGraph Data contract guide
 
-The post-0.5 CharityGraph contract is organised around source-native records, resolved subject bindings, canonical observations, evidence, taxonomies, and derived projections. Core neutral concepts are `entity_id`, `source_record_id`, `subject_binding_id`, `observation_id`, `evidence_id`, `taxonomy_id`, `schema_version`, `claim_basis`, and `extraction_method`.
+**Status:** Reference  
+**Current contract:** [PUBLIC_CONTRACT_0_5.md](../PUBLIC_CONTRACT_0_5.md)
 
-`claim_basis` states the epistemic basis of a claim; `extraction_method` states how the relevant material was obtained or interpreted. They are not interchangeable.
+The current public contract is the immutable 0.5 release, its schemas, examples, capability registry and manifest. It uses compatibility fields where required by published bytes.
 
-The 0.5 release is immutable legacy material. Its `causebase_id` field is accepted only as a deprecated compatibility alias while the successor contract is introduced.
+Builder's future internal model is observation-first and uses durable subjects and scoped observations. That architecture does not alter public contract 0.5 and does not introduce a new public identifier.
+
+See [AGENT_DATA_DISTRIBUTION_CONTRACT.md](../AGENT_DATA_DISTRIBUTION_CONTRACT.md) for distribution requirements and [DOCUMENT_AUTHORITY.md](../DOCUMENT_AUTHORITY.md) for document precedence.
