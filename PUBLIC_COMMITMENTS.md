@@ -1,8 +1,8 @@
 # CharityGraph Public Data Commitments
 
-**Status:** Canonical public commitments  
-**Version:** 1.1-draft  
-**Date:** 2026-08-23
+**Status:** Canonical public commitments
+**Version:** 1.2-draft
+**Date:** 2026-08-24
 
 CharityGraph is the one-stop shop for structured, governed Australian charity data. We make fragmented public information easier to find, join, inspect and reuse without pretending that one source or one classification tells the whole story.
 
@@ -24,7 +24,11 @@ We commit to:
 - **Neutrality:** never publish charity rankings, recommendations, reputation scores, mandate-fit scores or fundraising-efficiency judgements.
 - **Transparent processing priority:** use disclosed, reproducible proxies to sequence work and assurance without implying that priority measures merit, quality or credibility.
 - **Contestability:** let organisations and others inspect evidence and challenge errors, stale data, classifications and interpretations through governed correction processes.
-- **Open reuse:** publish stable schemas, manifests, bulk formats and selective subject representations suitable for analysts, software and AI systems.
+- **Open reuse:** publish stable schemas, manifests, bulk formats and selective subject representations suitable for analysts, software and AI systems. Commercial downstream reuse remains permitted under the applicable licence.
+- **Editorial independence:** we do not accept payment for inclusion, exclusion, ranking, favourable editorial treatment or removal of adequately supported information.
+- **Correction and legal process:** information may still be removed or restricted through published correction, privacy, safety, abuse and legal processes.
+- **Transparency of relationships:** material project funding relationships and editorial conflicts will be disclosed.
+- **Downstream independence:** downstream adaptations and recommendation products are governed by their publishers, not CharityGraph, and must not imply official status or CharityGraph judgement.
 - **Rights and privacy:** respect upstream licences and attribution; keep raw reports, website archives, model traces, private submissions, credentials and operational state private unless separately approved.
 - **Immutable releases:** never rewrite published release bytes in place.
 

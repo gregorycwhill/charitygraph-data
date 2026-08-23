@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gregorycwhill/charitygraph-data/blob/main/schemas/future/release-manifest.schema.json",
+  "title": "CharityGraph future release manifest proposal",
+  "type": "object",
+  "required": ["release_id", "dataset_version", "contract_version", "based_on_release", "generated_at", "publication_identity", "entity_count", "source_record_count", "validation", "artefacts"],
+  "properties": {
+    "release_id": {"type": "string"},
+    "dataset_version": {"type": "string"},
+    "contract_version": {"type": "string", "not": {"const": "0.5"}},
+    "based_on_release": {"type": "string"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "publication_identity": {
+      "type": "object",
+      "required": ["publisher_name", "canonical_data_repository", "immutable_release_path", "data_license_identifier", "license_url", "attribution_guidance", "upstream_rights_caveat_url", "editorial_commitments", "producing_builder"],
+      "properties": {
+        "publisher_name": {"const": "CharityGraph"},
+        "canonical_data_repository": {"const": "https://github.com/gregorycwhill/charitygraph-data"},
+        "immutable_release_path": {"type": "string", "pattern": "^releases/"},
+        "data_license_identifier": {"const": "CC-BY-4.0"},
+        "license_url": {"type": "string", "format": "uri"},
+        "attribution_guidance": {"type": "string", "minLength": 1},
+        "upstream_rights_caveat_url": {"type": "string", "format": "uri"},
+        "editorial_commitments": {
+          "type": "object",
+          "required": ["identifier", "version", "url"],
+          "properties": {"identifier": {"type": "string"}, "version": {"type": "string"}, "url": {"type": "string", "format": "uri"}},
+          "additionalProperties": false
+        },
+        "producing_builder": {
+          "type": "object",
+          "required": ["version"],
+          "properties": {"version": {"type": "string"}, "commit": {"type": ["string", "null"], "pattern": "^[0-9a-f]{7,64}$"}},
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "entity_count": {"type": "integer", "minimum": 0},
+    "source_record_count": {"type": "integer", "minimum": 0},
+    "validation": {"type": "object", "required": ["status"], "properties": {"status": {"const": "passed"}}, "additionalProperties": false},
+    "artefacts": {"type": "object", "additionalProperties": {"type": "object", "required": ["sha256", "bytes"], "properties": {"sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "bytes": {"type": "integer", "minimum": 0}}, "additionalProperties": false}}
+  },
+  "additionalProperties": false
+}

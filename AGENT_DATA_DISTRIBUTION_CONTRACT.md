@@ -21,6 +21,7 @@ A selected release must provide or identify:
 - schemas and capability definitions;
 - sitemap and permissive robots policy;
 - licence, attribution, version and citation guidance;
+- machine-readable publication identity, licence identifier, attribution guidance, upstream-rights caveat and editorial-commitments metadata as specified by [FUTURE_RELEASE_MANIFEST_CONTRACT.md](FUTURE_RELEASE_MANIFEST_CONTRACT.md);
 - bulk JSONL/CSV/Parquet where declared by the release.
 
 ## 3. Representation authority

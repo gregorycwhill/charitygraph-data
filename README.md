@@ -2,7 +2,7 @@
 
 CharityGraph Data publishes versioned public contracts, schemas, taxonomies, releases and shared project memory for structured, governed Australian charity data.
 
-Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md). The canonical product set is [PRODUCT.md](PRODUCT.md), [PRINCIPLES.md](PRINCIPLES.md), [PUBLIC_COMMITMENTS.md](PUBLIC_COMMITMENTS.md) and [EXPERIENCES.md](EXPERIENCES.md). Current execution state and plans are linked from that authority record.
+Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) and the canonical [BRAND_AND_REUSE.md](BRAND_AND_REUSE.md). The canonical product set is [PRODUCT.md](PRODUCT.md), [PRINCIPLES.md](PRINCIPLES.md), [PUBLIC_COMMITMENTS.md](PUBLIC_COMMITMENTS.md) and [EXPERIENCES.md](EXPERIENCES.md). Current execution state and plans are linked from that authority record.
 
 ## Public contract and releases
 

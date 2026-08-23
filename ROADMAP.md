@@ -122,7 +122,17 @@ Builder vNext is Python-controlled and LLM-powered. Python makes model use econo
 - Re-embed only when stable derivative text or embedding policy changes.
 - Revisit model routes as prices/quality change using versioned benchmark evidence.
 
-## 13. Deferred research
+## 14. Deferred brand and legal review
+
+CharityGraph does not claim to be a registered trade mark and makes no current registration application. Review the branding position before meaningful external adoption or when any of these occurs:
+
+- third-party commercial reuse under CharityGraph-like branding;
+- material risk that users could confuse a derivative with the official project;
+- a branding or distribution partnership; or
+- transfer of the project to a formal legal entity.
+
+The review should identify a proposed owner, relevant trade-mark classes, expected costs and whether professional advice is warranted. This is a future decision trigger, not a blocker for current Builder work or public releases.
+## 15. Deferred research
 
 - custom local NER/relevance/taxonomy/summarisation until total-cost-of-ownership evidence supports it;
 - harm→remedy reference graph;
