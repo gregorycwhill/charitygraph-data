@@ -2,19 +2,22 @@ Creative Commons Attribution 4.0 International
 
 Copyright (c) 2026 CharityGraph contributors
 
-CauseBase-originated data, documentation and content in this repository are
+CharityGraph-originated data, documentation and content in this repository are
 licensed under the Creative Commons Attribution 4.0 International License.
+Contributions first published under the former project name remain
+CharityGraph-originated contributions for the purposes of this licence.
 To view a copy of this license, visit
 https://creativecommons.org/licenses/by/4.0/legalcode
 
 Attribution should identify CharityGraph and link to this repository or the
-relevant release.
+relevant immutable release.
 
 Upstream-source caveat
 ----------------------
 
-This licence applies only to original CharityGraph contributions. It does not
-grant rights in third-party source material, including regulator extracts,
+This licence applies to original CharityGraph contributions, including
+contributions first published under the former project name. It does not grant
+rights in third-party source material, including regulator extracts,
 ABR/ACNC/AIS/DGR data, annual reports, website content, trademarks or other
 evidence. Such material is intentionally excluded from this repository unless
 an explicit release record says otherwise. Reusers are responsible for meeting

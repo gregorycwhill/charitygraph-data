@@ -61,6 +61,8 @@ Every active document must state its status, version or date, scope and superses
 | Builder internal architecture | approved Builder target architecture and subsequent ADRs |
 | Current public release contract | `PUBLIC_CONTRACT_0_5.md`, its schemas and immutable release manifest |
 | Current machine distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
+| Official identity and reuse policy | `BRAND_AND_REUSE.md` |
+| Future release identity metadata | `FUTURE_RELEASE_MANIFEST_CONTRACT.md` and its future schema proposal |
 | Current execution handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
 
 ## 5. Decision propagation
