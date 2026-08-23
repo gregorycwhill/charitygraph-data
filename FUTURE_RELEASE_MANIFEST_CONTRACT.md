@@ -21,9 +21,9 @@ Future release manifests must include `publication_identity` with:
 - `attribution_guidance`: concise reusable attribution guidance;
 - `upstream_rights_caveat_url`: the canonical upstream-rights caveat;
 - `editorial_commitments`: identifier, version and canonical URL for `PUBLIC_COMMITMENTS.md`;
-- `producing_builder`: Builder version and, where available, producing commit.
+- `producing_builder`: required object containing a required Builder version and an optional producing commit.
 
-The canonical repository and immutable release path are the publication identity. A manifest must not require the Data commit that contains that manifest, avoiding circular self-reference. Builder provenance is recorded when technically coherent and may be absent where no producing commit exists.
+The canonical repository and immutable release path are the publication identity. A manifest must not require the Data commit that contains that manifest, avoiding circular self-reference. The `producing_builder` object and its version are always required. Only the producing commit may be absent or null when no coherent commit exists.
 
 ## Representation availability
 

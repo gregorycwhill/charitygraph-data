@@ -26,7 +26,7 @@ An **official CharityGraph release** is an immutable release published through t
 - Viewer code is available under the [MIT License](https://github.com/gregorycwhill/charitygraph-viewer/blob/main/LICENSE).
 - CharityGraph-originated Data contributions are available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), including contributions first published under the former project name.
 
-Commercial reuse is permitted under these licences. Where the Data licence applies, reuse must provide appropriate attribution, such as “uses CharityGraph data”, identify modifications where applicable and link to the relevant release or repository. The [upstream-rights caveat](LICENSE) remains part of the Data licence guidance: third-party source material may carry separate terms and is not relicensed by CharityGraph.
+Commercial reuse is permitted under these licences. The brand and official-status rules in this policy govern use of CharityGraph identity and claims of endorsement or official status; they do not narrow permissions granted by MIT or CC BY 4.0. Those licences do not themselves grant a right to imply CharityGraph endorsement or official status. Where the Data licence applies, reuse must provide appropriate attribution and identify modifications where applicable. A complete reusable example is: “Contains or adapts CharityGraph Data release [release ID], licensed under CC BY 4.0. Changes were made. [release link]” (this example is guidance, not a mandatory wording where another attribution satisfies CC BY 4.0). The [upstream-rights caveat](LICENSE) remains part of the Data licence guidance: third-party source material may carry separate terms and is not relicensed by CharityGraph.
 
 ## Independence and downstream products
 

@@ -1,0 +1,26 @@
+{
+  "release_id": "v0.6.0-2026-08-24",
+  "dataset_version": "0.6.0-2026-08-24",
+  "contract_version": "0.6",
+  "based_on_release": "v0.5.0-2026-08-15",
+  "generated_at": "2026-08-24T00:00:00Z",
+  "publication_identity": {
+    "publisher_name": "CharityGraph",
+    "canonical_data_repository": "https://github.com/gregorycwhill/charitygraph-data",
+    "immutable_release_path": "releases/v0.6.0-2026-08-24",
+    "data_license_identifier": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution_guidance": "Attribute CharityGraph and link to this immutable release.",
+    "upstream_rights_caveat_url": "https://github.com/gregorycwhill/charitygraph-data/blob/main/LICENSE",
+    "editorial_commitments": {
+      "identifier": "charitygraph-public-commitments",
+      "version": "1.2-draft",
+      "url": "https://github.com/gregorycwhill/charitygraph-data/blob/main/PUBLIC_COMMITMENTS.md"
+    },
+    "producing_builder": {"version": "0.2.0", "commit": null}
+  },
+  "entity_count": 0,
+  "source_record_count": 0,
+  "validation": {"status": "passed"},
+  "artefacts": {}
+}
