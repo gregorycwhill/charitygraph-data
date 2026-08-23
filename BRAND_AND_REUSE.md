@@ -1,7 +1,7 @@
 # CharityGraph Brand and Reuse Policy
 
-**Status:** Canonical cross-repository policy  
-**Version:** 1.0  
+**Status:** Canonical cross-repository policy
+**Version:** 1.0
 **Date:** 2026-08-24
 
 ## Purpose

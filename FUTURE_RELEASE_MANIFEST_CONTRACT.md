@@ -1,8 +1,8 @@
 # Future Release Manifest and Publication Identity Contract
 
-**Status:** Canonical future-release requirement / schema proposal  
-**Version:** 0.1-draft  
-**Date:** 2026-08-24  
+**Status:** Canonical future-release requirement / schema proposal
+**Version:** 0.1-draft
+**Date:** 2026-08-24
 **Scope:** future public release candidates only; not public contract 0.5
 
 ## Purpose
