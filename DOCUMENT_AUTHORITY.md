@@ -156,3 +156,4 @@ Active narrative uses neutral phrases such as “former project name”, “lega
 Conceptual sophistication belongs in the governed data layer. Developers, software agents and LLMs may consume detailed schemas and provenance. Ordinary users receive simple, purpose-built projections and progressive disclosure.
 
 User-interface simplicity SHALL NOT be achieved by weakening internal semantics, and internal semantic richness SHALL NOT require an unnecessarily complex public experience.
+Phase 1 reality-slice execution design is indexed by [REALITY_SLICE_1_ACCEPTANCE_PACKET.md](REALITY_SLICE_1_ACCEPTANCE_PACKET.md). It is a subordinate refinement of IMPLEMENTATION_PLAN.md and TEST_PLAN.md.
