@@ -1,3 +1,9 @@
+# Superseded document
+
+**Status:** Superseded; retained for traceability only.
+
+This former active policy is superseded by [COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md](COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md). It contains no current instructions.
+
 # CharityGraph LLM Economics and Cohort Policy
 
 **Status:** Canonical shared product and implementation policy  

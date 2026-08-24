@@ -2,13 +2,23 @@
 
 CharityGraph Data publishes versioned public contracts, schemas, taxonomies, releases and shared project memory for structured, governed Australian charity data.
 
-Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) and the canonical [BRAND_AND_REUSE.md](BRAND_AND_REUSE.md). The canonical product set is [PRODUCT.md](PRODUCT.md), [PRINCIPLES.md](PRINCIPLES.md), [PUBLIC_COMMITMENTS.md](PUBLIC_COMMITMENTS.md) and [EXPERIENCES.md](EXPERIENCES.md). Current execution state and plans are linked from that authority record.
+Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) and the canonical [BRAND_AND_REUSE.md](BRAND_AND_REUSE.md). The canonical product set is [PRODUCT.md](PRODUCT.md), [PRINCIPLES.md](PRINCIPLES.md), [PUBLIC_COMMITMENTS.md](PUBLIC_COMMITMENTS.md) and [EXPERIENCES.md](EXPERIENCES.md). The integrated model, coverage/open-curation policy, source governance, taxonomy governance and domain index complete the active v2.0-draft authority set. Current execution state and plans are linked from that authority record.
 
 ## Public contract and releases
 
 [PUBLIC_CONTRACT_0_5.md](PUBLIC_CONTRACT_0_5.md) describes the implemented public compatibility contract. Its exact authority is the immutable [v0.5.0-2026-08-15](releases/v0.5.0-2026-08-15) release, schemas, examples and manifest. Literal historical field names, paths and artefact names remain only where the release requires compatibility; they are not the vocabulary for future internal work.
 
 [PUBLIC_SCHEMA_VNEXT_SPEC.md](PUBLIC_SCHEMA_VNEXT_SPEC.md) is retained as a technical reference for implemented 0.5 schema material. It is not a future-contract proposal. Machine-distribution obligations are in [AGENT_DATA_DISTRIBUTION_CONTRACT.md](AGENT_DATA_DISTRIBUTION_CONTRACT.md).
+
+## Product authority and delivery
+
+- [INTEGRATED_PRODUCT_AND_DATA_MODEL.md](INTEGRATED_PRODUCT_AND_DATA_MODEL.md)
+- [COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md](COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md)
+- [SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md](SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md)
+- [TAXONOMY_AND_SCHEME_GOVERNANCE.md](TAXONOMY_AND_SCHEME_GOVERNANCE.md)
+- [DOMAIN_PROFILE_INDEX.md](DOMAIN_PROFILE_INDEX.md)
+- [PUBLIC_VNEXT_DECISION_LOG.md](PUBLIC_VNEXT_DECISION_LOG.md)
+- [ROADMAP.md](ROADMAP.md) · [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) · [TEST_PLAN.md](TEST_PLAN.md)
 
 ## Repository boundary
 

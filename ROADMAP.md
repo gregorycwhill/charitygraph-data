@@ -1,143 +1,135 @@
-# CharityGraph Product Roadmap
+# CharityGraph Roadmap
 
-**Status:** Canonical capability roadmap  
-**Version:** 1.1-draft  
-**Updated:** 2026-08-23
+**Status:** Canonical product/engineering sequence, version 2.0-draft
 
-## 1. Roadmap principle
+## Outcome
 
-CharityGraph is one product delivered through Builder, Data and Viewer. The public objective is national, structured and governed charity data with useful breadth—not a sophisticated pipeline that can defend a tiny corpus.
+Build a one-stop shop for structured, governed Australian charity data by expanding from a sound operational foundation through bounded reality slices, cohort-scaled processing and visible open curation.
 
-Builder vNext is Python-controlled and LLM-powered. Python makes model use economical and recoverable through evidence preparation, batching, scheduling, caching, validation and hard cost controls. LLMs are introduced before broad infrastructure because difficult extraction, semantic judgement, classification, writing and embeddings are central to the product.
+## Phase 0 — Documentation and baseline freeze
 
-## 2. Protected foundation — complete and ongoing
+**Exit criteria**
 
-- Preserve immutable public contract 0.5 and its checksum.
-- Preserve the live Viewer, machine-discovery routes and green regression baselines.
-- Preserve source-native ACNC/AIS/DGR evidence, financial fidelity and compatibility tests.
-- Keep raw/private archives, prompts/responses, operational state and telemetry outside public releases.
-- Recycle the existing evidence, model runs, schemas and human decisions without automatic promotion.
+- this controlled documentation package is accepted and installed;
+- authority and supersession are explicit;
+- contract 0.5 checksum remains unchanged;
+- current-state commits/tests are confirmed;
+- old working documents are marked superseded or historical, not silently mixed with active authority.
 
-## 3. Phase 1 — documentation and economics authority
+## Phase 1 — Identity, programs and classifications reality slice
 
-**Outcome:** active documents agree on the cohort budgets, coverage-first acceptance and Python/LLM division.
+**Cohort:** Approximately ten deliberately varied charities.
 
-- Install the product, principles, architecture, economics policy, roadmap, implementation plan and tests.
-- Define total donations only as `donor_decision_exposure_proxy`.
-- Protect pooled budgets of AUD 100 / 100 charities, AUD 100 / next 1,000 and AUD 100 / next 10,000.
-- Remove custom local NLP from the initial roadmap.
-- Establish risk-weighted rather than universal human review.
+**Output:** Private governed preview only.
 
-**Gate:** authority/link/brand checks, green baselines and unchanged immutable checksum.
+Build the narrow end-to-end path:
 
-## 4. Phase 2 — minimum model-economics foundation
+1. register selected sources and recovered evidence;
+2. acquire/reference content-addressed artefacts;
+3. resolve subjects, identifiers and scope;
+4. identify programs/services and geography;
+5. create evidence-backed observations and assertions;
+6. preserve ACNC/ATO source classifications;
+7. assign CLASSIE subject/population concepts;
+8. assign CharityGraph operational activities;
+9. assign UN SDGs;
+10. record task, prompt/model, cost, coverage and adjudication lineage;
+11. render a private review report.
 
-**Outcome:** paid work can be scheduled, cached and cost-controlled before a real call is made.
+**Exit criteria**
 
-- Define minimum evidence/candidate/decision/derivative records.
-- Define logical task outputs and physical request/batch records.
-- Define cohort, pricing, FX, reservation, reconciliation and cache contracts.
-- Implement a thin SQLite task/batch/cache/cost ledger.
-- Implement fake-provider batching, retries, resume, duplicate prevention and hard stops.
+- fixed development cases and untouched holdout pass their agreed thresholds;
+- no unbounded phrase-rule growth;
+- provenance floor is complete;
+- ordinary classifications are useful rather than reflexively unknown;
+- costs reconcile in SQLite;
+- repeated runs reuse artefacts/cache safely;
+- failure classes and unresolved cases are reported.
 
-**Gate:** deterministic hashes, recoverable SQLite state and simulated proof that overspend/duplicate paid work cannot occur.
+## Phase 2 — Source acquisition and archaeology rebinding
 
-## 5. Phase 3 — bounded economics spike
+- productionise source registry and acquisition receipts;
+- add ACNC/ABN, charity websites and annual-report connectors first;
+- index existing archaeology by content hash and lineage confidence;
+- rebind only evidence-supported artefacts;
+- quarantine unresolved legacy material without discarding it;
+- implement retention, rights and privacy projections.
 
-**Outcome:** real evidence establishes routing and unit economics before the architecture broadens.
+**Exit criteria:** reproducible reacquisition/reuse, no per-run raw duplication, governed lineage dossiers and source-health reporting.
 
-- Run 10–20 representative charities under a separately approved micro-budget.
-- Test difficult vision/text recovery, relevance, extraction, semantic judgement, writing and embeddings.
-- Compare independent requests, same-subject logical-task bundling and provider batch processing.
-- Measure unsupported claims, recoverable recall, accepted observations, latency and cost.
+## Phase 3 — Participation and fundraising profiles
 
-**Gate:** reproducible cost/yield report and approved default route. No public output.
+- research and disposition external schemes;
+- publish initial CharityGraph-native faceted vocabularies;
+- populate participation from the start of the production cohort;
+- model fundraising method, channel, setting, instrument, audience and campaign;
+- support direct-observation records without yet launching a collection platform;
+- evaluate website/report evidence separately from observed activity.
 
-## 6. Phase 4 — LLM-powered vertical slice
+## Phase 4 — Finance, governance and relationships
 
-**Outcome:** one representative path produces source-linked typed knowledge, bounded writing and embeddings.
+- retain source financial line items and map to the National Standard Chart of Accounts;
+- implement period, consolidation and formula semantics;
+- add governance roles and organisational-capacity assertions;
+- add typed, directed and time-scoped ecosystem relationships;
+- onboard selected industry shadow registries as first-class sources.
 
-- Move from evidence to model candidates, policy/fixture decisions, canonical observations, coverage and derivatives.
-- Demonstrate model acceptance through an explicit benchmarked automation policy without a human label.
-- Project fixtures only through the 0.5 adapter and classify differences.
+## Phase 5 — Cohort engine and scaled private build
 
-**Gate:** typed lineage, independent logical-output validation, idempotent rerun and safe failure.
+- version notability/resource-allocation features;
+- implement approved A/B/C/D cohort definitions;
+- schedule portfolio budgets and provider routing;
+- build top 100, next 1,000 and next 10,000 in controlled stages;
+- sample the tail and high-risk claim classes;
+- measure reach, resolved claims, abstention, error, correction, cost and right-tail disparity.
 
-## 7. Phase 5 — evidence reuse and core domains
+Each cohort proceeds only when the previous stage demonstrates acceptable economics and error classes. “Acceptable” does not mean complete or uncontested.
 
-**Outcome:** the existing treasure trove feeds a broad semantic product without destructive reorganisation.
+## Phase 6 — Open correction pilot
 
-- Index archives in place based on real task needs.
-- Populate activities, beneficiaries, programs/services, geography and participation.
-- Port ACNC source taxonomies and the CharityGraph-native taxonomy as separate governed schemes.
-- Add fundraising/shadow-registry observations, ethos/service orientation and notable context.
-- Add corrections, conflict handling, risk policies, sample review and invalidation.
+- publish a correction/challenge contract;
+- accept evidence, scope corrections and taxonomy proposals;
+- support stable proposal identifiers and governed dispositions;
+- preserve exact acceptance/edit lineage;
+- publish correction latency and outcome measures;
+- pilot with analysts, charity insiders and researchers.
 
-**Gate:** domain fixtures, source-role/rights policies, anti-negative-inference tests and no custom local NLP tier.
+## Phase 7 — Public vNext release candidate
 
-## 8. Phase 6 — first 100 charities
+- freeze public projection schemas and vocabulary versions;
+- create release manifest, coverage and limitations reports;
+- validate licensing, attribution, privacy, branding and endorsement boundaries;
+- generate Data bundle and Viewer compatibility layer;
+- run reproducibility, integrity, accessibility and performance tests;
+- publish an explicitly versioned release candidate alongside—never over—contract 0.5.
 
-**Outcome:** a rich, risk-aligned production candidate for the highest donor-decision-exposure cohort.
+## Phase 8 — Broader domains and agentic access
 
-- Rank by total donations without implying donor count or charity merit.
-- Process applicable core domains, writing and embeddings within AUD 100.
-- Allocate more assurance to sensitive/high-exposure claims while maintaining coverage.
+- outcomes/evaluation evidence;
+- cautious ethos, stance and conduct profile;
+- adverse-event profile with consequence-aware review;
+- mandate/delegation records for future agents;
+- query/API projections where real downstream demand justifies them;
+- direct-observation and advertising initiatives through separate governed projects.
 
-**Gate:** hard cap, anti-sparsity targets, sampled quality/risk review, correction readiness and separate approval before public release.
+## Continuous workstreams
 
-## 9. Phase 7 — next 1,000 charities
+- scheme research and public disposition register;
+- source rights/privacy/security review;
+- model and prompt evaluation;
+- budget and cache optimisation;
+- Indigenous data-governance design;
+- documentation and ADR maintenance;
+- public commitments and brand/reuse review;
+- community and analyst discovery.
 
-**Outcome:** broad, economical coverage within AUD 100.
+## Explicit non-goals for early phases
 
-- Reuse valid caches and source-family knowledge.
-- Use provider batches, concise evidence packs and same-subject bundling where benchmarked.
-- Use stronger models/human review selectively for conflicts and risk.
-
-**Gate:** hard cap, stable domain quality, coverage/yield targets and reproducible routing.
-
-## 10. Phase 8 — next 10,000 charities
-
-**Outcome:** national-scale model-assisted enrichment within AUD 100.
-
-- Use the proven economical route for most subjects.
-- Escalate only where expected information/risk value justifies cost.
-- Preserve explicit unprocessed, failed, unavailable and scoped not-found states.
-
-**Gate:** hard cap, restartability, cache effectiveness, throughput and anti-sparsity acceptance.
-
-## 11. Phase 9 — public-contract and cutover proposal
-
-**Outcome:** a separately governed future public contract after real cohort evidence exists.
-
-- Propose any public identity/schema change with migration fixtures.
-- Validate JSON, Markdown, bulk and Viewer consistency.
-- Propose routine refresh scheduling and legacy orchestration retirement.
-- Retain the previous valid release on any failure.
-
-## 12. Phase 10 — routine national operation
-
-- Maintain a common structured baseline for eligible charities.
-- Refresh by source/domain freshness and donor-exposure risk.
-- Monitor identity, coverage, quality, corrections, cost and failure clusters.
-- Re-embed only when stable derivative text or embedding policy changes.
-- Revisit model routes as prices/quality change using versioned benchmark evidence.
-
-## 13. Deferred brand and legal review
-
-CharityGraph does not claim to be a registered trade mark and makes no current registration application. Review the branding position before meaningful external adoption or when any of these occurs:
-
-- third-party commercial reuse under CharityGraph-like branding;
-- material risk that users could confuse a derivative with the official project;
-- a branding or distribution partnership; or
-- transfer of the project to a formal legal entity.
-
-The review should identify a proposed owner, relevant trade-mark classes, expected costs and whether professional advice is warranted. This is a future decision trigger, not a blocker for current Builder work or public releases.
-
-## 14. Deferred research
-
-- custom local NER/relevance/taxonomy/summarisation until total-cost-of-ownership evidence supports it;
-- harm→remedy reference graph;
-- impact/effectiveness, unmet-need and funding-allocation modelling;
-- API/MCP and distributed workers/PostgreSQL;
-- transactional giving or participation products;
-- international coverage.
+- replacing SQLite with a network database;
+- completing every taxonomy before a reality slice;
+- public wiki-style direct edits;
+- universal charity ranking or impact score;
+- teaching deterministic Python to interpret unrestricted prose;
+- migrating all archaeology into canonical state;
+- changing immutable release 0.5;
+- building a public API before download/Viewer and analyst workflows prove demand.

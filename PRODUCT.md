@@ -1,279 +1,344 @@
-# CharityGraph Product Contract
+# CharityGraph product contract
 
-**Status:** Canonical shared product contract  
-**Version:** 1.1-draft  
-**Date:** 2026-08-23  
+**Status:** Canonical shared product contract
+
+**Version:** 2.0-draft
+
+**Date:** 24 August 2026
+
 **Applies to:** Builder, Data and Viewer
 
 ## 1. Public promise
 
 > **CharityGraph is the one-stop shop for structured, governed Australian charity data.**
 
-CharityGraph integrates public information about Australian charities, their programs, activities, beneficiaries, geography, finances, fundraising, relationships, organisational character and notable context. It turns fragmented public material into structured, evidence-backed, versioned and contestable data for people, analysts, software and AI systems.
+CharityGraph integrates public information about Australian charities, their legal and operating identities, programs, services, activities, populations, geography, participation, fundraising, finances, relationships, governance, workforce, capability, capacity, ethos, commitments, conduct, notability, outcomes and evidence.
 
-“One-stop shop” means one governed integration and interpretation layer. It does not mean one source, one table, one universal taxonomy, one stored mega-card or complete knowledge about every charity.
+It turns fragmented public material into structured, source-aware, versioned, contestable and reusable data for people, analysts, developers and AI systems.
+
+“One-stop shop” means one governed discovery and interpretation layer. It does not mean:
+
+- one source;
+- one table;
+- one stored mega-card;
+- one taxonomy;
+- equal depth for every charity;
+- real-time completeness;
+- a universal score; or
+- a claim that every interpretation is beyond reasonable disagreement.
 
 ## 2. Product purpose
 
-Public charity information is spread across regulators, tax records, annual reports, websites, public inquiries, reference sources and specialist sector sources. Even when technically public, it is expensive to find, join, read and interpret.
+Australian charity information is distributed across regulators, tax records, annual reports, websites, public inquiries, service directories, government award systems, research, media and specialist sector sources. Even when public, it is expensive to locate, join, read, interpret and compare.
 
-CharityGraph reduces that cost through a Python-controlled, model-assisted transformation:
+CharityGraph reduces that cost through:
 
 ```text
-public sources → source-native records → bounded evidence → governed observations → public projections
+sources and observations
+        ↓
+source-native evidence
+        ↓
+structured candidates and mappings
+        ↓
+governed judgments and corrections
+        ↓
+immutable public projections
 ```
 
-Its distinctive value is broad semantic integration with provenance. It does not merely copy sources and does not hide the sources behind synthesis. LLMs are a routine production component for difficult extraction, semantic judgement and public writing; Python supplies the control plane that makes their use repeatable, economical and testable.
+Its distinctive value is broad semantic coverage with inspectable provenance. It does not merely mirror sources and does not hide them behind synthesis.
 
-## 3. Anchor user and first-class users
+## 3. Product strategy
 
-### 3.1 Anchor design user: analyst or consultant
+### 3.1 Coverage before forensic perfection
 
-CharityGraph is designed first to support rigorous analytical work by philanthropic advisers, foundation staff, social-purpose consultants, service-system planners, researchers, journalists and charity advisers.
+The product will not succeed by achieving forensic confidence over a negligible fraction of the sector.
 
-An analyst should be able to:
+CharityGraph therefore:
 
-- construct a defensible universe of organisations and programs;
-- determine who does what, for whom, where and through which intervention;
-- compare periods and scopes without equating unlike values;
-- map service ecosystems and organisational relationships;
-- examine financial, funding and fundraising patterns;
-- locate evidence, exceptions, gaps and changes;
-- reuse the data in spreadsheets, SQL, Python, R and BI tools.
+- establishes inexpensive authoritative reach across the national charity population;
+- uses cohort-specific LLM budgets to deepen useful coverage;
+- invests additional defensibility according to consequence, ambiguity and claim risk;
+- preserves a universal machine-captured provenance floor;
+- tolerates transparently represented uncertainty and incompleteness in the long tail; and
+- treats excessive abstention on well-evidenced low-risk classifications as failure.
 
-Analyst-grade data is also a strong substrate for funders, consumer LLMs and downstream products. CharityGraph may enable commercial reuse without producing client-specific recommendations, prospect scores or proprietary consulting methods.
+### 3.2 Open-data curation
 
-### 3.2 Funders and downstream personal agents
+CharityGraph publishes useful governed judgments at meaningful scale, explains how they were produced and provides pathways to challenge them.
 
-Funders use CharityGraph for discovery, comparison and diligence. A downstream personal agent may use it to apply the principal's mandate, exclusions and tolerances.
+The community may contribute evidence, corrections, mappings and source updates. A governed review may amend, qualify, withdraw or uphold the existing record. A successful correction is product success, not necessarily evidence that publication should have been deferred.
 
-CharityGraph makes a subject or program **mandate-adjudicable** by supplying evidence-backed ingredients. It does not adjudicate a person's mandate or publish universal fit conclusions.
+Coverage and reach create the value that motivates community investment; community scrutiny then improves quality and methods.
 
-### 3.3 Product builders
+### 3.3 Simple experience over a rich model
 
-Builders use stable identities, schemas, releases, bulk data, selective representations, provenance, coverage and corrections as a charity-intelligence layer.
+The internal model is intentionally sophisticated because developers, software agents and LLMs need precise semantics. Public users receive restrained, purpose-built organisation, program, service and evidence views.
 
-### 3.4 Charities and advisers
+Cards and pages are projections from governed knowledge, not Builder’s internal source of truth.
 
-Charities inspect how public information has been represented, follow the evidence, provide attributed self-description and challenge errors or stale interpretations. They do not receive editorial control over supported independent observations.
+## 4. Anchor user and first-class users
 
-### 3.5 Public users
+### 4.1 Analyst or consultant
 
-Public users inspect a restrained, evidence-oriented Viewer. The Viewer is a reference interface, not a marketplace.
+The analyst or consultant is the anchor design user. This includes philanthropic advisers, foundation staff, service-system planners, social-purpose consultants, researchers, journalists and charity advisers.
 
-## 4. Question scales and channels
+They need to:
 
-Question scale and delivery channel are independent.
+- construct a defensible cohort;
+- determine who does what, for whom and where;
+- distinguish legal purpose from current operations;
+- compare periods and scopes without false equivalence;
+- map service supply, availability and delivery relationships;
+- trace grants, contracts, donations and other resource flows;
+- examine participation, fundraising, governance and organisational capability;
+- separate regulator facts, first-party claims, direct observations and evaluations;
+- identify changes, conflicts and gaps;
+- export governed data to spreadsheets, SQL, Python, R and BI tools; and
+- explain conclusions to another decision-maker.
 
-### Scales
+### 4.2 Funders and service planners
 
-- **Organisation:** understand and inspect one subject.
-- **Program/service:** understand a scoped activity, service, unit, appeal or initiative.
-- **Portfolio/comparison:** compare a defensible set while preserving scope and period.
-- **Ecosystem/corpus:** analyse who works on what, for whom and where, including relationships and coverage gaps.
+Funders use CharityGraph for discovery, comparison and diligence. Service planners use it to ask not only where need exists but how that need is being met, by whom, with what capacity, dependencies and geographic reach.
 
-### Channels
+CharityGraph supplies the charity-side supply and ecosystem map. Demand forecasting, causal funding optimisation and formal procurement decisions require appropriate external evidence and downstream analysis.
 
-- Viewer and public web pages;
-- general-purpose consumer LLMs;
-- spreadsheets, SQL, Python, R, BI and Parquet;
-- JSON, JSONL and downstream product integration;
-- future API or MCP access only when demand justifies it.
+### 4.3 Downstream agents
 
-Static public artefacts remain useful without specialised integration.
+A downstream personal or institutional agent may apply a principal’s explicit mandate, exclusions and tolerances.
 
-## 5. Canonical product question
+CharityGraph supplies evidence-backed, mandate-adjudicable ingredients including legal status, cause, program scope, geography, population, ethos, conduct, notable context and uncertainty. It does not silently impose a universal mandate, execute a donation or provide personal financial advice.
 
-CharityGraph should progressively enable this question:
+### 4.4 Product builders
 
-> Which Australian organisations or programs work on problem X, for beneficiary group Y, in geography Z, through what activities or interventions; how are they structured, funded and raising money; what organisational ethos or notable context may matter; and what evidence, recency, uncertainty and coverage qualify the answer?
+Builders use stable identities, schemas, releases, bulk distributions, provenance, coverage, taxonomies, relationships and corrections as a charity-intelligence layer.
 
-CharityGraph supplies the charity-side supply map. Population need, unmet demand, causal impact and funding-allocation optimisation normally require external datasets and downstream analysis.
+### 4.5 Charities and contributors
 
-## 6. Subject identity and scope
+Charities inspect their representation, follow evidence, supply attributed information and challenge errors or stale interpretations. They do not receive editorial control over supported independent observations.
 
-CharityGraph subjects have stable opaque `subject_id` values independent of ABN, ACNC registration, ACN, name, website or any other external identifier.
+Researchers, sector experts and public contributors may submit evidence and proposed corrections. Contributions are reviewed under public rules rather than accepted by vote or prominence.
 
-Supported subject kinds include organisation, organisation group, legal entity, organisational unit, fund and program. Registrations and tax statuses are roles or observations, not subject kinds.
+### 4.6 Public users
 
-Source records have identities independent of CharityGraph subjects. A binding records status, basis, confidence, supporting and conflicting evidence, review state and time. A name or domain alone never creates or binds a subject.
+Public users receive an accessible Viewer for organisation, program, service and evidence discovery. It is a reference interface, not a marketplace, league table or donation platform.
 
-Programs, services and organisational units may initially use governed subject-local scope. They become durable subjects only when cross-source identity or another demonstrated use case justifies governed promotion and an explicit relationship.
+## 5. Question scales
 
-Artefact lineage is distinct from real-world relationships among organisations, groups, programs, funders, providers, networks and predecessors or successors.
+CharityGraph supports:
 
-## 7. Knowledge model
+- **Organisation:** understand one operating organisation and its legal identities.
+- **Program or service:** understand a scoped body of work or offering.
+- **Portfolio:** compare a governed cohort while preserving scope, period and comparability.
+- **Ecosystem:** analyse programs, relationships, flows, geography, supply and coverage gaps.
+- **Corpus:** study classifications, methods, sources and sector-wide patterns.
 
-Builder's internal canonical knowledge consists of governed typed observations attached to subjects and scopes. A CharityGraph Card is a stable public product object compiled for a specific release from selected observations, coverage assessments and derivatives.
+Question scale is independent of channel.
 
-The internal process separates:
+## 6. Delivery channels
 
-- source blob;
+- public Viewer and crawlable pages;
+- JSON and Markdown subject representations;
+- bulk JSONL, CSV and Parquet distributions where declared;
+- spreadsheets, SQL, Python, R and BI workflows;
+- general-purpose LLM retrieval and citation;
+- downstream data products; and
+- future API or MCP access when demand warrants operational complexity.
+
+Static public artefacts remain the durable baseline.
+
+## 7. Canonical product question
+
+CharityGraph should progressively answer:
+
+> Which Australian organisations, programs or services work on problem X, for population Y, in geography Z, through what activities or interventions; how are they structured, funded, governed and raising resources; what participation, capacity, ethos, notable context and evidence may matter; and what source, time, uncertainty and coverage qualify the answer?
+
+## 8. Subject identity and scope
+
+CharityGraph uses opaque internal `subject_id` values and authority-scoped external identifiers. It does not fabricate a universal public organisation identifier from its brand.
+
+The subject stack supports:
+
+- legal entity;
+- operating organisation;
+- organisational unit;
+- program;
+- service;
+- project;
+- campaign and appeal;
+- participation opportunity;
+- site, facility, creative and placement where independently material; and
+- approved public-interest person or governing-position records.
+
+Subjects are connected through governed relationships, not hard-coded nesting alone.
+
+An assertion is attached to the lowest scope supported by evidence. Program facts do not automatically become organisation facts; partner conduct does not propagate through association; and legal purpose does not prove current operational activity.
+
+## 9. Knowledge model
+
+Builder separates:
+
+- source profile and acquisition;
+- evidence artefact and evidence span;
 - source-native record;
-- subject binding;
-- evidence fragment;
-- candidate observation;
-- governed decision;
-- canonical observation;
-- coverage assessment;
-- derivative;
+- observation;
+- candidate assertion or mapping;
+- identity and relationship decision;
+- governed acceptance, edit or rejection;
+- conflict and correction;
+- current-view selection;
+- publication eligibility; and
 - release projection.
 
-All public representations of one release must agree on shared values, but no single stored card is Builder's universal source of truth.
+The public dataset is a governed projection, not an archive or runtime dump.
 
-## 8. Product domains
+## 10. Product domains
 
-### 8.1 Identity and regulatory status
+### 10.1 Identity and regulatory status
 
-Legal, display, operating and former names; external identifiers; registrations; entity and tax/DGR status; lifecycle; and source bindings.
+Names, external identifiers, legal and operating identity, registrations, DGR/tax status, lifecycle, groups, succession and source bindings.
 
-### 8.2 Structure and relationships
+### 10.2 Purpose, subjects, programs and geography
 
-Groups, legal entities, units, funds, programs, services, parents, networks, auspice, delivery/funding/provider relationships, merger, split, predecessor and successor.
+Legal purpose, stated mandate, cause/subject, operational activity, intervention, program, service, population roles, place and role-specific geography.
 
-### 8.3 Work and reach
+### 10.3 Participation
 
-Activities, beneficiaries, programs/services, causes/problems, interventions/approaches, cause centrality, delivery modes and role-specific geography.
+Volunteering, membership, governance, co-design, consultation, lived-experience contribution and other participation opportunities, relationships, episodes and aggregate measures.
 
-Cause centrality is evidence-backed and uses `primary`, `material`, `incidental` or `unknown`. It is not taxonomy adjacency or a donor-fit score.
+CharityGraph is initially a structured-data and discovery product, not a volunteer marketplace.
 
-### 8.4 Resources and operations
+### 10.4 Fundraising and resource mobilisation
 
-Longitudinal financial statements and metrics, workforce and volunteers, and explicitly reported service volume, capacity, eligibility or operating context where available.
+Campaigns, appeals, creatives, placements, solicitation mechanisms, communication channels, physical settings, resources sought, donor relationship stages, instruments, delivery parties, compensation models and direct observations.
 
-### 8.5 Funding and fundraising
+Residential door-knocking, public-place fundraising and shopping-centre/private-site activity remain distinct. Charity-shop drop-off, donation bins, organised pick-up and goods drives remain distinct.
 
-Keep four domains separate:
+### 10.5 Finance and resource flows
 
-1. funding source;
-2. standing fundraising practice;
-3. fundraising campaign;
-4. fundraising expenditure.
+Source-faithful reports, statements, line items, notes, assurance, normalised concepts, grants, contracts, donations, restrictions, funds, allocations, calculations and reconciliations.
 
-Source-reported campaign amounts and counts retain their wording, period and scope. They do not silently reconcile to accounts or become CharityGraph ROI, efficiency or causal-attribution measures.
+Reported or assured financial facts remain distinct from fundraiser, platform or vendor claims about ROI, uplift, lifetime value or social return.
 
-Fundraising expenditure follows the governed ladder: direct disclosure; deterministic reconstruction; defensible bounds or specifically governed interpretation; otherwise unavailable/null. There is no universal prior, peer fill, forced point or automatic midpoint.
+### 10.6 Governance, workforce, capability and capacity
 
-### 8.6 Character and context
+Governing instruments, bodies, positions, appointments, management and service governance; employees, contractors, volunteers and other contributors; skills, credentials, assets, service offers, access conditions, capacity, availability, waitlists and constraints.
 
-**Ethos** records worldview, tradition, affiliation or institutional orientation through separately attributed self-description, formal affiliation, external characterisation and historical origin.
+### 10.7 Relationships and ecosystems
 
-**Service or mission orientation** separately records whether and how ethos enters service access, culturally specific delivery, worship, formation, proselytising, advocacy or program design.
+Control, affiliation, funding, commissioning, contracting, implementation, referral, membership, scheme, assurance, knowledge, coalition, shared-brand, auspice, predecessor and successor relationships.
 
-Beneficiary identity never supplies an ethos inference.
+Every substantive relationship is qualified by direction, roles, scope, time and evidence. Graph centrality is not organisational importance.
 
-**`notable_context`** records bounded institutional, historical, legal, regulatory, inquiry, recognition, criticism or relationship facts. It is never a reputation, prestige, controversy, safety or notability score. Sensitive observations require adequate underlying evidence, precise procedural status, a versioned risk policy and expedited correction handling. The policy may require human review, stronger-model adjudication or publication hold; universal human review is not a prerequisite for useful coverage.
+### 10.8 Ethos, conduct, commitments and notability
 
-### 8.7 Participation and action
+Values, positions, commitments, implementation evidence, scheme participation, complaints, allegations, investigations, findings, sanctions, responses, remediation and descriptive notability signals.
 
-Participation is a current core domain and should be populated from initial production processing. It includes donating, volunteering, working bees, membership, public events, boards/committees and other supported engagement modes.
+Notability is not merit. Allegations are not findings. Absence of public evidence is not neutrality or non-compliance.
 
-Stable participation modes remain distinct from transient opportunities. Opportunities retain status, effective dates, freshness and verified action destinations distinct from evidence URLs.
+### 10.9 Outcomes, impact and evaluation
 
-CharityGraph structures participation data; it does not operate an engagement or volunteering marketplace.
+Need, theory of change, activity, output, outcome, indicator, observation, evaluation study, finding, effect estimate, qualitative evidence, synthesis and economic/social-value claim.
 
-### 8.8 Taxonomies and semantics
+Change, contribution and causation remain distinct.
 
-Multiple taxonomies coexist. Each classification records taxonomy, version, stable term, assignment method, scope, evidence and confidence where meaningful.
+### 10.10 Sources, evidence and publication
 
-ACNC purpose and beneficiary classifications remain source-native and distinct from the CharityGraph-native taxonomy. The native taxonomy begins from the governed seven-dimension v0 evidence base—cause/problem, beneficiary, activity, approach, participation, geography and organisational character—but evolves only through versioned governance.
+Source authority, acquisition, rights, evidence, transformations, model tasks, decisions, quality, corrections, releases, catalogues and public provenance.
 
-Embeddings and similarity are descriptive navigation artefacts, not recommendations.
+## 11. Taxonomy strategy
 
-## 9. Source model and authority
+CharityGraph uses a governed multi-facet system rather than one universal classification.
 
-CharityGraph uses authoritative regulators, organisation self-report, independent sources, community-maintained references, governed contributions, deterministic derivations and approved model-assisted interpretation.
+Approved direction includes:
 
-Authority attaches to a proposition and source role, not universally to a publisher.
+- retain ACNC and ATO classifications as source- or authority-reported facts;
+- adopt CLASSIE as the principal Australian subject and population reference, with formal reuse/version controls;
+- adopt the National Standard Chart of Accounts as the principal Australian not-for-profit finance interoperability reference;
+- adopt UN Sustainable Development Goals as a current goal-alignment overlay;
+- use ABS geography and relevant statistical classifications with explicit editions;
+- develop native operational-activity, participation and fundraising vocabularies where external schemes are inadequate; and
+- publish decisions for schemes adopted, profiled, incorporated, crosswalked, adapted, deferred, rejected or superseded.
 
-Evaluated industry shadow registries are first-class sources for the facts their institutional systems establish, including membership or registration status, applicable categories, fees, levies, codes, dates and semantically entailed practices. A code establishes applicable obligations, not compliance. A fee rule establishes the rule, not a member-specific amount or volume without further evidence.
+Model-assessed assignments are useful governed judgments. Ordinary semantic disagreement is represented through confidence, ranking, alternatives and correction—not routine abstention.
 
-Awards, benchmarks, agency case studies, platforms and listed-provider disclosures may directly establish named campaigns, relationships, reported amounts or events. Promotional effectiveness, uplift, conversion and ROI claims remain source-native/noncanonical unless a separate policy is approved.
+## 12. Evidence, judgment and provenance
 
-Public accessibility does not by itself authorise bulk republication. Every source family has an access, rights, attribution, retention, refresh and public-projection policy.
+CharityGraph distinguishes:
 
-## 10. Evidence, provenance and time
+- authority-reported fact;
+- first-party claim;
+- independent report;
+- direct observation;
+- transcription or extraction;
+- calculated result;
+- taxonomy mapping;
+- model-assessed judgment;
+- human-reviewed judgment; and
+- disputed or corrected record.
 
-Material observations identify appropriate source records and evidence. Claim basis explains why CharityGraph can state the proposition; extraction method explains how evidence was recovered. A source fact recovered through OCR, vision or an LLM can remain direct.
+Every published assertion retains a machine-captured provenance floor. Expensive forensic depth is risk-tiered.
 
-Relevant times include retrieval, source publication, reporting period, effective/event time, observation, assessment, generation and release. Current projections never erase history.
+For a well-evidenced low-risk semantic classification, the system should make the best-supported judgment. It should not return `unknown` solely because an adjacent classification is arguable.
 
-Conflicting legitimate observations remain visible with reconciliation status. They are not silently collapsed into one scalar.
+## 13. Coverage and cohort economics
 
-## 11. Coverage and sparse knowledge
+Initial scheduled LLM allocations are:
 
-Every applicable capability has an explicit current state such as observed, not found in assessed sources, unavailable from source, not applicable, retrieval failed, not yet processed, stale or unknown.
+- AU$100 for the first 100 charities;
+- AU$100 for the next 1,000;
+- AU$100 for the next 10,000; and
+- no routine per-charity LLM allocation for the remaining tail initially.
 
-`not_found_in_source` is valid only for a defined assessment scope and never means that a practice, characteristic or event does not exist. Missing output is not a negative claim.
+Cohort processing is risk-aware and revisable. Claim risk, user demand, correction, ambiguity, public scrutiny or material consequence may trigger deeper processing regardless of cohort.
 
-Sparse output is correct when public evidence is genuinely sparse or responsible publication is not possible. It is a product failure when recoverable public evidence remains unprocessed because the pipeline optimised for near-zero risk, elaborate local NLP or universal human review instead of useful coverage.
+Success is measured through reach, claim-family coverage, sampled correctness, false promotion, abstention, review burden, cost and right-tail performance—not provenance depth alone.
 
-## 12. Corrections and contestability
+## 14. Open curation and corrections
 
-Published records are generated outputs. Raw correction submissions remain private by default. Moderation may create governed proposals and decisions suitable for public projection.
+Every public record should be challengeable through a stable assertion or field reference.
 
-Accepted corrections change governed inputs or observations and trigger dependent rebuilds. Corrections do not manually overwrite final JSON, Markdown or Viewer content.
+Contributors may propose:
 
-History is append-only except where privacy, abuse, legal requirements or accidental sensitive publication require exceptional removal. A material challenge to sensitive context triggers expedited re-review.
+- corrected values;
+- alternate taxonomy assignments;
+- new or newer sources;
+- identity or relationship changes;
+- qualifications or missing context; and
+- privacy or rights concerns.
 
-## 13. Economics, processing priority and model use
+Review may accept, edit, partially accept, uphold, defer, reject or withdraw. Decisions preserve evidence and lineage. Published releases remain immutable; corrections appear prospectively.
 
-CharityGraph is Python-controlled and LLM-powered. Python performs acquisition, hashing, obvious deterministic extraction, joins, evidence selection, batching, scheduling, caching, validation, cost enforcement and publication. LLMs routinely perform difficult OCR/vision recovery, relevance screening, structured extraction, semantic interpretation, classification and bounded writing. Model-derived outputs remain source-bound, typed, reviewable and correctable.
+## 15. Neutrality and editorial independence
 
-The initial corpus uses three pooled paid-model budgets. Each budget includes text and vision inference, judgement, extraction, writing, embeddings, retries and escalations:
+Neutrality is procedural. CharityGraph:
 
-| Processing cohort | Selection | Total budget | Average planning allowance |
-| --- | --- | ---: | ---: |
-| first 100 | highest total donations | AUD 100 | AUD 1.00/charity |
-| next 1,000 | next highest total donations | AUD 100 | AUD 0.10/charity |
-| next 10,000 | next highest total donations | AUD 100 | AUD 0.01/charity |
+- does not sell ranking or preferred classification;
+- distinguishes evidence roles rather than flattening them;
+- preserves contrary and procedural information;
+- publishes methodology and scheme decisions;
+- applies claim-family rules consistently;
+- permits correction without granting subjects editorial control; and
+- keeps private user mandates outside canonical evidence.
 
-Total donations is recorded as `donor_decision_exposure_proxy`: a transparent processing-priority proxy for the number and consequence of donor decisions that may rely on CharityGraph. It is not a donor count, a measure of retail donations, charity merit, credibility, effectiveness or recommendation. The highest-exposure cohort receives more model spend and assurance because errors are more likely to encounter active brand/legal scrutiny; later cohorts emphasise economical coverage.
+## 16. Product boundaries
 
-Budgets are pooled within cohorts. Easy subjects may subsidise difficult ones. Cross-cohort transfer requires explicit approval. Builder reserves estimated cost before a request, reconciles actual cost afterwards and stops new paid work before a cohort cap can be exceeded.
+CharityGraph does not initially provide:
 
-Coverage is the optimisation objective; defensibility is a constraint. Prefer a source-linked, method-labelled model interpretation with stated uncertainty to a null selected only because it is legally safer. A high-precision system that publishes almost nothing fails the product contract.
+- donation execution;
+- personalised recommendations;
+- volunteer matching;
+- universal impact, trust, ethos, risk or efficiency scores;
+- demand forecasting or funding optimisation;
+- causal conclusions unsupported by evaluation evidence;
+- person-level donor, participant or beneficiary data;
+- unrestricted publication of all acquired source bodies;
+- a real-time operational service directory guarantee; or
+- hosted distributed orchestration, API or MCP as a prerequisite.
 
-Custom local NER, relevance, taxonomy or summarisation models are not part of the initial build. Deterministic parsing and off-the-shelf OCR remain useful. A custom local NLP component may enter the roadmap only after a benchmark shows lower total cost of ownership, including implementation, labels/evaluation, maintenance and operational complexity—not merely lower API spend.
+## 17. Release model
 
-## 14. Public releases and distribution
+Public releases are immutable, versioned and catalogue-described. A future release may contain coordinated subject, program, assertion, relationship, finance, taxonomy, coverage and evidence distributions rather than one enormous nested record.
 
-Public releases are immutable, versioned and publication-allowlisted. They include schemas, manifests, hashes, provenance, capability definitions, machine-readable formats and stable selective representations.
+The Viewer provides simple entry points. Developers and agents may traverse the richer linked distributions.
 
-Builder produces complete validated release candidates. Data owns public release artefacts. Viewer consumes an explicitly selected release and never private Builder state.
-
-Raw reports, website snapshots, model prompts/responses, private correction submissions, credentials, operational databases, caches and spend telemetry are private by default.
-
-## 15. Non-goals
-
-CharityGraph is not:
-
-- a charity recommender, ranker, rater or allocation engine;
-- an impact, effectiveness, reputation or fundraising-efficiency scoring system;
-- a payment product, wallet, personal agent or telemetry collector;
-- a universal definition of mandate fit or charitable worth;
-- a donor CRM, consulting product or prospect-scoring service;
-- a general web, news or allegations archive;
-- a demand, unmet-need or causal-impact model;
-- a single universal taxonomy or ontology;
-- a guarantee that every public fact has been found.
-
-Downstream users may evaluate, match, recommend, transact or model demand under their own methodology, assumptions, branding and disclosures.
-
-## 16. Product success
-
-Success is measured through:
-
-- national baseline coverage and identity quality;
-- ability to answer organisation, comparison and ecosystem questions;
-- scope, time and representation consistency;
-- provenance and public source-reference resolution;
-- summary, program/service, participation, fundraising, ethos/service-orientation and notable-context coverage where supporting evidence exists;
-- proportion of processed subjects receiving the intended model-assisted pass and embeddings;
-- semantic precision, unsupported-claim rate, recoverable recall and correction rate;
-- explicit source-scope and public-evidence gaps;
-- human review burden, accepted observations per dollar and accepted observations per subject;
-- compliance with the three cohort budgets and transparent donor-exposure processing order;
-- equitable baseline coverage across subject strata;
-- successful use by analysts, consumer LLMs and downstream products;
-- reliable immutable releases and Viewer fidelity.
+Public contract 0.5 remains immutable compatibility authority until a separately approved future contract is implemented.

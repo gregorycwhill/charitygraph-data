@@ -1,104 +1,158 @@
-# CharityGraph Documentation Authority
+# CharityGraph documentation authority
 
-**Status:** Canonical project-governance document  
-**Version:** 1.1-draft  
-**Date:** 2026-08-23
+**Status:** Canonical project-governance document
+
+**Version:** 2.0-draft
+
+**Date:** 24 August 2026
 
 ## 1. Purpose
 
-This document defines which CharityGraph documents govern product intent, architecture, public contracts and implementation. It prevents an old plan, historical handoff or immutable release description from silently overriding a current decision.
+This document defines which CharityGraph documents govern product intent, conceptual architecture, domain semantics, public contracts and implementation. It prevents a historical plan, design exploration, code comment, handoff or immutable release description from silently overriding a current decision.
 
 CharityGraph is one product implemented through three repositories:
 
-- **Builder** produces governed knowledge and release candidates;
-- **Data** publishes immutable public data contracts and releases;
-- **Viewer** provides the public inspection interface.
+- **Builder** acquires evidence, constructs governed knowledge and builds release candidates;
+- **Data** publishes immutable public contracts, releases, schemas and catalogue metadata; and
+- **Viewer** renders a selected public release for inspection.
 
-Repository location does not determine product authority.
+Repository location does not determine authority.
 
-## 2. Authority order
+## 2. Authority hierarchy
 
-When documents conflict, use this order:
+When documents conflict, apply this order:
 
 1. `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md` and `EXPERIENCES.md`;
-2. `LLM_ECONOMICS_AND_COHORT_POLICY.md` for model role, cohort order/budgets, cost orchestration and coverage-first acceptance, plus other approved architecture/product decision records;
-3. the applicable version-specific public Data contract and schemas;
-4. `CURRENT_STATE.md`, `ROADMAP.md`, `IMPLEMENTATION_PLAN.md` and `TEST_PLAN.md`;
-5. domain designs, evaluation designs and implementation proposals;
-6. historical plans, handoffs, experiments, migration records and immutable release artefacts.
+2. `INTEGRATED_PRODUCT_AND_DATA_MODEL.md`;
+3. `COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md` and other approved cross-cutting governance policies;
+4. `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` and `TAXONOMY_AND_SCHEME_GOVERNANCE.md`;
+5. the domain authorities indexed in `DOMAIN_PROFILE_INDEX.md`;
+6. approved architecture decision records and implemented Builder contracts;
+7. the applicable version-specific public Data contract, schema and immutable release manifest;
+8. `CURRENT_STATE.md`, `ROADMAP.md`, `IMPLEMENTATION_PLAN.md` and `TEST_PLAN.md`;
+9. working designs, evaluation plans and implementation proposals; and
+10. historical plans, handoffs, experiments, migration evidence and immutable historical artefacts outside their compatibility scope.
 
-A more specific approved contract governs its subject within the boundaries set by higher-level product documents.
+A more specific approved contract governs its subject within the boundaries established by higher-level documents.
 
 ## 3. Document statuses
 
 | Status | Meaning |
-| --- | --- |
+|---|---|
 | Canonical | Current product or governance authority |
-| Approved decision | Binding design decision awaiting or undergoing propagation |
-| Implemented contract | Exact contract for a named released version |
-| Active plan | Current sequencing or execution plan; may not change product semantics |
-| Working design | Investigation or proposed detail; not authority unless approved |
-| Reference | Useful operational or explanatory material |
-| Superseded | Replaced; retained only for traceability |
-| Historical | Evidence of a past state; contains no current instruction |
+| Approved decision | Binding decision awaiting controlled propagation |
+| Implemented contract | Exact contract for a named implementation or release |
+| Active plan | Current sequencing; may not change product semantics |
+| Working design | Proposed detail or investigation; not authority until approved |
+| Reference | Operational, methodological or explanatory material |
+| Superseded | Replaced but retained for traceability |
+| Historical | Evidence of a former state; no current instruction |
 | Immutable release | Published bytes and metadata that must not be rewritten |
 
-Every active document must state its status, version or date, scope and supersession relationship where relevant.
+Every active document SHALL state its status, version/date, scope and material supersession relationship.
 
 ## 4. Current authorities
 
 | Subject | Authority |
-| --- | --- |
-| Product purpose and boundary | `PRODUCT.md` |
+|---|---|
+| Product promise, boundary and users | `PRODUCT.md` |
 | Product principles | `PRINCIPLES.md` |
 | Public promises | `PUBLIC_COMMITMENTS.md` |
-| Users, channels and end-to-end jobs | `EXPERIENCES.md` |
+| End-to-end experiences | `EXPERIENCES.md` |
+| Integrated conceptual model and domain seams | `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` |
+| Coverage, model economics and open curation | `COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md` |
+| Source, evidence, provenance, adjudication and release governance | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` |
+| Taxonomies, external schemes and native vocabularies | `TAXONOMY_AND_SCHEME_GOVERNANCE.md` |
+| Domain ownership and research-design status | `DOMAIN_PROFILE_INDEX.md` |
+| Current public release | `PUBLIC_CONTRACT_0_5.md`, its schemas and immutable manifest |
+| vNext product and future-contract decisions | `PUBLIC_VNEXT_DECISION_LOG.md` |
 | Current delivery state | `CURRENT_STATE.md` |
 | Capability sequence | `ROADMAP.md` |
-| Approved implementation sequence | `IMPLEMENTATION_PLAN.md` |
+| Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
 | Verification and release gates | `TEST_PLAN.md` |
-| Model economics, cohort priority and orchestration | `LLM_ECONOMICS_AND_COHORT_POLICY.md` |
-| Builder internal architecture | approved Builder target architecture and subsequent ADRs |
-| Current public release contract | `PUBLIC_CONTRACT_0_5.md`, its schemas and immutable release manifest |
-| Current machine distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
-| Official identity and reuse policy | `BRAND_AND_REUSE.md` |
-| Future release identity metadata | `FUTURE_RELEASE_MANIFEST_CONTRACT.md` and its future schema proposal |
-| Current execution handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
+| Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
+| Current coding handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
 
-## 5. Decision propagation
+## 5. Refinement and conflict rules
 
-An approved working decision is binding for its subject even before every document is updated. The implementation owner must either propagate it or record an explicit conflict; it must not silently follow stale text.
+A domain profile MAY:
+
+- specialise a shared primitive;
+- introduce domain vocabulary and validation;
+- impose stronger evidence or publication requirements; and
+- define domain-specific calculations and views.
+
+It SHALL NOT:
+
+- change the meaning of a shared primitive silently;
+- create a competing canonical record for the same underlying fact;
+- weaken higher-level privacy, rights, lineage or correction requirements;
+- propagate attributes across subject or relationship boundaries without an approved rule; or
+- change public promises or release contracts indirectly.
+
+When a genuine conflict appears:
+
+1. preserve both statements and identify their authority;
+2. determine whether the conflict is semantic, temporal, scope-specific or implementation-only;
+3. record the resolution in an approved decision;
+4. propagate it to affected canonical documents; and
+5. retain superseded material as history or design evidence.
+
+## 6. Decision propagation
+
+An approved decision is binding within its subject before every document is updated. The implementation owner SHALL either propagate it or record an explicit conflict. Stale text SHALL not be followed silently.
 
 After propagation:
 
-- mark the decision record as propagated;
+- mark the source decision as propagated;
 - link to the canonical destination;
 - remove duplicated normative instructions where practical;
-- retain empirical evidence and rejected alternatives as history.
+- retain empirical evidence, alternatives and research sources; and
+- update relevant tests and agent instructions.
 
-## 6. Public-contract discipline
+## 7. Public-contract discipline
 
-The implemented public contract 0.5 is current compatibility authority for its immutable release. It is not the target internal Builder model and is not a future-schema proposal.
+Public contract 0.5 is current compatibility authority for its immutable release. It is not the target internal Builder model and not a future-schema proposal.
 
-Builder's internal canonical authority is governed typed observations attached to durable subjects and scopes. Cards and other public formats are release projections. A future public-contract migration requires its own decision, schemas, examples, migration notes and release gates.
+Builder vNext is governed by subjects, scopes, evidence, observations, assertions, relationships, measurements, decisions and release projections. Cards are public convenience views.
 
-## 7. Naming and historical separation
+A future public migration requires:
+
+- approved product decision;
+- evidence from representative reality slices;
+- versioned schemas and examples;
+- identifier and domain migration rules;
+- losslessness and compatibility analysis;
+- Data and Viewer coordinated acceptance;
+- release catalogue and correction treatment; and
+- a new immutable release.
+
+## 8. Naming and historical separation
 
 All active product, architecture, operational and agent-instruction documents use CharityGraph names and current paths.
 
-The former brand may occur only where exact matching is necessary inside:
+Historical naming may occur only where exact matching is unavoidable inside:
 
-- immutable historical release bytes;
+- immutable release bytes;
 - isolated compatibility adapters and tests;
-- quarantined migration evidence;
-- unavoidable third-party historical citations.
+- quarantined migration evidence; or
+- exact third-party historical citations.
 
-Active narrative uses neutral phrases such as “former project name”, “legacy public key” or “public contract 0.5 compatibility”. Historical documents should live under a clearly marked history directory and must not contain executable current instructions.
+Active narrative uses neutral phrases such as “former project name”, “legacy public key” or “public contract 0.5 compatibility”. Historical documents SHALL live under a clearly marked history or evidence location and SHALL not contain executable current instructions.
 
-## 8. Change control
+## 9. Change control
 
-- Product-boundary changes require an approved product decision and updates to the four canonical product documents.
-- Builder architecture changes require an ADR and traceability to product requirements.
-- Public-contract changes require versioned schemas, examples, migration analysis and Data/Viewer acceptance.
-- Domain vocabulary changes require taxonomy or schema governance and affected-observation migration analysis.
+- Product-boundary changes require a product decision and updates to the four canonical product documents.
+- Integrated-model changes require seam analysis and affected domain review.
+- Builder architecture changes require traceability to canonical requirements and an ADR where material.
+- Taxonomy changes require scheme disposition, version analysis and affected-assignment review.
+- Source-policy changes require claim-family, rights and publication analysis.
+- Public-contract changes require versioned schemas, examples, migration and release gates.
 - Immutable releases are never edited in place.
+- Handoffs and manifests report work; they do not create product authority.
+
+## 10. Complexity boundary
+
+Conceptual sophistication belongs in the governed data layer. Developers, software agents and LLMs may consume detailed schemas and provenance. Ordinary users receive simple, purpose-built projections and progressive disclosure.
+
+User-interface simplicity SHALL NOT be achieved by weakening internal semantics, and internal semantic richness SHALL NOT require an unnecessarily complex public experience.

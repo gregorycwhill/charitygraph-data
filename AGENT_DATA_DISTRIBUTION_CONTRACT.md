@@ -1,93 +1,86 @@
 # CharityGraph Agent and Data Distribution Contract
 
-**Status:** Canonical distribution requirements; current endpoints use public contract 0.5  
-**Version:** 1.0-draft  
-**Updated:** 2026-08-23
+**Status:** Product-level future contract, version 1.0-draft
 
-## 1. Purpose
+**Scope:** How agents and downstream software consume CharityGraph data; no runtime agent platform is implemented by this document
 
-Consumer LLMs, analytical tools and downstream systems are first-order CharityGraph channels. The public corpus must be discoverable, selectively retrievable, citable and interpretable without Viewer code or a proprietary integration.
+## 1. Principle
 
-## 2. Required discovery surface
+CharityGraph should be naturally usable by analysts, scripts and software agents without giving an agent more authority than the person or organisation that delegated the task.
 
-A selected release must provide or identify:
+## 2. Distribution forms
 
-- a current-release pointer;
-- immutable release manifest and hashes;
-- stable canonical subject routes;
-- per-subject JSON and Markdown alternatives;
-- crawlable semantic HTML through Viewer;
-- source-record and evidence links;
-- schemas and capability definitions;
-- sitemap and permissive robots policy;
-- licence, attribution, version and citation guidance;
-- machine-readable publication identity, licence identifier, attribution guidance, upstream-rights caveat and editorial-commitments metadata as specified by [FUTURE_RELEASE_MANIFEST_CONTRACT.md](FUTURE_RELEASE_MANIFEST_CONTRACT.md);
-- bulk JSONL/CSV/Parquet where declared by the release.
+The product may expose:
 
-## 3. Representation authority
+- immutable downloadable release bundles;
+- static Viewer pages and machine-readable card/subject projections;
+- versioned schemas and vocabularies;
+- checksums, manifests, coverage and limitations reports;
+- future query/API endpoints where justified;
+- correction/challenge submission interfaces;
+- private local Builder outputs for authorised users.
 
-Builder selects governed observations, coverage and derivatives into a `ReleaseProjection`. Data publishes immutable release artefacts. Viewer renders the selected release.
+The downloadable release remains the reproducible source of public truth. Dynamic services must identify the release or knowledge snapshot they use.
 
-JSON, Markdown, HTML and bulk formats must agree on shared released values. They are projections from the same release selection, not independently authored records.
+## 3. Agent-readable requirements
 
-CSV is a convenience flattening and never defines the knowledge model. Parquet is an analytical projection or declared snapshot. Markdown is a compact human/LLM representation, not a place for raw high-dimensional vectors or private evidence.
+A future public record should enable an agent to determine:
 
-## 4. Selective retrieval
+- stable subject reference and external identifiers;
+- scope and time of each material assertion;
+- whether a value is source-reported, calculated, model-assessed or human-reviewed;
+- evidence/citation and provenance projection;
+- taxonomy scheme, concept and version;
+- confidence/strength and lifecycle status where applicable;
+- coverage and missing-state semantics;
+- release identity, licence and attribution;
+- correction or challenge route.
 
-A consumer retrieving one subject should be able to understand:
+## 4. Mandate boundary
 
-- identity and scope;
-- source-native versus governed versus derived status;
-- evidence and source role;
-- reporting/effective time and freshness;
-- coverage and assessment scope;
-- relevant taxonomy/version/term;
-- release and schema version;
-- unresolved or conflicting status.
+An agent acting for a user should carry a machine-readable mandate stating, as applicable:
 
-The consumer should not need to download the corpus or execute Viewer JavaScript to obtain this information.
+- principal and delegated role;
+- purpose and permitted tasks;
+- geographic, subject and time scope;
+- spending or action limits;
+- data-use/privacy constraints;
+- expiry and revocation;
+- required evidence and review standard.
 
-## 5. Analytical retrieval
+CharityGraph data does not itself authorise an agent to donate, contact a charity, make a funding decision, publish an allegation or act for an organisation.
 
-Bulk releases must support defensible cohort construction and corpus analysis. Analytical projections retain stable identifiers and sufficient scope, time, provenance and coverage fields to avoid false comparison.
+## 5. Citation and uncertainty
 
-Nested domains may use separate tables rather than destructive flattening. All analytical rows must be traceable to released subjects and observations.
+Agents must not present a CharityGraph model-assessed classification as a regulator's statement. They should preserve material qualifiers, scope, time and source method. `unknown`, `not_attempted`, `not_applicable`, `withheld` and `failed` are not interchangeable.
 
-## 6. Consumer-LLM requirements
+For high-consequence decisions, an agent should inspect cited evidence and applicable current official sources rather than relying solely on a cached summary.
 
-Test at least:
+## 6. Query and cohort reproducibility
 
-- unaided discovery without naming CharityGraph;
-- source discovery;
-- directed use of CharityGraph;
-- interpretation of supplied subject JSON, Markdown or URLs;
-- organisation, program, portfolio and ecosystem questions;
-- evidence citation and uncertainty;
-- refusal to convert descriptive similarity or context into recommendation.
+An exported cohort or analytical result should record:
 
-Use genuinely naive sessions deliberately. Routine indexing or model familiarity is product success, not test contamination to be preserved forever.
+- release/snapshot identity;
+- query or filter expression;
+- taxonomy and metric versions;
+- inclusion/exclusion and missing-value policy;
+- generated time and tool version;
+- any post-processing or user edits.
 
-## 7. Citation
+This lets another analyst or agent reproduce the result without requiring identical prose explanations.
 
-A useful citation identifies:
+## 7. Corrections from agents
 
-- the stable CharityGraph route or artefact;
-- release ID and contract version;
-- subject/observation where practical;
-- upstream source when the claim depends on it;
-- reporting/effective period for time-sensitive claims.
+Agents may help prepare correction proposals, but proposals must identify the human/organisational principal where required, cite evidence and declare automated assistance. Automated volume does not grant priority or authority. Anti-abuse, privacy and review controls apply.
 
-## 8. Privacy and publication safety
+## 8. Bulk and responsible use
 
-Public distribution excludes raw reports and website archives unless separately authorised, raw model prompts/responses, private correction submissions, credentials, databases, caches, retry state, cost telemetry, logs and debug dumps.
+Open licensing permits broad reuse subject to the applicable licence. Users and agents must separately respect brand/endorsement rules, third-party rights, privacy, rate limits and laws. CharityGraph should provide efficient bulk access so responsible users do not need to scrape the Viewer.
 
-Source-family rights and attribution policy governs whether source-native payloads, compact observations or locator-only evidence may be published.
+## 9. Version change
 
-## 9. Failure and release continuity
+Schemas and vocabularies are versioned. Consumers must not assume labels are permanent identifiers. Deprecated concepts and prior releases remain resolvable where retention policy allows. Breaking public changes require a new contract/release version and migration notes.
 
-A failed build or deployment must not replace the previous valid public release. After publication, verify routes, manifest identity, hashes, source references, sitemap, robots and Viewer selection.
+## 10. Near-term implementation boundary
 
-## 10. Service evolution
-
-Static artefacts are the durable public baseline. Add API or MCP delivery only when observed demand justifies operational complexity. A service must not become the only way to obtain the public data.
-
+The first Builder slice need only emit a private machine-readable projection with the fields above where available. Public APIs, autonomous actions, mandate exchange and agent authentication are deferred. The data model must accommodate them without making them prerequisites for useful charity data.
