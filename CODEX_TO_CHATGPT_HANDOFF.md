@@ -1,137 +1,146 @@
-# CharityGraph — Codex Handoff: LLM Economics Documentation Amendment
+# CharityGraph — Codex Handoff
 
-**Status:** Active execution handoff  
-**Updated:** 2026-08-23  
-**Recommended Codex model:** Luna-High
+**Status:** Active bounded execution handoff
 
-## 1. Task in one sentence
+**Updated:** 24 August 2026
 
-Update the existing Builder and Data product-documentation PRs so that cohort budgets, routine LLM use, Python cost orchestration, coverage-first acceptance, risk-weighted governance and the deferral of custom local NLP become controlling requirements throughout the active document set.
+**Task:** Install Product Documentation Rewrite 2.0-draft; no product code
 
-This is documentation-only. Do not implement code or run paid model calls.
+## 1. Outcome
 
-## 2. Existing branches and PRs
+Install the supplied documentation packet as CharityGraph's coherent active product authority, reconcile repository-local links and supersession, validate the unchanged code/release baseline, and open clean PRs for review. Do not begin the Builder reality slice in this task.
 
-- Builder branch `charitygraph-product-docs-vnext`, PR #3; current relevant tip includes `f38e208`.
-- Data branch `charitygraph-product-docs-vnext`, PR #2; current relevant tip includes `2ad7fe2`.
-- Viewer is out of scope.
+## 2. Model and effort
 
-Update the existing PRs. Do not create replacement PRs unless a branch is unavailable or protected, and report that blocker before proceeding.
+This task is mechanical and bounded. **Luna-High is sufficient.** Escalate to Terra only if repository-local authority conflicts cannot be resolved from `REWRITE_MANIFEST.md` and the existing documents without making a new product decision.
 
-## 3. Source packet and authority
+Do not spend tokens redesigning approved content or repeatedly polishing prose.
 
-The supplied amendment packet contains complete replacement copies or patches for active files under `builder/` and `data/`. Its controlling new source is:
+## 3. Preconditions
 
-- `data/LLM_ECONOMICS_AND_COHORT_POLICY.md`.
+Before editing:
 
-Apply it with the current observation-first documentation already on the feature branches. Do not regress the complete approved Builder target architecture in `ARCHITECTURE.md`.
+1. locate the Builder, Data and Viewer repositories under the CharityGraph workspace;
+2. fetch and confirm clean/current `main` branches without deleting branches;
+3. record `main` heads;
+4. verify the immutable v0.5 manifest checksum;
+5. inventory untracked files and preserve them untouched;
+6. read this handoff, `REWRITE_MANIFEST.md` and `DOCUMENT_AUTHORITY.md` completely.
 
-Where the older `ENRICHMENT_ECONOMICS_DESIGN.md` conflicts, retain it as historical benchmark detail with the supplied supersession notice. Do not spend tokens line-editing all 1,200+ lines.
+Expected recorded heads at packet creation:
 
-## 4. Decisions that must survive integration
+- Builder: `8e4f2a099f7cb4a004a8ca8785f2f810a7d7d534`;
+- Data: `9650781febfded436c00cbcddf9211a80a5babce`;
+- Viewer: `cd6f3720f664a29e0ca7ed8be19797e573fcdfc8`.
 
-### Cohort budgets
+If remote `main` has advanced normally, use the new head and report it. If the approved Builder contracts, SQLite foundation, licensing/brand work or immutable boundary are missing, stop and report the blocker.
 
-- first 100 highest-total-donations charities: AUD 100 pooled total;
-- next 1,000: AUD 100 pooled total;
-- next 10,000: AUD 100 pooled total.
+## 4. Data repository task
 
-The budgets include text/vision extraction, judgement, classification, writing, embeddings, retries and escalations. Easy subjects may subsidise difficult ones inside a cohort. Cross-cohort transfers require explicit approval.
+Create a branch named `charitygraph-product-docs-v2` from current Data `main`.
 
-Total donations is `donor_decision_exposure_proxy`: a processing-priority and assurance proxy only. It is not donor count, retail-donor count, merit, quality, credibility, effectiveness or recommendation.
+Apply all nineteen Markdown files from the packet to the repository root according to `REWRITE_MANIFEST.md`. Preserve exact supplied bytes except for a strictly necessary repository-local relative-link correction; report any such correction.
 
-### Architecture
+Reconcile existing active documents:
 
-- Python controls acquisition, hashing, deterministic preparation, joins, evidence selection, batching, scheduling, caching, retries, validation, cost and release compilation.
-- LLMs routinely handle difficult OCR/vision, relevance, extraction, semantic judgement, classification, bounded writing and stronger-model adjudication.
-- Embeddings are a model-derived output inside the budgets and are cached by stable text hash/model/policy.
-- Logical tasks remain separately typed/validated even when a physical request bundles them.
-- SQLite begins as a thin task/batch/cache/cost ledger, not a full knowledge database.
-- Custom local NER/relevance/taxonomy/summarisation is deferred unless a total-cost-of-ownership benchmark includes Codex build effort, labels/evals, maintenance, drift and operations.
+- leave exactly one canonical document per subject;
+- retain useful old reviews/contracts as history or reference;
+- mark superseded documents clearly so agents cannot follow them as current instructions;
+- update `README.md`, `AGENTS.md` and documentation indexes to point to the new authority set;
+- keep current public-contract and brand/reuse documents consistent;
+- do not change schemas, examples, release artefacts or licence terms.
 
-### Governance and product acceptance
+Commit and push the branch. Open one Data PR targeting `main`. Do not merge it.
 
-- Coverage is the optimisation objective; defensibility is a constraint expressed through evidence, policy, method labels and corrections.
-- A model output is never human-governed, but may become canonical under an explicit benchmarked automation policy.
-- Human review is concentrated on samples, conflicts, sensitive claims and higher-exposure cases; stronger-model adjudication may replace some review.
-- A high-precision pipeline that publishes almost nothing fails.
-- Participation remains initial-production scope; shadow registries remain first-class claim-specific sources.
-- Public contract 0.5 and its immutable checksum remain untouched.
+## 5. Builder repository task
 
-## 5. File mapping
+Create a separate branch named `charitygraph-product-docs-v2-links` from current Builder `main`.
 
-In Data, update/add:
+Make only repository-local documentation/link changes required by the manifest:
 
-- `AGENTS.md`
-- `DOCUMENT_AUTHORITY.md`
-- `PRODUCT.md`
-- `PRINCIPLES.md`
-- `PUBLIC_COMMITMENTS.md`
-- `EXPERIENCES.md`
-- `CURRENT_STATE.md`
-- `ROADMAP.md`
-- `IMPLEMENTATION_PLAN.md`
-- `TEST_PLAN.md`
-- `CODEX_TO_CHATGPT_HANDOFF.md`
-- `LLM_ECONOMICS_AND_COHORT_POLICY.md` (new)
-- `ENRICHMENT_ECONOMICS_DESIGN.md` (supersession notice only)
+- link to canonical product documents in Data;
+- identify `INTEGRATED_PRODUCT_AND_DATA_MODEL.md`, coverage policy, source governance, taxonomy governance, implementation plan and test plan;
+- state that implemented contracts/ADRs refine conceptual authority;
+- make the first private identity/program/classification slice the next implementation work;
+- remove or supersede conflicting current instructions to resume old enrichment;
+- preserve all implemented code contracts and historical compatibility material.
 
-In Builder, update:
+Do not copy all nineteen files into Builder. Do not edit source, tests, migrations, package metadata or CLI behaviour.
 
-- `ARCHITECTURE.md`
-- `AGENTS.md`
-- `EDITORIAL_POLICY.md`
-- `BUILD_AND_PUBLICATION.md`
-- `README.md`
+Commit and push the branch. Open one Builder PR targeting `main`. Do not merge it.
 
-Do not modify source code, schemas, fixtures, releases, archives, runtime data, Viewer files or deployment workflows.
+## 6. Viewer task
 
-## 6. Integration method
+Inspect documentation links only. If no active link breaks, make no Viewer branch or PR. If a link must change, create a minimal documentation-only branch and PR; run the Viewer test/build checks but do not deploy.
 
-1. Confirm each repository worktree and branch state; preserve unrelated/untracked material.
-2. Record the immutable 0.5 manifest checksum before changes.
-3. Apply the packet semantically against the open feature branches; do not blindly overwrite any newer non-conflicting improvement.
-4. Resolve links to the actual sibling-repository layout used by the existing PRs.
-5. Lint active documents for conflicting claims, especially “LLM optional/late,” “custom local NLP first,” “human review always,” “additional processing never by donation size,” and “defensibility over coverage.”
-6. Run validation.
-7. Commit separately in Builder and Data, push to the existing branches and add concise PR comments with validation and source mapping.
+## 7. Validation
 
-## 7. Required validation
+Run:
 
-- active Markdown local links;
-- document authority/status/version consistency;
-- active brand lint, respecting immutable compatibility/history exceptions;
-- Builder full test suite (protected baseline: 119 passed);
-- focused Builder branding/config/data-contract/legacy tests;
-- Data public 0.5 schema/example validator;
-- no public/private allowlist regression;
-- immutable manifest SHA-256 before/after exactly:
-  `01D047484909B8E15941D5023749ECDB6811FA472CB04BD1B9E0272935050DFB`.
+### Data
 
-If the baseline has changed on the feature branch, report both the expected and observed count; do not rewrite tests merely to match this handoff.
+- repository-provided schema/example validators;
+- future publication-identity/schema tests where available;
+- relative Markdown link checks;
+- active-document naming lint;
+- `git diff --check`;
+- immutable release checksum.
 
-## 8. Exclusions
+### Builder
 
-Do not:
+- full test suite from the documentation-only branch;
+- focused contract/runtime suite if separately defined;
+- legacy compatibility tests;
+- warning-as-error imports;
+- active-document naming lint;
+- `git diff --check`;
+- immutable release checksum boundary check.
 
-- implement the task contracts, scheduler, SQLite ledger or provider adapter;
-- call any LLM/embedding API or consume a cohort budget;
-- acquire or reorganise evidence;
-- create runtime/database/cache files;
-- change public schemas or immutable release bytes;
-- rebuild Data, deploy Viewer or change Pages;
-- copy prompts, responses, credentials, spend telemetry or private evidence into Git;
-- place durable reports in Temp;
-- touch unrelated untracked archaeology or debug material.
+### Viewer
 
-## 9. Completion report
+Only if changed: suite, Pages build, link/canonical checks and `git diff --check`.
+
+Do not call real providers/models or make source-acquisition network requests.
+
+## 8. Protected material
+
+Leave untouched:
+
+- the immutable v0.5 release directory and manifest;
+- Data schemas/examples and generated release bundles;
+- Builder SQLite migrations and runtime code;
+- archives, runtime databases, caches and credentials;
+- archaeology evidence/reports unless the manifest explicitly requires a link;
+- Viewer `debug.log` and other pre-existing untracked files;
+- retained feature branches.
+
+Do not create reports in a temporary directory. Put the completion report in the PR descriptions and, if a file is necessary, under the CharityGraph project workspace in the relevant documentation/history location.
+
+## 9. Stop conditions
+
+Stop without improvising if:
+
+- the immutable checksum differs before edits;
+- installing supplied bytes would overwrite a newer approved canonical document;
+- two authorities cannot be reconciled without a new product decision;
+- required repository instructions prohibit the mapping;
+- implementation or schema changes appear necessary;
+- secrets, private archives or release artefacts would enter the diff.
+
+Report the exact conflict and the narrow decision required.
+
+## 10. Completion report
 
 Return:
 
-- branch, commit and PR link for Builder and Data;
-- exact files added/changed;
-- confirmation that all controlling decisions in section 4 are present and no conflicting active language remains;
-- tests/checks and results;
+- repository branches, commits and PR links;
+- original and final `main`/branch heads;
+- exact file mapping and any byte departures;
+- documents superseded, retained as reference or cross-linked;
+- test and lint results;
 - immutable checksum before/after;
-- confirmation of no code/schema/release/archive/runtime/Viewer/deployment/model-call change;
-- any genuine ambiguity that prevented faithful integration.
+- confirmation that no code, schema, release, archive/runtime, model/network or deployment change occurred;
+- untracked material preserved;
+- any genuine ambiguity or blocker.
+
+After that report, stop. The next coding prompt for PR A of `IMPLEMENTATION_PLAN.md` will be prepared separately after documentation review/merge.

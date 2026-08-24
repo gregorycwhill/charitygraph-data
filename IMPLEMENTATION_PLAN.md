@@ -1,202 +1,232 @@
-# CharityGraph Implementation Plan
+# CharityGraph Builder vNext Implementation Plan
 
-**Status:** Active implementation sequence  
-**Version:** 1.1-draft  
-**Updated:** 2026-08-23
+**Status:** Canonical implementation sequence, version 2.0-draft
 
-## 1. Scope and governing outcome
+**Immediate scope:** First private reality slice only
 
-This plan implements Builder vNext as a Python-controlled, LLM-powered corpus builder while protecting immutable public contract 0.5. It is deliberately sequenced to learn the real economics of model-assisted extraction before building a large local-NLP or governance framework.
+## 1. Delivery rule
 
-The protected model budgets are pooled totals:
+Implement in small PRs that each close a testable vertical or infrastructural gap. Do not implement the entire conceptual model, migrate the archaeology tree or publish vNext in one tranche.
+
+Every PR begins from current `main`, names its authority documents and declares:
 
-| Cohort | Order | Paid-model cap |
-| --- | --- | ---: |
-| first 100 charities | highest total donations | AUD 100 |
-| next 1,000 charities | next highest total donations | AUD 100 |
-| next 10,000 charities | next highest total donations | AUD 100 |
+- included behaviour;
+- explicit exclusions;
+- fixtures/evaluation cases;
+- acceptance tests;
+- files allowed to change;
+- immutable boundaries;
+- stop conditions.
 
-The caps include text/vision extraction, judgement, writing, embeddings, retries and escalations. Total donations is used only as `donor_decision_exposure_proxy`; it is not a donor count or quality measure.
+## 2. Target architecture
 
-Every PR is bounded, tested and reversible. Use Luna-High for implementation when this plan and the typed contracts fully determine the work. Escalate to Terra-High only for unresolved architecture or semantic-policy decisions, not by default.
+| Layer | Responsibility | Initial technology |
+|---|---|---|
+| Source registry | Authority, rights, cadence, connector policy | Versioned configuration/models |
+| Acquisition | Retrieval and receipts | Python connectors, no semantic interpretation |
+| Artefact store | Immutable raw/derived evidence | Content-addressed files |
+| Operational control | Cohorts, runs, tasks, attempts, budgets, cache, artefact index | Existing SQLite runtime |
+| Knowledge store | Observations, assertions, relationships, assignments, adjudications | SQLite tables plus file references for large payloads |
+| Model boundary | Typed semantic tasks/results | Existing provider contracts; fake provider first, real provider later |
+| Validation/evaluation | Invariants, golden cases, holdout, metrics | Pytest and deterministic report generation |
+| Private projection | Human-reviewable slice result | JSON plus Markdown/HTML report, outside public Data |
+| Public publication | Versioned Data bundle and Viewer | Deferred until release-candidate phase |
 
-## 2. PR 1A — documentation economics amendment
+SQLite is the local control and query plane. Large document bodies, OCR, prompt inputs/outputs and other bulky artefacts remain content-addressed files referenced by the catalogue.
 
-**Recommended model:** Luna-High
+## 3. Initial repository layout
 
-Update the existing Builder and Data product-documentation PRs with this versioned amendment. Install `LLM_ECONOMICS_AND_COHORT_POLICY.md`, update the active architecture/product/plans/tests/handoff and mark the previous enrichment-economics design superseded where it conflicts.
+The exact names may adapt to existing conventions, but responsibilities should remain separated:
 
-Do not add code, call a model, create a database, mutate archives, change a public schema/release or deploy.
+```text
+src/charitygraph/
+  runtime/                 # existing SQLite operational catalogue
+  sources/                 # registry and bounded connectors
+  evidence/                # artefact addressing and evidence locators
+  knowledge/               # observations, assertions, relationships, lifecycle
+  taxonomy/                # scheme registry, concepts, mappings, assignments
+  model_tasks/             # typed semantic task definitions and orchestration
+  profiles/                # identity/program/classification profile logic
+  projections/             # private review and future public projections
+tests/
+  contracts/
+  runtime/
+  sources/
+  evidence/
+  knowledge/
+  taxonomy/
+  profiles/
+  evaluation/
+```
 
-**Gate:** active-document/link/brand checks; Builder 119-test baseline; Data examples; immutable 0.5 checksum unchanged.
+Runtime databases, caches, downloaded bodies, model payloads and generated previews live under configured runtime/archive roots and are ignored by Git. Durable design and small synthetic fixtures belong in Git. Archaeology reports stay where explicitly governed; they are not automatically committed.
 
-## 3. PR 2 — minimum knowledge, task and economics contracts
+## 4. PR sequence
 
-**Recommended model:** Luna-High; Terra-High only for a genuine contract ambiguity
+### PR A — Evidence store and source registry
 
-Implement only the contracts needed for a model-assisted spike:
+Implement:
 
-- minimum `SubjectRecord`, `SourceRecord`, `EvidenceFragment`, `CandidateObservation`, `DecisionRecord`, `CanonicalObservation` and `DerivativeArtifact` envelopes;
-- `ModelTask`, `ModelResult`, `EmbeddingResult`, `TaskRun` and separately validated logical outputs;
-- `BudgetCohort`, `donor_decision_exposure_proxy`, `PricingSnapshot`, `CostReservation`, `CostLedger` and `RunManifest`;
-- canonical serialization, typed IDs and cache identity;
-- provider-neutral interfaces and fakes; no real provider call.
+- `SourceDefinition`, `SourceAuthorityRole`, rights/privacy/publication policy;
+- `AcquisitionReceipt` and acquisition outcome semantics;
+- content-addressed artefact paths and metadata;
+- evidence locators for structured fields and text spans;
+- SQLite migrations/index methods needed for source/evidence references;
+- synthetic fixtures and idempotency/integrity tests.
 
-Do not attempt the complete domain ontology or import archives.
+Exclude network retrieval and real archive migration.
 
-**Gate:** schema round trips; stable hashes; material cache changes invalidate; cost dimensions include every paid output category.
+**Stop condition:** same content is not duplicated; different material metadata is not silently treated as identical; unsafe paths and secret-bearing provenance are rejected.
 
-## 4. PR 3 — thin SQLite operational ledger
+### PR B — Knowledge primitives and lifecycle persistence
 
-**Recommended model:** Luna-High
+Implement the minimum slice primitives:
 
-Implement SQLite behind a narrow interface for:
+- subject and external identifier;
+- subject scope;
+- party role;
+- observation;
+- assertion;
+- relationship statement;
+- adjudication decision;
+- exact directed lineage;
+- absence/outcome states.
 
-- task and physical-batch state;
-- idempotency and duplicate prevention;
-- cache hit/validity metadata;
-- cost reservations and actual reconciliation;
-- attempts, retry state, leases and resume;
-- durable artefact locations and hashes.
+Reuse current contract semantics. Do not add every domain entity.
 
-Knowledge remains in durable typed files. SQLite is not expanded into a domain database before evidence requires it. Provide migrations, integrity checks and deterministic reindex of evidentiary rows.
+**Stop condition:** accepted, edited, superseded, contradicted and withdrawn states reconstruct exactly; append-only history is preserved.
 
-**Gate:** injected-failure rollback; process-death recovery; hard budget cap; deletion/rebuild loses no durable evidence.
+### PR C — Taxonomy registry and assignments
 
-## 5. PR 4 — scheduler, batching and fake provider
+Implement:
 
-**Recommended model:** Luna-High
+- scheme/version/concept registry;
+- external identifiers, labels and definitions;
+- concept mapping predicates;
+- scoped taxonomy assignment assertions;
+- assignment method, evidence, rationale and confidence;
+- seed fixtures for ACNC/ATO, CLASSIE and SDGs sufficient for the slice;
+- version/deprecation tests.
 
-Implement Python orchestration that:
+Exclude full scheme harvesting if licensing or stable machine-readable sources require separate work.
 
-- ranks an approved cohort and selects pending logical tasks;
-- groups compatible work by provider, model snapshot, schema and prompt/policy version;
-- uses provider batch processing for independent asynchronous requests where advantageous;
-- optionally bundles logical tasks for one subject while preserving separate validation and lineage;
-- forbids multi-subject bundling until contamination is benchmarked;
-- reserves estimated AUD cost before submission and reconciles actual usage after completion;
-- retries safely, resumes incomplete batches and prevents duplicate paid requests;
-- stops scheduling before the cohort cap is exceeded.
+**Stop condition:** assignment and mapping cannot be confused; multi-label and program scope work; exact mappings require explicit evidence/review.
 
-**Gate:** fake-provider simulations cover cache hits, partial batch failure, late completion, retry, overspend attempt, FX/pricing change and rerun idempotency.
+### PR D — Identity/program mechanical pipeline
 
-## 6. PR 5 — bounded real-model economics spike
+Implement deterministic work only:
 
-**Recommended model:** Luna-High for code; ChatGPT/product approval for task and spend design
+- source record ingestion;
+- identifier validation and exact joins;
+- subject/scope creation;
+- bounded program candidate extraction from structured or clearly segmented inputs;
+- evidence creation and coverage states;
+- replay/idempotency.
 
-Run 10–20 representative charities selected from the existing evidence archive. Use a separately approved micro-budget that is recorded against, but does not silently consume, a production cohort cap.
+Use model-task requests for unresolved language work; do not add general prose heuristics.
 
-Exercise all intended paid-output classes:
+### PR E — Typed classification model tasks
 
-- difficult page/region recovery;
-- relevance judgement;
-- typed extraction and semantic interpretation;
-- participation/fundraising/ethos/context classification;
-- bounded card writing from accepted observations;
-- embeddings of stable derivative text.
+Implement task contracts for:
 
-Compare single-task requests with safe same-subject task bundling and provider batch execution. Publish nothing.
+- program decomposition/normalisation;
+- CLASSIE subject/population assignment;
+- operational-activity assignment;
+- UN SDG alignment;
+- evidence/rationale selection;
+- relevancy screening where needed.
 
-**Gate:** reproducible cost/yield report, validated cache reuse, unsupported-claim and recoverable-recall measurement, documented routing defaults.
+First validate with the deterministic fake provider and recorded fixtures. Then add one real provider adapter behind explicit credentials/configuration and dry-run controls.
 
-## 7. PR 6 — LLM-powered end-to-end vertical slice
+Model outputs must be schema-valid, evidence-bound and allowed to make reasonable primary/secondary judgments. Mechanical code may reject invalid structure or impossible references; it must not rewrite semantic conclusions through hidden keyword rules.
 
-**Recommended model:** Luna-High after spike decisions are fixed
+### PR F — Reality cohort runner and private preview
 
-Complete one path from existing source material through evidence, model candidates, policy/fixture decisions, canonical observations, coverage, writing and embeddings to a fixture-only 0.5 projection.
+Implement:
 
-The slice must prove that model output can be accepted by an explicit automation policy without being labelled human-governed. Include targeted human-review fixtures for conflict and sensitive context.
+- versioned ten-charity cohort manifest;
+- run/task scheduling through SQLite;
+- portfolio budget and per-task reservation use;
+- cache and retry policy;
+- private JSON and human-readable review projection;
+- coverage/economics/evaluation report;
+- holdout execution separated from development cases.
 
-**Gate:** typed lineage, idempotent rerun, independently validated logical outputs and a classified fixture diff.
+No public Data or Viewer changes.
 
-## 8. PR 7 — read-only archive index and evidence reuse
+## 5. Method matrix
 
-**Recommended model:** Luna-High
+Before each field is implemented, assign one method:
 
-Index existing files in place. Record hashes, type/source family, known subject/run association, privacy class and migration status. Import historical task runs and governed cases only as typed historical evidence; do not auto-promote.
+| Method | Use | Examples |
+|---|---|---|
+| Deterministic | Stable syntax, exact arithmetic or identifiers | ABN validation, content hashes, exact joins, totals |
+| Model-assisted | Open language/visual judgment | Program extraction, relevant evidence, CLASSIE/SDG assignment |
+| Human-reviewed | Consequence, cultural authority or unresolved contradiction | High-risk conduct, Indigenous governance, material disputes |
+| Deferred | No sufficient value or evidence in the slice | Full outcome scoring, sector-wide direct observation |
 
-Use the vertical-slice task needs to decide what metadata is worth indexing. Do not build a universal archaeology database.
+A field may move method only through a documented decision and evaluation result.
 
-**Gate:** deterministic inventory, zero source-content mutation, reproducible reindex and no durable output in Temp.
+## 6. Reality cohort design
 
-## 9. PR 8 — core descriptive domains
+Select about ten organisations covering:
 
-**Recommended model:** Luna-High with Terra-High only for unresolved domain semantics
+- simple single-entity charity;
+- multi-entity or group structure;
+- small volunteer-led organisation;
+- Indigenous or culturally governed organisation, with appropriate review boundaries;
+- grantmaker;
+- advocacy organisation;
+- multi-program national organisation;
+- service provider with multiple sites;
+- fundraising-intensive charity;
+- organisation with evaluation or materially adverse evidence.
 
-Implement generic typed observations and task schemas for:
+Use public evidence already lawfully available, plus a carefully selected subset of archaeology evidence. Freeze subject identifiers and expected source families before coding. Do not tune against the holdout subset.
 
-- activities, beneficiaries, programs/services and role-specific geography;
-- participation modes and transient opportunities from initial processing;
-- ACNC source-native and CharityGraph-native classifications;
-- cause centrality;
-- ethos and separate service/mission orientation;
-- neutral `notable_context`.
+## 7. Error-handling strategy
 
-Use LLM semantic extraction routinely. Do not insert a custom NER or relevance tier.
+Classify failures as:
 
-**Gate:** domain fixtures, evidence-span validation, explicit coverage and risk-weighted review policy.
+- acquisition/access;
+- parsing/format;
+- identity/scope;
+- insufficient evidence;
+- model schema/invalid citation;
+- semantic classification;
+- persistence/idempotency;
+- budget/provider;
+- projection/publication;
+- policy/review.
 
-## 10. PR 9 — fundraising and shadow registries
+Fix a class only when the change is supported by multiple examples or a clear invariant. A novel phrase is not itself a new parser requirement.
 
-**Recommended model:** Luna-High after source-role policies are approved
+## 8. Cost controls
 
-Implement separate funding-source, standing-practice, campaign and expenditure payloads. Add adapters for approved industry shadow registries and preserve their claim-specific authority. Keep applicable code/fee rules distinct from compliance, member spend or fundraising volume.
+- dry-run task plans before paid execution;
+- use fake/recorded providers for implementation tests;
+- content-hash prompts and evidence inputs;
+- cache only when task contract, model policy and inputs permit reuse;
+- reserve before calls and persist actuals/credits;
+- cap experimental runs separately from production cohort envelopes;
+- print a projected/actual cost report for every run;
+- never commit credentials or provider payloads containing private material.
 
-**Gate:** identity precision, source rights, amount/scope fidelity, no ROI/effectiveness inference and no forced expenditure point.
+## 9. Documentation in each PR
 
-## 11. PR 10 — governance, correction and assurance routing
+Each PR updates only the documentation made true or invalid by the code. Architectural changes receive an ADR. Evaluation results are versioned reports with cohort, model/prompt and code identity. Working notes do not silently become product authority.
 
-**Recommended model:** Luna-High for implementation; Terra-High only for new policy decisions
+## 10. Completion definition for the first slice
 
-Implement decision dispositions, benchmarked automation policies, review sampling, conflict routing, sensitive-claim holds, stronger-model adjudication, correction proposals, challenges, retractions and dependent invalidation.
+The slice is complete when a clean environment can:
 
-Assurance is risk-aligned: the first 100 receive proportionately more review/escalation; the next cohorts rely more heavily on benchmarked automation and sampling. Universal human review is prohibited as an implicit acceptance condition.
-
-**Gate:** no model output labelled human; review routes are reproducible; correction propagation invalidates writing, classifications and embeddings.
-
-## 12. PR 11 — first 100 production candidate
-
-Process the highest-total-donations cohort within AUD 100. The candidate should attempt all applicable core domains, writing and embeddings rather than achieve a perfect subset.
-
-**Gate:** hard cap, donor-proxy audit, anti-sparsity acceptance, source-bound claims, quality/risk sample and no public release without separate approval.
-
-## 13. PR 12 — next 1,000 production candidate
-
-Process the next cohort within AUD 100 using proven batching, caching, same-subject bundling and selective escalation. Reuse source-family and prompt caches where valid.
-
-**Gate:** hard cap, coverage and yield targets, sampled review, correction readiness and no material quality collapse by domain.
-
-## 14. PR 13 — next 10,000 production candidate
-
-Process the next cohort within AUD 100 using the economical route, concise evidence packs, cached stable instructions, batch processing and targeted escalation. Record explicit unprocessed/not-found/failed states where the cap prevents further work.
-
-**Gate:** hard cap, national-scale throughput, restartability, cache effectiveness, anti-sparsity targets and auditable routing.
-
-## 15. PR 14 — cutover and public-contract proposal
-
-Only after the three cohort reports:
-
-- propose routine production commands and refresh scheduling;
-- propose phase-orchestration deprecation;
-- propose any future public schema separately;
-- supply migration fixtures and Viewer implications;
-- retain the previous valid public release.
-
-## 16. Explicitly deferred
-
-- custom local NER, relevance, taxonomy or summarisation models until total-cost-of-ownership evidence supports one;
-- PostgreSQL/distributed workers until local single-writer constraints are observed;
-- a graph database;
-- a universal human-review gate;
-- recommendation, impact, mandate-fit or fundraising-performance models;
-- destructive archive reorganisation.
-
-## 17. Cross-cutting constraints
-
-- No active former-brand terminology outside isolated compatibility/history.
-- No raw/private evidence, credentials, prompts, responses, runtime state or spend telemetry in Git or public releases.
-- No immutable release mutation.
-- Budget reserve precedes every paid request; actual cost is reconciled afterwards.
-- Cached work is reused only when the complete cache identity still matches.
-- Coverage is the objective; provenance, policy, correction and unsupported-claim limits are constraints.
-- A high-precision pipeline with trivial output does not pass.
+1. initialise a file-backed SQLite catalogue;
+2. register sources and evidence artefacts;
+3. process the fixed cohort through typed tasks;
+4. create scoped identity, program and classification assertions;
+5. show source, prompt/model and cost lineage;
+6. distinguish resolved, unknown, not-applicable, not-attempted and failed fields;
+7. reproduce a private preview without duplicate artefacts or costs;
+8. pass development and untouched-holdout thresholds;
+9. preserve contract 0.5 unchanged;
+10. stop without modifying Data or Viewer.
