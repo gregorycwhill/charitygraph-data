@@ -27,3 +27,4 @@ Builder creates validated release candidates; Data owns immutable public artefac
 ## Licence and upstream material
 
 CharityGraph-originated data and content are licensed under [CC BY 4.0](LICENSE). That licence does not grant rights in third-party regulator data, annual reports, website content, trademarks or other source evidence. Downstream users remain responsible for applicable terms and attribution.
+Phase 1 execution packet: [REALITY_SLICE_1_ACCEPTANCE_PACKET.md](REALITY_SLICE_1_ACCEPTANCE_PACKET.md).
