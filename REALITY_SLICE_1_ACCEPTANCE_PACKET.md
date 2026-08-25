@@ -137,6 +137,17 @@ On the three holdouts, recall >= 80%, precision >= 75% and zero critical scope e
 * Inadequate `unknown` is an error: in cases the reviewer marks sufficiently evidenced for an ordinary classification, an unjustified `unknown` = 0 tolerated cases. Genuine absence/insufficiency remains explicitly unresolved.
 * All cultural-authority, materially adverse, safeguarding-adjacent and material contradiction cases receive human review (100%).
 
+Before any paid evaluation, the reviewer-approved development benchmark must
+contain enough evidence-backed cases to compute each applicable frozen
+scorecard threshold. A task family whose benchmark denominator is insufficient
+remains blocked rather than being executed and scored against an artificial or
+underspecified reference set. In particular, operational-activity evaluation
+requires an evaluable development reference for the frozen 6/7 requirement,
+and SDG evaluation requires an evaluable reference for the frozen 5/7
+adequately-evidenced requirement. Insufficient evidence is an explicit valid
+benchmark state; labels must not be created merely to satisfy a denominator.
+CLASSIE semantic scoring remains rights-gated and optional.
+
 ### Coverage and development/holdout
 
 * At least 90% of in-scope fields are attempted on development cases and 80% on holdouts; every remainder has an explicit coverage state.

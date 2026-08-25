@@ -90,6 +90,14 @@ Retain evidence and evaluation artefacts by content hash so a rerun does not cre
 
 ## 8. Initial acceptance scorecard
 
+Before paid evaluation, the reviewer-approved development benchmark must have
+enough evidence-backed cases to compute every applicable frozen threshold. An
+insufficient denominator blocks that task family; labels are not manufactured
+to make a score computable. The operational-activity reference must cover the
+frozen 6/7 development requirement and the SDG reference must cover the frozen
+5/7 adequately-evidenced requirement. Insufficient evidence is a valid
+benchmark state, and CLASSIE semantic scoring remains rights-gated.
+
 Exact numeric thresholds should be frozen in the PR design packet after inspecting the cohort, but the scorecard must include:
 
 - subject/scope correctness;
