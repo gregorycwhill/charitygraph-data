@@ -30,7 +30,7 @@ Build the narrow end-to-end path:
 4. identify programs/services and geography;
 5. create evidence-backed observations and assertions;
 6. preserve ACNC/ATO source classifications;
-7. assign CLASSIE subject/population concepts;
+7. evaluate and, where rights permit, assign optional external Subject/Population concepts such as CLASSIE;
 8. assign CharityGraph operational activities;
 9. assign UN SDGs;
 10. record task, prompt/model, cost, coverage and adjudication lineage;

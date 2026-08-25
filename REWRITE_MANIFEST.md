@@ -103,7 +103,7 @@ Repository code, schemas, ADRs and tests remain implementation evidence. Where i
 - ordinary low-risk model judgment should be useful and decisive rather than reflexively unknown;
 - community correction is governed open curation and a success mechanism;
 - external schemes and rejected/adapted alternatives require a public research/disposition trail;
-- UN SDGs, CLASSIE, National Standard Chart of Accounts, ACNC/ATO classifications and applicable ABS standards enter the initial portfolio;
+- UN SDGs, optional rights-gated CLASSIE, National Standard Chart of Accounts, ACNC/ATO classifications and applicable ABS standards enter the independently governed scheme portfolio; no scheme is foundational by inclusion alone;
 - participation and shadow registries are initial-state requirements;
 - fundraising and participation vocabularies support granular future direct observation;
 - the first coding slice is a fixed, approximately ten-charity private identity/program/classification pipeline;

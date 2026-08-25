@@ -57,7 +57,7 @@ Evaluation recognises that multiple classifications can be reasonable. Gold data
 
 Include clear cases where adequate evidence should lead to a classification. A result of `unknown` fails when a reasonable primary or secondary assignment was available within the task's risk policy.
 
-For a richly evidenced major charity, the system should generally produce supported program, CLASSIE and SDG assignments after its approved retrieval/model budget. It must not abstain merely because a specialist could debate the exact boundary of a broad sustainability or social-purpose concept.
+For a richly evidenced major charity, the system should generally produce supported program, permitted external/native taxonomy and SDG assignments after its approved retrieval/model budget. CLASSIE assignments are optional and rights-gated; when unavailable, the non-CLASSIE build must remain valid. It must not abstain merely because a specialist could debate the exact boundary of a broad sustainability or social-purpose concept.
 
 Also include genuinely insufficient-evidence cases where decisive classification would be fabrication.
 
@@ -90,12 +90,21 @@ Retain evidence and evaluation artefacts by content hash so a rerun does not cre
 
 ## 8. Initial acceptance scorecard
 
+Before paid evaluation, the reviewer-approved development benchmark must have
+enough evidence-backed cases to compute every applicable frozen threshold. An
+insufficient denominator blocks that task family; labels are not manufactured
+to make a score computable. The operational-activity reference must cover the
+frozen 6/7 development requirement and the SDG reference must cover the frozen
+5/7 adequately-evidenced requirement. Insufficient evidence is a valid
+benchmark state, and CLASSIE semantic scoring remains rights-gated.
+
 Exact numeric thresholds should be frozen in the PR design packet after inspecting the cohort, but the scorecard must include:
 
 - subject/scope correctness;
 - program precision and material-program recall;
 - evidence-locator validity;
-- CLASSIE/SDG required, acceptable and prohibited assignments;
+- permitted external/native taxonomy and SDG required, acceptable and prohibited assignments;
+- CLASSIE-off publication and derived-object invalidation without loss of independent knowledge;
 - unjustified abstention;
 - unsupported assertion rate;
 - provenance-floor completion;

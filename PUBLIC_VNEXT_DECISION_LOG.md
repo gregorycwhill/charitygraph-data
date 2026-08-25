@@ -16,7 +16,7 @@
 | CG-D008 | Models should exercise ordinary semantic judgment; `unknown` is not a refuge from reasonable ambiguity. | Approved | Low-risk classifications use evidence, rationale, confidence and primary/secondary labels. |
 | CG-D009 | High-risk claim types can override cohort economics. | Approved | Specialist or human review remains available for consequence-heavy assertions. |
 | CG-D010 | Community correction is a product capability and success signal. | Approved | Challenges are governed proposals with visible disposition and append-only history. |
-| CG-D011 | ACNC/ATO classifications, CLASSIE, National Standard Chart of Accounts, UN SDGs and applicable ABS standards form the initial external portfolio. | Approved | External scheme identities and versions are preserved. |
+| CG-D011 | ACNC/ATO classifications, National Standard Chart of Accounts, UN SDGs, ABS standards and optional external schemes form an independently governed initial portfolio; no listed scheme is mandatory or rights-cleared by inclusion alone. | Approved | External scheme identities and versions are preserved; rights and publication state remain separate. |
 | CG-D012 | Participation, fundraising, operational activity, ethos and notability require CharityGraph-native profiles informed by documented external-scheme research. | Approved | Research dispositions are public; native schemes do not obscure their influences. |
 | CG-D013 | Industry shadow registries are first-class sources, not experiments. | Approved | Their own membership, fee, code or accreditation propositions may be authoritative. |
 | CG-D014 | Participation is populated from the initial build rather than deferred to a future product. | Approved | The model and acquisition plan include participation evidence early. |
@@ -30,6 +30,7 @@
 | CG-D022 | First slice is identity, programs and classifications for about ten varied charities, ending in a private preview. | Approved | No Viewer or public release change is required for the slice. |
 | CG-D023 | Builder/Viewer remain MIT; Data remains CC BY 4.0, subject to distinct brand and endorsement rules. | Implemented | Future releases include identity, attribution and reuse metadata. |
 | CG-D024 | The former project name appears only where immutable compatibility or historical explanation requires it. | Approved | Active product language and new identifiers use CharityGraph. |
+| CG-D025 | CharityGraph is taxonomy-plural: external and custom schemes are independently versioned, rights-governed, removable lenses over governed knowledge. CLASSIE Subject/Population are optional and deferred pending rights approval; restricted payloads may be private/runtime-loaded; disabling an external scheme does not invalidate independent knowledge. Builder enriches governed charity/program knowledge and is not a general-purpose arbitrary-text or grant-application taxonomy-classification service. | Approved | Generic taxonomy loading and governed assignments remain supported; CLASSIE is not foundational; future researcher/innovator schemes can be evaluated without selecting a replacement now. |
 
 ## Open implementation decisions
 

@@ -88,7 +88,7 @@ Each material output has one initial method. The method controls the first imple
 | ACNC classifications | Deterministic | Preserve source-reported categories, subtype and activity fields; do not rewrite them as CharityGraph labels. |
 | ATO/DGR facts | Deterministic | Preserve exact fund, item, effective dates and source status. |
 | CLASSIE subjects | Model-assisted | Multi-label assignment with evidence, rationale and confidence; version/licence must be recorded. |
-| CLASSIE populations | Model-assisted | Assign only where the evidence supports population scope; avoid demographic inference from names or geography. |
+| Optional CLASSIE populations | Model-assisted only where rights permit | Assign only where the evidence supports population scope; avoid demographic inference from names or geography; no native payload is committed before rights approval. |
 | CharityGraph operational activities | Model-assisted | Use the native faceted vocabulary; distinguish purpose, activity, channel and campaign. |
 | UN SDG alignment | Model-assisted | Multi-label, evidence-backed alignment; no claim of UN endorsement or indicator result. |
 | Evidence/relevance selection | Model-assisted | Select bounded evidence spans/records for a task; preserve rejected/competing evidence where material. |
@@ -131,11 +131,22 @@ On the three holdouts, recall >= 80%, precision >= 75% and zero critical scope e
 ### Classification and useful judgment
 
 * ACNC and ATO classifications are source-preserved in 100% of cases; no model or native label overwrites a source-native value.
-* For CLASSIE subjects and populations, every case with sufficient evidence has at least one pre-registered required/strongly expected or acceptable secondary assignment: >= 6/7 development cases and >= 2/3 holdouts. Prohibited assignments = 0. Multi-label assignments are retained where the reviewer identifies more than one defensible concept.
+* For optional CLASSIE subjects and populations, assignments are attempted only when rights permit; otherwise the CLASSIE-off acceptance path must pass with no CLASSIE payload or assignment in public output and all independent knowledge unchanged. Where attempted, assignments retain evidence, rationale, version and rights state.
 * For CharityGraph operational activities, the same 6/7 development and 2/3 holdout useful-judgment thresholds apply. Purpose, beneficiary, activity, channel and campaign are not collapsed.
 * For SDG alignment, >= 5/7 development and >= 2/3 holdout cases with adequate evidence have at least one supported alignment; unsupported SDG indicator or impact claims = 0.
 * Inadequate `unknown` is an error: in cases the reviewer marks sufficiently evidenced for an ordinary classification, an unjustified `unknown` = 0 tolerated cases. Genuine absence/insufficiency remains explicitly unresolved.
 * All cultural-authority, materially adverse, safeguarding-adjacent and material contradiction cases receive human review (100%).
+
+Before any paid evaluation, the reviewer-approved development benchmark must
+contain enough evidence-backed cases to compute each applicable frozen
+scorecard threshold. A task family whose benchmark denominator is insufficient
+remains blocked rather than being executed and scored against an artificial or
+underspecified reference set. In particular, operational-activity evaluation
+requires an evaluable development reference for the frozen 6/7 requirement,
+and SDG evaluation requires an evaluable reference for the frozen 5/7
+adequately-evidenced requirement. Insufficient evidence is an explicit valid
+benchmark state; labels must not be created merely to satisfy a denominator.
+CLASSIE semantic scoring remains rights-gated and optional.
 
 ### Coverage and development/holdout
 

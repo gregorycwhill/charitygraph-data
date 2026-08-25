@@ -105,7 +105,7 @@ Implement:
 - concept mapping predicates;
 - scoped taxonomy assignment assertions;
 - assignment method, evidence, rationale and confidence;
-- seed fixtures for ACNC/ATO, CLASSIE and SDGs sufficient for the slice;
+- seed metadata and fixtures for ACNC/ATO and SDGs; load restricted schemes such as CLASSIE only in private runtime when rights permit;
 - version/deprecation tests.
 
 Exclude full scheme harvesting if licensing or stable machine-readable sources require separate work.
@@ -130,7 +130,7 @@ Use model-task requests for unresolved language work; do not add general prose h
 Implement task contracts for:
 
 - program decomposition/normalisation;
-- CLASSIE subject/population assignment;
+- optional CLASSIE subject/population assignment, rights-gated and removable;
 - operational-activity assignment;
 - UN SDG alignment;
 - evidence/rationale selection;
@@ -161,7 +161,7 @@ Before each field is implemented, assign one method:
 | Method | Use | Examples |
 |---|---|---|
 | Deterministic | Stable syntax, exact arithmetic or identifiers | ABN validation, content hashes, exact joins, totals |
-| Model-assisted | Open language/visual judgment | Program extraction, relevant evidence, CLASSIE/SDG assignment |
+| Model-assisted | Open language/visual judgment | Program extraction, relevant evidence, permitted external/native taxonomy and SDG assignment; CLASSIE is optional and rights-gated |
 | Human-reviewed | Consequence, cultural authority or unresolved contradiction | High-risk conduct, Indigenous governance, material disputes |
 | Deferred | No sufficient value or evidence in the slice | Full outcome scoring, sector-wide direct observation |
 

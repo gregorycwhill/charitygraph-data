@@ -1011,7 +1011,7 @@ The governed facet system includes:
 |---|---|
 | ACNC classifications and reported fields | Retain as versioned authority-reported facts within scope |
 | ATO/DGR classifications and gift types | Retain as tax-authority concepts; do not redefine donation or cause broadly |
-| CLASSIE | Adopt as the principal Australian subject and population reference; profile support-use/activity facets carefully; confirm reuse and version terms before redistribution |
+| CLASSIE | Optional external Subject/Population scheme, deferred pending rights/permission; profile support-use/activity facets only when permitted |
 | National Standard Chart of Accounts | Adopt as the principal Australian not-for-profit finance interoperability reference; preserve source accounts and mappings |
 | UN Sustainable Development Goals | Adopt now as a goal-alignment overlay; targets require evidence; indicators require their own measurement evidence |
 | ABS geography | Adopt ASGS identifiers with explicit edition and role |
@@ -1790,7 +1790,7 @@ The integrated model treats these as settled direction:
 - industry shadow registries as first-class scoped sources;
 - NSCOA inclusion;
 - UN SDG inclusion;
-- CLASSIE inclusion, with operational reuse terms still to be confirmed;
+- optional CLASSIE integration, with private processing/reuse/publication rights still to be confirmed;
 - native participation and fundraising vocabularies;
 - schema accommodation for future direct observation;
 - neutral evidence rather than universal scores;
