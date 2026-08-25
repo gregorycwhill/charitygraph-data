@@ -249,15 +249,21 @@ Source authority, acquisition, rights, evidence, transformations, model tasks, d
 
 CharityGraph uses a governed multi-facet system rather than one universal classification.
 
+CharityGraph is taxonomy-plural by design. There is no single master CharityGraph taxonomy and no product dependency on one external scheme. Named, versioned schemes provide different lenses over the same governed subjects and assertions; incompatible external taxonomies are not silently merged into a proprietary hierarchy.
+
 Approved direction includes:
 
 - retain ACNC and ATO classifications as source- or authority-reported facts;
-- adopt CLASSIE as the principal Australian subject and population reference, with formal reuse/version controls;
-- adopt the National Standard Chart of Accounts as the principal Australian not-for-profit finance interoperability reference;
-- adopt UN Sustainable Development Goals as a current goal-alignment overlay;
+- use UN Sustainable Development Goals as a multi-label alignment lens;
 - use ABS geography and relevant statistical classifications with explicit editions;
-- develop native operational-activity, participation and fundraising vocabularies where external schemes are inadequate; and
+- develop CharityGraph-native operational-activity, participation and fundraising vocabularies where external schemes are inadequate;
+- treat CLASSIE Subject and Population as optional external schemes, deferred pending rights/permission review;
+- support future researcher, innovator, government, foundation and custom schemes under independent governance; and
 - publish decisions for schemes adopted, profiled, incorporated, crosswalked, adapted, deferred, rejected or superseded.
+
+Restricted third-party taxonomy payloads may remain content-hashed and versioned in private runtime storage. Generic open-source code may load conforming schemes and create governed assignments without committing protected labels or definitions. Dynamic loading does not establish legal permission. If an external scheme is disabled, independent CharityGraph evidence, subjects, relationships, native classifications and other scheme assignments remain valid; only dependent derived objects and publication projections are withheld or regenerated.
+
+CLASSIE is not foundational to source acquisition, subject identity, program/service modelling, operational activities, SDGs, regulatory facts or the underlying graph.
 
 Model-assessed assignments are useful governed judgments. Ordinary semantic disagreement is represented through confidence, ranking, alternatives and correction—not routine abstention.
 

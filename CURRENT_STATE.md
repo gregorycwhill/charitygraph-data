@@ -106,7 +106,7 @@ The merged foundation does not yet provide:
 - production source registry and acquisition connectors;
 - real provider/model execution through the new task contracts;
 - cohort ranking and scheduled budget orchestration;
-- CLASSIE, SDG, participation, fundraising or native activity population;
+- optional CLASSIE, SDG, participation, fundraising or native activity population; CLASSIE remains rights-gated and non-foundational;
 - community challenge workflow;
 - a public vNext release or Viewer projection;
 - direct-observation collection tooling.

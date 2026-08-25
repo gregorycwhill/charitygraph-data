@@ -10,6 +10,12 @@ CharityGraph uses multiple schemes because no single hierarchy can faithfully re
 
 Every scheme considered must have a visible research and disposition record. Sector insiders and researchers should be able to see whether a familiar scheme was adopted, adapted, mapped, deferred or rejected, and why.
 
+## 2. Taxonomy plurality and optional external schemes
+
+CharityGraph is taxonomy-plural. No single external scheme is the master taxonomy. ACNC/ATO classifications remain source/authority facts; SDGs provide an alignment lens; CharityGraph-native vocabularies describe operational activity and other gaps; external and custom schemes remain independently versioned, mapped and governed.
+
+CLASSIE Subject and Population are optional integrations. Authoritative 4.2 Subject/Population materials are discoverable and exist, but private processing, LLM use, reuse, redistribution and publication rights remain unresolved. CLASSIE is not a prerequisite for identity, evidence, programs/services, activities, SDGs, regulatory facts or the underlying graph.
+
 ## 2. Scheme record
 
 Each scheme or version records:
@@ -45,7 +51,7 @@ Allowed dispositions are:
 | Domain | Scheme/profile | Initial disposition | Role |
 |---|---|---|---|
 | Regulatory purpose/beneficiaries/activities | ACNC/ATO classifications | Adopted as source classifications | Preserve what regulators report; do not mistake for the complete semantic model |
-| Charity subject and population | CLASSIE | Adopted/mapped, subject to version and licence review | International interoperability and richer cause/population description |
+| Charity subject and population | CLASSIE Subject and Population | Deferred / optional pending rights review | Desirable Australian interoperability lens; not foundational and not the master taxonomy |
 | Finance | National Standard Chart of Accounts | Adopted/mapped | Normalised not-for-profit financial concepts while retaining reported line items |
 | Public goals | UN Sustainable Development Goals | Adopted as multi-label alignment | Widely recognised goal lens; assignments may apply to organisations or programs |
 | Geography and statistical population | ABS standards | Adopted where applicable | Locations, regions and demographic/statistical compatibility |
@@ -68,7 +74,7 @@ Assignments are first-class assertions, not columns pasted onto an organisation.
 - confidence/strength where appropriate;
 - valid time, review status and lineage.
 
-Multi-label assignment is normal. A program may align with several SDGs or CLASSIE concepts. A primary label supports discovery; secondary labels preserve material breadth.
+Multi-label assignment is normal. A program may align with several SDGs or concepts from any permitted external or native scheme. A primary label supports discovery; secondary labels preserve material breadth. Scheme removal must not invalidate independent governed knowledge.
 
 ## 6. Mapping model
 
@@ -123,7 +129,19 @@ These domains use faceted vocabularies rather than one brittle hierarchy. A reco
 
 This permits distinctions such as residential door-knocking versus a staffed shopping-centre table, and shop-counter goods donation versus an unattended charity bin, without multiplying opaque compound labels.
 
-## 10. Research register requirements
+## 10. Private payloads, publication rights and scheme retirement
+
+Open-source CharityGraph code may contain generic taxonomy schemas, version metadata, import/assignment machinery, mapping predicates and publication-policy controls. Restricted third-party payloads do not need to live in the open repository. Official artefacts remain provenance roots; private runtime storage may hold content-hashed source files, normalised concepts, protected prompts and model outputs where rights and policy allow.
+
+Taxonomy payload, internal processing material and CharityGraph-derived assignments are separately governed. Public CLASSIE representation may independently be configured as no assignment, external concept ID only, ID plus label or richer metadata, subject to permission. No current form is approved by this document.
+
+`CLASSIE disabled` is a supported state: stop new CLASSIE tasks, withhold/remove CLASSIE assignments from publishable projections, and invalidate/regenerate only CLASSIE-dependent derived objects. Do not reacquire evidence or rebuild identity, programs, relationships, native activities, SDGs or independent schemes. Historical internal lineage may remain where lawful; publication eligibility remains rights-controlled.
+
+## 11. Future custom and researcher schemes
+
+Researchers, academic projects, innovators, government, foundations, sector bodies and other legitimate scheme owners may propose conforming taxonomies. Each scheme independently records owner, version, source, purpose, scope, identifiers, hierarchy/facets, rights, attribution, disposition, assignment method, mappings and review state. Custom assignments remain named scheme assignments and do not silently become CharityGraph-native facts.
+
+## 12. Research register requirements
 
 Taxonomy research must cover, where relevant:
 

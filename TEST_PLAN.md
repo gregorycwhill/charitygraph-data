@@ -57,7 +57,7 @@ Evaluation recognises that multiple classifications can be reasonable. Gold data
 
 Include clear cases where adequate evidence should lead to a classification. A result of `unknown` fails when a reasonable primary or secondary assignment was available within the task's risk policy.
 
-For a richly evidenced major charity, the system should generally produce supported program, CLASSIE and SDG assignments after its approved retrieval/model budget. It must not abstain merely because a specialist could debate the exact boundary of a broad sustainability or social-purpose concept.
+For a richly evidenced major charity, the system should generally produce supported program, permitted external/native taxonomy and SDG assignments after its approved retrieval/model budget. CLASSIE assignments are optional and rights-gated; when unavailable, the non-CLASSIE build must remain valid. It must not abstain merely because a specialist could debate the exact boundary of a broad sustainability or social-purpose concept.
 
 Also include genuinely insufficient-evidence cases where decisive classification would be fabrication.
 
@@ -95,7 +95,8 @@ Exact numeric thresholds should be frozen in the PR design packet after inspecti
 - subject/scope correctness;
 - program precision and material-program recall;
 - evidence-locator validity;
-- CLASSIE/SDG required, acceptable and prohibited assignments;
+- permitted external/native taxonomy and SDG required, acceptable and prohibited assignments;
+- CLASSIE-off publication and derived-object invalidation without loss of independent knowledge;
 - unjustified abstention;
 - unsupported assertion rate;
 - provenance-floor completion;
