@@ -230,3 +230,12 @@ The slice is complete when a clean environment can:
 8. pass development and untouched-holdout thresholds;
 9. preserve contract 0.5 unchanged;
 10. stop without modifying Data or Viewer.
+
+
+## Classification-layer implementation authority
+
+Builder vNext uses six distinct, versioned lenses rather than one taxonomy: ACNC Registration (separate purpose/subtype and beneficiary facets), ATO DGR (separate regulatory profile, including scoped endorsements), ACNC CLASSIE (AIS-year/profile-specific source reporting), UN SDG (program-first alignment), CharityGraph Native (multi-grain operational knowledge) and CharityGraph CLASSIE (independent program-first assessment against the selected Our Community release). ACNC CLASSIE and Our Community CLASSIE are never assumed version-identical; any relationship requires an explicit ConceptMapping.
+
+Reporting-group is scope structure, not a classification lens. Assertions attach to the lowest evidence-supported group, legal entity, program or service and do not propagate automatically. Embeddings support retrieval and candidate mapping only.
+
+Private CLASSIE payloads may be loaded, hashed and processed by Builder when lawfully injected at runtime. Taxonomy assignments carry independent publication eligibility and default to withheld. If publication permission is denied, CLASSIE tasks stop and dependent projections are withheld while native, ACNC, ATO, SDG, program/service and evidence knowledge remains intact.

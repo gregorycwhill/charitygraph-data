@@ -1011,7 +1011,7 @@ The governed facet system includes:
 |---|---|
 | ACNC classifications and reported fields | Retain as versioned authority-reported facts within scope |
 | ATO/DGR classifications and gift types | Retain as tax-authority concepts; do not redefine donation or cause broadly |
-| CLASSIE | Optional external Subject/Population scheme, deferred pending rights/permission; profile support-use/activity facets only when permitted |
+| ACNC CLASSIE / CharityGraph CLASSIE | Separate AIS/profile-specific source reporting and independent Our Community assessment; private processing approved, public publication permission-gated and withheld by default |
 | National Standard Chart of Accounts | Adopt as the principal Australian not-for-profit finance interoperability reference; preserve source accounts and mappings |
 | UN Sustainable Development Goals | Adopt now as a goal-alignment overlay; targets require evidence; indicators require their own measurement evidence |
 | ABS geography | Adopt ASGS identifiers with explicit edition and role |
@@ -1963,3 +1963,13 @@ The words **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT** and **MAY** are n
 - **MAY** states a permitted option.
 
 This document is binding for prospective Builder vNext design upon controlled installation. Later changes require an approved decision and propagation through `DOCUMENT_AUTHORITY.md`.
+
+## 12.1 Classification layers and reporting-group scope
+
+The classification layer is six named, non-equivalent lenses: ACNC Registration, ATO DGR, ACNC CLASSIE, UN SDG, CharityGraph Native and CharityGraph CLASSIE. ACNC Registration is a heterogeneous regulatory family, not one taxonomy; ATO DGR is a separate authority/profile and may be scoped to a fund or institution. ACNC CLASSIE is source-reported against an explicit AIS-year/profile version. CharityGraph CLASSIE is an independent program/service-first, evidence-bound assessment against a selected Our Community release/profile. No label equality creates a mapping: ACNC and Our Community concepts require explicit ConceptMapping records.
+
+The ACNC reporting group is structural scope, not a classification lens. Group-scoped filings may describe member charities and programs, but assertions attach to the lowest evidence-supported subject/scope and do not propagate automatically.
+
+CharityGraph Native spans multiple grains and is not a master taxonomy. Embeddings are versioned retrieval and candidate-mapping aids only; they cannot create assignments or native concepts by themselves. Organisation-level SDG or CLASSIE summaries are derived projections when rolled up from program assignments.
+
+CLASSIE payloads may be loaded privately at build time when rights permit. Their publication eligibility is independent and defaults to withheld; disabling CLASSIE preserves native, ACNC, ATO, SDG, program/service and evidence knowledge.

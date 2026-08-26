@@ -30,7 +30,7 @@
 | CG-D022 | First slice is identity, programs and classifications for about ten varied charities, ending in a private preview. | Approved | No Viewer or public release change is required for the slice. |
 | CG-D023 | Builder/Viewer remain MIT; Data remains CC BY 4.0, subject to distinct brand and endorsement rules. | Implemented | Future releases include identity, attribution and reuse metadata. |
 | CG-D024 | The former project name appears only where immutable compatibility or historical explanation requires it. | Approved | Active product language and new identifiers use CharityGraph. |
-| CG-D025 | CharityGraph is taxonomy-plural: external and custom schemes are independently versioned, rights-governed, removable lenses over governed knowledge. CLASSIE Subject/Population are optional and deferred pending rights approval; restricted payloads may be private/runtime-loaded; disabling an external scheme does not invalidate independent knowledge. Builder enriches governed charity/program knowledge and is not a general-purpose arbitrary-text or grant-application taxonomy-classification service. | Approved | Generic taxonomy loading and governed assignments remain supported; CLASSIE is not foundational; future researcher/innovator schemes can be evaluated without selecting a replacement now. |
+| CG-D025 | The product uses a taxonomy-plural approach. CLASSIE is optional and deferred pending rights and permission review; restricted payloads may remain private; external schemes remain removable; Builder is not a general arbitrary-text taxonomy classifier. | Superseded | Superseded by CG-D028 and CG-D029, which define the distinct classification lenses and the approved private-processing/public-suppression boundary. |
 
 | CG-D026 | CharityGraph is LLM-first for open-ended semantics. The Semantic Heuristic Gate is ex-ante: ask "Does this diff teach Python English?" and require Greg-approved, registered exception ID before deterministic semantic lexical interpretation. | Approved | Recurring semantic errors change evidence, prompt, schema, model, routing, benchmark or governance rather than accumulating English phrase rules. |
 | CG-D027 | Semantic provenance is reconstructible through source artefact, evidence bundle, task/prompt policy, provider/model, structured output, validation, governed disposition and release lineage. First-party language is strategically authored evidence, not taxonomy authority; no token-level causal explanation is claimed. | Approved | Evidence-bundle/document-level inference is legitimate without exposing provider chain-of-thought or treating lexical occurrence as semantic proof. |
@@ -49,3 +49,28 @@ The following require bounded design before their implementation slice, not spec
 - future public API/query format beyond downloadable Data and static Viewer.
 
 Each decision should receive an ADR or amendment before code depends on it.
+
+### CG-D028 — Classification lenses, grain and provenance
+
+**Status:** Approved
+
+CharityGraph uses six non-equivalent classification and regulatory lenses:
+
+1. ACNC Registration
+2. ATO DGR
+3. ACNC CLASSIE
+4. UN SDG
+5. CharityGraph Native
+6. CharityGraph CLASSIE
+
+Their grains and authorities differ. ACNC CLASSIE and Our Community CLASSIE are not presumed version-identical. Cross-lens use requires an explicit `ConceptMapping`; assignments remain governed in the source lens and are not silently rolled up. Reporting group is structural scope, not a seventh lens. Embeddings are retrieval and representation aids only; they do not create assignments.
+
+This decision supersedes the classification wording previously recorded under CG-D025 without rewriting that historical decision.
+
+### CG-D029 — Private CLASSIE processing / public suppression
+
+**Status:** Approved
+
+Private CLASSIE runtime loading and LLM processing are approved when the payload is lawfully supplied. Local derived storage is approved. Public CLASSIE publication remains permission-gated, and inferred CLASSIE assignments are withheld by default. CLASSIE can be removed without re-extracting CharityGraph Native knowledge or other independent lenses.
+
+This decision supersedes the deferred/rights-pending operational wording previously associated with CG-D025.

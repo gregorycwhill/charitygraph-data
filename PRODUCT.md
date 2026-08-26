@@ -257,13 +257,13 @@ Approved direction includes:
 - use UN Sustainable Development Goals as a multi-label alignment lens;
 - use ABS geography and relevant statistical classifications with explicit editions;
 - develop CharityGraph-native operational-activity, participation and fundraising vocabularies where external schemes are inadequate;
-- treat CLASSIE Subject and Population as optional external schemes, deferred pending rights/permission review;
+- support six distinct classification / regulatory lenses: ACNC Registration, ATO DGR, ACNC CLASSIE, UN SDG, CharityGraph Native and CharityGraph CLASSIE; private CLASSIE processing is approved, while publication remains permission-gated and withheld by default;
 - support future researcher, innovator, government, foundation and custom schemes under independent governance; and
 - publish decisions for schemes adopted, profiled, incorporated, crosswalked, adapted, deferred, rejected or superseded.
 
 Restricted third-party taxonomy payloads may remain content-hashed and versioned in private runtime storage. Generic open-source code may load conforming schemes and create governed assignments without committing protected labels or definitions. Dynamic loading does not establish legal permission. If an external scheme is disabled, independent CharityGraph evidence, subjects, relationships, native classifications and other scheme assignments remain valid; only dependent derived objects and publication projections are withheld or regenerated.
 
-CLASSIE is not foundational to source acquisition, subject identity, program/service modelling, operational activities, SDGs, regulatory facts or the underlying graph.
+ACNC CLASSIE and CharityGraph CLASSIE remain distinct, versioned and independently governed. CLASSIE is removable: disabling it withholds CLASSIE-derived projections while preserving CharityGraph Native knowledge, ACNC/ATO facts, SDGs, programs/services and evidence.
 
 Model-assessed assignments are useful governed judgments. Ordinary semantic disagreement is represented through confidence, ranking, alternatives and correction—not routine abstention.
 
@@ -354,3 +354,24 @@ Public contract 0.5 remains immutable compatibility authority until a separately
 CharityGraph is model-assisted by default for open-ended semantics. Python owns acquisition, stable parsing and segmentation, exact joins, source-native preservation, evidence bundles, validation, scheduling, caching, persistence, lineage, policy and release compilation. LLMs routinely own semantic relevance, entity/program/service interpretation, durability and boundary judgment, prose fact extraction, activity and population interpretation, taxonomy and SDG alignment, ambiguity and bounded rationale.
 
 First-party websites, annual reports and grant materials are strategically authored evidence: they may establish source-native propositions, but their vocabulary is not taxonomy authority. Lexical occurrence or frequency is not semantic proof. Semantic provenance is reconstructible from source artefact through evidence bundle, task and prompt policy, provider/model, output, validation, governed disposition and release lineage. It does not require token-level causal explanations or expose internal model reasoning.
+
+## Classification / regulatory lenses (current decision)
+
+CharityGraph uses six named lenses; they are not six equivalent taxonomies.
+
+| Lens | Natural grain | Authority / owner | Meaning | Assignment method | Publication treatment |
+|---|---|---|---|---|---|
+| ACNC Registration | Legal charity/entity | ACNC | Registration, charitable purpose/subtype, beneficiary classifications and other regulatory facts kept as separate dimensions | Source-reported | Public where the governing source and release policy permit |
+| ATO DGR | Legal entity or scoped fund/authority/institution | ATO / Commonwealth tax law | DGR entitlement/status, scoped endorsement and statutory item/category where applicable | Source-reported; versioned profile where enumerated | Public subject to source/provenance policy |
+| ACNC CLASSIE | AIS program | ACNC, AIS-year/profile-specific | Program classification selected/reported in AIS | Source-reported | Public only under applicable rights/source policy |
+| UN SDG | Program/service primarily; organisation only when genuinely organisation-wide | UN goal framework, CharityGraph governance | Alignment, not impact or UN endorsement | Model-assessed, evidence-bound and governed | Public projection is derived and policy-controlled |
+| CharityGraph Native | Organisation, group, legal entity, program/service and supported scopes | CharityGraph governance | Operational knowledge, activities, populations, geography, relationships and selected native vocabularies | Source-reported or model-assisted as recorded | Eligible according to evidence and release policy |
+| CharityGraph CLASSIE | Program/service primarily | CharityGraph, using selected Our Community release/profile | Independent CharityGraph assessment against CLASSIE concepts | Model-assessed, evidence-bound and human-reviewable | Private/publication-withheld by default until permission |
+
+ACNC Registration is a regulatory family, not one taxonomy. ATO DGR is separate from ACNC Registration and must never be inferred from ACNC purpose. ACNC CLASSIE must use an explicit AIS/profile version and must not be treated as version-identical to the selected Our Community CLASSIE release. Explicit ConceptMapping records are required for any crosswalk; label equality is not an exact mapping.
+
+Reporting groups are scope structure, not a seventh lens. An AIS or annual report may cover multiple legal charities and programs, but facts attach to the lowest evidence-supported subject/scope and do not propagate automatically.
+
+Embeddings remain versioned retrieval/similarity aids. They may propose candidates or mappings, but cannot create a governed taxonomy assignment or justify new native concepts alone.
+
+Private CLASSIE processing is approved. Public release remains permission-gated. If permission is denied, stop new CLASSIE tasks and withhold/remove CLASSIE-derived projections while retaining native knowledge, ACNC/ATO facts, SDGs, programs/services and evidence.
