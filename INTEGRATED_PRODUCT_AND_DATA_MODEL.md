@@ -197,18 +197,18 @@ Builder vNext SHALL maintain distinct physical zones for:
 
 Private source bodies, protected prompts and responses, credentials, runtime databases, private absolute paths and unreviewed working artefacts SHALL NOT enter public Git history or release distributions.
 
-### 4.3 Local-first operating model
+### 4.3 LLM-first semantic operating model
 
-The approved operating model is a local Python system with:
+The approved operating model is a local Python control plane with LLM-powered semantic processing:
 
-- deterministic retrieval, parsing, joins, validation and release construction where practical;
-- NLP for entity recognition, classification, relevance screening and candidate extraction;
-- bounded model-provider calls for difficult OCR, extraction, comparison, synthesis and writing;
+- deterministic retrieval, stable parsing/segmentation, joins, validation, source-native preservation and release construction;
+- mechanical candidates only when meaning is explicit in stable structured source-native fields;
+- typed LLM tasks for unrestricted prose relevance, entity/program/service interpretation, extraction, classification, comparison and synthesis;
 - explicit provider, cache, cost and budget boundaries;
 - SQLite for operational catalogue, lineage and ledger state; and
 - file-based evidence and release artefacts.
 
-PostgreSQL, distributed workers, hosted orchestration, API/MCP distribution and large-scale direct-observation infrastructure remain future options, not current requirements.
+There is no generic local NLP layer for entity recognition, classification, relevance screening or candidate extraction. Deterministic lexical semantic heuristics require an approved exception in SEMANTIC_HEURISTIC_APPROVALS.md. PostgreSQL, distributed workers, hosted orchestration, API/MCP distribution and large-scale direct-observation infrastructure remain future options, not current requirements.
 
 ## 5. Ontological layers
 
@@ -1205,25 +1205,21 @@ Lack of a sophisticated website, detailed annual report, Wikipedia article, larg
 
 ## 16. Model-assisted processing and economics
 
-### 16.1 Mechanical first
+### 16.1 Controlled mechanical/model boundary
 
-Use deterministic retrieval, parsing, joins, validation and known mappings when they are adequate.
+Use deterministic retrieval, parsing, segmentation, joins, validation and known mappings when they are adequate for stable syntax, exact identifiers, arithmetic or explicit source-native structure.
 
-Models MAY be used for:
+LLM tasks are the routine semantic engine for:
 
-- difficult OCR;
-- structure recovery;
-- entity and span recognition;
-- relevance screening;
-- candidate extraction;
-- taxonomy suggestions;
-- conflict comparison;
-- synthesis drafts; and
+- difficult OCR and structure recovery;
+- open-ended entity, program and service interpretation;
+- semantic relevance and candidate extraction from prose;
+- taxonomy and SDG suggestions;
+- conflict comparison, ambiguity and bounded rationale;
+- evidence selection and synthesis drafts; and
 - public writing derived from governed assertions.
 
-Models SHALL NOT manufacture missing evidence, infer protected attributes without policy, or silently promote claims outside evaluated boundaries.
-
-“Mechanical first” is a method-selection rule, not an instruction to reproduce language understanding with expanding Python heuristics. Deterministic code handles stable syntax and exact rules. Models handle bounded semantic judgment. Human review handles high-consequence ambiguity. The system may abstain when evidence is genuinely insufficient.
+Python may assemble and select evidence mechanically, but it must not reproduce language understanding through regexes, keyword lists, phrase rules, lexical scoring, capitalization/title-case, URL words/slugs, repetition/frequency, fuzzy lexical similarity or equivalent techniques. Any specific exception requires an approved ID in SEMANTIC_HEURISTIC_APPROVALS.md. Models SHALL NOT manufacture missing evidence, infer protected attributes without policy, or silently promote claims outside evaluated boundaries.
 
 ### 16.2 Provider boundary
 

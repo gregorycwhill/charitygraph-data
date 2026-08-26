@@ -39,7 +39,7 @@ Build the narrow end-to-end path:
 **Exit criteria**
 
 - fixed development cases and untouched holdout pass their agreed thresholds;
-- no unbounded phrase-rule growth;
+- no unapproved deterministic semantic lexical interpretation;
 - provenance floor is complete;
 - ordinary classifications are useful rather than reflexively unknown;
 - costs reconcile in SQLite;

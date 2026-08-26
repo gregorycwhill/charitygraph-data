@@ -157,3 +157,7 @@ Conceptual sophistication belongs in the governed data layer. Developers, softwa
 
 User-interface simplicity SHALL NOT be achieved by weakening internal semantics, and internal semantic richness SHALL NOT require an unnecessarily complex public experience.
 Phase 1 reality-slice execution design is indexed by [REALITY_SLICE_1_ACCEPTANCE_PACKET.md](REALITY_SLICE_1_ACCEPTANCE_PACKET.md). It is a subordinate refinement of IMPLEMENTATION_PLAN.md and TEST_PLAN.md.
+
+## Semantic gate authority
+
+SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the Semantic Heuristic Gate. No implementation may rely on a deterministic semantic lexical exception without a registered approval ID and explicit Greg approval. The gate is ex-ante and controlling for Builder and Data planning.

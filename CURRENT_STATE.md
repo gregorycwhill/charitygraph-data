@@ -114,3 +114,7 @@ The merged foundation does not yet provide:
 ## 8. Immediate readiness conclusion
 
 The project is ready for a small private vertical slice. It is not ready for sector-wide ingestion or public vNext publication. The next task should prove that the contracts, SQLite control plane, evidence storage and model judgment work together on real evidence without rebuilding the old heuristic loop.
+
+## 9. Semantic gate checkpoint
+
+At this checkpoint Data main is c24906a43da3cd5853d5da19d5d5c7bfe6efeb0d; Builder main after merged PR #12 is e6842112823f46f36238824182b2819ac50d93ca. Scoped Benchmark v2 is frozen at 40 cases with approved_frozen state. Builder PR #13 remains open and unmerged at eb26968ae2b5fd789d64641d4116aa792749b1ae; its bounded acquisition/provenance output was useful, but its lexical semantic candidate loop is rejected by the new ex-ante gate and has not been corrected here. The next implementation is a real-model semantic extraction/economics tranche, not further lexical extraction logic.

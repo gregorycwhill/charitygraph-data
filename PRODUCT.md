@@ -348,3 +348,9 @@ Public releases are immutable, versioned and catalogue-described. A future relea
 The Viewer provides simple entry points. Developers and agents may traverse the richer linked distributions.
 
 Public contract 0.5 remains immutable compatibility authority until a separately approved future contract is implemented.
+
+## Semantic architecture and provenance
+
+CharityGraph is model-assisted by default for open-ended semantics. Python owns acquisition, stable parsing and segmentation, exact joins, source-native preservation, evidence bundles, validation, scheduling, caching, persistence, lineage, policy and release compilation. LLMs routinely own semantic relevance, entity/program/service interpretation, durability and boundary judgment, prose fact extraction, activity and population interpretation, taxonomy and SDG alignment, ambiguity and bounded rationale.
+
+First-party websites, annual reports and grant materials are strategically authored evidence: they may establish source-native propositions, but their vocabulary is not taxonomy authority. Lexical occurrence or frequency is not semantic proof. Semantic provenance is reconstructible from source artefact through evidence bundle, task and prompt policy, provider/model, output, validation, governed disposition and release lineage. It does not require token-level causal explanations or expose internal model reasoning.

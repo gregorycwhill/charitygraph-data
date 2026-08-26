@@ -184,3 +184,9 @@ Future releases must publish:
 - clear distinctions between source facts, calculated values, model-assessed classifications and human decisions.
 
 This policy does not alter immutable public contract 0.5. It governs vNext implementation and future releases only.
+
+## 9. Semantic yield economics and heuristic approval
+
+Optimise semantic yield per cent of LLM compute, not model-call avoidance. Development experiments may use normal or rack rates within approved budgets; production SHOULD use batch, flex or another economical mode where appropriate, without hard-coding a permanent discount. Bundle compatible logical tasks when benchmarked, while retaining independent validation, lineage and invalidation.
+
+Economic comparison includes semantic coverage, quality/error, model cost, implementation and maintenance cost, review burden and material latency. A total-cost benchmark alone does not authorise local semantic NLP or lexical rules: custom/local semantic NLP and deterministic semantic heuristics require explicit product-owner approval recorded in SEMANTIC_HEURISTIC_APPROVALS.md.
