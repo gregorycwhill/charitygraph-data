@@ -32,6 +32,9 @@
 | CG-D024 | The former project name appears only where immutable compatibility or historical explanation requires it. | Approved | Active product language and new identifiers use CharityGraph. |
 | CG-D025 | CharityGraph is taxonomy-plural: external and custom schemes are independently versioned, rights-governed, removable lenses over governed knowledge. CLASSIE Subject/Population are optional and deferred pending rights approval; restricted payloads may be private/runtime-loaded; disabling an external scheme does not invalidate independent knowledge. Builder enriches governed charity/program knowledge and is not a general-purpose arbitrary-text or grant-application taxonomy-classification service. | Approved | Generic taxonomy loading and governed assignments remain supported; CLASSIE is not foundational; future researcher/innovator schemes can be evaluated without selecting a replacement now. |
 
+| CG-D026 | CharityGraph is LLM-first for open-ended semantics. The Semantic Heuristic Gate is ex-ante: ask "Does this diff teach Python English?" and require Greg-approved, registered exception ID before deterministic semantic lexical interpretation. | Approved | Recurring semantic errors change evidence, prompt, schema, model, routing, benchmark or governance rather than accumulating English phrase rules. |
+| CG-D027 | Semantic provenance is reconstructible through source artefact, evidence bundle, task/prompt policy, provider/model, structured output, validation, governed disposition and release lineage. First-party language is strategically authored evidence, not taxonomy authority; no token-level causal explanation is claimed. | Approved | Evidence-bundle/document-level inference is legitimate without exposing provider chain-of-thought or treating lexical occurrence as semantic proof. |
+
 ## Open implementation decisions
 
 The following require bounded design before their implementation slice, not speculative resolution now:

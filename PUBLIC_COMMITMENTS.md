@@ -28,3 +28,7 @@ We commit to:
 16. **Simple public access.** Ordinary users will receive understandable organisation, program, service and evidence views even where the underlying model is sophisticated.
 
 These commitments do not promise complete or real-time knowledge about every charity, a donation or volunteer marketplace, personal advice, universal rankings, or unrestricted publication of every acquired source document.
+
+### Semantic transparency clarification
+
+Explainability means reconstructible production provenance: governed source inputs, evidence bundles, task/prompt/policy identity, provider/model metadata, structured outputs, validation and release lineage. It does not promise internal chain-of-thought or lexical-causation explanations, and CharityGraph will not request or publish provider chain-of-thought.

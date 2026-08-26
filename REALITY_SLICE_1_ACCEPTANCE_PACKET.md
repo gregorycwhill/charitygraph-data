@@ -166,7 +166,7 @@ Before any paid call, Builder must produce a dry-run projected-cost report, rese
 Implementation must stop and return for redesign if:
 
 * a second correction pass reveals the same conceptual error class;
-* Python begins accumulating phrase-specific language heuristics;
+* any unapproved deterministic semantic lexical rule is proposed or implemented; stop immediately and return to design;
 * subject or program scope cannot be represented with approved primitives;
 * provenance cannot be reconstructed mechanically;
 * holdout failure materially exceeds the frozen thresholds or gap;
@@ -181,3 +181,6 @@ Unresolved cases remain governed unresolved records. They are never forced into 
 
 PR A must begin from the then-current Data and Builder `main`, cite this packet and the canonical authorities, and declare its allowed files, fixtures, exclusions and tests. It may implement source/evidence registration and content-addressed artefact primitives only. PR B–F remain sequenced as in `IMPLEMENTATION_PLAN.md`; no PR in this packet may publish Data or Viewer.
 
+## Semantic gate checkpoint
+
+Any first unapproved deterministic semantic lexical rule is an immediate stop condition; do not wait for repeated failures or accumulate exceptions. The next semantic execution evaluates LLM evidence bundles, semantic yield and bounded model economics.

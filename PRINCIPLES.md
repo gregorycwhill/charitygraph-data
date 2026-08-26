@@ -20,6 +20,8 @@ Deterministic code handles stable syntax and exact rules. Models handle bounded 
 
 Do not teach Python to approximate open-ended language understanding through accumulating exceptions. Do not make a capable model abstain merely because a reasonable person might choose an adjacent low-risk classification.
 
+The Semantic Heuristic Gate is ex-ante: before implementation, ask **Does this diff teach Python English?** Any deterministic interpretation of unrestricted language requires a specific approved exception recorded in SEMANTIC_HEURISTIC_APPROVALS.md. Without that approval, change the evidence, prompt, task schema, model, routing, benchmark or governance instead of adding phrase rules.
+
 ## 4. Preserve evidence before synthesis
 
 Source-native evidence, extraction, mapping, adjudication and narrative are different layers. A synthesis is not evidence for itself.

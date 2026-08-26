@@ -192,3 +192,9 @@ Before a source enters a production run, confirm:
 - publication projection;
 - update and retirement policy;
 - cost and rate implications.
+
+## 9A. LLM-first semantics and reconstructible provenance
+
+Evidence-bundle or document-level inference is legitimate when the input scope is recorded. First-party wording is strategically authored evidence: it may support a source-native proposition but is not taxonomy authority. Keyword presence or frequency does not establish semantic fit.
+
+Open-ended semantic relevance, entity/program/service interpretation, durability boundaries, activity/population interpretation, taxonomy/SDG alignment and semantic ambiguity are model tasks by default. Deterministic processing validates structure and invariants; it does not reproduce language understanding through lexical heuristics. Provenance records source artefact, evidence bundle, task/prompt policy, provider/model, output, validation and governed disposition so the result is reconstructible; it does not claim token-level causal explanation or expose internal model reasoning.

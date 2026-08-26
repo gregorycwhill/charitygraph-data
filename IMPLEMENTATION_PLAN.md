@@ -112,18 +112,18 @@ Exclude full scheme harvesting if licensing or stable machine-readable sources r
 
 **Stop condition:** assignment and mapping cannot be confused; multi-label and program scope work; exact mappings require explicit evidence/review.
 
-### PR D — Identity/program mechanical pipeline
+### PR D - Identity/program mechanical pipeline
 
 Implement deterministic work only:
 
 - source record ingestion;
 - identifier validation and exact joins;
 - subject/scope creation;
-- bounded program candidate extraction from structured or clearly segmented inputs;
-- evidence creation and coverage states;
+- parsing, segmentation and preservation of explicit structured source-native program records;
+- evidence bundles and coverage states;
 - replay/idempotency.
 
-Use model-task requests for unresolved language work; do not add general prose heuristics.
+PR D does not interpret unrestricted prose semantically or produce unrestricted semantic candidates. PR E owns program/service semantic identification and normalisation/decomposition, activities, SDGs, permitted taxonomy assignments and semantic evidence/relevance. One physical model request may return multiple independently governed logical task outputs when benchmarked; each retains independent validation and lineage.
 
 ### PR E — Typed classification model tasks
 

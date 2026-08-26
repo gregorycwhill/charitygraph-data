@@ -171,3 +171,9 @@ Future vNext publication additionally requires:
 - Data/Viewer compatibility;
 - HTTP, canonical URL, robots and sitemap checks;
 - rollback and previous-release resolvability.
+
+## 4A. Ex-ante semantic heuristic gate
+
+Before approving any implementation PR that touches unrestricted natural-language processing, review MUST answer: **Does this diff teach Python English?** If yes, a specific CG-SH-* approval ID is required; without one, review fails and implementation stops. Do not add a keyword scanner to automate this judgment.
+
+Semantic evaluation measures semantic yield per cent, bundled-task economics, quality at varying evidence-pack/model budgets, strategically authored or keyword-heavy evidence, and lexical presence without proposition support. A failed semantic class changes the evidence, prompt, task schema, model, routing, benchmark or governance; it does not justify an unapproved phrase rule.
