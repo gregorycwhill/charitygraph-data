@@ -14,7 +14,7 @@ Every scheme considered must have a visible research and disposition record. Sec
 
 CharityGraph is taxonomy-plural. No single external scheme is the master taxonomy. ACNC/ATO classifications remain source/authority facts; SDGs provide an alignment lens; CharityGraph-native vocabularies describe operational activity and other gaps; external and custom schemes remain independently versioned, mapped and governed.
 
-CLASSIE Subject and Population are optional integrations. Authoritative 4.2 Subject/Population materials are discoverable and exist, but private processing, LLM use, reuse, redistribution and publication rights remain unresolved. CLASSIE is not a prerequisite for identity, evidence, programs/services, activities, SDGs, regulatory facts or the underlying graph.
+CLASSIE has two distinct roles: ACNC CLASSIE is AIS-year/profile-specific source reporting; CharityGraph CLASSIE is an independent, evidence-bound model assessment against a selected Our Community release. Private processing and configured-model use are approved. Redistribution and publication remain permission-gated; CLASSIE payloads and inferred assignments are withheld by default. CLASSIE is removable and not foundational to identity, evidence, programs/services, activities, SDGs, regulatory facts or the underlying graph.
 
 ## 2. Scheme record
 
@@ -51,7 +51,7 @@ Allowed dispositions are:
 | Domain | Scheme/profile | Initial disposition | Role |
 |---|---|---|---|
 | Regulatory purpose/beneficiaries/activities | ACNC/ATO classifications | Adopted as source classifications | Preserve what regulators report; do not mistake for the complete semantic model |
-| Charity subject and population | CLASSIE Subject and Population | Deferred / optional pending rights review | Desirable Australian interoperability lens; not foundational and not the master taxonomy |
+| Classification / regulatory lenses | ACNC Registration; ATO DGR; ACNC CLASSIE (AIS profile); UN SDG; CharityGraph Native; CharityGraph CLASSIE (Our Community profile) | Independently governed, versioned and publication-controlled | Distinct grains and authorities; private CLASSIE processing approved, public CLASSIE output permission-gated |
 | Finance | National Standard Chart of Accounts | Adopted/mapped | Normalised not-for-profit financial concepts while retaining reported line items |
 | Public goals | UN Sustainable Development Goals | Adopted as multi-label alignment | Widely recognised goal lens; assignments may apply to organisations or programs |
 | Geography and statistical population | ABS standards | Adopted where applicable | Locations, regions and demographic/statistical compatibility |
@@ -188,3 +188,24 @@ CharityGraph must not:
 - publish culturally sensitive classifications without appropriate governance.
 
 This document governs vNext only and does not modify contract 0.5.
+
+## Classification / regulatory lenses (current decision)
+
+CharityGraph uses six named lenses; they are not six equivalent taxonomies.
+
+| Lens | Natural grain | Authority / owner | Meaning | Assignment method | Publication treatment |
+|---|---|---|---|---|---|
+| ACNC Registration | Legal charity/entity | ACNC | Registration, charitable purpose/subtype, beneficiary classifications and other regulatory facts kept as separate dimensions | Source-reported | Public where the governing source and release policy permit |
+| ATO DGR | Legal entity or scoped fund/authority/institution | ATO / Commonwealth tax law | DGR entitlement/status, scoped endorsement and statutory item/category where applicable | Source-reported; versioned profile where enumerated | Public subject to source/provenance policy |
+| ACNC CLASSIE | AIS program | ACNC, AIS-year/profile-specific | Program classification selected/reported in AIS | Source-reported | Public only under applicable rights/source policy |
+| UN SDG | Program/service primarily; organisation only when genuinely organisation-wide | UN goal framework, CharityGraph governance | Alignment, not impact or UN endorsement | Model-assessed, evidence-bound and governed | Public projection is derived and policy-controlled |
+| CharityGraph Native | Organisation, group, legal entity, program/service and supported scopes | CharityGraph governance | Operational knowledge, activities, populations, geography, relationships and selected native vocabularies | Source-reported or model-assisted as recorded | Eligible according to evidence and release policy |
+| CharityGraph CLASSIE | Program/service primarily | CharityGraph, using selected Our Community release/profile | Independent CharityGraph assessment against CLASSIE concepts | Model-assessed, evidence-bound and human-reviewable | Private/publication-withheld by default until permission |
+
+ACNC Registration is a regulatory family, not one taxonomy. ATO DGR is separate from ACNC Registration and must never be inferred from ACNC purpose. ACNC CLASSIE must use an explicit AIS/profile version and must not be treated as version-identical to the selected Our Community CLASSIE release. Explicit ConceptMapping records are required for any crosswalk; label equality is not an exact mapping.
+
+Reporting groups are scope structure, not a seventh lens. An AIS or annual report may cover multiple legal charities and programs, but facts attach to the lowest evidence-supported subject/scope and do not propagate automatically.
+
+Embeddings remain versioned retrieval/similarity aids. They may propose candidates or mappings, but cannot create a governed taxonomy assignment or justify new native concepts alone.
+
+Private CLASSIE processing is approved. Public release remains permission-gated. If permission is denied, stop new CLASSIE tasks and withhold/remove CLASSIE-derived projections while retaining native knowledge, ACNC/ATO facts, SDGs, programs/services and evidence.
