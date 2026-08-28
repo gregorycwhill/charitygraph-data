@@ -9,7 +9,7 @@
 | Component | Repository | Current `main` | State |
 |---|---|---|---|
 | Builder | `gregorycwhill/charitygraph` | `c8806c869d62b38cd00eaf9dcea1e6a8a4eaa4c1` | Production foundations and native discovery v2 available |
-| Data | `gregorycwhill/charitygraph-data` | `e7882a05b9024cfb4ac0d749475a401c6ba69db5` | Canonical contracts, releases and governance |
+| Data | `gregorycwhill/charitygraph-data` | `e7882a05b9024cfb4ac0d749475a401c6ba69db5` (Data main before this documentation tranche) | Canonical contracts, releases and governance |
 | Viewer | `gregorycwhill/charitygraph-viewer` | `cd6f3720f664a29e0ca7ed8be19797e573fcdfc8` | Existing deployed Viewer; unchanged by this state update |
 
 ## 2. Immutable public release
