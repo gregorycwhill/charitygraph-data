@@ -2,9 +2,9 @@
 
 **Status:** Canonical project-governance document
 
-**Version:** 2.0-draft
+**Version:** 2.1-draft
 
-**Date:** 24 August 2026
+**Date:** 28 August 2026
 
 ## 1. Purpose
 
@@ -71,6 +71,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
 | Verification and release gates | `TEST_PLAN.md` |
 | Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
+| Semantic reliability, technical replication and reproducible semantic replay | `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` |
 | Current coding handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
 
 ## 5. Refinement and conflict rules
@@ -161,3 +162,7 @@ Phase 1 reality-slice execution design is indexed by [REALITY_SLICE_1_ACCEPTANCE
 ## Semantic gate authority
 
 SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the Semantic Heuristic Gate. No implementation may rely on a deterministic semantic lexical exception without a registered approval ID and explicit Greg approval. The gate is ex-ante and controlling for Builder and Data planning.
+
+## 11. Semantic reliability authority
+
+`SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` is the canonical cross-cutting authority for semantic validity, repeatability, technical replication and reproducible replay. `SEMANTIC_RELIABILITY_BASELINE_2026-08-28.md` is reference experimental evidence subordinate to that policy; it establishes no product threshold.

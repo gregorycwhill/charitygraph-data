@@ -2,9 +2,9 @@
 
 **Status:** Canonical shared product contract
 
-**Version:** 2.0-draft
+**Version:** 2.1-draft
 
-**Date:** 24 August 2026
+**Date:** 28 August 2026
 
 **Applies to:** Builder, Data and Viewer
 
@@ -375,3 +375,9 @@ Reporting groups are scope structure, not a seventh lens. An AIS or annual repor
 Embeddings remain versioned retrieval/similarity aids. They may propose candidates or mappings, but cannot create a governed taxonomy assignment or justify new native concepts alone.
 
 Private CLASSIE processing is approved. Public release remains permission-gated. If permission is denied, stop new CLASSIE tasks and withhold/remove CLASSIE-derived projections while retaining native knowledge, ACNC/ATO facts, SDGs, programs/services and evidence.
+
+## Semantic reliability and reproducible releases
+
+CharityGraph uses model-assisted interpretation, which may be stochastic. It does not hide that fact by claiming deterministic inference. Valid semantic results are persisted with provenance and reused when task material is unchanged, so release reproducibility does not require rerunning unchanged LLM tasks. Technical replication is an explicitly authorised evaluation method that measures semantic repeatability separately from release identity. Downstream developers should distinguish stable release identity, empirical semantic reliability and genuine evidence-backed temporal change.
+
+Product builders also need stable, versioned semantic results and explicit reliability and coverage metadata.

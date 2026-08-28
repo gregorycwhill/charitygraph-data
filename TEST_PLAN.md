@@ -1,6 +1,8 @@
 # CharityGraph Builder vNext Test and Evaluation Plan
 
-**Status:** Canonical validation strategy, version 2.0-draft
+**Status:** Canonical validation strategy, version 2.1-draft
+
+**Date:** 28 August 2026
 
 ## 1. Objective
 
@@ -177,3 +179,13 @@ Future vNext publication additionally requires:
 Before approving any implementation PR that touches unrestricted natural-language processing, review MUST answer: **Does this diff teach Python English?** If yes, a specific CG-SH-* approval ID is required; without one, review fails and implementation stops. Do not add a keyword scanner to automate this judgment.
 
 Semantic evaluation measures semantic yield per cent, bundled-task economics, quality at varying evidence-pack/model budgets, strategically authored or keyword-heavy evidence, and lexical presence without proposition support. A failed semantic class changes the evidence, prompt, task schema, model, routing, benchmark or governance; it does not justify an unapproved phrase rule.
+
+## 14. Technical replicate / semantic reliability
+
+This layer measures run-to-run semantic graph stability with identical frozen task material. It uses intentionally repeated pinned real-model calls under explicit evaluation authorisation and budget.
+
+Each evaluation packet SHALL define the replicate cohort/sample, material-identity freeze, independent-generation protocol, pairing/matching method, subject-set overlap, granularity stability, disposition agreement, operational-status agreement, evidence-support agreement, proposal-count variation and interpretation of disagreements. Byte-identical output is not required.
+
+Technical replication is not holdout evaluation: holdout evaluates generalisation to unseen cases, while replication evaluates measurement stability on the same frozen case. Technical replication is not a production retry: a replicate is explicitly authorised, a provider retry recovers the same logical call, and an accidental duplicate is an execution defect. Production reliability must not be fixed by automatic majority voting over repeated calls.
+
+Scale/economics tests SHALL include deliberate replicate cost and duplicate-send prevention across runtime stores/environments. Regression policy SHALL reject converting a stochastic singleton difference into a deterministic lexical rule. No numeric reliability acceptance threshold is set yet.
