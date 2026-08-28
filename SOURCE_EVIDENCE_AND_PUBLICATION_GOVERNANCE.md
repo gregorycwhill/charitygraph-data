@@ -1,6 +1,8 @@
 # CharityGraph Source, Evidence and Publication Governance
 
-**Status:** Canonical governance specification, version 1.0-draft
+**Status:** Canonical governance specification, version 1.1-draft
+
+**Date:** 28 August 2026
 
 **Applies to:** Source registration, acquisition, evidence, adjudication and future publication
 
@@ -198,3 +200,11 @@ Before a source enters a production run, confirm:
 Evidence-bundle or document-level inference is legitimate when the input scope is recorded. First-party wording is strategically authored evidence: it may support a source-native proposition but is not taxonomy authority. Keyword presence or frequency does not establish semantic fit.
 
 Open-ended semantic relevance, entity/program/service interpretation, durability boundaries, activity/population interpretation, taxonomy/SDG alignment and semantic ambiguity are model tasks by default. Deterministic processing validates structure and invariants; it does not reproduce language understanding through lexical heuristics. Provenance records source artefact, evidence bundle, task/prompt policy, provider/model, output, validation and governed disposition so the result is reconstructible; it does not claim token-level causal explanation or expose internal model reasoning.
+
+## 16. Semantic source role and result replay
+
+A source artefact has both content and role. Evidence about a subject is not necessarily evidence of activity by that subject. Semantic task construction preserves, where applicable, the publisher/source owner, source class, proposition-specific authority role, first-party or regulator-reported status, regulator context, independent-evidence status and the subject/scope to which the evidence relates.
+
+Regulator navigation, interface, search and portal material is not charity activity. First-party activity descriptions can support charity activity claims. Regulator-reported program fields are distinct from regulator interface functionality. Tasks must receive sufficient provenance context to make these distinctions; this is not implemented as a forbidden-phrase list.
+
+A valid ModelResult is retained as a provenance-bearing artefact and routine rebuilds reuse it. An intentional technical replicate is explicitly authorised as evaluation; replicate identity remains distinct from accidental duplicate identity.

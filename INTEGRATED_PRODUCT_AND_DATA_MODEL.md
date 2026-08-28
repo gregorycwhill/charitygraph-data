@@ -1,8 +1,8 @@
 # CharityGraph integrated product and data model
 
-**Status:** Canonical integrated design authority, version 1.0-draft
+**Status:** Canonical integrated design authority, version 1.1-draft
 
-**Date:** 24 August 2026
+**Date:** 28 August 2026
 
 **Applies to:** CharityGraph product requirements, Builder vNext conceptual model, taxonomy governance, private evidence and runtime architecture, public Data releases, Viewer projections, analyst exports and future agent interfaces
 
@@ -1973,3 +1973,7 @@ The ACNC reporting group is structural scope, not a classification lens. Group-s
 CharityGraph Native spans multiple grains and is not a master taxonomy. Embeddings are versioned retrieval and candidate-mapping aids only; they cannot create assignments or native concepts by themselves. Organisation-level SDG or CLASSIE summaries are derived projections when rolled up from program assignments.
 
 CLASSIE payloads may be loaded privately at build time when rights permit. Their publication eligibility is independent and defaults to withheld; disabling CLASSIE preserves native, ACNC, ATO, SDG, program/service and evidence knowledge.
+
+## 29. Semantic reliability and replay
+
+A ModelResult is a durable, provenance-bearing semantic measurement. When production task material is unchanged, an existing valid result is ordinarily reused; a technical replicate is a separate evaluation measurement and never a replacement result. Publisher/source role and proposition-specific authority are material context for interpretation. A governed subject is not removed merely because a later stochastic discovery does not enumerate it. These principles do not create a new public schema or replicate-specific database table.

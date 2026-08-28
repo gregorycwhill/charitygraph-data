@@ -2,9 +2,9 @@
 
 **Status:** Canonical product principles
 
-**Version:** 2.0-draft
+**Version:** 2.1-draft
 
-**Date:** 24 August 2026
+**Date:** 28 August 2026
 
 ## 1. Be useful at sector scale
 
@@ -111,3 +111,9 @@ Use representative charities and recovered evidence to test scope, model economi
 ## 25. Keep the project open and independently reusable
 
 Public code, data, schemas, methods and release identity permit inspection, reuse and challenge. Open licensing does not grant others the right to imply endorsement or misuse CharityGraph branding.
+
+## 26. Measure validity and reliability separately
+
+CharityGraph measures whether semantic judgments are supported by evidence and whether materially identical semantic measurements reproduce similar graph structure. Repeatability is evidence about reliability, not truth; a consistently reproduced error remains an error.
+
+Valid persisted semantic results are durable inputs to reproducible releases. Unchanged model tasks are not routinely regenerated. A different stochastic output does not mechanically establish real-world change, and publisher/source role/authority remains part of interpreting evidence. A source interface or metadata artefact is not automatically an activity of the subject being described.
