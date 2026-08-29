@@ -86,7 +86,7 @@ subject-family Jaccard overlap was 0.516, and weighted structural overlap was
 0.379. The structural overlap statistic is retained as a separate descriptive
 measure from the reviewed-family mapping.
 
-These results establish the following methodological conclusions:
+These results support the following methodological conclusions:
 
 1. Repeatability and validity are independent dimensions.
 2. 2/2 recurrence did not materially predict clearly supported validity.
@@ -103,10 +103,10 @@ These results establish the following methodological conclusions:
 
 The experiment also tested the review instrument. Excerpt-only blinded review
 produced widespread `EVIDENCE_INADEQUATE` judgements; providing the complete
-frozen evidence reduced evidence-inadequate cases substantially. Document-level
-evidence binding is therefore insufficient for efficient proposition-level
-review. This motivates, but does not approve, a future proposition-level
-supporting-evidence locator.
+frozen evidence reduced evidence-inadequate cases substantially. In this review
+protocol, document-level evidence binding was insufficient for efficient
+proposition-level review. This motivates, but does not approve, a future
+proposition-level supporting-evidence locator.
 
 This prospective result supplements the retrospective/Fresh-18 observations
 recorded in [the 2026-08-28 baseline note](SEMANTIC_RELIABILITY_BASELINE_2026-08-28.md).
