@@ -166,3 +166,7 @@ SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the 
 ## 11. Semantic reliability authority
 
 `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` is the canonical cross-cutting authority for semantic validity, repeatability, technical replication and reproducible replay. `SEMANTIC_RELIABILITY_BASELINE_2026-08-28.md` is reference experimental evidence subordinate to that policy; it establishes no product threshold.
+
+## North Star planning anchor
+
+`NORTH_STAR_TARGET_CARD.md` derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. It does not override those authorities and is not a public schema proposal. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against it so a reality slice or domain implementation cannot silently redefine product scope.

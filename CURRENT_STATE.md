@@ -1,6 +1,6 @@
 # CharityGraph Current State
 
-**Status date:** 28 August 2026
+**Status date:** 29 August 2026
 
 **Status:** Baseline after Fresh-18 semantic-reliability analysis
 
@@ -8,8 +8,8 @@
 
 | Component | Repository | Current `main` | State |
 |---|---|---|---|
-| Builder | `gregorycwhill/charitygraph` | `c8806c869d62b38cd00eaf9dcea1e6a8a4eaa4c1` | Production foundations and native discovery v2 available |
-| Data | `gregorycwhill/charitygraph-data` | `e7882a05b9024cfb4ac0d749475a401c6ba69db5` (Data main before this documentation tranche) | Canonical contracts, releases and governance |
+| Builder | `gregorycwhill/charitygraph` | `5e5656df635f6531b676e595ae41d4f5a8a523a5` | Production foundations and native discovery v2 available |
+| Data | `gregorycwhill/charitygraph-data` | `9135db270c7b6d42b293d4c598109068b5b9bd14` (Data main before this documentation tranche) | Canonical contracts, releases and governance |
 | Viewer | `gregorycwhill/charitygraph-viewer` | `cd6f3720f664a29e0ca7ed8be19797e573fcdfc8` | Existing deployed Viewer; unchanged by this state update |
 
 ## 2. Immutable public release
@@ -23,7 +23,7 @@ No v0.5 release files, schemas or ranking snapshots were changed.
 
 ## 3. Current production capabilities
 
-The implemented foundation includes evidence/source registry, knowledge persistence, taxonomy/pre-run foundations, exactly-once semantic-call authorization, durable ModelTask/ModelResult evidence binding, multi-proposal native program/service discovery v2, operational-status separation, governed ProgramCandidate -> SubjectRecord promotion, production native-discovery execution, v2 parser dispatch, and canonical ACNC 2024 AIS donation ranking in Data.
+The implemented foundation includes evidence/source registry, knowledge persistence, taxonomy/pre-run foundations, exactly-once semantic-call authorization, merged PR #24 durable authorization and semantic technical-replication safety, durable ModelTask/ModelResult evidence binding, multi-proposal native program/service discovery v2, operational-status separation, governed ProgramCandidate -> SubjectRecord promotion, production native-discovery execution, v2 parser dispatch, and canonical ACNC 2024 AIS donation ranking in Data.
 
 ## 4. Fresh-18 observation
 
@@ -38,3 +38,11 @@ Semantic validity, semantic repeatability, graph/structural repeatability and in
 ## 6. Open work and constraints
 
 The project is not ready for an unbounded fresh paid cohort. Reliability methodology, durable cross-store authorization continuity, accounting telemetry and source-role/grain evaluation remain active topics. Builder PR #15 remains frozen/open/unmerged archaeology. Private evidence, raw responses, runtime databases and repeatability artefacts remain private. No automatic public subject promotion is implied by Fresh-18 output.
+
+## 7. North Star realignment and halted Top-100 run
+
+Program/service v3/v3.1 is one foundation-domain implementation, not the whole product. Controlled model-tier experiments found Terra improved execution reliability over Luna, while Sol did not establish routine value.
+
+A program/service-only Top-100 Terra run using literal ACNC donation ranks 1–100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
+
+The next architectural objective is complete-card reality testing from reusable charity evidence corpora. Broad cohort scaling no longer means scaling a single semantic profile by default.
