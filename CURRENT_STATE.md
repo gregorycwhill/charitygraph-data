@@ -1,6 +1,6 @@
 # CharityGraph Current State
 
-**Status date:** 28 August 2026
+**Status date:** 29 August 2026
 
 **Status:** Baseline after Fresh-18 semantic-reliability analysis
 
@@ -38,3 +38,11 @@ Semantic validity, semantic repeatability, graph/structural repeatability and in
 ## 6. Open work and constraints
 
 The project is not ready for an unbounded fresh paid cohort. Reliability methodology, durable cross-store authorization continuity, accounting telemetry and source-role/grain evaluation remain active topics. Builder PR #15 remains frozen/open/unmerged archaeology. Private evidence, raw responses, runtime databases and repeatability artefacts remain private. No automatic public subject promotion is implied by Fresh-18 output.
+
+## 7. North Star realignment and halted Top-100 run
+
+Program/service v3/v3.1 is one foundation-domain implementation, not the whole product. Controlled model-tier experiments found Terra improved execution reliability over Luna, while Sol did not establish routine value.
+
+A program/service-only Top-100 Terra run using literal ACNC donation ranks 1â€“100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
+
+The next architectural objective is complete-card reality testing from reusable charity evidence corpora. Broad cohort scaling no longer means scaling a single semantic profile by default.

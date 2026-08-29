@@ -239,3 +239,49 @@ Builder vNext uses six distinct, versioned lenses rather than one taxonomy: ACNC
 Reporting-group is scope structure, not a classification lens. Assertions attach to the lowest evidence-supported group, legal entity, program or service and do not propagate automatically. Embeddings support retrieval and candidate mapping only.
 
 Private CLASSIE payloads may be loaded, hashed and processed by Builder when lawfully injected at runtime. Taxonomy assignments carry independent publication eligibility and default to withheld. If publication permission is denied, CLASSIE tasks stop and dependent projections are withheld while native, ACNC, ATO, SDG, program/service and evidence knowledge remains intact.
+
+## Complete-card architecture and sequencing rule
+
+Acquire broadly once; preserve source-native evidence; freeze a reusable charity evidence corpus; assemble task-specific semantic packets; apply cost-efficient semantic passes; persist independently governed domain knowledge; compile analyst/public projections. Acquisition is charity/source oriented and semantic interpretation is domain/profile oriented. A physical request may bundle compatible logical tasks, but task identity, schema/profile, scope, evidence, validation, lineage and governed disposition remain independent. Do not create a giant opaque charity-analysis contract.
+
+## NEXT IMPLEMENTATION SEQUENCE — COMPLETE-CARD REALITY SLICE
+
+### Step 1 — Baseline source-set acquisition / corpus manifest
+
+For each selected charity, attempt ACNC Register/AIS, ATO DGR, official website, latest annual report, Wikipedia/Wikimedia context and applicable fundraising registries. Record acquisition state by source family and claim family; hash retained artefacts; preserve role, time, rights and provenance; freeze a reusable charity-corpus manifest. Do not optimise acquisition for one domain.
+
+### Step 2 — Source-native structured observations
+
+Retain explicit ABN/ACNC identifiers, registration, purposes, DGR, AIS fields, filed financial values and reporting metadata mechanically. Do not route authoritative structured fields through an LLM merely for convenience.
+
+### Step 3 — Stable document segmentation / evidence representations
+
+Create reusable, bounded representations from annual reports, official sites, contextual pages and other retained prose using stable document/markup structure. Do not teach Python English or reacquire the same source per domain.
+
+### Step 4 — Domain task contracts for remaining North Star profiles
+
+Add typed contracts progressively over shared primitives, not twenty disconnected databases. At minimum cover populations/geography, participation, fundraising, finance concepts beyond source-native facts, governance, workforce, capability/capacity, relationships, schemes/accreditations, ethos, commitments, context, outcomes/evaluation and appropriately governed conduct candidates.
+
+### Step 5 — Cross-domain packet experiments
+
+From the same frozen corpus, compare one multi-domain packet, compatible bundles and narrower task packets only as needed to measure quality/cost trade-offs. Bundling physical calls never merges logical contract, validation or provenance.
+
+### Step 6 — Independently governed logical result persistence
+
+Persist observations, assertions, relationships, measurements, taxonomy assignments, matters/events and coverage observations as appropriate. Never persist one model-produced dossier as canonical truth.
+
+### Step 7 — Whole-charity private dossier projection
+
+Render a private analyst projection against `NORTH_STAR_TARGET_CARD.md`. Each section must show governed information, candidate/review-required information, explicit missingness/coverage, not applicable, or deliberately withheld/risk-gated state.
+
+### Step 8 — Coverage / economics / review report
+
+Report source and claim-family coverage, semantic success, review load, packet/corpus reuse, model cost, failure classes, right-tail effects and cross-domain synergies.
+
+## Cross-domain acceptance test
+
+A competent analyst should be able to inspect one charity and answer a broad set of North Star questions without rereading all primary sources, while tracing each material answer to its governed basis. Forcing-function questions include: whether the charity uses/employs/contracts face-to-face fundraisers; how much it spends on fundraising; and whether it is formally religiously affiliated or motivated and on what evidence. These are cross-domain questions, not privileged schema fields.
+
+## Interruption-safe execution requirement
+
+Before cohort scale, execution must be resumable without ambiguity. Durably persist task/measurement identity, authorization, transmission/send-boundary state, provider receipt, usage/cost, raw result receipt, structural validation, evidence-grounding validation and terminal task state. If transmission occurred but response or billing state is ambiguous, fail closed and do not resend merely because a lease expired or an artefact is absent. The halted Top-100 Terra attempt (ABN `48321126727`) is empirical motivation; never invent billed cost from transient output.

@@ -1,127 +1,97 @@
 # CharityGraph Roadmap
 
-**Status:** Canonical product/engineering sequence, version 2.0-draft
+**Status:** Canonical product/engineering sequence, version 2.1-draft
 
 ## Outcome
 
-Build a one-stop shop for structured, governed Australian charity data by expanding from a sound operational foundation through bounded reality slices, cohort-scaled processing and visible open curation.
+Build a one-stop shop for structured, governed Australian charity data: an integrated projection over linked evidence, observations, measurements, assertions, relationships, decisions and coverage—not a single semantic slice or opaque charity record.
 
-## Phase 0 — Documentation and baseline freeze
+## Delivery sequencing principle
 
-**Exit criteria**
+Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity evidence corpus. Assemble one or more task-specific semantic packets from that corpus. Apply one or more cost-efficient semantic passes. Persist independently governed domain knowledge. Compile analyst/public projections from that governed knowledge.
 
-- this controlled documentation package is accepted and installed;
-- authority and supersession are explicit;
-- contract 0.5 checksum remains unchanged;
-- current-state commits/tests are confirmed;
-- old working documents are marked superseded or historical, not silently mixed with active authority.
+Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
-## Phase 1 — Identity, programs and classifications reality slice
+## Phase 0 — Documentation, authority and baseline
 
-**Cohort:** Approximately ten deliberately varied charities.
+Retain the existing baseline intent. Exit requires authority and supersession to be explicit, immutable release 0.5 unchanged, `NORTH_STAR_TARGET_CARD.md` installed, and implementation sequencing visibly mapped to the complete product scope.
 
-**Output:** Private governed preview only.
+## Phase 1 — Foundation spine
 
-Build the narrow end-to-end path:
+North Star emphasis: 1 Identity & regulatory status; 2 Purpose, mandate & cause; 20 Evidence, coverage, freshness & corrections; plus shared subject, scope, relationship, measurement and taxonomy primitives. Existing program/service v3/v3.1 work is valuable foundation-domain work, not the product itself.
 
-1. register selected sources and recovered evidence;
-2. acquire/reference content-addressed artefacts;
-3. resolve subjects, identifiers and scope;
-4. identify programs/services and geography;
-5. create evidence-backed observations and assertions;
-6. preserve ACNC/ATO source classifications;
-7. evaluate and, where rights permit, assign optional external Subject/Population concepts such as CLASSIE;
-8. assign CharityGraph operational activities;
-9. assign UN SDGs;
-10. record task, prompt/model, cost, coverage and adjudication lineage;
-11. render a private review report.
+## Phase 2 — Baseline source acquisition and reusable charity evidence corpus
 
-**Exit criteria**
+For each charity, attempt a reusable baseline source set before domain-specific semantic work: ACNC Register, ACNC AIS, ATO DGR, official website, latest annual report, Wikipedia/Wikimedia context, and PFRA or another applicable fundraising-industry registry. Specialist sources remain claim-, risk- or domain-triggered. Preserve source-native structured observations without routing regulator fields through an LLM merely for rediscovery.
 
-- fixed development cases and untouched holdout pass their agreed thresholds;
-- no unapproved deterministic semantic lexical interpretation;
-- provenance floor is complete;
-- ordinary classifications are useful rather than reflexively unknown;
-- costs reconcile in SQLite;
-- repeated runs reuse artefacts/cache safely;
-- failure classes and unresolved cases are reported.
+Architecture: acquire broadly once → preserve source-native evidence → freeze reusable charity evidence corpus → assemble bounded semantic packets from that corpus. Corpus completeness is claim-family-specific. Record acquisition state (`attempted`, `acquired`, `unavailable`, `access_failed`, `parsing_failed`, `not_applicable`, `not_attempted`) by source family, claim family and subject/scope. `COMPLETE_ENOUGH` for program discovery is not whole-North-Star completeness.
 
-## Phase 2 — Source acquisition and archaeology rebinding
+## Phase 3 — Complete-card semantic reality slice
 
-- productionise source registry and acquisition receipts;
-- add ACNC/ABN, charity websites and annual-report connectors first;
-- index existing archaeology by content hash and lineage confidence;
-- rebind only evidence-supported artefacts;
-- quarantine unresolved legacy material without discarding it;
-- implement retention, rights and privacy projections.
+Use approximately 8–12 deliberately varied charities and attempt every North Star claim family with explicit missingness when unavailable or deferred: identity/regulatory status; purpose/mandate/cause; programs/services/projects/campaigns; populations; geography; participation; fundraising/resource mobilisation; finance/resource flows; governance; workforce; capability/capacity/access/availability; relationships/ecosystem; memberships/schemes/registrations/accreditations; ethos/institutional identity; positions/commitments/implementation; conduct/adverse matters/compliance; notable context/history; outcomes/impact/evaluation; classifications/semantic lenses; evidence/coverage/freshness/corrections.
 
-**Exit criteria:** reproducible reacquisition/reuse, no per-run raw duplication, governed lineage dossiers and source-health reporting.
+This does not require equal depth or automatic publication. High-risk domains retain stronger source and human-review requirements. Acceptance is whether one reusable corpus can support a useful governed whole-charity dossier.
 
-## Phase 3 — Participation and fundraising profiles
+## Phase 4 — Cross-domain semantic packaging and economics
 
-- research and disposition external schemes;
-- publish initial CharityGraph-native faceted vocabularies;
-- populate participation from the start of the production cohort;
-- model fundraising method, channel, setting, instrument, audience and campaign;
-- support direct-observation records without yet launching a collection platform;
-- evaluate website/report evidence separately from observed activity.
+Experimentally compare one large packet, compatible domain bundles and narrower task packets from the same frozen corpus. Candidate bundles include programs/populations/geography/participation; fundraising/workforce relationships/finance; governance/affiliations/ethos; finance/grants/contracts/resource relationships; programs/outcomes/evaluation; and programs with capability/availability. Measure semantic yield per dollar, not merely calls avoided. Never collapse independent logical outputs because calls are bundled.
 
-## Phase 4 — Finance, governance and relationships
+## Phase 5 — Top-100 full-card claim-family build
 
-- retain source financial line items and map to the National Standard Chart of Accounts;
-- implement period, consolidation and formula semantics;
-- add governance roles and organisational-capacity assertions;
-- add typed, directed and time-scoped ecosystem relationships;
-- onboard selected industry shadow registries as first-class sources.
+The milestone is the **Top-100 full-card claim-family build**: attempt the complete North Star surface for literal ACNC donation ranks 1–100, with risk-tiered depth and explicit coverage states for every applicable claim family. Success means baseline source coverage attempted, applicable families attempted, governed results retained, missingness explicit, high-risk work reviewed/deferred appropriately, and economics/failures measured—not every field populated.
 
-## Phase 5 — Cohort engine and scaled private build
+### Phase 5 historical/current program-discovery run
 
-- version notability/resource-allocation features;
-- implement approved A/B/C/D cohort definitions;
-- schedule portfolio budgets and provider routing;
-- build top 100, next 1,000 and next 10,000 in controlled stages;
-- sample the tail and high-risk claim classes;
-- measure reach, resolved claims, abstention, error, correction, cost and right-tail disparity.
+The recently halted run used literal ACNC donation ranks 1–100; it produced 60 new Terra response artefacts, reused 3 exact prior Terra-A results, and had 63 available semantic results in closeout analysis. It had 60 structurally valid results, 54 whole-output quote-valid results, 287 parsed proposals, 72 program-task `COMPLETE_ENOUGH` packets and 28 `PARTIAL` packets. One in-flight attempt (ABN `48321126727`) had no response artefact and indeterminate billing status. It was intentionally halted during roadmap realignment, did not start ranks 101–1000, made no validity/quality/impact/ROI/recommendation judgements, and changed no Builder, Data or Viewer files.
 
-Each cohort proceeds only when the previous stage demonstrates acceptable economics and error classes. “Acceptable” does not mean complete or uncontested.
+Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid outputs remain reusable Section-3 material where semantic identity permits; this run does not satisfy the future Top-100 full-card milestone and must not be rerun merely because sequencing changed.
 
-## Phase 6 — Open correction pilot
+## Phase 6 — Risk-gated depth and specialist profiles
 
-- publish a correction/challenge contract;
-- accept evidence, scope corrections and taxonomy proposals;
-- support stable proposal identifiers and governed dispositions;
-- preserve exact acceptance/edit lineage;
-- publish correction latency and outcome measures;
-- pilot with analysts, charity insiders and researchers.
+Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 
-## Phase 7 — Public vNext release candidate
+## Phase 7 — Correction and public vNext
 
-- freeze public projection schemas and vocabulary versions;
-- create release manifest, coverage and limitations reports;
-- validate licensing, attribution, privacy, branding and endorsement boundaries;
-- generate Data bundle and Viewer compatibility layer;
-- run reproducibility, integrity, accessibility and performance tests;
-- publish an explicitly versioned release candidate alongside—never over—contract 0.5.
+Align open-correction and public-release-candidate work while preserving immutable releases, contestability, correction lineage, coverage disclosure, rights/privacy/publication gates, simple Viewer projections and coordinated Data/Viewer acceptance.
 
-## Phase 8 — Broader domains and agentic access
+## Phase 8 — Scaled breadth
 
-- outcomes/evaluation evidence;
-- cautious ethos, stance and conduct profile;
-- adverse-event profile with consequence-aware review;
-- mandate/delegation records for future agents;
-- query/API projections where real downstream demand justifies them;
-- direct-observation and advertising initiatives through separate governed projects.
+Scale next 1,000, then 10,000, then the demand-triggered national tail. Model tier, source breadth, semantic depth, review intensity and refresh cadence may vary by cohort, but lower cohorts must not silently become program-discovery-only without an explicit governed policy.
 
 ## Continuous workstreams
 
-- scheme research and public disposition register;
-- source rights/privacy/security review;
-- model and prompt evaluation;
-- budget and cache optimisation;
-- Indigenous data-governance design;
-- documentation and ADR maintenance;
-- public commitments and brand/reuse review;
-- community and analyst discovery.
+- North Star coverage audit
+- source-family and claim-family coverage by cohort
+- cross-domain evidence reuse and LLM bundling/economics
+- model-tier routing and interruption-safe execution
+- right-tail packet sufficiency and corpus refresh/reuse policy
+- scheme research, source rights/privacy/security and Indigenous governance
+- model evaluation, open curation, documentation and ADR maintenance
+
+## North Star ↔ roadmap matrix
+
+| North Star section | First reality-tested phase | First scaled phase | Principal evidence families | Typical method |
+|---|---|---|---|---|
+| 1 Identity & regulatory status | 1 | 5 | ACNC, ATO, constitutional/registry records | deterministic + mixed |
+| 2 Purpose, mandate & cause | 1 | 5 | ACNC, governing documents, official site | mixed |
+| 3 Programs, services, projects & campaigns | 3 | 5 | official site, reports, ACNC, campaign sources | model-assisted + review |
+| 4 Populations & beneficiaries | 3 | 5 | AIS, official site/reports, program evidence | model-assisted + review |
+| 5 Geography | 3 | 5 | ACNC, sites, reports, program evidence | mixed |
+| 6 Participation | 3 | 5 | official site, memberships, volunteer/event sources | mixed |
+| 7 Fundraising & resource mobilisation | 3 | 5 | fundraising sources, official site/reports | model-assisted + review |
+| 8 Finance & resource flows | 3 | 5 | AIS, filed accounts, annual reports, grants | deterministic + mixed |
+| 9 Governance | 3 | 5 | AIS, annual reports, governing instruments | mixed + review |
+| 10 Workforce | 3 | 5 | AIS, reports, workforce/contractor evidence | mixed |
+| 11 Capability, capacity, access & availability | 3 | 5 | official service pages, reports, registers | mixed + review |
+| 12 Relationships & ecosystem | 3 | 5 | reports, contracts/grants, partner evidence | model-assisted + review |
+| 13 Memberships, schemes, registrations & accreditations | 3 | 5 | registries, scheme authorities, official sources | deterministic + mixed |
+| 14 Ethos & institutional identity | 3 | 6 | governing instruments, affiliation, self-description | human/risk-reviewed |
+| 15 Positions, commitments & implementation | 3 | 6 | policies, commitments, implementation evidence | mixed + review |
+| 16 Conduct, adverse matters & compliance | 3 | 6 | regulators, proceedings, official responses | human/risk-reviewed |
+| 17 Notable context & institutional history | 3 | 5 | contextual sources, reports, inquiries | mixed + review |
+| 18 Outcomes, impact & evaluation | 3 | 6 | evaluations, studies, reports | human/risk-reviewed |
+| 19 Classifications & semantic lenses | 1 | 5 | ACNC, ATO, SDG, governed taxonomies | deterministic + model-assisted |
+| 20 Evidence, coverage, freshness & corrections | 1 | 5 | all receipts, locators, review/correction records | deterministic + human review |
 
 ## Explicit non-goals for early phases
 
