@@ -8,7 +8,7 @@ Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) and the canonical [BRA
 
 [PUBLIC_CONTRACT_0_5.md](PUBLIC_CONTRACT_0_5.md) describes the implemented public compatibility contract. Its exact authority is the immutable [v0.5.0-2026-08-15](releases/v0.5.0-2026-08-15) release, schemas, examples and manifest. Literal historical field names, paths and artefact names remain only where the release requires compatibility; they are not the vocabulary for future internal work.
 
-[PUBLIC_SCHEMA_VNEXT_SPEC.md](PUBLIC_SCHEMA_VNEXT_SPEC.md) is retained as a technical reference for implemented 0.5 schema material. It is not a future-contract proposal. Machine-distribution obligations are in [AGENT_DATA_DISTRIBUTION_CONTRACT.md](AGENT_DATA_DISTRIBUTION_CONTRACT.md).
+[PUBLIC_SCHEMA_VNEXT_SPEC.md](PUBLIC_SCHEMA_VNEXT_SPEC.md) is retained as a technical reference for implemented 0.5 schema material. It is not a future-contract proposal. Machine-distribution, AI discoverability, crawler-policy and future agent-interface obligations are in [AGENT_DATA_DISTRIBUTION_CONTRACT.md](AGENT_DATA_DISTRIBUTION_CONTRACT.md).
 
 ## Product authority and delivery
 
