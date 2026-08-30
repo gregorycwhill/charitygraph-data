@@ -25,6 +25,8 @@ Ordinary users should not need to understand the internal ontology. Analysts, de
 
 A user searches for a charity by name, identifier, cause, location or program.
 
+A charity decision-maker, insider or adviser can use the same discovery entry point before applying a Playbook to a strategic question, without needing to understand schemas or analytical tooling.
+
 They receive:
 
 - resolved operating organisation and relevant legal identities;
@@ -89,6 +91,8 @@ CharityGraph connects external need or demand evidence to:
 - actual reach where evidenced.
 
 The experience distinguishes need, demand, referral, waitlist and unmet-demand estimates. It does not infer that an advertised service is currently available or that a waitlist represents all demand.
+
+Data supplies governed supply-side ingredients and evidence. Viewer supports inspection and discovery of those ingredients. Playbooks may guide a user's external AI through broader analytical work, including comparison with appropriate demand or need evidence. External demand, need evidence and downstream conclusions remain distinct from CharityGraph's governed supply assertions.
 
 ## 6. Funding and ecosystem analysis
 
@@ -263,7 +267,29 @@ A developer discovers the current release without running Viewer code. They can 
 
 Static artefacts remain available even if a future service is unavailable.
 
-## 17. Community-curation experience
+## 17. Playbook discovery and invocation
+
+A user discovers an Official or Community Playbook that fits a question and understands its purpose, required evidence, parameters, limitations, version and attribution. Viewer may identify context-appropriate methods, pre-populate CharityGraph organisation, program, service and canonical references, ask only for genuinely missing parameters and generate a portable invocation. Public affordances remain plain-language and context-driven rather than exposing schema fields.
+
+An invocation may instruct an external AI to retrieve canonical CharityGraph URLs or include an optional prompt-plus-context package where retrieval is unreliable. The external AI should say when CharityGraph could not actually be accessed rather than silently substituting general model knowledge.
+
+## 18. Bring-your-own-AI analysis
+
+A user runs a portable Playbook invocation in the general-purpose AI environment they choose. CharityGraph does not initially host inference or require a named provider. Where practical, Viewer generates the invocation client-side so private strategic parameters are not transmitted to or stored by CharityGraph.
+
+The resulting analysis is downstream output, not canonical CharityGraph knowledge. The invocation records the Playbook version, Data release and user parameters needed for reproducibility, while the user's AI environment remains responsible for its output and any external evidence it uses.
+
+## 19. Playbook contribution and correction
+
+People can suggest an analytical question, submit an existing method, develop a structured candidate, evaluate it, request correction or propose adoption as an Official Playbook. This path should not require GitHub, YAML, JSON or programming. Contributor identity, affiliation, conflicts, attribution and lineage are visible where relevant; popularity or voting does not establish official status.
+
+Feedback remains separate:
+
+- a CharityGraph Data error follows the Data correction pathway;
+- a Playbook method problem follows the Playbook correction pathway; and
+- a retrieval or model-execution problem is reported as execution/model feedback.
+
+## 20. Community-curation experience
 
 The public can see that contributions matter:
 
@@ -275,7 +301,7 @@ The public can see that contributions matter:
 
 Community evidence improves the dataset; prominence, voting and coordinated pressure do not determine canonical truth.
 
-## 18. Failure and limitation experiences
+## 21. Failure and limitation experiences
 
 The product communicates:
 

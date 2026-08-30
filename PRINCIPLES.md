@@ -117,3 +117,19 @@ Public code, data, schemas, methods and release identity permit inspection, reus
 CharityGraph measures whether semantic judgments are supported by evidence and whether materially identical semantic measurements reproduce similar graph structure. Repeatability is evidence about reliability, not truth; a consistently reproduced error remains an error.
 
 Valid persisted semantic results are durable inputs to reproducible releases. Unchanged model tasks are not routinely regenerated. A different stochastic output does not mechanically establish real-world change, and publisher/source role/authority remains part of interpreting evidence. A source interface or metadata artefact is not automatically an activity of the subject being described.
+
+## 27. Extend the commons from data to analytical capability
+
+CharityGraph may publish open, governed Playbooks so people can apply reusable methods to governed Data with the general-purpose AI system they already use. This extends access to analytical capability without turning CharityGraph into a hosted inference platform.
+
+## 28. Keep methods, invocations and outputs separate
+
+A versioned Playbook definition is governed CharityGraph content. A parameterised invocation and the output produced in an external AI environment are separate artefacts and do not become canonical knowledge merely through use of an official Playbook.
+
+## 29. Keep Playbooks model- and provider-neutral
+
+Official methods SHALL remain portable across general-purpose AI providers. They should state evidence, scope, uncertainty, limitations and retrieval expectations without depending on ChatGPT, Claude, Gemini, Copilot or another named provider.
+
+## 30. Make method contribution open, evidence-governed and privacy-aware
+
+People may suggest, contribute, review and correct Playbooks through a low-friction path that does not require GitHub, YAML, JSON or programming. Governance, evidence and contribution lineage—not popularity or voting—determine official status. User-supplied strategic parameters should remain private or minimised where practical.
