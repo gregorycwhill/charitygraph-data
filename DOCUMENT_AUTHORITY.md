@@ -151,7 +151,7 @@ Active narrative uses neutral phrases such as “former project name”, “lega
 ## 9. Change control
 
 - Product-boundary changes require a product decision and updates to the four canonical product documents.
-- New Playbook product semantics must remain traceable to the four canonical product documents. A future Playbook-specific contract may refine those semantics but may not override shared CharityGraph neutrality, evidence, openness, privacy, contestability or brand rules.
+- New Playbook product semantics must remain traceable to the four canonical product documents. A Playbook-specific contract may refine those semantics but may not override shared CharityGraph neutrality, evidence, openness, privacy, contestability or brand rules.
 - Integrated-model changes require seam analysis and affected domain review.
 - Builder architecture changes require traceability to canonical requirements and an ADR where material.
 - Taxonomy changes require scheme disposition, version analysis and affected-assignment review.

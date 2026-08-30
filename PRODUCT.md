@@ -273,10 +273,6 @@ Change, contribution and causation remain distinct.
 
 Source authority, acquisition, rights, evidence, transformations, model tasks, decisions, quality, corrections, releases, catalogues and public provenance.
 
-### 10.11 Analytical Playbooks
-
-Governed, versioned methods for applying CharityGraph data in a user's own AI environment. Playbooks remain distinct from invocations and external-model outputs, and are transparent about parameters, limitations, evidence and attribution.
-
 ## 11. Taxonomy strategy
 
 CharityGraph uses a governed multi-facet system rather than one universal classification.
