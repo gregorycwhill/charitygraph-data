@@ -34,6 +34,7 @@
 
 | CG-D026 | CharityGraph is LLM-first for open-ended semantics. The Semantic Heuristic Gate is ex-ante: ask "Does this diff teach Python English?" and require Greg-approved, registered exception ID before deterministic semantic lexical interpretation. | Approved | Recurring semantic errors change evidence, prompt, schema, model, routing, benchmark or governance rather than accumulating English phrase rules. |
 | CG-D027 | Semantic provenance is reconstructible through source artefact, evidence bundle, task/prompt policy, provider/model, structured output, validation, governed disposition and release lineage. First-party language is strategically authored evidence, not taxonomy authority; no token-level causal explanation is claimed. | Approved | Evidence-bundle/document-level inference is legitimate without exposing provider chain-of-thought or treating lexical occurrence as semantic proof. |
+| CG-D030 | CharityGraph Playbooks is a fourth first-class product, not a Data or Viewer feature: official Playbooks are governed, parameterised, versioned, corrigible, provider-neutral and openly reusable analytical methods designed for bring-your-own-AI execution. | Approved | Viewer may surface and parameterise Playbooks, but a Playbook definition, invocation and downstream model output remain distinct; only the definition is governed CharityGraph content. |
 
 ## Open implementation decisions
 
@@ -46,7 +47,12 @@ The following require bounded design before their implementation slice, not spec
 - model/provider routing thresholds;
 - precise first versions of participation, fundraising, operational-activity and ethos vocabularies;
 - Indigenous data-governance review mechanism;
-- future public API/query format beyond downloadable Data and static Viewer.
+- future public API/query format beyond downloadable Data and static Viewer;
+- exact Playbook schema and invocation packaging;
+- official/community Playbook promotion and contribution workflow;
+- Playbook evaluation thresholds and review evidence;
+- Viewer handoff mechanics for context and private parameters; and
+- production Playbooks release lifecycle and catalogue structure.
 
 Each decision should receive an ADR or amendment before code depends on it.
 
@@ -74,3 +80,13 @@ This decision supersedes the classification wording previously recorded under CG
 Private CLASSIE runtime loading and LLM processing are approved when the payload is lawfully supplied. Local derived storage is approved. Public CLASSIE publication remains permission-gated, and inferred CLASSIE assignments are withheld by default. CLASSIE can be removed without re-extracting CharityGraph Native knowledge or other independent lenses.
 
 This decision supersedes the deferred/rights-pending operational wording previously associated with CG-D025.
+
+### CG-D030 — Playbooks as a fourth CharityGraph product
+
+**Status:** Approved
+
+CharityGraph is a product family comprising Builder, Data, Viewer and Playbooks. Playbooks publishes governed, parameterised, versioned, corrigible and openly reusable analytical methods for use with a user's chosen general-purpose AI. Playbooks are provider-neutral and do not initially host inference. Viewer may discover context-appropriate Playbooks, pre-populate CharityGraph references and generate a portable invocation, but it does not own or govern Playbooks.
+
+A Playbook definition, a parameterised invocation and the external-model output are separate. Only the Playbook definition is governed CharityGraph content; an invocation and downstream output are not canonical CharityGraph knowledge merely because an official Playbook was used. Contribution is extensible and evidence-governed, with Official and Community status distinct. User strategic parameters should be minimised or kept client-side where practical. Data/content, Playbook-method and execution/model/retrieval problems use distinct feedback pathways. A dedicated Playbooks repository and Viewer integration are deferred.
+
+**Implementation note (30 August 2026):** The initial `charitygraph-playbooks` repository and contract were established at commit `6466e04`. The remaining deferral is production catalogue/release work and Viewer integration; this note records implementation state without changing the approved decision.

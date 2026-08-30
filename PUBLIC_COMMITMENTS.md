@@ -26,8 +26,12 @@ We commit to:
 14. **Indigenous data governance.** Where applicable, we will respect community authority, cultural safety, benefit, access control and appropriate attribution.
 15. **Stable open releases.** Public releases will have clear identity, schemas, licences, attribution, checksums and catalogue metadata.
 16. **Simple public access.** Ordinary users will receive understandable organisation, program, service and evidence views even where the underlying model is sophisticated.
+17. **Open analytical methods.** We will publish governed, reusable Playbooks so people can apply CharityGraph Data with the general-purpose AI system they already use.
+18. **Versioned and corrigible methods.** Official Playbooks will be identifiable, versioned, attributable and open to evidence-based correction; Community Playbooks will remain distinct from official methods.
+19. **Provider-neutral analysis.** Playbooks will not require ChatGPT, Claude, Gemini, Copilot or another named AI provider, and we will keep the Playbook method, a user's invocation and external-model output distinct.
+20. **Private parameters and bounded outputs.** Where practical, user-supplied strategic parameters can remain in the user's invocation. Downstream analysis is not canonical CharityGraph knowledge merely because it used an official Playbook.
 
-These commitments do not promise complete or real-time knowledge about every charity, a donation or volunteer marketplace, personal advice, universal rankings, or unrestricted publication of every acquired source document.
+These commitments do not promise complete or real-time knowledge about every charity, a donation or volunteer marketplace, personal advice, universal rankings, hosted AI inference, or unrestricted publication of every acquired source document.
 
 ### Semantic transparency clarification
 

@@ -15,6 +15,9 @@ CharityGraph is the current project identity. The official repositories are:
 - [CharityGraph Builder](https://github.com/gregorycwhill/charitygraph)
 - [CharityGraph Data](https://github.com/gregorycwhill/charitygraph-data)
 - [CharityGraph Viewer](https://github.com/gregorycwhill/charitygraph-viewer)
+- [CharityGraph Playbooks](https://github.com/gregorycwhill/charitygraph-playbooks)
+
+Playbooks is the fourth CharityGraph product. Shared product and reuse authority remains in this repository's canonical documents, while Playbooks-specific rules are maintained in its repository within those shared boundaries.
 
 The canonical Viewer is published at [gregorycwhill.github.io/charitygraph-viewer](https://gregorycwhill.github.io/charitygraph-viewer/).
 
@@ -25,6 +28,7 @@ An **official CharityGraph release** is an immutable release published through t
 - Builder code is available under the [MIT License](https://github.com/gregorycwhill/charitygraph/blob/main/LICENSE).
 - Viewer code is available under the [MIT License](https://github.com/gregorycwhill/charitygraph-viewer/blob/main/LICENSE).
 - CharityGraph-originated Data contributions are available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), including contributions first published under the former project name.
+- CharityGraph-originated Playbook content is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), consistent with CharityGraph Data content. Commercial reuse and adaptation are permitted under that licence; attribution and identification of modifications remain required where applicable.
 
 Commercial reuse is permitted under these licences. The brand and official-status rules in this policy govern use of CharityGraph identity and claims of endorsement or official status; they do not narrow permissions granted by MIT or CC BY 4.0. Those licences do not themselves grant a right to imply CharityGraph endorsement or official status. Where the Data licence applies, reuse must provide appropriate attribution and identify modifications where applicable. A complete reusable example is: “Contains or adapts CharityGraph Data release [release ID], licensed under CC BY 4.0. Changes were made. [release link]” (this example is guidance, not a mandatory wording where another attribution satisfies CC BY 4.0). The [upstream-rights caveat](LICENSE) remains part of the Data licence guidance: third-party source material may carry separate terms and is not relicensed by CharityGraph.
 
