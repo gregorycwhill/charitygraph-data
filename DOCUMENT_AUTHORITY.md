@@ -10,11 +10,14 @@
 
 This document defines which CharityGraph documents govern product intent, conceptual architecture, domain semantics, public contracts and implementation. It prevents a historical plan, design exploration, code comment, handoff or immutable release description from silently overriding a current decision.
 
-CharityGraph is one product implemented through three repositories:
+CharityGraph is a product family built around governed Australian charity knowledge:
 
 - **Builder** acquires evidence, constructs governed knowledge and builds release candidates;
-- **Data** publishes immutable public contracts, releases, schemas and catalogue metadata; and
-- **Viewer** renders a selected public release for inspection.
+- **Data** publishes reusable governed public data, immutable contracts, releases, schemas, catalogue metadata and shared product authority;
+- **Viewer** provides human inspection, navigation and contextual entry points; and
+- **Playbooks** publishes governed, open analytical methods for applying general-purpose AI to CharityGraph data.
+
+The dedicated Playbooks repository has not yet been created. Shared CharityGraph product, editorial and governance authority remains centred in the canonical documents maintained in `charitygraph-data`. A future `charitygraph-playbooks` repository may own Playbooks-specific contracts and releases, subject to the shared product principles and commitments.
 
 Repository location does not determine authority.
 
@@ -56,6 +59,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Subject | Authority |
 |---|---|
 | Product promise, boundary and users | `PRODUCT.md` |
+| Playbooks product purpose and boundaries | `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md` |
 | Product principles | `PRINCIPLES.md` |
 | Public promises | `PUBLIC_COMMITMENTS.md` |
 | End-to-end experiences | `EXPERIENCES.md` |
@@ -71,6 +75,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
 | Verification and release gates | `TEST_PLAN.md` |
 | Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
+| Playbook-specific format, method governance, contribution, evaluation and release rules | Future canonical Playbooks contract, once established |
 | Semantic reliability, technical replication and reproducible semantic replay | `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` |
 | Current coding handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
 
@@ -144,6 +149,7 @@ Active narrative uses neutral phrases such as “former project name”, “lega
 ## 9. Change control
 
 - Product-boundary changes require a product decision and updates to the four canonical product documents.
+- New Playbook product semantics must remain traceable to the four canonical product documents. A future Playbook-specific contract may refine those semantics but may not override shared CharityGraph neutrality, evidence, openness, privacy, contestability or brand rules.
 - Integrated-model changes require seam analysis and affected domain review.
 - Builder architecture changes require traceability to canonical requirements and an ADR where material.
 - Taxonomy changes require scheme disposition, version analysis and affected-assignment review.

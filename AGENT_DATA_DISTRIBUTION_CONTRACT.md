@@ -84,3 +84,26 @@ Schemas and vocabularies are versioned. Consumers must not assume labels are per
 ## 10. Near-term implementation boundary
 
 The first Builder slice need only emit a private machine-readable projection with the fields above where available. Public APIs, autonomous actions, mandate exchange and agent authentication are deferred. The data model must accommodate them without making them prerequisites for useful charity data.
+
+## 11. Playbooks and external analysis
+
+Playbooks are a governed mechanism by which a user instructs an external general-purpose AI system to retrieve and analyse CharityGraph. An official Playbook may produce a portable, parameterised invocation that:
+
+- references canonical CharityGraph URLs; or
+- packages relevant public CharityGraph context for an environment without reliable retrieval.
+
+Playbooks inherit the requirements above for agent-readable provenance, subject and proposition scope, uncertainty, missingness and citation. A consuming model must say when it could not retrieve or receive the relevant CharityGraph material and must not silently claim that CharityGraph was used. Viewer may generate an invocation but need not host inference; provider and model selection remains the user's choice. Dynamic APIs, MCP and WebMCP remain optional future distribution mechanisms and are not prerequisites for Playbooks.
+
+Only the governed Playbook definition is CharityGraph content. An invocation belongs to the user's analysis context, and external-model execution and output remain outside canonical CharityGraph knowledge.
+
+## 12. Privacy and feedback boundaries
+
+User-entered strategic parameters may be private or commercially sensitive. Where practical, parameter filling and invocation generation should occur client-side; private parameters should not be persisted in CharityGraph Data or canonical Playbooks.
+
+Feedback routes remain distinct:
+
+1. a Data or content error follows the Data correction pathway;
+2. a Playbook-method problem follows Playbook correction and evaluation; and
+3. an execution, model or retrieval problem follows execution/model feedback.
+
+This contract governs agent and distribution interaction, not the detailed Playbook specification.
