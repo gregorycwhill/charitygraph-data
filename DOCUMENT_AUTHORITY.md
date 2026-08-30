@@ -17,7 +17,7 @@ CharityGraph is a product family built around governed Australian charity knowle
 - **Viewer** provides human inspection, navigation and contextual entry points; and
 - **Playbooks** publishes governed, open analytical methods for applying general-purpose AI to CharityGraph data.
 
-The dedicated Playbooks repository has not yet been created. Shared CharityGraph product, editorial and governance authority remains centred in the canonical documents maintained in `charitygraph-data`. A future `charitygraph-playbooks` repository may own Playbooks-specific contracts and releases, subject to the shared product principles and commitments.
+The dedicated [Playbooks repository](https://github.com/gregorycwhill/charitygraph-playbooks) is now established. Shared CharityGraph product, editorial and governance authority remains centred in the canonical documents maintained in `charitygraph-data`. Playbooks-specific contracts and contribution rules are maintained in that repository, subject to the shared product principles and commitments.
 
 Repository location does not determine authority.
 
@@ -75,7 +75,9 @@ Every active document SHALL state its status, version/date, scope and material s
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
 | Verification and release gates | `TEST_PLAN.md` |
 | Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
-| Playbook-specific format, method governance, contribution, evaluation and release rules | Future canonical Playbooks contract, once established |
+| Playbook-specific format and product contract | [`PLAYBOOK_CONTRACT.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/PLAYBOOK_CONTRACT.md) |
+| Common Playbook epistemic rules | [`PLAYBOOK_BASE_POLICY.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/PLAYBOOK_BASE_POLICY.md) |
+| Playbook contribution and Official/Community status workflow | [`CONTRIBUTING.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/CONTRIBUTING.md), within shared CharityGraph boundaries |
 | Semantic reliability, technical replication and reproducible semantic replay | `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` |
 | Current coding handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
 

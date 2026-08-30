@@ -15,8 +15,9 @@ CharityGraph is the current project identity. The official repositories are:
 - [CharityGraph Builder](https://github.com/gregorycwhill/charitygraph)
 - [CharityGraph Data](https://github.com/gregorycwhill/charitygraph-data)
 - [CharityGraph Viewer](https://github.com/gregorycwhill/charitygraph-viewer)
+- [CharityGraph Playbooks](https://github.com/gregorycwhill/charitygraph-playbooks)
 
-Playbooks is the fourth CharityGraph product. A dedicated `charitygraph-playbooks` repository has not yet been created and is not an official repository at this time; shared product and reuse authority remains in this repository's canonical documents.
+Playbooks is the fourth CharityGraph product. Shared product and reuse authority remains in this repository's canonical documents, while Playbooks-specific rules are maintained in its repository within those shared boundaries.
 
 The canonical Viewer is published at [gregorycwhill.github.io/charitygraph-viewer](https://gregorycwhill.github.io/charitygraph-viewer/).
 

@@ -47,12 +47,12 @@ The following require bounded design before their implementation slice, not spec
 - model/provider routing thresholds;
 - precise first versions of participation, fundraising, operational-activity and ethos vocabularies;
 - Indigenous data-governance review mechanism;
-- future public API/query format beyond downloadable Data and static Viewer.
+- future public API/query format beyond downloadable Data and static Viewer;
 - exact Playbook schema and invocation packaging;
 - official/community Playbook promotion and contribution workflow;
 - Playbook evaluation thresholds and review evidence;
 - Viewer handoff mechanics for context and private parameters; and
-- eventual Playbooks repository and release structure.
+- production Playbooks release lifecycle and catalogue structure.
 
 Each decision should receive an ADR or amendment before code depends on it.
 
@@ -88,3 +88,5 @@ This decision supersedes the deferred/rights-pending operational wording previou
 CharityGraph is a product family comprising Builder, Data, Viewer and Playbooks. Playbooks publishes governed, parameterised, versioned, corrigible and openly reusable analytical methods for use with a user's chosen general-purpose AI. Playbooks are provider-neutral and do not initially host inference. Viewer may discover context-appropriate Playbooks, pre-populate CharityGraph references and generate a portable invocation, but it does not own or govern Playbooks.
 
 A Playbook definition, a parameterised invocation and the external-model output are separate. Only the Playbook definition is governed CharityGraph content; an invocation and downstream output are not canonical CharityGraph knowledge merely because an official Playbook was used. Contribution is extensible and evidence-governed, with Official and Community status distinct. User strategic parameters should be minimised or kept client-side where practical. Data/content, Playbook-method and execution/model/retrieval problems use distinct feedback pathways. A dedicated Playbooks repository and Viewer integration are deferred.
+
+**Implementation note (30 August 2026):** The initial `charitygraph-playbooks` repository and contract were established at commit `6466e04`. The remaining deferral is production catalogue/release work and Viewer integration; this note records implementation state without changing the approved decision.

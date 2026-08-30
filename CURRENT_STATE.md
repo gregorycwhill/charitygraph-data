@@ -1,8 +1,8 @@
 # CharityGraph Current State
 
-**Status date:** 29 August 2026
+**Status date:** 30 August 2026
 
-**Status:** Baseline after Fresh-18 semantic-reliability analysis
+**Status:** Baseline after Playbooks repository establishment
 
 ## 1. Repositories
 
@@ -11,6 +11,7 @@
 | Builder | `gregorycwhill/charitygraph` | `5e5656df635f6531b676e595ae41d4f5a8a523a5` | Production foundations and native discovery v2 available |
 | Data | `gregorycwhill/charitygraph-data` | `9135db270c7b6d42b293d4c598109068b5b9bd14` (Data main before this documentation tranche) | Canonical contracts, releases and governance |
 | Viewer | `gregorycwhill/charitygraph-viewer` | `cd6f3720f664a29e0ca7ed8be19797e573fcdfc8` | Existing deployed Viewer; unchanged by this state update |
+| Playbooks | `gregorycwhill/charitygraph-playbooks` | `6466e04` | Initial product contract, base policy, contribution guidance, schema and example; no production catalogue |
 
 ## 2. Immutable public release
 
@@ -56,7 +57,7 @@ CharityGraph now has an approved four-product model:
 - **Viewer** provides human inspection, navigation and contextual entry points; and
 - **Playbooks** publishes governed, open analytical methods for applying general-purpose AI to CharityGraph data.
 
-Builder, Data and Viewer repositories already exist. Playbooks is approved as a fourth product, but its dedicated repository has not yet been created. No Playbooks runtime, schema, catalogue or Viewer integration has been implemented, and no repository URL, commit SHA or release is asserted here.
+Builder, Data, Viewer and Playbooks repositories now exist. Playbooks is approved as a fourth product with initial contract, base policy, contribution guidance, schema and example at `6466e04`; no production Playbook catalogue, hosted inference/runtime, Viewer integration or API/MCP integration has been implemented.
 
 ## 9. Current Playbooks documentation state
 
@@ -68,4 +69,4 @@ The active documentation branch records, subject to eventual merge:
 - CC BY 4.0 licensing intent; and
 - agent, privacy and feedback boundaries.
 
-These documentation changes do not alter the Builder/Data full-card critical path or claim Playbooks implementation.
+These documentation changes do not alter the Builder/Data full-card critical path or claim a production Playbooks catalogue, hosted inference or Viewer integration.

@@ -64,11 +64,11 @@ Playbooks is a separate first-class product alongside Builder, Data and Viewer. 
 
 ### Playbooks P0 — Product governance
 
-This work is approved and underway through the canonical product and governance documents. It establishes fourth-product status, method/invocation/output separation, model neutrality, open licensing intent, versioning and corrigibility, Official/Community distinction, contribution and attribution principles, and privacy and feedback boundaries. The dedicated repository does not yet exist.
+This work is approved and underway through the canonical product and governance documents. It establishes fourth-product status, method/invocation/output separation, model neutrality, open licensing intent, versioning and corrigibility, Official/Community distinction, contribution and attribution principles, and privacy and feedback boundaries. The initial Playbooks repository and contract were established at commit `6466e04`; no production catalogue is claimed.
 
 ### Playbooks P1 — Establish product repository and contract
 
-Create the future `charitygraph-playbooks` product/repository with a Playbook contract, base epistemic policy, versioning, CC BY 4.0 content licence, contribution model, machine-readable definition/invocation schema and Official/Community lifecycle. This is a future tranche.
+The initial `charitygraph-playbooks` product/repository, Playbook contract, base epistemic policy, versioning, CC BY 4.0 content licence, contribution model, machine-readable definition schema and Official/Community lifecycle are established at commit `6466e04`. Detailed invocation packaging, production release lifecycle and catalogue work remain future refinements in P1; this does not mark P2, P3 or P4 complete.
 
 ### Playbooks P2 — Seed and evaluate a small official collection
 
