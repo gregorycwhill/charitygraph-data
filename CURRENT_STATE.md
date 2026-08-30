@@ -46,3 +46,26 @@ Program/service v3/v3.1 is one foundation-domain implementation, not the whole p
 A program/service-only Top-100 Terra run using literal ACNC donation ranks 1–100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
 
 The next architectural objective is complete-card reality testing from reusable charity evidence corpora. Broad cohort scaling no longer means scaling a single semantic profile by default.
+
+## 8. Product-family state
+
+CharityGraph now has an approved four-product model:
+
+- **Builder** constructs governed knowledge and release candidates;
+- **Data** publishes reusable governed public data and shared product authority;
+- **Viewer** provides human inspection, navigation and contextual entry points; and
+- **Playbooks** publishes governed, open analytical methods for applying general-purpose AI to CharityGraph data.
+
+Builder, Data and Viewer repositories already exist. Playbooks is approved as a fourth product, but its dedicated repository has not yet been created. No Playbooks runtime, schema, catalogue or Viewer integration has been implemented, and no repository URL, commit SHA or release is asserted here.
+
+## 9. Current Playbooks documentation state
+
+The active documentation branch records, subject to eventual merge:
+
+- canonical product recognition of Playbooks;
+- governance and authority boundaries;
+- approved decision `CG-D030`;
+- CC BY 4.0 licensing intent; and
+- agent, privacy and feedback boundaries.
+
+These documentation changes do not alter the Builder/Data full-card critical path or claim Playbooks implementation.

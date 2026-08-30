@@ -58,6 +58,36 @@ Align open-correction and public-release-candidate work while preserving immutab
 
 Scale next 1,000, then 10,000, then the demand-triggered national tail. Model tier, source breadth, semantic depth, review intensity and refresh cadence may vary by cohort, but lower cohorts must not silently become program-discovery-only without an explicit governed policy.
 
+## Parallel track — CharityGraph Playbooks
+
+Playbooks is a separate first-class product alongside Builder, Data and Viewer. It consumes governed CharityGraph public knowledge and is not generated as canonical knowledge by Builder. Viewer may later provide contextual Playbook launch affordances, while external AI execution remains user-selected and outside canonical CharityGraph knowledge. This track must not delay complete-card reality testing or public-vNext foundations, and Playbooks is not a release gate for Builder/Data vNext unless a future explicit decision says so.
+
+### Playbooks P0 — Product governance
+
+This work is approved and underway through the canonical product and governance documents. It establishes fourth-product status, method/invocation/output separation, model neutrality, open licensing intent, versioning and corrigibility, Official/Community distinction, contribution and attribution principles, and privacy and feedback boundaries. The dedicated repository does not yet exist.
+
+### Playbooks P1 — Establish product repository and contract
+
+Create the future `charitygraph-playbooks` product/repository with a Playbook contract, base epistemic policy, versioning, CC BY 4.0 content licence, contribution model, machine-readable definition/invocation schema and Official/Community lifecycle. This is a future tranche.
+
+### Playbooks P2 — Seed and evaluate a small official collection
+
+Develop approximately 5–7 high-value Playbooks against representative CharityGraph use cases such as peer/competitor landscape, program differentiation, partnership discovery, service/ecosystem mapping, board or sector briefing, service-gap/growth exploration and a funder due-diligence starter. These are candidate jobs, not immutable scope.
+
+Evaluation should test representative organisations/programs across several commodity AI systems. Measure retrieval of intended CharityGraph material; unsupported or overconfident conclusions; preservation of scope, provenance and uncertainty; parameter usability; useful analytical output; provider/model sensitivity; and failures attributable separately to Data, the Playbook method and external model/retrieval. No fixed thresholds are defined yet.
+
+### Playbooks P3 — Viewer integration
+
+After public vNext provides stable, addressable organisation/program/service representations, Viewer may expose contextual **Use with AI** affordances. These may suggest relevant Playbooks, pre-populate known CharityGraph context, ask only for missing parameters, generate portable invocations and optionally package relevant public context for models without reliable retrieval. Private strategic parameters should remain client-side where practical. Viewer is neither the Playbooks authority nor a hosted inference service.
+
+### Playbooks P4 — Community contribution
+
+Introduce low-friction pathways to suggest analytical questions, submit methods or prompts, refine/evaluate candidates, propose corrections and contribute without GitHub/YAML/JSON knowledge. Preserve contributor attribution, affiliation/conflict disclosure, Community versus Official status, governed adoption/adaptation, evidence-over-voting and contribution lineage.
+
+### Playbooks dependencies
+
+P0/P1 can proceed independently of full-card Builder implementation. P2 can use available representative CharityGraph data and becomes more valuable as full-card coverage improves. P3 depends materially on stable public vNext addressability and suitable Viewer/Data projections. P4 should follow enough P2 experience to establish a credible contribution/evaluation process.
+
 ## Continuous workstreams
 
 - North Star coverage audit
@@ -67,6 +97,8 @@ Scale next 1,000, then 10,000, then the demand-triggered national tail. Model ti
 - right-tail packet sufficiency and corpus refresh/reuse policy
 - scheme research, source rights/privacy/security and Indigenous governance
 - model evaluation, open curation, documentation and ADR maintenance
+- Playbook analytical-method evaluation, cross-model portability and method/version reproducibility
+- Playbook contribution, attribution, privacy of user parameters, feedback classification and epistemic-policy maintenance
 
 ## North Star ↔ roadmap matrix
 
