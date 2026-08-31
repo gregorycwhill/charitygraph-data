@@ -130,6 +130,18 @@ A versioned Playbook definition is governed CharityGraph content. A parameterise
 
 Official methods SHALL remain portable across general-purpose AI providers. They should state evidence, scope, uncertainty, limitations and retrieval expectations without depending on ChatGPT, Claude, Gemini, Copilot or another named provider.
 
+## Semantic extraction and mapping guardrails
+
+- Capture supported governed knowledge before downstream compression or synthesis.
+- Source provenance does not imply proposition ownership; attach facts at the
+  lowest evidence-supported subject or scope.
+- Funding is not delivery, and operating, sponsoring, partnering, auspicing and
+  network/context roles remain distinct.
+- Inferred semantic lenses use taxonomy-blind governed knowledge views and are
+  independent of source-reported taxonomy contamination.
+- Representation failure, truncation or a placeholder is not evidence absence;
+  representation gaps remain explicit.
+
 ## 30. Make method contribution open, evidence-governed and privacy-aware
 
 People may suggest, contribute, review and correct Playbooks through a low-friction path that does not require GitHub, YAML, JSON or programming. Governance, evidence and contribution lineage—not popularity or voting—determine official status. User-supplied strategic parameters should remain private or minimised where practical.

@@ -180,6 +180,18 @@ Before approving any implementation PR that touches unrestricted natural-languag
 
 Semantic evaluation measures semantic yield per cent, bundled-task economics, quality at varying evidence-pack/model budgets, strategically authored or keyword-heavy evidence, and lexical presence without proposition support. A failed semantic class changes the evidence, prompt, task schema, model, routing, benchmark or governance; it does not justify an unapproved phrase rule.
 
+## 4B. Complete-card semantic regression classes
+
+Maintain regression and evaluation cases for representation truncation or
+placeholder masquerading as sparsity; sparse evidence without hallucinated
+completion; shared-domain/network proposition ownership; funding versus
+operating/delivery role; taxonomy leakage into independent schemes;
+source-reported versus inferred assignment separation; model-generated
+invariant metadata; stronger-model review precision/omission calibration;
+source-family contribution to whole-card knowledge; and staged,
+interruption-safe batch execution. Current small experiments do not create
+fixed numerical quality thresholds.
+
 ## 14. Technical replicate / semantic reliability
 
 This layer measures run-to-run semantic graph stability with identical frozen task material. It uses intentionally repeated pinned real-model calls under explicit evaluation authorisation and budget.

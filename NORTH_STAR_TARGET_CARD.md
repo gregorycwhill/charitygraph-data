@@ -101,7 +101,7 @@ Every material item below can expose:
 - Advocacy campaigns
 - Fundraising campaigns and appeals
 - Parent/child structure
-- Operating party
+- Operating party and evidenced role: operated, delivered, funded, sponsored, partnered or auspiced
 - Joint or externally operated work
 - Current / historical / winding-down status
 - Activities and interventions
@@ -363,6 +363,10 @@ Directed, typed, scoped and time-bounded relationships including:
 - Predecessors / successors
 
 Every relationship carries direction, roles, scope, time and evidence rather than a generic `related_to` edge.
+
+Operating, delivery, funding, sponsorship, partnership, auspice and network/context
+roles remain distinct where evidence supports them. A shared official domain is
+provenance, not automatic ownership of every proposition.
 
 ---
 

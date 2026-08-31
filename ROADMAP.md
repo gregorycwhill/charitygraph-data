@@ -135,3 +135,17 @@ P0/P1 can proceed independently of full-card Builder implementation. P2 can use 
 - migrating all archaeology into canonical state;
 - changing immutable release 0.5;
 - building a public API before download/Viewer and analyst workflows prove demand.
+
+## Semantic feasibility checkpoint (2026-08-31)
+
+The generic whole-card feasibility and packet-economics question is now
+substantially reality-tested across rich, sparse-regulator and modest-website
+evidence shapes. This does not establish universal validity, completeness or
+model-performance guarantees.
+
+The next bounded domain-pressure sequence is: a direct-service case emphasising
+sections 6, 11 and 13; an authoritative conduct/adverse/compliance case for
+section 16; an evaluation-rich case for section 18; and then the first bounded
+CharityGraph Native induction once the observation corpus is adequately
+diverse. Fundraising, ethos and other specialist profiles remain on the roadmap
+but are not blockers for those experiments.

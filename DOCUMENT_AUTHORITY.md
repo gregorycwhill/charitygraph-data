@@ -79,6 +79,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Common Playbook epistemic rules | [`PLAYBOOK_BASE_POLICY.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/PLAYBOOK_BASE_POLICY.md) |
 | Playbook contribution and Official/Community status workflow | [`CONTRIBUTING.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/CONTRIBUTING.md), within shared CharityGraph boundaries |
 | Semantic reliability, technical replication and reproducible semantic replay | `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` |
+| Complete-card semantic extraction and independent mapping decisions | `SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md`, propagated conservatively to the canonical documents above |
 | Current coding handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
 
 ## 5. Refinement and conflict rules
@@ -178,3 +179,13 @@ SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the 
 ## North Star planning anchor
 
 `NORTH_STAR_TARGET_CARD.md` derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. It does not override those authorities and is not a public schema proposal. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against it so a reality slice or domain implementation cannot silently redefine product scope.
+
+## Semantic extraction decision propagation
+
+`SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md` is an approved
+decision record for the complete-card and independent-mapping architecture.
+After propagation, the canonical product, principles, source, taxonomy,
+coverage, North Star, roadmap, implementation and test documents govern
+normative behaviour; the decision record retains empirical rationale and
+traceability. It does not override immutable contract 0.5, licensing or
+CLASSIE publication permissions.

@@ -187,6 +187,21 @@ CharityGraph must not:
 - hide the origin of adapted concepts;
 - publish culturally sensitive classifications without appropriate governance.
 
+## 15. Independent inference views
+
+An inferred scheme consumes a task-specific taxonomy-blind view of governed
+CharityGraph observations. Source-reported external classifications, prior
+assignments of the target scheme and unrelated schemes are excluded where they
+could contaminate inference, then remain available for separate post-hoc
+comparison. Builder supplies task identity, scheme ID/version and other stable
+invariants mechanically; models do not regenerate them. The durable mapping is
+target/scope -> scheme concept -> supporting observations -> qualifications.
+
+CharityGraph Native is induced bottom-up from a sufficiently broad corpus of
+taxonomy-blind, evidence-linked observations. Embeddings support retrieval and
+candidate discovery only. Native and external assignments remain independently
+governed. Existing CLASSIE rights and publication gates are unchanged.
+
 This document governs vNext only and does not modify contract 0.5.
 
 ## Classification / regulatory lenses (current decision)
