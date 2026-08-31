@@ -411,3 +411,14 @@ Private CLASSIE processing is approved. Public release remains permission-gated.
 CharityGraph uses model-assisted interpretation, which may be stochastic. It does not hide that fact by claiming deterministic inference. Valid semantic results are persisted with provenance and reused when task material is unchanged, so release reproducibility does not require rerunning unchanged LLM tasks. Technical replication is an explicitly authorised evaluation method that measures semantic repeatability separately from release identity. Downstream developers should distinguish stable release identity, empirical semantic reliability and genuine evidence-backed temporal change.
 
 Product builders also need stable, versioned semantic results and explicit reliability and coverage metadata.
+
+## Complete-card semantic architecture (propagated decision)
+
+The reusable semantic layer is the normal path from frozen evidence to product
+knowledge: source evidence -> reusable representation -> high-recall governed
+observations and relationships -> independently governed semantic lenses ->
+projections. Downstream lenses normally consume governed CharityGraph
+observations rather than rereading raw sources. Shared official domains do not
+establish ownership of every proposition; scope follows the evidence. Funding,
+operation, delivery, sponsorship, partnership, auspice and network/context
+roles remain distinct. See [the approved decision record](SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md).

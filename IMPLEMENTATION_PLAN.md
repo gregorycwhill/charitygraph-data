@@ -278,6 +278,16 @@ Render a private analyst projection against `NORTH_STAR_TARGET_CARD.md`. Each se
 
 Report source and claim-family coverage, semantic success, review load, packet/corpus reuse, model cost, failure classes, right-tail effects and cross-domain synergies.
 
+## Propagated complete-card implementation pattern
+
+The selected pattern is: frozen corpus -> reusable representation -> whole-card
+high-recall semantic knowledge -> persisted observations and relationships ->
+task-specific taxonomy-blind views -> independent semantic lenses -> governed
+projections. Structured activity/relationship roles must distinguish operator,
+funder, sponsor, delivery partner and network context without semantic Python.
+Production waves must be resumable and interruption-safe before sector-scale
+execution; cache/reuse and staged QA precede breadth.
+
 ## Cross-domain acceptance test
 
 A competent analyst should be able to inspect one charity and answer a broad set of North Star questions without rereading all primary sources, while tracing each material answer to its governed basis. Forcing-function questions include: whether the charity uses/employs/contracts face-to-face fundraisers; how much it spends on fundraising; and whether it is formally religiously affiliated or motivated and on what evidence. These are cross-domain questions, not privileged schema fields.

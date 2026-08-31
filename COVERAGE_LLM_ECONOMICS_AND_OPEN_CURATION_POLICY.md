@@ -185,6 +185,20 @@ Future releases must publish:
 
 This policy does not alter immutable public contract 0.5. It governs vNext implementation and future releases only.
 
+## Model-tier and production-wave direction (propagated decision)
+
+Routine semantic production should use the lowest-cost tier demonstrated to
+provide adequate supported recall. Stronger tiers are sampled or
+risk-triggered assurance, arbitration and difficult-boundary resources rather
+than universal second inference. Provider names and exact routing remain
+implementation hypotheses, not product promises.
+
+Production should use economical modes such as Batch or Flex where appropriate,
+with cache/reuse, concurrency, resumable waves and staged QA. Scale gradually
+and trigger spot testing by observed risk. Current cohort budgets remain in
+force; this direction creates no fixed QA percentage, batch size or elapsed-time
+guarantee.
+
 ## 9. Semantic yield economics and heuristic approval
 
 Optimise semantic yield per cent of LLM compute, not model-call avoidance. Development experiments may use normal or rack rates within approved budgets; production SHOULD use batch, flex or another economical mode where appropriate, without hard-coding a permanent discount. Bundle compatible logical tasks when benchmarked, while retaining independent validation, lineage and invalidation.

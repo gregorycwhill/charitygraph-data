@@ -1,15 +1,15 @@
 # CharityGraph Current State
 
-**Status date:** 30 August 2026
+**Status date:** 31 August 2026
 
-**Status:** Baseline after Playbooks repository establishment
+**Status:** Current through complete-card semantic experiments and Builder PR #35 merge
 
 ## 1. Repositories
 
 | Component | Repository | Current `main` | State |
 |---|---|---|---|
-| Builder | `gregorycwhill/charitygraph` | `5e5656df635f6531b676e595ae41d4f5a8a523a5` | Production foundations and native discovery v2 available |
-| Data | `gregorycwhill/charitygraph-data` | `9135db270c7b6d42b293d4c598109068b5b9bd14` (Data main before this documentation tranche) | Canonical contracts, releases and governance |
+| Builder | `gregorycwhill/charitygraph` | `58318408e39606dfbe587bf6d305a5e17b78fc17` | Production foundations, native discovery v2 and merged v0.6 experiment mechanics |
+| Data | `gregorycwhill/charitygraph-data` | `9b54800cd6e67d7a12b6a2849720fe7874a57555` (Data main at tranche start) | Canonical contracts, releases and governance |
 | Viewer | `gregorycwhill/charitygraph-viewer` | `cd6f3720f664a29e0ca7ed8be19797e573fcdfc8` | Existing deployed Viewer; unchanged by this state update |
 | Playbooks | `gregorycwhill/charitygraph-playbooks` | `6466e04` | Initial product contract, base policy, contribution guidance, schema and example; no production catalogue |
 
@@ -70,3 +70,13 @@ The active documentation branch records, subject to eventual merge:
 - agent, privacy and feedback boundaries.
 
 These documentation changes do not alter the Builder/Data full-card critical path or claim a production Playbooks catalogue, hosted inference or Viewer integration.
+
+## 10. Complete-card semantic experiment position
+
+Through the merged Builder PR #35, complete-card feasibility has been
+demonstrated across rich, sparse-regulator and modest-website evidence shapes.
+The current implementation hypothesis is **low-cost primary semantic producer
+-> deterministic validation/persistence -> sampled or risk-triggered stronger-
+model assurance; exceptional use of the highest tier**, not a permanent product
+requirement or performance guarantee. Domain-specific validity, activity-role
+contracts and Native induction remain open empirical work.

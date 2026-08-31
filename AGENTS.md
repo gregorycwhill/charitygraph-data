@@ -31,6 +31,7 @@ For cross-product work, read and maintain the canonical v2.0-draft set:
 - [PUBLIC_CONTRACT_0_5.md](PUBLIC_CONTRACT_0_5.md)
 - [AGENT_DATA_DISTRIBUTION_CONTRACT.md](AGENT_DATA_DISTRIBUTION_CONTRACT.md)
 - [CODEX_TO_CHATGPT_HANDOFF.md](CODEX_TO_CHATGPT_HANDOFF.md)
+- [SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md](SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md)
 
 Public contract 0.5 is implemented compatibility authority for its immutable release. Do not edit release bytes, schemas, manifests, or literal legacy compatibility fields. Future internal Builder work uses subject_id; this does not authorise a public-identifier migration.
 

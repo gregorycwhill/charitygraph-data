@@ -201,6 +201,24 @@ Evidence-bundle or document-level inference is legitimate when the input scope i
 
 Open-ended semantic relevance, entity/program/service interpretation, durability boundaries, activity/population interpretation, taxonomy/SDG alignment and semantic ambiguity are model tasks by default. Deterministic processing validates structure and invariants; it does not reproduce language understanding through lexical heuristics. Provenance records source artefact, evidence bundle, task/prompt policy, provider/model, output, validation and governed disposition so the result is reconstructible; it does not claim token-level causal explanation or expose internal model reasoning.
 
+## Complete-card semantic chain (propagated decision)
+
+The governed chain is: source artefact -> reusable representation -> semantic
+task projection -> observation or relationship -> downstream task view. A
+substantive acquired source must not silently collapse into severe truncation or
+a binary placeholder. Native extraction, OCR and layout recovery are
+representation; gaps are recorded as explicit coverage states. A task
+projection may mechanically exclude fields that would contaminate an
+independent lens while preserving the original artefact and lineage.
+
+Where an official site serves a network, brand, federation or auspice
+arrangement, domain provenance is not subject ownership. Assertions attach to
+the lowest evidence-supported scope. Bounded same-origin sitemap/navigation
+acquisition is permitted; open-ended relevance remains a model task, not a
+keyword or semantic Python rule. Downstream taxonomy tasks normally consume
+governed semantic knowledge and follow evidence lineage rather than rereading
+raw source bodies.
+
 ## 16. Semantic source role and result replay
 
 A source artefact has both content and role. Evidence about a subject is not necessarily evidence of activity by that subject. Semantic task construction preserves, where applicable, the publisher/source owner, source class, proposition-specific authority role, first-party or regulator-reported status, regulator context, independent-evidence status and the subject/scope to which the evidence relates.
