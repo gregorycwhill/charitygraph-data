@@ -26,11 +26,58 @@ For each charity, attempt a reusable baseline source set before domain-specific 
 
 Architecture: acquire broadly once → preserve source-native evidence → freeze reusable charity evidence corpus → assemble bounded semantic packets from that corpus. Corpus completeness is claim-family-specific. Record acquisition state (`attempted`, `acquired`, `unavailable`, `access_failed`, `parsing_failed`, `not_applicable`, `not_attempted`) by source family, claim family and subject/scope. `COMPLETE_ENOUGH` for program discovery is not whole-North-Star completeness.
 
-## Phase 3 — Complete-card semantic reality slice
+## Phase 3 — Complete-card domain/graph hardening
 
-Use approximately 8–12 deliberately varied charities and attempt every North Star claim family with explicit missingness when unavailable or deferred: identity/regulatory status; purpose/mandate/cause; programs/services/projects/campaigns; populations; geography; participation; fundraising/resource mobilisation; finance/resource flows; governance; workforce; capability/capacity/access/availability; relationships/ecosystem; memberships/schemes/registrations/accreditations; ethos/institutional identity; positions/commitments/implementation; conduct/adverse matters/compliance; notable context/history; outcomes/impact/evaluation; classifications/semantic lenses; evidence/coverage/freshness/corrections.
+CharityGraph is now in the Phase 3 domain/graph-hardening stage of the
+complete-card reality slice. Use approximately 8–12 deliberately varied
+charities and pressure-test the North Star claim families with explicit
+missingness when unavailable or deferred. Generic whole-card feasibility is
+substantially reality-tested; the active question is whether the architecture
+can persist and project the cross-domain graph required by the Data product.
 
-This does not require equal depth or automatic publication. High-risk domains retain stronger source and human-review requirements. Acceptance is whether one reusable corpus can support a useful governed whole-charity dossier.
+Phase 3 is not a licence to treat program/service discovery as the product.
+Its graph deliverable is shared subject/scope ownership and directed,
+evidence-bound activity relationships that distinguish operating, delivery,
+funding, sponsorship, partnership, auspice and network/context roles. These
+semantics are cross-domain infrastructure for programs, fundraising, finance,
+capacity, governance, outcomes and ecosystem data: attach each observation to
+the lowest evidence-supported scope, and do not infer proposition ownership
+from domain provenance.
+
+The immediate bounded pressure sequence is: a direct-service case stressing
+sections 6 Participation, 11 Capability/capacity/access/availability and 13
+Memberships/schemes/registrations/accreditations; an authoritative section 16
+Conduct/adverse matters/compliance case; an evaluation-rich section 18
+Outcomes/impact/evaluation case; and then the first bounded CharityGraph
+Native induction once the observation corpus is sufficiently diverse.
+Fundraising, ethos and other specialist profiles remain in scope but are not
+blockers for that sequence.
+
+### Phase 3 exit gate
+
+Exit requires sufficient bounded evidence that:
+
+- direct-service structure works across sections 6/11/13;
+- subject/scope ownership survives shared-domain cases;
+- operator, deliverer, funder, sponsor, partner, auspice and network roles
+  survive extraction, persistence and projection;
+- section 16 has a bounded high-consequence representation and approved review
+  path;
+- section 18 represents evaluation evidence without collapsing change,
+  contribution and causation;
+- claim-family coverage and material missingness states work; and
+- interruption-safe execution exists before paid cohort scaling.
+
+No universal accuracy, QA, acceptance-score or coverage threshold is implied.
+Phase 4 packaging/economics and especially Phase 5 Top-100 full-card scaling
+are subsequent stages, not the immediate next action merely because generic
+whole-card extraction has been demonstrated.
+
+Section 19 remains a six-lens architecture, not a completed milestone: source-
+native ACNC/ATO foundations exist, SDG and CharityGraph CLASSIE have bounded
+experimental evidence, and CharityGraph Native induction remains an upcoming
+empirical/implementation step. “Section 19 first reality-tested” does not mean
+all classification lenses are complete.
 
 ## Phase 4 — Cross-domain semantic packaging and economics
 
