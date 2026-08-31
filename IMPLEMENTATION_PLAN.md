@@ -61,7 +61,14 @@ tests/
 
 Runtime databases, caches, downloaded bodies, model payloads and generated previews live under configured runtime/archive roots and are ignored by Git. Durable design and small synthetic fixtures belong in Git. Archaeology reports stay where explicitly governed; they are not automatically committed.
 
-## 4. PR sequence
+## 4. Foundation PR sequence (historical/superseded as active completion)
+
+PR A–F below record the useful foundation sequence that established the
+source, runtime, knowledge, taxonomy, model-task and reality-cohort spine.
+They are completed or superseded foundation work where the repository state
+supports that claim, not the current vNext completion definition. A fresh
+implementation follows the complete-card domain/graph sequence below rather
+than assuming identity/program/classification work is the product endpoint.
 
 ### PR A — Evidence store and source registry
 
@@ -216,20 +223,35 @@ Fix a class only when the change is supported by multiple examples or a clear in
 
 Each PR updates only the documentation made true or invalid by the code. Architectural changes receive an ADR. Evaluation results are versioned reports with cohort, model/prompt and code identity. Working notes do not silently become product authority.
 
-## 10. Completion definition for the first slice
+## 10. Completion definition for the complete-card reality slice
 
-The slice is complete when a clean environment can:
+The active slice is complete when a clean environment can demonstrate, across
+representative bounded cases and without requiring every primitive for every
+charity or section:
 
 1. initialise a file-backed SQLite catalogue;
 2. register sources and evidence artefacts;
 3. process the fixed cohort through typed tasks;
-4. create scoped identity, program and classification assertions;
+4. represent the governed primitives demanded by the North Star as applicable:
+   subjects and scopes, observations, assertions, directed relationships and
+   roles, measurements, taxonomy assignments, matters/events,
+   coverage/missingness states, review/adjudication state, evidence and
+   lineage;
 5. show source, prompt/model and cost lineage;
-6. distinguish resolved, unknown, not-applicable, not-attempted and failed fields;
+6. distinguish material missingness states including asserted none, observed
+   absent, not found, source silent, source unavailable, not acquired, not
+   processed, processing failed, not reviewed, not applicable, withheld,
+   stale and unknown;
 7. reproduce a private preview without duplicate artefacts or costs;
-8. pass development and untouched-holdout thresholds;
+8. report development and untouched-holdout evidence without inventing a
+   universal acceptance threshold;
 9. preserve contract 0.5 unchanged;
 10. stop without modifying Data or Viewer.
+
+Builder/Data projections must preserve those missingness distinctions before
+any Top-100 scale decision. They must not collapse them into one null, false,
+`unknown` or generic `failed` state, although a given experiment need not
+exercise every state.
 
 
 ## Classification-layer implementation authority
@@ -260,7 +282,19 @@ Create reusable, bounded representations from annual reports, official sites, co
 
 ### Step 4 — Domain task contracts for remaining North Star profiles
 
-Add typed contracts progressively over shared primitives, not twenty disconnected databases. At minimum cover populations/geography, participation, fundraising, finance concepts beyond source-native facts, governance, workforce, capability/capacity, relationships, schemes/accreditations, ethos, commitments, context, outcomes/evaluation and appropriately governed conduct candidates.
+Add typed contracts progressively over shared primitives, not twenty disconnected databases. The immediate bounded implementation order is:
+
+1. shared subject/scope plus structured activity and relationship-role semantics
+   where needed;
+2. a direct-service pressure case covering sections 6/11/13;
+3. an authoritative conduct/compliance pressure case for section 16;
+4. an evaluation-rich pressure case for section 18;
+5. the first bounded CharityGraph Native induction when corpus diversity is
+   adequate; and
+6. remaining specialist/domain hardening, including fundraising, ethos,
+   commitments, governance/workforce/finance depth and other North Star gaps.
+
+Then cover the remaining North Star profiles progressively: populations/geography, participation, fundraising, finance concepts beyond source-native facts, governance, workforce, capability/capacity, relationships, schemes/accreditations, ethos, commitments, context, outcomes/evaluation and appropriately governed conduct candidates. This is a bounded empirical progression, not an instruction to implement all 20 domains at once.
 
 ### Step 5 — Cross-domain packet experiments
 
