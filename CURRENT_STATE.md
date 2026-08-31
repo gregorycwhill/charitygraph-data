@@ -75,8 +75,9 @@ These documentation changes do not alter the Builder/Data full-card critical pat
 
 Through the merged Builder PR #35, complete-card feasibility has been
 demonstrated across rich, sparse-regulator and modest-website evidence shapes.
-The current implementation hypothesis is **low-cost primary semantic producer
--> deterministic validation/persistence -> sampled or risk-triggered stronger-
-model assurance; exceptional use of the highest tier**, not a permanent product
-requirement or performance guarantee. Domain-specific validity, activity-role
-contracts and Native induction remain open empirical work.
+The current implementation hypothesis is **Luna primary semantic producer →
+deterministic validation/persistence → Terra sampled/risk-triggered assurance;
+Sol exceptional**, not a permanent product requirement or performance guarantee.
+Named-model routing is current implementation state, not permanent product
+policy. Domain-specific validity, activity-role contracts and Native induction
+remain open empirical work.

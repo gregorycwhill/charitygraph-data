@@ -39,6 +39,25 @@ release certification.
 - Exact batch sizes, QA percentages, elapsed-time estimates and stronger-model
   superiority were not established as universal facts.
 
+## Empirical anchors
+
+The following bounded experiment measurements support the decisions above.
+They are non-sensitive aggregates, are not performance guarantees, and should
+not be read as release acceptance thresholds.
+
+| Experiment | Aggregate observation |
+|---|---|
+| ACF Terra/Luna whole-card | Luna 55 observations versus Terra 26; approximate cost USD 0.035 versus USD 0.252 |
+| World Vision whole-card | Luna 71 observations across all 20 sections; approximate cost USD 0.040 |
+| World Vision SDG Terra review | 21 Luna candidates reviewed: 9 accept, 8 narrow, 4 reject, 0 strongly supported omissions |
+| Tweed representation comparison | Defective representation: 12 observations across 3 sections; corrected representation: 64 observations across 17 sections |
+| Tweed CG CLASSIE Terra review | 5 candidates: 3 accept, 1 narrow, 1 reject, 0 strongly supported omissions |
+| Local Buying v0.6 | 99 observations across 19 sections: 71 website-only, 26 regulator-only, 2 mixed |
+| Local Buying v0.6.1 | Clean, scope-corrected CG CLASSIE: 26 assignments versus 50 in contaminated v0.6 |
+
+Controlled taxonomy labels, definitions and assignment identities are omitted;
+these figures describe experiment shape and economics only.
+
 ## Approved architecture decisions
 
 1. **Whole-card knowledge:** use evidence -> reusable representation -> high-

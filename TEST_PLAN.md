@@ -174,6 +174,12 @@ Future vNext publication additionally requires:
 - HTTP, canonical URL, robots and sitemap checks;
 - rollback and previous-release resolvability.
 
+## 4A. Ex-ante semantic heuristic gate
+
+Before approving any implementation PR that touches unrestricted natural-language processing, review MUST answer: **Does this diff teach Python English?** If yes, a specific CG-SH-* approval ID is required; without one, review fails and implementation stops. Do not add a keyword scanner to automate this judgment.
+
+Semantic evaluation measures semantic yield per cent, bundled-task economics, quality at varying evidence-pack/model budgets, strategically authored or keyword-heavy evidence, and lexical presence without proposition support. A failed semantic class changes the evidence, prompt, task schema, model, routing, benchmark or governance; it does not justify an unapproved phrase rule.
+
 ## 4B. Complete-card semantic regression classes
 
 Maintain regression and evaluation cases for representation truncation or
@@ -185,12 +191,6 @@ invariant metadata; stronger-model review precision/omission calibration;
 source-family contribution to whole-card knowledge; and staged,
 interruption-safe batch execution. Current small experiments do not create
 fixed numerical quality thresholds.
-
-## 4A. Ex-ante semantic heuristic gate
-
-Before approving any implementation PR that touches unrestricted natural-language processing, review MUST answer: **Does this diff teach Python English?** If yes, a specific CG-SH-* approval ID is required; without one, review fails and implementation stops. Do not add a keyword scanner to automate this judgment.
-
-Semantic evaluation measures semantic yield per cent, bundled-task economics, quality at varying evidence-pack/model budgets, strategically authored or keyword-heavy evidence, and lexical presence without proposition support. A failed semantic class changes the evidence, prompt, task schema, model, routing, benchmark or governance; it does not justify an unapproved phrase rule.
 
 ## 14. Technical replicate / semantic reliability
 
