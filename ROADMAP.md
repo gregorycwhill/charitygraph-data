@@ -53,6 +53,16 @@ Native induction once the observation corpus is sufficiently diverse.
 Fundraising, ethos and other specialist profiles remain in scope but are not
 blockers for that sequence.
 
+The direct-service structure for sections 6/11/13 has been boundedly pressure-
+tested. Section 16 has a bounded conduct/compliance design and pressure-test
+history; its specialist regulator acquisition is experimental ground-truth
+material, not production sourcing precedent. The generic Compact → specialist
+lens architecture for section 18 has also been reality-tested sufficiently to
+park the section, with bounded precision/recall questions remaining. Section 15
+positions/commitments/implementation is now the active Semantic Lab. Paid
+interruption-safe/restart-safe execution remains a later Factory/scaling gate,
+not a prerequisite for one-shot Labs. No section is production-complete.
+
 ### Phase 3 exit gate
 
 Exit requires sufficient bounded evidence that:

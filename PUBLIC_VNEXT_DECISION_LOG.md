@@ -90,3 +90,16 @@ CharityGraph is a product family comprising Builder, Data, Viewer and Playbooks.
 A Playbook definition, a parameterised invocation and the external-model output are separate. Only the Playbook definition is governed CharityGraph content; an invocation and downstream output are not canonical CharityGraph knowledge merely because an official Playbook was used. Contribution is extensible and evidence-governed, with Official and Community status distinct. User strategic parameters should be minimised or kept client-side where practical. Data/content, Playbook-method and execution/model/retrieval problems use distinct feedback pathways. A dedicated Playbooks repository and Viewer integration are deferred.
 
 **Implementation note (30 August 2026):** The initial `charitygraph-playbooks` repository and contract were established at commit `6466e04`. The remaining deferral is production catalogue/release work and Viewer integration; this note records implementation state without changing the approved decision.
+
+### CG-D031 — Central sourcing versus section discovery
+
+**Status:** Approved
+
+**BUILDER DOESN'T DO DISCOVERY.** Central sourcing governance defines the
+production evidence universe. Builder acquires and processes approved sources
+and persisted representations; sections and lenses interpret that evidence
+and may expose coverage gaps but do not discover or add sources. Evaluation and
+ground-truth work may inspect broader regulator, court, journalism, research or
+specialist material, but that material does not enter production automatically.
+Repeated gaps may motivate a separate governed proposal for a new source family;
+admission is an explicit sourcing decision applying across relevant sections.

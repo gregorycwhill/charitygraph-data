@@ -39,10 +39,21 @@ knowledge candidate, and experimental labels are not canonical taxonomy.
 
 ### Section 18 — ARCHITECTURE-VALIDATED / PARKED — NOT SEMANTICALLY COMPLETE
 
-Dense evidence showed Compact can preserve evaluation design, comparisons,
-findings, participant evidence and qualifications. Section relevance must be
-established before classification; outputs, outcomes and causal claims remain
-distinct. Further prompt polishing is deferred.
+Dense evidence showed Compact can preserve study design, cohort comparisons,
+quantitative findings, qualitative participant evidence and causal
+qualifications without Section-18-specific raw extraction. Specialist relevance
+gating is necessary because most generic knowledge is not Section 18. Keep
+input/resource, activity, output, observed outcome measure, outcome/change and
+impact/contribution/causal claim distinct; quantitative facts are not
+automatically indicators, aspiration is not achieved impact, and report
+existence is not a finding. Study design, comparator/baseline, limitations,
+participant evidence and recommendations are valuable. Preserve attribution,
+causal strength and candidate → Compact atom → exact evidence binding.
+Response-schema enum enforcement is an appropriate mechanical control.
+Model-invented labels such as `outcome_measure` are taxonomy-design evidence,
+not canonical taxonomy. The final precision test reduced false positives but
+lost some design/comparator/limitation/recommendation recall; further prompt
+polishing is deferred rather than oscillating precision and recall.
 
 ### Section 15 — ACTIVE SEMANTIC LAB, NOT YET TESTED
 
