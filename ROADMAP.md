@@ -22,7 +22,7 @@ North Star emphasis: 1 Identity & regulatory status; 2 Purpose, mandate & cause;
 
 ## Phase 2 — Baseline source acquisition and reusable charity evidence corpus
 
-For each charity, attempt a reusable baseline source set before domain-specific semantic work: ACNC Register, ACNC AIS, ATO DGR, official website, latest annual report, Wikipedia/Wikimedia context, and PFRA or another applicable fundraising-industry registry. Specialist sources remain claim-, risk- or domain-triggered. Preserve source-native structured observations without routing regulator fields through an LLM merely for rediscovery.
+For each charity, attempt a reusable baseline source set before domain-specific semantic work: ACNC Register, ACNC AIS, ATO DGR, official website, latest annual report, Wikipedia/Wikimedia context, and PFRA or another applicable fundraising-industry registry. Specialist sources remain claim-, risk- or domain-triggered by central sourcing governance; principal evidence families describe product needs and do not authorise a section to discover sources. Preserve source-native structured observations without routing regulator fields through an LLM merely for rediscovery.
 
 Architecture: acquire broadly once → preserve source-native evidence → freeze reusable charity evidence corpus → assemble bounded semantic packets from that corpus. Corpus completeness is claim-family-specific. Record acquisition state (`attempted`, `acquired`, `unavailable`, `access_failed`, `parsing_failed`, `not_applicable`, `not_attempted`) by source family, claim family and subject/scope. `COMPLETE_ENOUGH` for program discovery is not whole-North-Star completeness.
 
