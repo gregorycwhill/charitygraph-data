@@ -22,7 +22,7 @@ North Star emphasis: 1 Identity & regulatory status; 2 Purpose, mandate & cause;
 
 ## Phase 2 — Baseline source acquisition and reusable charity evidence corpus
 
-For each charity, attempt a reusable baseline source set before domain-specific semantic work: ACNC Register, ACNC AIS, ATO DGR, official website, latest annual report, Wikipedia/Wikimedia context, and PFRA or another applicable fundraising-industry registry. Specialist sources remain claim-, risk- or domain-triggered. Preserve source-native structured observations without routing regulator fields through an LLM merely for rediscovery.
+For each charity, attempt a reusable baseline source set before domain-specific semantic work: ACNC Register, ACNC AIS, ATO DGR, official website, latest annual report, Wikipedia/Wikimedia context, and PFRA or another applicable fundraising-industry registry. Specialist sources remain claim-, risk- or domain-triggered by central sourcing governance; principal evidence families describe product needs and do not authorise a section to discover sources. Preserve source-native structured observations without routing regulator fields through an LLM merely for rediscovery.
 
 Architecture: acquire broadly once → preserve source-native evidence → freeze reusable charity evidence corpus → assemble bounded semantic packets from that corpus. Corpus completeness is claim-family-specific. Record acquisition state (`attempted`, `acquired`, `unavailable`, `access_failed`, `parsing_failed`, `not_applicable`, `not_attempted`) by source family, claim family and subject/scope. `COMPLETE_ENOUGH` for program discovery is not whole-North-Star completeness.
 
@@ -52,6 +52,16 @@ Outcomes/impact/evaluation case; and then the first bounded CharityGraph
 Native induction once the observation corpus is sufficiently diverse.
 Fundraising, ethos and other specialist profiles remain in scope but are not
 blockers for that sequence.
+
+The direct-service structure for sections 6/11/13 has been boundedly pressure-
+tested. Section 16 has a bounded conduct/compliance design and pressure-test
+history; its specialist regulator acquisition is experimental ground-truth
+material, not production sourcing precedent. The generic Compact → specialist
+lens architecture for section 18 has also been reality-tested sufficiently to
+park the section, with bounded precision/recall questions remaining. Section 15
+positions/commitments/implementation is now the active Semantic Lab. Paid
+interruption-safe/restart-safe execution remains a later Factory/scaling gate,
+not a prerequisite for one-shot Labs. No section is production-complete.
 
 ### Phase 3 exit gate
 

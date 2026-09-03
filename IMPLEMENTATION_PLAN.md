@@ -264,7 +264,7 @@ Private CLASSIE payloads may be loaded, hashed and processed by Builder when law
 
 ## Complete-card architecture and sequencing rule
 
-Acquire broadly once; preserve source-native evidence; freeze a reusable charity evidence corpus; assemble task-specific semantic packets; apply cost-efficient semantic passes; persist independently governed domain knowledge; compile analyst/public projections. Acquisition is charity/source oriented and semantic interpretation is domain/profile oriented. A physical request may bundle compatible logical tasks, but task identity, schema/profile, scope, evidence, validation, lineage and governed disposition remain independent. Do not create a giant opaque charity-analysis contract.
+Acquire broadly once; preserve source-native evidence; freeze a reusable charity evidence corpus; assemble task-specific semantic packets; apply cost-efficient semantic passes; persist independently governed domain knowledge; compile analyst/public projections. Acquisition is charity/source oriented and semantic interpretation is domain/profile oriented. A physical request may bundle compatible logical tasks, but task identity, schema/profile, scope, evidence, validation, lineage and governed disposition remain independent. **BUILDER DOESN'T DO DISCOVERY:** semantic consumers use persisted reusable representations and do not invoke raw-document parsing or external search as an escape hatch. Do not create a giant opaque charity-analysis contract.
 
 ## NEXT IMPLEMENTATION SEQUENCE — COMPLETE-CARD REALITY SLICE
 

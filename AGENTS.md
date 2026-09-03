@@ -39,6 +39,10 @@ Keep Builder- and Viewer-specific implementation material with the component tha
 
 The coverage-first acceptance, cohort budgets, model-economics boundaries and open-curation rules in `COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md` are controlling product requirements. Do not change them through a component implementation note.
 
+**BUILDER DOESN'T DO DISCOVERY.** Builder and semantic sections consume the
+centrally governed evidence universe and persisted representations; sparse
+evidence may expose a coverage gap but does not authorise new acquisition.
+
 ## SEMANTIC HEURISTIC GATE -- STOP BEFORE CODING
 
 Before changing Builder or Data logic that touches unrestricted natural-language semantics, ask: **Does this diff teach Python English?** If yes, stop. Do not add regexes, keyword/phrase lists, lexical scoring, capitalization/title-case, URL-word rules, repetition/frequency, fuzzy lexical similarity or equivalent semantic heuristics without a specific Greg-approved CG-SH-* entry in SEMANTIC_HEURISTIC_APPROVALS.md. Custom/local NLP also needs a benchmark, explicit failure boundary, owner and approval. Mechanical code remains appropriate for stable syntax, identifiers, URLs, dates, arithmetic, exact joins and explicit source-native structured fields; unrestricted prose is an LLM task by default.

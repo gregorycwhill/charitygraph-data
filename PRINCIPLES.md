@@ -22,6 +22,11 @@ Do not teach Python to approximate open-ended language understanding through acc
 
 The Semantic Heuristic Gate is ex-ante: before implementation, ask **Does this diff teach Python English?** Any deterministic interpretation of unrestricted language requires a specific approved exception recorded in SEMANTIC_HEURISTIC_APPROVALS.md. Without that approval, change the evidence, prompt, task schema, model, routing, benchmark or governance instead of adding phrase rules.
 
+**BUILDER DOESN'T DO DISCOVERY.** Central sourcing decides what evidence
+CharityGraph has; sections decide what that evidence means. Principal evidence
+families describe product needs, not permission for a section to search for or
+add specialist sources.
+
 ## 4. Preserve evidence before synthesis
 
 Source-native evidence, extraction, mapping, adjudication and narrative are different layers. A synthesis is not evidence for itself.
