@@ -83,3 +83,39 @@ source-family changes?
 This record is superseded only by an explicit reviewed decision or by a
 canonical architecture/policy update. Experimental findings remain bounded
 until that occurs.
+
+## Section 15 V1D — reviewed experimental findings
+
+The V1D bounded structural-packet experiment supports packetising persisted
+representations before semantic work rather than sending whole documents. It
+used 23 packets over four persisted annual reports: 8 Compact responses
+completed, 15 reached the 2,000-token output ceiling, 125 recoverable atoms,
+9 lens calls and USD 0.089037 actual cost.
+
+Packet `s15v1d-009` exposed a harness defect: it reported `status=incomplete`
+after reaching the output ceiling but remained parseable and was incorrectly
+sent to the lens. Only Compact responses with `status=completed` should enter
+downstream semantic tasks.
+
+Completion depends on semantic/output density as well as input length;
+approximately 6,000 evidence tokens with a 2,000-token Compact ceiling is not
+reliable. Generic free-form evidence locators are insufficiently governed;
+atom-to-exact-evidence binding requires an allow-listed mechanical reference
+contract. Exact effective dates must not be manufactured from coarser
+year/month/reporting-period language.
+
+V1D was substantially over-inclusive: purpose, programs, governance, finance,
+registrations, services and organisational activity were repeatedly drawn into
+Section 15. First-party annual reports can support target-stated positions,
+commitments, targets and claimed implementation, but do not by themselves
+establish independently observed practice. Obligations and verified compliance
+have distinct evidence roles, and verified compliance remains outside Section
+15. Strong specimens included First Nations partnership commitments,
+modern-slavery positions, environmental targets, code-adherence commitments,
+and implementation explicitly connected to environmental or
+responsible-investment commitments.
+
+Generic Compact sometimes retained implementation/progress while omitting a
+nearby normative anchor; V1E tests whether smaller packets improve this. The
+Australian Conservation Foundation remains a corpus-coverage gap because its
+governed representation is only an annual-report index page.
