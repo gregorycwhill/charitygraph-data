@@ -2,7 +2,7 @@
 
 **Status date:** 31 August 2026
 
-**Status:** Current through complete-card semantic experiments and Builder PR #35 merge
+**Status:** Current through the completed and parked Section 15 V1E broad-lens Semantic Lab campaign
 
 ## 1. Repositories
 
@@ -81,3 +81,14 @@ Sol exceptional**, not a permanent product requirement or performance guarantee.
 Named-model routing is current implementation state, not permanent product
 policy. Domain-specific validity, activity-role contracts and Native induction
 remain open empirical work.
+
+## 11. Section 15 Semantic Lab disposition
+
+The paid Section 15 broad-lens campaign is complete and parked. Generic
+Compact → specialist lenses remains the working semantic architecture. The
+historical permissive run demonstrated semantic-uplift/promiscuity risk; the
+corrected run demonstrated over-pruning risk. Neither experimental prompt set
+is production-canonical and further prompt polishing is deferred. Section 15
+is **ARCHITECTURE-VALIDATED / SEMANTIC-BOUNDARY-TESTED / PARKED — NOT
+PRODUCTION-COMPLETE**. The next project work is not automatically another
+Section 15 experiment.

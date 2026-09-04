@@ -55,12 +55,74 @@ not canonical taxonomy. The final precision test reduced false positives but
 lost some design/comparator/limitation/recommendation recall; further prompt
 polishing is deferred rather than oscillating precision and recall.
 
-### Section 15 — ACTIVE SEMANTIC LAB, NOT YET TESTED
+### Section 15 — ARCHITECTURE-VALIDATED / SEMANTIC-BOUNDARY-TESTED / PARKED — NOT PRODUCTION-COMPLETE
 
-Four substantive existing PDF packets are frozen. The original conservative
-projection of USD 0.064213 exceeded the USD 0.05 cap, so execution correctly
-made zero provider calls. The approved ceiling for this unchanged experiment
-is now USD 0.08. No Section 15 findings are claimed yet.
+The broad V1E Semantic Lab campaign is complete and parked. Across the
+historical and corrected runs, generic Compact knowledge followed by
+independent specialist lenses proved viable, while the original permissive
+lenses showed semantic promiscuity and the corrected lenses over-pruned some
+legitimate recall. Neither prompt set is canonical production policy and no
+second paid correction pass is planned. The working boundary remains:
+
+| bounded experiment | key result |
+|---|---|
+| historical broad lenses | 43 packets; 344 tasks/calls; 333 complete; 11 incomplete; 919 candidates; USD 0.229121 |
+| corrected reconstruction | 43 packets; 344 tasks/calls; 334 complete; 10 incomplete; 438 candidates; USD 0.160001 |
+| atom fan-out | historical 458 used / 377 multi-lens (0.8231); corrected 303 used / 118 multi-lens (0.3894) |
+
+These figures are experimental, bounded and non-performance-guaranteeing.
+The corrected run is a reconstruction over retained V1E material, not an
+exact replay of historical request payloads.
+
+`statement → commitment → claimed implementation → observed practice → verified compliance → outcome`
+
+Ordinary program delivery, governance, finance, fundraising, network
+membership or organisational activity does not by itself establish a position
+or commitment. Implementation requires an evidenced antecedent position,
+commitment, obligation or source-explicit implementation framing; self-reported
+implementation does not establish independently verified compliance.
+
+Future lens contracts must define, per domain: the positive semantic object;
+nearby concepts that do not qualify; transformations that would be epistemic
+uplift; expected legitimate cross-domain reuse; and the meaning of a
+zero-candidate result. Fan-out is diagnostic, not a validity or publication
+rule.
+
+### Durable operating decisions
+
+**Semantic Lab versus Factory.** The Lab optimises information gain: cheap,
+bounded experiments may tolerate imperfect replay or reconstruction, absorb
+local failures while independent tasks continue, and document uncertainty.
+Budgets protect against runaway or duplicate spend, not penny-level
+optimisation. Stop for likely-useless results or genuine safety, billing,
+corpus or provenance failures. Factory/scaling work retains stricter
+requirements for exact task identity, restart/replay safety, duplicate
+prevention, durable accounting and cost optimisation; those are not premature
+Lab blockers. PR #48 remains parked.
+
+**Source universe and corroboration.** The canonical sequence is:
+
+`SOURCE UNIVERSE FIRST → ACQUIRE ONCE → FREEZE CORPUS → SEMANTICS`
+
+Product/source governance defines the finite approved source universe and
+applicability rules. Builder acquires approved sources; semantic tasks
+interpret only the frozen corpus. A semantic result may expose a coverage gap
+but cannot trigger external research or add a source. New source families
+(including ASIC, GrantConnect, courts, specialist regulators or tender
+systems) require a separate sourcing decision and acquisition pass. Bounded
+specialist applicability may be predeclared by governance. **BUILDER DOESN'T
+DO DISCOVERY / BUILDER DOESN'T DO RESEARCH.** Human or Chat product research
+may separately propose an additional source family.
+
+A proposition may enter CharityGraph when supported by an approved source and
+represented according to that source's evidentiary role. Independent
+corroboration is not universal unless a governed claim family requires it.
+Annual reports may support charity-reported grants, activities or claimed
+implementation; Wikipedia may support qualified context/notability; ACNC/ATO
+filings may support source-reported regulatory/financial facts. First-party
+language does not establish independently observed practice or verified
+compliance, and semantic results do not automatically trigger corroboration
+search. Overlap may add corroboration, conflict or authority.
 
 ## E. Parked production-runtime backlog
 
