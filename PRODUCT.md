@@ -408,6 +408,8 @@ Private CLASSIE processing is approved. Public release remains permission-gated.
 
 ## Semantic reliability and reproducible releases
 
+The approved Native architecture is facet-based, representation-first and promotion-governed; see [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). V1–V3 remain parked experiments.
+
 CharityGraph uses model-assisted interpretation, which may be stochastic. It does not hide that fact by claiming deterministic inference. Valid semantic results are persisted with provenance and reused when task material is unchanged, so release reproducibility does not require rerunning unchanged LLM tasks. Technical replication is an explicitly authorised evaluation method that measures semantic repeatability separately from release identity. Downstream developers should distinguish stable release identity, empirical semantic reliability and genuine evidence-backed temporal change.
 
 Product builders also need stable, versioned semantic results and explicit reliability and coverage metadata.

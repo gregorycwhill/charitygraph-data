@@ -6,6 +6,8 @@
 
 ## 1. Delivery rule
 
+Native induction and promotion constraints are governed by [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md); no V4 implementation is implied by the parked V1–V3 experiments.
+
 Implement in small PRs that each close a testable vertical or infrastructural gap. Do not implement the entire conceptual model, migrate the archaeology tree or publish vNext in one tranche.
 
 Every PR begins from current `main`, names its authority documents and declares:

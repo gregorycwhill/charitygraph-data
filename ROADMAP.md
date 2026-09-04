@@ -198,6 +198,8 @@ P0/P1 can proceed independently of full-card Builder implementation. P2 can use 
 
 ## Semantic feasibility checkpoint (2026-08-31)
 
+Native induction sequencing and the parked V1–V3 findings are governed by [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). The next Native experiment remains deliberately unspecified; further Native experiments require separate experimental authorisation.
+
 The generic whole-card feasibility and packet-economics question is now
 substantially reality-tested across rich, sparse-regulator and modest-website
 evidence shapes. This does not establish universal validity, completeness or

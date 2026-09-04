@@ -1,17 +1,17 @@
 # CharityGraph Current State
 
-**Status date:** 4 September 2026
+**Status date:** 5 September 2026
 
-**Status:** Current through the completed and parked Section 15 V1E broad-lens Semantic Lab campaign
+**Status:** Current through the completed and parked Section 15 V1E broad-lens Semantic Lab campaign, Native induction V1–V3, the V3 forensic postmortem, and the approved Native architecture decision
 
 ## 1. Repositories
 
-| Component | Repository | Current `main` | State |
+| Component | Repository | Verified external head / status reference | State |
 |---|---|---|---|
-| Builder | `gregorycwhill/charitygraph` | `58318408e39606dfbe587bf6d305a5e17b78fc17` | Production foundations, native discovery v2 and merged v0.6 experiment mechanics |
-| Data | `gregorycwhill/charitygraph-data` | `9b54800cd6e67d7a12b6a2849720fe7874a57555` (Data main at tranche start) | Canonical contracts, releases and governance |
-| Viewer | `gregorycwhill/charitygraph-viewer` | `cd6f3720f664a29e0ca7ed8be19797e573fcdfc8` | Existing deployed Viewer; unchanged by this state update |
-| Playbooks | `gregorycwhill/charitygraph-playbooks` | `6466e04` | Initial product contract, base policy, contribution guidance, schema and example; no production catalogue |
+| Builder | `gregorycwhill/charitygraph` | `2a7110554bee56829b294b2d423ac477e59d8780` (verified external head) | Production foundations; PR #50 remains experimental, open and unmerged |
+| Data | `gregorycwhill/charitygraph-data` | this canonical Data revision | Canonical contracts, releases and governance |
+| Viewer | `gregorycwhill/charitygraph-viewer` | `bd169f612fbc86bb6bfa140d48672485fced20be` (verified external head) | Existing deployed Viewer |
+| Playbooks | `gregorycwhill/charitygraph-playbooks` | `dbd7e0816e2560666dede01986cab4e6d59bb929` (verified external head) | Initial product contract; no production catalogue |
 
 ## 2. Immutable public release
 
@@ -72,6 +72,8 @@ The active documentation branch records, subject to eventual merge:
 These documentation changes do not alter the Builder/Data full-card critical path or claim a production Playbooks catalogue, hosted inference or Viewer integration.
 
 ## 10. Complete-card semantic experiment position
+
+The Native V1–V3 architecture decision is captured in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). Native remains facet-based and experimental; V3 was not a completed Luna-versus-Terra comparison.
 
 Through the merged Builder PR #35, complete-card feasibility has been
 demonstrated across rich, sparse-regulator and modest-website evidence shapes.
