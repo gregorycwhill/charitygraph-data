@@ -8,7 +8,7 @@
 
 CharityGraph uses multiple schemes because no single hierarchy can faithfully represent legal purpose, beneficiaries, operational activity, participation, fundraising, finance, outcomes, ethos and public goals. External schemes are adopted where they provide authority or interoperability. Native vocabularies fill documented gaps.
 
-The approved Native architecture decision is recorded in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). Native is a family of compatible facets, not a universal hierarchy; representation precedes promotion.
+The approved Native overlay architecture is recorded in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). Native overlays coexist with canonical representations; structural roles and external assignments remain in their existing governed boundaries.
 
 Every scheme considered must have a visible research and disposition record. Sector insiders and researchers should be able to see whether a familiar scheme was adopted, adapted, mapped, deferred or rejected, and why.
 
