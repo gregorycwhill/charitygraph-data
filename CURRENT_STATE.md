@@ -1,6 +1,6 @@
 # CharityGraph Current State
 
-**Status date:** 31 August 2026
+**Status date:** 4 September 2026
 
 **Status:** Current through the completed and parked Section 15 V1E broad-lens Semantic Lab campaign
 
