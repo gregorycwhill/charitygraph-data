@@ -73,6 +73,8 @@ These documentation changes do not alter the Builder/Data full-card critical pat
 
 ## 10. Complete-card semantic experiment position
 
+The Native V1–V3 architecture decision is captured in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). Native remains facet-based and experimental; V3 was not a completed Luna-versus-Terra comparison.
+
 Through the merged Builder PR #35, complete-card feasibility has been
 demonstrated across rich, sparse-regulator and modest-website evidence shapes.
 The current implementation hypothesis is **Luna primary semantic producer →

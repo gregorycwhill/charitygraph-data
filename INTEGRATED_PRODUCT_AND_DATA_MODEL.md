@@ -1976,4 +1976,6 @@ CLASSIE payloads may be loaded privately at build time when rights permit. Their
 
 ## 29. Semantic reliability and replay
 
+Native facet, promotion and lifecycle boundaries are captured in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md).
+
 A ModelResult is a durable, provenance-bearing semantic measurement. When production task material is unchanged, an existing valid result is ordinarily reused; a technical replicate is a separate evaluation measurement and never a replacement result. Publisher/source role and proposition-specific authority are material context for interpretation. A governed subject is not removed merely because a later stochastic discovery does not enumerate it. These principles do not create a new public schema or replicate-specific database table.

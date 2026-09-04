@@ -67,6 +67,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Coverage, model economics and open curation | `COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md` |
 | Source, evidence, provenance, adjudication and release governance | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` |
 | Taxonomies, external schemes and native vocabularies | `TAXONOMY_AND_SCHEME_GOVERNANCE.md` |
+| CharityGraph Native architecture decisions | `CHARITYGRAPH_NATIVE_ARCHITECTURE.md` |
 | Domain ownership and research-design status | `DOMAIN_PROFILE_INDEX.md` |
 | Current public release | `PUBLIC_CONTRACT_0_5.md`, its schemas and immutable manifest |
 | vNext product and future-contract decisions | `PUBLIC_VNEXT_DECISION_LOG.md` |
