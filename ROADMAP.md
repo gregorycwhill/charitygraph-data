@@ -211,3 +211,5 @@ section 16; an evaluation-rich case for section 18; and then the first bounded
 CharityGraph Native induction once the observation corpus is adequately
 diverse. Fundraising, ethos and other specialist profiles remain on the roadmap
 but are not blockers for those experiments.
+
+Native roadmap sequencing follows the overlay architecture decision in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md): canonical semantic objects precede optional Native-overlay discovery and governed promotion. V1–V4R are bounded learning evidence, not a completed Native lifecycle or production catalogue.

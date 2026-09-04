@@ -125,7 +125,7 @@ these figures describe experiment shape and economics only.
 
 ## Implementation direction
 
-Native induction and promotion are governed by [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md); the V1–V3 experiments do not establish a universal Native hierarchy or a V4 design.
+Native induction and promotion are governed by [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). Native is an optional overlay on canonical semantic objects, not a competing representation family; V1–V4R do not establish a universal Native hierarchy or completed facet lifecycle.
 
 Implement the shared chain as frozen corpus -> representation -> whole-card
 knowledge -> persisted observations/relationships -> task-specific blind views

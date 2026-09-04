@@ -1,45 +1,56 @@
-# CharityGraph Native architecture decision
+# CharityGraph Native overlay architecture decision
 
-**Status:** Approved architecture capture from Native induction experiments V1–V3
+**Status:** Approved architecture capture following Native induction V1–V4R and the V4R evidence-reconciliation review (5 September 2026)
 
-**Scope:** Private Semantic Lab and prospective governed Builder design. This document does not authorise a V4 experiment, a public release, or a production Native catalogue.
+**Scope:** Private Semantic Lab and prospective governed Builder design. This document does not authorise a new experiment, public release, or production Native catalogue.
 
 ## Decision
 
-CharityGraph Native is a governed family of native semantic vocabularies and facets, not one universal master taxonomy or giant hierarchy. Section 19 remains the classification and semantic-lens projection surface; observations do not require a Native assignment.
+CharityGraph Native is an optional, governed family of compatible semantic facets. It is an overlay, not a representation family competing with regulatory facts, identity, programs/services, graph relationships, geography, finance, governance, positions/commitments, outcomes/evaluation, temporal history, evidence or coverage. An evidence-backed proposition may first produce one or more canonical semantic objects and may then independently instantiate zero or more external classification assignments and/or Native overlay instances. Native never replaces the underlying canonical object, observation, relationship or fact.
 
-Semantic representation precedes Native promotion. Observations may represent source/regulatory facts, identity attributes, program/service structure, graph relationships, geography, financial or temporal facts, evidence/coverage metadata, external taxonomy assignments, or native semantic candidates. These representations are not interchangeable, and a concise model label is not sufficient reason to create a Native concept.
+### Durable semantic sequence
 
-Native fills demonstrated semantic gaps rather than duplicating canonical representations. Regulatory status/classification, finance, geography, explicit relationship instances, evidence limitations/absence, and external taxonomy assignments retain their existing authority boundaries. A native relationship-role vocabulary may describe a relationship type but does not replace the relationship instance.
+`governed observations` → `canonical semantic objects` → `canonical attributes / roles / structures / source-role semantics` → `optional classification-overlay instances` → `facet-bounded Native candidate induction` → `bounded tending and governed promotion/versioning` → `Native assignments` → `separately governed mappings to external schemes`
 
-Native may contain multiple typed vocabularies or facets, including the experimental operational activity, participation, fundraising and cautiously governed ethos/conduct areas. V1–V3 do not freeze an exhaustive facet list. Parent/child hierarchy is meaningful only within a compatible semantic facet or concept family; cross-facet relationships must not be forced into parentage.
+The word “residual” may describe only a semantic dimension not adequately represented elsewhere. An observation is not rejected from canonical representation before it can be Native-eligible.
 
-## Candidate discovery and promotion
+## Four distinct things
 
-Model-discovered concepts are provisional candidates. Singletons are permitted in the Semantic Lab, but recurrence, cross-organisation reuse, distinctiveness, product usefulness, representation coverage and stewardship review inform promotion; no fixed observation or organisation threshold is imposed.
+* **Canonical semantic object:** an evidence-linked representation of what the source supports, including organisation/program/service facts, financial flows, relationships, locations, governance, outcomes, commitments and history.
+* **Native overlay instance:** an evidence-linked statement that a canonical object or observation instantiates a reusable CharityGraph-specific classification dimension. It coexists with the canonical object (for example, a fundraising inflow may also instantiate a fundraising-mode overlay).
+* **Native candidate concept:** a provisional reusable abstraction induced from one or more overlay instances. A concise model label is not canonical by itself.
+* **Native assignment:** a governed assertion that a subject, scope or object instantiates a promoted/versioned Native concept, with supporting governed observations reachable through lineage.
 
-The emerging workflow is:
+## Eligibility and anti-promotion boundaries
 
-\`governed observations → representation-family decision → native-eligible residuals → facet-bounded concept discovery → candidate retrieval/grouping → bounded tending → governed promotion/versioning → assignment → separately governed external mappings\`
+Positive eligibility is a reusable analytical distinction such as a type, mode, practice, participation form, operational activity or fundraising mechanism that is not adequately represented by existing canonical structure or a governed external scheme. It should remain meaningful when names, dates, amounts, locations and source identifiers change. This is a design heuristic, not a deterministic Python rule. Singleton candidates are permitted; recurrence and cross-organisation reuse inform promotion but are not fixed thresholds.
 
-Embeddings are retrieval and candidate-discovery aids only.
+Normally not Native by itself: organisation/person names; named program/project/event instances; ABNs and registration identifiers; legal identity/form; source-reported regulatory status; external taxonomy assignments; amounts, accounting line items, dates, locations or beneficiary counts; evidence absence/quality metadata; source identity; individual relationship instances; and ordinary graph relationship roles already supported canonically. Native must add analytical value beyond these representations.
 
-## Provisional model-role findings
+Structural roles such as operator, deliverer, funder, sponsor, partner, auspice, network membership and trustee remain governed graph semantics where supported. A future relationship-oriented facet is not established by V1–V4R; it would require additional value beyond the structural role.
 
-Luna demonstrated inexpensive provisional discovery, attachment and meaningful tending; its V3 gardener reduced the provisional catalogue from 93 to 80 active concepts with mechanically valid lineage. Terra is neither established as canonical/superior nor rejected: all five heterogeneous whole-catalogue tending calls hit the 6,000-token ceiling and were not applied. Future Terra evaluation, if undertaken, should use smaller compatible neighbourhoods.
+## Legitimate dual representation
 
-V3 was not a completed Luna-versus-Terra gardener comparison. Terra remained at the untended 93-concept base, so action disagreements are not gardener disagreements. The 58-observation comparison set had prior concept-support exposure and is not clean out-of-sample evidence. Future evaluation sets must be frozen before ancestor induction or seed generation.
+Dual representation is expected where semantics differ: a fundraising observation may remain a finance/resource-flow object and also have a fundraising-mode overlay; a program may have participation-mode overlays; governance structures may have reusable practice overlays; operational activity may be overlaid while the named service remains its own scope; and an explicit ethos/conduct proposition may have an overlay without inferring ethos from ordinary behaviour.
 
-Attachment is semantic inference rather than deterministic lookup. The accidental repeated Luna sweeps yielded 147/180 exact attachment-set agreement (81.7%), median Jaccard 1.0 and mean approximately 0.857. Exact output identity is not a general acceptance rule; Factory policy must explicitly handle stochastic assignments, review and correction.
+## Experimental findings and interpretation
 
-## Lifecycle and chronology
+V1–V3 are bounded architecture-learning experiments. V4 is **ORCHESTRATION-INVALID / NOT ARCHITECTURE EVIDENCE**. V4R is **REPRESENTATION-FIRST REALITY-TESTED / NATIVE-ELIGIBILITY BOUNDARY UNRESOLVED / FACET LIFECYCLE NOT TESTED**.
 
-The Native edit grammar needs retaining, renaming, redefining, merging, splitting, parent change, parent removal/rooting, deprecation and explicit predecessor/successor lineage. A candidate may ultimately be represented outside Native concept space as an attribute, relationship, evidence annotation or other governed representation. Final production schema names are deliberately unspecified here.
+V4R recorded 263/263 corrected Luna disposition coverage, 288 canonical semantic objects and four Luna Native candidates. Four candidates reflects that model/task contract, not an estimate that 1.52% of semantics are inherently Native. An independent Terra audit paired 87 observations: Luna Native/Terra Native 2, Luna Native/Terra non-Native 0, Luna non-Native/Terra Native 50, and Luna non-Native/Terra non-Native 35. Exact representation-family-set agreement was 26/87, Native-presence agreement 37/87 and facet-set agreement 42/87. Boundary pressure generated 62 proposals, of which 28 were fully mechanically grounded; the boundary schema omitted governed facet identity and did not validly test facet qualification. No facet discovery/gardening lifecycle or clean unseen-organisation evaluation corpus ran.
 
-V1 produced 263 observations, 7 provisional concepts and sparse transfer with 37/54 holdout cases lacking concepts. V2 expanded the sequential Luna catalogue to 93; tending was not applied because of orchestration and residual induction had schema-routing limitations. V3 comprised 58 sequential transmissions, recorded USD 1.670184 runtime cost, completed Luna gardening, incomplete Terra gardening, auxiliary discovery, 26 mechanically valid Terra prefix operations and the accidental Luna repeatability dataset. These are bounded architecture-learning results, not Factory performance commitments.
+These bounded results falsify the assumption that one mutually competitive representation-disposition decision stably determines Native eligibility. They do not establish that Luna is insufficient, Terra is preferred, Terra’s extra Native flags are correct, or that Native should be broad or sparse. Canonical representation and optional Native-overlay discovery/promotion must remain separate. Model choice is experimental.
 
-## Next experiment boundary
+Examples such as community-led participation, online fundraising alongside finance representation, remote governance participation and structured-giving support may illustrate future review. World Vision Australia, World Vision New Zealand, named organisation anchors and named project anchors illustrate that reusable-looking labels are not sufficient. No example is canonical merely by appearing here.
 
-The next Native experiment is intentionally unspecified until this decision is merged. It should consider native-eligible facets, a clean evaluation set, bounded tending neighbourhoods, corrected lifecycle semantics, and an explicit distinction between discovery and canonical promotion. No V4 prompt, model, corpus, call count or implementation design is approved by this document.
+## Facets and lifecycle
+
+Native remains a family of compatible facets; no exhaustive production registry is frozen. Operational activity, participation and fundraising are strongly motivated experimental areas. Governance practice, capability/access, ethos/conduct and evaluation method remain cautious experimental areas. Additional facet admission is empirical and governed. Parent/child hierarchy remains facet-local and semantically compatible.
+
+The lifecycle must support retaining, renaming, redefining, merging, splitting, parent changes/removal/rooting, deprecation and explicit predecessor/successor lineage. Discovery, candidate grouping, tending, promotion/versioning and assignment are distinct stages with evidence lineage throughout.
+
+## Future experiment constraints
+
+A future experiment should reuse canonical objects, extract optional overlays separately, enforce anti-instance/anti-duplication boundaries, preserve lineage mechanically, induce within compatible facets, distinguish discovery from promotion, test transfer/recurrence and defer model comparisons until the contract is stable. High recall is not ontology quality, and sparse output is not proof that Native semantics are rare. Exact model, call-count and budget plans remain unspecified here.
 
 This decision preserves the six named, non-equivalent classification lenses and does not alter North Star sections 1–20 or source-universe policy.

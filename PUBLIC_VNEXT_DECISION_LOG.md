@@ -138,4 +138,4 @@ universal publication prerequisite.
 
 **Status:** Approved
 
-Native is a governed family of compatible semantic facets, not a universal master taxonomy. Representation precedes promotion; model-discovered concepts remain provisional candidates, and V1–V3 are parked architecture-learning experiments rather than a completed Luna-versus-Terra comparison. See [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md) for the durable decision record.
+Native is an optional overlay on canonical semantic objects and a governed family of compatible facets, not a competing representation family or universal master taxonomy. Representation precedes overlay discovery and promotion; model-discovered concepts remain provisional candidates, and V1–V4R are bounded architecture-learning experiments rather than a completed lifecycle or Luna-versus-Terra comparison. See [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md) for the durable decision record.

@@ -2,7 +2,7 @@
 
 **Status date:** 5 September 2026
 
-**Status:** Current through the completed and parked Section 15 V1E broad-lens Semantic Lab campaign, Native induction V1–V3, the V3 forensic postmortem, and the approved Native architecture decision
+**Status:** Current through the completed and parked Section 15 V1E broad-lens Semantic Lab campaign, Native induction V1–V4R and reconciliation review, and the approved Native overlay architecture decision
 
 ## 1. Repositories
 
@@ -73,7 +73,7 @@ These documentation changes do not alter the Builder/Data full-card critical pat
 
 ## 10. Complete-card semantic experiment position
 
-The Native V1–V3 architecture decision is captured in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). Native remains facet-based and experimental; V3 was not a completed Luna-versus-Terra comparison.
+The Native overlay architecture decision is captured in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). Native remains optional, facet-based and experimental; V4 was orchestration-invalid, and V4R did not test facet lifecycle or establish Native eligibility prevalence.
 
 Through the merged Builder PR #35, complete-card feasibility has been
 demonstrated across rich, sparse-regulator and modest-website evidence shapes.
