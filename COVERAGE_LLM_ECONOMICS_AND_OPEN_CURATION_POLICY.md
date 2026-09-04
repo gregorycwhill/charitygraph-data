@@ -204,3 +204,41 @@ guarantee.
 Optimise semantic yield per cent of LLM compute, not model-call avoidance. Development experiments may use normal or rack rates within approved budgets; production SHOULD use batch, flex or another economical mode where appropriate, without hard-coding a permanent discount. Bundle compatible logical tasks when benchmarked, while retaining independent validation, lineage and invalidation.
 
 Economic comparison includes semantic coverage, quality/error, model cost, implementation and maintenance cost, review burden and material latency. A total-cost benchmark alone does not authorise local semantic NLP or lexical rules: custom/local semantic NLP and deterministic semantic heuristics require explicit product-owner approval recorded in SEMANTIC_HEURISTIC_APPROVALS.md.
+
+## 10. Lab versus Factory operating boundary
+
+Semantic Lab work is for information gain. For cheap bounded experiments,
+ceilings primarily prevent runaway or duplicate spend; imperfect replay or
+reconstruction is acceptable when results remain interpretable; uncertainty is
+documented; independent tasks normally continue after local failures; and a
+20–30 cent experiment may proceed when there is some risk the result later
+proves unusable. Stop for likely-useless work or genuine safety, billing,
+corpus or provenance failures.
+
+Factory and scaling work apply stricter standards: exact task identity,
+restart/replay safety, duplicate prevention, durable billing/accounting and
+cost optimisation. These remain later scaling requirements and are not
+premature Lab blockers. PR #48 remains parked.
+
+## 11. Source universe, evidence role and corroboration
+
+The governing sequence is **SOURCE UNIVERSE FIRST → ACQUIRE ONCE → FREEZE
+CORPUS → SEMANTICS**. Product/source governance defines the finite approved
+source universe and applicability rules; Builder acquires approved sources;
+semantic tasks interpret only the acquired corpus. A semantic result may
+expose a coverage gap but may not trigger new-source research. Adding ASIC,
+GrantConnect, courts, specialist regulators, tender systems or another source
+family is a separate sourcing decision followed by a new acquisition pass.
+Wording such as “claim-, risk- or domain-triggered specialist source” does not
+authorise model/runtime-triggered research. **BUILDER DOESN'T DO DISCOVERY /
+BUILDER DOESN'T DO RESEARCH.**
+
+A material proposition needs an approved source and representation consistent
+with that source's evidentiary role; independent corroboration is not a
+universal prerequisite unless a claim family explicitly requires it. Annual
+reports can support charity-reported grants, activity or claimed
+implementation; Wikipedia can support qualified context/notability; ACNC/ATO
+filings can support source-reported regulatory/financial facts. First-party
+language does not establish independently observed practice or verified
+compliance, and semantic output does not automatically initiate corroboration
+search.

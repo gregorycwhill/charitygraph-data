@@ -103,3 +103,33 @@ ground-truth work may inspect broader regulator, court, journalism, research or
 specialist material, but that material does not enter production automatically.
 Repeated gaps may motivate a separate governed proposal for a new source family;
 admission is an explicit sourcing decision applying across relevant sections.
+
+### CG-D032 — Semantic Lab versus Factory boundary
+
+**Status:** Approved
+
+Cheap bounded Semantic Lab experiments optimise information gain and may
+document uncertainty or tolerate imperfect replay when interpretable. Factory
+and scaling work retain stricter restart, identity, duplicate-prevention,
+accounting and cost controls; these are not premature Lab blockers. PR #48
+remains parked.
+
+### CG-D033 — Domain-specific lens boundaries
+
+**Status:** Approved
+
+Lens contracts are domain-specific precision/recall control surfaces. Each
+defines a positive semantic object, anti-uplift boundaries, expected legitimate
+cross-domain reuse and zero-candidate meaning. Neither the permissive nor the
+corrected Section 15 V1E prompt set is canonical production policy; fan-out is
+diagnostic, not a validity or publication rule.
+
+### CG-D034 — Frozen source universe and evidentiary role
+
+**Status:** Approved
+
+The governing sequence is SOURCE UNIVERSE FIRST → ACQUIRE ONCE → FREEZE CORPUS
+→ SEMANTICS. Builder does not discover or research new sources from semantic
+results. Propositions require an approved source represented according to its
+evidentiary role; independent corroboration is claim-family-specific, not a
+universal publication prerequisite.
