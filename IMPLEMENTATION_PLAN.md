@@ -2,11 +2,15 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
+**Current status:** Phase 4 is complete; Phase 5 - Top-100 full-card claim-family build - is active. The legacy Phase 4 active-scope label immediately below is historical and superseded.
+
 **Active scope:** Phase 4 — cross-domain semantic packaging and economics
 
 The former Phase 3 closeout sequence below is retained as completed history.
 
 **Authoritative immediate scope:** Phase 4 - cross-domain semantic packaging and economics. The legacy immediate-scope label below is superseded and retained only as historical wording.
+
+**Current authoritative scope:** Phase 5 - Top-100 full-card claim-family build. Phase 4 is completed history below.
 
 **Immediate scope:** Phase 3 closeout — integrated complete-card graph and private projection
 
@@ -401,7 +405,46 @@ At Phase 4 end, recommend the simplest packaging/routing pattern justified for
 the subsequent Top-100 full-card build. Do not start Phase 5 here. Keep
 interruption-safe execution a prerequisite before paid cohort scaling.
 
-No Phase 4 experiment is authorised by this documentation closeout.
+The documentation closeout originally did not authorise a Phase 4 experiment;
+P4-E1 was separately authorised and is now complete. Its bounded Factory
+candidate is: **bundle compatible constrained semantic labour on a lower-cost
+model where physical packet reuse is economical; split and route genuine
+semantic boundary/judgement tasks to stronger reasoning. Preserve independent
+logical task contracts throughout.** This is task-specific evidence, not a
+universal model/provider rule. Total cost of intelligence includes provider
+cost plus review, supervision and orchestration burden.
+
+## COMPLETED PHASE 4 DISPOSITION - P4-E1
+
+P4-E1 completed 15 intended semantic executions through 16 transmitted provider
+events: one pre-output HTTP 400 strict-schema rejection and one authorised
+mechanical correction, with 18 completed logical outputs, zero accidental
+resends, zero source acquisition and USD `0.280197` observed provider cost.
+Bundled Luna was useful for compatible constrained work; split stronger routing
+materially improved the reviewed relationship boundary. Raw semantic yield is
+not sufficient without reviewed useful yield. Independent logical
+task/profile/schema/evidence/validation/lineage identities remain mandatory
+when tasks share a physical call. The experiment answers the Phase 4 question
+sufficiently for Factory progression; no second paid Phase 4 experiment is
+required.
+
+The candidate is route-by-task-difficulty, not by pipeline stage. Stronger
+routing is evidence-based and task-specific, not provider/model dogma; future
+Factory operation must continue to evaluate the candidate rather than treating
+it as a universal relationship rule.
+
+## ACTIVE SCOPE - PHASE 5 TOP-100 FULL-CARD CLAIM-FAMILY BUILD
+
+Phase 5 is active, but implementation has not started. Inherit the existing
+constraints: source universe first -> acquire once -> freeze corpus ->
+semantics; Builder does not do discovery or research; cards remain projections
+over governed knowledge; primary extraction remains card-blind; logical task
+contracts remain independently governed; null/mixed/negative/inconclusive
+states remain first-class; unresolved relationship endpoints remain unresolved;
+Python does not infer semantic equivalence or teach English; Native remains
+parked; Viewer remains an inspector rather than a comparator; and ranking,
+recommendation and grantmaking work remain out of scope. Do not invent more
+detailed Phase 5 implementation tasks here.
 
 ## Propagated complete-card implementation pattern
 
