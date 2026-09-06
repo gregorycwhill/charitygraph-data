@@ -1,14 +1,18 @@
 # CharityGraph Builder vNext Implementation Plan
 
-**Status:** Canonical implementation sequence, version 2.0-draft
+**Status:** Canonical implementation sequence, version 2.1-draft
 
-**Immediate scope:** First private reality slice only
+**Immediate scope:** Phase 3 closeout — integrated complete-card graph and private projection
 
 ## 1. Delivery rule
 
 Native overlay induction and promotion constraints are governed by [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md); no V4 implementation or completed facet lifecycle is implied by the parked V1–V4R experiments.
 
-Implement in small PRs that each close a testable vertical or infrastructural gap. Do not implement the entire conceptual model, migrate the archaeology tree or publish vNext in one tranche.
+Implement in bounded, substantive PRs that each close a meaningful vertical or infrastructural question. Do not implement the entire conceptual model, migrate the archaeology tree or publish vNext in one tranche. Do not turn every repair into a giant implementation tranche.
+
+Absorb local implementation defects inside the tranche when experimental integrity remains intact; do not turn every repair into a new project checkpoint.
+
+After two consecutive implementation/debugging tranches produce no new product, semantic or architectural learning, explicitly reassess whether the work remains on the critical path.
 
 Every PR begins from current `main`, names its authority documents and declares:
 
@@ -60,6 +64,8 @@ tests/
   profiles/
   evaluation/
 ```
+
+Experiment orchestration belongs outside the importable production package unless a component has earned promotion into reusable Builder infrastructure. An illustrative layout is `experiments/semantic_labs/` and `experiments/native/`, with exact paths adapting to repository conventions. Existing Native experiment modules under `src/charitygraph/` are **EXPERIMENT LOCATION DEBT — FIX BEFORE MERGE / MILESTONE CLEANUP**. That cleanup is not part of this tranche.
 
 Runtime databases, caches, downloaded bodies, model payloads and generated previews live under configured runtime/archive roots and are ignored by Git. Durable design and small synthetic fixtures belong in Git. Archaeology reports stay where explicitly governed; they are not automatically committed.
 
@@ -170,11 +176,15 @@ Before each field is implemented, assign one method:
 | Method | Use | Examples |
 |---|---|---|
 | Deterministic | Stable syntax, exact arithmetic or identifiers | ABN validation, content hashes, exact joins, totals |
-| Model-assisted | Open language/visual judgment | Program extraction, relevant evidence, permitted external/native taxonomy and SDG assignment; CLASSIE is optional and rights-gated |
+| Model-assisted | Constrained extraction/mapping/classification against substantially specified structure; or judgement/abstraction involving ambiguity, semantic quality, boundary adjudication or constructive abstraction | Program extraction, relevant evidence, permitted external/native taxonomy and SDG assignment; CLASSIE is optional and rights-gated |
 | Human-reviewed | Consequence, cultural authority or unresolved contradiction | High-risk conduct, Indigenous governance, material disputes |
 | Deferred | No sufficient value or evidence in the slice | Full outcome scoring, sector-wide direct observation |
 
 A field may move method only through a documented decision and evaluation result.
+
+Current working evidence is that lower-cost models are suitable defaults for high-volume constrained semantic work, while stronger-reasoning models should be preferred or tested for difficult adjudication and constructive abstraction. Python owns deterministic identity, provenance, schema, persistence and invariants. Human review owns high-consequence, cultural-authority and unresolved cases, plus product priority and stopping. Named models such as Luna, Terra and Sol remain configurable implementation choices, not permanent product policy. Route by task difficulty, not pipeline stage.
+
+A bounded V5RR lesson is: a null from a constrained lower-capability model is valid output, but on a constructive abstraction task it is not automatically strong negative evidence about the underlying corpus. This does not establish that Terra is superior for every abstraction task.
 
 ## 6. Reality cohort design
 
@@ -193,6 +203,8 @@ Select about ten organisations covering:
 
 Use public evidence already lawfully available, plus a carefully selected subset of archaeology evidence. Freeze subject identifiers and expected source families before coding. Do not tune against the holdout subset.
 
+For the immediate integration closeout, first use approximately 2–3 already-rich reality charities with frozen evidence and reusable valid outputs rather than acquiring a fresh broad cohort. Retain the broader varied-charity cohort as the eventual Phase 3 reality-cohort design.
+
 ## 7. Error-handling strategy
 
 Classify failures as:
@@ -210,6 +222,8 @@ Classify failures as:
 
 Fix a class only when the change is supported by multiple examples or a clear invariant. A novel phrase is not itself a new parser requirement.
 
+A local defect is not an experiment stop if it can be fixed without corrupting evidence, identity, billing, holdout isolation or production state. Reserve true stops for material conditions such as corpus corruption, campaign-scale identity corruption, ambiguous duplicate billing/resend risk, hard budget breach risk, holdout leakage, private/public contamination or production contamination.
+
 ## 8. Cost controls
 
 - dry-run task plans before paid execution;
@@ -220,6 +234,8 @@ Fix a class only when the change is supported by multiple examples or a clear in
 - cap experimental runs separately from production cohort envelopes;
 - print a projected/actual cost report for every run;
 - never commit credentials or provider payloads containing private material.
+
+Optimise useful semantic/product learning per unit of total cost of intelligence: model, agent and human attention, not minimum token cost. A more capable model at a narrow judgement bottleneck may be economically preferable if it avoids repeated implementation or supervision loops.
 
 ## 9. Documentation in each PR
 
@@ -250,6 +266,8 @@ charity or section:
 9. preserve contract 0.5 unchanged;
 10. stop without modifying Data or Viewer.
 
+The integrated slice must also demonstrate coherent cross-domain subject/scope ownership; directed relationships and roles surviving persistence and projection; governed information plus explicit missingness across the North Star projection; a private projection compiled from governed knowledge rather than stored as a mega-record; and operator, deliverer, funder, sponsor, partner, auspice and network-context roles where evidence supports them.
+
 Builder/Data projections must preserve those missingness distinctions before
 any Top-100 scale decision. They must not collapse them into one null, false,
 `unknown` or generic `failed` state, although a given experiment need not
@@ -264,55 +282,68 @@ Reporting-group is scope structure, not a classification lens. Assertions attach
 
 Private CLASSIE payloads may be loaded, hashed and processed by Builder when lawfully injected at runtime. Taxonomy assignments carry independent publication eligibility and default to withheld. If publication permission is denied, CLASSIE tasks stop and dependent projections are withheld while native, ACNC, ATO, SDG, program/service and evidence knowledge remains intact.
 
+CharityGraph Native remains optional, sparse, facet-based and experimental. The real V5RR quality/workshop lifecycle executed through catalogue freeze: 135 clean training overlays received real Terra quality review; operational activity, participation and fundraising mode qualified mechanically and substantively for workshop entry; six Luna/none discovery calls returned zero concepts; final catalogues were empty; four Luna holdout-extraction calls over 36 canonical holdout objects returned zero overlays; transfer therefore remained untested. No Native production catalogue or product exposure is implied. Native is parked, not an active Phase 3 blocker.
+
 ## Complete-card architecture and sequencing rule
 
 Acquire broadly once; preserve source-native evidence; freeze a reusable charity evidence corpus; assemble task-specific semantic packets; apply cost-efficient semantic passes; persist independently governed domain knowledge; compile analyst/public projections. Acquisition is charity/source oriented and semantic interpretation is domain/profile oriented. A physical request may bundle compatible logical tasks, but task identity, schema/profile, scope, evidence, validation, lineage and governed disposition remain independent. **BUILDER DOESN'T DO DISCOVERY:** semantic consumers use persisted reusable representations and do not invoke raw-document parsing or external search as an escape hatch. Do not create a giant opaque charity-analysis contract.
 
-## NEXT IMPLEMENTATION SEQUENCE — COMPLETE-CARD REALITY SLICE
+## Completed Phase 3 bounded pressure work
 
-### Step 1 — Baseline source-set acquisition / corpus manifest
+- Sections 6/11/13: boundedly pressure-tested.
+- Section 15: architecture-validated, semantic-boundary-tested, parked and not production-complete.
+- Section 16: bounded high-consequence representation/review path pressure-tested.
+- Section 18: generic Compact → specialist architecture reality-tested and parked.
+- Section 19 Native: overlay/workshop lifecycle reality-tested through freeze; holdout eligibility was zero under the current contract; transfer was untested; parked.
 
-For each selected charity, attempt ACNC Register/AIS, ATO DGR, official website, latest annual report, Wikipedia/Wikimedia context and applicable fundraising registries. Record acquisition state by source family and claim family; hash retained artefacts; preserve role, time, rights and provenance; freeze a reusable charity-corpus manifest. Do not optimise acquisition for one domain.
+None is production-complete. None currently blocks integrated Phase 3 assembly.
 
-### Step 2 — Source-native structured observations
+## NEXT IMPLEMENTATION SEQUENCE — INTEGRATED PHASE 3 CLOSEOUT
 
-Retain explicit ABN/ACNC identifiers, registration, purposes, DGR, AIS fields, filed financial values and reporting metadata mechanically. Do not route authoritative structured fields through an LLM merely for convenience.
+### Step 1 — Select 2–3 rich existing reality charities
 
-### Step 3 — Stable document segmentation / evidence representations
+Use frozen existing evidence and reusable valid results. No fresh broad paid cohort.
 
-Create reusable, bounded representations from annual reports, official sites, contextual pages and other retained prose using stable document/markup structure. Do not teach Python English or reacquire the same source per domain.
+### Step 2 — Assemble existing governed knowledge across the North Star
 
-### Step 4 — Domain task contracts for remaining North Star profiles
+Inventory valid existing knowledge across Sections 1–20. Reuse compatible prior results rather than rerunning them.
 
-Add typed contracts progressively over shared primitives, not twenty disconnected databases. The immediate bounded implementation order is:
+### Step 3 — Persist the actual cross-domain graph
 
-1. shared subject/scope plus structured activity and relationship-role semantics
-   where needed;
-2. a direct-service pressure case covering sections 6/11/13;
-3. an authoritative conduct/compliance pressure case for section 16;
-4. an evaluation-rich pressure case for section 18;
-5. the first bounded CharityGraph Native induction when corpus diversity is
-   adequate; and
-6. remaining specialist/domain hardening, including fundraising, ethos,
-   commitments, governance/workforce/finance depth and other North Star gaps.
+Stress subject/scope ownership and relationships across programs, populations/geography, participation, finance, governance/workforce, capability/access, ecosystem relationships, schemes, commitments/conduct/outcomes and classifications wherever evidence exists. Preserve operator, deliverer, funder, sponsor, partner, auspice and network-context roles where supported.
 
-Then cover the remaining North Star profiles progressively: populations/geography, participation, fundraising, finance concepts beyond source-native facts, governance, workforce, capability/capacity, relationships, schemes/accreditations, ethos, commitments, context, outcomes/evaluation and appropriately governed conduct candidates. This is a bounded empirical progression, not an instruction to implement all 20 domains at once.
+### Step 4 — Compile the private North Star inspection projection
 
-### Step 5 — Cross-domain packet experiments
+Every section should project one or more governed states such as:
 
-From the same frozen corpus, compare one multi-domain packet, compatible bundles and narrower task packets only as needed to measure quality/cost trade-offs. Bundling physical calls never merges logical contract, validation or provenance.
+- governed knowledge;
+- candidate/review required;
+- source silent;
+- unavailable;
+- not acquired;
+- not processed;
+- not applicable;
+- withheld/risk-gated;
+- stale; or
+- other governed missingness.
 
-### Step 6 — Independently governed logical result persistence
+The projection is compiled, not stored as canonical truth.
 
-Persist observations, assertions, relationships, measurements, taxonomy assignments, matters/events and coverage observations as appropriate. Never persist one model-produced dossier as canonical truth.
+### Step 5 — Diagnose actual gaps
 
-### Step 7 — Whole-charity private dossier projection
+New specialist/domain work becomes **gap-triggered**. Fundraising, workforce, ethos, notable context and other comparatively light North Star areas are not an automatic sequential Lab queue. Only authorise a specialist tranche when the integrated card exposes a material representation, scope, semantic or projection problem.
 
-Render a private analyst projection against `NORTH_STAR_TARGET_CARD.md`. Each section must show governed information, candidate/review-required information, explicit missingness/coverage, not applicable, or deliberately withheld/risk-gated state.
+### Step 6 — Close Phase 3 or run one targeted repair tranche
 
-### Step 8 — Coverage / economics / review report
+If integrated cards satisfy the Phase 3 gate, close Phase 3. If a material cross-domain structural problem prevents closure, run the smallest substantive targeted tranche necessary, then repeat the integrated projection.
 
-Report source and claim-family coverage, semantic success, review load, packet/corpus reuse, model cost, failure classes, right-tail effects and cross-domain synergies.
+### Step 7 — Phase 4 cross-domain packet economics
+
+Move packet/bundling experiments after integrated-card proof. Only then compare large multi-domain packets, compatible bundles and narrow tasks. Measure semantic yield per dollar and total supervision burden, not merely call count.
+
+### Step 8 — Coverage/economics/review report
+
+Report source/claim-family coverage, semantic success, review load, corpus reuse, model cost, failure classes, cross-domain synergies and operational/supervision burden.
 
 ## Propagated complete-card implementation pattern
 
@@ -331,3 +362,5 @@ A competent analyst should be able to inspect one charity and answer a broad set
 ## Interruption-safe execution requirement
 
 Before cohort scale, execution must be resumable without ambiguity. Durably persist task/measurement identity, authorization, transmission/send-boundary state, provider receipt, usage/cost, raw result receipt, structural validation, evidence-grounding validation and terminal task state. If transmission occurred but response or billing state is ambiguous, fail closed and do not resend merely because a lease expired or an artefact is absent. The halted Top-100 Terra attempt (ABN `48321126727`) is empirical motivation; never invent billed cost from transient output.
+
+Experiment-specific machinery such as Native catalogue reload, freeze and reconciliation layers is not automatically production infrastructure. Promote such mechanisms only when independently required by production semantics.

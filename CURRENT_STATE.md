@@ -1,14 +1,14 @@
 # CharityGraph Current State
 
-**Status date:** 5 September 2026
+**Status date:** 6 September 2026
 
-**Status:** Current through the completed and parked Section 15 V1E broad-lens Semantic Lab campaign, Native induction V1–V4R and reconciliation review, and the approved Native overlay architecture decision
+**Status:** Current through Section 15 V1E, bounded Sections 6/11/13, 16 and 18 work, the real provider-backed Native V5RR lifecycle experiment, and the accepted Phase 3 integration realignment
 
 ## 1. Repositories
 
 | Component | Repository | Verified external head / status reference | State |
 |---|---|---|---|
-| Builder | `gregorycwhill/charitygraph` | `2a7110554bee56829b294b2d423ac477e59d8780` (verified external head) | Production foundations; PR #50 remains experimental, open and unmerged |
+| Builder | `gregorycwhill/charitygraph` | PR #56 branch `charitygraph-native-v5rr-overlay-lifecycle`, final verified head `0366c625c427470ff6917b2eb31381fea9913c9c` | Open/unmerged experiment; Native experimental code is not production capability |
 | Data | `gregorycwhill/charitygraph-data` | this canonical Data revision | Canonical contracts, releases and governance |
 | Viewer | `gregorycwhill/charitygraph-viewer` | `bd169f612fbc86bb6bfa140d48672485fced20be` (verified external head) | Existing deployed Viewer |
 | Playbooks | `gregorycwhill/charitygraph-playbooks` | `dbd7e0816e2560666dede01986cab4e6d59bb929` (verified external head) | Initial product contract; no production catalogue |
@@ -46,7 +46,7 @@ Program/service v3/v3.1 is one foundation-domain implementation, not the whole p
 
 A program/service-only Top-100 Terra run using literal ACNC donation ranks 1–100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
 
-The next architectural objective is complete-card reality testing from reusable charity evidence corpora. Broad cohort scaling no longer means scaling a single semantic profile by default.
+The active Builder objective is Phase 3 closeout through integrated cross-domain graph assembly and private North Star projection using existing rich reality charities and reusable evidence/results. Broad cohort scaling and further specialist Labs are not automatically next; actual integration gaps must trigger them.
 
 ## 8. Product-family state
 
@@ -77,12 +77,18 @@ The Native overlay architecture decision is captured in [CHARITYGRAPH_NATIVE_ARC
 
 Through the merged Builder PR #35, complete-card feasibility has been
 demonstrated across rich, sparse-regulator and modest-website evidence shapes.
-The current implementation hypothesis is **Luna primary semantic producer →
-deterministic validation/persistence → Terra sampled/risk-triggered assurance;
-Sol exceptional**, not a permanent product requirement or performance guarantee.
-Named-model routing is current implementation state, not permanent product
-policy. Domain-specific validity, activity-role contracts and Native induction
-remain open empirical work.
+The current working hypothesis is: constrained/high-volume semantic
+extraction/mapping uses a lower-cost model such as Luna; semantic
+quality/adjudication and constructive abstraction use stronger reasoning such
+as Terra where evidence justifies it; Builder/Python owns deterministic
+identity, provenance, state and persistence; a supervisory reasoning layer
+supports cross-run integration and experiment design; and humans own product
+purpose, priorities and stopping. Named model routing is a current
+implementation hypothesis, not product policy.
+
+V5RR makes Terra's quality-review value reasonably well evidenced, while
+Terra-versus-Luna concept induction remains a hypothesis because Terra did not
+perform the corresponding V5RR discovery task.
 
 ## 11. Section 15 Semantic Lab disposition
 
@@ -94,3 +100,37 @@ is production-canonical and further prompt polishing is deferred. Section 15
 is **ARCHITECTURE-VALIDATED / SEMANTIC-BOUNDARY-TESTED / PARKED — NOT
 PRODUCTION-COMPLETE**. The next project work is not automatically another
 Section 15 experiment.
+
+## 12. Native V5RR disposition
+
+The real provider-backed V5RR lifecycle processed 135 clean training overlays.
+Terra quality review produced 55 accept, 24 reframe, 17 move-facet and 39
+reject-Native decisions. Reviewed core pools were operational activity 14,
+participation 8 and fundraising mode 9, each spanning three training
+organisations. Six real Luna/none discovery calls returned zero concepts.
+
+Six gardener/attachment calls completed over empty catalogues. Four holdout
+extraction calls covered 36 canonical objects and returned zero overlays;
+transfer was therefore untested. All 36 provider calls completed. Aggregate
+spend including retained smoke was USD 0.707979.
+
+**NATIVE OVERLAY ARCHITECTURE + WORKSHOP LIFECYCLE REALITY-TESTED / HOLDOUT
+ELIGIBILITY ZERO UNDER EXECUTED CONTRACT / TRANSFER UNTESTED / VOCABULARY
+EXPERIMENTAL / PARKED — NOT PRODUCTION-COMPLETE**
+
+The zero discovery result does not prove that the corpus contains no possible
+Native abstractions.
+
+## 13. Phase 3 state and process lesson
+
+Foundational architecture is strong and hard-domain semantic feasibility is
+substantially de-risked. The major remaining Phase 3 uncertainty is integrated
+cross-domain persistence and projection rather than another sequence of
+independent semantic lenses. Fundraising, workforce, ethos, notable context
+and other comparatively light areas should be hardened when integration reveals
+a material need.
+
+Optimise useful learning per unit of total model, agent and human attention.
+Repeated implementation/debugging without new semantic or product learning is
+a signal to reassess critical-path status. This is an implementation/current-
+state lesson, not product doctrine.

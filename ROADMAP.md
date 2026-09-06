@@ -1,6 +1,6 @@
 # CharityGraph Roadmap
 
-**Status:** Canonical product/engineering sequence, version 2.1-draft
+**Status:** Canonical product/engineering sequence, version 2.2-draft
 
 ## Outcome
 
@@ -44,14 +44,20 @@ capacity, governance, outcomes and ecosystem data: attach each observation to
 the lowest evidence-supported scope, and do not infer proposition ownership
 from domain provenance.
 
-The immediate bounded pressure sequence is: a direct-service case stressing
-sections 6 Participation, 11 Capability/capacity/access/availability and 13
-Memberships/schemes/registrations/accreditations; an authoritative section 16
-Conduct/adverse matters/compliance case; an evaluation-rich section 18
-Outcomes/impact/evaluation case; and then the first bounded CharityGraph
-Native induction once the observation corpus is sufficiently diverse.
-Fundraising, ethos and other specialist profiles remain in scope but are not
-blockers for that sequence.
+The former immediate bounded pressure sequence is now historical/completed
+bounded work. Sections 6/11/13, 15, 16 and 18 have served their bounded Phase 3
+purposes; Section 19 Native has reality-tested its optional overlay/workshop
+lifecycle through catalogue freeze. No section is production-complete.
+
+Native V5RR produced no Native concepts under the executed Luna/none discovery
+contract; 36 holdout canonical objects yielded zero Native overlays and
+transfer was not tested. Native is parked, not a current Phase 3 blocker.
+
+The active Phase 3 objective is to assemble, persist and privately project the
+integrated cross-domain graph for a small number of existing rich reality
+charities, allowing actual integration gaps—not a predetermined domain
+checklist—to trigger further specialist hardening. Fundraising, workforce,
+ethos and notable context remain in scope but are not automatically next.
 
 The direct-service structure for sections 6/11/13 has been boundedly pressure-
 tested. Section 16 has a bounded conduct/compliance design and pressure-test
@@ -81,6 +87,11 @@ Exit requires sufficient bounded evidence that:
 - claim-family coverage and material missingness states work; and
 - interruption-safe execution exists before paid cohort scaling.
 
+The remaining empirical emphasis is cross-domain subject/scope ownership,
+relationship-role survival through extraction, persistence and projection,
+explicit claim-family missingness, integrated private North Star projection,
+and production-appropriate interruption safety before scale.
+
 No universal accuracy, QA, acceptance-score or coverage threshold is implied.
 Phase 4 packaging/economics and especially Phase 5 Top-100 full-card scaling
 are subsequent stages, not the immediate next action merely because generic
@@ -88,13 +99,14 @@ whole-card extraction has been demonstrated.
 
 Section 19 remains a six-lens architecture, not a completed milestone: source-
 native ACNC/ATO foundations exist, SDG and CharityGraph CLASSIE have bounded
-experimental evidence, and CharityGraph Native induction remains an upcoming
-empirical/implementation step. “Section 19 first reality-tested” does not mean
-all classification lenses are complete.
+experimental evidence, and CharityGraph Native has reality-tested an optional
+overlay/workshop lifecycle through catalogue freeze. The executed discovery
+contract produced no Native concepts, holdout transfer remains untested, and no
+production Native vocabulary exists.
 
 ## Phase 4 — Cross-domain semantic packaging and economics
 
-Experimentally compare one large packet, compatible domain bundles and narrower task packets from the same frozen corpus. Candidate bundles include programs/populations/geography/participation; fundraising/workforce relationships/finance; governance/affiliations/ethos; finance/grants/contracts/resource relationships; programs/outcomes/evaluation; and programs with capability/availability. Measure semantic yield per dollar, not merely calls avoided. Never collapse independent logical outputs because calls are bundled.
+Experimentally compare one large packet, compatible domain bundles and narrower task packets from the same frozen corpus. Candidate bundles include programs/populations/geography/participation; fundraising/workforce relationships/finance; governance/affiliations/ethos; finance/grants/contracts/resource relationships; programs/outcomes/evaluation; and programs with capability/availability. Measure semantic yield per dollar, model routing, review burden and agent/human supervision cost, not merely calls avoided. Never collapse independent logical outputs because calls are bundled.
 
 ## Phase 5 — Top-100 full-card claim-family build
 
@@ -153,7 +165,7 @@ P0/P1 can proceed independently of full-card Builder implementation. P2 can use 
 - North Star coverage audit
 - source-family and claim-family coverage by cohort
 - cross-domain evidence reuse and LLM bundling/economics
-- model-tier routing and interruption-safe execution
+- model-tier routing, total cost of intelligence/supervision and interruption-safe execution
 - right-tail packet sufficiency and corpus refresh/reuse policy
 - scheme research, source rights/privacy/security and Indigenous governance
 - model evaluation, open curation, documentation and ADR maintenance
@@ -196,20 +208,15 @@ P0/P1 can proceed independently of full-card Builder implementation. P2 can use 
 - changing immutable release 0.5;
 - building a public API before download/Viewer and analyst workflows prove demand.
 
-## Semantic feasibility checkpoint (2026-08-31)
+## Semantic feasibility checkpoint (2026-09-06)
 
-Native induction sequencing and the parked V1–V3 findings are governed by [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md). The next Native experiment remains deliberately unspecified; further Native experiments require separate experimental authorisation.
+Generic whole-card feasibility is substantially tested. Sections 6/11/13, 15,
+16 and 18 have served bounded Phase 3 purposes. Native V5RR has served its
+current architectural research purpose and is parked; no Native vocabulary was
+established. The next Phase 3 work is integrated graph and private projection,
+not another specialist semantic experiment by default.
 
-The generic whole-card feasibility and packet-economics question is now
-substantially reality-tested across rich, sparse-regulator and modest-website
-evidence shapes. This does not establish universal validity, completeness or
-model-performance guarantees.
-
-The next bounded domain-pressure sequence is: a direct-service case emphasising
-sections 6, 11 and 13; an authoritative conduct/adverse/compliance case for
-section 16; an evaluation-rich case for section 18; and then the first bounded
-CharityGraph Native induction once the observation corpus is adequately
-diverse. Fundraising, ethos and other specialist profiles remain on the roadmap
-but are not blockers for those experiments.
-
-Native roadmap sequencing follows the overlay architecture decision in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md): canonical semantic objects precede optional Native-overlay discovery and governed promotion. V1–V4R are bounded learning evidence, not a completed Native lifecycle or production catalogue.
+Future Native work requires a newly scoped question, ideally testing whether
+stronger reasoning can induce and transfer a small defensible vocabulary rather
+than rebuilding lifecycle machinery. Native roadmap sequencing remains governed
+by the overlay architecture decision in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md): canonical semantic objects precede optional Native-overlay discovery and governed promotion.
