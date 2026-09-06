@@ -10,7 +10,7 @@ Build a one-stop shop for structured, governed Australian charity data: an integ
 
 Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity evidence corpus. Assemble one or more task-specific semantic packets from that corpus. Apply one or more cost-efficient semantic passes. Persist independently governed domain knowledge. Compile analyst/public projections from that governed knowledge.
 
-**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 ACTIVE - cross-domain semantic packaging and economics.
+**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 COMPLETE - bounded packaging/routing economics answered; PHASE 5 ACTIVE - Top-100 full-card claim-family build.
 
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
@@ -112,8 +112,9 @@ explicit claim-family missingness, integrated private North Star projection,
 and production-appropriate interruption safety before scale.
 
 No universal accuracy, QA, acceptance-score or coverage threshold is implied.
-Phase 4 packaging/economics is now the active stage. Phase 5 Top-100 full-card
-scaling remains subsequent and has not started.
+Phase 4 packaging/economics is complete at bounded experiment level. Phase 5
+Top-100 full-card scaling is now the active stage and implementation has not
+started.
 
 Section 19 remains a six-lens architecture, not a completed milestone: source-
 native ACNC/ATO foundations exist, SDG and CharityGraph CLASSIE have bounded
@@ -134,15 +135,57 @@ narrower specialist tasks using already-frozen evidence. Measure semantic
 yield; precision/recall where assessable; packet/corpus reuse; provider cost;
 model routing; review burden; agent/human supervision burden; failure modes;
 and cross-domain synergy/interference. Named model tiers remain implementation
-choices, not product policy. No Phase 4 experiment is authorised by this
-documentation closeout.
+choices, not product policy. The documentation closeout originally did not
+authorise an experiment; P4-E1 was separately authorised and is now complete.
 
 Phase 3 closure record: Builder PR #57 merged at
 `4f13e2a42ff9d6a2a7cf9da48baf0dfa3a7c56e3`; PR #58 merged at
 `023eafe76e45b3645428583b3e202536cfcb1051`. The final proofs used zero
 provider calls and zero new source acquisition. Universal accuracy/coverage
 thresholds remain undefined, specialist domains may need later depth, Native
-remains parked and experimental, and Phase 4 has not yet been run.
+remains parked and experimental. Phase 4 was subsequently run as the bounded
+P4-E1 experiment and is now complete.
+
+### Phase 4 closure — P4-E1 packaging/routing economics
+
+P4-E1 (`phase4-p4e1-packaging-routing-v1`) answered the Phase 4 question
+sufficiently for Factory progression. It tested the same frozen Compact v0.2
+packets and independently governed Compact/relationship tasks across bundled
+Luna, split Luna and split Luna-plus-stronger-relationship routing. The
+experiment recorded 15 intended semantic executions, 16 transmitted provider
+events including one pre-output strict-schema rejection and one authorised
+mechanical correction, 18 completed logical outputs, zero accidental resends,
+zero source acquisition and USD `0.280197` observed provider cost. Human review
+showed that raw atom count is not useful semantic quality: governed useful
+coverage, review disposition and total cost of intelligence matter.
+
+The bounded Factory candidate is: **bundle compatible constrained semantic
+labour on a lower-cost model where physical packet reuse is economical; split
+and route genuine semantic boundary/judgement tasks to stronger reasoning.
+Preserve independent logical task contracts throughout.** This is a task-
+specific evidence-based candidate, not a universal model/provider rule and not
+a claim that all relationships require a stronger model. Builder/Python retains
+ownership of packets, identity, schemas, validation, persistence, lineage,
+execution state, accounting and interruption safety. Total cost of intelligence
+includes provider cost plus review, supervision and orchestration burden.
+Logical contracts remain independent even when tasks share one physical call.
+
+The Phase 4 hypothesis that fewer physical calls are always better is resolved:
+compatible bundling was useful in the tested setting, while stronger routing
+materially improved the reviewed relationship boundary. No second paid Phase 4
+experiment is required. The original Phase 4 hypotheses remain historical
+evidence; the Factory candidate above supersedes them for the next stage.
+
+### Phase 5 boundary — active, implementation not started
+
+Phase 5 inherits: **SOURCE UNIVERSE FIRST -> ACQUIRE ONCE -> FREEZE CORPUS ->
+SEMANTICS**; Builder does not do discovery or research; cards remain governed
+projections; primary extraction remains card-blind; null/mixed/negative/
+inconclusive states remain first-class; unresolved relationship endpoints remain
+unresolved; Python does not infer semantic equivalence; Native remains parked;
+Viewer remains an inspector; and ranking, recommendation and grantmaking remain
+out of scope. This roadmap activation does not authorise implementation detail
+beyond the existing Top-100 full-card boundary.
 
 ## Phase 5 — Top-100 full-card claim-family build
 

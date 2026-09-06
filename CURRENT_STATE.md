@@ -2,7 +2,7 @@
 
 **Status date:** 6 September 2026
 
-**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. Phase 4 cross-domain semantic packaging and economics ACTIVE.
+**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 ACTIVE - Top-100 full-card claim-family build; implementation not started.
 
 ## 1. Repositories
 
@@ -46,7 +46,7 @@ Program/service v3/v3.1 is one foundation-domain implementation, not the whole p
 
 A program/service-only Top-100 Terra run using literal ACNC donation ranks 1–100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
 
-The active Builder objective is Phase 4 cross-domain semantic packaging and economics. Broad cohort scaling and further specialist Labs are not automatically next; existing rich frozen evidence should be reused first and actual integration/economics gaps must justify subsequent work.
+The active Builder objective is Phase 5 Top-100 full-card claim-family build. Phase 4 established a bounded hybrid bundle-by-difficulty Factory candidate; broad scaling remains gated by the existing source-universe, frozen-corpus, governed-knowledge and interruption-safe constraints.
 
 ## 8. Product-family state
 
@@ -141,7 +141,38 @@ economics. Its question is how to package and route compatible semantic work
 to maximise useful semantic yield per total cost of intelligence while
 preserving independent logical contracts, evidence, validation and lineage.
 
-## 14. Phase 3 state and process lesson
+That Phase 4 statement is now historical: P4-E1 completed the bounded question,
+and Phase 5 is the active project stage. No Phase 5 implementation has started.
+
+## 14. Phase 4 closeout and Phase 5 boundary
+
+**PHASE 4 COMPLETE - P4-E1 ANSWERED THE PACKAGING/ROUTING ECONOMICS QUESTION SUFFICIENTLY FOR FACTORY PROGRESSION**
+
+P4-E1 recorded 15 intended semantic executions, 16 transmitted provider events,
+one pre-output HTTP 400 strict-schema rejection, one authorised mechanical
+correction, 18 completed logical outputs, zero accidental resends, zero source
+acquisition and USD `0.280197` observed provider cost. Blinded review found
+that raw semantic yield is not sufficient without reviewed useful yield.
+
+The bounded Factory candidate is: **bundle compatible constrained semantic
+labour on a lower-cost model where physical packet reuse is economical; split
+and route genuine semantic boundary/judgement tasks to stronger reasoning.
+Preserve independent logical task contracts throughout.** Route by task
+difficulty, not pipeline stage. This is evidence-based and task-specific, not
+provider/model dogma or a universal rule that all relationships require Terra.
+Builder/Python remains responsible for evidence packets, identity, schemas,
+validation, persistence, lineage, execution state, accounting and interruption
+safety. Total cost of intelligence includes provider, review, supervision and
+orchestration burden.
+
+Phase 5 is now active, but implementation has not started. It inherits source
+universe first -> acquire once -> freeze corpus -> semantics; Builder does not
+do discovery or research; card-blind primary extraction; independent logical
+contracts; first-class null/mixed/negative/inconclusive states; unresolved
+relationship endpoints; no Python semantic-equivalence heuristics; parked
+Native; Viewer as inspector; and no ranking, recommendation or grantmaking.
+
+## 15. Phase 3 state and process lesson
 
 Foundational architecture is strong and hard-domain semantic feasibility is
 substantially de-risked. Fundraising, workforce, ethos, notable context and
