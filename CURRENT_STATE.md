@@ -2,13 +2,13 @@
 
 **Status date:** 6 September 2026
 
-**Status:** Current through Section 15 V1E, bounded Sections 6/11/13, 16 and 18 work, the real provider-backed Native V5RR lifecycle experiment, and the accepted Phase 3 integration realignment
+**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. Phase 4 cross-domain semantic packaging and economics ACTIVE.
 
 ## 1. Repositories
 
 | Component | Repository | Verified external head / status reference | State |
 |---|---|---|---|
-| Builder | `gregorycwhill/charitygraph` | PR #56 branch `charitygraph-native-v5rr-overlay-lifecycle`, final verified head `0366c625c427470ff6917b2eb31381fea9913c9c` | Open/unmerged experiment; Native experimental code is not production capability |
+| Builder | `gregorycwhill/charitygraph` | PR #57 merged at `4f13e2a42ff9d6a2a7cf9da48baf0dfa3a7c56e3`; PR #58 merged at `023eafe76e45b3645428583b3e202536cfcb1051`; current `main` | Phase 3 production integration/projection capability merged; Native experimental code remains parked and non-production |
 | Data | `gregorycwhill/charitygraph-data` | this canonical Data revision | Canonical contracts, releases and governance |
 | Viewer | `gregorycwhill/charitygraph-viewer` | `bd169f612fbc86bb6bfa140d48672485fced20be` (verified external head) | Existing deployed Viewer |
 | Playbooks | `gregorycwhill/charitygraph-playbooks` | `dbd7e0816e2560666dede01986cab4e6d59bb929` (verified external head) | Initial product contract; no production catalogue |
@@ -42,11 +42,11 @@ The project is not ready for an unbounded fresh paid cohort. Reliability methodo
 
 ## 7. North Star realignment and halted Top-100 run
 
-Program/service v3/v3.1 is one foundation-domain implementation, not the whole product. Controlled model-tier experiments found Terra improved execution reliability over Luna, while Sol did not establish routine value.
+Program/service v3/v3.1 is one foundation-domain implementation, not the whole product. Model-routing evidence remains bounded rather than product policy: Luna-like lower-cost models are candidates for constrained/high-volume semantic labour, Terra-like stronger models for difficult adjudication/abstraction where justified, Builder/Python for deterministic authority, supervisory reasoning for experiment integration, and humans for objective, priority, sufficiency and stopping. Results do not establish universal Luna-versus-Terra superiority.
 
 A program/service-only Top-100 Terra run using literal ACNC donation ranks 1–100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
 
-The active Builder objective is Phase 3 closeout through integrated cross-domain graph assembly and private North Star projection using existing rich reality charities and reusable evidence/results. Broad cohort scaling and further specialist Labs are not automatically next; actual integration gaps must trigger them.
+The active Builder objective is Phase 4 cross-domain semantic packaging and economics. Broad cohort scaling and further specialist Labs are not automatically next; existing rich frozen evidence should be reused first and actual integration/economics gaps must justify subsequent work.
 
 ## 8. Product-family state
 
@@ -121,14 +121,32 @@ EXPERIMENTAL / PARKED — NOT PRODUCTION-COMPLETE**
 The zero discovery result does not prove that the corpus contains no possible
 Native abstractions.
 
-## 13. Phase 3 state and process lesson
+## 13. Phase 3 closure
+
+**PHASE 3 COMPLETE - BOUNDED COMPLETE-CARD GRAPH/PROJECTION ARCHITECTURE REALITY-TESTED; NOT PRODUCTION-COMPLETE**
+
+PR #57 established the canonical 20-section projection, explicit missingness,
+cross-domain subject/observation reuse and the private 20 x 3 coverage matrix.
+PR #58 proved one real retained Australian Red Cross `operator` relationship
+from evidence through durable source/service subjects, typed directed
+`RelationshipStatement`, SQLite persistence/reload and Section 12 projection.
+Sections 6/11/13, 15, 16 and 18 have bounded dispositions; unresolved identity
+remains legitimate. Native is parked and experimental. Final integration and
+relationship proofs used zero provider calls and zero new source acquisition.
+No North Star section is production-complete, full-card scaling has not
+started, and universal accuracy/coverage thresholds remain undefined.
+
+The active project stage is Phase 4 cross-domain semantic packaging and
+economics. Its question is how to package and route compatible semantic work
+to maximise useful semantic yield per total cost of intelligence while
+preserving independent logical contracts, evidence, validation and lineage.
+
+## 14. Phase 3 state and process lesson
 
 Foundational architecture is strong and hard-domain semantic feasibility is
-substantially de-risked. The major remaining Phase 3 uncertainty is integrated
-cross-domain persistence and projection rather than another sequence of
-independent semantic lenses. Fundraising, workforce, ethos, notable context
-and other comparatively light areas should be hardened when integration reveals
-a material need.
+substantially de-risked. Fundraising, workforce, ethos, notable context and
+other comparatively light areas should be hardened when Phase 4 packaging or
+economics reveals a material need, not as an automatic Lab queue.
 
 Optimise useful learning per unit of total model, agent and human attention.
 Repeated implementation/debugging without new semantic or product learning is

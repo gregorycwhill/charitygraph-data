@@ -1,6 +1,12 @@
 # CharityGraph Builder vNext Implementation Plan
 
-**Status:** Canonical implementation sequence, version 2.1-draft
+**Status:** Canonical implementation sequence, version 2.2-draft
+
+**Active scope:** Phase 4 — cross-domain semantic packaging and economics
+
+The former Phase 3 closeout sequence below is retained as completed history.
+
+**Authoritative immediate scope:** Phase 4 - cross-domain semantic packaging and economics. The legacy immediate-scope label below is superseded and retained only as historical wording.
 
 **Immediate scope:** Phase 3 closeout — integrated complete-card graph and private projection
 
@@ -296,7 +302,18 @@ Acquire broadly once; preserve source-native evidence; freeze a reusable charity
 - Section 18: generic Compact → specialist architecture reality-tested and parked.
 - Section 19 Native: overlay/workshop lifecycle reality-tested through freeze; holdout eligibility was zero under the current contract; transfer was untested; parked.
 
-None is production-complete. None currently blocks integrated Phase 3 assembly.
+Phase 3 is complete at bounded reality-test level, not production-complete.
+PR #57 established the canonical North Star projection, explicit
+subject-specific missingness, the 20 × 3 private coverage matrix and
+quarantine of incompatible historical section IDs. PR #58 established real
+retained Australian Red Cross `operator` evidence for Australian Red Cross
+Society →operator→ Telecross and Telechat, durable source/service subjects,
+typed directed relationship persistence/reload preserving direction, role,
+scope, evidence and lineage, and durable Section 12 projection without
+duplicating canonical state. Native remains parked and experimental.
+
+The following integrated Phase 3 sequence is completed historical record; the
+active Phase 4 sequence appears below the historical steps.
 
 ## NEXT IMPLEMENTATION SEQUENCE — INTEGRATED PHASE 3 CLOSEOUT
 
@@ -344,6 +361,47 @@ Move packet/bundling experiments after integrated-card proof. Only then compare 
 ### Step 8 — Coverage/economics/review report
 
 Report source/claim-family coverage, semantic success, review load, corpus reuse, model cost, failure classes, cross-domain synergies and operational/supervision burden.
+
+## ACTIVE IMPLEMENTATION SEQUENCE — PHASE 4 CROSS-DOMAIN SEMANTIC PACKAGING AND ECONOMICS
+
+### Step 1 — Select existing rich frozen corpora
+
+Use already-acquired and reusable evidence where possible. Do not begin with a
+fresh broad cohort.
+
+### Step 2 — Define logical semantic tasks independently
+
+Each domain/profile retains task identity, schema, subject/scope, source and
+evidence contract, validation, lineage and governed disposition.
+
+### Step 3 — Construct packaging variants
+
+Compare only evidence-justified variants: one large cross-domain packet, a
+small number of compatible bundles and narrower task-specific packets. Fewer
+calls are not assumed to be better.
+
+### Step 4 — Route models by task difficulty
+
+Use lower-cost capable models for constrained/high-volume semantic labour;
+stronger reasoning for difficult adjudication or abstraction where justified;
+Python for deterministic mechanics; supervisory reasoning for integration; and
+humans for purpose, high-consequence review, sufficiency and stopping. Named
+models are implementation choices, not product policy.
+
+### Step 5 — Measure total cost of intelligence
+
+Report provider spend, semantic yield, precision/recall where assessable,
+validation failures, review load, agent/Codex intervention, human supervision,
+latency where useful, reuse/caching, failure modes and cross-domain
+synergy/interference.
+
+### Step 6 — Select a bounded Factory candidate
+
+At Phase 4 end, recommend the simplest packaging/routing pattern justified for
+the subsequent Top-100 full-card build. Do not start Phase 5 here. Keep
+interruption-safe execution a prerequisite before paid cohort scaling.
+
+No Phase 4 experiment is authorised by this documentation closeout.
 
 ## Propagated complete-card implementation pattern
 

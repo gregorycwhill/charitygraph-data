@@ -1,6 +1,6 @@
 # CharityGraph Roadmap
 
-**Status:** Canonical product/engineering sequence, version 2.2-draft
+**Status:** Canonical product/engineering sequence, version 2.3-draft
 
 ## Outcome
 
@@ -9,6 +9,8 @@ Build a one-stop shop for structured, governed Australian charity data: an integ
 ## Delivery sequencing principle
 
 Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity evidence corpus. Assemble one or more task-specific semantic packets from that corpus. Apply one or more cost-efficient semantic passes. Persist independently governed domain knowledge. Compile analyst/public projections from that governed knowledge.
+
+**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 ACTIVE - cross-domain semantic packaging and economics.
 
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
@@ -28,12 +30,13 @@ Architecture: acquire broadly once → preserve source-native evidence → freez
 
 ## Phase 3 — Complete-card domain/graph hardening
 
-CharityGraph is now in the Phase 3 domain/graph-hardening stage of the
+CharityGraph completed the Phase 3 domain/graph-hardening stage at bounded
+reality-test level. It is not production-complete coverage of the North Star.
 complete-card reality slice. Use approximately 8–12 deliberately varied
 charities and pressure-test the North Star claim families with explicit
 missingness when unavailable or deferred. Generic whole-card feasibility is
-substantially reality-tested; the active question is whether the architecture
-can persist and project the cross-domain graph required by the Data product.
+substantially reality-tested, and the architecture can persist and project the
+cross-domain graph required by the Data product.
 
 Phase 3 is not a licence to treat program/service discovery as the product.
 Its graph deliverable is shared subject/scope ownership and directed,
@@ -53,7 +56,18 @@ Native V5RR produced no Native concepts under the executed Luna/none discovery
 contract; 36 holdout canonical objects yielded zero Native overlays and
 transfer was not tested. Native is parked, not a current Phase 3 blocker.
 
-The active Phase 3 objective is to assemble, persist and privately project the
+Phase 3 closure established direct-service structure across Sections 6/11/13;
+shared subject/scope ownership; compilation of the canonical twenty-section
+projection from governed knowledge rather than a mega-record; materially
+distinct missingness without negative-fact inference; bounded Section 16
+review; and Section 18 distinctions among change, contribution and causation.
+PR #57 quarantined incompatible historical section IDs and PR #58 proved a
+real retained `operator` relationship through durable subjects, typed directed
+`RelationshipStatement`, SQLite persistence/reload and Section 12 projection.
+Unresolved external targets remain unresolved. Production Factory hardening is
+still required before paid cohort scaling.
+
+The completed Phase 3 objective was to assemble, persist and privately project the
 integrated cross-domain graph for a small number of existing rich reality
 charities, allowing actual integration gaps—not a predetermined domain
 checklist—to trigger further specialist hardening. Fundraising, workforce,
@@ -72,9 +86,9 @@ canonical production prompts; further polishing is deferred. Paid
 interruption-safe/restart-safe execution remains a later Factory/scaling gate,
 not a prerequisite for one-shot Labs. No section is production-complete.
 
-### Phase 3 exit gate
+### Phase 3 completed gate
 
-Exit requires sufficient bounded evidence that:
+The completed gate has sufficient bounded evidence that:
 
 - direct-service structure works across sections 6/11/13;
 - subject/scope ownership survives shared-domain cases;
@@ -87,15 +101,19 @@ Exit requires sufficient bounded evidence that:
 - claim-family coverage and material missingness states work; and
 - interruption-safe execution exists before paid cohort scaling.
 
-The remaining empirical emphasis is cross-domain subject/scope ownership,
+The Phase 3 gate is closed. `funder`, `partner` and `network_context` appeared
+in retained evidence with unresolved endpoint identity; `deliverer`, `sponsor`
+and `auspice` were not present in the retained proof sample. No role was
+invented to satisfy the gate.
+
+The former remaining empirical emphasis was cross-domain subject/scope ownership,
 relationship-role survival through extraction, persistence and projection,
 explicit claim-family missingness, integrated private North Star projection,
 and production-appropriate interruption safety before scale.
 
 No universal accuracy, QA, acceptance-score or coverage threshold is implied.
-Phase 4 packaging/economics and especially Phase 5 Top-100 full-card scaling
-are subsequent stages, not the immediate next action merely because generic
-whole-card extraction has been demonstrated.
+Phase 4 packaging/economics is now the active stage. Phase 5 Top-100 full-card
+scaling remains subsequent and has not started.
 
 Section 19 remains a six-lens architecture, not a completed milestone: source-
 native ACNC/ATO foundations exist, SDG and CharityGraph CLASSIE have bounded
@@ -106,7 +124,25 @@ production Native vocabulary exists.
 
 ## Phase 4 — Cross-domain semantic packaging and economics
 
-Experimentally compare one large packet, compatible domain bundles and narrower task packets from the same frozen corpus. Candidate bundles include programs/populations/geography/participation; fundraising/workforce relationships/finance; governance/affiliations/ethos; finance/grants/contracts/resource relationships; programs/outcomes/evaluation; and programs with capability/availability. Measure semantic yield per dollar, model routing, review burden and agent/human supervision cost, not merely calls avoided. Never collapse independent logical outputs because calls are bundled.
+Given a viable cross-domain graph and North Star projection, determine how
+compatible semantic work should be packaged and routed to maximise useful
+semantic yield per total cost of intelligence while preserving independent
+logical contracts, evidence, validation and lineage.
+
+Phase 4 may compare larger whole-card packets, compatible domain bundles and
+narrower specialist tasks using already-frozen evidence. Measure semantic
+yield; precision/recall where assessable; packet/corpus reuse; provider cost;
+model routing; review burden; agent/human supervision burden; failure modes;
+and cross-domain synergy/interference. Named model tiers remain implementation
+choices, not product policy. No Phase 4 experiment is authorised by this
+documentation closeout.
+
+Phase 3 closure record: Builder PR #57 merged at
+`4f13e2a42ff9d6a2a7cf9da48baf0dfa3a7c56e3`; PR #58 merged at
+`023eafe76e45b3645428583b3e202536cfcb1051`. The final proofs used zero
+provider calls and zero new source acquisition. Universal accuracy/coverage
+thresholds remain undefined, specialist domains may need later depth, Native
+remains parked and experimental, and Phase 4 has not yet been run.
 
 ## Phase 5 — Top-100 full-card claim-family build
 
