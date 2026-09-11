@@ -9,8 +9,8 @@
 |---|---|---|---|
 | Builder | `gregorycwhill/charitygraph` | local branch `review-snapshot-2026-09-11` at `b69ab9f3ec7c3479d1c2a6829a67fa4198f5746a` | Phase-5 implementation snapshot; publication pending |
 | Data | `gregorycwhill/charitygraph-data` | local branch `review-readiness-2026-09-11` at `2e39083c7a6a57a0c108a28baf34b6b517ebd208` | canonical documentation and contracts |
-| Viewer | `gregorycwhill/charitygraph-viewer` | `main` at `bd169f612fbc86bb6bfa140d48672485fced20be` | existing Viewer state |
-| Playbooks | `gregorycwhill/charitygraph-playbooks` | `main` at `dbd7e0816e2560666dede01986cab4e6d59bb929` | initial product contract; no production catalogue |
+| Viewer | `gregorycwhill/charitygraph-viewer` | local branch `review-readiness-2026-09-11` at `b66168074c2111363020463749ac283f9024bbd7` | documentation-only authority-link correction; existing Viewer state |
+| Playbooks | `gregorycwhill/charitygraph-playbooks` | local branch `review-readiness-2026-09-11` at `f0cd9fe76b9fd402ec53b82210e148feeb984af6` | review checks added; no production catalogue |
 
 The Builder review ref is a local frozen snapshot and is not a release candidate
 or merge proposal. The Data ref is the locally intended documentation review base.
