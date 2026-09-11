@@ -8,7 +8,7 @@
 | Product | Repository | Intended review ref | Note |
 |---|---|---|---|
 | Builder | `gregorycwhill/charitygraph` | local branch `review-snapshot-2026-09-11` at `b69ab9f3ec7c3479d1c2a6829a67fa4198f5746a` | Phase-5 implementation snapshot; publication pending |
-| Data | `gregorycwhill/charitygraph-data` | local branch `review-readiness-2026-09-11` at `2e39083c7a6a57a0c108a28baf34b6b517ebd208` | canonical documentation and contracts |
+| Data | `gregorycwhill/charitygraph-data` | local branch `review-readiness-2026-09-11` at `d5376a76b5fd0ac3183bef51019f35bfc93ae313` | canonical documentation and contracts |
 | Viewer | `gregorycwhill/charitygraph-viewer` | local branch `review-readiness-2026-09-11` at `b66168074c2111363020463749ac283f9024bbd7` | documentation-only authority-link correction; existing Viewer state |
 | Playbooks | `gregorycwhill/charitygraph-playbooks` | local branch `review-readiness-2026-09-11` at `f0cd9fe76b9fd402ec53b82210e148feeb984af6` | review checks added; no production catalogue |
 
