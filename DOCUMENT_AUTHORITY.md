@@ -81,7 +81,9 @@ Every active document SHALL state its status, version/date, scope and material s
 | Playbook contribution and Official/Community status workflow | [`CONTRIBUTING.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/CONTRIBUTING.md), within shared CharityGraph boundaries |
 | Semantic reliability, technical replication and reproducible semantic replay | `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` |
 | Complete-card semantic extraction and independent mapping decisions | `SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md`, propagated conservatively to the canonical documents above |
-| Current coding handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
+| Current development method | `DEVELOPMENT_METHOD.md` |
+| Historical task-specific coding handoff | `docs/history/codex-to-chatgpt-handoff-before-2026-08-23-product-docs-rewrite.md` |
+| Review/navigation snapshot | `PROJECT_SNAPSHOT_2026-09-11.md` |
 
 ## 5. Refinement and conflict rules
 

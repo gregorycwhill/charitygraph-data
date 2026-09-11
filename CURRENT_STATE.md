@@ -1,8 +1,40 @@
 # CharityGraph Current State
 
-**Status date:** 6 September 2026
+**Status date:** 11 September 2026
 
-**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 ACTIVE - Top-100 full-card claim-family build; implementation not started.
+**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 ACTIVE - Top-100 full-card claim-family build; implementation and bounded execution are in progress.
+
+This is a factual project snapshot dated 11 September 2026. Private runtime databases,
+raw source/provider material and private experiment artefacts are not represented as
+public Git content; aggregate evidence below is limited to values recorded in the
+current local implementation and retained summaries.
+
+## 0. Current Phase-5 review snapshot
+
+- Top-100 identity/bootstrap and the clean baseline corpus are prepared for 100 subjects,
+  700 source-family cells and 100 corpus manifests. Clean corpus coverage is claim-family
+  local: 590 acquired/available, 40 attempted/unavailable, 4 access-failed, 3 not-attempted
+  and 63 provenance-unresolved cells.
+- Discovery V2 has a usable Top-100 state in the retained analysis: 85 historical outputs
+  were directly valid and 15 were deterministically normalised; 100 subjects are represented
+  in the current usable state. The 93-request Standard remainder campaign has terminal
+  provider history and a zero-provider terminal replay; no governed promotion was made.
+- A known-URL official-website campaign attempted 80 requests: 65 acquired successfully,
+  8 ended in HTTP terminal failure, 4 were redirected/rejected by host policy and 3 ended
+  before a response. The campaign recorded zero network events in its durable report.
+- Direct Service V1.1 currently records 42 completed provider items, 1 terminal HTTP 429 and
+  18 never-attempted prepared items. Provider-free recovery classified the 42 retained
+  outputs as 19 directly valid, 22 deterministically recovered and 1 semantically unusable.
+- A V1.1 section/type representation defect affected 20 records (32 proposition instances).
+  A structurally section-discriminated V1.2 contract candidate and an append-only pre-send
+  reservation replacement correction are now present in the local Builder review snapshot;
+  no new provider execution has been authorised by this documentation snapshot.
+- Direct Service accounting records actual spend AUD `2.556920`, unresolved active
+  reservations AUD `1.321928`, and aggregate mandate authority AUD `100.00`. The
+  reservation-underestimation correction is append-only; historical rows are retained.
+
+The current public state is not production-complete. No governed promotion, public vNext
+release, or Phase-5 merge is implied by these facts. Native remains parked.
 
 ## 1. Repositories
 
@@ -136,13 +168,11 @@ relationship proofs used zero provider calls and zero new source acquisition.
 No North Star section is production-complete, full-card scaling has not
 started, and universal accuracy/coverage thresholds remain undefined.
 
-The active project stage is Phase 4 cross-domain semantic packaging and
-economics. Its question is how to package and route compatible semantic work
-to maximise useful semantic yield per total cost of intelligence while
-preserving independent logical contracts, evidence, validation and lineage.
-
-That Phase 4 statement is now historical: P4-E1 completed the bounded question,
-and Phase 5 is the active project stage. No Phase 5 implementation has started.
+The active project stage is Phase 5 Top-100 full-card claim-family build. Phase 4
+packaging and economics is completed history; its bounded hybrid bundle-by-difficulty
+Factory candidate remains an input to Phase 5 implementation. Phase 5 implementation,
+provider-free preparation and bounded provider execution have started, but production
+scale and governed public promotion have not.
 
 ## 14. Phase 4 closeout and Phase 5 boundary
 
@@ -165,7 +195,7 @@ validation, persistence, lineage, execution state, accounting and interruption
 safety. Total cost of intelligence includes provider, review, supervision and
 orchestration burden.
 
-Phase 5 is now active, but implementation has not started. It inherits source
+Phase 5 is now active and implementation has started. It inherits source
 universe first -> acquire once -> freeze corpus -> semantics; Builder does not
 do discovery or research; card-blind primary extraction; independent logical
 contracts; first-class null/mixed/negative/inconclusive states; unresolved

@@ -176,7 +176,7 @@ materially improved the reviewed relationship boundary. No second paid Phase 4
 experiment is required. The original Phase 4 hypotheses remain historical
 evidence; the Factory candidate above supersedes them for the next stage.
 
-### Phase 5 boundary — active, implementation not started
+### Phase 5 boundary — active implementation
 
 Phase 5 inherits: **SOURCE UNIVERSE FIRST -> ACQUIRE ONCE -> FREEZE CORPUS ->
 SEMANTICS**; Builder does not do discovery or research; cards remain governed

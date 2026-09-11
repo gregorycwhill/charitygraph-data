@@ -4,15 +4,15 @@
 
 **Current status:** Phase 4 is complete; Phase 5 - Top-100 full-card claim-family build - is active. The legacy Phase 4 active-scope label immediately below is historical and superseded.
 
-**Active scope:** Phase 4 — cross-domain semantic packaging and economics
+**Active scope:** Phase 5 — Top-100 full-card claim-family build
 
 The former Phase 3 closeout sequence below is retained as completed history.
 
-**Authoritative immediate scope:** Phase 4 - cross-domain semantic packaging and economics. The legacy immediate-scope label below is superseded and retained only as historical wording.
+**Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family build. Phase 4 is completed history.
 
 **Current authoritative scope:** Phase 5 - Top-100 full-card claim-family build. Phase 4 is completed history below.
 
-**Immediate scope:** Phase 3 closeout — integrated complete-card graph and private projection
+**Immediate scope:** Phase 5 bounded implementation and evidence/reproducibility closeout
 
 ## 1. Delivery rule
 

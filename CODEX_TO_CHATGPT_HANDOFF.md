@@ -1,10 +1,14 @@
 # CharityGraph — Codex Handoff
 
-**Status:** Active bounded execution handoff
+**Status:** Historical bounded execution handoff; retained for traceability
 
 **Updated:** 24 August 2026
 
 **Task:** Install Product Documentation Rewrite 2.0-draft; no product code
+
+This document records the 24 August 2026 documentation-rewrite task. It is not
+the current cross-project coding workflow. See [DEVELOPMENT_METHOD.md](DEVELOPMENT_METHOD.md)
+for the current reference method.
 
 ## 1. Outcome
 
