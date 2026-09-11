@@ -7,13 +7,15 @@
 
 | Product | Repository | Intended review ref | Note |
 |---|---|---|---|
-| Builder | `gregorycwhill/charitygraph` | local branch `review-snapshot-2026-09-11` at `b69ab9f3ec7c3479d1c2a6829a67fa4198f5746a` | Phase-5 implementation snapshot; publication pending |
-| Data | `gregorycwhill/charitygraph-data` | local branch `review-readiness-2026-09-11` at `d5376a76b5fd0ac3183bef51019f35bfc93ae313` | canonical documentation and contracts |
-| Viewer | `gregorycwhill/charitygraph-viewer` | local branch `review-readiness-2026-09-11` at `b66168074c2111363020463749ac283f9024bbd7` | documentation-only authority-link correction; existing Viewer state |
-| Playbooks | `gregorycwhill/charitygraph-playbooks` | local branch `review-readiness-2026-09-11` at `f0cd9fe76b9fd402ec53b82210e148feeb984af6` | review checks added; no production catalogue |
+| Builder | `gregorycwhill/charitygraph` | branch `review-snapshot-2026-09-11` at `b69ab9f3ec7c3479d1c2a6829a67fa4198f5746a` | Phase-5 implementation snapshot |
+| Data | `gregorycwhill/charitygraph-data` | branch `review-readiness-2026-09-11` | canonical documentation and contracts; exact commit pinned externally by the review instruction |
+| Viewer | `gregorycwhill/charitygraph-viewer` | branch `review-readiness-2026-09-11` at `b66168074c2111363020463749ac283f9024bbd7` | documentation-only authority-link correction; existing Viewer state |
+| Playbooks | `gregorycwhill/charitygraph-playbooks` | branch `review-readiness-2026-09-11` at `f0cd9fe76b9fd402ec53b82210e148feeb984af6` | review checks added; no production catalogue |
 
-The Builder review ref is a local frozen snapshot and is not a release candidate
-or merge proposal. The Data ref is the locally intended documentation review base.
+These are frozen published review branches. They are not release candidates or
+merge proposals. The exact Data commit is pinned externally by the review
+instruction because this file is part of the Data branch and cannot contain a
+self-referential final commit claim.
 
 ## Navigation
 
