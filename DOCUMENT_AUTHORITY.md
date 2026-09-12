@@ -85,6 +85,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Current development method | `DEVELOPMENT_METHOD.md` |
 | Historical task-specific coding handoff | `docs/history/codex-to-chatgpt-handoff-before-2026-08-23-product-docs-rewrite.md` |
 | Review/navigation snapshot | `PROJECT_SNAPSHOT_2026-09-11.md` |
+| Phase 6 bounded capability inventory and shortlist recommendation | `PHASE6_CAPABILITY_INVENTORY_2026-09-12.md` (working planning recommendation; not product or implementation authority) |
 
 ## 5. Refinement and conflict rules
 

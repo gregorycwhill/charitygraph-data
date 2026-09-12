@@ -2,17 +2,17 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. The legacy Phase 4 active-scope label immediately below is historical and superseded.
+**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. Phase 6 bounded exploration Tranches 0-1 is complete as documentation/planning work; the legacy Phase 4 active-scope label immediately below is historical and superseded.
 
-**Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective; no next implementation tranche selected in this closeout.
+**Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective, alongside bounded Phase 6 exploration. No semantic reality slice or implementation tranche is selected or authorized.
 
 The former Phase 3 closeout sequence below is retained as completed history.
 
-**Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family objective remains active. The Direct Service V1.2 experiment is complete; Phase 4 is completed history.
+**Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family objective remains active. The Direct Service V1.2 experiment is complete; bounded Phase 6 exploration Tranches 0-1 is complete; Phase 4 is completed history.
 
-**Current authoritative scope:** Remaining Phase 5 - Top-100 full-card claim-family objective. Phase 4 is completed history below.
+**Current authoritative scope:** Remaining Phase 5 - Top-100 full-card claim-family objective plus bounded Phase 6 planning/exploration only. Phase 4 is completed history below.
 
-**Immediate scope:** Governance and sequencing decision for already-planned work within the remaining Phase 5 objective; implementation is not authorized by this closeout.
+**Immediate scope:** The broader Phase 5 objective remains active. Bounded Phase 6 Tranches 0-1 establish a baseline and capability inventory before the broader Phase 5 exit; no live reality slice, source acquisition, provider call, semantic experiment or implementation is authorized by this planning work.
 
 ## 1. Delivery rule
 
@@ -437,11 +437,12 @@ it as a universal relationship rule.
 
 The Direct Service V1.2 experimental tranche is complete; see the [approved
 experiment decision](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md). The
-broader Top-100 full-card objective is still active. This documentation closeout
-does not authorize a new provider experiment, source acquisition, semantic
-experiment or implementation tranche. The next work choice within the existing
-Phase 5 scope remains unresolved and should be made against the Top-100 exit
-criteria; Phase 6 remains gated until those criteria are met.
+broader Top-100 full-card objective is still active. Bounded Phase 6 exploration
+Tranches 0-1 is complete as planning work; see the [Phase 6 capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md).
+This exploration can precede the broader Phase 5 exit and does not change its
+scope. The shortlist is a recommendation for product-owner decision, not an
+authorization. No provider experiment, source acquisition, semantic experiment,
+live reality slice or implementation is authorized by this plan.
 
 All existing constraints remain: source universe first -> acquire once -> freeze
 corpus -> semantics; Builder does not do discovery or research; cards remain

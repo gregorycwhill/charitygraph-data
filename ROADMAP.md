@@ -215,10 +215,12 @@ governed promotions. See [the decision record](PHASE5_DIRECT_SERVICE_V1_2_DECISI
 and [Builder implementation closeout](https://github.com/gregorycwhill/charitygraph/blob/phase5-direct-service-v1.2-cutover-v1/docs/PHASE5_DIRECT_SERVICE_V1_2_CLOSEOUT.md).
 
 This closes the Direct Service experiment only. The Top-100 full-card milestone
-and its coverage/knowledge exit criteria remain active. Phase 6 is the already-
-planned successor after Phase 5 exit; which existing work tranche should follow
-inside the remaining Phase 5 scope is unresolved. Do not infer a phase transition
-or select a new product direction from this experiment alone.
+and its coverage/knowledge exit criteria remain active. The bounded Phase 6
+exploration (Tranches 0-1) is authorized and recorded in the [Phase 6 capability
+inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md); it proceeds alongside the
+remaining Phase 5 objective and does not imply Phase 5 completion or a product
+direction decision. Live reality slices and implementation still require a
+separate product-owner decision and authorization.
 
 ### Phase 5 historical/current program-discovery run
 
@@ -228,7 +230,9 @@ Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid
 
 ## Phase 6 — Risk-gated depth and specialist profiles
 
-**Status:** planned; gated on the broader Phase 5 Top-100 full-card exit criteria.
+**Status:** Tranches 0-1 bounded exploration complete; broader Phase 6 work remains
+unselected and requires product-owner decision/authorization. This exploration may
+proceed before the broader Phase 5 Top-100 exit criteria; Phase 5 remains active.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 

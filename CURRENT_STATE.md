@@ -2,7 +2,7 @@
 
 **Status date:** 12 September 2026
 
-**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. No production-complete or governed-promotion claim is made.
+**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. PHASE 6 BOUNDED EXPLORATION (Tranches 0-1) is complete; no semantic reality slice or production implementation is authorized by that exploration. No production-complete or governed-promotion claim is made.
 
 This is a factual project snapshot dated 12 September 2026. Private runtime databases,
 raw source/provider material and private experiment artefacts are not represented as
@@ -47,6 +47,14 @@ current local implementation and retained summaries.
 
 The current public state is not production-complete. No governed promotion, public vNext
 release, or Phase-5 merge is implied by these facts. Native remains parked.
+
+Phase 6 Tranches 0-1 established a documentation baseline and a finite capability
+inventory; this bounded exploration is the next authorized programme step and does
+not depend on closing the broader Phase 5 Top-100 objective. That objective remains
+active and incomplete. The inventory's shortlist is a recommendation for product-owner
+decision only. No live/reality-slice work, new source acquisition, provider call,
+semantic implementation or production implementation is authorized here. See the
+[Phase 6 capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md).
 
 ## 1. Repositories
 
@@ -216,11 +224,13 @@ class null/mixed/negative/inconclusive states; unresolved relationship endpoints
 no Python semantic-equivalence heuristics; parked Native; Viewer as inspector; and
 no ranking, recommendation or grantmaking.
 
-The existing Phase 6 milestone remains “Risk-gated depth and specialist profiles”
-and is gated on the broader Phase 5 Top-100 objective. The evidence here does not
-close that gate. Which already-planned work tranche should follow within the
-remaining Phase 5 scope is unresolved; this closeout selects no new product
-direction and does not start the next implementation phase.
+The existing Phase 6 milestone remains "Risk-gated depth and specialist profiles."
+The supplied Phase 6 programme authorizes bounded exploration before broader Phase 5
+Top-100 completion; it does not close, replace or reduce that objective. Tranches 0-1
+are complete as planning work. Any live reality slice or implementation requires a
+separate product-owner decision and authorization. No new provider call, source
+acquisition, semantic experiment, production implementation or governed promotion is
+authorized by this documentation update.
 
 ## 15. Phase 3 state and process lesson
 
