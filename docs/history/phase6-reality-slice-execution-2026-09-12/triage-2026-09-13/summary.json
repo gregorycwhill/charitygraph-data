@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-13",
+  "execution_commit": "44a09c6ad3dea0018005440257bbaa5c56116c03",
+  "original": {
+    "outputs_pass": 4,
+    "outputs_total": 24,
+    "propositions_pass": 137,
+    "propositions_total": 203,
+    "failure_events": 71
+  },
+  "original_root_cause_event_counts": {
+    "quotes_unsupported_by_cited_transmitted_representation": 33,
+    "quotes_same_casefolded_word_sequence_but_nonexact": 22,
+    "quotes_found_uniquely_in_other_supplied_source": 1,
+    "model_scope_identifier_transcription": 8,
+    "raw_output_without_evidence_item": 5,
+    "raw_output_artifact_binding_mismatch": 1,
+    "raw_output_locator_kind_mismatch": 1
+  },
+  "post_triage": {
+    "outputs_pass": 4,
+    "outputs_total": 24,
+    "propositions_pass": 142,
+    "propositions_total": 203,
+    "remaining_failure_events": {
+      "evidence:quote_not_exact_in_supplied_representation": 56,
+      "evidence:none": 5,
+      "evidence:artifact_id_mismatch": 1,
+      "evidence:locator_kind_mismatch": 1
+    },
+    "remaining_event_count": 63,
+    "unresolved_propositions": 61
+  },
+  "deterministic_repairs": {
+    "scope_id_events_repaired": 8,
+    "scope_id_derivative_outputs": 2,
+    "quote_repairs": 0,
+    "evidence_repairs": 0
+  },
+  "integrity": {
+    "request_body_hashes_verified": 24,
+    "provider_output_hashes_verified": 24
+  },
+  "by_slice": {
+    "outcomes": {
+      "attempts": 8,
+      "outputs_pass": 1,
+      "propositions": 70,
+      "propositions_pass": 56
+    },
+    "commitments": {
+      "attempts": 8,
+      "outputs_pass": 2,
+      "propositions": 58,
+      "propositions_pass": 40
+    },
+    "capacity": {
+      "attempts": 8,
+      "outputs_pass": 1,
+      "propositions": 75,
+      "propositions_pass": 46
+    }
+  },
+  "complete_gate_replay": {
+    "schema_validated_outputs": 24,
+    "request_identity_checks": 24,
+    "propositions_rechecked": 203,
+    "replay_matches_recorded_failure_codes_after_derivative_repairs": true
+  },
+  "semantic_disposition": "No proposition accepted; semantic adjudication remains pending.",
+  "provider_calls": 0,
+  "new_source_acquisitions": 0,
+  "governed_promotions": 0
+}

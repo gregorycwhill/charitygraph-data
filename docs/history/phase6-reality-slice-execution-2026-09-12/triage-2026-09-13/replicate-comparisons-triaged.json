@@ -1,0 +1,1273 @@
+{
+  "method_version": "phase6-pairwise-descriptive-v2",
+  "groups": [
+    {
+      "slice": "capacity",
+      "abn": "32565549842",
+      "logical_request_ids": [
+        "phase6:capacity:32565549842:replicate-1",
+        "phase6:capacity:32565549842:replicate-2"
+      ],
+      "exact_agreements": [],
+      "same_type_scope_unique_value_comparisons": [
+        {
+          "left_index": 6,
+          "right_index": 5,
+          "left_value": "Applicants can apply for affordable housing.",
+          "right_value": "online application pathway",
+          "left_epistemic_class": "first_party_claim",
+          "right_epistemic_class": "first_party_claim"
+        },
+        {
+          "left_index": 5,
+          "right_index": 4,
+          "left_value": "Applicants can apply for social housing.",
+          "right_value": "online application pathway",
+          "left_epistemic_class": "first_party_claim",
+          "right_epistemic_class": "first_party_claim"
+        },
+        {
+          "left_index": 1,
+          "right_index": 3,
+          "left_value": "Development and management of social and affordable housing.",
+          "right_value": "development and management of social and affordable housing",
+          "left_epistemic_class": "source_native_record",
+          "right_epistemic_class": "source_native_record"
+        },
+        {
+          "left_index": 2,
+          "right_index": 2,
+          "left_value": "Social housing.",
+          "right_value": "social housing",
+          "left_epistemic_class": "source_native_record",
+          "right_epistemic_class": "source_native_record"
+        }
+      ],
+      "same_type_scope_value_epistemic_class_differences": [],
+      "evidence_differences_on_exact_agreements": [],
+      "one_sided_left": [
+        {
+          "index": 0,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "Provides housing services and assistance."
+        },
+        {
+          "index": 3,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "Long-term rental social housing."
+        },
+        {
+          "index": 4,
+          "proposition_type": "eligibility",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "service",
+            "scope_label": "Affordable Housing"
+          },
+          "value": "Affordable housing eligibility is based on income requirements."
+        },
+        {
+          "index": 7,
+          "proposition_type": "capacity_measure",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "More than 7,000 homes."
+        },
+        {
+          "index": 8,
+          "proposition_type": "capacity_measure",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "More than 12,000 people."
+        }
+      ],
+      "one_sided_right": [
+        {
+          "index": 0,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "housing services and assistance"
+        },
+        {
+          "index": 1,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "social housing and affordable housing"
+        },
+        {
+          "index": 6,
+          "proposition_type": "capacity_measure",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "7,000+"
+        },
+        {
+          "index": 7,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "housing provision"
+        },
+        {
+          "index": 8,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:d0ade5af2fb813a3da9e59086fbbb8f7c7b0ae2792cd4c92090795cd786d07a3",
+            "scope_kind": "organisation",
+            "scope_label": "St George Community Housing Limited"
+          },
+          "value": "social, transitional, affordable, and key worker housing"
+        }
+      ],
+      "ambiguous_anchor_groups": [
+        {
+          "anchor": [
+            "capacity_measure",
+            "organisation",
+            "St George Community Housing Limited"
+          ],
+          "left_indices": [
+            7,
+            8
+          ],
+          "right_indices": [
+            6
+          ]
+        },
+        {
+          "anchor": [
+            "service_offer",
+            "organisation",
+            "St George Community Housing Limited"
+          ],
+          "left_indices": [
+            0,
+            3
+          ],
+          "right_indices": [
+            0,
+            1,
+            7,
+            8
+          ]
+        }
+      ],
+      "interpretation": "Descriptive mechanical comparison only; no candidate pairing beyond unique type/scope anchors, no reconciliation, no semantic adjudication.",
+      "human_adjudication": "pending"
+    },
+    {
+      "slice": "capacity",
+      "abn": "77054038872",
+      "logical_request_ids": [
+        "phase6:capacity:77054038872:replicate-1",
+        "phase6:capacity:77054038872:replicate-2"
+      ],
+      "exact_agreements": [
+        {
+          "left_index": 6,
+          "right_index": 9,
+          "signature": [
+            "capacity_measure",
+            "organisation",
+            "St Vincent's Hospital Sydney Limited",
+            "3340",
+            "source_native_record"
+          ]
+        }
+      ],
+      "same_type_scope_unique_value_comparisons": [
+        {
+          "left_index": 1,
+          "right_index": 1,
+          "left_value": "Hospital care.",
+          "right_value": "Hospital care",
+          "left_epistemic_class": "source_native_record",
+          "right_epistemic_class": "source_native_record"
+        }
+      ],
+      "same_type_scope_value_epistemic_class_differences": [],
+      "evidence_differences_on_exact_agreements": [
+        {
+          "left_index": 6,
+          "right_index": 9,
+          "left_evidence": [
+            [
+              "locator:fa5e6ccc9304d6860c54fb4c77c82dfddbcf3970b8ce4963df58976a2a17a53b",
+              "srcblob:d778a304490a010951eccb32f8a1cdfa5ca6285286d6fe7abd4855d537b9c763",
+              null,
+              "structured_field",
+              null,
+              "\"HrFteStaff\":\"3340.0000000000\"",
+              "HrFteStaff"
+            ]
+          ],
+          "right_evidence": [
+            [
+              "locator:fa5e6ccc9304d6860c54fb4c77c82dfddbcf3970b8ce4963df58976a2a17a53b",
+              "srcblob:d778a304490a010951eccb32f8a1cdfa5ca6285286d6fe7abd4855d537b9c763",
+              null,
+              "structured_field",
+              null,
+              "3340.0000000000",
+              "HrFteStaff"
+            ]
+          ]
+        }
+      ],
+      "one_sided_left": [
+        {
+          "index": 0,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": "scope:2ff5b028e823b9e33c4d2fa244de11ffc38a76866a4874c84f40e0599687dd4a",
+            "scope_kind": "organisation",
+            "scope_label": "St Vincent's Hospital Sydney Limited"
+          },
+          "value": "Provides tertiary-level public hospital and healthcare."
+        },
+        {
+          "index": 2,
+          "proposition_type": "access_pathway",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "St Vincent's Hospital Sydney"
+          },
+          "value": "No online operation recorded."
+        },
+        {
+          "index": 3,
+          "proposition_type": "access_pathway",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "site",
+            "scope_label": "Darlinghurst NSW, Australia"
+          },
+          "value": "Darlinghurst NSW, Australia."
+        },
+        {
+          "index": 4,
+          "proposition_type": "access_pathway",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "site",
+            "scope_label": "Auburn NSW, Australia"
+          },
+          "value": "Auburn NSW, Australia."
+        },
+        {
+          "index": 5,
+          "proposition_type": "access_pathway",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "site",
+            "scope_label": "Parklea Correctional Centre, NSW, Australia"
+          },
+          "value": "Parklea Correctional Centre, NSW, Australia."
+        },
+        {
+          "index": 7,
+          "proposition_type": "capacity_measure",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": "scope:2ff5b028e823b9e33c4d2fa244de11ffc38a76866a4874c84f40e0599687dd4a",
+            "scope_kind": "organisation",
+            "scope_label": "St Vincent's Hospital Sydney Limited"
+          },
+          "value": "2499"
+        },
+        {
+          "index": 8,
+          "proposition_type": "capacity_measure",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": "scope:2ff5b028e823b9e33c4d2fa244de11ffc38a76866a4874c84f40e0599687dd4a",
+            "scope_kind": "organisation",
+            "scope_label": "St Vincent's Hospital Sydney Limited"
+          },
+          "value": "1268"
+        },
+        {
+          "index": 9,
+          "proposition_type": "coverage_state",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": "scope:2ff5b028e823b9e33c4d2fa244de11ffc38a76866a4874c84f40e0599687dd4a",
+            "scope_kind": "organisation",
+            "scope_label": "St Vincent's Hospital Sydney Limited"
+          },
+          "value": "Annual report unavailable."
+        }
+      ],
+      "one_sided_right": [
+        {
+          "index": 0,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": "scope:2ff5b028e823b9e33c4d2fa244de11ffc38a76866a4874c84f40e0599687dd4a",
+            "scope_kind": "organisation",
+            "scope_label": "St Vincent's Hospital Sydney Limited"
+          },
+          "value": "Tertiary-level public hospital and healthcare"
+        },
+        {
+          "index": 2,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "site",
+            "scope_label": "Darlinghurst NSW, Australia"
+          },
+          "value": "Darlinghurst NSW, Australia"
+        },
+        {
+          "index": 3,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "site",
+            "scope_label": "Auburn NSW, Australia"
+          },
+          "value": "Auburn NSW, Australia"
+        },
+        {
+          "index": 4,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "site",
+            "scope_label": "Parklea Correctional Centre, Parklea NSW, Australia"
+          },
+          "value": "Parklea Correctional Centre, Sentry Drive, Parklea NSW, Australia"
+        },
+        {
+          "index": 5,
+          "proposition_type": "eligibility",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "St Vincent's Hospital Sydney"
+          },
+          "value": "Youth aged 15 to under 25"
+        },
+        {
+          "index": 6,
+          "proposition_type": "eligibility",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "St Vincent's Hospital Sydney"
+          },
+          "value": "Financially disadvantaged people"
+        },
+        {
+          "index": 7,
+          "proposition_type": "eligibility",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "St Vincent's Hospital Sydney"
+          },
+          "value": "People with chronic illness, including terminal illness"
+        },
+        {
+          "index": 8,
+          "proposition_type": "eligibility",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "St Vincent's Hospital Sydney"
+          },
+          "value": "People with disabilities"
+        },
+        {
+          "index": 10,
+          "proposition_type": "service_offer",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": "scope:2ff5b028e823b9e33c4d2fa244de11ffc38a76866a4874c84f40e0599687dd4a",
+            "scope_kind": "organisation",
+            "scope_label": "St Vincent's Hospital Sydney Limited"
+          },
+          "value": "Services are presented on the official homepage"
+        },
+        {
+          "index": 11,
+          "proposition_type": "access_pathway",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": "scope:2ff5b028e823b9e33c4d2fa244de11ffc38a76866a4874c84f40e0599687dd4a",
+            "scope_kind": "organisation",
+            "scope_label": "St Vincent's Hospital Sydney Limited"
+          },
+          "value": "A patients-and-visitors information pathway is presented"
+        }
+      ],
+      "ambiguous_anchor_groups": [
+        {
+          "anchor": [
+            "service_offer",
+            "organisation",
+            "St Vincent's Hospital Sydney Limited"
+          ],
+          "left_indices": [
+            0
+          ],
+          "right_indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "interpretation": "Descriptive mechanical comparison only; no candidate pairing beyond unique type/scope anchors, no reconciliation, no semantic adjudication.",
+      "human_adjudication": "pending"
+    },
+    {
+      "slice": "commitments",
+      "abn": "50169561394",
+      "logical_request_ids": [
+        "phase6:commitments:50169561394:replicate-1",
+        "phase6:commitments:50169561394:replicate-2"
+      ],
+      "exact_agreements": [],
+      "same_type_scope_unique_value_comparisons": [],
+      "same_type_scope_value_epistemic_class_differences": [],
+      "evidence_differences_on_exact_agreements": [],
+      "one_sided_left": [
+        {
+          "index": 0,
+          "proposition_type": "commitment_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The organisation states that it is committed to the ACFID Code of Conduct."
+        },
+        {
+          "index": 1,
+          "proposition_type": "implementation_claimed_by_subject",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The organisation claims full adherence to the ACFID Code and describes transparency, accountability, and integrity as ways of conducting its work."
+        },
+        {
+          "index": 2,
+          "proposition_type": "implementation_claimed_by_subject",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "More than 60 programs were separately audited and acquitted to funders each year, according to the report."
+        },
+        {
+          "index": 3,
+          "proposition_type": "commitment_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The organisation states that its annual report provides an integrated overview of humanitarian, financial, social, and environmental performance."
+        },
+        {
+          "index": 4,
+          "proposition_type": "policy_or_position_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The organisation states that it exists to reduce human suffering."
+        },
+        {
+          "index": 5,
+          "proposition_type": "implementation_claimed_by_subject",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "Migration support programs in Australia"
+          },
+          "value": "34,170 people received help through migration support programs in Australia."
+        }
+      ],
+      "one_sided_right": [
+        {
+          "index": 0,
+          "proposition_type": "commitment_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The organization states that it is committed through signatory status to the ACFID Code of Conduct."
+        },
+        {
+          "index": 1,
+          "proposition_type": "implementation_claimed_by_subject",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The organization claims full adherence to the ACFID Code and describes transparency, accountability, and integrity as ways of conducting its work."
+        },
+        {
+          "index": 2,
+          "proposition_type": "formal_obligation_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The annual report states that it was prepared in accordance with Australian Accounting Standards and Interpretations."
+        },
+        {
+          "index": 3,
+          "proposition_type": "practice_observed_or_independently_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The organization reports external audit of annual financial statements and separate audit and funder acquittal of more than 60 programs each year."
+        },
+        {
+          "index": 4,
+          "proposition_type": "commitment_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:90fea7d1a516443d43bf268cf091155c91c10a1fddfbc67dbefe6219597a7f81",
+            "scope_kind": "organisation",
+            "scope_label": "Australian Red Cross Society"
+          },
+          "value": "The organization invites regular giving to support continued assistance before, during, and after disasters."
+        }
+      ],
+      "ambiguous_anchor_groups": [
+        {
+          "anchor": [
+            "commitment_stated",
+            "organisation",
+            "Australian Red Cross Society"
+          ],
+          "left_indices": [
+            0,
+            3
+          ],
+          "right_indices": [
+            0,
+            4
+          ]
+        },
+        {
+          "anchor": [
+            "implementation_claimed_by_subject",
+            "organisation",
+            "Australian Red Cross Society"
+          ],
+          "left_indices": [
+            1,
+            2
+          ],
+          "right_indices": [
+            1
+          ]
+        }
+      ],
+      "interpretation": "Descriptive mechanical comparison only; no candidate pairing beyond unique type/scope anchors, no reconciliation, no semantic adjudication.",
+      "human_adjudication": "pending"
+    },
+    {
+      "slice": "commitments",
+      "abn": "65069482829",
+      "logical_request_ids": [
+        "phase6:commitments:65069482829:replicate-1",
+        "phase6:commitments:65069482829:replicate-2"
+      ],
+      "exact_agreements": [],
+      "same_type_scope_unique_value_comparisons": [
+        {
+          "left_index": 3,
+          "right_index": 4,
+          "left_value": "Domiciled in Australia.",
+          "right_value": "The regulator record reports fundraising as Yes.",
+          "left_epistemic_class": "first_party_claim",
+          "right_epistemic_class": "source_native_record"
+        }
+      ],
+      "same_type_scope_value_epistemic_class_differences": [],
+      "evidence_differences_on_exact_agreements": [],
+      "one_sided_left": [
+        {
+          "index": 0,
+          "proposition_type": "policy_or_position_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Raises money for charitable organisations determined by the Trustees."
+        },
+        {
+          "index": 1,
+          "proposition_type": "implementation_claimed_by_subject",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Conducted fundraising events throughout the year, culminating in a Telethon Weekend Appeal."
+        },
+        {
+          "index": 2,
+          "proposition_type": "policy_or_position_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Financially supports medical and social welfare and care, and funds research into children's diseases."
+        },
+        {
+          "index": 4,
+          "proposition_type": "implementation_claimed_by_subject",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Reportedly conducted year-round fundraising culminating in an October 2025 Telethon Appeal to support medical research, equipment, critical services, and opportunities for sick, vulnerable, and disadvantaged children."
+        },
+        {
+          "index": 5,
+          "proposition_type": "practice_observed_or_independently_reported",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "Telethon Weekend"
+          },
+          "value": "Regulator record classifies the program as Health and lists early childhood, children, youth, and Aboriginal and Torres Strait Islander people as beneficiaries."
+        },
+        {
+          "index": 6,
+          "proposition_type": "practice_observed_or_independently_reported",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "Mega Bingo"
+          },
+          "value": "Regulator record classifies the program as Health and lists early childhood, children, youth, and Aboriginal and Torres Strait Islander people as beneficiaries."
+        },
+        {
+          "index": 7,
+          "proposition_type": "formal_obligation_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Fundraising regulation status recorded as Yes."
+        }
+      ],
+      "one_sided_right": [
+        {
+          "index": 0,
+          "proposition_type": "policy_or_position_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "The Trust states that its objective is to raise money for charitable organisations determined by its Trustees."
+        },
+        {
+          "index": 1,
+          "proposition_type": "implementation_claimed_by_subject",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "The Trust claims to conduct fundraising events throughout the year, culminating in a Telethon Weekend Appeal."
+        },
+        {
+          "index": 2,
+          "proposition_type": "policy_or_position_stated",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "The Trust states a philosophy of financially supporting medical and social welfare, care, and research concerning children and young people."
+        },
+        {
+          "index": 3,
+          "proposition_type": "implementation_plan_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "The charity reported an October 2025 Telethon Appeal intended to support childhood-disease research and provide equipment, critical services, and opportunities."
+        },
+        {
+          "index": 5,
+          "proposition_type": "coverage_state",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Official website evidence was unavailable."
+        }
+      ],
+      "ambiguous_anchor_groups": [
+        {
+          "anchor": [
+            "implementation_claimed_by_subject",
+            "organisation",
+            "The Trustee for Channel 7 Telethon Trust"
+          ],
+          "left_indices": [
+            1,
+            4
+          ],
+          "right_indices": [
+            1
+          ]
+        },
+        {
+          "anchor": [
+            "policy_or_position_stated",
+            "organisation",
+            "The Trustee for Channel 7 Telethon Trust"
+          ],
+          "left_indices": [
+            0,
+            2
+          ],
+          "right_indices": [
+            0,
+            2
+          ]
+        }
+      ],
+      "interpretation": "Descriptive mechanical comparison only; no candidate pairing beyond unique type/scope anchors, no reconciliation, no semantic adjudication.",
+      "human_adjudication": "pending"
+    },
+    {
+      "slice": "outcomes",
+      "abn": "12004251423",
+      "logical_request_ids": [
+        "phase6:outcomes:12004251423:replicate-1",
+        "phase6:outcomes:12004251423:replicate-2"
+      ],
+      "exact_agreements": [],
+      "same_type_scope_unique_value_comparisons": [
+        {
+          "left_index": 0,
+          "right_index": 0,
+          "left_value": "The organisation reported conducting and publishing medical research.",
+          "right_value": "Conducted and published medical research.",
+          "left_epistemic_class": "source_native_record",
+          "right_epistemic_class": "first_party_claim"
+        }
+      ],
+      "same_type_scope_value_epistemic_class_differences": [],
+      "evidence_differences_on_exact_agreements": [],
+      "one_sided_left": [
+        {
+          "index": 1,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "The organisation claimed that its research advances disease understanding and informs development of diagnostics and treatments."
+        },
+        {
+          "index": 2,
+          "proposition_type": "contribution_claim_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "The organisation claimed that translational activities and partnerships progressed discoveries towards clinical application and real-world health impact."
+        },
+        {
+          "index": 3,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "The organisation claimed that it trained researchers and strengthened biomedical research capability."
+        },
+        {
+          "index": 4,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "The organisation stated that its discoveries aim to transform lives."
+        },
+        {
+          "index": 5,
+          "proposition_type": "contribution_claim_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "The organisation claimed that its tools and technologies help translate research into treatments and disease-diagnosis approaches."
+        }
+      ],
+      "one_sided_right": [
+        {
+          "index": 1,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "Research informs development of new diagnostics and treatments."
+        },
+        {
+          "index": 2,
+          "proposition_type": "contribution_claim_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "Translational activities and partnerships progressed discoveries toward clinical application and real-world health impact."
+        },
+        {
+          "index": 3,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "Trained the next generation of researchers."
+        },
+        {
+          "index": 4,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "Seeks better disease detection and treatment."
+        },
+        {
+          "index": 5,
+          "proposition_type": "contribution_claim_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "Claims that new discoveries transform lives."
+        },
+        {
+          "index": 6,
+          "proposition_type": "outcome_measure_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "Scientific consumables and other research expenses: 30,757."
+        },
+        {
+          "index": 7,
+          "proposition_type": "coverage_state",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:c26096df1dbce239a08852f6756939c219f4aebfbb37d9c30a5fd011056df0a9",
+            "scope_kind": "organisation",
+            "scope_label": "Walter and Eliza Hall Institute of Medical Research"
+          },
+          "value": "Independent evaluation and causal finding evidence not supplied."
+        }
+      ],
+      "ambiguous_anchor_groups": [
+        {
+          "anchor": [
+            "contribution_claim_reported",
+            "organisation",
+            "Walter and Eliza Hall Institute of Medical Research"
+          ],
+          "left_indices": [
+            2,
+            5
+          ],
+          "right_indices": [
+            2,
+            5
+          ]
+        },
+        {
+          "anchor": [
+            "outcome_or_aim_claimed",
+            "organisation",
+            "Walter and Eliza Hall Institute of Medical Research"
+          ],
+          "left_indices": [
+            1,
+            3,
+            4
+          ],
+          "right_indices": [
+            1,
+            3,
+            4
+          ]
+        }
+      ],
+      "interpretation": "Descriptive mechanical comparison only; no candidate pairing beyond unique type/scope anchors, no reconciliation, no semantic adjudication.",
+      "human_adjudication": "pending"
+    },
+    {
+      "slice": "outcomes",
+      "abn": "65069482829",
+      "logical_request_ids": [
+        "phase6:outcomes:65069482829:replicate-1",
+        "phase6:outcomes:65069482829:replicate-2"
+      ],
+      "exact_agreements": [
+        {
+          "left_index": 2,
+          "right_index": 1,
+          "signature": [
+            "activity_or_output_reported",
+            "organisation",
+            "The Trustee for Channel 7 Telethon Trust",
+            "Conducted fundraising events throughout the year, culminating in a Telethon Weekend Appeal.",
+            "first_party_claim"
+          ]
+        }
+      ],
+      "same_type_scope_unique_value_comparisons": [],
+      "same_type_scope_value_epistemic_class_differences": [],
+      "evidence_differences_on_exact_agreements": [],
+      "one_sided_left": [
+        {
+          "index": 0,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Raises money for the benefit of charitable organisations determined by the Trustees."
+        },
+        {
+          "index": 1,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Aims to support medical and social welfare, care, and research into children's diseases."
+        },
+        {
+          "index": 3,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Reported support aims included medical research into childhood diseases, equipment, critical services, and life-changing opportunities."
+        },
+        {
+          "index": 4,
+          "proposition_type": "activity_or_output_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Reported grant donations in Australia: 75,479,424.0000 AUD."
+        },
+        {
+          "index": 5,
+          "proposition_type": "activity_or_output_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Reported untied grants and fellowships expense: 75,479,424 AUD."
+        },
+        {
+          "index": 6,
+          "proposition_type": "activity_or_output_reported",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "Telethon Weekend"
+          },
+          "value": "Program record classified Telethon Weekend under Health and listed specified beneficiary groups."
+        },
+        {
+          "index": 7,
+          "proposition_type": "activity_or_output_reported",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "Mega Bingo"
+          },
+          "value": "Program record classified Mega Bingo under Health and listed specified beneficiary groups."
+        },
+        {
+          "index": 8,
+          "proposition_type": "outcome_measure_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Reported net surplus: 1,916,562 AUD."
+        }
+      ],
+      "one_sided_right": [
+        {
+          "index": 0,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Raise money for the benefit of charitable organisations determined by the Trustees."
+        },
+        {
+          "index": 2,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Support medical research into childhood diseases and provide equipment, critical services, and life-changing opportunities."
+        },
+        {
+          "index": 3,
+          "proposition_type": "outcome_or_aim_claimed",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Financially support medical and social welfare, care, and research into children's diseases."
+        },
+        {
+          "index": 4,
+          "proposition_type": "activity_or_output_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "75,479,424 in grant donations in Australia."
+        },
+        {
+          "index": 5,
+          "proposition_type": "activity_or_output_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "15.6 FTE staff."
+        },
+        {
+          "index": 6,
+          "proposition_type": "activity_or_output_reported",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "1,000 unpaid volunteers."
+        },
+        {
+          "index": 7,
+          "proposition_type": "study_population_and_period",
+          "scope": {
+            "resolution": "candidate_unresolved",
+            "scope_id": null,
+            "scope_kind": "program",
+            "scope_label": "Telethon Appeal"
+          },
+          "value": "Telethon Appeal culminated in October 2025."
+        },
+        {
+          "index": 8,
+          "proposition_type": "coverage_state",
+          "scope": {
+            "resolution": "resolved_to_private_organisation_candidate",
+            "scope_id": "scope:69f483b428fd12217ee2f035d5c3eaa5211f1794802efc7a659ba61b05dc25ed",
+            "scope_kind": "organisation",
+            "scope_label": "The Trustee for Channel 7 Telethon Trust"
+          },
+          "value": "Official website source unavailable in the retained corpus."
+        }
+      ],
+      "ambiguous_anchor_groups": [
+        {
+          "anchor": [
+            "activity_or_output_reported",
+            "organisation",
+            "The Trustee for Channel 7 Telethon Trust"
+          ],
+          "left_indices": [
+            4,
+            5
+          ],
+          "right_indices": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "anchor": [
+            "outcome_or_aim_claimed",
+            "organisation",
+            "The Trustee for Channel 7 Telethon Trust"
+          ],
+          "left_indices": [
+            0,
+            1,
+            3
+          ],
+          "right_indices": [
+            0,
+            2,
+            3
+          ]
+        }
+      ],
+      "interpretation": "Descriptive mechanical comparison only; no candidate pairing beyond unique type/scope anchors, no reconciliation, no semantic adjudication.",
+      "human_adjudication": "pending"
+    }
+  ]
+}

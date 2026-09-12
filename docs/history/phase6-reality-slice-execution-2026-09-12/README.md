@@ -30,3 +30,6 @@ Same-model repeat groups: 6. Four of six groups share no exact candidate signatu
 Input handling: request bodies and source content remain outside the Data repository. The committed raw-candidate files preserve only the exact Structured Output text. The experiment applied the recorded local privacy screen; this bounds what the model saw and must be considered during review.
 
 Explicitly unchanged: public v0.5, Viewer, governed knowledge, source corpus, and Phase 5 broader Top-100 objective. Product-value work remains downstream of adjudication.
+
+
+Mechanical triage was completed on 13 September 2026 in a separate derivative packet: [Phase 6 mechanical triage and adjudication packet](triage-2026-09-13/README.md). The execution accounting and original candidate outputs above remain the historical run record; repairs and post-triage results are recorded only in that linked packet.

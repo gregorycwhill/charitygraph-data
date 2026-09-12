@@ -1,0 +1,42 @@
+{
+  "repairs": [
+    {
+      "logical_request_id": "phase6:outcomes:28000030179:primary",
+      "physical_attempt_id": "phase6attempt:8681241c-1678-49a7-b92c-dc6a3ce037a9",
+      "source_path": "../raw-candidates/phase6attempt_8681241c-1678-49a7-b92c-dc6a3ce037a9.json",
+      "source_sha256": "5e5df6c774ed09d7495fa06fce9715ea6eb9544cb2f43f1a94bac33c288cd6ff",
+      "derivative_path": "repaired-candidates/phase6attempt_8681241c-1678-49a7-b92c-dc6a3ce037a9.json",
+      "derivative_sha256": "d376a2af60af9d44f2fe77030a8516997e7f5990a025522f57da849afc190363",
+      "changed_json_pointers": [
+        "/propositions/1/scope/scope_id",
+        "/propositions/8/scope/scope_id",
+        "/propositions/9/scope/scope_id"
+      ],
+      "old_scope_id": "scope:8558db5a6e791f4c75bb729d07a2e807871c49650fefdc38d86b69e48968860",
+      "request_bound_scope_id": "scope:8558db5a6e791f4c75bb729d07a2e807871c49650fefdc38d86b69e48968860a",
+      "basis": "Exactly one organization scope in this immutable request; candidate scope kind, exact subject label, and resolved-candidate status agree; only the identifier characters differed.",
+      "semantic_fields_changed": [],
+      "repair_status": "applied_to_derivative_only"
+    },
+    {
+      "logical_request_id": "phase6:outcomes:78053639115:primary",
+      "physical_attempt_id": "phase6attempt:9b2f484d-1818-4c18-8fca-99fefee62f9a",
+      "source_path": "../raw-candidates/phase6attempt_9b2f484d-1818-4c18-8fca-99fefee62f9a.json",
+      "source_sha256": "29ecc5a542c0071da149f90dfd2eae4b2de433bf16f45c47a947f6e81e268224",
+      "derivative_path": "repaired-candidates/phase6attempt_9b2f484d-1818-4c18-8fca-99fefee62f9a.json",
+      "derivative_sha256": "fe1d9f5eb8c576460b137410a5bb9b06855acea22bd22f329192c61f1be5da54",
+      "changed_json_pointers": [
+        "/propositions/4/scope/scope_id",
+        "/propositions/5/scope/scope_id",
+        "/propositions/6/scope/scope_id",
+        "/propositions/7/scope/scope_id",
+        "/propositions/8/scope/scope_id"
+      ],
+      "old_scope_id": "scope:988dbcb7b533a9cb8a3103e45cc134768be52f71456d83acf44f836c6a0b8d5f6",
+      "request_bound_scope_id": "scope:988dbcb7b533a9cb8a3103e45cc134768be52f71456d83acf44f836c6a0b8d5f",
+      "basis": "Exactly one organization scope in this immutable request; candidate scope kind, exact subject label, and resolved-candidate status agree; only the identifier characters differed.",
+      "semantic_fields_changed": [],
+      "repair_status": "applied_to_derivative_only"
+    }
+  ]
+}

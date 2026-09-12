@@ -1,6 +1,6 @@
 # CharityGraph Current State
 
-**Status date:** 12 September 2026
+**Status date:** 13 September 2026
 
 **Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. PHASE 6 BOUNDED EXPLORATION (Tranches 0-1) and the approved outcomes/evaluation, commitments/implementation, and capacity/availability/access candidate runs are complete. Human adjudication remains pending; no governed promotion or production implementation is authorized. No production-complete claim is made.
 
@@ -51,13 +51,16 @@ release, or Phase-5 merge is implied by these facts. Native remains parked.
 Phase 6 Tranches 0-1 established a documentation baseline and finite capability
 inventory. Following explicit product-owner approval, the three selected capabilities
 were run as bounded candidate experiments against the approved retained corpus. The
-run made 24 Luna Standard attempts; outputs remain unadjudicated candidates. Mechanical
-validation exposed locator-quote and scope-ID failures, and exact-signature comparisons
-show substantial repeat drift. No advancement threshold is met or claimed. No source
-was acquired and no candidate was promoted. The broader Phase 5 Top-100 objective
-remains active and incomplete. Product-value work stays downstream of human
-adjudication and a further product-owner decision. See the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
-[reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md), and [execution packets](docs/history/phase6-reality-slice-execution-2026-09-12/README.md).
+run made 24 Luna Standard attempts; outputs remain unadjudicated candidates. A
+mechanical triage verified all 24 request and output hashes and applied eight
+request-bound scope-ID corrections in two derivative candidates. The post-triage gate
+passes 4/24 complete outputs and 142/203 propositions; 63 mechanical failure events
+across 61 propositions remain, principally non-exact quotes. No proposition is
+semantically accepted and human adjudication remains pending. No source was acquired
+and no candidate was promoted. The broader Phase 5 Top-100 objective remains active
+and incomplete. Product-value work stays downstream of human adjudication and a
+further product-owner decision. See the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
+[reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md), and [execution and triage packets](docs/history/phase6-reality-slice-execution-2026-09-12/README.md).
 
 ## 1. Repositories
 
