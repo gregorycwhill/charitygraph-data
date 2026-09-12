@@ -1,8 +1,8 @@
 # Phase 6 capability inventory and product-value shortlist
 
-**Status:** Working planning recommendation for product-owner decision; not product, semantic, or implementation authority
+**Status:** Working planning recommendation; the product owner selected the three leading capabilities for design only; not product, semantic, or implementation authority
 **Date:** 12 September 2026
-**Scope:** Phase 6 Tranches 0-1 only; no reality slice or implementation authorized
+**Scope:** Phase 6 Tranches 0-1 and Tranche 2 design selection; no live slice execution or implementation authorized
 
 ## Purpose and decision boundary
 
@@ -12,13 +12,13 @@ hypotheses. It is subordinate to the canonical authorities listed in
 and the [integrated product and data model](INTEGRATED_PRODUCT_AND_DATA_MODEL.md).
 It does not change those authorities, define public schema, or authorize live work.
 
-The recommendation is to take outcomes/evaluation, commitments/implementation, and
-capacity/access/availability forward for product-owner consideration as the leading
-three. This recommendation is not Gate 1 approval. Conduct/adverse history is a
-strong fourth candidate but does not displace the leading candidates on the current
-evidence. Product-owner selection and a separately authorized Tranche 2 design are
-required before any reality slice. No provider calls, new source acquisition, semantic
-experiments, or production implementation are part of this inventory.
+The product owner selected outcomes/evaluation, commitments/implementation, and
+capacity/access/availability for **reality-slice design only**. This is not approval
+to execute Tranche 3. Conduct/adverse history remains a strong deferred fourth
+candidate. The designs are in [PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md).
+Each slice requires separate product-owner execution approval. No provider calls,
+new source acquisition, semantic experiments, or production implementation are part
+of this inventory.
 
 ## Baseline and evidence
 
@@ -49,9 +49,9 @@ or correct in real-world use.
 
 | ID and capability | User questions enabled | North Star sections | Likely source families | Usefulness hypothesis | Likely economics | Recommended disposition |
 |---|---|---|---|---|---|---|
-| A. Outcomes and evaluation | What outcomes are claimed and measured? Is evidence activity, output, observed outcome, contribution, or causal evidence? Who/what/time does it apply to? What limits are visible? | 18 Outcomes, impact & evaluation; 20 Evidence and uncertainty; 3 Purpose/activities; 6 Population | Charity annual and impact reports; evaluation and research reports; program dashboards; government or commissioned evaluations; first-party measurement publications | A well-scoped evidence trail could let analysts distinguish claimed impact from measured change and causal support, improving on directory-level descriptions. Value is high if limitations and null/mixed results remain visible. | High potential product value; high evidence review and synthesis cost. Start with a small, overlapping existing-corpus cohort and narrow propositions; do not assume unit economics before measuring adjudication burden. | `SELECT_FOR_REALITY_SLICE` — recommended for product-owner decision |
-| B. Commitments versus implementation | What policy, principle, pledge, target, or obligation exists? What supports intention, claimed implementation, observed practice, compliance, or outcomes? At what scope? Is evidence absent or evidence of non-implementation? | 15 Positions, commitments & implementation; 14 Governance; 16 Conduct/compliance; 20 Evidence and uncertainty | Constitutions, policies, strategies, public commitments, progress reports, annual reports, regulator records, independent audits and contractual documents | Separating what an organization says from what it has done can answer material accountability questions while preventing policy text from being mistaken for implementation. | Medium-high value; material human review and source-role classification cost. Narrow propositions may permit economical typed extraction, but adjudication is likely dominant. | `SELECT_FOR_REALITY_SLICE` — recommended for product-owner decision |
-| C. Capacity, availability and access | What is offered, to whom and where? What eligibility/referral/access conditions apply? Is it currently available? Is capacity known, bounded, waitlisted, unavailable, occupied, or unknown? | 11 Capability, capacity, access & availability; 3 Purpose/activities; 4 Beneficiaries; 20 Evidence and uncertainty | Current service directories and intake pages; first-party service descriptions; referral and eligibility guides; dated operational updates; official waitlist or capacity notices | Current, scoped access information could make service discovery more actionable than static service descriptions, if freshness and unknown status are clear. | Medium-high usefulness; ongoing temporal verification and refresh cost may be significant. Reuse existing frozen Top-100 sources first; no fresh acquisition is implied. | `SELECT_FOR_REALITY_SLICE` — recommended for product-owner decision |
+| A. Outcomes and evaluation | What outcomes are claimed and measured? Is evidence activity, output, observed outcome, contribution, or causal evidence? Who/what/time does it apply to? What limits are visible? | 18 Outcomes, impact & evaluation; 20 Evidence and uncertainty; 3 Purpose/activities; 6 Population | Charity annual and impact reports; evaluation and research reports; program dashboards; government or commissioned evaluations; first-party measurement publications | A well-scoped evidence trail could let analysts distinguish claimed impact from measured change and causal support, improving on directory-level descriptions. Value is high if limitations and null/mixed results remain visible. | High potential product value; high evidence review and synthesis cost. Start with a small, overlapping existing-corpus cohort and narrow propositions; do not assume unit economics before measuring adjudication burden. | `SELECT_FOR_REALITY_SLICE` — selected for design only; execution not authorized |
+| B. Commitments versus implementation | What policy, principle, pledge, target, or obligation exists? What supports intention, claimed implementation, observed practice, compliance, or outcomes? At what scope? Is evidence absent or evidence of non-implementation? | 15 Positions, commitments & implementation; 14 Governance; 16 Conduct/compliance; 20 Evidence and uncertainty | Constitutions, policies, strategies, public commitments, progress reports, annual reports, regulator records, independent audits and contractual documents | Separating what an organization says from what it has done can answer material accountability questions while preventing policy text from being mistaken for implementation. | Medium-high value; material human review and source-role classification cost. Narrow propositions may permit economical typed extraction, but adjudication is likely dominant. | `SELECT_FOR_REALITY_SLICE` — selected for design only; execution not authorized |
+| C. Capacity, availability and access | What is offered, to whom and where? What eligibility/referral/access conditions apply? Is it currently available? Is capacity known, bounded, waitlisted, unavailable, occupied, or unknown? | 11 Capability, capacity, access & availability; 3 Purpose/activities; 4 Beneficiaries; 20 Evidence and uncertainty | Current service directories and intake pages; first-party service descriptions; referral and eligibility guides; dated operational updates; official waitlist or capacity notices | Current, scoped access information could make service discovery more actionable than static service descriptions, if freshness and unknown status are clear. | Medium-high usefulness; ongoing temporal verification and refresh cost may be significant. Reuse existing frozen Top-100 sources first; no fresh acquisition is implied. | `SELECT_FOR_REALITY_SLICE` — selected for design only; execution not authorized |
 | D. Conduct and adverse history | Is there authoritative adverse information? Was it an allegation, investigation, finding, sanction, appeal, remediation, or historical event? Which entity/program/time does it concern, and what is its status? | 16 Conduct and compliance; 17 Notable context; 20 Evidence and uncertainty | Charity regulator and other official regulator records; courts, inquiries and commissions; official findings, appeals and organization responses/remediation | Properly qualified adverse context can materially aid diligence while avoiding a notoriety score or collapsing allegations into findings. | Potentially high diligence value but high-right-tail legal, correction, reputational and specialist-review cost; low tolerance for error. | `DEFER_GOVERNANCE` — strong fourth candidate; requires rights, correction, response and specialist controls before a slice |
 | E. Ethos, values and stance | What values or affiliation does the organization explicitly describe? What positions are explicit? Which claims are self-description, and which would be inference? What operational implications are actually evidenced? | 14 Governance; 15 Positions, commitments & implementation; 20 Evidence and uncertainty | Constitutions, first-party policies and annual reports; explicit statements; affiliation/member-scheme records | Explicit, attributed self-description can add useful context, but inferred ethos has uncertain incremental value and can easily overgeneralize from affiliation or beneficiaries. | Moderate extraction cost; ongoing human attribution and scope review. Broad inference could create costly correction and trust risks. | `DEFER_UNTIL_PRODUCT_VALUE_PROVEN` |
 | F. Sensitive-population and Indigenous governance | What evidence concerns a sensitive population or Indigenous community? Who has authority to describe, govern, consent to, access, or publish it? What restrictions and community-specific context apply? | 4 Beneficiaries; 6 Population; 11 Access; 20 Evidence, uncertainty and cultural governance; relevantly 16 | Consented organization/community sources; Indigenous-controlled sources and governance authorities; applicable rights, consent and community protocols | Could support important questions only where information is governed under legitimate community authority and consent. A generic open-web extraction approach is not an acceptable proxy. | High governance, relationship, consent, access-control and stewardship cost; economics cannot be responsibly estimated before governed design. | `DEFER_GOVERNANCE` |
@@ -67,11 +67,11 @@ or correct in real-world use.
 | E | General assertions and organization positions can carry attributed claims; North Star section 14 warns against inferring ethos from beneficiary identity or parent/affiliate relationships. | No safe, validated general ethos-inference profile; explicit affiliation/stance boundaries, attribution and downstream propagation require specific policy. | High for inferred ethos and operational implications; lower for narrow attributed quotations. | Medium: affiliation registries and self-description vary in authority and meaning. | High: entity, affiliate, service-user and parent scopes must stay separate. | Human review for stance and any affiliation semantics; explicit self-description may be extracted with attribution but must not be converted to inferred ethos. | Limited extraction of explicit claims only; no model-generated ethos characterization. |
 | F | Generic subject, population, evidence and access-control concepts exist. North Star and product principles recognize cultural governance, rights, consent and publication limits. | Specific authority, consent, sovereignty, cultural protocols, access/publication controls and community stewardship are not established by generic primitives alone. | Very high: category imposition, context loss and inappropriate inference can cause harm. | Very high: only legitimate Indigenous/community-controlled authorities can establish relevant governance and permissions. | Very high: community, people, place, organization and collective rights do not reduce to ordinary organization fields. | Indigenous/community governance and designated data stewards must define authority, consent, use and review before any model processing; LLM judgment cannot substitute. | No model requirement is assumed. Any later model assistance is subordinate to approved governance, consent and controls. |
 
-## Recommended Gate 1 shortlist
+## Gate 1 product-owner decision and disposition
 
-Recommend **A. Outcomes and evaluation**, **B. Commitments versus implementation**,
-and **C. Capacity, availability and access** for product-owner consideration. These
-address distinct analyst needs, have meaningful potential to improve on ordinary
+The product owner selected **A. Outcomes and evaluation**, **B. Commitments versus
+implementation**, and **C. Capacity, availability and access** for reality-slice
+design. They address distinct analyst needs, have meaningful potential to improve on ordinary
 directory/source research, and expose complementary epistemic challenges. Capacity
 has bounded V1.2 structural support but still needs reality evidence for semantic
 truth, freshness and practical utility. The other two have high prospective value
@@ -79,20 +79,18 @@ and important representation gaps. Conduct/adverse history is a strong fourth, b
 its unusually high governance and correction burden means it should not displace any
 of the three absent evidence of materially greater product value.
 
-No Gate 1 selection is made here. Before any Tranche 2 work, the product owner must
-select or reject the candidates and separately authorize a bounded design. That design
-must specify the cohort, target propositions, legal scopes, evidence and missingness
-rules, prohibited inference, mechanical and semantic acceptance criteria, independent
-human review rubric, economics, stopping rule and source/provider controls. If later
-authorized, use only a small subset of the frozen Top-100 corpus first and do not
-acquire sources merely to fill a cohort.
+This design selection is not execution approval. The separate Tranche 2 designs
+specify the cohort, propositions, legal scopes, evidence/missingness rules, prohibited
+inference, acceptance criteria, review, economics, stopping rules and controls. Each
+slice still needs its own explicit authorization before execution. If authorized, use
+only the frozen Top-100 corpus and do not acquire sources to fill a cohort.
 
 ## Authority and status
 
 This document is a point-in-time product hypothesis inventory. Its usefulness and
 economics are unmeasured expectations, not observed results. It contains no normative
 product decision, public contract, semantic acceptance or permission to execute work.
-Later evidence or project decisions may supersede these recommendations. Broader Phase
-5 Top-100 remains active; bounded Phase 6 planning can proceed before its completion,
-while live experiments, production implementation, Phase 7 and scale remain separately
-gated.
+The product-owner design selection is recorded in planning status; it does not
+constitute an execution authorization. Broader Phase 5 Top-100 remains active; design
+can proceed before its completion, while each live experiment, production
+implementation, Phase 7 and scale remain separately gated.

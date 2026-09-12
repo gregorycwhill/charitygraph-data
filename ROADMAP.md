@@ -216,11 +216,12 @@ and [Builder implementation closeout](https://github.com/gregorycwhill/charitygr
 
 This closes the Direct Service experiment only. The Top-100 full-card milestone
 and its coverage/knowledge exit criteria remain active. The bounded Phase 6
-exploration (Tranches 0-1) is authorized and recorded in the [Phase 6 capability
-inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md); it proceeds alongside the
-remaining Phase 5 objective and does not imply Phase 5 completion or a product
-direction decision. Live reality slices and implementation still require a
-separate product-owner decision and authorization.
+exploration (Tranches 0-1) is complete alongside the remaining Phase 5 objective
+and does not imply Phase 5 completion. The product owner selected three capabilities
+for design only; see the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md)
+and [reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md). No slice
+has executed. Each live reality slice and any implementation require a separate
+product-owner decision and authorization.
 
 ### Phase 5 historical/current program-discovery run
 
@@ -230,9 +231,10 @@ Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid
 
 ## Phase 6 — Risk-gated depth and specialist profiles
 
-**Status:** Tranches 0-1 bounded exploration complete; broader Phase 6 work remains
-unselected and requires product-owner decision/authorization. This exploration may
-proceed before the broader Phase 5 Top-100 exit criteria; Phase 5 remains active.
+**Status:** Tranches 0-1 complete; three capabilities selected for reality-slice
+design only. No slice has executed. Any slice execution requires separate
+product-owner approval. Bounded exploration may precede the broader Phase 5
+Top-100 exit criteria; Phase 5 remains active.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 
