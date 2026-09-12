@@ -1,0 +1,116 @@
+[
+  {
+    "abn": "12004251423",
+    "exact_shared_signature_count": 0,
+    "exact_signature_count_each": [
+      6,
+      8
+    ],
+    "exact_symmetric_difference_count": 14,
+    "exact_union_signature_count": 14,
+    "human_adjudication": "pending",
+    "interpretation": "descriptive exact-output comparison only; does not establish semantic correctness or reconcile candidates",
+    "logical_request_ids": [
+      "phase6:outcomes:12004251423:replicate-1",
+      "phase6:outcomes:12004251423:replicate-2"
+    ],
+    "method": "exact match on proposition_type, value, scope_kind, scope_label, epistemic_class; ignores evidence and wording fields",
+    "signature_agreement_ratio_jaccard": 0.0,
+    "slice_id": "outcomes"
+  },
+  {
+    "abn": "65069482829",
+    "exact_shared_signature_count": 1,
+    "exact_signature_count_each": [
+      9,
+      9
+    ],
+    "exact_symmetric_difference_count": 16,
+    "exact_union_signature_count": 17,
+    "human_adjudication": "pending",
+    "interpretation": "descriptive exact-output comparison only; does not establish semantic correctness or reconcile candidates",
+    "logical_request_ids": [
+      "phase6:outcomes:65069482829:replicate-1",
+      "phase6:outcomes:65069482829:replicate-2"
+    ],
+    "method": "exact match on proposition_type, value, scope_kind, scope_label, epistemic_class; ignores evidence and wording fields",
+    "signature_agreement_ratio_jaccard": 0.058823529411764705,
+    "slice_id": "outcomes"
+  },
+  {
+    "abn": "50169561394",
+    "exact_shared_signature_count": 0,
+    "exact_signature_count_each": [
+      6,
+      5
+    ],
+    "exact_symmetric_difference_count": 11,
+    "exact_union_signature_count": 11,
+    "human_adjudication": "pending",
+    "interpretation": "descriptive exact-output comparison only; does not establish semantic correctness or reconcile candidates",
+    "logical_request_ids": [
+      "phase6:commitments:50169561394:replicate-1",
+      "phase6:commitments:50169561394:replicate-2"
+    ],
+    "method": "exact match on proposition_type, value, scope_kind, scope_label, epistemic_class; ignores evidence and wording fields",
+    "signature_agreement_ratio_jaccard": 0.0,
+    "slice_id": "commitments"
+  },
+  {
+    "abn": "65069482829",
+    "exact_shared_signature_count": 0,
+    "exact_signature_count_each": [
+      8,
+      6
+    ],
+    "exact_symmetric_difference_count": 14,
+    "exact_union_signature_count": 14,
+    "human_adjudication": "pending",
+    "interpretation": "descriptive exact-output comparison only; does not establish semantic correctness or reconcile candidates",
+    "logical_request_ids": [
+      "phase6:commitments:65069482829:replicate-1",
+      "phase6:commitments:65069482829:replicate-2"
+    ],
+    "method": "exact match on proposition_type, value, scope_kind, scope_label, epistemic_class; ignores evidence and wording fields",
+    "signature_agreement_ratio_jaccard": 0.0,
+    "slice_id": "commitments"
+  },
+  {
+    "abn": "32565549842",
+    "exact_shared_signature_count": 0,
+    "exact_signature_count_each": [
+      9,
+      9
+    ],
+    "exact_symmetric_difference_count": 18,
+    "exact_union_signature_count": 18,
+    "human_adjudication": "pending",
+    "interpretation": "descriptive exact-output comparison only; does not establish semantic correctness or reconcile candidates",
+    "logical_request_ids": [
+      "phase6:capacity:32565549842:replicate-1",
+      "phase6:capacity:32565549842:replicate-2"
+    ],
+    "method": "exact match on proposition_type, value, scope_kind, scope_label, epistemic_class; ignores evidence and wording fields",
+    "signature_agreement_ratio_jaccard": 0.0,
+    "slice_id": "capacity"
+  },
+  {
+    "abn": "77054038872",
+    "exact_shared_signature_count": 1,
+    "exact_signature_count_each": [
+      10,
+      12
+    ],
+    "exact_symmetric_difference_count": 20,
+    "exact_union_signature_count": 21,
+    "human_adjudication": "pending",
+    "interpretation": "descriptive exact-output comparison only; does not establish semantic correctness or reconcile candidates",
+    "logical_request_ids": [
+      "phase6:capacity:77054038872:replicate-1",
+      "phase6:capacity:77054038872:replicate-2"
+    ],
+    "method": "exact match on proposition_type, value, scope_kind, scope_label, epistemic_class; ignores evidence and wording fields",
+    "signature_agreement_ratio_jaccard": 0.047619047619047616,
+    "slice_id": "capacity"
+  }
+]

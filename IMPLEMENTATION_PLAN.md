@@ -2,17 +2,17 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. Phase 6 Tranches 0-1 are complete, and three capabilities are selected for reality-slice design only; no reality slice has executed. The legacy Phase 4 active-scope label immediately below is historical and superseded.
+**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. Phase 6 Tranches 0-1 and the three approved bounded candidate runs are complete. Human adjudication remains pending; no candidate promotion or product implementation is authorized. The legacy Phase 4 active-scope label immediately below is historical and superseded.
 
-**Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective, alongside design of the three selected Phase 6 reality slices. No slice execution or implementation is authorized.
+**Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective, alongside proposition-level human adjudication of the three completed Phase 6 candidate runs. Product-value work remains downstream of adjudication and a further product-owner decision.
 
 The former Phase 3 closeout sequence below is retained as completed history.
 
 **Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family objective remains active. The Direct Service V1.2 experiment is complete; bounded Phase 6 exploration Tranches 0-1 is complete; Phase 4 is completed history.
 
-**Current authoritative scope:** Remaining Phase 5 - Top-100 full-card claim-family objective plus Phase 6 reality-slice design only. Phase 4 is completed history below.
+**Current authoritative scope:** Remaining Phase 5 - Top-100 full-card claim-family objective plus adjudication of the completed Phase 6 candidate experiments. Phase 4 is completed history below.
 
-**Immediate scope:** The broader Phase 5 objective remains active. Three Phase 6 capabilities are selected for bounded reality-slice design before broader Phase 5 exit; no slice execution, source acquisition, provider call, semantic experiment or implementation is authorized by this planning work.
+**Immediate scope:** The broader Phase 5 objective remains active. The three approved Phase 6 reality slices have run as candidate experiments; human adjudication remains pending. No source acquisition, governed promotion, public v0.5 change, Viewer change, or production implementation occurred. Product-value work remains downstream of adjudication and a further product-owner decision.
 
 ## 1. Delivery rule
 
@@ -438,13 +438,14 @@ it as a universal relationship rule.
 The Direct Service V1.2 experimental tranche is complete; see the [approved
 experiment decision](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md). The
 broader Top-100 full-card objective is still active. Bounded Phase 6 exploration
-Tranches 0-1 is complete; outcomes/evaluation, commitments/implementation and
-capacity/availability/access have been selected for reality-slice design only. See
-the [Phase 6 capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md) and
-[reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md). No slice has
-executed. This planning does not authorize provider calls, source acquisition,
-semantic experiments, candidate promotion or implementation. Each slice requires
-separate product-owner execution approval.
+Tranches 0-1 and the approved candidate runs for outcomes/evaluation,
+commitments/implementation and capacity/availability/access are complete. See the
+[Phase 6 capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
+[reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md), and [execution
+packets](docs/history/phase6-reality-slice-execution-2026-09-12/README.md).
+Human adjudication is pending; no promotion, implementation, or advancement threshold
+is claimed. The product-value slice remains downstream of adjudication and a further
+product-owner decision.
 
 All existing constraints remain: source universe first -> acquire once -> freeze
 corpus -> semantics; Builder does not do discovery or research; cards remain

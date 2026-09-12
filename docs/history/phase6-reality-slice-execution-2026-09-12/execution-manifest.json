@@ -1,0 +1,44 @@
+{
+  "actual_cost_aud": "0.186433",
+  "actual_cost_usd": "0.122647",
+  "address_projection_sha256": "7510fb7d352b661daaeebefd4238a013292dff6f69ae032c445f46fddb0378b9",
+  "all_human_adjudication_pending": true,
+  "completed": 24,
+  "conservative_exposure_aud": "0.483599",
+  "conservative_programme_cap_aud": "3.00",
+  "delivery_mode": "standard",
+  "failed_or_ambiguous": 0,
+  "fx_snapshot": {
+    "USD_to_AUD": "1.52",
+    "status": "retained local snapshot"
+  },
+  "governed_promotions": 0,
+  "input_tokens": 198933,
+  "model_requested": "gpt-5.6-luna",
+  "output_tokens": 69179,
+  "outputs_are_candidates_only": true,
+  "per_request_cap_aud": "0.25",
+  "pre_send_excluded": 0,
+  "pricing_snapshot": "openai-model-pages-2026-09-07",
+  "privacy_pattern_flags_in_candidate_output": [],
+  "privacy_transform": "phase6-private-input-sanitization-v1; AIS contact/person/related-party fields removed; privacy-sensitive annual-report pages excluded; website email/phone strings redacted",
+  "privacy_transform_counts": {
+    "ais_fields_removed": 409,
+    "annual_pages_excluded": 6,
+    "contact_strings_redacted": 10
+  },
+  "provider_attempts": 24,
+  "provider_models_observed": {
+    "gpt-5.6-luna": 24
+  },
+  "provider_posts": 24,
+  "public_v0_5_mutations": 0,
+  "raw_output_preservation": "verbatim Structured Output text only; complete provider envelope and request/source body remain outside the repository",
+  "reasoning_effort": "low",
+  "review_status": "completed_provider_run_pending_human_adjudication",
+  "run_date": "2026-09-12",
+  "run_id": "phase6-reality-slices-2026-09-12-v1",
+  "source_acquisitions": 0,
+  "total_tokens": 268112,
+  "viewer_changes": 0
+}

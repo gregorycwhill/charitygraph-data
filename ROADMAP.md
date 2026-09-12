@@ -218,10 +218,12 @@ This closes the Direct Service experiment only. The Top-100 full-card milestone
 and its coverage/knowledge exit criteria remain active. The bounded Phase 6
 exploration (Tranches 0-1) is complete alongside the remaining Phase 5 objective
 and does not imply Phase 5 completion. The product owner selected three capabilities
-for design only; see the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md)
-and [reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md). No slice
-has executed. Each live reality slice and any implementation require a separate
-product-owner decision and authorization.
+for bounded candidate experiments; see the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
+[reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md), and [execution packets](docs/history/phase6-reality-slice-execution-2026-09-12/README.md).
+The three runs completed without promotion. Mechanical locator/scope failures and
+substantial same-model candidate drift remain for human adjudication; no advancement
+threshold is claimed. Phase 5 remains active and the product-value slice remains
+downstream of adjudication and a further product-owner decision.
 
 ### Phase 5 historical/current program-discovery run
 
@@ -231,10 +233,12 @@ Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid
 
 ## Phase 6 — Risk-gated depth and specialist profiles
 
-**Status:** Tranches 0-1 complete; three capabilities selected for reality-slice
-design only. No slice has executed. Any slice execution requires separate
-product-owner approval. Bounded exploration may precede the broader Phase 5
-Top-100 exit criteria; Phase 5 remains active.
+**Status:** Tranches 0-1 and the approved bounded candidate runs for outcomes/evaluation,
+commitments/implementation, and capacity/availability/access are complete. Human
+adjudication remains pending; these runs establish no semantic acceptance, promotion,
+or implementation authority. Bounded exploration may precede the broader Phase 5
+Top-100 exit criteria; Phase 5 remains active. Product-value work is downstream of
+human adjudication and a further decision.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 

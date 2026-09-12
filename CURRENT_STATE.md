@@ -2,7 +2,7 @@
 
 **Status date:** 12 September 2026
 
-**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. PHASE 6 BOUNDED EXPLORATION (Tranches 0-1) is complete; three capabilities are selected for reality-slice design only. No reality slice has executed and no production implementation is authorized. No production-complete or governed-promotion claim is made.
+**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. PHASE 6 BOUNDED EXPLORATION (Tranches 0-1) and the approved outcomes/evaluation, commitments/implementation, and capacity/availability/access candidate runs are complete. Human adjudication remains pending; no governed promotion or production implementation is authorized. No production-complete claim is made.
 
 This is a factual project snapshot dated 12 September 2026. Private runtime databases,
 raw source/provider material and private experiment artefacts are not represented as
@@ -49,14 +49,15 @@ The current public state is not production-complete. No governed promotion, publ
 release, or Phase-5 merge is implied by these facts. Native remains parked.
 
 Phase 6 Tranches 0-1 established a documentation baseline and finite capability
-inventory. The product owner selected outcomes/evaluation, commitments/implementation,
-and capacity/availability/access for reality-slice design only; no slice has executed.
-This work does not depend on closing the broader Phase 5 Top-100 objective, which
-remains active and incomplete. The designs are review packets, not execution approval.
-Provider calls, new source acquisition, semantic runs, candidate promotion and
-production implementation remain unauthorized. A governed product-value slice stays
-downstream of these experiments and a further product-owner decision. See the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md)
-and [reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md).
+inventory. Following explicit product-owner approval, the three selected capabilities
+were run as bounded candidate experiments against the approved retained corpus. The
+run made 24 Luna Standard attempts; outputs remain unadjudicated candidates. Mechanical
+validation exposed locator-quote and scope-ID failures, and exact-signature comparisons
+show substantial repeat drift. No advancement threshold is met or claimed. No source
+was acquired and no candidate was promoted. The broader Phase 5 Top-100 objective
+remains active and incomplete. Product-value work stays downstream of human
+adjudication and a further product-owner decision. See the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
+[reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md), and [execution packets](docs/history/phase6-reality-slice-execution-2026-09-12/README.md).
 
 ## 1. Repositories
 
@@ -227,12 +228,13 @@ no Python semantic-equivalence heuristics; parked Native; Viewer as inspector; a
 no ranking, recommendation or grantmaking.
 
 The existing Phase 6 milestone remains "Risk-gated depth and specialist profiles."
-The supplied Phase 6 programme authorizes bounded exploration before broader Phase 5
+The supplied Phase 6 programme allows bounded exploration before broader Phase 5
 Top-100 completion; it does not close, replace or reduce that objective. Tranches 0-1
-are complete as planning work. The three selected capabilities now have reviewable
-reality-slice designs; none has executed. Each live slice requires separate
-product-owner approval. No provider call, source acquisition, semantic experiment,
-production implementation or governed promotion is authorized by these designs.
+and the three approved candidate runs are complete. Their execution packets record
+mechanical failures and repeat drift for proposition-level human adjudication. These
+results do not authorize production implementation or governed promotion. No new source
+was acquired; public v0.5 and Viewer are unchanged. The broader Phase 5 objective
+remains active, and product-value work remains downstream of adjudication.
 
 ## 15. Phase 3 state and process lesson
 
