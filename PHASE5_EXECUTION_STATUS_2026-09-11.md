@@ -1,5 +1,12 @@
 # Phase-5 execution status — 11 September 2026
 
+> Historical snapshot, accurate as of 11 September 2026. Its V1.2 candidate and
+> pending-execution statements are superseded by the completed 12 September
+> Direct Service V1.2 experiment. See [CURRENT_STATE.md](CURRENT_STATE.md), the
+> [decision record](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md), and the
+> durable runtime report `C:\CharityGraph-runtime\phase5-top100-direct-service-v1.2-cutover-v1\phase5-direct-service-v1.2-final-report-2026-09-12.json`
+> (SHA-256 `588707746dee2de90a14ed099d13235a34d3b18bf88e9f43008c22712c047777`).
+
 **Status:** Reference empirical snapshot — not product authority  
 **Scope:** Sanitised aggregate state only; raw runtime evidence remains private.
 

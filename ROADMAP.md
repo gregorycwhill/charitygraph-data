@@ -10,7 +10,7 @@ Build a one-stop shop for structured, governed Australian charity data: an integ
 
 Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity evidence corpus. Assemble one or more task-specific semantic packets from that corpus. Apply one or more cost-efficient semantic passes. Persist independently governed domain knowledge. Compile analyst/public projections from that governed knowledge.
 
-**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 COMPLETE - bounded packaging/routing economics answered; PHASE 5 ACTIVE - Top-100 full-card claim-family build.
+**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 COMPLETE - bounded packaging/routing economics answered; PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE. Its Direct Service V1.2 experimental tranche is complete; the broader Phase 5 exit objective is not.
 
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
@@ -112,9 +112,10 @@ explicit claim-family missingness, integrated private North Star projection,
 and production-appropriate interruption safety before scale.
 
 No universal accuracy, QA, acceptance-score or coverage threshold is implied.
-Phase 4 packaging/economics is complete at bounded experiment level. Phase 5
-Top-100 full-card scaling is now the active stage and implementation has not
-started.
+Phase 4 packaging/economics is complete at bounded experiment level. The broader
+Phase 5 Top-100 full-card objective remains active. The Direct Service V1.2
+experimental tranche has completed, but neither that experiment nor its bounded
+sample completes the Top-100 full-card milestone.
 
 Section 19 remains a six-lens architecture, not a completed milestone: source-
 native ACNC/ATO foundations exist, SDG and CharityGraph CLASSIE have bounded
@@ -191,6 +192,34 @@ beyond the existing Top-100 full-card boundary.
 
 The milestone is the **Top-100 full-card claim-family build**: attempt the complete North Star surface for literal ACNC donation ranks 1–100, with risk-tiered depth and explicit coverage states for every applicable claim family. Success means baseline source coverage attempted, applicable families attempted, governed results retained, missingness explicit, high-risk work reviewed/deferred appropriately, and economics/failures measured—not every field populated.
 
+### Direct Service V1.2 experimental tranche — complete
+
+The Direct Service V1.2 representation experiment is complete. V1.1 remains
+historical evidence; V1.2 is the selected section-array representation for future
+Direct Service work. The V1.1 sample had 42 completed responses: 19 directly
+valid, 22 deterministically recovered and 1 semantically unusable; 20 responses
+were representation-affected and contained 32 illegal section/type proposition
+instances. The V1.2 sample had 14 provider-executed responses: all 14 directly
+valid, 49 propositions retained, none discarded, and zero section/type
+violations or deterministic recoveries. Disposition:
+`V1_2_REPRESENTATION_FIX_SUPPORTED`. This is a small non-random sample; no
+statistical-significance or universal-readiness claim follows.
+
+The intended continuation population was 18: 13 final executions, one local
+zero-crossing pre-send control failure abandoned, and three economic exclusions
+above the binding AUD `0.25` per-request ceiling. The four non-executions are
+not semantic failures. Cumulative V1.2 provider cost was USD `0.437686` / AUD
+`0.665290`; all final unused reservations were released under active Amendment
+3. Amendment 4 was not activated. The experiment made no source acquisitions or
+governed promotions. See [the decision record](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md)
+and [Builder implementation closeout](https://github.com/gregorycwhill/charitygraph/blob/phase5-direct-service-v1.2-cutover-v1/docs/PHASE5_DIRECT_SERVICE_V1_2_CLOSEOUT.md).
+
+This closes the Direct Service experiment only. The Top-100 full-card milestone
+and its coverage/knowledge exit criteria remain active. Phase 6 is the already-
+planned successor after Phase 5 exit; which existing work tranche should follow
+inside the remaining Phase 5 scope is unresolved. Do not infer a phase transition
+or select a new product direction from this experiment alone.
+
 ### Phase 5 historical/current program-discovery run
 
 The recently halted run used literal ACNC donation ranks 1–100; it produced 60 new Terra response artefacts, reused 3 exact prior Terra-A results, and had 63 available semantic results in closeout analysis. It had 60 structurally valid results, 54 whole-output quote-valid results, 287 parsed proposals, 72 program-task `COMPLETE_ENOUGH` packets and 28 `PARTIAL` packets. One in-flight attempt (ABN `48321126727`) had no response artefact and indeterminate billing status. It was intentionally halted during roadmap realignment, did not start ranks 101–1000, made no validity/quality/impact/ROI/recommendation judgements, and changed no Builder, Data or Viewer files.
@@ -198,6 +227,8 @@ The recently halted run used literal ACNC donation ranks 1–100; it produced 60
 Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid outputs remain reusable Section-3 material where semantic identity permits; this run does not satisfy the future Top-100 full-card milestone and must not be rerun merely because sequencing changed.
 
 ## Phase 6 — Risk-gated depth and specialist profiles
+
+**Status:** planned; gated on the broader Phase 5 Top-100 full-card exit criteria.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 

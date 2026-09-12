@@ -2,17 +2,17 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status:** Phase 4 is complete; Phase 5 - Top-100 full-card claim-family build - is active. The legacy Phase 4 active-scope label immediately below is historical and superseded.
+**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. The legacy Phase 4 active-scope label immediately below is historical and superseded.
 
-**Active scope:** Phase 5 — Top-100 full-card claim-family build
+**Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective; no next implementation tranche selected in this closeout.
 
 The former Phase 3 closeout sequence below is retained as completed history.
 
-**Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family build. Phase 4 is completed history.
+**Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family objective remains active. The Direct Service V1.2 experiment is complete; Phase 4 is completed history.
 
-**Current authoritative scope:** Phase 5 - Top-100 full-card claim-family build. Phase 4 is completed history below.
+**Current authoritative scope:** Remaining Phase 5 - Top-100 full-card claim-family objective. Phase 4 is completed history below.
 
-**Immediate scope:** Phase 5 bounded implementation and evidence/reproducibility closeout
+**Immediate scope:** Governance and sequencing decision for already-planned work within the remaining Phase 5 objective; implementation is not authorized by this closeout.
 
 ## 1. Delivery rule
 
@@ -433,18 +433,24 @@ routing is evidence-based and task-specific, not provider/model dogma; future
 Factory operation must continue to evaluate the candidate rather than treating
 it as a universal relationship rule.
 
-## ACTIVE SCOPE - PHASE 5 TOP-100 FULL-CARD CLAIM-FAMILY BUILD
+## ACTIVE SCOPE - REMAINING PHASE 5 TOP-100 FULL-CARD CLAIM-FAMILY OBJECTIVE
 
-Phase 5 is active, but implementation has not started. Inherit the existing
-constraints: source universe first -> acquire once -> freeze corpus ->
-semantics; Builder does not do discovery or research; cards remain projections
-over governed knowledge; primary extraction remains card-blind; logical task
-contracts remain independently governed; null/mixed/negative/inconclusive
-states remain first-class; unresolved relationship endpoints remain unresolved;
-Python does not infer semantic equivalence or teach English; Native remains
-parked; Viewer remains an inspector rather than a comparator; and ranking,
-recommendation and grantmaking work remain out of scope. Do not invent more
-detailed Phase 5 implementation tasks here.
+The Direct Service V1.2 experimental tranche is complete; see the [approved
+experiment decision](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md). The
+broader Top-100 full-card objective is still active. This documentation closeout
+does not authorize a new provider experiment, source acquisition, semantic
+experiment or implementation tranche. The next work choice within the existing
+Phase 5 scope remains unresolved and should be made against the Top-100 exit
+criteria; Phase 6 remains gated until those criteria are met.
+
+All existing constraints remain: source universe first -> acquire once -> freeze
+corpus -> semantics; Builder does not do discovery or research; cards remain
+projections over governed knowledge; primary extraction remains card-blind;
+logical task contracts remain independently governed; null/mixed/negative/
+inconclusive states remain first-class; unresolved relationship endpoints remain
+unresolved; Python does not infer semantic equivalence or teach English; Native
+remains parked; Viewer remains an inspector rather than a comparator; and
+ranking, recommendation and grantmaking work remain out of scope.
 
 ## Propagated complete-card implementation pattern
 

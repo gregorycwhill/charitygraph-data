@@ -1,15 +1,15 @@
 # CharityGraph Current State
 
-**Status date:** 11 September 2026
+**Status date:** 12 September 2026
 
-**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 ACTIVE - Top-100 full-card claim-family build; implementation and bounded execution are in progress.
+**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. No production-complete or governed-promotion claim is made.
 
-This is a factual project snapshot dated 11 September 2026. Private runtime databases,
+This is a factual project snapshot dated 12 September 2026. Private runtime databases,
 raw source/provider material and private experiment artefacts are not represented as
 public Git content; aggregate evidence below is limited to values recorded in the
 current local implementation and retained summaries.
 
-## 0. Current Phase-5 review snapshot
+## 0. Current Phase-5 status
 
 - Top-100 identity/bootstrap and the clean baseline corpus are prepared for 100 subjects,
   700 source-family cells and 100 corpus manifests. Clean corpus coverage is claim-family
@@ -17,21 +17,33 @@ current local implementation and retained summaries.
   and 63 provenance-unresolved cells.
 - Discovery V2 has a usable Top-100 state in the retained analysis: 85 historical outputs
   were directly valid and 15 were deterministically normalised; 100 subjects are represented
-  in the current usable state. The 93-request Standard remainder campaign has terminal
+  in the current usable state. Discovery V2 is complete and is not reopened by the Direct
+  Service closeout. The 93-request Standard remainder campaign has terminal
   provider history and a zero-provider terminal replay; no governed promotion was made.
 - A known-URL official-website campaign attempted 80 requests: 65 acquired successfully,
   8 ended in HTTP terminal failure, 4 were redirected/rejected by host policy and 3 ended
   before a response. The campaign recorded zero network events in its durable report.
-- Direct Service V1.1 currently records 42 completed provider items, 1 terminal HTTP 429 and
-  18 never-attempted prepared items. Provider-free recovery classified the 42 retained
-  outputs as 19 directly valid, 22 deterministically recovered and 1 semantically unusable.
-- A V1.1 section/type representation defect affected 20 records (32 proposition instances).
-  A structurally section-discriminated V1.2 contract candidate and an append-only pre-send
-  reservation replacement correction are now present in the local Builder review snapshot;
-  no new provider execution has been authorised by this documentation snapshot.
-- Direct Service accounting records actual spend AUD `2.556920`, unresolved active
-  reservations AUD `1.321928`, and aggregate mandate authority AUD `100.00`. The
-  reservation-underestimation correction is append-only; historical rows are retained.
+- Direct Service V1.1 remains historical evidence: 42 completed responses, 19 directly valid,
+  22 deterministically recovered, and 1 semantically unusable. Twenty responses were
+  representation-affected, with 32 illegal section/type proposition instances. Its terminal
+  HTTP 429 was not retried.
+- Direct Service V1.2 is selected for future Direct Service work. Its completed live sample is
+  14 responses (one historical canary plus 13 final executions): all 14 directly valid, 49
+  propositions retained, zero discarded, zero section/type violations, and zero deterministic
+  recoveries. The conservative disposition is `V1_2_REPRESENTATION_FIX_SUPPORTED`; n=14 does
+  not establish statistical significance or universal production readiness.
+- The original 18-item V1.2 continuation population comprised 13 newly executed requests, one
+  local pre-send zero-crossing failure abandoned as a control, and three requests excluded
+  under the AUD `0.25` per-request authority ceiling. The four non-executions are not semantic
+  failures and are not to be reopened to enlarge the sample.
+- Cumulative V1.2 provider cost was USD `0.437686` / AUD `0.665290` (the final 13 cost USD
+  `0.324526` / AUD `0.493287`). Final unused reservations were released; Amendment 3 remained
+  active and Amendment 4 was never activated. There were zero governed promotions and zero
+  source acquisitions.
+- The umbrella Phase 5 Top-100 full-card objective remains active. This Direct Service
+  experiment did not establish completion of that broader objective. See the [Phase 5
+  Direct Service decision](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md) and the
+  [durable Builder closeout](https://github.com/gregorycwhill/charitygraph/blob/phase5-direct-service-v1.2-cutover-v1/docs/PHASE5_DIRECT_SERVICE_V1_2_CLOSEOUT.md).
 
 The current public state is not production-complete. No governed promotion, public vNext
 release, or Phase-5 merge is implied by these facts. Native remains parked.
@@ -168,11 +180,11 @@ relationship proofs used zero provider calls and zero new source acquisition.
 No North Star section is production-complete, full-card scaling has not
 started, and universal accuracy/coverage thresholds remain undefined.
 
-The active project stage is Phase 5 Top-100 full-card claim-family build. Phase 4
-packaging and economics is completed history; its bounded hybrid bundle-by-difficulty
-Factory candidate remains an input to Phase 5 implementation. Phase 5 implementation,
-provider-free preparation and bounded provider execution have started, but production
-scale and governed public promotion have not.
+The active project stage remains the broader Phase 5 Top-100 full-card claim-family
+build. Phase 4 packaging and economics is completed history; its bounded hybrid
+bundle-by-difficulty Factory candidate remains an input. The Direct Service V1.2
+experimental tranche is complete, but this does not satisfy the Top-100 full-card
+exit objective, establish production scale, or authorize governed public promotion.
 
 ## 14. Phase 4 closeout and Phase 5 boundary
 
@@ -195,12 +207,20 @@ validation, persistence, lineage, execution state, accounting and interruption
 safety. Total cost of intelligence includes provider, review, supervision and
 orchestration burden.
 
-Phase 5 is now active and implementation has started. It inherits source
-universe first -> acquire once -> freeze corpus -> semantics; Builder does not
-do discovery or research; card-blind primary extraction; independent logical
-contracts; first-class null/mixed/negative/inconclusive states; unresolved
-relationship endpoints; no Python semantic-equivalence heuristics; parked
-Native; Viewer as inspector; and no ranking, recommendation or grantmaking.
+Phase 5 remains active at the broader Top-100 full-card level. The Direct Service
+V1.2 experiment is complete and supports selecting its section-array representation
+for future Direct Service work. All existing boundaries remain: source universe
+first -> acquire once -> freeze corpus -> semantics; Builder does not do discovery
+or research; card-blind primary extraction; independent logical contracts; first-
+class null/mixed/negative/inconclusive states; unresolved relationship endpoints;
+no Python semantic-equivalence heuristics; parked Native; Viewer as inspector; and
+no ranking, recommendation or grantmaking.
+
+The existing Phase 6 milestone remains “Risk-gated depth and specialist profiles”
+and is gated on the broader Phase 5 Top-100 objective. The evidence here does not
+close that gate. Which already-planned work tranche should follow within the
+remaining Phase 5 scope is unresolved; this closeout selects no new product
+direction and does not start the next implementation phase.
 
 ## 15. Phase 3 state and process lesson
 

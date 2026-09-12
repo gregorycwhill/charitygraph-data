@@ -74,6 +74,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Current delivery state | `CURRENT_STATE.md` |
 | Capability sequence | `ROADMAP.md` |
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
+| Direct Service V1.2 representation experiment decision and Phase 5 tranche outcome | `PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md` |
 | Verification and release gates | `TEST_PLAN.md` |
 | Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
 | Playbook-specific format and product contract | [`PLAYBOOK_CONTRACT.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/PLAYBOOK_CONTRACT.md) |
