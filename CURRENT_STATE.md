@@ -75,6 +75,8 @@ USD 0.003792 / AUD 0.005764; total conservative exposure reserved was AUD 0.0653
 source was acquired and no candidate was promoted. See the [stopped corrected-confirmation
 record](docs/history/phase6-corrected-confirmation-2026-09-13/README.md).
 
+After that historical stop, the schema and validation defects were repaired locally under Builder contract v3. The full 12-attempt confirmation campaign now passes offline campaign preflight across all three capabilities; no new provider request or source acquisition has occurred, and no semantic evidence or candidate has been produced. V3 execution remains unauthorized and pending a separate product-owner decision. See the [V3 readiness record](PHASE6_CORRECTED_CONFIRMATION_V3_READINESS_2026-09-13.md); its implementation is in local, unpushed Builder commit `3db4d8b`.
+
 ## 1. Repositories
 
 | Component | Repository | Verified external head / status reference | State |
