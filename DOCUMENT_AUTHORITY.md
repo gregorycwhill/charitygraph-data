@@ -68,6 +68,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Source, evidence, provenance, adjudication and release governance | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` |
 | Source-rights historical audit for the frozen Phase 6 V3 corpus | `PHASE6_V3_SOURCE_RIGHTS_AUDIT_2026-09-13.md` (historical audit; not current execution authority) |
 | Phase 6 post-policy rights assessment for the frozen V3 inputs | `PHASE6_V3_POST_POLICY_RIGHTS_ASSESSMENT_2026-09-13.md` (offline assessment; no execution authority) |
+| Phase 6 V4 rights-minimised confirmation packet | `docs/history/phase6-corrected-confirmation-v4-2026-09-13/README.md` (historical offline packet; pre-POST provider-setting gate blocked) |
 | Taxonomies, external schemes and native vocabularies | `TAXONOMY_AND_SCHEME_GOVERNANCE.md` |
 | CharityGraph Native architecture decisions | `CHARITYGRAPH_NATIVE_ARCHITECTURE.md` |
 | Domain ownership and research-design status | `DOMAIN_PROFILE_INDEX.md` |
