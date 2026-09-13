@@ -75,7 +75,9 @@ USD 0.003792 / AUD 0.005764; total conservative exposure reserved was AUD 0.0653
 source was acquired and no candidate was promoted. See the [stopped corrected-confirmation
 record](docs/history/phase6-corrected-confirmation-2026-09-13/README.md).
 
-After that historical stop, the schema and validation defects were repaired locally under Builder contract v3. The full 12-attempt confirmation campaign now passes offline campaign preflight across all three capabilities; no new provider request or source acquisition has occurred, and no semantic evidence or candidate has been produced. V3 execution remains unauthorized and pending a separate product-owner decision. See the [V3 readiness record](PHASE6_CORRECTED_CONFIRMATION_V3_READINESS_2026-09-13.md); its implementation is in local, unpushed Builder commit `3db4d8b`.
+After that historical stop, the schema and validation defects were repaired locally under Builder contract v3. The full 12-attempt confirmation campaign passed offline campaign preflight across all three capabilities. At that readiness-record snapshot, V3 execution had not yet been authorized. See the [V3 readiness record](PHASE6_CORRECTED_CONFIRMATION_V3_READINESS_2026-09-13.md); its implementation is in local, unpushed Builder commit `3db4d8b`.
+
+The 13 September V3 campaign was subsequently authorized for the exact 12 Luna attempts, but execution was held before the first POST at the required source-rights gate. A read-only check of the 27 selected source records and definitions for their source classes found no recorded rights-policy ID, licence, or reuse policy. Existing `public` privacy classification and `private_review_only` publication eligibility do not establish permitted transmission to the provider. No V3 attempt has crossed; see the [execution pre-send blocker record](PHASE6_CORRECTED_CONFIRMATION_V3_EXECUTION_BLOCKER_2026-09-13.md).
 
 ## 1. Repositories
 
