@@ -62,6 +62,13 @@ and incomplete. Product-value work stays downstream of human adjudication and a
 further product-owner decision. See the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
 [reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md), and [execution and triage packets](docs/history/phase6-reality-slice-execution-2026-09-12/README.md).
 
+The [13 September semantic-correction and advancement plan](PHASE6_SEMANTIC_CORRECTION_AND_ADVANCEMENT_PLAN_2026-09-13.md)
+and [human-evaluation guide](PHASE6_HUMAN_EVALUATION_GUIDE_2026-09-13.md) are review-only working proposals.
+An 18-task source-only Condition A packet was generated locally for the planned comparison;
+it contains no candidate outputs or responses. No corrected-contract confirmation run or
+human evaluation has executed, no provider call or new source acquisition was made for this
+proposal, and execution still requires product-owner approval of the package.
+
 ## 1. Repositories
 
 | Component | Repository | Verified external head / status reference | State |

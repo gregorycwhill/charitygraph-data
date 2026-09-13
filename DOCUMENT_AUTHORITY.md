@@ -87,6 +87,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Review/navigation snapshot | `PROJECT_SNAPSHOT_2026-09-11.md` |
 | Phase 6 bounded capability inventory and shortlist recommendation | `PHASE6_CAPABILITY_INVENTORY_2026-09-12.md` (working planning recommendation; not product or implementation authority) |
 | Phase 6 outcomes/evaluation, commitments/implementation, and capacity/access reality-slice designs | `PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md` (working designs selected for review; no execution authority) |
+| Phase 6 semantic correction, advancement criteria, and human evaluation | `PHASE6_SEMANTIC_CORRECTION_AND_ADVANCEMENT_PLAN_2026-09-13.md` and `PHASE6_HUMAN_EVALUATION_GUIDE_2026-09-13.md` (review-only working proposals; no execution authority) |
 
 ## 5. Refinement and conflict rules
 
