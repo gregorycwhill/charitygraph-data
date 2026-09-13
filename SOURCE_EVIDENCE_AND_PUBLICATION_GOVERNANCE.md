@@ -63,6 +63,14 @@ Acquisition events record:
 
 Credentials, authorisation headers and sensitive URL query strings are never written into public reports or provenance records.
 
+### 5.1 Source-rights decisions and provider processing
+
+Accessibility is not authority to retain, transmit to a provider, or redistribute. Every content-bearing acquisition SHALL have a versioned, artefact-bound rights decision before it is offered to an external model provider. The decision binds the source artefact and the exact transmitted representation, records an evidence locator and hash, assessment date/scope, policy identity, attribution and conditions, and separately records local retention, private provider transmission and public redistribution.
+
+The only rights bases are `explicit_open_license`, `explicit_terms_permission`, `direct_permission`, `statutory_exception`, `public_facts_only`, `unknown`, and `prohibited`. Unknown and ambiguous terms fail closed. `public` privacy classification and `private_review_only` publication eligibility are not rights classes. A statutory-exception candidate is recorded for review but does not authorize provider transmission: CharityGraph has no standing policy to self-authorize Australian fair dealing for that purpose. `public_facts_only` may authorize a transmission only where the bound representation is actually factual material and the decision says so.
+
+Provider data handling is a separate policy dimension. A provider's no-training posture may meet a condition of an otherwise valid source permission; it never supplies that source permission. A future acquisition records the terms/licence identity and evidence URL or retained reference, evidence time, rights-policy version, retention status, provider-processing status and redistribution status at acquisition where practical. Common explicit licences may be reusable only through a versioned policy; source family, URL reachability and source role never infer a decision at runtime.
+
 ## 6. Artefacts and evidence
 
 Source artefacts are immutable content-addressed objects. Normalisation or OCR produces a new derived artefact linked to its input; it does not overwrite the source.
