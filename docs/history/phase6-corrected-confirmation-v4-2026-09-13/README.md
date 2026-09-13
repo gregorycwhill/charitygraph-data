@@ -8,6 +8,8 @@ The later standalone transport diagnostic completed one authenticated models GET
 
 **Later offline analysis:** the 17 V4 failures were traced to a carrier/claimant contract conflation. A versioned V5 repair and read-only replay are recorded in the [V4 semantic-failure analysis and V5 design](v4-semantic-failure-analysis-and-v5-design-2026-09-13.md). V5 has not been provider-executed and this history does not confer current execution authority.
 
+**Subsequent V5 result:** the product owner authorized a distinct three-request Commitments confirmation; all three requests completed and passed the V5 mechanical contract gates. The two Outcomes responses that passed V5 offline replay and the new Commitments responses are ready for human review. Greenpeace repeat differences remain unreconciled. See the [V5 execution and review record](../phase6-v5-confirmation-and-human-review-2026-09-13.md). This later record does not imply human acceptance, product advancement or future execution authority.
+
 **Decision basis:** Product-owner authorization is to run each originally planned attempt only where the already-frozen authorized evidence remains a fair test. V3 is unchanged and remains the predecessor. V4 excludes source representations rather than acquiring, substituting, paraphrasing, truncating, or modifying any evidence.
 
 ## Result

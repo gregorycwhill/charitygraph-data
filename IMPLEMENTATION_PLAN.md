@@ -2,7 +2,7 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. Phase 6 Tranches 0-1 and the three approved bounded candidate runs are complete. Human adjudication remains pending; no candidate promotion or product implementation is authorized. The legacy Phase 4 active-scope label immediately below is historical and superseded.
+**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. Phase 6 Tranches 0-1 and the approved bounded candidate runs are complete. Corrected V5 Commitments confirmation and V4 Outcomes replay packets are ready for human review; all human adjudication remains pending, Capacity remains unexecuted for insufficient authorized evidence, and no candidate promotion or product implementation is authorized. The legacy Phase 4 active-scope label immediately below is historical and superseded.
 
 **Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective, alongside proposition-level human adjudication of the three completed Phase 6 candidate runs. Product-value work remains downstream of adjudication and a further product-owner decision.
 
@@ -446,6 +446,16 @@ packets](docs/history/phase6-reality-slice-execution-2026-09-12/README.md).
 Human adjudication is pending; no promotion, implementation, or advancement threshold
 is claimed. The product-value slice remains downstream of adjudication and a further
 product-owner decision.
+
+**13 September 2026 update:** Outcomes and Commitments each have a private
+`READY_FOR_HUMAN_REVIEW` packet. Outcomes contains two V4 responses that pass V5
+offline replay; the reduced sample and ambiguous Smith attempts remain limitations.
+Commitments contains three V5 Luna responses that pass mechanical contract gates;
+Greenpeace repeat differences remain for human stability judgment. Capacity remains
+`CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` /
+`REPEAT_AFTER_SEMANTIC_FIX`. No adjudication, usefulness decision, advancement,
+promotion or product-value work has occurred. The broader Phase 5 Top-100 objective
+remains active. See the [V5 execution and review record](docs/history/phase6-v5-confirmation-and-human-review-2026-09-13.md).
 
 All existing constraints remain: source universe first -> acquire once -> freeze
 corpus -> semantics; Builder does not do discovery or research; cards remain
