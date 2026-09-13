@@ -1,10 +1,10 @@
 # CharityGraph Current State
 
-**Status date:** 13 September 2026
+**Status date:** 14 September 2026
 
-**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. PHASE 6 BOUNDED EXPLORATION (Tranches 0-1) and the approved outcomes/evaluation, commitments/implementation, and capacity/availability/access candidate runs are complete. Human adjudication remains pending; no governed promotion or production implementation is authorized. No production-complete claim is made.
+**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. PHASE 6 remains open: Commitments V5 is `ADVANCE_WITH_REPRESENTATION_FIX`; Outcomes V6 awaits independent human adjudication; Capacity remains unresolved for insufficient authorized evidence. No governed promotion or production implementation is authorized. No production-complete claim is made.
 
-This is a factual project snapshot dated 12 September 2026. Private runtime databases,
+This is a factual project snapshot dated 14 September 2026. Private runtime databases,
 raw source/provider material and private experiment artefacts are not represented as
 public Git content; aggregate evidence below is limited to values recorded in the
 current local implementation and retained summaries.
@@ -55,8 +55,8 @@ run made 24 Luna Standard attempts; outputs remain unadjudicated candidates. A
 mechanical triage verified all 24 request and output hashes and applied eight
 request-bound scope-ID corrections in two derivative candidates. The post-triage gate
 passes 4/24 complete outputs and 142/203 propositions; 63 mechanical failure events
-across 61 propositions remain, principally non-exact quotes. No proposition is
-semantically accepted and human adjudication remains pending. No source was acquired
+across 61 propositions remain, principally non-exact quotes. No proposition from that
+24-request run is semantically accepted; its human adjudication remains pending. No source was acquired
 and no candidate was promoted. The broader Phase 5 Top-100 objective remains active
 and incomplete. Product-value work stays downstream of human adjudication and a
 further product-owner decision. See the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
@@ -88,6 +88,22 @@ The product owner later authorized isolating a single ambiguous attempt while al
 The six later V4 semantic responses are historical private evidence. Offline analysis identified 17 mechanical failures caused by conflating a regulator-held record carrier with the organisation that reported the claim. A V5 contract repair has passed read-only replay for five responses; Red Cross remains intentionally rejected by V5's tighter implementation-outcome measurement shape. No V5 provider request, source acquisition, candidate creation, promotion, or Capacity execution occurred. Outcomes are ready only for human review; Commitments require a separate V5 execution authorization; Capacity remains `CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` / `REPEAT_AFTER_SEMANTIC_FIX`. See the [V5 analysis](docs/history/phase6-corrected-confirmation-v4-2026-09-13/v4-semantic-failure-analysis-and-v5-design-2026-09-13.md).
 
 **Later 13 September update:** the product owner authorized and Builder completed exactly three V5 Commitments Standard requests: Sunrise once and Greenpeace twice. All three `gpt-5.6-luna` low-reasoning responses passed the V5 mechanical semantic-contract gates; no crossing was ambiguous. The private Outcomes review packet includes the unchanged World Vision and Bush Heritage V4 responses after V5 replay and is `READY_FOR_HUMAN_REVIEW`, subject to its two-subject sample and unresolved Smith ambiguity. The Commitments review packet is also `READY_FOR_HUMAN_REVIEW`; Greenpeace repeat proposition selection differs and awaits human stability judgment. Neither packet records human adjudication, reliability, usefulness, advancement or promotion. Capacity remains `CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` / `REPEAT_AFTER_SEMANTIC_FIX`. See the [V5 execution and review record](docs/history/phase6-v5-confirmation-and-human-review-2026-09-13.md). Phase 5 Top-100 remains active; product-value work remains downstream of human review and a further product-owner decision.
+
+**14 September update:** independent human review recorded Commitments disposition
+`ADVANCE_WITH_REPRESENTATION_FIX` (14 accept, 3 minor corrections, 1 reject; Greenpeace
+repeat judgment `STABLE_AT_ANALYST_ANSWER_LEVEL`) and Outcomes V5 disposition
+`REPEAT_AFTER_SEMANTIC_FIX` after one critical Bush Heritage observed-outcome error.
+Builder V6 adds a required observation basis and details for `outcome_observed_reported`.
+The unchanged World Vision V4 response passes V6 replay; Bush proposition 11 is rejected
+for missing the new observation-basis fields, while the other 11 propositions pass.
+Exactly two authorized V6 Standard requests (World Vision and Bush Heritage) completed
+under `gpt-5.6-luna` low; both outputs passed mechanical validation and the blank-field
+independent-review packet is `READY_FOR_HUMAN_REVIEW`. Outcomes has not advanced. Capacity
+remains `CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` /
+`REPEAT_AFTER_SEMANTIC_FIX`. There were zero new source acquisitions and governed
+promotions. Phase 5 Top-100 remains active, and product-value work remains downstream of
+these bounded experiments and the required Commitments representation fix. See the
+[human-review and V6 execution record](docs/history/phase6-independent-human-review-and-outcomes-v6-2026-09-14.md).
 
 ## 1. Repositories
 

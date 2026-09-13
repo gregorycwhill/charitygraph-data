@@ -2,17 +2,17 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. Phase 6 Tranches 0-1 and the approved bounded candidate runs are complete. Corrected V5 Commitments confirmation and V4 Outcomes replay packets are ready for human review; all human adjudication remains pending, Capacity remains unexecuted for insufficient authorized evidence, and no candidate promotion or product implementation is authorized. The legacy Phase 4 active-scope label immediately below is historical and superseded.
+**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. Phase 6 Tranches 0-1 and the bounded candidate runs are complete. Commitments V5 is `ADVANCE_WITH_REPRESENTATION_FIX`; Outcomes V6 is mechanically complete and awaits independent human adjudication; Capacity remains unexecuted for insufficient authorized evidence. No candidate promotion or product implementation is authorized. The legacy Phase 4 active-scope label immediately below is historical and superseded.
 
-**Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective, alongside proposition-level human adjudication of the three completed Phase 6 candidate runs. Product-value work remains downstream of adjudication and a further product-owner decision.
+**Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective, alongside independent human adjudication of the Outcomes V6 packet. Product-value work remains downstream of that adjudication and must include the Commitments representation fix recorded in the [14 September Phase 6 review record](docs/history/phase6-independent-human-review-and-outcomes-v6-2026-09-14.md).
 
 The former Phase 3 closeout sequence below is retained as completed history.
 
-**Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family objective remains active. The Direct Service V1.2 experiment is complete; bounded Phase 6 exploration Tranches 0-1 is complete; Phase 4 is completed history.
+**Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family objective remains active. The Direct Service V1.2 experiment is complete; bounded Phase 6 exploration Tranches 0-1 is complete; Phase 4 is completed history. Outcomes V6 awaits human adjudication; Capacity remains unresolved.
 
-**Current authoritative scope:** Remaining Phase 5 - Top-100 full-card claim-family objective plus adjudication of the completed Phase 6 candidate experiments. Phase 4 is completed history below.
+**Current authoritative scope:** Remaining Phase 5 - Top-100 full-card claim-family objective plus Outcomes V6 independent human adjudication. Phase 4 is completed history below.
 
-**Immediate scope:** The broader Phase 5 objective remains active. The three approved Phase 6 reality slices have run as candidate experiments; human adjudication remains pending. No source acquisition, governed promotion, public v0.5 change, Viewer change, or production implementation occurred. Product-value work remains downstream of adjudication and a further product-owner decision.
+**Immediate scope:** The broader Phase 5 objective remains active. Commitments V5 has a human-reviewed disposition subject to representation fixes; Outcomes V6 awaits independent adjudication; Capacity remains deferred for insufficient authorized evidence. No source acquisition, governed promotion, public v0.5 change, Viewer change, or production implementation occurred. Product-value work remains downstream of Outcomes adjudication and includes the Commitments representation fix.
 
 ## 1. Delivery rule
 

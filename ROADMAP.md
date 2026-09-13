@@ -233,12 +233,14 @@ Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid
 
 ## Phase 6 — Risk-gated depth and specialist profiles
 
-**Status:** Tranches 0-1 and the approved bounded candidate runs for outcomes/evaluation,
-commitments/implementation, and capacity/availability/access are complete. Human
-adjudication remains pending; these runs establish no semantic acceptance, promotion,
-or implementation authority. Bounded exploration may precede the broader Phase 5
-Top-100 exit criteria; Phase 5 remains active. Product-value work is downstream of
-human adjudication and a further decision.
+**Status:** Tranches 0-1 and bounded candidate runs for outcomes/evaluation,
+commitments/implementation, and capacity/availability/access are complete. Commitments
+V5 has disposition `ADVANCE_WITH_REPRESENTATION_FIX`; Outcomes V6 awaits independent
+human adjudication; Capacity remains unresolved for insufficient authorized evidence.
+No governed promotion or product implementation is authorized. The broader Phase 5
+Top-100 objective remains active. Product-value work is downstream of Outcomes
+adjudication and must include the Commitments representation fix recorded in the
+[14 September Phase 6 review record](docs/history/phase6-independent-human-review-and-outcomes-v6-2026-09-14.md).
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 
