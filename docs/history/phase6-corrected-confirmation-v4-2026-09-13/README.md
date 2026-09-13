@@ -1,6 +1,6 @@
 # Phase 6 V4 rights-minimised confirmation packet - 13 September 2026
 
-**Status:** Offline-materialised and deterministic preflight passed; **not provider-executed**. The first POST is held because the active OpenAI API organization/project setting for input/output data sharing cannot be verified from the available local/provider-control-plane access. This is a historical execution packet, not current product or schema authority.
+**Status:** Offline certification passed; one V4 POST attempt ended with an ambiguous connection outcome, so execution stopped globally with seven scheduled requests unattempted and no model response or candidate. This is a historical execution packet, not current product or schema authority.
 
 **Decision basis:** Product-owner authorization is to run each originally planned attempt only where the already-frozen authorized evidence remains a fair test. V3 is unchanged and remains the predecessor. V4 excludes source representations rather than acquiring, substituting, paraphrasing, truncating, or modifying any evidence.
 
@@ -101,7 +101,32 @@ Mechanical schema preflight is not a semantic validation result. No model output
 
 On 13 September 2026, the public OpenAI policy documentation was rechecked. OpenAI states that API inputs and outputs are not used to train or improve models by default, while organization owners may opt in to sharing at organization or project level. See [OpenAI Business Data](https://openai.com/business-data/) and the [OpenAI Help Center data-sharing controls](https://help.openai.com/en/articles/10306912-sharing-feedback-evaluation-and-fine-tuning-data-and-api-inputs-and-outputs-with-openai).
 
-This published default confirms that the recorded provider-policy version remains publicly described, but it does **not** establish the active setting of the organization/project selected by the configured API key. No account control-plane connector is available in this session, and the key itself does not establish whether the active project has opted in. CharityGraph source-governance policy requires an actual no-opt-in posture recheck before transmission. Therefore the first POST is blocked: **active API project input/output data-sharing and evaluation/fine-tuning sharing posture is unverified**. No API POST or other provider call was made.
+The product owner then attested that, after inspecting the active OpenAI Platform Data Controls on 13 September 2026, these settings were Disabled: `Enable sharing of model feedback from the Platform`, `Share evaluation and fine-tuning data with OpenAI`, and `Share inputs and outputs with OpenAI`. For CharityGraph governance, the attested value for `Share inputs and outputs with OpenAI` satisfies the active provider-processing policy gate. This is recorded as a product-owner attestation, not an OpenAI API response or an independently machine-verified assertion. The private attestation artifact SHA-256 is `e64a9edf536c26c3240f60ebc29f59a97781810f43d619a8d090f46133ef19eb`; its applicable provider-processing policy is `OPENAI_API_BUSINESS_NO_TRAINING_DEFAULT_AS_OF_2026_09_13_V1` and its V4 campaign identity is `phase6-corrected-confirmation-20260913-v4-rights-minimized`.
+
+## V4 execution event - 13 September 2026
+
+Immediately before execution, the complete offline preflight was rerun against the pinned campaign. Execution manifest SHA-256 remained `8671fac5be0755617ae60a2d1b947ff2418461e9bd8959af86e6c33ec2d85fee`; Condition A manifest SHA-256 remained `a85b99f5f786c30df1cf5817e2fca6080487071161d97e63140819bd4bdbdad5`. All eight request bodies, schemas, source hashes, rights decisions, identities, route and cost limits passed. All eight tickets were prepared with zero earlier posts or response artifacts. A per-request guard checked the exact manifests, request bytes, source and rights lineage, attestation, model route, cost authority and unused physical ticket immediately before starting the request.
+
+One POST was attempted for The Smith Family outcomes attempt 1 (`requestitem:247cea23c9565b92cc82da50e146dea4a93d7c77bbdd5fad467cacdd77dd82de`; physical attempt `physicalattempt:4140e86747c92199c0d336fc9eda1190c9f5cd1869880acc80f53e44256fb0bd`). The transport returned `Standard POST connection outcome is ambiguous`. No provider response ID, response bytes, usage, or model identity confirmation was received. The ticket is retained as `ambiguous`; it must not be retried or reconciled by another POST. The executor applied the global stop. The other seven sendable requests remain unattempted, including all Commitments requests. The attempt may have reached OpenAI; acceptance and billing are unknown.
+
+| Execution measure | Result |
+|---|---|
+| Sendable requests scheduled | 8 |
+| POST attempts started | 1, ambiguous |
+| Completed responses / terminal failures / local pre-send failures | 0 / 0 / 0 |
+| Remaining requests | 7 unattempted after global stop |
+| Input/output tokens and actual USD/AUD cost | Unknown; no response usage received |
+| Conservative exposure authorized | AUD `0.166419` aggregate; AUD `0.021060` for the ambiguous Smith attempt |
+| Strict-schema / complete-output / proposition validation | Not applicable; no response was received |
+| Semantic-invariant, evidence, scope, source-role or contract-echo failures | None assessable; no model output |
+
+No candidate was produced. The candidate-blind Condition A material and six paired analyst-task forms remain prepared, but no candidate-assisted packet is ready for independent human review. The Smith and Greenpeace repeat comparisons are both `comparison_unavailable`; there are no outputs to compare, and reviewer fields remain empty. No human adjudication occurred. The original four-of-six usefulness threshold was not met or changed; this reduced campaign cannot evaluate it.
+
+Outcomes and Commitments remain unresolved: the earlier V2 schema and output-validation failure modes were not retested because this V4 attempt yielded no response. Capacity remains `CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` and `REPEAT_AFTER_SEMANTIC_FIX`; it was not executed and is neither validated nor rejected by V4.
+
+The private result manifest SHA-256 is `a2b6b34c21794aa75772657e755c7c435b1a9548421ef13d454349e94277c012`. The per-request provider-policy gate journal SHA-256 is `f3ae9ea383684c0e53d2a3dd259c4f4adc2fe60a6ce202f05da52e0c01a573cf`. The private ticket ledger records one ambiguous post and seven prepared, unposted attempts. No raw provider response exists to preserve; the raw request, physical ticket, gate attestation lineage, and ambiguous transport outcome remain in the private run directory.
+
+The Builder runner changes used for the guarded crossing and raw terminal-response capture were committed as `c94b3169876131aafd88c64c9eca5619a71195e7` (`Attest and preserve Phase 6 V4 provider crossings`). The Data repository records this execution event; the private run directory remains the source for request and ticket-level artifacts.
 
 ## Preserved history and boundaries
 
