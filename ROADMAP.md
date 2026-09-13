@@ -10,7 +10,7 @@ Build a one-stop shop for structured, governed Australian charity data: an integ
 
 Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity evidence corpus. Assemble one or more task-specific semantic packets from that corpus. Apply one or more cost-efficient semantic passes. Persist independently governed domain knowledge. Compile analyst/public projections from that governed knowledge.
 
-**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 COMPLETE - bounded packaging/routing economics answered; PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE. Its Direct Service V1.2 experimental tranche is complete; the broader Phase 5 exit objective is not.
+**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 COMPLETE - bounded packaging/routing economics answered; PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE and NOT AUTHORIZED FOR SCALE; PHASE 6 COMPLETE - Outcomes and Commitments advance with bounded representation fixes; Capacity/access remains unresolved and deferred. Product-value validation is design-only.
 
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
@@ -233,14 +233,18 @@ Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid
 
 ## Phase 6 — Risk-gated depth and specialist profiles
 
-**Status:** Tranches 0-1 and bounded candidate runs for outcomes/evaluation,
-commitments/implementation, and capacity/availability/access are complete. Commitments
-V5 has disposition `ADVANCE_WITH_REPRESENTATION_FIX`; Outcomes V6 awaits independent
-human adjudication; Capacity remains unresolved for insufficient authorized evidence.
-No governed promotion or product implementation is authorized. The broader Phase 5
-Top-100 objective remains active. Product-value work is downstream of Outcomes
-adjudication and must include the Commitments representation fix recorded in the
-[14 September Phase 6 review record](docs/history/phase6-independent-human-review-and-outcomes-v6-2026-09-14.md).
+**Status: COMPLETE (14 September 2026).** Outcomes/evaluation and Commitments/implementation
+are selected for downstream product-value validation, both `ADVANCE_WITH_REPRESENTATION_FIX`.
+Capacity/availability/access is `DEFER` and unresolved; its technical statuses remain
+`CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` and
+`REPEAT_AFTER_SEMANTIC_FIX`. Outcomes' original six-subject/four-of-six denominator was
+uncomputable after rights and transport attrition left two independently reviewed V6
+subjects. The quantitative gate was neither passed nor redefined; advancement is a bounded
+product-owner decision. See the [final review and closeout](docs/history/phase6-closeout-2026-09-14.md).
+
+No Phase 6 candidate is promoted. The Phase 5 Top-100 full-card objective remains active,
+but Phase 6 closure does not authorize its scale. The [governed product-value slice design](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md)
+is preparation only; no integrated product-value slice has executed.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 

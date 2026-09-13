@@ -2,12 +2,22 @@
 
 **Status date:** 14 September 2026
 
-**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; the Direct Service V1.2 experimental tranche is COMPLETE. PHASE 6 remains open: Commitments V5 is `ADVANCE_WITH_REPRESENTATION_FIX`; Outcomes V6 awaits independent human adjudication; Capacity remains unresolved for insufficient authorized evidence. No governed promotion or production implementation is authorized. No production-complete claim is made.
+**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; scale is not authorized. PHASE 6 COMPLETE: Outcomes/evaluation and Commitments/implementation are `ADVANCE_WITH_REPRESENTATION_FIX`; Capacity/access/availability is unresolved and `DEFER`. Next active work is product-value slice preparation/design review only. No governed promotion or production implementation is authorized. No production-complete claim is made.
 
 This is a factual project snapshot dated 14 September 2026. Private runtime databases,
 raw source/provider material and private experiment artefacts are not represented as
 public Git content; aggregate evidence below is limited to values recorded in the
 current local implementation and retained summaries.
+
+The closeout update below governs current status. Earlier Phase 6 paragraphs in this
+snapshot are retained as point-in-time records and are superseded where they conflict
+with the final closeout.
+
+## Current closeout update — 14 September 2026
+
+The independent human review of Outcomes V6 is complete: World Vision Australia 2 ACCEPT / PASS; Bush Heritage Australia 10 ACCEPT / PASS. Outcomes advances with a bounded representation fix. The six-subject/four-of-six quantitative usefulness denominator is uncomputable after rights and transport attrition left two independently reviewable subjects; the quantitative gate was neither passed nor redefined. Commitments advances with a bounded representation fix (14 ACCEPT, 3 minor corrections, 1 reject; Greenpeace repeat stable at analyst-answer level). Capacity retains `CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` / `REPEAT_AFTER_SEMANTIC_FIX` and is deferred unresolved. Phase 6 is complete; see the [final closeout record](docs/history/phase6-closeout-2026-09-14.md).
+
+The next active work is preparation and product-owner review of the [governed product-value validation design](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md), not experiment execution. Phase 5 Top-100 remains active and scale is not authorized. There have been no product-value slice executions, governed promotions, source acquisitions, Viewer changes or public v0.5 changes in this closeout task.
 
 ## 0. Current Phase-5 status
 

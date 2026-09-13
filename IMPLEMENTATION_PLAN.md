@@ -2,17 +2,17 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; its Direct Service V1.2 experimental tranche is complete. Phase 6 Tranches 0-1 and the bounded candidate runs are complete. Commitments V5 is `ADVANCE_WITH_REPRESENTATION_FIX`; Outcomes V6 is mechanically complete and awaits independent human adjudication; Capacity remains unexecuted for insufficient authorized evidence. No candidate promotion or product implementation is authorized. The legacy Phase 4 active-scope label immediately below is historical and superseded.
+**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active and scale is not authorized. Phase 6 is complete: Outcomes/evaluation and Commitments/implementation are `ADVANCE_WITH_REPRESENTATION_FIX`; Capacity/access/availability is deferred unresolved. No candidate promotion or product implementation is authorized by the closeout.
 
-**Active scope:** Remaining Phase 5 — Top-100 full-card claim-family objective, alongside independent human adjudication of the Outcomes V6 packet. Product-value work remains downstream of that adjudication and must include the Commitments representation fix recorded in the [14 September Phase 6 review record](docs/history/phase6-independent-human-review-and-outcomes-v6-2026-09-14.md).
+**Active scope:** Prepare the governed product-value validation slice for product-owner review. No experiment execution is authorized. The Phase 5 Top-100 objective remains active separately and is not authorized for scale.
 
 The former Phase 3 closeout sequence below is retained as completed history.
 
-**Authoritative immediate scope:** Phase 5 - Top-100 full-card claim-family objective remains active. The Direct Service V1.2 experiment is complete; bounded Phase 6 exploration Tranches 0-1 is complete; Phase 4 is completed history. Outcomes V6 awaits human adjudication; Capacity remains unresolved.
+**Authoritative immediate scope:** Product-value slice preparation and review only. Phase 5 remains active but not authorized for scale. Phase 6 is complete; see [final closeout](docs/history/phase6-closeout-2026-09-14.md).
 
-**Current authoritative scope:** Remaining Phase 5 - Top-100 full-card claim-family objective plus Outcomes V6 independent human adjudication. Phase 4 is completed history below.
+**Current authoritative scope:** Prepare the integrated Inspect / Compare / Verify product-value validation design. Phase 4 is completed history below. No provider execution, source acquisition, candidate promotion or full Top-100 run is authorized.
 
-**Immediate scope:** The broader Phase 5 objective remains active. Commitments V5 has a human-reviewed disposition subject to representation fixes; Outcomes V6 awaits independent adjudication; Capacity remains deferred for insufficient authorized evidence. No source acquisition, governed promotion, public v0.5 change, Viewer change, or production implementation occurred. Product-value work remains downstream of Outcomes adjudication and includes the Commitments representation fix.
+**Immediate scope:** The broader Phase 5 objective remains active and scale is not authorized. Phase 6 is complete: Outcomes and Commitments advance with bounded representation fixes; Capacity is unresolved/deferred. Prepare, do not execute, the governed product-value slice in [the working design](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md). It must exercise explicit reviewed-evidence coverage and preserve each source/scope/epistemic distinction. No product-value execution, source acquisition, provider call, governed promotion, public v0.5 change, or Viewer change has occurred.
 
 ## 1. Delivery rule
 
@@ -433,7 +433,7 @@ routing is evidence-based and task-specific, not provider/model dogma; future
 Factory operation must continue to evaluate the candidate rather than treating
 it as a universal relationship rule.
 
-## ACTIVE SCOPE - REMAINING PHASE 5 TOP-100 FULL-CARD CLAIM-FAMILY OBJECTIVE
+## HISTORICAL SCOPE SNAPSHOT - REMAINING PHASE 5 AND PHASE 6 (superseded 14 September 2026)
 
 The Direct Service V1.2 experimental tranche is complete; see the [approved
 experiment decision](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md). The
