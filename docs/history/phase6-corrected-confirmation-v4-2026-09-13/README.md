@@ -6,6 +6,8 @@ The later standalone transport diagnostic completed one authenticated models GET
 
 **Latest status:** the separately authorized six-request semantic continuation ran on 13 September 2026. All six physical attempts crossed once; one passed complete local mechanical validation, five completed responses failed the first-party epistemic/source-role contract, and no new crossing was ambiguous. See the [semantic resume result](semantic-resume-results-2026-09-13.md). This later execution addendum supersedes only the earlier unattempted-count statements; all original request bytes and the two ambiguous Smith records remain unchanged.
 
+**Later offline analysis:** the 17 V4 failures were traced to a carrier/claimant contract conflation. A versioned V5 repair and read-only replay are recorded in the [V4 semantic-failure analysis and V5 design](v4-semantic-failure-analysis-and-v5-design-2026-09-13.md). V5 has not been provider-executed and this history does not confer current execution authority.
+
 **Decision basis:** Product-owner authorization is to run each originally planned attempt only where the already-frozen authorized evidence remains a fair test. V3 is unchanged and remains the predecessor. V4 excludes source representations rather than acquiring, substituting, paraphrasing, truncating, or modifying any evidence.
 
 ## Result
