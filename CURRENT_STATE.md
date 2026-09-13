@@ -63,11 +63,17 @@ further product-owner decision. See the [capability inventory](PHASE6_CAPABILITY
 [reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md), and [execution and triage packets](docs/history/phase6-reality-slice-execution-2026-09-12/README.md).
 
 The [13 September semantic-correction and advancement plan](PHASE6_SEMANTIC_CORRECTION_AND_ADVANCEMENT_PLAN_2026-09-13.md)
-and [human-evaluation guide](PHASE6_HUMAN_EVALUATION_GUIDE_2026-09-13.md) are review-only working proposals.
-An 18-task source-only Condition A packet was generated locally for the planned comparison;
-it contains no candidate outputs or responses. No corrected-contract confirmation run or
-human evaluation has executed, no provider call or new source acquisition was made for this
-proposal, and execution still requires product-owner approval of the package.
+and [human-evaluation guide](PHASE6_HUMAN_EVALUATION_GUIDE_2026-09-13.md) remain review-only
+working proposals. The original 18-task source-only Condition A packet contains no
+candidate outputs or responses. Under the subsequent bounded confirmation authorization,
+three first requests were sent on 13 September using the frozen Condition A material. The
+run stopped with provider-schema rejections in outcomes and capacity, and strict-output
+validation failure in commitments; the remaining nine requests were not sent. It produced
+no mechanically valid candidate packets, and no human adjudication or analyst comparison
+has occurred. The usage-based estimate for the one response with reported token usage was
+USD 0.003792 / AUD 0.005764; total conservative exposure reserved was AUD 0.065325. No
+source was acquired and no candidate was promoted. See the [stopped corrected-confirmation
+record](docs/history/phase6-corrected-confirmation-2026-09-13/README.md).
 
 ## 1. Repositories
 
