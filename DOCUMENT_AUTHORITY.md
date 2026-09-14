@@ -66,6 +66,19 @@ Every active document SHALL state its status, version/date, scope and material s
 | Integrated conceptual model and domain seams | `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` |
 | Coverage, model economics and open curation | `COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md` |
 | Source, evidence, provenance, adjudication and release governance | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` |
+| Approved bounded local analytical-retention policy and independent-adjudication gate for the private product-value experiment namespace | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` (policy authority); `PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md` (experiment-specific execution packet; no execution authority) |
+| Source-rights historical audit for the frozen Phase 6 V3 corpus | `PHASE6_V3_SOURCE_RIGHTS_AUDIT_2026-09-13.md` (historical audit; not current execution authority) |
+| Phase 6 post-policy rights assessment for the frozen V3 inputs | `PHASE6_V3_POST_POLICY_RIGHTS_ASSESSMENT_2026-09-13.md` (offline assessment; no execution authority) |
+| Phase 6 V4/V5 confirmation, semantic analysis and human-review preparation | `docs/history/phase6-corrected-confirmation-v4-2026-09-13/README.md`, its [V4 semantic result](docs/history/phase6-corrected-confirmation-v4-2026-09-13/semantic-resume-results-2026-09-13.md), [V5 analysis](docs/history/phase6-corrected-confirmation-v4-2026-09-13/v4-semantic-failure-analysis-and-v5-design-2026-09-13.md), and [V5 execution and review record](docs/history/phase6-v5-confirmation-and-human-review-2026-09-13.md) (historical execution/diagnostic record; no current product or execution authority) |
+| Phase 6 final human review and capability closeout | `docs/history/phase6-closeout-2026-09-14.md` (historical final adjudication and closure decision; no candidate promotion, public-contract change, Phase 5 scale authority or product-value execution authority) |
+| Phase 6 V6 execution and pre-adjudication snapshot | `docs/history/phase6-independent-human-review-and-outcomes-v6-2026-09-14.md` (historical snapshot; its pending-review statement is accurate at that point and superseded by the final closeout record) |
+| Governed product-value validation slice | `PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md` (execution-ready design packet; no provider/execution, canonical-promotion, public-schema or release authority) |
+| Product-value campaign approval, AUD 0.25 per attempt / AUD 2.00 aggregate, fixed cohort/workflows and role/order controls | `docs/history/product-value-campaign-approval-2026-09-14.md` (approved-in-principle campaign decision; execution remains blocked by its explicit preconditions) |
+| Product-value model-assisted source-only baseline acceptance, measurement limits, offline five-request certification and execution blocker | `docs/history/product-value-model-assisted-baseline-acceptance-2026-09-14.md` (experiment-specific approved decision and offline preflight; no provider/execution authority; supersedes earlier baseline-role/measurement assumptions in the execution design) |
+| Product-value deterministic Identity/Purpose/Activity context and adjudication | `docs/history/product-value-deterministic-context-2026-09-14.md` (historical candidate-generation record) and `docs/history/product-value-context-adjudication-2026-09-14.md` (historical adjudication and readiness record; no provider, semantic-execution, canonical-promotion or public-release authority) |
+| Product-value five-request semantic campaign live preflight and transport outcome | `docs/history/product-value-semantic-campaign-2026-09-14.md` (historical execution record; preflight passed, transport stopped before any provider crossing, no semantic candidates or promotion; no authority to retry or resume) |
+| Product-value semantic adjudication, private integrated projection, Inspect/Compare/Verify evaluation and bounded decision | `docs/history/product-value-adjudication-and-evaluation-2026-09-14.md` (latest historical evaluation; `ADVANCE_WITH_BOUNDED_FIX`; private experiment namespace only; no Top-100 scale, Capacity reopening, canonical/public promotion or Viewer authority) |
+| Product-value bounded commitment-content representation fix | `docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md` (historical implementation record; Builder V5.1 fix complete; no experiment rerun, Top-100 scale, Capacity reopening, or canonical/public authority) |
 | Taxonomies, external schemes and native vocabularies | `TAXONOMY_AND_SCHEME_GOVERNANCE.md` |
 | CharityGraph Native architecture decisions | `CHARITYGRAPH_NATIVE_ARCHITECTURE.md` |
 | Domain ownership and research-design status | `DOMAIN_PROFILE_INDEX.md` |
@@ -74,6 +87,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Current delivery state | `CURRENT_STATE.md` |
 | Capability sequence | `ROADMAP.md` |
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
+| Direct Service V1.2 representation experiment decision and Phase 5 tranche outcome | `PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md` |
 | Verification and release gates | `TEST_PLAN.md` |
 | Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
 | Playbook-specific format and product contract | [`PLAYBOOK_CONTRACT.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/PLAYBOOK_CONTRACT.md) |
@@ -81,7 +95,12 @@ Every active document SHALL state its status, version/date, scope and material s
 | Playbook contribution and Official/Community status workflow | [`CONTRIBUTING.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/CONTRIBUTING.md), within shared CharityGraph boundaries |
 | Semantic reliability, technical replication and reproducible semantic replay | `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` |
 | Complete-card semantic extraction and independent mapping decisions | `SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md`, propagated conservatively to the canonical documents above |
-| Current coding handoff | `CODEX_TO_CHATGPT_HANDOFF.md` |
+| Current development method | `DEVELOPMENT_METHOD.md` |
+| Historical task-specific coding handoff | `docs/history/codex-to-chatgpt-handoff-before-2026-08-23-product-docs-rewrite.md` |
+| Review/navigation snapshot | `PROJECT_SNAPSHOT_2026-09-11.md` |
+| Phase 6 bounded capability inventory and shortlist recommendation | `PHASE6_CAPABILITY_INVENTORY_2026-09-12.md` (working planning recommendation; not product or implementation authority) |
+| Phase 6 outcomes/evaluation, commitments/implementation, and capacity/access reality-slice designs | `PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md` (working designs selected for review; no execution authority) |
+| Phase 6 semantic correction, advancement criteria, and human evaluation | `PHASE6_SEMANTIC_CORRECTION_AND_ADVANCEMENT_PLAN_2026-09-13.md` and `PHASE6_HUMAN_EVALUATION_GUIDE_2026-09-13.md` (review-only working proposals; no execution authority) |
 
 ## 5. Refinement and conflict rules
 

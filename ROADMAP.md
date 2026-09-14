@@ -10,7 +10,7 @@ Build a one-stop shop for structured, governed Australian charity data: an integ
 
 Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity evidence corpus. Assemble one or more task-specific semantic packets from that corpus. Apply one or more cost-efficient semantic passes. Persist independently governed domain knowledge. Compile analyst/public projections from that governed knowledge.
 
-**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 COMPLETE - bounded packaging/routing economics answered; PHASE 5 ACTIVE - Top-100 full-card claim-family build.
+**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 COMPLETE - bounded packaging/routing economics answered; PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE and NOT AUTHORIZED FOR SCALE; PHASE 6 COMPLETE - Outcomes and Commitments advance with bounded representation fixes; Capacity/access remains unresolved and deferred. Product-value validation is design-only.
 
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
@@ -112,9 +112,10 @@ explicit claim-family missingness, integrated private North Star projection,
 and production-appropriate interruption safety before scale.
 
 No universal accuracy, QA, acceptance-score or coverage threshold is implied.
-Phase 4 packaging/economics is complete at bounded experiment level. Phase 5
-Top-100 full-card scaling is now the active stage and implementation has not
-started.
+Phase 4 packaging/economics is complete at bounded experiment level. The broader
+Phase 5 Top-100 full-card objective remains active. The Direct Service V1.2
+experimental tranche has completed, but neither that experiment nor its bounded
+sample completes the Top-100 full-card milestone.
 
 Section 19 remains a six-lens architecture, not a completed milestone: source-
 native ACNC/ATO foundations exist, SDG and CharityGraph CLASSIE have bounded
@@ -176,7 +177,7 @@ materially improved the reviewed relationship boundary. No second paid Phase 4
 experiment is required. The original Phase 4 hypotheses remain historical
 evidence; the Factory candidate above supersedes them for the next stage.
 
-### Phase 5 boundary — active, implementation not started
+### Phase 5 boundary — active implementation
 
 Phase 5 inherits: **SOURCE UNIVERSE FIRST -> ACQUIRE ONCE -> FREEZE CORPUS ->
 SEMANTICS**; Builder does not do discovery or research; cards remain governed
@@ -191,6 +192,39 @@ beyond the existing Top-100 full-card boundary.
 
 The milestone is the **Top-100 full-card claim-family build**: attempt the complete North Star surface for literal ACNC donation ranks 1–100, with risk-tiered depth and explicit coverage states for every applicable claim family. Success means baseline source coverage attempted, applicable families attempted, governed results retained, missingness explicit, high-risk work reviewed/deferred appropriately, and economics/failures measured—not every field populated.
 
+### Direct Service V1.2 experimental tranche — complete
+
+The Direct Service V1.2 representation experiment is complete. V1.1 remains
+historical evidence; V1.2 is the selected section-array representation for future
+Direct Service work. The V1.1 sample had 42 completed responses: 19 directly
+valid, 22 deterministically recovered and 1 semantically unusable; 20 responses
+were representation-affected and contained 32 illegal section/type proposition
+instances. The V1.2 sample had 14 provider-executed responses: all 14 directly
+valid, 49 propositions retained, none discarded, and zero section/type
+violations or deterministic recoveries. Disposition:
+`V1_2_REPRESENTATION_FIX_SUPPORTED`. This is a small non-random sample; no
+statistical-significance or universal-readiness claim follows.
+
+The intended continuation population was 18: 13 final executions, one local
+zero-crossing pre-send control failure abandoned, and three economic exclusions
+above the binding AUD `0.25` per-request ceiling. The four non-executions are
+not semantic failures. Cumulative V1.2 provider cost was USD `0.437686` / AUD
+`0.665290`; all final unused reservations were released under active Amendment
+3. Amendment 4 was not activated. The experiment made no source acquisitions or
+governed promotions. See [the decision record](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md)
+and [Builder implementation closeout](https://github.com/gregorycwhill/charitygraph/blob/phase5-direct-service-v1.2-cutover-v1/docs/PHASE5_DIRECT_SERVICE_V1_2_CLOSEOUT.md).
+
+This closes the Direct Service experiment only. The Top-100 full-card milestone
+and its coverage/knowledge exit criteria remain active. The bounded Phase 6
+exploration (Tranches 0-1) is complete alongside the remaining Phase 5 objective
+and does not imply Phase 5 completion. The product owner selected three capabilities
+for bounded candidate experiments; see the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
+[reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md). Detailed execution packets and source-bearing candidate records remain restricted to local experiment storage and are not part of this publication.
+The three runs completed without promotion. Mechanical locator/scope failures and
+substantial same-model candidate drift remain for human adjudication; no advancement
+threshold is claimed. Phase 5 remains active and the product-value slice remains
+downstream of adjudication and a further product-owner decision.
+
 ### Phase 5 historical/current program-discovery run
 
 The recently halted run used literal ACNC donation ranks 1–100; it produced 60 new Terra response artefacts, reused 3 exact prior Terra-A results, and had 63 available semantic results in closeout analysis. It had 60 structurally valid results, 54 whole-output quote-valid results, 287 parsed proposals, 72 program-task `COMPLETE_ENOUGH` packets and 28 `PARTIAL` packets. One in-flight attempt (ABN `48321126727`) had no response artefact and indeterminate billing status. It was intentionally halted during roadmap realignment, did not start ranks 101–1000, made no validity/quality/impact/ROI/recommendation judgements, and changed no Builder, Data or Viewer files.
@@ -198,6 +232,22 @@ The recently halted run used literal ACNC donation ranks 1–100; it produced 60
 Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid outputs remain reusable Section-3 material where semantic identity permits; this run does not satisfy the future Top-100 full-card milestone and must not be rerun merely because sequencing changed.
 
 ## Phase 6 — Risk-gated depth and specialist profiles
+
+**Status: COMPLETE (14 September 2026).** Outcomes/evaluation and Commitments/implementation
+are selected for downstream product-value validation, both `ADVANCE_WITH_REPRESENTATION_FIX`.
+Capacity/availability/access is `DEFER` and unresolved; its technical statuses remain
+`CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` and
+`REPEAT_AFTER_SEMANTIC_FIX`. Outcomes' original six-subject/four-of-six denominator was
+uncomputable after rights and transport attrition left two independently reviewed V6
+subjects. The quantitative gate was neither passed nor redefined; advancement is a bounded
+product-owner decision. See the [final review and closeout](docs/history/phase6-closeout-2026-09-14.md).
+
+No Phase 6 candidate is promoted. The bounded integrated product-value slice has executed and was evaluated as
+`ADVANCE_WITH_BOUNDED_FIX`; its required commitment-content representation fix is implemented as Builder V5.1
+(`PRODUCT_VALUE_BOUNDED_FIX_COMPLETE`). The [slice design and outcome](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md)
+and its [fix history](docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md) record the limits.
+The Phase 5 Top-100 full-card objective remains active, but neither Phase 6 closure nor this bounded fix authorizes
+its scale. Capacity/access/availability remains deferred.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 

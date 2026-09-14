@@ -2,7 +2,7 @@
 
 CharityGraph Data publishes versioned public contracts, schemas, taxonomies, releases and shared project memory for structured, governed Australian charity data. It is one member of the CharityGraph product family: Builder constructs governed knowledge, Data publishes reusable governed data and shared authority, Viewer supports human inspection, and [Playbooks](https://github.com/gregorycwhill/charitygraph-playbooks) publishes governed open analytical methods for using CharityGraph with general-purpose AI. Playbooks is a separate product, not a Data feature.
 
-Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) and the canonical [BRAND_AND_REUSE.md](BRAND_AND_REUSE.md). The canonical product set is [PRODUCT.md](PRODUCT.md), [PRINCIPLES.md](PRINCIPLES.md), [PUBLIC_COMMITMENTS.md](PUBLIC_COMMITMENTS.md) and [EXPERIENCES.md](EXPERIENCES.md). The integrated model, coverage/open-curation policy, source governance, taxonomy governance and domain index complete the active v2.0-draft authority set. Current execution state and plans are linked from that authority record.
+Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md), [CURRENT_STATE.md](CURRENT_STATE.md) and the current [DEVELOPMENT_METHOD.md](DEVELOPMENT_METHOD.md). The canonical product set is [PRODUCT.md](PRODUCT.md), [PRINCIPLES.md](PRINCIPLES.md), [PUBLIC_COMMITMENTS.md](PUBLIC_COMMITMENTS.md) and [EXPERIENCES.md](EXPERIENCES.md). The integrated model, coverage/open-curation policy, source governance, taxonomy governance and domain index complete the active v2.0-draft authority set. Current execution state and plans are linked from that authority record.
 
 ## Public contract and releases
 
@@ -23,6 +23,7 @@ Start with [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) and the canonical [BRA
 - [SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md](SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md)
 - [PUBLIC_VNEXT_DECISION_LOG.md](PUBLIC_VNEXT_DECISION_LOG.md)
 - [ROADMAP.md](ROADMAP.md) · [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) · [TEST_PLAN.md](TEST_PLAN.md)
+- [PROJECT_SNAPSHOT_2026-09-11.md](PROJECT_SNAPSHOT_2026-09-11.md) · [PHASE5_EXECUTION_STATUS_2026-09-11.md](PHASE5_EXECUTION_STATUS_2026-09-11.md)
 
 ## Repository boundary
 

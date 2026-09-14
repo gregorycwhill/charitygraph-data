@@ -2,17 +2,11 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status:** Phase 4 is complete; Phase 5 - Top-100 full-card claim-family build - is active. The legacy Phase 4 active-scope label immediately below is historical and superseded.
+**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; scale is not authorized. Phase 6 is complete: Outcomes/evaluation and Commitments/implementation are `ADVANCE_WITH_REPRESENTATION_FIX`; Capacity/access/availability remains deferred unresolved. Greg's adjudication of the five-request product-value campaign is complete (25 candidates: 20 ACCEPT, 3 ACCEPT_MINOR_CORRECTION, 2 rejected, zero CRITICAL). The private eight-subject projection completed Inspect/Compare/Verify and received the historical decision `ADVANCE_WITH_BOUNDED_FIX`. The required bounded substantive commitment-content constraint is implemented as Builder V5.1 and its status is `PRODUCT_VALUE_BOUNDED_FIX_COMPLETE`. No canonical/public promotion, new source acquisition, Viewer change, public v0.5 change, Top-100 scale or Capacity reopening is authorized. See the [adjudication and evaluation record](docs/history/product-value-adjudication-and-evaluation-2026-09-14.md) and [bounded fix implementation history](docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md).
 
-**Active scope:** Phase 4 — cross-domain semantic packaging and economics
+**Active scope:** Preserve the completed bounded product-value evidence and private experiment-only namespace. The bounded commitment-content fix is complete; do not repeat semantic requests or promote experiment items to canonical/public knowledge. Any future work, including Top-100 scale, requires its own applicable authority. Phase 5 Top-100 remains active and is not authorized for scale.
 
-The former Phase 3 closeout sequence below is retained as completed history.
-
-**Authoritative immediate scope:** Phase 4 - cross-domain semantic packaging and economics. The legacy immediate-scope label below is superseded and retained only as historical wording.
-
-**Current authoritative scope:** Phase 5 - Top-100 full-card claim-family build. Phase 4 is completed history below.
-
-**Immediate scope:** Phase 3 closeout — integrated complete-card graph and private projection
+Earlier planning-scope statements below are retained as historical context and are superseded where they conflict with this current status. The Phase 5 Top-100 objective remains active and Phase 6 remains closed.
 
 ## 1. Delivery rule
 
@@ -433,18 +427,37 @@ routing is evidence-based and task-specific, not provider/model dogma; future
 Factory operation must continue to evaluate the candidate rather than treating
 it as a universal relationship rule.
 
-## ACTIVE SCOPE - PHASE 5 TOP-100 FULL-CARD CLAIM-FAMILY BUILD
+## HISTORICAL SCOPE SNAPSHOT - REMAINING PHASE 5 AND PHASE 6 (superseded 14 September 2026)
 
-Phase 5 is active, but implementation has not started. Inherit the existing
-constraints: source universe first -> acquire once -> freeze corpus ->
-semantics; Builder does not do discovery or research; cards remain projections
-over governed knowledge; primary extraction remains card-blind; logical task
-contracts remain independently governed; null/mixed/negative/inconclusive
-states remain first-class; unresolved relationship endpoints remain unresolved;
-Python does not infer semantic equivalence or teach English; Native remains
-parked; Viewer remains an inspector rather than a comparator; and ranking,
-recommendation and grantmaking work remain out of scope. Do not invent more
-detailed Phase 5 implementation tasks here.
+The Direct Service V1.2 experimental tranche is complete; see the [approved
+experiment decision](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md). The
+broader Top-100 full-card objective is still active. Bounded Phase 6 exploration
+Tranches 0-1 and the approved candidate runs for outcomes/evaluation,
+commitments/implementation and capacity/availability/access are complete. See the
+[Phase 6 capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
+[reality-slice designs](PHASE6_REALITY_SLICE_DESIGNS_2026-09-12.md). Detailed execution packets and source-bearing candidate records remain restricted to local experiment storage and are not part of this publication.
+Human adjudication is pending; no promotion, implementation, or advancement threshold
+is claimed. The product-value slice remains downstream of adjudication and a further
+product-owner decision.
+
+**13 September 2026 update:** Outcomes and Commitments each have a private
+`READY_FOR_HUMAN_REVIEW` packet. Outcomes contains two V4 responses that pass V5
+offline replay; the reduced sample and ambiguous Smith attempts remain limitations.
+Commitments contains three V5 Luna responses that pass mechanical contract gates;
+Greenpeace repeat differences remain for human stability judgment. Capacity remains
+`CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` /
+`REPEAT_AFTER_SEMANTIC_FIX`. No adjudication, usefulness decision, advancement,
+promotion or product-value work has occurred. The broader Phase 5 Top-100 objective
+remains active. See the [V5 execution and review record](docs/history/phase6-v5-confirmation-and-human-review-2026-09-13.md).
+
+All existing constraints remain: source universe first -> acquire once -> freeze
+corpus -> semantics; Builder does not do discovery or research; cards remain
+projections over governed knowledge; primary extraction remains card-blind;
+logical task contracts remain independently governed; null/mixed/negative/
+inconclusive states remain first-class; unresolved relationship endpoints remain
+unresolved; Python does not infer semantic equivalence or teach English; Native
+remains parked; Viewer remains an inspector rather than a comparator; and
+ranking, recommendation and grantmaking work remain out of scope.
 
 ## Propagated complete-card implementation pattern
 
