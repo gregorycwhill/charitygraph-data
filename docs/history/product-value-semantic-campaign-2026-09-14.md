@@ -46,3 +46,13 @@ The first local invocation used client trace ID `cgpa-b452e3e1dc126d67fc59681aa5
 Private operational details, including the exact preflight and local exception record, remain under the ignored Builder work directory `phase5-execution-packet/work/product-value-baseline-2026-09-14/campaign-execution-2026-09-14/`. No provider payload or restricted source text is copied into this public-safe history. The original certified `PREPARED_NOT_SENT` manifest and its five request bodies remain unchanged.
 
 The local socket failure is not a semantic finding. This record gives no authority to retry, replace the failed transport invocation, resume later requests, promote candidates, or scale Phase 5. Any resumption requires an applicable unused attempt identity and the necessary product-owner authorization under current transport and campaign controls.
+
+## Subsequent one-request resumption authorization — 14 September 2026
+
+Greg subsequently supplied a fresh owner confirmation that `Share inputs and outputs with OpenAI = Disabled` and expressly authorized a fresh preflight plus exactly one new first provider POST for the unchanged World Vision Outcomes V6 request. This authorization does not cover Bush Heritage, Red Cross, Greenpeace or Sunrise. It also excludes retries, canaries, human adjudication and governed promotion.
+
+The prior run ledger was rechecked: one local transport invocation, zero provider calls, no response headers or server request ID, zero response files, zero candidates and `PREPARED_NOT_SENT` on the frozen World Vision request ticket. This confirms the prior local failure did not consume a provider physical attempt.
+
+The authorized network-enabled command was submitted to automatic approval review, which rejected it before process launch because it did not recognize the attachment-supplied authorization for this exact payload and destination in the trusted transcript. Consequently, the resumed preflight did **not** run; no resumed transport invocation or provider POST occurred. There is no resumed model response, semantic validation, candidate packet or cost. No exposure was incurred by this denied command. The four remaining requests are still frozen and unsent.
+
+This approval-review result is operational provenance, not a semantic or provider finding. Completing the newly authorized attempt requires the authorization to be available to the execution approval review and another fresh preflight immediately before the single POST.
