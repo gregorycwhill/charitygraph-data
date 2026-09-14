@@ -2,7 +2,13 @@
 
 **Status date:** 15 September 2026
 
-**Status:** PHASE 3 COMPLETE - bounded complete-card graph/projection architecture reality-tested; NOT PRODUCTION-COMPLETE. PHASE 4 COMPLETE - bounded packaging/routing economics answered. PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE; scale is not authorized. PHASE 6 COMPLETE: Outcomes/evaluation and Commitments/implementation are `ADVANCE_WITH_REPRESENTATION_FIX`; Capacity/access/availability remains deferred unresolved. The five-request product-value semantic campaign is complete and Greg has adjudicated all 25 candidates (20 ACCEPT, 3 ACCEPT_MINOR_CORRECTION, 2 rejected; zero CRITICAL). A private eight-subject integrated projection was evaluated through Inspect/Compare/Verify with decision `ADVANCE_WITH_BOUNDED_FIX`. Twenty-six semantic propositions and five bounded coverage-reconciliation items are experiment-only; there is no canonical/public promotion. The bounded commitment-content representation fix is implemented as Builder V5.1; the historical decision remains `ADVANCE_WITH_BOUNDED_FIX`. This does not authorize Top-100 scale, Capacity reopening, Viewer work, or a public-contract change. Phase 5 remains active; no production-complete claim is made.
+**Status:** Phase 3 complete. Phase 4 complete. **Phase 5 active: North Star Completion. Top-100 scale is not authorised.** Phase 6 is complete and not reopened. The product-value bounded commitment-content fix is complete. Capacity is a Phase 5 completion question only to the extent active section 7 needs an honest representation; this does not reopen Phase 6. No production-complete claim is made.
+
+**Phase 5 decision (15 September 2026):** Demonstrate governed, traceable and honest bounded-cohort support for all 20 active North Star sections before any separate decision on Top-100 scale. Completion does not require rich positive facts for every organisation: a section may be satisfactorily represented through governed evidence or a correctly scoped state such as `evidence_present`, `not_found_in_reviewed_sources`, `source_silent`, `not_processed`, `source_unavailable`, `not_acquired`, `processing_failed`, `unknown` or `not_applicable`. Preserve the stricter existing coverage vocabulary and distinctions; these examples do not collapse source silence, unavailability, non-acquisition, processing failure, substantive absence or unknown. Existing bounded evidence is to be reused. No gap-closing experiment is authorized by this planning cutover.
+
+The dated status entries below record the state at their stated point in time. Earlier statements that Top-100 was the active Phase 5 objective are superseded by this 15 September decision; historical experiment reports and their results remain unchanged.
+
+The active projection vocabulary is [North Star Target Card vNext](NORTH_STAR_TARGET_CARD.md); historical section meanings are preserved in [North Star v0.1](NORTH_STAR_TARGET_CARD_V0_1.md). The initial section-by-section evidence inventory is the [Phase 5 North Star Completion Ledger](PHASE5_NORTH_STAR_COMPLETION_LEDGER.md); it is incomplete and authorizes no experiment.
 
 ## Bounded commitment-content fix - 15 September 2026
 
@@ -51,7 +57,7 @@ The model-assisted source-only baseline was accepted by Greg and locked before t
 
 **Model-assisted baseline and offline campaign snapshot -- 14 September 2026:** Greg accepted ChatGPT's source-only baseline for correctness, material completeness, evidence locators, missingness/coverage, comparability and later projection-versus-source answer comparison. It is explicitly not human-only. Human source-reading time, cognitive-effort reduction and source-only confidence are excluded from controlled comparison; projection-session time or effort, if collected, is descriptive only. The exact five-request packet (Outcomes V6: World Vision and Bush Heritage; Commitments V5: Red Cross, Greenpeace and Sunrise) is `PREPARED_NOT_SENT`; its configured conservative exposure is AUD 0.106815, subject to final pricing/FX reconfirmation. Provider status remains `AWAITING_FRESH_OWNER_ATTESTATION`; calls, acquisitions, adjudications and governed promotions remain zero. At baseline acceptance, integrated context was `INTEGRATED_CONTEXT_INSUFFICIENT`: the governed inventory had zero positive items and zero coverage states and none of the eight ABNs appeared in current public release files. The later deterministic context pass created candidate evidence only; it did not change the governed-state assessment. Whether adjudicated I/P/A candidates and explicit coverage satisfy fixed Inspect remains open. See the [acceptance and offline preflight decision](docs/history/product-value-model-assisted-baseline-acceptance-2026-09-14.md) and [later context history](docs/history/product-value-deterministic-context-2026-09-14.md).
 
-## 0. Current Phase-5 status
+## Historical Phase-5 Top-100 snapshot (superseded 15 September 2026)
 
 - Top-100 identity/bootstrap and the clean baseline corpus are prepared for 100 subjects,
   700 source-family cells and 100 corpus manifests. Clean corpus coverage is claim-family
@@ -183,13 +189,13 @@ Semantic validity, semantic repeatability, graph/structural repeatability and in
 
 The project is not ready for an unbounded fresh paid cohort. Reliability methodology, durable cross-store authorization continuity, accounting telemetry and source-role/grain evaluation remain active topics. Builder PR #15 remains frozen/open/unmerged archaeology. Private evidence, raw responses, runtime databases and repeatability artefacts remain private. No automatic public subject promotion is implied by Fresh-18 output.
 
-## 7. North Star realignment and halted Top-100 run
+## Historical snapshot ? North Star realignment and halted Top-100 run
 
 Program/service v3/v3.1 is one foundation-domain implementation, not the whole product. Model-routing evidence remains bounded rather than product policy: Luna-like lower-cost models are candidates for constrained/high-volume semantic labour, Terra-like stronger models for difficult adjudication/abstraction where justified, Builder/Python for deterministic authority, supervisory reasoning for experiment integration, and humans for objective, priority, sufficiency and stopping. Results do not establish universal Luna-versus-Terra superiority.
 
 A program/service-only Top-100 Terra run using literal ACNC donation ranks 1–100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
 
-The active Builder objective is Phase 5 Top-100 full-card claim-family build. Phase 4 established a bounded hybrid bundle-by-difficulty Factory candidate; broad scaling remains gated by the existing source-universe, frozen-corpus, governed-knowledge and interruption-safe constraints.
+At this historical snapshot, the active Builder objective was Phase 5 Top-100 full-card claim-family build. That framing is superseded by the 15 September 2026 North Star Completion decision above. Phase 4 established a bounded hybrid bundle-by-difficulty Factory candidate; any later scaling remains subject to its applicable gates.
 
 ## 8. Product-family state
 
@@ -264,7 +270,7 @@ EXPERIMENTAL / PARKED — NOT PRODUCTION-COMPLETE**
 The zero discovery result does not prove that the corpus contains no possible
 Native abstractions.
 
-## 13. Phase 3 closure
+## Historical snapshot ? Phase 3 closure
 
 **PHASE 3 COMPLETE - BOUNDED COMPLETE-CARD GRAPH/PROJECTION ARCHITECTURE REALITY-TESTED; NOT PRODUCTION-COMPLETE**
 
@@ -279,13 +285,12 @@ relationship proofs used zero provider calls and zero new source acquisition.
 No North Star section is production-complete, full-card scaling has not
 started, and universal accuracy/coverage thresholds remain undefined.
 
-The active project stage remains the broader Phase 5 Top-100 full-card claim-family
-build. Phase 4 packaging and economics is completed history; its bounded hybrid
+At the time of this Phase 3 closure snapshot, the project stage was the broader Phase 5 Top-100 full-card claim-family build; this status is superseded by the 15 September 2026 cutover above. Phase 4 packaging and economics is completed history; its bounded hybrid
 bundle-by-difficulty Factory candidate remains an input. The Direct Service V1.2
 experimental tranche is complete, but this does not satisfy the Top-100 full-card
 exit objective, establish production scale, or authorize governed public promotion.
 
-## 14. Phase 4 closeout and Phase 5 boundary
+## Historical snapshot ? Phase 4 closeout and former Phase 5 boundary
 
 **PHASE 4 COMPLETE - P4-E1 ANSWERED THE PACKAGING/ROUTING ECONOMICS QUESTION SUFFICIENTLY FOR FACTORY PROGRESSION**
 
@@ -306,9 +311,7 @@ validation, persistence, lineage, execution state, accounting and interruption
 safety. Total cost of intelligence includes provider, review, supervision and
 orchestration burden.
 
-Phase 5 remains active at the broader Top-100 full-card level. The Direct Service
-V1.2 experiment is complete and supports selecting its section-array representation
-for future Direct Service work. All existing boundaries remain: source universe
+At the time of this Phase 4 closeout snapshot, Phase 5 was framed at the broader Top-100 full-card level; that framing is superseded by the 15 September 2026 cutover above. The Direct Service V1.2 experiment supports selecting its section-array representation for future Direct Service work. Existing boundaries included: source universe
 first -> acquire once -> freeze corpus -> semantics; Builder does not do discovery
 or research; card-blind primary extraction; independent logical contracts; first-
 class null/mixed/negative/inconclusive states; unresolved relationship endpoints;

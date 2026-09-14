@@ -10,7 +10,7 @@ Build a one-stop shop for structured, governed Australian charity data: an integ
 
 Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity evidence corpus. Assemble one or more task-specific semantic packets from that corpus. Apply one or more cost-efficient semantic passes. Persist independently governed domain knowledge. Compile analyst/public projections from that governed knowledge.
 
-**Milestone status:** PHASE 3 COMPLETE - bounded complete-card domain/graph hardening; PHASE 4 COMPLETE - bounded packaging/routing economics answered; PHASE 5 TOP-100 FULL-CARD OBJECTIVE ACTIVE and NOT AUTHORIZED FOR SCALE; PHASE 6 COMPLETE - Outcomes and Commitments advance with bounded representation fixes; Capacity/access remains unresolved and deferred. Product-value validation is design-only.
+**Milestone status (15 September 2026):** Phase 3 complete; Phase 4 complete; **Phase 5 active: North Star Completion**; Top-100 scale is a later gate and is not authorised. Phase 6 is complete and not reopened. The bounded product-value commitment-content fix is complete. Capacity is assessed only as needed to represent active North Star section 7; this does not reopen Phase 6.
 
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
@@ -113,7 +113,7 @@ and production-appropriate interruption safety before scale.
 
 No universal accuracy, QA, acceptance-score or coverage threshold is implied.
 Phase 4 packaging/economics is complete at bounded experiment level. The broader
-Phase 5 Top-100 full-card objective remains active. The Direct Service V1.2
+At this earlier snapshot, the Phase 5 Top-100 full-card objective was described as active; that framing is superseded by the current North Star Completion milestone above. The Direct Service V1.2
 experimental tranche has completed, but neither that experiment nor its bounded
 sample completes the Top-100 full-card milestone.
 
@@ -177,7 +177,7 @@ materially improved the reviewed relationship boundary. No second paid Phase 4
 experiment is required. The original Phase 4 hypotheses remain historical
 evidence; the Factory candidate above supersedes them for the next stage.
 
-### Phase 5 boundary — active implementation
+### Historical Phase 5 boundary snapshot (superseded 15 September 2026)
 
 Phase 5 inherits: **SOURCE UNIVERSE FIRST -> ACQUIRE ONCE -> FREEZE CORPUS ->
 SEMANTICS**; Builder does not do discovery or research; cards remain governed
@@ -185,12 +185,31 @@ projections; primary extraction remains card-blind; null/mixed/negative/
 inconclusive states remain first-class; unresolved relationship endpoints remain
 unresolved; Python does not infer semantic equivalence; Native remains parked;
 Viewer remains an inspector; and ranking, recommendation and grantmaking remain
-out of scope. This roadmap activation does not authorise implementation detail
-beyond the existing Top-100 full-card boundary.
+out of scope. This historical roadmap text did not authorise implementation beyond the then-current Top-100 full-card boundary.
 
-## Phase 5 — Top-100 full-card claim-family build
+## Phase 5 — North Star Completion
 
-The milestone is the **Top-100 full-card claim-family build**: attempt the complete North Star surface for literal ACNC donation ranks 1–100, with risk-tiered depth and explicit coverage states for every applicable claim family. Success means baseline source coverage attempted, applicable families attempted, governed results retained, missingness explicit, high-risk work reviewed/deferred appropriately, and economics/failures measured—not every field populated.
+**Objective:** Demonstrate governed, traceable and honest bounded-cohort support for all 20 active North Star sections before a separate product-owner decision can authorise Top-100 scale. Top-100 is a downstream scale/industrialisation stage, not the environment in which missing architecture is first designed or proven.
+
+The exit gate requires bounded evidence that each active section has either (1) satisfactory governed acquisition, processing, representation and projection support, or (2) an explicit tested representation of why relevant knowledge is unavailable, unprocessed, source-silent, not applicable or genuinely unknown. Positive content is not required in every section or for every charity. Preserve the stricter distinctions among source silence, not found in reviewed sources, non-acquisition, unavailability, processing failure, unknown and not applicable. Reuse existing bounded evidence rather than repeating it because section numbering changed. Historical whole-card and specialist experiments are evidence inputs, not automatic proof of active-section equivalence.
+
+### Tranche A — North Star version cutover
+
+Establish a versioned active projection contract while preserving historical v0.1 section meanings, assignments and artifacts. See the Builder projection contract and the versioned target-card documents.
+
+### Tranche B — North Star completion ledger
+
+Inventory each active section's required knowledge distinctions, existing evidence, disposition, exact missing proof, cheapest bounded next test and whether new source/provider work is actually needed. The initial [completion ledger](PHASE5_NORTH_STAR_COMPLETION_LEDGER.md) is incomplete and grants no execution authority. Do not infer equivalence from numeric section IDs.
+
+### Tranche C — gap-closing slices only
+
+Design bounded work only for gaps established by the ledger. Candidate areas include direct service/capacity, fundraising, funding/dependencies, ethos/values, notable history and unresolved classification/search/AI discovery; governance, workforce and scale also require evidence before any gap is asserted. No gap-closing execution is authorised by the cutover itself.
+
+### Tranche D — North Star Completion Gate
+
+Compile an integrated bounded-cohort projection across all 20 active sections from governed knowledge and explicit missingness. Use Inspect, constrained Compare and Verify where appropriate. Only after this gate may a separate product-owner decision authorise Top-100 scale.
+
+The prior Top-100 framing and halted-run evidence below are historical snapshots; do not treat them as the current active sequence.
 
 ### Direct Service V1.2 experimental tranche — complete
 
@@ -225,7 +244,7 @@ substantial same-model candidate drift remain for human adjudication; no advance
 threshold is claimed. Phase 5 remains active and the product-value slice remains
 downstream of adjudication and a further product-owner decision.
 
-### Phase 5 historical/current program-discovery run
+### Historical Phase 5 program-discovery run
 
 The recently halted run used literal ACNC donation ranks 1–100; it produced 60 new Terra response artefacts, reused 3 exact prior Terra-A results, and had 63 available semantic results in closeout analysis. It had 60 structurally valid results, 54 whole-output quote-valid results, 287 parsed proposals, 72 program-task `COMPLETE_ENOUGH` packets and 28 `PARTIAL` packets. One in-flight attempt (ABN `48321126727`) had no response artefact and indeterminate billing status. It was intentionally halted during roadmap realignment, did not start ranks 101–1000, made no validity/quality/impact/ROI/recommendation judgements, and changed no Builder, Data or Viewer files.
 
@@ -246,7 +265,7 @@ No Phase 6 candidate is promoted. The bounded integrated product-value slice has
 `ADVANCE_WITH_BOUNDED_FIX`; its required commitment-content representation fix is implemented as Builder V5.1
 (`PRODUCT_VALUE_BOUNDED_FIX_COMPLETE`). The [slice design and outcome](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md)
 and its [fix history](docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md) record the limits.
-The Phase 5 Top-100 full-card objective remains active, but neither Phase 6 closure nor this bounded fix authorizes
+At this historical Phase 6 closeout snapshot, the Phase 5 Top-100 full-card objective was described as active. That framing is superseded by the current North Star Completion milestone above. Neither Phase 6 closure nor this bounded fix authorizes
 its scale. Capacity/access/availability remains deferred.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
@@ -301,7 +320,9 @@ P0/P1 can proceed independently of full-card Builder implementation. P2 can use 
 - Playbook analytical-method evaluation, cross-model portability and method/version reproducibility
 - Playbook contribution, attribution, privacy of user parameters, feedback classification and epistemic-policy maintenance
 
-## North Star ↔ roadmap matrix
+## Historical North Star v0.1 ↔ roadmap matrix
+
+This matrix records the former v0.1 numbering and first-scaled-phase assumptions. It is historical and must not be used to interpret active vNext section IDs.
 
 | North Star section | First reality-tested phase | First scaled phase | Principal evidence families | Typical method |
 |---|---|---|---|---|
