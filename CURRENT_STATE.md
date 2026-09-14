@@ -19,6 +19,8 @@ The independent human review of Outcomes V6 is complete: World Vision Australia 
 
 The next active work is preparation and product-owner review of the [governed product-value validation design](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md), not experiment execution. Phase 5 Top-100 remains active and scale is not authorized. There have been no product-value slice executions, governed promotions, source acquisitions, Viewer changes or public v0.5 changes in this closeout task.
 
+**Product-value governance update — 14 September 2026:** The product owner approved bounded local analytical retention under `CG_BOUNDED_LOCAL_ANALYTICAL_RETENTION_V1` v1.0.0 and a separate private experiment-only governed namespace gated by independent proposition-level human adjudication. The updated [execution packet](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md) binds the proposed eight-subject cohort to 16 exact frozen representations and records the actual 8×20 inventory: zero governed positives, zero governed coverage states, 15 section-mapped candidate-only cells, 145 unprocessed cells, and 21 additional Red Cross candidate observations that cannot be assigned to a North Star section without semantic interpretation. It predeclares Inspect, Compare A/B/C, Verify, human review, budget fields and stop controls. This is bounded integrated multi-section validation, not full North Star coverage. No slice has executed; no provider call, new acquisition or promotion occurred. Phase 5 Top-100 remains active and incomplete, and product-value execution remains downstream of these bounded experiments and separate execution approval.
+
 ## 0. Current Phase-5 status
 
 - Top-100 identity/bootstrap and the clean baseline corpus are prepared for 100 subjects,

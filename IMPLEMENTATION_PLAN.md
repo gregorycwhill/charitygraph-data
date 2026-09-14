@@ -4,15 +4,15 @@
 
 **Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active and scale is not authorized. Phase 6 is complete: Outcomes/evaluation and Commitments/implementation are `ADVANCE_WITH_REPRESENTATION_FIX`; Capacity/access/availability is deferred unresolved. No candidate promotion or product implementation is authorized by the closeout.
 
-**Active scope:** Prepare the governed product-value validation slice for product-owner review. No experiment execution is authorized. The Phase 5 Top-100 objective remains active separately and is not authorized for scale.
+**Active scope:** The bounded governed product-value slice packet is prepared for product-owner review and separate execution authorization. No experiment execution is authorized. The Phase 5 Top-100 objective remains active separately and is not authorized for scale.
 
 The former Phase 3 closeout sequence below is retained as completed history.
 
-**Authoritative immediate scope:** Product-value slice preparation and review only. Phase 5 remains active but not authorized for scale. Phase 6 is complete; see [final closeout](docs/history/phase6-closeout-2026-09-14.md).
+**Authoritative immediate scope:** Product-value execution-packet maintenance and review only. Phase 5 remains active but not authorized for scale. Phase 6 is complete; see [final closeout](docs/history/phase6-closeout-2026-09-14.md).
 
-**Current authoritative scope:** Prepare the integrated Inspect / Compare / Verify product-value validation design. Phase 4 is completed history below. No provider execution, source acquisition, candidate promotion or full Top-100 run is authorized.
+**Current authoritative scope:** Review the bounded integrated Inspect / Compare / Verify product-value validation packet. Phase 4 is completed history below. No provider execution, source acquisition, candidate promotion or full Top-100 run is authorized.
 
-**Immediate scope:** The broader Phase 5 objective remains active and scale is not authorized. Phase 6 is complete: Outcomes and Commitments advance with bounded representation fixes; Capacity is unresolved/deferred. Prepare, do not execute, the governed product-value slice in [the working design](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md). It must exercise explicit reviewed-evidence coverage and preserve each source/scope/epistemic distinction. No product-value execution, source acquisition, provider call, governed promotion, public v0.5 change, or Viewer change has occurred.
+**Immediate scope:** The broader Phase 5 objective remains active and scale is not authorized. Phase 6 is complete: Outcomes and Commitments advance with bounded representation fixes; Capacity is unresolved/deferred. The [bounded product-value packet](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md) records approved bounded local retention and an adjudication-gated experiment-only namespace. It fixes the 8×20 readiness inventory and Inspect/Compare/Verify tasks; execution still requires separate product-owner authorization, a numerical budget, current provider-policy confirmation and named independent reviewers. No product-value execution, source acquisition, provider call, governed promotion, public v0.5 change, or Viewer change has occurred.
 
 ## 1. Delivery rule
 
