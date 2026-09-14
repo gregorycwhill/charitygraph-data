@@ -242,9 +242,12 @@ uncomputable after rights and transport attrition left two independently reviewe
 subjects. The quantitative gate was neither passed nor redefined; advancement is a bounded
 product-owner decision. See the [final review and closeout](docs/history/phase6-closeout-2026-09-14.md).
 
-No Phase 6 candidate is promoted. The Phase 5 Top-100 full-card objective remains active,
-but Phase 6 closure does not authorize its scale. The [governed product-value slice design](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md)
-is preparation only; no integrated product-value slice has executed.
+No Phase 6 candidate is promoted. The bounded integrated product-value slice has executed and was evaluated as
+`ADVANCE_WITH_BOUNDED_FIX`; its required commitment-content representation fix is implemented as Builder V5.1
+(`PRODUCT_VALUE_BOUNDED_FIX_COMPLETE`). The [slice design and outcome](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md)
+and its [fix history](docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md) record the limits.
+The Phase 5 Top-100 full-card objective remains active, but neither Phase 6 closure nor this bounded fix authorizes
+its scale. Capacity/access/availability remains deferred.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 
