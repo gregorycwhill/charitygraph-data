@@ -74,6 +74,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Phase 6 V6 execution and pre-adjudication snapshot | `docs/history/phase6-independent-human-review-and-outcomes-v6-2026-09-14.md` (historical snapshot; its pending-review statement is accurate at that point and superseded by the final closeout record) |
 | Governed product-value validation slice | `PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md` (execution-ready design packet; no provider/execution, canonical-promotion, public-schema or release authority) |
 | Product-value campaign approval, AUD 0.25 per attempt / AUD 2.00 aggregate, fixed cohort/workflows and role/order controls | `docs/history/product-value-campaign-approval-2026-09-14.md` (approved-in-principle campaign decision; execution remains blocked by its explicit preconditions) |
+| Product-value model-assisted source-only baseline acceptance, measurement limits, offline five-request certification and execution blocker | `docs/history/product-value-model-assisted-baseline-acceptance-2026-09-14.md` (experiment-specific approved decision and offline preflight; no provider/execution authority; supersedes earlier baseline-role/measurement assumptions in the execution design) |
 | Taxonomies, external schemes and native vocabularies | `TAXONOMY_AND_SCHEME_GOVERNANCE.md` |
 | CharityGraph Native architecture decisions | `CHARITYGRAPH_NATIVE_ARCHITECTURE.md` |
 | Domain ownership and research-design status | `DOMAIN_PROFILE_INDEX.md` |
