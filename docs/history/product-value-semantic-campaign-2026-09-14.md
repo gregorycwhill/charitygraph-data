@@ -1,4 +1,4 @@
-# Product-value semantic campaign execution — 14 September 2026
+﻿# Product-value semantic campaign execution â€” 14 September 2026
 
 **Status:** Historical campaign execution record; degraded before provider crossing
 
@@ -47,7 +47,7 @@ Private operational details, including the exact preflight and local exception r
 
 The local socket failure is not a semantic finding. This record gives no authority to retry, replace the failed transport invocation, resume later requests, promote candidates, or scale Phase 5. Any resumption requires an applicable unused attempt identity and the necessary product-owner authorization under current transport and campaign controls.
 
-## Subsequent one-request resumption authorization — 14 September 2026
+## Subsequent one-request resumption authorization â€” 14 September 2026
 
 Greg subsequently supplied a fresh owner confirmation that `Share inputs and outputs with OpenAI = Disabled` and expressly authorized a fresh preflight plus exactly one new first provider POST for the unchanged World Vision Outcomes V6 request. This authorization does not cover Bush Heritage, Red Cross, Greenpeace or Sunrise. It also excludes retries, canaries, human adjudication and governed promotion.
 
@@ -82,3 +82,24 @@ One fresh campaign preflight passed before any of the four sends. It validated t
 The first Bush Heritage Standard POST command was rejected by automatic approval review before process launch. The review's reason was that campaign authorization appeared only in a pasted attachment and was not explicit approval in trusted user content; the review prohibited bypassing the rejection through an alternate or indirect route. Therefore this pre-send hold has zero local transport invocations and zero provider POSTs. Bush Heritage, Red Cross, Greenpeace and Sunrise remain unchanged at `PREPARED_NOT_SENT`. The temporary staging copy of request bodies and source text was removed; the durable preflight and hold records remain in the private Builder work directory `phase5-execution-packet/work/product-value-baseline-2026-09-14/campaign-execution-2026-09-14-resumed-remaining-four-v1/`.
 
 The handoff's campaign authority remains recorded, but execution is held pending explicit approval in trusted chat content so automatic review can assess the provider-data transfer. No request was retried or rerouted around review. World Vision remains completed once with `MECHANICAL_PASS`; all five requests' semantic outputs remain candidates awaiting human adjudication. No source acquisition, human adjudication, semantic governed promotion, canonical/public promotion, Viewer change or public v0.5 change occurred in this preflight/hold step.
+
+
+## Completed four-request campaign continuation - 14 September 2026
+
+After the first POST command was rejected before launch, Greg reiterated in trusted chat that he did not want per-request micro-approvals for the already supplied campaign authority. Execution resumed using the single campaign-level authorization and the passed campaign preflight. No per-request authorization was requested between responses. World Vision was not resent.
+
+Two elevated staging command attempts for Red Cross lacked access to the OneDrive source-metadata file; in both, the sender guard then exited before the Standard transport client ran. They are recorded separately as two local setup failures, with zero Standard transport invocations and zero provider crossings. Normal-context staging succeeded, and the frozen Red Cross request then completed once. No provider request was retried.
+
+| Order | Subject | Contract | POSTs | Client request ID | Server request ID | Result | Input / output tokens | Actual USD / AUD | Conservative AUD | Propositions |
+|---:|---|---|---:|---|---|---|---:|---:|---:|
+| 1 | World Vision Australia | Outcomes V6 | 1 | `cgpa-b452e3e1dc126d67fc59681aa5c98bd34bd52559b3e641c98cf3b6b55453ca0d` | `req_af40bdff67df4108b322255cc72271f2` | HTTP 200, `MECHANICAL_PASS` | 10,966 / 629 | 0.003497 / 0.004896 | 0.020648 | 2 |
+| 2 | Bush Heritage Australia | Outcomes V6 | 1 | `cgpa-5c7bf129b89334c5c89ac6841b32101a5917daa5bb3a32ce3b66c03d8866b042` | `req_ed5d9e9496204e9799c6d561c6975557` | HTTP 200, `MECHANICAL_PASS` | 8,999 / 2,539 | 0.005297 / 0.007416 | 0.019269 | 11 |
+| 3 | Australian Red Cross Society | Commitments V5 | 1 | `cgpa-6332763b82967233c4a2e9f55e47ec17f3bb6f69fe7232bf1adf08cb891f1050` | `req_1c806b79d37d40c0b0ba48120b13069c` | HTTP 200, `MECHANICAL_PASS` | 10,201 / 769 | 0.003473 / 0.004863 | 0.019791 | 2 |
+| 4 | Greenpeace Australia Pacific Limited | Commitments V5 | 1 | `cgpa-dcc7e2da2d08df548c71dcf43bfdf656b4fce25b763e55e73ed29f0b524b5158` | `req_f47413cd242e411e9f4575f5ac1fa0bf` | HTTP 200, `MECHANICAL_PASS` | 9,526 / 1,507 | 0.004190 / 0.005866 | 0.019558 | 6 |
+| 5 | The Sunrise Project Australia Limited | Commitments V5 | 1 | `cgpa-d0eec5da03043a7aa315e984eacff62d5e627482b99cf50431a3e6680e0cfdf3` | `req_af155ac5c0cb4e19b327623f65e73523` | HTTP 200, `MECHANICAL_PASS` | 8,498 / 1,120 | 0.003469 / 0.004857 | 0.019117 | 4 |
+
+Every request used `gpt-5.6-luna`, low reasoning, Standard delivery, a 300-second timeout and zero automatic/manual retries. The four new requests consumed four provider POSTs; total campaign crossings including World Vision: five. Total use: 48,190 input and 6,564 output tokens. Total actual cost: USD 0.019926 / AUD 0.027898. Conservative reserved exposure for all five: AUD 0.098383; each request remained below AUD 0.25 and the campaign remained below AUD 2.00. Ambiguous exposure: AUD 0.
+
+The final state is `SEMANTIC_CANDIDATES_READY_FOR_HUMAN_ADJUDICATION`. The combined private packet is `phase5-execution-packet/work/product-value-baseline-2026-09-14/campaign-execution-2026-09-14-resumed-remaining-four-v1/human-adjudication-packet/combined-campaign-packet.json`. It contains all 25 propositions across five completed responses, exact request/provider lineage, scopes, epistemic classes, evidence locators and authorized private support excerpts, with evidence-strength assessments and all human dispositions blank. There are zero candidate coverage items. Greg remains `HUMAN_ADJUDICATOR`; no ChatGPT human adjudication, source acquisition, semantic governed promotion, canonical/public promotion, Viewer change or public v0.5 change occurred. The original five frozen request bodies, baseline lock and deterministic context remain unchanged.
+
+The public-safe record excludes raw provider responses and supporting source excerpts. Those remain in the ignored private Builder execution work directory. The campaign authorization is consumed: no request has retry authority; any new semantic call requires separate product-owner scope.
