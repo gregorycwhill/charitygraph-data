@@ -1,6 +1,6 @@
 # Governed product-value validation slice — execution packet
 
-**Status:** Approved in principle for the bounded eight-subject campaign; the model-assisted source-only baseline is accepted and locked, while execution remains blocked by the preconditions below
+**Status:** Approved in principle for the bounded eight-subject campaign; the model-assisted source-only baseline is accepted and locked. One live preflight passed, but execution stopped before any provider crossing after a local socket-permission failure; see the execution history below.
 **Version:** 2.1, 14 September 2026
 **Owner:** Shared CharityGraph product/data
 **Scope:** One bounded integrated multi-section product-value experiment using an experiment-only governed namespace.
@@ -9,6 +9,8 @@
 **Measurement and baseline amendment:** The [model-assisted baseline acceptance and offline preflight record](docs/history/product-value-model-assisted-baseline-acceptance-2026-09-14.md) supersedes earlier statements in this design that assume a human source-only baseline, human source-reading-time comparison, or unassigned five-request identities. The accepted source-only answers are model-assisted, never human-only. This remains an execution design; its offline packet does not authorize provider crossing.
 
 **Later deterministic context and adjudication:** After the accepted baseline lock, the fixed cohort received a bounded deterministic extraction from already-retained ACNC AIS structured fields. The [context-generation history](docs/history/product-value-deterministic-context-2026-09-14.md) records the original 118-candidate snapshot. Greg later adjudicated that inventory; the [adjudication history](docs/history/product-value-context-adjudication-2026-09-14.md) records 106 private proposition items, 105 explicit `not_processed` coverage states and the offline private projection. The five semantic requests remain unchanged and unsent. No semantic request, provider call, acquisition, canonical/public promotion, or Viewer/public-contract change occurred.
+
+**Latest execution outcome — 14 September 2026:** The [campaign execution history](docs/history/product-value-semantic-campaign-2026-09-14.md) supersedes the earlier “all live gates outstanding” statements below. The baseline, private deterministic context, five frozen request bodies, ten exact-hash rights records, fresh owner attestation, price/FX reservation and Standard transport configuration passed preflight. The first local transport invocation failed with `LOCAL_SOCKET_PERMISSION_DENIED` before provider crossing. Provider calls: 0; source acquisitions: 0; semantic candidates: 0; human adjudications: 0; governed promotions: 0. Existing systemic-transport stop behavior left four planned requests unattempted. No retry was made. The campaign remains degraded and requires a separately authorized future action if execution is to resume.
 
 ## Decisions and boundaries
 
@@ -162,6 +164,8 @@ World Vision Australia and Bush Heritage provide difficult reach/output versus o
 The Smith Family is excluded because its historical Phase 6 attempts remain ambiguous and immutable, it lacks completed V6 adjudication in the selected Outcomes path, and the eight-subject cohort is already adequate. The ambiguity does not permanently taint the subject. A separately identified future task could use Smith if independently authorized and properly governed.
 
 ## Readiness accounting at this design snapshot
+
+The accounting below describes the design/pre-execution snapshot and is superseded for current run status by the [14 September execution history](docs/history/product-value-semantic-campaign-2026-09-14.md).
 
 - Provider calls for this task: **0**.
 - New source acquisitions: **0**.
