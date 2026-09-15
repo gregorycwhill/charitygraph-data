@@ -233,8 +233,7 @@ not semantic failures. Cumulative V1.2 provider cost was USD `0.437686` / AUD
 governed promotions. See [the decision record](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md)
 and [Builder implementation closeout](https://github.com/gregorycwhill/charitygraph/blob/phase5-direct-service-v1.2-cutover-v1/docs/PHASE5_DIRECT_SERVICE_V1_2_CLOSEOUT.md).
 
-This closes the Direct Service experiment only. The Top-100 full-card milestone
-and its coverage/knowledge exit criteria remain active. The bounded Phase 6
+This closes the Direct Service experiment only. At that historical snapshot, the Top-100 full-card milestone and its coverage/knowledge exit criteria were active; this was superseded on 15 September 2026 by Phase 5 North Star Completion. The bounded Phase 6
 exploration (Tranches 0-1) is complete alongside the remaining Phase 5 objective
 and does not imply Phase 5 completion. The product owner selected three capabilities
 for bounded candidate experiments; see the [capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
@@ -322,7 +321,7 @@ P0/P1 can proceed independently of full-card Builder implementation. P2 can use 
 
 ## Historical North Star v0.1 ↔ roadmap matrix
 
-This matrix records the former v0.1 numbering and first-scaled-phase assumptions. It is historical and must not be used to interpret active vNext section IDs.
+This matrix records the former v0.1 numbering and first-scaled-phase assumptions. It is historical and must not be used to interpret active v0.2 section IDs.
 
 | North Star section | First reality-tested phase | First scaled phase | Principal evidence families | Typical method |
 |---|---|---|---|---|

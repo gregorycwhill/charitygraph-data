@@ -367,7 +367,7 @@ Move packet/bundling experiments after integrated-card proof. Only then compare 
 
 Report source/claim-family coverage, semantic success, review load, corpus reuse, model cost, failure classes, cross-domain synergies and operational/supervision burden.
 
-## HISTORICAL IMPLEMENTATION SEQUENCE ? PHASE 4 (superseded)
+## HISTORICAL IMPLEMENTATION SEQUENCE — PHASE 4 (superseded)
 
 ### Step 1 — Select existing rich frozen corpora
 
@@ -438,7 +438,7 @@ it as a universal relationship rule.
 
 The Direct Service V1.2 experimental tranche is complete; see the [approved
 experiment decision](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md). The
-broader Top-100 full-card objective is still active. Bounded Phase 6 exploration
+At that historical snapshot, the broader Top-100 full-card objective was described as active; this was superseded on 15 September 2026 by Phase 5 North Star Completion. Bounded Phase 6 exploration
 Tranches 0-1 and the approved candidate runs for outcomes/evaluation,
 commitments/implementation and capacity/availability/access are complete. See the
 [Phase 6 capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),

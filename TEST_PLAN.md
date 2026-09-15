@@ -34,14 +34,15 @@ Tests must cover:
 - idempotency without fabricated metadata;
 - material artefact metadata checks;
 
-### North Star projection-version regression
-
-Projection contract version is part of section-assignment identity. Tests SHALL prove that historical v0.1 assignments retain their original interpretation; vNext uses the active North Star vocabulary; a numeric section ID is never interpreted without its contract version; no migration silently changes old IDs; the same governed observation can be reused by a separately versioned projection without rewriting its identity; explicit missingness survives projection; and immutable public v0.5 bytes and manifest checksums remain unchanged. Historical experiment artefacts are read-only inputs to these tests.
 - safe relative paths and content hashes;
 - no in-memory production SQLite catalogue;
 - source/evidence references cannot point to absent artefacts;
 - public projection cannot expose restricted content;
 - contract 0.5 remains byte-identical.
+
+### North Star projection-version regression
+
+Projection contract version is part of section-assignment identity. Tests SHALL prove that historical v0.1 assignments retain their original interpretation; v0.2 uses the active North Star vocabulary; a numeric section ID is never interpreted without its contract version; no migration silently changes old IDs; the same governed observation can be reused by a separately versioned projection without rewriting its identity; explicit missingness survives projection; and immutable public v0.5 bytes and manifest checksums remain unchanged. Historical experiment artefacts are read-only inputs to these tests.
 
 ## 4. Semantic evaluation
 
