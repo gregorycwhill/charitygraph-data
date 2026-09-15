@@ -87,6 +87,9 @@ Every active document SHALL state its status, version/date, scope and material s
 | Current delivery state | `CURRENT_STATE.md` |
 | Capability sequence | `ROADMAP.md` |
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
+| Active Phase 5 North Star v0.2 projection vocabulary and epistemic rules | `NORTH_STAR_TARGET_CARD.md` (active pointer to immutable `north-star-v0.2`; internal planning projection contract, not a public schema) and `NORTH_STAR_TARGET_CARD_V0_2.md` (durable version definition) |
+| Historical North Star v0.1 section numbering and meanings | `NORTH_STAR_TARGET_CARD_V0_1.md` (preserved historical contract; not active numbering) |
+| Phase 5 North Star section-by-section evidence inventory | `PHASE5_NORTH_STAR_COMPLETION_LEDGER.md` (initial Tranche B assessment; not empirically complete and grants no execution authority) |
 | Direct Service V1.2 representation experiment decision and Phase 5 tranche outcome | `PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md` |
 | Verification and release gates | `TEST_PLAN.md` |
 | Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
@@ -198,7 +201,7 @@ SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the 
 
 ## North Star planning anchor
 
-`NORTH_STAR_TARGET_CARD.md` derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. It does not override those authorities and is not a public schema proposal. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against it so a reality slice or domain implementation cannot silently redefine product scope.
+`NORTH_STAR_TARGET_CARD.md` defines the active v0.2 projection vocabulary and derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. `NORTH_STAR_TARGET_CARD_V0_1.md` preserves historical numbering and meanings. A section ID is interpretable only with its projection-contract version; no ID-based migration is implied. Neither document overrides product authorities or proposes a public schema. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against the active card without silently redefining product scope. The completion ledger is a subordinate evidence inventory, not execution authority.
 
 ## Semantic extraction decision propagation
 

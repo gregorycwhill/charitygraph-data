@@ -2,11 +2,18 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status:** Phase 4 is complete. The broader Phase 5 Top-100 full-card claim-family objective remains active; scale is not authorized. Phase 6 is complete: Outcomes/evaluation and Commitments/implementation are `ADVANCE_WITH_REPRESENTATION_FIX`; Capacity/access/availability remains deferred unresolved. Greg's adjudication of the five-request product-value campaign is complete (25 candidates: 20 ACCEPT, 3 ACCEPT_MINOR_CORRECTION, 2 rejected, zero CRITICAL). The private eight-subject projection completed Inspect/Compare/Verify and received the historical decision `ADVANCE_WITH_BOUNDED_FIX`. The required bounded substantive commitment-content constraint is implemented as Builder V5.1 and its status is `PRODUCT_VALUE_BOUNDED_FIX_COMPLETE`. No canonical/public promotion, new source acquisition, Viewer change, public v0.5 change, Top-100 scale or Capacity reopening is authorized. See the [adjudication and evaluation record](docs/history/product-value-adjudication-and-evaluation-2026-09-14.md) and [bounded fix implementation history](docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md).
+**Current status (15 September 2026):** Phase 3 and Phase 4 are complete. **Phase 5 North Star Completion is active; Top-100 scale is downstream and not authorised.** Phase 6 is complete and not reopened. The bounded product-value commitment-content fix is complete. The private eight-subject evaluation remains historical bounded evidence (`ADVANCE_WITH_BOUNDED_FIX`); it is not broad North Star coverage or production proof. No canonical/public promotion, new source acquisition, Viewer change, public v0.5 change, Top-100 execution or Capacity reopening is authorized. See the [adjudication and evaluation record](docs/history/product-value-adjudication-and-evaluation-2026-09-14.md) and [bounded fix implementation history](docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md).
 
-**Active scope:** Preserve the completed bounded product-value evidence and private experiment-only namespace. The bounded commitment-content fix is complete; do not repeat semantic requests or promote experiment items to canonical/public knowledge. Any future work, including Top-100 scale, requires its own applicable authority. Phase 5 Top-100 remains active and is not authorized for scale.
+**Active scope:** Reuse completed bounded evidence to assess the 20 active North Star sections. Do not repeat semantic requests or promote experiment items to canonical/public knowledge. North Star Completion can be satisfied by governed support or a tested, correctly scoped explanation of missingness; positive facts are not required everywhere. Any later Top-100 scale requires its own product-owner decision.
 
-Earlier planning-scope statements below are retained as historical context and are superseded where they conflict with this current status. The Phase 5 Top-100 objective remains active and Phase 6 remains closed.
+Earlier planning-scope statements below are retained as historical context and are superseded where they conflict with this current status. Phase 6 remains closed.
+
+## Active Phase 5 sequence — North Star Completion
+
+1. **Tranche A — North Star version cutover:** this coordinated Data/Builder change creates an explicit vNext projection vocabulary while preserving the historical v0.1 mapping and artifacts.
+2. **Tranche B — North Star completion ledger:** inventory all 20 active sections with evidence, distinctions, disposition, exact proof gaps, cheapest bounded next test and whether new source/provider work is necessary. The initial [ledger](PHASE5_NORTH_STAR_COMPLETION_LEDGER.md) is an assessment, not an execution authorization.
+3. **Tranche C — gap-closing slices only:** propose bounded work only for ledger-supported gaps. Do not assume likely gaps before inventory. No experiment is authorized by this plan alone.
+4. **Tranche D — North Star Completion Gate:** evaluate an integrated bounded-cohort projection across the 20 active sections using governed knowledge and explicit missingness, including Inspect/constrained Compare/Verify as appropriate. A separate product-owner decision is required before Top-100 scale.
 
 ## 1. Delivery rule
 
@@ -360,7 +367,7 @@ Move packet/bundling experiments after integrated-card proof. Only then compare 
 
 Report source/claim-family coverage, semantic success, review load, corpus reuse, model cost, failure classes, cross-domain synergies and operational/supervision burden.
 
-## ACTIVE IMPLEMENTATION SEQUENCE — PHASE 4 CROSS-DOMAIN SEMANTIC PACKAGING AND ECONOMICS
+## HISTORICAL IMPLEMENTATION SEQUENCE — PHASE 4 (superseded)
 
 ### Step 1 — Select existing rich frozen corpora
 
@@ -427,11 +434,11 @@ routing is evidence-based and task-specific, not provider/model dogma; future
 Factory operation must continue to evaluate the candidate rather than treating
 it as a universal relationship rule.
 
-## HISTORICAL SCOPE SNAPSHOT - REMAINING PHASE 5 AND PHASE 6 (superseded 14 September 2026)
+## HISTORICAL SCOPE SNAPSHOT - REMAINING PHASE 5 AND PHASE 6 (superseded 15 September 2026)
 
 The Direct Service V1.2 experimental tranche is complete; see the [approved
 experiment decision](PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md). The
-broader Top-100 full-card objective is still active. Bounded Phase 6 exploration
+At that historical snapshot, the broader Top-100 full-card objective was described as active; this was superseded on 15 September 2026 by Phase 5 North Star Completion. Bounded Phase 6 exploration
 Tranches 0-1 and the approved candidate runs for outcomes/evaluation,
 commitments/implementation and capacity/availability/access are complete. See the
 [Phase 6 capability inventory](PHASE6_CAPABILITY_INVENTORY_2026-09-12.md),
@@ -447,8 +454,7 @@ Commitments contains three V5 Luna responses that pass mechanical contract gates
 Greenpeace repeat differences remain for human stability judgment. Capacity remains
 `CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` /
 `REPEAT_AFTER_SEMANTIC_FIX`. No adjudication, usefulness decision, advancement,
-promotion or product-value work has occurred. The broader Phase 5 Top-100 objective
-remains active. See the [V5 execution and review record](docs/history/phase6-v5-confirmation-and-human-review-2026-09-13.md).
+promotion or product-value work has occurred. At that historical point the broader Phase 5 Top-100 objective was described as active; this is superseded by the current status above. See the [V5 execution and review record](docs/history/phase6-v5-confirmation-and-human-review-2026-09-13.md).
 
 All existing constraints remain: source universe first -> acquire once -> freeze
 corpus -> semantics; Builder does not do discovery or research; cards remain
