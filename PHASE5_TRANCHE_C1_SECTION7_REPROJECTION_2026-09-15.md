@@ -51,8 +51,9 @@ retained coverage states are directly exercised. The aggregate 45 typed V1.2
 propositions were inspected solely to establish the retained-evidence
 distribution above.
 
-The companion bounded Builder implementation is
-`87465a269db401f2ba4f5cab9aba7accc93f867b`.
+The companion bounded Builder implementation began at
+`87465a269db401f2ba4f5cab9aba7accc93f867b` and is amended by the v0.2-only
+predicate repair at `288e545e999a4b0cf86459fa82120f28f79416f9`.
 
 ## Mechanical reprojection result
 
@@ -77,29 +78,72 @@ types that belong to section 7. It assigns each accepted item explicitly to
 The helper is a representation guard. It does not make V1.2 output governed
 knowledge, alter historical output, or establish live directory information.
 
+## Representation inventory and v0.2-only repair
+
+This inventory was performed against current Builder contracts before the
+repair. `DirectServicePropositionType` and the V1.2 wire contract remain
+historical: neither has been changed, and no retained V1.2 response has been
+relabelled.
+
+| v0.2 §7 distinction | Inventory result before this amendment | Existing primitive assessed | C1 result |
+|---|---|---|---|
+| Advertised availability | `NOT_EXPLICITLY_REPRESENTABLE` | Historical `current_availability` is a different V1.2 role; a generic observation predicate would not establish an explicit §7 role. | New explicit `advertised_availability` predicate. |
+| Operating hours | `AMBIGUOUS` | Historical Phase 6 `AccessInformation(service_hours)` preserves text but is a slice DTO, not a v0.2 projection predicate with §7 identity. | New explicit `operating_hours` predicate. |
+| Throughput | `AMBIGUOUS` | Historical Phase 6 capacity DTO includes `maximum_throughput`, which conflates throughput with capacity for this purpose. | New explicit `throughput` predicate requiring value and unit. |
+| Waitlist status/measure | `AMBIGUOUS` | Historical Phase 6 availability can carry `waitlisted`, but cannot distinguish a waitlist state from a waitlist measure in the active projection. | New explicit `waitlist` predicate; optional measure remains distinct from capacity. |
+| Staffing constraint | `NOT_EXPLICITLY_REPRESENTABLE` | Workforce measures can record FTE/headcount but not a constraint as a distinct §7 semantic role. | New explicit `staffing_constraint` predicate. |
+| Other resource constraint | `NOT_EXPLICITLY_REPRESENTABLE` | Resource measures can record resources but not a constraint as a distinct §7 semantic role. | New explicit `resource_constraint` predicate. |
+| Delivery evidence | `NOT_EXPLICITLY_REPRESENTABLE` | `service_offer`/`ServiceExists` describe a service; neither establishes delivery evidence. | New explicit `delivery_evidence` predicate. |
+
+The repair is a compact v0.2 predicate vocabulary in
+`charitygraph.section7_reprojection`, not a service mega-record and not a
+semantic extractor. Each supported future predicate carries subject, lowest
+supported scope, source role, locator IDs, source-record IDs, lineage IDs,
+observation time, coverage state and `north-star-v0.2` assignment. Existing
+`ObservationTime`, scope, `CardEvidence` and `CoverageInput` primitives are
+reused without loss. The added predicates cannot become current availability,
+capacity, service offer or section 11 merely through projection.
+
+The prior architectural gaps for these seven distinctions are therefore
+closed. This is architecture evidence only: the synthetic tests below are not
+retained empirical evidence and do not create positive §7 findings.
+
+### Freshness boundary
+
+An observation time records when availability or another time-sensitive fact
+was observed or reported. It does not make the fact fresh today. The v0.2
+predicate vocabulary records `unassessed`, `stale`, or `fresh` separately; a
+`fresh` state requires an explicit policy ID. No canonical North Star v0.2
+freshness interval or policy was found. The historical owner-approved Phase 6
+availability policy is not adopted here. Freshness policy remains a Section 20
+governance issue, and C1 makes no fresh-current claim.
+
 ## Cluster evaluation
 
 | Section-7 cluster | Disposition | Retained basis and exact limit |
 |---|---|---|
-| Service offer/function and delivery evidence | SUPPORTED | A retained organisation-scoped service offer reprojects with locator, lineage and scope. It remains a service offer only. |
+| Service offer/function and delivery evidence | PARTIAL | A retained organisation-scoped service offer reprojects with locator, lineage and scope. It remains a service offer only; delivery evidence is now explicitly representable but has no retained positive example. |
 | Eligibility/referral/intake/access | SUPPORTED | Retained eligibility and access-pathway examples reproject as distinct types. This does not establish that clients are currently accepted. |
-| Advertised versus current availability/hours | PARTIAL | The sole retained positive current-availability candidate lacks a time binding and is correctly rejected. No admissible positive current-availability/hours example remains. |
-| Capacity/throughput/waitlist/constraints | PARTIAL | No positive `capacity_measure` appears in the 45 typed retained V1.2 propositions. The mechanical guard requires value, unit, scope and retained time before positive projection. |
+| Advertised versus current availability/hours | PARTIAL | The sole retained positive current-availability candidate lacks a time binding and is correctly rejected. Advertised availability and hours are now explicit predicates, but no retained positive examples exist. |
+| Capacity/throughput/waitlist/constraints | PARTIAL | No positive `capacity_measure` appears in the 45 typed retained V1.2 propositions. Throughput, waitlist and staffing/resource constraints are now explicit predicates, but no retained positive examples exist. |
 | Unknown/unavailable/not-acquired/not-processed handling | KNOWABILITY_ONLY | Three sparse controls demonstrate scoped `NOT_PROCESSED`; the coverage contract preserves other non-positive states without asserting absence. |
 
 ## Section decision and residual gap
 
-**Section 7 remains `PARTIAL`.** The reprojection closes the former
-representation question for service offer, eligibility/access, scope, locator,
-lineage, section versioning and honest `not_processed` coverage. It does not
-supply an admissible retained positive current-availability example or any
-positive capacity measure.
+**Section 7 remains `PARTIAL`.** The reprojection and repair close the
+architecture/representation gaps for all stated v0.2 §7 distinctions, while
+preserving historical V1.2 and v0.1 meaning. They do not supply an admissible
+retained positive current-availability example, positive capacity measure, or
+positive retained examples for advertised availability, hours, throughput,
+waitlist, constraints or delivery evidence.
 
-The exact residual is therefore not “more evidence needed”: it is the absence
-from the authorised retained universe of (1) a temporally bound,
-scope-appropriate current-availability statement and (2) a bounded capacity
-measure with value, unit, time and scope. Existing organisation-scoped positive
-examples also do not demonstrate program/service-scoped positive capacity.
+The residual is two separate things. The **representation residual is closed**:
+the seven formerly absent or ambiguous roles now have explicit v0.2 predicates.
+The **empirical residual** is absence from the authorised retained universe of
+(1) a temporally bound, scope-appropriate current-availability statement, (2)
+a bounded capacity measure with value, unit, time and scope, and (3) positive
+examples for the other newly explicit roles. Existing organisation-scoped
+positive examples also do not demonstrate program/service-scoped capacity.
 
 No provider call or source acquisition would add decision-relevant information
 *within this authorised reprojection*. The next decision is for the product
