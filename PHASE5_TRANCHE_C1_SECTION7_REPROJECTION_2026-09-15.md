@@ -53,7 +53,9 @@ distribution above.
 
 The companion bounded Builder implementation began at
 `87465a269db401f2ba4f5cab9aba7accc93f867b` and is amended by the v0.2-only
-predicate repair at `288e545e999a4b0cf86459fa82120f28f79416f9`.
+predicate repair at `288e545e999a4b0cf86459fa82120f28f79416f9` and the
+governed-observation binding repair at
+`cf7d27a9de4474792edb72b5d8467f207db44e40`.
 
 ## Mechanical reprojection result
 
@@ -104,9 +106,21 @@ observation time, coverage state and `north-star-v0.2` assignment. Existing
 reused without loss. The added predicates cannot become current availability,
 capacity, service offer or section 11 merely through projection.
 
+The vocabulary is now proven through the governed path, not just as a DTO:
+`Section7V02ProjectionInput` deterministically creates an append-only
+`Observation`, whose predicate and value preserve the v0.2 role, provenance,
+time, coverage and freshness qualification. `CardEvidence` accepts that
+created observation object only after checking subject, scope, predicate,
+time, locators, source-record IDs, lineage and deterministic method. The
+integrated tests pass representative advertised availability, throughput,
+staffing constraint and delivery evidence observations through `IntegratedGraph`
+and the active North Star projection. They appear only in v0.2 §7, not §11 or
+historical v0.1. An unrelated observation is rejected at the binding check.
+
 The prior architectural gaps for these seven distinctions are therefore
-closed. This is architecture evidence only: the synthetic tests below are not
-retained empirical evidence and do not create positive §7 findings.
+closed through the integrated governed-observation path. This is architecture
+evidence only: the synthetic tests below are not retained empirical evidence
+and do not create positive §7 findings.
 
 ### Freshness boundary
 
