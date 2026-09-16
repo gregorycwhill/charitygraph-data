@@ -19,3 +19,9 @@ Search scores, embeddings, labels and retrieval metadata may support discovery o
 Residuals: an active assignment-history store beyond the bounded input; independently replayed classifier-blindness at production scale; and empirical search-quality evidence. These do not require acquisition or provider work for this test.
 
 Provider calls: `0`. Source acquisitions: `0`. Semantic executions: `0`. Promotions: `0`.
+
+## C9 amendment
+
+Search scores, embeddings, labels and retrieval metadata use the local `derived_signal` epistemic basis. They require a method, signal type, query/profile and upstream artefact, and may support retrieval only. They are neither evidence, taxonomy acceptance, identity, program ownership, ethos nor truth, and cannot become CardEvidence.
+
+Classification preserves audit history separately from effective card assignment. `accepted` and `narrowed` may project only the stated adjudicated taxonomy/version/concept/scope result. `candidate`, `rejected`, `abstained` and `superseded` remain traceable audit observations and cannot become effective current classification content.

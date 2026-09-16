@@ -19,3 +19,7 @@ Ethos self-description is a first-party interpretation; formal affiliation is a 
 Residuals: retained independent fundraising-practice breadth; explicit durable affiliation endpoints; and wider independent implementation evidence. No acquisition or provider work is decision-relevant before review of this bounded record.
 
 Provider calls: `0`. Source acquisitions: `0`. Semantic executions: `0`. Promotions: `0`.
+
+## C9 amendment
+
+Every supported C7 positive now carries source-faithful substantive WHAT content. A fundraising practice identifies the reported channel, mechanism, standing program, relationship or activity form; a campaign identifies an activity or campaign identity, while target, amount, donor count and period remain independently optional. Ethos records a descriptor or substantive statement rather than only an ethos role. Commitment, claimed implementation, observed practice and verified completion each state what was committed, implemented, practised or completed; lifecycle labels and temporal qualifiers alone do not suffice.

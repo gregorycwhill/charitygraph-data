@@ -11,3 +11,7 @@ Existing `RelationshipStatement` is sufficient: durable endpoints, direction, co
 §12 is **PARTIAL**. A relationship does not transfer activity, ethos, finance, funding amount or current delivery between endpoints. Absence of an edge remains missing/unknown, not no relationship.
 
 Residuals: positive retained non-operator cases with fully durable endpoints and broader role coverage. Provider calls: `0`. Source acquisitions: `0`. Semantic executions: `0`. Promotions: `0`.
+
+## C9 gate clarification
+
+Positive evidence for every relationship-role enum is not required for bounded completion. The retained operator proof and common directed, endpoint-governed relationship contract prove representation. Other role semantics remain architecture-only until evidence exists; unresolved names and shared domains remain non-edges.
