@@ -45,4 +45,6 @@ Historical experiments show bounded v0.1 semantic breadth, not automatic v0.2 eq
 
 **C5 note:** [cross-cutting scope, time and epistemics test](PHASE5_TRANCHE_C5_CROSS_CUTTING_SCOPE_TIME_EPISTEMICS_2026-09-16.md) records bounded retained evidence for §§1/5/9/10/16/17/20. It authorizes no new evidence work and no section is production-complete.
 
+**Campaign branch note (17 September 2026):** C6 [taxonomy/discovery](PHASE5_TRANCHE_C6_SECTIONS4_19_TAXONOMY_DISCOVERY_2026-09-17.md), C7 [fundraising/ethos](PHASE5_TRANCHE_C7_SECTIONS8_15_FUNDRAISING_ETHOS_2026-09-17.md), C8 [relationships](PHASE5_TRANCHE_C8_SECTION12_RELATIONSHIPS_2026-09-17.md), and the [all-section dry run](PHASE5_NORTH_STAR_COMPLETION_GATE_DRY_RUN_2026-09-17.md) are provisional evidence on an unmerged branch. They do not alter canonical status, authorize Top-100 work, or declare Phase 5 complete.
+
 Greg should review dispositions, especially where architecture reuse differs from active semantic proof. Only then prepare separate execution proposals for ledger-confirmed gaps. This ledger authorizes no experiments, provider calls, acquisitions, promotions, Top-100 work or Phase 6 reopening.
