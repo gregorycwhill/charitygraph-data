@@ -33,7 +33,15 @@ Primary/adversarial inventory: **41 propositions — ACCEPT 20, NARROW 8, REJECT
 
 ## Representation and boundary decision
 
-`SubjectRecord`, `ScopeRecord`, `PartyRole`, `Observation`, `ObservationTime`, source/evidence records, lineage, `CardEvidence` and coverage are reused. The bounded v0.2 C5 adapter adds typed identity, population/geography, governance, workforce, historical-event and provenance-event inputs. The existing typed §16 contract is reused; C5 creates no conduct assertion. Every input projects one observation and one intended section only. There is no automatic assignment to §§3, 6, 11 or v0.1. Duplicate explicit coverage for the same subject, contract and section is rejected.
+The C5 amendment makes population and geography independent atomic section-5 propositions. A population-role observation has no geography-role field, and a delivery-geography observation has no population-role field. Evidence that explicitly connects a population to a geography remains a separately scoped proposition; C5 does not make that relation by default.
+
+Each C5 observation records an explicit epistemic basis. Source-reported entity, role and workforce facts are `source_fact`; retrospective historical characterisation is `source_interpretation`; and a CharityGraph correction event is a `governed_event`. A source correction or supersession is evidence of a source event and does not automatically become a CharityGraph correction. Historical event facts and retrospective interpretations use distinct predicates so `detail` cannot collapse them.
+
+CardEvidence is strict: it binds the projected subject and `about_subject_ids`, scope, predicate, outcome, full payload, locator IDs, source-record IDs, observation time, method and projected lineage IDs. A mismatch fails closed.
+
+One explicit `CoverageInput` is permitted for each `(subject_id, projection_contract_id, section_id)`. This cardinality governs the section-level card-coverage input consumed by `compile_coverage()`; it does not limit the governed evidence universe or claim-family coverage states underlying that card cell. Duplicate section inputs fail rather than overwrite one another.
+
+`SubjectRecord`, `ScopeRecord`, `PartyRole`, `Observation`, `ObservationTime`, source/evidence records, lineage, `CardEvidence` and coverage are reused. The bounded v0.2 C5 adapter adds typed identity, population, geography, governance, workforce, historical-event, historical-interpretation and provenance-event inputs. The existing typed conduct contract is reused; C5 creates no conduct assertion. Every input projects one observation and one intended section only. There is no automatic assignment to sections 3, 6, 11 or v0.1.
 
 §20 uses distinct meanings for `source_correction`, `source_supersession`, `charitygraph_correction`, `source_disagreement` and `real_world_change`. A newer source does not establish any of them. Historical evidence can remain valid for its time without being fresh for a current-state question; retrieval date is not effective date; no generic freshness interval is invented.
 
