@@ -484,3 +484,6 @@ A competent analyst should be able to inspect one charity and answer a broad set
 Before cohort scale, execution must be resumable without ambiguity. Durably persist task/measurement identity, authorization, transmission/send-boundary state, provider receipt, usage/cost, raw result receipt, structural validation, evidence-grounding validation and terminal task state. If transmission occurred but response or billing state is ambiguous, fail closed and do not resend merely because a lease expired or an artefact is absent. The halted Top-100 Terra attempt (ABN `48321126727`) is empirical motivation; never invent billed cost from transient output.
 
 Experiment-specific machinery such as Native catalogue reload, freeze and reconciliation layers is not automatically production infrastructure. Promote such mechanisms only when independently required by production semantics.
+# Phase 5 candidate completion state
+
+The candidate completion-gate record is `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`: **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. This bounded retained-cohort result does not authorise Top-100 scale.
