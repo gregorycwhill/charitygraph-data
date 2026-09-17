@@ -1,0 +1,58 @@
+# Non-executable template. Every UNAPPROVED_* field must be replaced by a
+# product-owner-approved immutable policy/reference before Builder preflight.
+# This template deliberately contains no real S0 population, source, budget or route.
+mandate_id: UNAPPROVED_MANDATE_ID
+mandate_version: UNAPPROVED_VERSION
+slice_id: UNAPPROVED_SLICE_ID
+created_at: UNAPPROVED_TIMESTAMP
+authorizing_actor_ref: UNAPPROVED_AUTHORIZATION_REFERENCE
+parent_product_contract: north-star-v0.2
+
+population:
+  frozen_population_definition_ref: UNAPPROVED_POPULATION_ARTIFACT
+  subject_legal_entity_ids: []
+  snapshot_as_of: UNAPPROVED_SNAPSHOT_DATE
+  ranking_source_policy_id: UNAPPROVED_RANKING_POLICY
+  group_entity_policy_id: UNAPPROVED_GROUP_ENTITY_POLICY
+
+sources:
+  source_universe_policy_id: UNAPPROVED_SOURCE_UNIVERSE_POLICY
+  source_universe_policy_version: UNAPPROVED_SOURCE_UNIVERSE_VERSION
+  mandatory_source_families: []
+  applicable_source_families: []
+  specialist_source_policy_id: UNAPPROVED_SPECIALIST_SOURCE_POLICY
+  rights_transmission_policy_id: UNAPPROVED_RIGHTS_TRANSMISSION_POLICY
+
+semantic_contracts:
+  logical_task_registry_version: UNAPPROVED_TASK_REGISTRY_VERSION
+  enabled_task_ids: []
+  disabled_task_ids: []
+  routing_policy_id: UNAPPROVED_ROUTING_POLICY
+  routing_policy_version: UNAPPROVED_ROUTING_POLICY_VERSION
+
+economics:
+  provider_spend_ceiling: UNAPPROVED_PROVIDER_CEILING
+  strong_model_spend_ceiling: UNAPPROVED_STRONG_MODEL_CEILING
+  provider_call_ceiling: UNAPPROVED_CALL_CEILING
+  reservation_policy_id: UNAPPROVED_RESERVATION_POLICY
+  currency_basis: UNAPPROVED_CURRENCY
+
+governance:
+  review_policy_id: UNAPPROVED_REVIEW_POLICY
+  review_policy_version: UNAPPROVED_REVIEW_POLICY_VERSION
+  promotion_policy_id: UNAPPROVED_PROMOTION_POLICY
+  promotion_policy_version: UNAPPROVED_PROMOTION_POLICY_VERSION
+  sampling_policy_id: UNAPPROVED_SAMPLING_POLICY
+  sampling_policy_version: UNAPPROVED_SAMPLING_POLICY_VERSION
+  halt_policy_id: UNAPPROVED_HALT_POLICY
+  halt_policy_version: UNAPPROVED_HALT_POLICY_VERSION
+
+output:
+  allowed_outputs:
+    - source_evidence_records
+    - candidates
+    - review_items
+    - governed_observations_after_authorised_promotion
+    - internal_north_star_projection
+    - execution_accounting_artifacts
+  automatically_publishable: false
