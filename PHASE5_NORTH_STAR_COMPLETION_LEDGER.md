@@ -50,3 +50,8 @@ Historical experiments show bounded v0.1 semantic breadth, not automatic v0.2 eq
 Greg should review dispositions, especially where architecture reuse differs from active semantic proof. Only then prepare separate execution proposals for ledger-confirmed gaps. This ledger authorizes no experiments, provider calls, acquisitions, promotions, Top-100 work or Phase 6 reopening.
 
 **C9 campaign-branch note (17 September 2026):** the [closure red-team](PHASE5_C9_CLOSURE_RED_TEAM_2026-09-17.md) and [proposed real completion-gate specification](PHASE5_NORTH_STAR_REAL_COMPLETION_GATE_SPEC_2026-09-17.md) repair bounded representation defects identified after C6-C8. They find `READY_FOR_REAL_COMPLETION_GATE`; this is a readiness determination only. It does not alter canonical status, declare Phase 5 complete, pass a real gate, authorise Top-100 work, or authorise any provider/source/runtime work.
+# Completion-gate candidate result — 17 September 2026
+
+`PHASE5_NORTH_STAR_COMPLETION_GATE_PASS` on the unmerged candidate recorded in `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`.
+
+**PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. The result is bounded retained-cohort proof, not authorisation for Top-100 scale; Top-100 remains unauthorised pending a separate product-owner decision.

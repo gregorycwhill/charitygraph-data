@@ -337,3 +337,6 @@ Optimise useful learning per unit of total model, agent and human attention.
 Repeated implementation/debugging without new semantic or product learning is
 a signal to reassess critical-path status. This is an implementation/current-
 state lesson, not product doctrine.
+# Phase 5 completion-gate candidate
+
+**PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED** on the unmerged Phase 5 candidate branch. The bounded pass is defined in `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`; it does not authorise Top-100 scale, which remains subject to a separate product-owner decision.

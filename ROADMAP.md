@@ -369,3 +369,6 @@ Future Native work requires a newly scoped question, ideally testing whether
 stronger reasoning can induce and transfer a small defensible vocabulary rather
 than rebuilding lifecycle machinery. Native roadmap sequencing remains governed
 by the overlay architecture decision in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md): canonical semantic objects precede optional Native-overlay discovery and governed promotion.
+# Candidate Phase 5 status
+
+The unmerged candidate records **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. Top-100 scale remains unauthorised pending a separate product-owner decision.
