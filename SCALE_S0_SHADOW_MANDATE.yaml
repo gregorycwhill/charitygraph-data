@@ -1,0 +1,57 @@
+# Deliberately non-executable. This is a complete policy proposal for an offline
+# shadow only; the sole executable-authorisation failure is the actor reference.
+mandate_id: scale-s0-shadow-2026-09-18-v1
+mandate_version: 1
+slice_id: scale-s0-shadow-option-b-8
+created_at: 2026-09-18T00:00:00Z
+authorizing_actor_ref: UNAPPROVED_PRODUCT_OWNER
+parent_product_contract: north-star-v0.2
+population:
+  frozen_population_definition_ref: rankings/acnc-2024-ais-donation-ranking-top10000.json#option-b-2026-09-18
+  snapshot_as_of: 2024
+  ranking_policy_id: acnc-2024-ais-donations-desc-abn-asc-v1
+  group_entity_policy_id: legal-entity-primary-scoped-division-alias-v1
+  subject_legal_entity_ids: ["28004778081", "28000030179", "74068758654", "37646526132", "50169561394", "47613674461", "78053639115", "61002643852"]
+sources:
+  source_universe_policy_id: scale-s0-source-universe-balanced-v1
+  source_universe_policy_version: 1
+  mandatory_source_families: [acnc_register, acnc_ais]
+  applicable_source_families: [acnc_register, acnc_ais, abr_dgr, official_website, latest_authorised_annual_report, fundraising_registry, specialist]
+  specialist_source_policy_id: scale-s0-specialist-triggers-v1
+  rights_transmission_policy_id: scale-s0-bounded-rights-transmission-v1
+semantic_contracts:
+  logical_task_registry_version: scale-s0-logical-registry-2
+  enabled_task_ids: [urn:charitygraph:scale-s0:identity_regulatory, urn:charitygraph:scale-s0:purpose_cause, urn:charitygraph:scale-s0:program_service, urn:charitygraph:scale-s0:activity_source_reported, urn:charitygraph:scale-s0:population_geography, urn:charitygraph:scale-s0:participation, urn:charitygraph:scale-s0:direct_service, urn:charitygraph:scale-s0:fundraising, urn:charitygraph:scale-s0:governance, urn:charitygraph:scale-s0:workforce, urn:charitygraph:scale-s0:scale_capability, urn:charitygraph:scale-s0:relationships, urn:charitygraph:scale-s0:finance_source_native, urn:charitygraph:scale-s0:funding_dependency, urn:charitygraph:scale-s0:ethos_commitments, urn:charitygraph:scale-s0:conduct_adverse, urn:charitygraph:scale-s0:notable_history, urn:charitygraph:scale-s0:outcomes_evaluation, urn:charitygraph:scale-s0:assessed_taxonomy, urn:charitygraph:scale-s0:discovery_signals, urn:charitygraph:scale-s0:evidence_coverage]
+  disabled_task_ids: []
+  routing_policy_id: scale-s0-routing-balanced-v1
+  routing_policy_version: 1
+economics:
+  provider_spend_ceiling: "8.00"
+  strong_model_spend_ceiling: "4.00"
+  provider_call_ceiling: 150
+  per_request_reservation_cap: "0.25"
+  reservation_policy_id: scale-s0-reservation-balanced-v1
+  currency_basis: USD
+governance:
+  review_policy_id: scale-s0-review-balanced-v1
+  review_policy_version: 1
+  sampling_policy_id: scale-s0-sampling-balanced-v1
+  sampling_policy_version: 1
+  promotion_policy_id: scale-s0-hybrid-promotion-v1
+  promotion_policy_version: 1
+  halt_policy_id: scale-s0-halt-balanced-v1
+  halt_policy_version: 1
+  automatically_publishable: false
+output:
+  allowed_outputs: [source_evidence_records, candidates, review_items, governed_observations_after_authorised_promotion, internal_north_star_projection, execution_accounting_artifacts]
+  public_release: prohibited
+policy_hashes:
+  population: 771E9C5FB5739C1BAC3145FF59FFF0B554AC613BA4C447BAA84D3C62DDB11ECC
+  source_universe: B814F33D3D0DC701544814A1F27F7F1105D1369157C2335F165DDC6119C4D85E
+  rights_transmission: B814F33D3D0DC701544814A1F27F7F1105D1369157C2335F165DDC6119C4D85E
+  routing: B814F33D3D0DC701544814A1F27F7F1105D1369157C2335F165DDC6119C4D85E
+  review: B814F33D3D0DC701544814A1F27F7F1105D1369157C2335F165DDC6119C4D85E
+  sampling: B814F33D3D0DC701544814A1F27F7F1105D1369157C2335F165DDC6119C4D85E
+  promotion: B814F33D3D0DC701544814A1F27F7F1105D1369157C2335F165DDC6119C4D85E
+  halt: B814F33D3D0DC701544814A1F27F7F1105D1369157C2335F165DDC6119C4D85E
+  logical_task_registry: F7589FC9E85D8D45E856E5470E5772ACB5D11CBB8E8C0DE8B3DEEE9FD4A0C76E
