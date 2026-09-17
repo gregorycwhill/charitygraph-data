@@ -14,7 +14,7 @@
 | Wikipedia | Exclude from baseline | Context inclusion needs a rights/role decision | high | yes |
 | Fundraising registry | Triggered/applicable only | Universal use confuses registry role with finance | high | yes |
 | Specialist triggers | Formal decision, accredited register, Indigenous authority, relationship resolution only | Broader triggers add uncontrolled acquisition | medium | yes |
-| Rights/transmission | Exact bound structured record or bounded excerpt/page only; unknown fails closed | Broader document transmission requires legal/product decision | high | yes |
+| Rights/transmission | Approve the immutable runtime-gated rule: exact source records and bounded representations only; unknown fails closed | Broader document transmission requires a new policy decision | high | yes |
 | Routing | Deterministic structured facts; Luna ordinary semantics; Terra only named triggers; human conduct | Terra-primary expands cost without retained general proof | medium | yes |
 | Bundling | Eight packet groups in calibration table | One large packet increases contamination/retry blast radius | high | yes |
 | Provider cap | USD 8.00 and 150 calls | Lower cap reduces learning; higher cap adds exposure | medium | yes |
@@ -28,6 +28,16 @@
 ## Future authorisation standard
 
 Only one of these exact states is admissible: `S0_NOT_AUTHORISED`, `S0_AUTHORISED_AFTER_CHANGES`, or `S0_AUTHORISED`. A future `S0_AUTHORISED` record must name immutable hash/version for the population, mandate, all policy artifacts, logical task registry, source universe, budget/reservation policy, review/sampling, promotion, halt and public-release boundary. A vague approval is non-executable.
+
+The product owner decides the bounded source-universe and conservative rights
+policy, not whether a particular publisher's terms permit an exact action. Before
+every acquisition or provider send, the governed rights-clearance pass must decide
+that external fact for the exact source record. A denial records coverage and skips
+that source; an attempted violation hard-halts. The remaining product-owner choices
+are: Option-B population, legal-entity policy, source universe, rights policy,
+Luna/Terra routing, review/sampling, hybrid promotion, freshness, budgets, and
+halt thresholds. Source availability, report existence, terms, access and provider
+endpoint posture are runtime facts, not product-owner choices.
 
 **DRAFT — NOT AUTHORISED:**
 

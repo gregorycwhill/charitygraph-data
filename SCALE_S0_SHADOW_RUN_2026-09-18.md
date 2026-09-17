@@ -16,14 +16,14 @@ The shadow uses Option B from `SCALE_S0_POLICY_CALIBRATION_2026-09-18.md`. Its e
 | Claimed acquired sources | 0 (shadow does not create acquisition facts) | 0 | 0 |
 | PDF / visual-PDF risk | unknown / unknown | 0 observed in shadow; 2–4 policy-risk slots | unknown / unknown |
 | Logical tasks | 160 | 160 | 160 |
-| Physical calls | 80–104 | 88 base; 120 stress | 72–96 |
+| Physical calls | 0 observed; 80–104 conditional | 0 observed; 48–120 conditional | 0 observed; 72–96 conditional |
 | Luna routes | 104–128 | 120–136 | 112–136 |
 | Terra escalations | 8–24 | 16 base; 40 stress ceiling | 8–20 |
 | Deterministic outputs | 24 | 24 | 24 |
 | Semantic candidates | 136 | 136 | 136 |
-| Mandatory / sampled review | 36–52 / 16–28 | 44 / 23 | 32–48 / 16–24 |
+| Rights-adjusted review | 0 observed; 6 deterministic audits to 142 conditional reviews | 0 observed; 6 deterministic audits to 142 conditional reviews | 0 observed; 6 deterministic audits to 142 conditional reviews |
 | Promotion result | 0 under candidate-only; 24 deterministic + reviewed semantic only under hybrid | same | same |
-| Cost planning | USD 1.50–6.00 | USD 2.50 base; USD 6.00 stress | USD 1.50–4.50 |
+| Rights-adjusted cost | USD 0 observed; USD 0–8 conditional ceiling | USD 0 observed; USD 0–8 conditional ceiling | USD 0 observed; USD 0–8 conditional ceiling |
 
 Source applicability is a plan, not an acquisition result: ACNC Register/AIS are mandatory; ABR/DGR, official website and annual report are conditional; fundraising registry and specialist sources are trigger-bound; Wikipedia is excluded. The shadow retains prior-output metadata for workload comparison only and never labels it a new production result.
 

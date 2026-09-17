@@ -80,6 +80,18 @@ P4-E1's observed effective cost was USD 0.01557 per completed logical output (US
 
 Candidate safety envelopes: USD 8.00 total provider spend, USD 4.00 strong-model spend, 150 physical calls and USD 0.25 per request reservation cap. Base utilisation is 31%, 50%, 59% and 75% respectively. These are recommendations requiring product-owner approval, not configured limits.
 
+### Source-rights calibration amendment
+
+The later `SCALE_S0_SOURCE_RIGHTS_CLEARANCE_2026-09-18.md` adjudicates the
+mandate/source boundary. It supersedes only the earlier suggestion that unknown
+website/report rights are mandate-blocking external facts. The calibrated plan is
+24 `STRUCTURED_BASELINE` deterministic instances, 120 `RIGHTS_GATED` ordinary
+semantic instances, 16 `CONDITIONAL_SPECIALIST` relationship/dependency instances,
+and 8 `EXCLUDED` human-only conduct instances. It has zero observed physical calls,
+reviews or cost. Conditional planning remains 48–120 physical calls, 6–142 unique
+reviews and USD 0–8 under the mandate ceiling; no exact call count is restored
+before governed source acquisition.
+
 Immediate single-event halt: ambiguous send/billing; any identity/scope systemic error; raw-output-to-card or candidate-to-governed bypass; rights violation; model/prompt/schema hash drift; any budget breach; classification-authority contamination. Count/rate: two same-family schema failures after one permitted repair; two same-family material semantic defects in the first ten reviewed items; review backlog over 25 open mandatory items; any false current-state claim confirmed by review. Warning at 15 open mandatory reviews or one semantic defect; no automatic recovery.
 
 ## Promotion, packages and S1
