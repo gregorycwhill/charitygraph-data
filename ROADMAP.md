@@ -10,7 +10,7 @@ Build a one-stop shop for structured, governed Australian charity data: an integ
 
 Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity evidence corpus. Assemble one or more task-specific semantic packets from that corpus. Apply one or more cost-efficient semantic passes. Persist independently governed domain knowledge. Compile analyst/public projections from that governed knowledge.
 
-**Milestone status (15 September 2026):** Phase 3 complete; Phase 4 complete; **Phase 5 active: North Star Completion**; Top-100 scale is a later gate and is not authorised. Phase 6 is complete and not reopened. The bounded product-value commitment-content fix is complete. Capacity is assessed only as needed to represent active North Star section 7; this does not reopen Phase 6.
+**Milestone status (17 September 2026):** Phase 3 complete; Phase 4 complete; **Phase 5 complete: North Star v0.2 bounded completion gate passed**; Top-100 scale is a later gate and is not authorised. Phase 6 is complete and not reopened. The bounded product-value commitment-content fix is complete. Capacity is assessed only as needed to represent active North Star section 7; this does not reopen Phase 6.
 
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
@@ -371,4 +371,4 @@ than rebuilding lifecycle machinery. Native roadmap sequencing remains governed
 by the overlay architecture decision in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md): canonical semantic objects precede optional Native-overlay discovery and governed promotion.
 # Candidate Phase 5 status
 
-The unmerged candidate records **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. Top-100 scale remains unauthorised pending a separate product-owner decision.
+The canonical completion record states **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. Top-100 scale remains unauthorised pending a separate product-owner decision.
