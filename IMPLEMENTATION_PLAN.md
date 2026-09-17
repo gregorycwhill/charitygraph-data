@@ -2,7 +2,7 @@
 
 **Status:** Canonical implementation sequence, version 2.2-draft
 
-**Current status (15 September 2026):** Phase 3 and Phase 4 are complete. **Phase 5 North Star Completion is active; Top-100 scale is downstream and not authorised.** Phase 6 is complete and not reopened. The bounded product-value commitment-content fix is complete. The private eight-subject evaluation remains historical bounded evidence (`ADVANCE_WITH_BOUNDED_FIX`); it is not broad North Star coverage or production proof. No canonical/public promotion, new source acquisition, Viewer change, public v0.5 change, Top-100 execution or Capacity reopening is authorized. See the [adjudication and evaluation record](docs/history/product-value-adjudication-and-evaluation-2026-09-14.md) and [bounded fix implementation history](docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md).
+**Current status (17 September 2026):** Phase 3 and Phase 4 are complete. **Phase 5 North Star v0.2 bounded completion gate passed; Top-100 scale is downstream and not authorised.** Phase 6 is complete and not reopened. The bounded product-value commitment-content fix is complete. The private eight-subject evaluation remains historical bounded evidence (`ADVANCE_WITH_BOUNDED_FIX`); it is not broad North Star coverage or production proof. No canonical/public promotion, new source acquisition, Viewer change, public v0.5 change, Top-100 execution or Capacity reopening is authorized. See the [adjudication and evaluation record](docs/history/product-value-adjudication-and-evaluation-2026-09-14.md) and [bounded fix implementation history](docs/history/product-value-bounded-commitment-content-fix-2026-09-15.md).
 
 **Active scope:** Reuse completed bounded evidence to assess the 20 active North Star sections. Do not repeat semantic requests or promote experiment items to canonical/public knowledge. North Star Completion can be satisfied by governed support or a tested, correctly scoped explanation of missingness; positive facts are not required everywhere. Any later Top-100 scale requires its own product-owner decision.
 
@@ -486,4 +486,4 @@ Before cohort scale, execution must be resumable without ambiguity. Durably pers
 Experiment-specific machinery such as Native catalogue reload, freeze and reconciliation layers is not automatically production infrastructure. Promote such mechanisms only when independently required by production semantics.
 # Phase 5 candidate completion state
 
-The candidate completion-gate record is `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`: **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. This bounded retained-cohort result does not authorise Top-100 scale.
+The canonical completion-gate record is `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`: **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. This bounded retained-cohort result does not authorise Top-100 scale.

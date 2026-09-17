@@ -2,7 +2,7 @@
 
 **Status date:** 15 September 2026
 
-**Status:** Phase 3 complete. Phase 4 complete. **Phase 5 active: North Star Completion. Top-100 scale is not authorised.** Phase 6 is complete and not reopened. The product-value bounded commitment-content fix is complete. Capacity is a Phase 5 completion question only to the extent active section 7 needs an honest representation; this does not reopen Phase 6. No production-complete claim is made.
+**Status:** Phase 3 complete. Phase 4 complete. **Phase 5 complete: North Star v0.2 bounded completion gate passed. Top-100 scale is not authorised.** Phase 6 is complete and not reopened. The product-value bounded commitment-content fix is complete. Capacity is a Phase 5 completion question only to the extent active section 7 needs an honest representation; this does not reopen Phase 6. No production-complete claim is made.
 
 **Phase 5 decision (15 September 2026):** Demonstrate governed, traceable and honest bounded-cohort support for all 20 active North Star sections before any separate decision on Top-100 scale. Completion does not require rich positive facts for every organisation: a section may be satisfactorily represented through governed evidence or a correctly scoped state such as `evidence_present`, `not_found_in_reviewed_sources`, `source_silent`, `not_processed`, `source_unavailable`, `not_acquired`, `processing_failed`, `unknown` or `not_applicable`. Preserve the stricter existing coverage vocabulary and distinctions; these examples do not collapse source silence, unavailability, non-acquisition, processing failure, substantive absence or unknown. Existing bounded evidence is to be reused. No gap-closing experiment is authorized by this planning cutover.
 
@@ -339,4 +339,4 @@ a signal to reassess critical-path status. This is an implementation/current-
 state lesson, not product doctrine.
 # Phase 5 completion-gate candidate
 
-**PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED** on the unmerged Phase 5 candidate branch. The bounded pass is defined in `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`; it does not authorise Top-100 scale, which remains subject to a separate product-owner decision.
+**PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. The bounded pass is defined in `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`; it does not authorise Top-100 scale, which remains subject to a separate product-owner decision.
