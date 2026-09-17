@@ -1,0 +1,1 @@
+{"policy_id":"scale-s0-output-public-boundary-v1","policy_version":"1","allowed_outputs":["source_evidence_records","candidates","review_items","governed_observations","internal_north_star_projection","execution_accounting_artifacts"],"public_release":"prohibited","immutable_v05":"unchanged","provider_execution":"not authorised by this artefact"}

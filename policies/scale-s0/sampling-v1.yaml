@@ -1,0 +1,1 @@
+{"policy_id":"scale-s0-sampling-balanced-v1","policy_version":"1","seed":"scale-s0-balanced-2026-09-18-v1","algorithm":"sha256(seed|version|candidate_id|task_id@version), first 48 bits / 16^12 < rate","strata":{"ordinary_semantic":0.25,"deterministic_source_native":0.25,"mandatory":1.0},"overlap":"mandatory supersedes sampling; unique review item counted once"}
