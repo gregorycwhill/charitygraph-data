@@ -134,3 +134,10 @@ permission; absent terms means permission; excerpt means full-report permission;
 local permission means provider permission; one source clears a domain; runtime
 denial means substantive absence; optional denial means slice halt; and specialist
 family approval means source-specific approval.
+# Product-owner open-web policy supersession
+
+The product owner has adopted this operational policy: content intentionally made publicly accessible on the open web is available to CharityGraph for automated acquisition and analysis. Restrictive website prose, including copyright, no-data-mining, or robots language, is provenance and governance metadata rather than a source-availability veto. This is a product/risk policy, not a conclusion that Australia has a general fair-use doctrine or that every use is necessarily protected by a statutory exception.
+
+The earlier Smith Family conclusion that restrictive terms vetoed automated acquisition is superseded as a CharityGraph policy conclusion. Public material reachable without authentication, paywall, effective technical restriction, or an equivalent barrier is `OPEN_WEB_PUBLIC` and may use the bounded open-web path. The terms remain recorded. `robots.txt` remains technical metadata, not permission or a veto. Login, paywall, credentials, challenge/blocking, and other technical withholding remain fail-closed. APIs, bulk data, paid/licensed sources, and credentialed specialist systems remain `SEPARATELY_LICENSED_OR_CONTROLLED`.
+
+An openly downloadable report follows the same policy; representation and false-absence controls still apply. Unreachable, blocked, or unparseable sources record their exact state and do not become substantive absence.

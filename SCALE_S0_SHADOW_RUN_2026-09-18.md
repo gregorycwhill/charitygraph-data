@@ -43,3 +43,6 @@ Expected unresolved areas are missing or blocked annual reports/websites, unboun
 | budget exhaustion or review backlog | Stop new send/promotion at hard ceiling/backlog | pass |
 
 No Factory defect was found. The shadow exercised policy interpretation and the already-certified offline controls; it did not alter Builder code or Factory semantics.
+# Open-web policy effect
+
+This offline shadow now treats a public, technically reachable webpage or openly downloadable report as `OPEN_WEB_PUBLIC`; restrictive prose alone does not deny the simulated preflight. Login, paywall, access challenge, and separately licensed API controls remain negative cases. This change does not authorise the shadow or any S0 execution.

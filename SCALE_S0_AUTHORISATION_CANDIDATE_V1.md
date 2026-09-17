@@ -135,3 +135,8 @@ backlog and false-current-state claims fail it.
 > decision, I authorise only the immutable Scale S0 bundle
 > `A613BD41F2FDD64CE18694D97D56E1CF016107906ECD5B0EA7AE99888EA8CB16` and
 > mandate V2. This does not authorise any excluded activity or public release.
+# Open-web policy decision update
+
+The product owner has resolved ordinary open-web availability. Public first-party webpages and openly downloadable documents without technical withholding are eligible for governed acquisition, local retention, representation-controlled analysis, and bounded task-packet provider transmission under `OPEN_WEB_PUBLIC`. Restrictive public-site terms and robots metadata remain recorded but do not by themselves block this CharityGraph policy path. The Smith Family control is therefore eligible if actually public and reachable.
+
+The package remains unapproved: technical reachability, document representation, exact source identity and provenance remain runtime preflight facts; separately licensed or controlled sources continue to require their own authority. The package status is `S0_AUTHORISATION_PACKAGE_READY_FOR_PRODUCT_OWNER_DECISION`.
