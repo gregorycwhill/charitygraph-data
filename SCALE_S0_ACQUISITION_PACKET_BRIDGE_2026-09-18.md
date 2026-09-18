@@ -21,23 +21,43 @@ acquisition, immutable snapshot identity, representation, frozen corpus,
 honest task applicability and frozen packet material.  It has no HTTP client,
 provider client, reservation creation or semantic execution entry point.
 
+Migration 18 is required and is deliberately narrow. It persists immutable
+source plans, snapshots, representation bindings, corpora and physical bundles
+in the canonical Builder catalogue. Raw bytes remain in the existing
+content-addressed artefact store; source-native records and acquisition
+receipts remain in their existing tables. Packets carry the frozen corpus ID in
+their immutable material, retaining the packet-to-corpus link without a second
+packet schema or store.
+
 ## Offline checkpoint evidence
 
 The deterministic fixture checks prove exact eight-subject membership,
 order-independent population identity, and rejection of seven, ninth and
-substituted subjects.  It also proves a public first-party fixture with
-open-web authority can reach frozen packet preparation, while login, paywall
-and challenge controls fail before acquisition.  The packet is only prepared;
-there are zero provider sends and zero reservations.
+substituted subjects. It covers ACNC Register/AIS structured fixtures, public
+HTML, reliable-text and visually material PDF representations, parsing failure,
+controlled specialist authority, technically withheld login, unavailable
+responses, immutable source records/acquisition receipts, corpus freeze,
+applicability, logical packet preparation, compatible physical bundles and the
+existing preflight construction. Restrictive terms metadata is non-veto open
+web provenance; a technical barrier fails before acquisition. The packet is
+only prepared; there are zero provider sends and zero reservations.
+
+Focused bridge, migration and S0 durability tests pass. The complete Builder
+suite passes locally, with three pre-existing configuration deprecation
+warnings. No S0 test performs a network call or provider operation.
 
 ## Certification result
 
 `S0_ACQUISITION_PACKET_BRIDGE_INCONCLUSIVE`
 
-The checkpoint is not a full certification.  It does not yet provide the
-required durable source-plan/corpus/representation ledger, complete fixture
-matrix (ACNC/AIS, PDFs, controlled specialist sources), crash/restart matrix,
-physical bundling proof, full regression suite, or certified preflight handoff.
-Those gaps are material and must be completed before the bridge can be called
-certified.  No policy or mandate was changed, no live source was acquired, and
-the authorised S0 remains paused pending a separate recovery decision.
+The control-plane implementation and Builder suite pass, but this is not an
+honest full bridge certification: the fixture representation values are
+explicit test inputs and have not yet been produced by document-v2 from real
+local PDF fixture files. The required PDF extraction/render path and its
+page-selected artefact lineage therefore remain unproven. This is a material
+representation-certification gap, not a source-policy or provider defect.
+
+The offline bridge is not a live recovery decision. It does not attach actual
+S0 source material or create an S0 reservation/provider attempt. No policy or
+mandate was changed, no live source was acquired, and the authorised S0 remains
+paused pending a separate recovery decision.
