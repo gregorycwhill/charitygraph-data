@@ -3,14 +3,20 @@
 The bridge now includes a single governed transport boundary before network
 acquisition. It checks mandate, subject, plan, source family, source
 classification, technical accessibility, controlled-source authority, halt
-state, scheme, locator and resource bounds before opening a socket.
+state, scheme, locator and resource bounds before opening a socket. These
+pre-crossing denials make no request and create no snapshot, corpus, packet or
+other persisted acquisition record.
 
 Successful transport results flow into the existing `GovernedAcquisition`
 path. The transport does not create a parallel source store or packet system.
 Same-origin HTTP-to-HTTPS and same-host redirects are bounded and recorded;
 unrelated redirects fail closed. Authentication, paywalls, challenges,
-timeouts, network errors, oversized responses, unsupported schemes and
-controlled sources without authority are denied without a request crossing.
+timeouts, network errors, oversized responses and HTTP error statuses are
+post-crossing transport failures: the bounded response is closed and no
+governed snapshot/corpus/packet is persisted. Unsupported schemes, technical
+withholding and controlled sources without authority are denied before a
+request crosses. No failure path circumvents the existing acquisition
+validation or persistence path.
 
 The local synthetic eight-subject matrix exercises structured sources, public
 HTML, restrictive-terms metadata, reliable and visual PDFs, parsing failure,
