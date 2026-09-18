@@ -1,0 +1,1 @@
+{"policy_id":"scale-s0-hybrid-promotion-v1","policy_version":"1","deterministic_source_native":"may promote only after sampled audit and certified provenance","semantic":"review decision required before promotion","source_native":"exact structured source fact only","public_release":"prohibited"}
