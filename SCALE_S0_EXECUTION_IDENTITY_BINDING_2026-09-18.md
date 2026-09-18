@@ -10,11 +10,11 @@ This certification repairs the capability gap recorded by the halted second auth
 
 The prior runtime persisted an opaque run `configuration_hash` but did not explicitly and durably bind a live execution attempt to the exact Builder implementation and Data authority state. Migration 19, `durable_scale_s0_execution_attempt_identity`, adds the append-only `scale_s0_execution_attempts` table. It binds an immutable attempt ID to mandate ID/hash, slice, run ID, Builder repository/SHA, Data repository/SHA, bridge certification/version, schema version, recovery-authority reference, status, timestamp and material hash.
 
-The mandate remains unchanged. The attempt identity is execution-specific authority. Registering identical material is idempotent; changed implementation, Data, run, mandate or slice material conflicts fail closed. Unknown mandate/run references fail closed. Existing migration 18 bridge fixtures and non-S0 runs remain compatible.
+The mandate remains unchanged. The attempt identity is execution-specific authority. Terra selected a bounded **Model D** design: an append-only attempt root plus explicit attempt lineage on live bridge artefacts. Model A (adding the identity to every object) was more invasive; Model B (run-only transitivity) left source-plan ownership implicit; Model C (source-plan transitivity) did not protect packets and reservations without additional edges. Registering identical material is idempotent; changed implementation, Data, run, mandate or slice material conflicts fail closed. Unknown mandate/run references fail closed. Existing migration 18 bridge fixtures and non-S0 runs remain compatible through explicit offline mode.
 
 ## Enforcement and restart proof
 
-Live source-plan persistence accepts an execution-attempt ID and rejects missing, unknown or mismatched bindings before source-plan material is created. Certified preflight can require the same durable attempt binding before provider reservation/transmission. The catalog can be closed and reopened to recover the exact binding without caller memory. Downstream bridge persistence carries the attempt gate; historical synthetic fixtures remain explicitly offline and may omit it.
+Live source-plan persistence accepts an execution-attempt ID and rejects missing, unknown or mismatched bindings before source-plan material is created; the ID is persisted in source-plan material and table lineage. Snapshots, representations, corpora, bundles and packets carry the same durable edge. Certified preflight reconstruction requires the packet's attempt edge and validates the stored Builder/Data/mandate/run/configuration identities before provider use. Governed transport requires the durable plan-to-attempt edge at network crossing. The catalog can be closed and reopened to recover the exact binding without caller memory. Historical synthetic fixtures must explicitly opt into offline mode.
 
 Offline certification bound:
 
@@ -25,6 +25,6 @@ Offline certification bound:
 - Migration: 19
 - Population: exact authorised eight-subject mandate population
 
-The offline tests prove attempt binding → run registration → exact identity recovery → source-plan gate; no reservation or provider crossing is performed. Drift, substitution, duplicate-ID conflict, unknown references, and pre-attempt source-plan creation all fail closed.
+The offline tests prove attempt binding → run registration → exact identity recovery → source-plan gate and unbound-packet fresh-process rejection; the existing bridge suite covers the exact eight-subject synthetic source→snapshot→representation→corpus→packet→preflight chain. Drift, substitution, duplicate-ID conflict, unknown references, configuration mismatch, and pre-attempt source-plan creation all fail closed. No reservation or provider crossing is performed.
 
 No live source acquisition, external network call, provider call, reservation, candidate, review or promotion occurred. PR #34 and halted PR #37 remain separate historical records and are unchanged.
