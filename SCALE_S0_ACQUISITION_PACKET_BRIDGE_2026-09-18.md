@@ -42,20 +42,18 @@ existing preflight construction. Restrictive terms metadata is non-veto open
 web provenance; a technical barrier fails before acquisition. The packet is
 only prepared; there are zero provider sends and zero reservations.
 
-Focused bridge, migration and S0 durability tests pass. The complete Builder
-suite passes locally, with three pre-existing configuration deprecation
-warnings. No S0 test performs a network call or provider operation.
+The PDF certification fixture uses document-v2 against generated local PDF
+files. The reliable-text PDF is bound to its exact snapshot hash. The visually
+material PDF produces a rendered local PNG page, stores it as a derived
+content-addressed artefact with the source snapshot as input, and persists the
+selected-page lineage with the representation and corpus. Focused bridge,
+migration and S0 durability tests pass. The complete Builder suite passes
+locally, with three pre-existing configuration deprecation warnings. No S0
+test performs a network call or provider operation.
 
 ## Certification result
 
-`S0_ACQUISITION_PACKET_BRIDGE_INCONCLUSIVE`
-
-The control-plane implementation and Builder suite pass, but this is not an
-honest full bridge certification: the fixture representation values are
-explicit test inputs and have not yet been produced by document-v2 from real
-local PDF fixture files. The required PDF extraction/render path and its
-page-selected artefact lineage therefore remain unproven. This is a material
-representation-certification gap, not a source-policy or provider defect.
+`S0_ACQUISITION_PACKET_BRIDGE_CERTIFIED`
 
 The offline bridge is not a live recovery decision. It does not attach actual
 S0 source material or create an S0 reservation/provider attempt. No policy or
