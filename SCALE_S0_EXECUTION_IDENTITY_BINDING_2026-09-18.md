@@ -2,7 +2,7 @@
 
 ## Status
 
-`S0_EXECUTION_IDENTITY_BINDING_CERTIFIED`
+`S0_EXECUTION_IDENTITY_BINDING_INCONCLUSIVE`
 
 This certification repairs the capability gap recorded by the halted second authorised attempt. Attempt 2 remains historical halt evidence (`S0_HALTED`) and was not resumed; no attempt 3 exists.
 
@@ -25,6 +25,6 @@ Offline certification bound:
 - Migration: 19
 - Population: exact authorised eight-subject mandate population
 
-The offline tests prove attempt binding → run registration → exact identity recovery → source-plan gate and unbound-packet fresh-process rejection; the existing bridge suite covers the exact eight-subject synthetic source→snapshot→representation→corpus→packet→preflight chain. Drift, substitution, duplicate-ID conflict, unknown references, configuration mismatch, and pre-attempt source-plan creation all fail closed. No reservation or provider crossing is performed.
+The offline tests prove attempt binding → run registration → exact identity recovery → source-plan gate and unbound-packet fresh-process rejection; the existing bridge suite covers the exact eight-subject synthetic source→snapshot→representation→corpus→packet→preflight chain. Drift, substitution, duplicate-ID conflict, unknown references, configuration mismatch, and pre-attempt source-plan creation all fail closed. No reservation or provider crossing is performed. Final certification remains inconclusive until the full Builder suite can complete in a writable test environment; the implementation-specific tests pass, while the suite-wide run was blocked by Windows temp-directory permissions/path creation in an unrelated v0.5 release fixture.
 
 No live source acquisition, external network call, provider call, reservation, candidate, review or promotion occurred. PR #34 and halted PR #37 remain separate historical records and are unchanged.
