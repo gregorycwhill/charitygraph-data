@@ -39,6 +39,8 @@ Builder's internal catalogue exposes:
 
 These read models preserve the predicate, evidence/source identifiers, scope, observation/assertion time, lifecycle and lineage carried by their records. They do not decide truth, freshness, current availability, causal effect, authority, taxonomy assignment or publication eligibility.
 
+Temporal comparison is conservative and typed. A datetime query compared with datetime bounds uses exact UTC instants. A date query compared with date bounds uses calendar dates. A datetime query against a date bound compares at the bound's declared calendar-day precision without manufacturing a stored midnight. A date query against a datetime bound is rejected as precision-insufficient rather than silently discarding the bound's time-of-day. Open bounds remain open.
+
 ## 4. Required behaviour
 
 | Case | Required result |
