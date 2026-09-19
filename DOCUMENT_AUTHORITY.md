@@ -66,6 +66,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Integrated conceptual model and domain seams | `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` |
 | Coverage, model economics and open curation | `COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md` |
 | Source, evidence, provenance, adjudication and release governance | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` |
+| Governed knowledge temporal distinctions and bounded knowledge-at/valid-at reads | `BITEMPORAL_GOVERNED_KNOWLEDGE_ARCHITECTURE.md` (implemented contract; does not alter source, release or public-contract authority) |
 | Approved bounded local analytical-retention policy and independent-adjudication gate for the private product-value experiment namespace | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` (policy authority); `PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md` (experiment-specific execution packet; no execution authority) |
 | Source-rights historical audit for the frozen Phase 6 V3 corpus | `PHASE6_V3_SOURCE_RIGHTS_AUDIT_2026-09-13.md` (historical audit; not current execution authority) |
 | Phase 6 post-policy rights assessment for the frozen V3 inputs | `PHASE6_V3_POST_POLICY_RIGHTS_ASSESSMENT_2026-09-13.md` (offline assessment; no execution authority) |

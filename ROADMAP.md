@@ -12,6 +12,8 @@ Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity
 
 **Milestone status (18 September 2026):** Phase 3 complete; Phase 4 complete; **Phase 5 complete: North Star v0.2 bounded completion gate passed**; the Scale S0 Factory is certified and S0 is authorised but not yet executed, while Top-100 scale remains unauthorised. Phase 6 is complete and not reopened. The bounded product-value commitment-content fix is complete. Capacity is assessed only as needed to represent active North Star section 7; this does not reopen Phase 6.
 
+**Implemented architecture note (19 September 2026):** bounded governed-knowledge temporal reads now distinguish knowledge-at from valid-at questions while preserving source, retrieval, candidate, adjudication, lineage and release times. This is an internal representation/projection capability, not a Top-100, S0, public-v0.5 or provider-execution milestone. Future temporal UX and Semantica-derived ideas are backlog-only; see [BITEMPORAL_GOVERNED_KNOWLEDGE_ARCHITECTURE.md](BITEMPORAL_GOVERNED_KNOWLEDGE_ARCHITECTURE.md).
+
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
 ## Phase 0 — Documentation, authority and baseline

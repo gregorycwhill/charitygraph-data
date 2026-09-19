@@ -18,6 +18,10 @@ The canonical chain is:
 
 Every link has a stable identifier and append-only history. A public record may simplify this chain, but Builder must be able to reconstruct it.
 
+### 2.1 Temporal distinctions
+
+The chain records distinct world-valid time; source publication/reporting time; retrieval/acquisition time; candidate-extraction time where applicable; adjudication decision time; governed-current lineage interval; and release/publication time. None is a default for another. In particular, retrieval is not validity, source reporting is not adjudication, and a later governed record does not by itself establish a real-world change. The implemented [bitemporal governed-knowledge architecture](BITEMPORAL_GOVERNED_KNOWLEDGE_ARCHITECTURE.md) defines bounded internal knowledge-at and valid-at read models; it creates no universal freshness policy or automatic current-state claim.
+
 ## 3. Source registry
 
 Each source family is registered before routine acquisition. Registration records:
