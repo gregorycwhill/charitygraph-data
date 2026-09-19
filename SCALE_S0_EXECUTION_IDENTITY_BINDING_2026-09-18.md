@@ -2,7 +2,7 @@
 
 ## Status
 
-`S0_EXECUTION_IDENTITY_BINDING_INCONCLUSIVE`
+`S0_EXECUTION_IDENTITY_BINDING_CERTIFIED`
 
 This certification repairs the capability gap recorded by the halted second authorised attempt. Attempt 2 remains historical halt evidence (`S0_HALTED`) and was not resumed; no attempt 3 exists.
 
@@ -25,6 +25,6 @@ Offline certification bound:
 - Migration: 19
 - Population: exact authorised eight-subject mandate population
 
-The offline tests prove attempt binding → run registration → exact identity recovery → source-plan gate and unbound-packet fresh-process rejection; snapshot ownership is now always derived from the persisted source-plan row, and representation, corpus, and packet registration derive and verify inherited attempt ownership. The existing bridge suite covers the exact eight-subject synthetic source→snapshot→representation→corpus→packet→preflight chain. Drift, substitution, duplicate-ID conflict, unknown references, configuration mismatch, mixed-attempt lineage, and pre-attempt source-plan creation all fail closed. No reservation or provider crossing is performed. Final certification remains inconclusive until the full Builder suite can complete in a writable test environment; the implementation-specific tests pass, while the suite-wide run was blocked by Windows temp-directory permissions/path creation in an unrelated v0.5 release fixture.
+The offline tests prove attempt binding → run registration → exact identity recovery → source-plan gate and unbound-packet fresh-process rejection; snapshot ownership is now always derived from the persisted source-plan row, and representation, corpus, and packet registration derive and verify inherited attempt ownership. The integrated Model-D proof materialises exactly the eight authorised subjects (World Vision Australia, The Smith Family, Medecins Sans Frontieres Australia Limited, Sunrise Foundation Limited, Australian Red Cross Society, Noongar Boodja Trust, Bush Heritage Australia, and Greenpeace Australia Pacific Limited) through one durable attempt, attempt-owned plans, snapshots, corpora, packets and a physical bundle, then closes and reopens the catalog and verifies the same ownership. A bundle and source-plan substitution are rejected under a different attempt. Drift, duplicate-ID conflict, unknown references, configuration mismatch, mixed-attempt lineage, and pre-attempt source-plan creation all fail closed. No reservation or provider crossing is performed. The full Builder suite completed under the canonical sibling topology: 919 collected, 918 passed, 1 skipped. Targeted identity, durability, bridge, and Model-D tests passed.
 
 No live source acquisition, external network call, provider call, reservation, candidate, review or promotion occurred. PR #34 and halted PR #37 remain separate historical records and are unchanged.
