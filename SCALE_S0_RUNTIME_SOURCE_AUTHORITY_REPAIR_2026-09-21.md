@@ -13,6 +13,22 @@ reconstruction and provider-send time. It made a policy mandate appear to carry
 resource-level authority and left the exact source decision insufficiently
 separate from caller memory.
 
+This is why Attempt 5 (`attempt:s0:5` / `run:s0:attempt-5`) legitimately
+stopped at its first governed-acquisition item. Its durable mandate had
+`authority_json.sources = {}`. Although the canonical governed HTTP(S)
+transport and its acquisition bridge already existed, there was no exact,
+executable subject-bound locator/resource/version/licence/rights binding or
+durable source-specific authority for a live reconstruction to use. Therefore
+no live source plan, acquisition, packet, reservation, owner-attestation
+binding, source-network crossing, provider call or other execution occurred.
+
+`acnc_register` and `acnc_ais` remain mandatory baseline source families and
+are policy-ready. That does not pre-authorise a concrete ACNC Register or AIS
+resource: each live use still needs a current exact resource identity and
+version, applicable licence, source-specific rights decision and authority
+material before acquisition. Controlled resources cannot inherit any of those
+facts from an unrelated endpoint, sibling resource or historical example.
+
 The repair preserves the mandate as immutable policy authority only: population,
 finite source-family universe, registry, routing and versioned policy artefacts.
 It does not authorise an individual locator, resource, access state or rights
@@ -33,6 +49,13 @@ authority binds all of the following material before it is usable live:
 - access classification and technical-access state;
 - authority role and non-empty authority material, each with a canonical hash;
 - authorised claim families and a timezone-aware creation time.
+
+For `SEPARATELY_LICENSED_OR_CONTROLLED` authority, the material must also name
+the exact resource and version, licence and licence version, and rights-authority
+reference. The material resource identity must equal the ledger's exact resource
+identity. `OPEN_WEB_PUBLIC` is a separate access classification, governed by
+the adopted open-web policy, and cannot silently stand in for controlled or
+licensed authority.
 
 The ledger is not a source-body store and does not duplicate evidence. Raw bytes
 remain in the content-addressed artefact store; source-native records and
@@ -72,18 +95,18 @@ without a live execution attempt and without offline mode fails before source
 records or receipts are written. Explicit offline fixtures remain restricted to
 local synthetic material and never become live authority.
 
-The local destructive suite covers mandate/source separation, migration 22,
-idempotency, required binding absence, source family/subject/locator/resource,
-rights-policy version/decision, access/technical state and authority-material
-substitution, competing source decisions, durable restart reconstruction,
-cross-attempt ownership, snapshot/representation/corpus/packet/reservation
-lineage, owner-attestation gating, governed transport caller-spoof rejection,
-and explicit offline fixtures. It performs no external network or provider
-operation.
+The local destructive suite exercises the persistence, reconstruction and
+transport boundaries using synthetic material and loopback inputs only. It does
+not establish any current ACNC resource, version, licence or rights fact, and
+it performs no external source-network or provider operation.
 
 ## Status retained
 
-S0 remains `S0_AUTHORISED_NOT_YET_EXECUTED`. Historical halted material is not
-resumed or rewritten. No Attempt 3, Attempt 4 or Attempt 5 is created or
-authorised by this repair. Public contract 0.5 and its immutable release bytes
+S0 remains `S0_AUTHORISED_NOT_YET_EXECUTED`. Attempts 3, 4 and 5 remain
+historical/read-only execution evidence and were not touched by this repair.
+In particular, Attempt 5 must not be resumed or reused for a live execution
+after canonical implementation or material hashes change. A future live S0
+execution requires a fresh execution-attempt/run identity bound to the
+post-repair canonical Builder and Data commit SHAs, then its own exact durable
+runtime source authorities. Public contract 0.5 and its immutable release bytes
 are unchanged.
