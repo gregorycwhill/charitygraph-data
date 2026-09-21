@@ -58,3 +58,6 @@ acquisition lineage.
 
 No live charity-evidence acquisition, provider/model call, provider reservation,
 owner attestation, or public release is authorised by this implementation tranche.
+
+The durable A3 window/invalidation ledger is an additive Builder migration 23;
+immutable migration 22 and all historical Attempt 7 records remain unchanged.
