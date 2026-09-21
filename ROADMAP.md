@@ -374,3 +374,8 @@ by the overlay architecture decision in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CH
 # Candidate Phase 5 status
 
 The canonical completion record states **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. Top-100 scale remains unauthorised pending a separate product-owner decision.
+# Scale S0 authorisation status
+
+The approved bounded operating policy is `CG-S0-PO-2026-09-22`. It changes no
+cohort, budget, Phase 5 completion status or public-release prohibition. Any
+post-merge S0 execution is a separately controlled fresh attempt.
