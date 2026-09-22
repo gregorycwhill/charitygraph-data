@@ -233,6 +233,15 @@ Wording such as “claim-, risk- or domain-triggered specialist source” does n
 authorise model/runtime-triggered research. **BUILDER DOESN'T DO DISCOVERY /
 BUILDER DOESN'T DO RESEARCH.**
 
+For Scale S0 only, the accepted web-locator discovery repair permits bounded
+resolution of plausible current public first-party locators from already
+authorised entity identity. It is upstream of acquisition and does not expand
+semantic research, the evidence universe, or provider authority: search output
+is discovery metadata only, and an underlying source enters the corpus only
+after separate identity authentication, rights checks and governed acquisition.
+The controlling limits and authentication rule are in
+`SCALE_S0_PRODUCT_OWNER_AUTHORISATIONS_2026-09-22.md`.
+
 A material proposition needs an approved source and representation consistent
 with that source's evidentiary role; independent corroboration is not a
 universal prerequisite unless a claim family explicitly requires it. Annual

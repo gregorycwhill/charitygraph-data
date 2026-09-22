@@ -46,6 +46,49 @@ prohibited.
    prohibited. Technical withholding means `not_acquired`, never substantive
    absence.
 
+## Accepted S0 web-locator discovery repair
+
+Registry locators are seeds, not an authoritative limit on discovery.  Builder
+MAY search for plausible current public locators using only already-authorised
+public entity identity (best available legal/trading name, ABN and other
+governed identity anchors), through a provider-neutral locator-search boundary.
+Discovery is bounded to no more than five queries, ten considered results per
+query and five authenticated locator fetches per subject, with early stopping
+after sufficient authenticated useful sources are acquired.
+
+Search results, snippets, citations and provider source metadata are discovery
+metadata only.  They MUST NOT become CardEvidence, source facts, frozen-corpus
+evidence, candidate observations or semantic claim support.  Only a separately
+governed acquisition of the underlying locator may supply evidence.  Durable
+lineage records subject, query, provider/search-call identity, returned URL and
+available title/snippet/source metadata/rank, anchors, authentication decision
+and reason, final locator, redirect chain and later acquisition linkage.
+
+Official owned domains and plausible official social, community, charity and
+sector-platform pages are candidates; platform hosting is not a disqualifier.
+Authentication is high-recall but bounded: one exact ABN/ACN/ACNC identifier or
+an authoritative regulator/source locator link is sufficient; otherwise two
+independent structured soft anchors (name, address/location, officer, contact,
+program, authenticated cross-link or comparably specific governed material) are
+required.  A collision-prone name-only match is insufficient.  Authentication
+identifies the organisation speaking; it does not elevate reliability beyond
+ordinary first-party/self-reported treatment.
+
+HTTP-to-HTTPS and www-to-apex canonicalisation are accepted and recorded.  A
+different final host requires independent authentication under the same rule.
+Authentication, paywall, TLS-validation and anti-bot bypasses remain prohibited.
+Concrete first-party source definitions remain immutable and use
+`source_family + subject_abn + canonical_locator`; materially different existing
+records are never mutated.  `discovery_signals` remains explicit nonblocking
+implementation missingness; this decision does not introduce a mapper.
+
+The existing AIS A2 local-use restriction and A3 60-minute attestation rule are
+unchanged.  Locator-search provider calls use the existing provider accounting,
+reservation, attestation and exactly-once controls rather than a side channel.
+This repair authorises implementation and fixture testing only: it does not
+authorise live search, website acquisition, provider inference, attestation,
+public release or alteration of immutable Attempt 8 execution evidence.
+
 ## Attempt identity
 
 `attempt:s0:7` / `run:s0:attempt-7` is immutable historical execution evidence
