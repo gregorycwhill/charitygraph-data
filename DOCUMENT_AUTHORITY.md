@@ -209,6 +209,13 @@ bounded operating-policy decision for Scale S0 authorisations A1--A5. It is
 subordinate to the product/rights/public-contract authorities and does not
 authorise public release or execution by itself.
 
+`SCALE_S0_LIVE_LOCATOR_ACTIVATION_2026-09-22.md` is the controlling additive
+product-owner activation for live use of the already-merged bounded locator-
+discovery mechanism in one future fresh S0 attempt. It changes only the
+implementation/fixture-only live-search gap; it does not amend the mandate,
+cohort, budgets, A1--A5 controls, Attempt 8 evidence or public-release
+prohibition.
+
 `SCALE_S0_ATTEMPT8_IDENTITY_RECONCILIATION_2026-09-22.md` is the additive,
 subordinate execution-history reconciliation record for the immutable Attempt 8
 binding. It is subordinate to the A1--A5 policy above and does not change that
