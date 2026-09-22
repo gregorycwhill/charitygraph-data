@@ -91,13 +91,19 @@ public release or alteration of immutable Attempt 8 execution evidence.
 
 ## Attempt identity
 
-`attempt:s0:7` / `run:s0:attempt-7` is immutable historical execution evidence
+This subsection records the state at initial A1–A5 approval:
+`attempt:s0:7` / `run:s0:attempt-7` was immutable historical execution evidence
 bound to Builder `d4dd962aac2630c48310a89551a03dfa7caf8f7a` and Data
 `70e273fa3bdf25188ea4e4ef4959a8def7500bf4`. It must not be mutated or resumed.
-The first post-merge execution must use a fresh attempt identity bound to the
-new Builder and Data SHAs. It may reuse source bytes/evidence only where the
-canonical content-addressed lifecycle permits reuse without falsifying
-acquisition lineage.
+The later immutable Attempt 8 execution and its exact evidence binding are
+recorded in the additive
+`SCALE_S0_ATTEMPT8_IDENTITY_RECONCILIATION_2026-09-22.md`; that record is the
+current/latest execution-history authority for Attempt 8 and supersedes only
+the temporal implication here that Attempt 7 remains latest. Any next live
+execution after locator activation is canonical must use a fresh Attempt 9
+identity. It may reuse source bytes/evidence only where the canonical
+content-addressed lifecycle permits reuse without falsifying acquisition
+lineage.
 
 No live charity-evidence acquisition, provider/model call, provider reservation,
 owner attestation, or public release is authorised by this implementation tranche.
