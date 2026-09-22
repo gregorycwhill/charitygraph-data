@@ -209,6 +209,13 @@ bounded operating-policy decision for Scale S0 authorisations A1--A5. It is
 subordinate to the product/rights/public-contract authorities and does not
 authorise public release or execution by itself.
 
+`SCALE_S0_ATTEMPT8_IDENTITY_RECONCILIATION_2026-09-22.md` is the additive,
+subordinate execution-history reconciliation record for the immutable Attempt 8
+binding. It is subordinate to the A1--A5 policy above and does not change that
+policy or create execution authority. It is the discoverable current/latest
+history record: Attempt 7 remains earlier immutable evidence and Attempt 9 is
+the next fresh identity after locator activation becomes canonical.
+
 `NORTH_STAR_TARGET_CARD.md` defines the active v0.2 projection vocabulary and derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. `NORTH_STAR_TARGET_CARD_V0_1.md` preserves historical numbering and meanings. A section ID is interpretable only with its projection-contract version; no ID-based migration is implied. Neither document overrides product authorities or proposes a public schema. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against the active card without silently redefining product scope. The completion ledger is a subordinate evidence inventory, not execution authority.
 
 ## Semantic extraction decision propagation

@@ -350,6 +350,9 @@ state lesson, not product doctrine.
 
 `CG-S0-PO-2026-09-22` is the current bounded S0 operating-policy decision. It
 preserves the eight-subject cohort, budget and prohibition on public release.
-Attempt 7 remains immutable historical evidence and the next execution requires
-a fresh attempt identity after merged Builder/Data changes. See
-`SCALE_S0_PRODUCT_OWNER_AUTHORISATIONS_2026-09-22.md`.
+Attempt 7 remains earlier immutable historical evidence; Attempt 8 is the
+latest immutable S0 execution evidence, and the next live execution after
+locator activation is canonical must use a fresh Attempt 9 identity. See
+`SCALE_S0_ATTEMPT8_IDENTITY_RECONCILIATION_2026-09-22.md` and
+`SCALE_S0_PRODUCT_OWNER_AUTHORISATIONS_2026-09-22.md`. This does not itself
+authorise Attempt 9.
