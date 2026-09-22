@@ -493,5 +493,9 @@ The canonical completion-gate record is `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEM
 
 Implement `CG-S0-PO-2026-09-22` through narrow Builder runtime predicates,
 the additive attestation-window ledger (migration 23), and focused regression
-tests. This is not live S0 execution; Attempt 7 is read-only historical evidence
-and a later execution must create a fresh attempt identity.
+tests. This is not live S0 execution. Attempt 7 remains earlier read-only
+historical evidence; Attempt 8 is the latest immutable S0 execution evidence,
+and the next live execution after locator activation is canonical must use a
+fresh Attempt 9 identity. See
+`SCALE_S0_ATTEMPT8_IDENTITY_RECONCILIATION_2026-09-22.md`. This does not itself
+authorise Attempt 9.
