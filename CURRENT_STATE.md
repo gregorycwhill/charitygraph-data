@@ -346,3 +346,10 @@ state lesson, not product doctrine.
 # Phase 5 completion-gate candidate
 
 **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. The bounded pass is defined in `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`; it does not authorise Top-100 scale, which remains subject to a separate product-owner decision.
+# Scale S0 policy update (2026-09-22)
+
+`CG-S0-PO-2026-09-22` is the current bounded S0 operating-policy decision. It
+preserves the eight-subject cohort, budget and prohibition on public release.
+Attempt 7 remains immutable historical evidence and the next execution requires
+a fresh attempt identity after merged Builder/Data changes. See
+`SCALE_S0_PRODUCT_OWNER_AUTHORISATIONS_2026-09-22.md`.

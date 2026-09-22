@@ -489,3 +489,9 @@ Experiment-specific machinery such as Native catalogue reload, freeze and reconc
 # Phase 5 candidate completion state
 
 The canonical completion-gate record is `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`: **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. This bounded retained-cohort result does not authorise Top-100 scale.
+# Scale S0 bounded policy implementation (2026-09-22)
+
+Implement `CG-S0-PO-2026-09-22` through narrow Builder runtime predicates,
+the additive attestation-window ledger (migration 23), and focused regression
+tests. This is not live S0 execution; Attempt 7 is read-only historical evidence
+and a later execution must create a fresh attempt identity.
