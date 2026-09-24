@@ -495,7 +495,8 @@ Implement `CG-S0-PO-2026-09-22` through narrow Builder runtime predicates,
 the additive attestation-window ledger (migration 23), and focused regression
 tests. This is not live S0 execution. Attempt 7 remains earlier read-only
 historical evidence; Attempt 8 is the latest immutable S0 execution evidence,
-and the next live execution after locator activation is canonical must use a
-fresh Attempt 9 identity. See
-`SCALE_S0_ATTEMPT8_IDENTITY_RECONCILIATION_2026-09-22.md`. This does not itself
-authorise Attempt 9.
+and Attempt 9 is immutable zero-send blocked under Option A. Only after the
+hardened Builder locator-search repair is canonical may a fresh Attempt 10
+receive a new identity. See
+`SCALE_S0_ATTEMPT9_OPTION_A_TERMINAL_CLOSURE_2026-09-24.md`. This does not
+itself authorise Attempt 10.
