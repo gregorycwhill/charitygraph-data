@@ -8,7 +8,7 @@
 
 **S0 authorisation (18 September 2026):** The human product owner accepted the canonical Balanced package in the controlling CharityGraph development conversation. `SCALE_S0_AUTHORISATION_DECISION_2026-09-18.md` and `SCALE_S0_MANDATE_AUTHORISED_V2.yaml` bind S0 only. Execution remains subject to its frozen source-rights, reservation, review, promotion and halt controls; no result has yet been executed or merged.
 
-**S0 Attempt 9 Option A closure (24 September 2026):** [`SCALE_S0_ATTEMPT9_OPTION_A_TERMINAL_CLOSURE_2026-09-24.md`](SCALE_S0_ATTEMPT9_OPTION_A_TERMINAL_CLOSURE_2026-09-24.md) records Attempt 9 as immutable zero-send blocked: it is bound to Builder `86d6a717099b499314ed019c41ad53d18d39e559` and cannot lawfully use the subsequent hardened locator-search repair. Option A prohibits supersession or rebinding. Only after that repair is canonical may a fresh Attempt 10 be created and bound to the then-canonical Builder/Data `main` SHAs. The exact S0 cohort, USD 8.00 / USD 4.00 / 150-call / USD 0.25-reservation ceilings, A1--A5 controls, evidence boundary and public-release prohibition remain unchanged.
+**S0 Attempt 18 authority (26 September 2026):** [`SCALE_S0_ATTEMPT18_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`](SCALE_S0_ATTEMPT18_PRODUCT_OWNER_AUTHORITY_2026-09-26.md) (`CG-S0-PO-ATTEMPT18-2026-09-26`) is the current narrow authority for a new `attempt:s0:18` / `run:s0:attempt-18` live locator attempt for exactly ABNs `74068758654`, `37646526132` and `47613674461`, with USD 0.30 maximum new exposure and OpenAI project `proj_vnAuU8uxocL0Rosg3SulgmRI`. It is proposed local material until its containing commit is published and merged into canonical Data `main`; it is not executable until then and until Greg provides a fresh matching A3. Attempt 17 remains immutable; its unresolved USD 0.10 remains held and unreconciled. The exact S0 USD 8.00 / USD 4.00 / 150-call / USD 0.25-reservation ceilings, A1--A5 controls, evidence boundary and public-release prohibition remain unchanged.
 
 **S0 runtime source authority (21 September 2026):** Migration 22 separates immutable policy mandate material from append-only concrete, attempt-bound source authority. Live reconstruction, governed transport, acquisition and provider preflight use the durable authority ledger only; offline fixtures require explicit opt-in. The bounded implementation/certification record is [SCALE_S0_RUNTIME_SOURCE_AUTHORITY_REPAIR_2026-09-21.md](SCALE_S0_RUNTIME_SOURCE_AUTHORITY_REPAIR_2026-09-21.md). This does not execute or resume S0, create an Attempt 3/4/5, or alter public contract 0.5.
 
@@ -354,7 +354,6 @@ state lesson, not product doctrine.
 preserves the eight-subject cohort, budget and prohibition on public release.
 Attempt 7 remains earlier immutable historical evidence; Attempt 8 is the
 latest immutable S0 execution evidence, and Attempt 9 is immutable zero-send
-blocked under Option A. Only after the hardened Builder locator-search repair
-is canonical may a fresh Attempt 10 receive a new identity. See
-`SCALE_S0_ATTEMPT9_OPTION_A_TERMINAL_CLOSURE_2026-09-24.md`. This does not
-itself authorise Attempt 10.
+blocked under Option A. The fresh Attempt 18 identity and narrow new authority
+are governed by `SCALE_S0_ATTEMPT18_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`;
+that document does not itself execute S0 or create A3.
