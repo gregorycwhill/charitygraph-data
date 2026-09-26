@@ -1,0 +1,29 @@
+{
+  "schema": "urn:charitygraph:s0:locator-execution-authority",
+  "version": 1,
+  "scope": "s0_locator_only",
+  "authority_id": "CG-S0-PO-ATTEMPT20-2026-09-26",
+  "attempt_id": "attempt:s0:20",
+  "run_id": "run:s0:attempt-20",
+  "builder_commit_sha": "17a8ba143358b4e25883449ddbcdcceab192977a",
+  "data_merge_sha": "bee0224e8ad7fa273e9633a08bc4f0ab63985c55",
+  "provider_project": "proj_vnAuU8uxocL0Rosg3SulgmRI",
+  "frozen_material_sha256": "53a68c778e298c91bc9bc2518fae65ecf9fd9082373a9143bea871df9ecddead",
+  "subject_bindings": [
+    {"locator_subject_ref": "locator-subject:v1:sha256:feffa6a25be21b2b1d33b354527a04c23df721c140adde9d86bddbb9d7e4b673", "identifier_scheme": "ABN", "identifier_value": "74068758654"},
+    {"locator_subject_ref": "locator-subject:v1:sha256:3b1572b93346698c736b056b5aab8975d980ec3b0d7e74d0139e17ee162a7d21", "identifier_scheme": "ABN", "identifier_value": "37646526132"},
+    {"locator_subject_ref": "locator-subject:v1:sha256:74447923f7388e6018709179e39ea8c2b9bf1a8e47e6886875835582cc955573", "identifier_scheme": "ABN", "identifier_value": "47613674461"}
+  ],
+  "budget": {"max_physical_calls": 3, "per_subject_max_usd": "0.10", "max_new_exposure_usd": "0.30"},
+  "subject_binding_metadata": [
+    {"locator_subject_ref": "locator-subject:v1:sha256:feffa6a25be21b2b1d33b354527a04c23df721c140adde9d86bddbb9d7e4b673", "label": "Medecins Sans Frontieres Australia Limited", "subject_scope": "registered charity legal entity", "external_lookup_identifier": {"scheme": "ABN", "value": "74068758654"}},
+    {"locator_subject_ref": "locator-subject:v1:sha256:3b1572b93346698c736b056b5aab8975d980ec3b0d7e74d0139e17ee162a7d21", "label": "SUNRISE FOUNDATION LIMITED", "subject_scope": "registered charity legal entity", "external_lookup_identifier": {"scheme": "ABN", "value": "37646526132"}},
+    {"locator_subject_ref": "locator-subject:v1:sha256:74447923f7388e6018709179e39ea8c2b9bf1a8e47e6886875835582cc955573", "label": "Noongar Boodja Trust", "subject_scope": "registered charity legal entity", "external_lookup_identifier": {"scheme": "ABN", "value": "47613674461"}}
+  ],
+  "conservative_aggregate_exposure_usd": "0.40",
+  "attempt_17_unresolved_held_exposure_usd": "0.10",
+  "status": "allocated_a3_pending_non_executable",
+  "a3_requirement": "fresh_matching_structured_a3_after_data_authority_publication",
+  "legacy_opaque_authority": "history_only_non_executable",
+  "no_go_boundaries": ["no_live_a3", "no_provider_call", "no_source_acquisition", "no_production_reservation_or_accounting", "no_public_release", "no_top_100", "no_s1", "no_attempt_17_18_19_mutation_or_resumption"]
+}

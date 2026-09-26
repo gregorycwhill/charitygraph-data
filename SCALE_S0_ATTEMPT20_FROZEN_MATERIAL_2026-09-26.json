@@ -1,0 +1,36 @@
+{
+  "schema": "urn:charitygraph:s0:frozen-locator-attempt-material",
+  "version": 1,
+  "authority_id": "CG-S0-PO-ATTEMPT20-2026-09-26",
+  "attempt_id": "attempt:s0:20",
+  "run_id": "run:s0:attempt-20",
+  "builder_commit_sha": "17a8ba143358b4e25883449ddbcdcceab192977a",
+  "data_lineage_anchor": "bee0224e8ad7fa273e9633a08bc4f0ab63985c55",
+  "provider_account_project": "proj_vnAuU8uxocL0Rosg3SulgmRI",
+  "structured_authority_hash": "f813b11be265566d6bb177c0f7c94f8a090a4f2a91f9c10e3dfd80d45f469aad",
+  "frozen_material_sha256": "53a68c778e298c91bc9bc2518fae65ecf9fd9082373a9143bea871df9ecddead",
+  "scope": "bounded S0 locator discovery only",
+  "pricing": {"pricing_snapshot_id": "s0-locator-policy-usd-0.10-per-subject", "currency": "USD", "estimated_provider_cost_usd_per_subject": "0.10", "max_physical_calls": 3, "maximum_new_exposure_usd": "0.30", "attempt_17_unresolved_held_exposure_usd": "0.10", "conservative_aggregate_exposure_usd": "0.40"},
+  "provider_request_contract": {"model": "gpt-5.6-luna", "tools": [{"type": "web_search"}], "tool_choice": {"type": "web_search"}, "store": false, "include": ["web_search_call.action.sources"], "canonical_serialization": "UTF-8 JSON, sorted keys, compact separators, ensure_ascii=false"},
+  "subjects": [
+    {"order": 1, "binding": {"locator_subject_ref": "locator-subject:v1:sha256:feffa6a25be21b2b1d33b354527a04c23df721c140adde9d86bddbb9d7e4b673", "identifier_scheme": "ABN", "identifier_value": "74068758654"}, "label": "Medecins Sans Frontieres Australia Limited", "subject_scope": "registered charity legal entity", "lookup_seed": {"scheme": "ABN", "value": "74068758654"}, "query_candidates": [
+      {"index": 0, "query": "\"Medecins Sans Frontieres Australia Limited\" \"74068758654\"", "executable": true, "status": "sole_executable_candidate", "body_sha256": "9d795311b3bf9922b5c1a541bb3f0360f708c549ee2bc9fe9119065b41e495af", "canonical_body": "{\"include\":[\"web_search_call.action.sources\"],\"input\":\"\\\"Medecins Sans Frontieres Australia Limited\\\" \\\"74068758654\\\"\",\"model\":\"gpt-5.6-luna\",\"store\":false,\"tool_choice\":{\"type\":\"web_search\"},\"tools\":[{\"type\":\"web_search\"}]}"},
+      {"index": 1, "query": "\"Medecins Sans Frontieres Australia Limited\"", "executable": false, "status": "non_executable_requires_distinct_authority", "body_sha256": "448b1c79d9e53aaa51961c88eb4f187ce74be1722b14a650ac850d8377a97fdc", "canonical_body": "{\"include\":[\"web_search_call.action.sources\"],\"input\":\"\\\"Medecins Sans Frontieres Australia Limited\\\"\",\"model\":\"gpt-5.6-luna\",\"store\":false,\"tool_choice\":{\"type\":\"web_search\"},\"tools\":[{\"type\":\"web_search\"}]}"}
+    ]},
+    {"order": 2, "binding": {"locator_subject_ref": "locator-subject:v1:sha256:3b1572b93346698c736b056b5aab8975d980ec3b0d7e74d0139e17ee162a7d21", "identifier_scheme": "ABN", "identifier_value": "37646526132"}, "label": "SUNRISE FOUNDATION LIMITED", "subject_scope": "registered charity legal entity", "lookup_seed": {"scheme": "ABN", "value": "37646526132"}, "query_candidates": [
+      {"index": 0, "query": "\"SUNRISE FOUNDATION LIMITED\" \"37646526132\"", "executable": true, "status": "sole_executable_candidate", "body_sha256": "7039e374dcb2210ef00c9bfe9fcc9b116708211d6f3d8094f4785e923d58f8c6", "canonical_body": "{\"include\":[\"web_search_call.action.sources\"],\"input\":\"\\\"SUNRISE FOUNDATION LIMITED\\\" \\\"37646526132\\\"\",\"model\":\"gpt-5.6-luna\",\"store\":false,\"tool_choice\":{\"type\":\"web_search\"},\"tools\":[{\"type\":\"web_search\"}]}"},
+      {"index": 1, "query": "\"SUNRISE FOUNDATION LIMITED\"", "executable": false, "status": "non_executable_requires_distinct_authority", "body_sha256": "a1c00edc91bbf8fbdc4e9ef8f74e8bcb2b022eb11a7289cc340a7bb689a8187e", "canonical_body": "{\"include\":[\"web_search_call.action.sources\"],\"input\":\"\\\"SUNRISE FOUNDATION LIMITED\\\"\",\"model\":\"gpt-5.6-luna\",\"store\":false,\"tool_choice\":{\"type\":\"web_search\"},\"tools\":[{\"type\":\"web_search\"}]}"}
+    ]},
+    {"order": 3, "binding": {"locator_subject_ref": "locator-subject:v1:sha256:74447923f7388e6018709179e39ea8c2b9bf1a8e47e6886875835582cc955573", "identifier_scheme": "ABN", "identifier_value": "47613674461"}, "label": "Noongar Boodja Trust", "subject_scope": "registered charity legal entity", "lookup_seed": {"scheme": "ABN", "value": "47613674461"}, "query_candidates": [
+      {"index": 0, "query": "\"Noongar Boodja Trust\" \"47613674461\"", "executable": true, "status": "sole_executable_candidate", "body_sha256": "b95df8a5c4a0776d1be26d9a98398006f56a8acff1e95ee2c85a8d6af913f13c", "canonical_body": "{\"include\":[\"web_search_call.action.sources\"],\"input\":\"\\\"Noongar Boodja Trust\\\" \\\"47613674461\\\"\",\"model\":\"gpt-5.6-luna\",\"store\":false,\"tool_choice\":{\"type\":\"web_search\"},\"tools\":[{\"type\":\"web_search\"}]}"},
+      {"index": 1, "query": "\"Noongar Boodja Trust\"", "executable": false, "status": "non_executable_requires_distinct_authority", "body_sha256": "996c2d09c93940e566d60fd59846acc98b89e57ee140ed6db0fdbac5f1145368", "canonical_body": "{\"include\":[\"web_search_call.action.sources\"],\"input\":\"\\\"Noongar Boodja Trust\\\"\",\"model\":\"gpt-5.6-luna\",\"store\":false,\"tool_choice\":{\"type\":\"web_search\"},\"tools\":[{\"type\":\"web_search\"}]}"}
+    ]}
+  ],
+  "checkpoint_material": {"checkpoint_id": "checkpoint:s0-locator:f813b11be265566d6bb177c0f7c94f8a090a4f2a91f9c10e3dfd80d45f469aad", "a3_state": "pending", "reservations": 0, "send_started": 0, "provider_attempts": 0, "checkpoint_is_template_only": true, "checkpoint_hash_required_at_runtime": true},
+  "legacy_opaque_authority": "history_only_non_executable",
+  "source_acquisition": false,
+  "live_a3": false,
+  "production_reservation": false,
+  "provider_calls": 0,
+  "public_release": false
+}

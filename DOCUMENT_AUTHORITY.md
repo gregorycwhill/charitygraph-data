@@ -200,16 +200,18 @@ SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the 
 
 `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` is the canonical cross-cutting authority for semantic validity, repeatability, technical replication and reproducible replay. `SEMANTIC_RELIABILITY_BASELINE_2026-08-28.md` is reference experimental evidence subordinate to that policy; it establishes no product threshold.
 
-## Scale S0 Attempt 19 current authority
+## Scale S0 Attempt 20 current authority
 
-`SCALE_S0_ATTEMPT19_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`
-(`CG-S0-PO-ATTEMPT19-2026-09-26`) supersedes Attempt 18 as the current
-attempt-specific S0 authority. `policies/scale-s0/locator-subject-bindings-v1.yaml`
+`SCALE_S0_ATTEMPT20_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`
+(`CG-S0-PO-ATTEMPT20-2026-09-26`) is the sole current attempt-specific S0
+authority and supersedes Attempt 19 for future execution. The structured
+authority and frozen material JSON records beside it are the machine-readable
+control-plane inputs. `policies/scale-s0/locator-subject-bindings-v1.yaml`
 is the current governed subject-binding registry: locator subject refs identify
 registered charity legal entities; ABNs are explicit external lookup identifiers
-only. It allocates exactly `attempt:s0:19` / `run:s0:attempt-19`, binds Builder
-`92683f96bc5fbe50e71a82466919380b0293f108`, requires Data lineage descending
-from `3e216ee748d4a21fee791153fff308ffd368cc9f`, and is A3-pending/non-executable.
+only. It allocates exactly `attempt:s0:20` / `run:s0:attempt-20`, binds Builder
+`17a8ba143358b4e25883449ddbcdcceab192977a`, binds Data lineage anchor
+`bee0224e8ad7fa273e9633a08bc4f0ab63985c55`, and is A3-pending/non-executable.
 Attempt 18 is historical zero-crossing consumed authority and must not resume;
 Attempt 17 and its held USD 0.10 remain immutable.
 
@@ -240,7 +242,9 @@ repair is canonical may receive a new execution identity.
 `SCALE_S0_ATTEMPT18_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`
 (`CG-S0-PO-ATTEMPT18-2026-09-26`) is immutable historical Attempt-18 evidence,
 not current authority. Its zero-crossing block consumed its number; it is
-non-resumable. The current authority is the Attempt-19 authority above.
+non-resumable. `SCALE_S0_ATTEMPT19_PRODUCT_OWNER_AUTHORITY_2026-09-26.md` is
+also immutable history and is superseded for future execution. The current
+authority is the Attempt-20 authority above.
 
 `NORTH_STAR_TARGET_CARD.md` defines the active v0.2 projection vocabulary and derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. `NORTH_STAR_TARGET_CARD_V0_1.md` preserves historical numbering and meanings. A section ID is interpretable only with its projection-contract version; no ID-based migration is implied. Neither document overrides product authorities or proposes a public schema. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against the active card without silently redefining product scope. The completion ledger is a subordinate evidence inventory, not execution authority.
 
