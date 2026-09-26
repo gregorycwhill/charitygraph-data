@@ -1,6 +1,8 @@
 # Scale S0 live locator-discovery activation — 2026-09-22
 
 **Principal token:** `CG-S0-PO-LIVE-LOCATOR-2026-09-22`
+
+> **Current-control-plane addendum (2026-09-26):** This is subordinate mechanism authority only. Its ABN-valued population text is immutable compatibility evidence, not current live subject identity. Current authority is `CG-S0-PO-ATTEMPT19-2026-09-26`; governed locator subject refs and explicit ABN lookup identifiers are in `policies/scale-s0/locator-subject-bindings-v1.yaml`. Attempt 19 is allocated but A3-pending and non-executable. `reality_slice1` is deprecated non-canonical development-only code, unreachable from the current live S0 CLI/path.
 **Status:** approved additive product-owner decision; ready for publication
 **Effective scope:** one future fresh Scale S0 execution attempt only
 **Decision date:** 2026-09-22 (Australia/Sydney)
