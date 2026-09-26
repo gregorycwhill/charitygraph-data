@@ -224,6 +224,15 @@ is the discoverable current/latest history record: Attempt 9 is immutable
 zero-send blocked under Option A, and only a fresh Attempt 10 after the Builder
 repair is canonical may receive a new execution identity.
 
+`SCALE_S0_ATTEMPT18_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`
+(`CG-S0-PO-ATTEMPT18-2026-09-26`) is the current, narrow, append-only
+attempt-specific authority for exactly `attempt:s0:18` / `run:s0:attempt-18`.
+It replaces the obsolete future-Attempt-10 pointer only. It is proposed local
+material until its commit is published and merged into canonical Data `main`;
+until then it authorises no execution. It preserves immutable Attempt 17 and
+its unresolved held USD 0.10, and changes neither the S0 mandate, A1--A5,
+budgets, evidence boundary nor public-release prohibition.
+
 `NORTH_STAR_TARGET_CARD.md` defines the active v0.2 projection vocabulary and derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. `NORTH_STAR_TARGET_CARD_V0_1.md` preserves historical numbering and meanings. A section ID is interpretable only with its projection-contract version; no ID-based migration is implied. Neither document overrides product authorities or proposes a public schema. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against the active card without silently redefining product scope. The completion ledger is a subordinate evidence inventory, not execution authority.
 
 ## Semantic extraction decision propagation
