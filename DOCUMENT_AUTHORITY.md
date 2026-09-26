@@ -210,8 +210,8 @@ control-plane inputs. `policies/scale-s0/locator-subject-bindings-v1.yaml`
 is the current governed subject-binding registry: locator subject refs identify
 registered charity legal entities; ABNs are explicit external lookup identifiers
 only. It allocates exactly `attempt:s0:20` / `run:s0:attempt-20`, binds Builder
-`17a8ba143358b4e25883449ddbcdcceab192977a`, binds Data lineage anchor
-`bee0224e8ad7fa273e9633a08bc4f0ab63985c55`, and is A3-pending/non-executable.
+`e538c1eccb8da6f29cc86ab7de8782b498a428c9`, binds Data lineage anchor
+`2866fe9a33245ed3a246d2e4d6e6f43f7af33172`, and is A3-pending/non-executable.
 Attempt 18 is historical zero-crossing consumed authority and must not resume;
 Attempt 17 and its held USD 0.10 remain immutable.
 
