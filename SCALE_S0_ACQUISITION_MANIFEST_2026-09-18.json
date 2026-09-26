@@ -1,0 +1,22 @@
+{
+  "manifest_type": "scale_s0_acquisition",
+  "status": "NOT_STARTED_FACTORY_CAPABILITY_STOP",
+  "mandate_hash": "D00C4B3FEE234B96DB133C40C59D0206B00D5277F075DCF1384F9376DD74E632",
+  "subjects": [
+    "28004778081",
+    "28000030179",
+    "74068758654",
+    "37646526132",
+    "50169561394",
+    "47613674461",
+    "78053639115",
+    "61002643852"
+  ],
+  "source_universe_frozen": true,
+  "acquisition_attempts": [],
+  "successful_acquisitions": [],
+  "unavailable_or_blocked": [],
+  "technically_withheld": [],
+  "frozen_corpus": [],
+  "stop_reason": "No certified eight-subject governed ACNC/AIS acquisition-to-frozen-corpus path exists; implementation would be a prohibited live architecture repair."
+}
