@@ -27,7 +27,8 @@ prohibited.
    `attribution/provenance=required`. Missing resource-level licence metadata is
    not a local-processing veto; it remains a provider-transmission restriction.
 3. A human attestation that `Share inputs and outputs with OpenAI = Disabled`
-   authorises otherwise-valid S0 sends for less than 60 minutes only when
+   authorises otherwise-valid S0 sends for exactly 24 hours from `observed_at`
+   only when
    `attested_by=Greg`, account/project and S0 execution authority match, and the
    setting is unchanged. Expiry, observed/suspected setting change, or account/
    project change requires a fresh attestation. It is never inferred or
@@ -82,8 +83,12 @@ Concrete first-party source definitions remain immutable and use
 records are never mutated.  `discovery_signals` remains explicit nonblocking
 implementation missingness; this decision does not introduce a mapper.
 
-The existing AIS A2 local-use restriction and A3 60-minute attestation rule are
-unchanged.  Locator-search provider calls use the existing provider accounting,
+The existing AIS A2 local-use restriction and A3 identity, scope, authority,
+send-start, one-crossing, reservation, accounting, and restart controls are
+unchanged. The 2026-09-26 Product Owner decision supersedes the prior S0 A3
+60-minute duration: a valid Greg-observed disabled-setting attestation expires
+exactly 24 hours after `observed_at`, with all existing fail-closed invalidators
+remaining in force. Locator-search provider calls use the existing provider accounting,
 reservation, attestation and exactly-once controls rather than a side channel.
 This repair authorises implementation and fixture testing only: it does not
 authorise live search, website acquisition, provider inference, attestation,

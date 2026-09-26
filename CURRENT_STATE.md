@@ -364,3 +364,15 @@ provider-free material are the two `SCALE_S0_ATTEMPT20_*` records in this
 repository. `SCALE_S0_MANDATE_AUTHORISED_V2.yaml` remains the immutable broad
 S0 policy mandate; its ABN-valued `subject_ids` are population/history fields,
 not live CharityGraph subject identity.
+
+## Current amendment — 2026-09-26
+
+The Product Owner has superseded the prior S0 A3 duration rule: a factual Greg
+observation that `Share inputs and outputs with OpenAI = Disabled` is valid for
+exactly 24 hours from `observed_at`, subject to all existing fail-closed
+invalidators. Attempt 20 remains allocated, unexecuted and non-executable,
+pending final Builder/Data rebind and runtime reconciliation. No A3,
+reservation, provider send, Top-100/S1 execution or production-catalogue
+mutation is authorised by this amendment. After both policy commits merge, a
+follow-on rebind to the final canonical Builder and Data merge SHAs is required
+before any future Attempt-20 structured authority or A3 can be valid.
