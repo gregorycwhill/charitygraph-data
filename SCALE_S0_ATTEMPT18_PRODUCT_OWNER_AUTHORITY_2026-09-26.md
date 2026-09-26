@@ -2,9 +2,11 @@
 
 **Authority ID:** `CG-S0-PO-ATTEMPT18-2026-09-26`
 
-**Status:** approved, append-only product-owner authority; proposed local Data commit until published and merged into canonical Data `main`
+**Status:** historical, consumed and non-resumable. Superseded as current attempt authority by `CG-S0-PO-ATTEMPT19-2026-09-26`; retained below as Attempt-18 history.
 
-**Scope:** exactly one new Scale S0 live locator execution attempt: `attempt:s0:18` / `run:s0:attempt-18`; no other execution or product scope
+**Historical scope:** `attempt:s0:18` / `run:s0:attempt-18`; no other execution or product scope
+
+> **Supersession note (2026-09-26):** Attempt 18 was blocked with zero provider crossings, zero reservations and zero new provider exposure. Its number remains consumed. It is obsolete and must not be resumed, because of that terminal zero-crossing block and the Builder identity change. This note does not rewrite the historical record below.
 
 **Authority precedence:** this narrow, attempt-specific authority is subordinate to `SCALE_S0_AUTHORISATION_DECISION_2026-09-18.md`, `SCALE_S0_MANDATE_AUTHORISED_V2.yaml`, `SCALE_S0_PRODUCT_OWNER_AUTHORISATIONS_2026-09-22.md`, and `SCALE_S0_LIVE_LOCATOR_ACTIVATION_2026-09-22.md`. It does not modify those authorities except to supply the expressly approved fresh Attempt 18 identity, cohort, maximum new exposure and project binding below.
 
@@ -36,4 +38,4 @@ This authority does not authorise source acquisition, semantic extraction, promo
 
 ## Publication and execution boundary
 
-This record is proposed local material while its containing commit is not on canonical Data `main`. It is intentionally non-executable before publication and merge. Publication/merge alone does not authorise a send: fresh human A3 and every existing preflight, rights, packet, budget, reservation, exactly-once and halt control remain required.
+At its historical recording time this record was pending publication; it never created execution authority. It is now superseded, consumed and non-resumable. Publication/merge alone would never have authorised a send: fresh human A3 and every existing preflight, rights, packet, budget, reservation, exactly-once and halt control remained required.

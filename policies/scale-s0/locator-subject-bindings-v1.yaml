@@ -1,0 +1,34 @@
+schema_id: charitygraph.scale-s0.locator-subject-bindings
+schema_version: "1"
+status: canonical-current-control-plane
+authority_id: CG-S0-PO-ATTEMPT19-2026-09-26
+subject_scope: registered charity legal entity
+identity_rule: >-
+  locator_subject_ref is the governed CharityGraph subject identity. An external
+  identifier is a lookup seed only and is never a subject, subject reference,
+  primary key, or universal identifier.
+legacy_compatibility:
+  historical_abn_valued_subject_fields: immutable historical evidence only
+  future_live_authority: MUST load this governed binding record and MUST NOT load legacy subject_ids
+bindings:
+  - locator_subject_ref: locator-subject:v1:sha256:feffa6a25be21b2b1d33b354527a04c23df721c140adde9d86bddbb9d7e4b673
+    label: Medecins Sans Frontieres Australia Limited
+    subject_scope: registered charity legal entity
+    external_identifiers:
+      - scheme: ABN
+        value: "74068758654"
+    ranking_evidence: rankings/acnc-2024-ais-donation-ranking-top10000.json#ABN-74068758654
+  - locator_subject_ref: locator-subject:v1:sha256:3b1572b93346698c736b056b5aab8975d980ec3b0d7e74d0139e17ee162a7d21
+    label: SUNRISE FOUNDATION LIMITED
+    subject_scope: registered charity legal entity
+    external_identifiers:
+      - scheme: ABN
+        value: "37646526132"
+    ranking_evidence: rankings/acnc-2024-ais-donation-ranking-top10000.json#ABN-37646526132
+  - locator_subject_ref: locator-subject:v1:sha256:74447923f7388e6018709179e39ea8c2b9bf1a8e47e6886875835582cc955573
+    label: Noongar Boodja Trust
+    subject_scope: registered charity legal entity
+    external_identifiers:
+      - scheme: ABN
+        value: "47613674461"
+    ranking_evidence: rankings/acnc-2024-ais-donation-ranking-top10000.json#ABN-47613674461
