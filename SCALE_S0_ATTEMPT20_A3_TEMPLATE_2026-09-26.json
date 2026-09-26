@@ -14,8 +14,8 @@
   "attested_by": "Greg",
   "setting_name": "Share inputs and outputs with OpenAI",
   "observed_value": "Disabled",
-  "observed_at": "<timezone-aware UTC timestamp, less than 60 minutes old at each send boundary>",
-  "valid_until": "<observed_at plus 60 minutes>",
+  "observed_at": "<timezone-aware UTC timestamp, no more than 24 hours old at each send boundary>",
+  "valid_until": "<observed_at plus 24 hours>",
   "required_runtime_state": {"a3_state": "fresh_matching_structured_a3", "reservations": 0, "provider_attempts": 0},
   "statement": "I attest that Share inputs and outputs with OpenAI = Disabled for Attempt 20, the exact Builder SHA above, the eventual canonical Data merge SHA above, this authority hash, this frozen-material hash, and provider project proj_vnAuU8uxocL0Rosg3SulgmRI."
 }

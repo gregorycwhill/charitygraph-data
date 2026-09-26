@@ -11,6 +11,18 @@ This record supersedes Attempt 19 only as the current future-execution authority
 Attempts 17, 18 and 19 remain immutable history; Attempt 19 is superseded and
 must not be reused or resumed. The legacy opaque authority is history-only.
 
+## Current A3 duration amendment — 2026-09-26
+
+The Product Owner has decided that a Greg-observed
+`Share inputs and outputs with OpenAI = Disabled` attestation is valid for
+exactly 24 hours from `observed_at` at each send boundary. This supersedes the
+prior 60-minute S0 duration for future sends only. All existing fail-closed
+identity, account/project, execution-authority, structured-authority and
+frozen-material binding, setting-change, explicit-invalidation, clock-anomaly,
+expiry, reservation, accounting, send-start, one-crossing and restart controls
+remain unchanged. This template is not an attestation and creates no execution
+authority by itself.
+
 ## Governed bindings
 
 The ordered, exact binding set is in
@@ -60,8 +72,8 @@ future canonical Data merge SHA is known. The A3 must bind Attempt 20, the final
 Builder SHA `17a8ba143358b4e25883449ddbcdcceab192977a`, provider project
 `proj_vnAuU8uxocL0Rosg3SulgmRI`, the eventual canonical Data merge SHA and the
 runtime checkpoint/frozen-material hashes; it must observe `Share inputs and
-outputs with OpenAI = Disabled`, be recorded by Greg, and be less than 60
-minutes old at every send boundary.
+outputs with OpenAI = Disabled`, be recorded by Greg, and be no more than 24
+hours old at every send boundary.
 
 The exact non-attestation template is
 [`SCALE_S0_ATTEMPT20_A3_TEMPLATE_2026-09-26.json`](SCALE_S0_ATTEMPT20_A3_TEMPLATE_2026-09-26.json).
