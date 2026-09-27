@@ -1,0 +1,255 @@
+{
+  "schema": "urn:charitygraph:s0:identity-lineage",
+  "version": 1,
+  "data_lineage_anchor": "0935d7e470b3702323107ab0c8d56b3d977d881f",
+  "hash_rule": "JSON canonical sorted compact UTF-8; other text UTF-8 with LF newlines",
+  "packages": {
+    "current": {
+      "bundle": "SCALE_S0_POLICY_BUNDLE_BALANCED_V2.yaml",
+      "production": "SCALE_S0_MANDATE_AUTHORISED_V3.yaml",
+      "shadow": "SCALE_S0_SHADOW_MANDATE_V3.yaml"
+    },
+    "historical_attempt8_17": {
+      "bundle": "SCALE_S0_POLICY_BUNDLE_BALANCED_V1.yaml",
+      "production": "SCALE_S0_MANDATE_AUTHORISED_V2.yaml",
+      "shadow": "SCALE_S0_SHADOW_MANDATE_V2.yaml"
+    }
+  },
+  "historical_runtime_mandate": {
+    "mandate_id": "scale-s0-shadow-balanced-v2",
+    "sha256": "6050d7dd652385dbe1f84136110d06e3d1f396b63bf4ef4de9c55e83b0fd6e33",
+    "source_commit": "0f73f399b0d5feeff75b0716fc31da07866b6d14"
+  },
+  "prior_conflicting_revisions": [
+    {
+      "commit": "2d42fbafdf4131e76a1c90792921572eb1b4bb7c",
+      "path": "policies/scale-s0/rights-transmission-v2.yaml",
+      "status": "historical_evidence_only"
+    },
+    {
+      "commit": "f4da30d0410e107351f215ea573abdcce264e6f2",
+      "path": "policies/scale-s0/population-v1.yaml",
+      "status": "historical_evidence_only"
+    },
+    {
+      "commit": "0935d7e470b3702323107ab0c8d56b3d977d881f",
+      "path": "policies/scale-s0/locator-subject-bindings-v1.yaml",
+      "status": "historical_evidence_only"
+    },
+    {
+      "commit": "0935d7e470b3702323107ab0c8d56b3d977d881f",
+      "path": "SCALE_S0_POLICY_BUNDLE_BALANCED_V1.yaml",
+      "status": "historical_evidence_only"
+    },
+    {
+      "commit": "0935d7e470b3702323107ab0c8d56b3d977d881f",
+      "path": "SCALE_S0_SHADOW_MANDATE_V2.yaml",
+      "status": "historical_evidence_only"
+    },
+    {
+      "commit": "0935d7e470b3702323107ab0c8d56b3d977d881f",
+      "path": "SCALE_S0_MANDATE_AUTHORISED_V2.yaml",
+      "status": "historical_evidence_only"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "SCALE_S0_MANDATE_AUTHORISED_V2.yaml",
+      "kind": "mandate",
+      "identity": "scale-s0-shadow-balanced-v2",
+      "version": "2",
+      "sha256": "d00c4b3fee234b96db133c40c59d0206b00d5277f075dcf1384f9376dd74e632",
+      "role": "historical"
+    },
+    {
+      "path": "SCALE_S0_MANDATE_AUTHORISED_V3.yaml",
+      "supersedes_path": "SCALE_S0_MANDATE_AUTHORISED_V2.yaml",
+      "kind": "mandate",
+      "identity": "scale-s0-authorised-balanced-v3",
+      "version": "3",
+      "sha256": "2e01010ba6ccd37e2bc40b83ed1447bebde5ab05f0e56258af03721816926be5",
+      "role": "current"
+    },
+    {
+      "path": "SCALE_S0_POLICY_BUNDLE_BALANCED_V1.yaml",
+      "kind": "bundle",
+      "identity": "scale-s0-policy-bundle-balanced-v1",
+      "version": "1",
+      "sha256": "d1b889ed2bb9c5f0f3813470d7be62e1b96cd44e87cb879ca438dc696ae344b1",
+      "role": "historical"
+    },
+    {
+      "path": "SCALE_S0_POLICY_BUNDLE_BALANCED_V2.yaml",
+      "supersedes_path": "SCALE_S0_POLICY_BUNDLE_BALANCED_V1.yaml",
+      "kind": "bundle",
+      "identity": "scale-s0-policy-bundle-balanced-v2",
+      "version": "2",
+      "sha256": "24f54c087e98a32ba88d04a2be16ac1ca19f557e4d6d0ef016f144096f13728e",
+      "role": "current"
+    },
+    {
+      "path": "SCALE_S0_SHADOW_MANDATE_V2.yaml",
+      "kind": "mandate",
+      "identity": "scale-s0-shadow-balanced-v2",
+      "version": "2",
+      "sha256": "9e5f41dcc74d95f1d939927c1710949f416495e850a37098aa76f99c2811a386",
+      "role": "historical_evidence_only"
+    },
+    {
+      "path": "SCALE_S0_SHADOW_MANDATE_V3.yaml",
+      "supersedes_path": "SCALE_S0_SHADOW_MANDATE_V2.yaml",
+      "kind": "mandate",
+      "identity": "scale-s0-shadow-balanced-v3",
+      "version": "3",
+      "sha256": "c3d98641cba3989a7facee4fef89045238d5d221726757d0fe5d70acaa6fc962",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/economics-reservation-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-reservation-balanced-v1",
+      "version": "1",
+      "sha256": "ac188f09a03161909f5a9ebd1706aa3b82b517a3264af9a796bd23c7fd303c62",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/entity-group-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-entity-group-v1",
+      "version": "1",
+      "sha256": "ef50d664b163a3a78a6b4e641a90a2fd328f75111b6415d57942d5726cdec564",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/freshness-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-freshness-current-state-v1",
+      "version": "1",
+      "sha256": "8a782b08b9d89d962dda742cf74747ba76197f6608ece7e0b43bb3b7163dae79",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/halt-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-halt-balanced-v1",
+      "version": "1",
+      "sha256": "fd42d880b4c84f93ea9ba8f7c347c97baded322dd137c95e9d1df3ae4cc5bb7a",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/locator-subject-bindings-v1.yaml",
+      "kind": "registry",
+      "identity": "policies/scale-s0/locator-subject-bindings-v1.yaml",
+      "version": "1",
+      "sha256": "247c340a04e44fed11b9382eb8ef4e1d7f1c31aa2fd23cdfd3a259f6d079c3de",
+      "role": "historical"
+    },
+    {
+      "path": "policies/scale-s0/locator-subject-bindings-v2.yaml",
+      "supersedes_path": "policies/scale-s0/locator-subject-bindings-v1.yaml",
+      "kind": "registry",
+      "identity": "policies/scale-s0/locator-subject-bindings-v2.yaml",
+      "version": "2",
+      "sha256": "fc20ed625f216ed1a9f7bc421ceeb1efa6af0306153c8010e80d3c9181b0b185",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/output-boundary-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-output-public-boundary-v1",
+      "version": "1",
+      "sha256": "e54891e7411f17706fc3d472c8979ca7eab11761d299e6b6a9742dd10c484997",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/physical-bundling-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-physical-bundling-v1",
+      "version": "1",
+      "sha256": "d954576f25de963aeb0c03dea4c9b282633b4f4273b4a94cb563b483406fb56f",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/population-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-population-balanced-v1",
+      "version": "1",
+      "sha256": "45110269021c495b4970f310d093297a11413dd36f5f0b03b291ac6883f62d8d",
+      "role": "historical"
+    },
+    {
+      "path": "policies/scale-s0/population-v2.yaml",
+      "supersedes_path": "policies/scale-s0/population-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-population-balanced-v2",
+      "version": "2",
+      "sha256": "36b3cd4687b8c30498772c04af9dd53709b17759607b936ba96e26e93f8a7e23",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/promotion-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-hybrid-promotion-v1",
+      "version": "1",
+      "sha256": "c62ca8b9426bef5953033148e87e0ccbed78a025a4c88b4d9c8299c327a1e298",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/review-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-review-balanced-v1",
+      "version": "1",
+      "sha256": "1fdf29ec6826734d7150a3b54784f20333a639e56aa8158f500c3117ebe658f7",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/rights-transmission-v2.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-rights-transmission-boundary-v2",
+      "version": "2",
+      "sha256": "0054ffbd3ea00a36d84278957034bd4cff0993ce239ed3d01c1f5ce58c530ff1",
+      "role": "historical"
+    },
+    {
+      "path": "policies/scale-s0/rights-transmission-v3.yaml",
+      "supersedes_path": "policies/scale-s0/rights-transmission-v2.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-rights-transmission-boundary-v3",
+      "version": "3",
+      "sha256": "6a0400379576cc72608a703aabb6fcc567a6dca88650ecb5d518098a74e41ee4",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/routing-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-routing-balanced-v1",
+      "version": "1",
+      "sha256": "d4b2a1ef88198b10a6e528328ad28219064c3549e89bebd45592d027c7907d50",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/sampling-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-sampling-balanced-v1",
+      "version": "1",
+      "sha256": "5e8752120980f84cf24f6bc686309bbebb2541dfb8a157f79ede71e0064b9563",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/source-universe-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-source-universe-balanced-v1",
+      "version": "1",
+      "sha256": "549ca551cf749bcb0dfe277b40adc1736b6efd3f36f72e5570453494aea660b3",
+      "role": "current"
+    },
+    {
+      "path": "policies/scale-s0/specialist-source-v1.yaml",
+      "kind": "policy",
+      "identity": "scale-s0-specialist-triggers-v1",
+      "version": "1",
+      "sha256": "b009c485cbd7d243a08a908afac539eb296ef0d46e3aa40edb47c61029143764",
+      "role": "current"
+    }
+  ]
+}
