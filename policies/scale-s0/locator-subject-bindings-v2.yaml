@@ -1,7 +1,7 @@
 schema_id: charitygraph.scale-s0.locator-subject-bindings
 schema_version: "1"
 status: canonical-current-control-plane
-authority_id: CG-S0-PO-ATTEMPT19-2026-09-26
+authority_id: CG-S0-PO-ATTEMPT20-2026-09-26
 subject_scope: registered charity legal entity
 identity_rule: >-
   locator_subject_ref is the governed CharityGraph subject identity. An external

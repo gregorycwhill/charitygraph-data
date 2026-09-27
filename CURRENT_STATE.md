@@ -1,6 +1,8 @@
 # CharityGraph Current State
 
-> **Current S0 control-plane override (26 September 2026):** `CG-S0-PO-ATTEMPT20-2026-09-26` is the sole current allocated authority. It allocates `attempt:s0:20` / `run:s0:attempt-20` for three governed locator subject bindings (registered charity legal entities) with explicit external ABN lookup identifiers; ABNs are never subjects. It binds Builder `e538c1eccb8da6f29cc86ab7de8782b498a428c9`, Data lineage anchor `2866fe9a33245ed3a246d2e4d6e6f43f7af33172`, USD 0.30 maximum new exposure / USD 0.40 conservative aggregate exposure, and project `proj_vnAuU8uxocL0Rosg3SulgmRI`. It is allocated, unexecuted, A3-pending and non-executable until canonical Data publication, production reconciliation/checkpoint completion and a fresh matching A3; the eventual canonical Data merge SHA is intentionally not known in this pre-publication record. Attempt 17 remains immutable with USD 0.10 held; Attempts 18 and 19 are immutable historical, consumed/non-resumable or superseded as applicable. See `SCALE_S0_ATTEMPT20_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`.
+> **Identity lineage repair (27 September 2026):** Current loading uses the [pinned successor package](SCALE_S0_IDENTITY_LINEAGE_V1.json). Attempt 20 binds only `scale-s0-authorised-balanced-v3`. Historical Attempts 8/17/18/19 retain their original evidence. See [repair and supersession](SCALE_S0_IDENTITY_LINEAGE_REPAIR_2026-09-27.md).
+
+> **Current S0 control-plane override (26 September 2026):** `CG-S0-PO-ATTEMPT20-2026-09-26` is the sole current allocated authority. It allocates `attempt:s0:20` / `run:s0:attempt-20` for three governed locator subject bindings (registered charity legal entities) with explicit external ABN lookup identifiers; ABNs are never subjects. It binds Builder `e538c1eccb8da6f29cc86ab7de8782b498a428c9`, Data lineage anchor `0935d7e470b3702323107ab0c8d56b3d977d881f`, USD 0.30 maximum new exposure / USD 0.40 conservative aggregate exposure, and project `proj_vnAuU8uxocL0Rosg3SulgmRI`. It is allocated, unexecuted, A3-pending and non-executable until canonical Data publication, production reconciliation/checkpoint completion and a fresh matching A3; the eventual canonical Data merge SHA is intentionally not known in this pre-publication record. Attempt 17 remains immutable with USD 0.10 held; Attempts 18 and 19 are immutable historical, consumed/non-resumable or superseded as applicable. See `SCALE_S0_ATTEMPT20_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`.
 
 **Status date:** 18 September 2026
 
@@ -361,7 +363,7 @@ numbers. Attempt 19 is immutable historical authority, superseded for future
 execution. Attempt 20 is the allocated current authority and remains A3-pending;
 it does not itself execute S0 or create A3. Its structured authority and
 provider-free material are the two `SCALE_S0_ATTEMPT20_*` records in this
-repository. `SCALE_S0_MANDATE_AUTHORISED_V2.yaml` remains the immutable broad
+repository. `SCALE_S0_MANDATE_AUTHORISED_V3.yaml` is the current immutable broad
 S0 policy mandate; its ABN-valued `subject_ids` are population/history fields,
 not live CharityGraph subject identity.
 

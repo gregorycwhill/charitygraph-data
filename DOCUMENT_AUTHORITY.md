@@ -206,14 +206,21 @@ SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the 
 (`CG-S0-PO-ATTEMPT20-2026-09-26`) is the sole current attempt-specific S0
 authority and supersedes Attempt 19 for future execution. The structured
 authority and frozen material JSON records beside it are the machine-readable
-control-plane inputs. `policies/scale-s0/locator-subject-bindings-v1.yaml`
+control-plane inputs. `policies/scale-s0/locator-subject-bindings-v2.yaml`
 is the current governed subject-binding registry: locator subject refs identify
 registered charity legal entities; ABNs are explicit external lookup identifiers
 only. It allocates exactly `attempt:s0:20` / `run:s0:attempt-20`, binds Builder
 `e538c1eccb8da6f29cc86ab7de8782b498a428c9`, binds Data lineage anchor
-`2866fe9a33245ed3a246d2e4d6e6f43f7af33172`, and is A3-pending/non-executable.
+`0935d7e470b3702323107ab0c8d56b3d977d881f`, and is A3-pending/non-executable.
 Attempt 18 is historical zero-crossing consumed authority and must not resume;
 Attempt 17 and its held USD 0.10 remain immutable.
+
+The [identity repair](SCALE_S0_IDENTITY_LINEAGE_REPAIR_2026-09-27.md) and
+[machine-readable lineage](SCALE_S0_IDENTITY_LINEAGE_V1.json) supersede the
+package references above for current loading. The committed Attempt-20
+structured authority is authoritative for the repaired Builder binding and
+pre-merge Data lineage anchor. Only `scale-s0-authorised-balanced-v3` is its
+executable mandate; historical v1/v2 artifacts are retained for verification.
 
 ## North Star planning anchor
 

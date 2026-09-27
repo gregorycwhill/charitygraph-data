@@ -5,7 +5,7 @@
   "attempt_id": "attempt:s0:20",
   "run_id": "run:s0:attempt-20",
   "builder_commit_sha": "e538c1eccb8da6f29cc86ab7de8782b498a428c9",
-  "data_lineage_anchor": "2866fe9a33245ed3a246d2e4d6e6f43f7af33172",
+  "data_lineage_anchor": "0935d7e470b3702323107ab0c8d56b3d977d881f",
   "eventual_canonical_data_merge_sha": "<fill only after this authority commit is merged canonically>",
   "eventual_canonical_data_merge_sha256": "<same 40-hex canonical Data merge SHA; recompute structured authority hash>",
   "provider_account_project": "proj_vnAuU8uxocL0Rosg3SulgmRI",
@@ -16,6 +16,14 @@
   "observed_value": "<observed value recorded by Greg at A3 creation/send time>",
   "observed_at": "<timezone-aware UTC timestamp, no more than 24 hours old at each send boundary>",
   "valid_until": "<observed_at plus 24 hours>",
-  "required_runtime_state": {"a3_state": "fresh_matching_structured_a3", "reservations": 0, "provider_attempts": 0},
-  "statement": "I attest that Share inputs and outputs with OpenAI = Disabled for Attempt 20, the exact Builder SHA above, the eventual canonical Data merge SHA above, this authority hash, this frozen-material hash, and provider project proj_vnAuU8uxocL0Rosg3SulgmRI."
+  "required_runtime_state": {
+    "a3_state": "fresh_matching_structured_a3",
+    "reservations": 0,
+    "provider_attempts": 0
+  },
+  "statement": "I attest that Share inputs and outputs with OpenAI = Disabled for Attempt 20, the exact Builder SHA above, the eventual canonical Data merge SHA above, this authority hash, this frozen-material hash, and provider project proj_vnAuU8uxocL0Rosg3SulgmRI.",
+  "mandate_id": "scale-s0-authorised-balanced-v3",
+  "mandate_hash": "e7d8525b13d5ede15a4415a14e79cb0d2576f7a271c01c84f528cd1a60fdba5c",
+  "aggregate_policy_bundle_hash": "4E7DB16BFB12765C6F1BBC52E3A41D30FAADBA8645D15CBAF5D160825CDA3691",
+  "population_policy_hash": "36B3CD4687B8C30498772C04AF9DD53709B17759607B936BA96E26E93F8A7E23"
 }

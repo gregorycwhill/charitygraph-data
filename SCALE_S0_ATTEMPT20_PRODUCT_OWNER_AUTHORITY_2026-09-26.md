@@ -4,7 +4,7 @@
 **Status:** allocated, A3-pending and non-executable<br>
 **Attempt/run:** `attempt:s0:20` / `run:s0:attempt-20`<br>
 **Builder binding:** `e538c1eccb8da6f29cc86ab7de8782b498a428c9`<br>
-**Data lineage anchor:** `2866fe9a33245ed3a246d2e4d6e6f43f7af33172`<br>
+**Data lineage anchor:** `0935d7e470b3702323107ab0c8d56b3d977d881f`<br>
 **Provider project:** `proj_vnAuU8uxocL0Rosg3SulgmRI`
 
 This record supersedes Attempt 19 only as the current future-execution authority.
@@ -26,7 +26,7 @@ authority by itself.
 ## Governed bindings
 
 The ordered, exact binding set is in
-[`policies/scale-s0/locator-subject-bindings-v1.yaml`](policies/scale-s0/locator-subject-bindings-v1.yaml)
+[`policies/scale-s0/locator-subject-bindings-v2.yaml`](policies/scale-s0/locator-subject-bindings-v2.yaml)
 and the Builder-compatible structured record is
 [`SCALE_S0_ATTEMPT20_STRUCTURED_AUTHORITY_2026-09-26.json`](SCALE_S0_ATTEMPT20_STRUCTURED_AUTHORITY_2026-09-26.json).
 
@@ -53,7 +53,7 @@ provider-free material, including canonical request bodies and hashes, is
 [`SCALE_S0_ATTEMPT20_FROZEN_MATERIAL_2026-09-26.json`](SCALE_S0_ATTEMPT20_FROZEN_MATERIAL_2026-09-26.json).
 
 **Structured authority material hash:**
-`dbde4863e14e2d64745ad0a2bb56b1ab100a57212873941c8e0c0a1c0a571413`<br>
+`fe537fd681b339281560035eadab27474b5fbb706d08b3dc180bfff703cd85fb`<br>
 **Frozen material hash:**
 `53a68c778e298c91bc9bc2518fae65ecf9fd9082373a9143bea871df9ecddead`
 
@@ -80,3 +80,15 @@ The exact non-attestation template is
 
 `reality_slice1` remains development-only, deprecated and unreachable from the
 current live S0 path.
+
+## Immutable identity repair
+
+The approved executable successor is `scale-s0-authorised-balanced-v3`.
+`scale-s0-shadow-balanced-v3` is corresponding non-executable shadow material.
+[S0 identity lineage](SCALE_S0_IDENTITY_LINEAGE_V1.json) pins the current
+bundle-v2, population-v2, rights-transmission-v3 and binding-registry-v2,
+and preserves the original historical package for read-only verification.
+The committed Data anchor is the pre-merge parent; runtime derives the final
+canonical Data merge binding and recomputes authority/checkpoint hashes.
+The Builder binding identifies the compatibility repair implementation.
+The frozen-query digest and all request bodies are unchanged.
