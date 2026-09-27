@@ -3,8 +3,8 @@
 **Authority ID:** `CG-S0-PO-ATTEMPT20-2026-09-26`<br>
 **Status:** allocated, A3-pending and non-executable<br>
 **Attempt/run:** `attempt:s0:20` / `run:s0:attempt-20`<br>
-**Builder binding:** `17a8ba143358b4e25883449ddbcdcceab192977a`<br>
-**Data lineage anchor:** `bee0224e8ad7fa273e9633a08bc4f0ab63985c55`<br>
+**Builder binding:** `e538c1eccb8da6f29cc86ab7de8782b498a428c9`<br>
+**Data lineage anchor:** `2866fe9a33245ed3a246d2e4d6e6f43f7af33172`<br>
 **Provider project:** `proj_vnAuU8uxocL0Rosg3SulgmRI`
 
 This record supersedes Attempt 19 only as the current future-execution authority.
@@ -53,7 +53,7 @@ provider-free material, including canonical request bodies and hashes, is
 [`SCALE_S0_ATTEMPT20_FROZEN_MATERIAL_2026-09-26.json`](SCALE_S0_ATTEMPT20_FROZEN_MATERIAL_2026-09-26.json).
 
 **Structured authority material hash:**
-`f813b11be265566d6bb177c0f7c94f8a090a4f2a91f9c10e3dfd80d45f469aad`<br>
+`dbde4863e14e2d64745ad0a2bb56b1ab100a57212873941c8e0c0a1c0a571413`<br>
 **Frozen material hash:**
 `53a68c778e298c91bc9bc2518fae65ecf9fd9082373a9143bea871df9ecddead`
 
@@ -69,7 +69,7 @@ call, source acquisition, production accounting state, candidate, promotion,
 public release, Top-100 authority or S1 authority. A fresh matching structured
 A3 is required after this authority is published on canonical Data and after a
 future canonical Data merge SHA is known. The A3 must bind Attempt 20, the final
-Builder SHA `17a8ba143358b4e25883449ddbcdcceab192977a`, provider project
+Builder SHA `e538c1eccb8da6f29cc86ab7de8782b498a428c9`, provider project
 `proj_vnAuU8uxocL0Rosg3SulgmRI`, the eventual canonical Data merge SHA and the
 runtime checkpoint/frozen-material hashes; it must observe `Share inputs and
 outputs with OpenAI = Disabled`, be recorded by Greg, and be no more than 24
