@@ -7,6 +7,8 @@ Read [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) before changing any cross-pr
 
 CharityGraph Data is the GitHub-visible home for shared product memory and public data contracts. It is a sibling of Builder and Viewer, not the parent product.
 
+Agents doing Builder implementation work must ground in [NORTH_STAR_TARGET_CARD.md](NORTH_STAR_TARGET_CARD.md) and Builder's [BUILDER_MACHINERY.md](https://github.com/gregorycwhill/charitygraph/blob/main/BUILDER_MACHINERY.md) before proposing a new product path.
+
 For cross-product work, read and maintain the canonical v2.0-draft set:
 
 - [PRODUCT.md](PRODUCT.md)
