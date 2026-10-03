@@ -203,6 +203,8 @@ SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the 
 
 ## Scale S0 Attempt 20 current authority
 
+> **Superseded by Attempt 21 on 3 October 2026.** `SCALE_S0_ATTEMPT21_PRODUCT_OWNER_AUTHORITY_2026-10-03.md` (`CG-S0-PO-ATTEMPT21-2026-10-03`) is the sole current attempt-specific S0 authority. It allocates `attempt:s0:21` / `run:s0:attempt-21`, binds Builder `228066e00bc7dec07a00ddcd45fed07372f0bda7` and Data lineage anchor `e6b85e810847c0634e2936f8d5d139fd6ec35603`, and is A3-pending/non-executable. Attempt 20 remains immutable historical evidence and is non-reusable; this replacement creates neither an A3 nor a provider crossing.
+
 `SCALE_S0_ATTEMPT20_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`
 (`CG-S0-PO-ATTEMPT20-2026-09-26`) is the sole current attempt-specific S0
 authority and supersedes Attempt 19 for future execution. The structured

@@ -1,5 +1,7 @@
 # CharityGraph Roadmap
 
+**S0 control-plane status (3 October 2026):** Attempt 21 (`CG-S0-PO-ATTEMPT21-2026-10-03`) is the current allocated authority, A3-pending and non-executable. Attempt 20 is immutable superseded history and cannot be resumed. This authorises no provider crossing, source acquisition, reservation, Top-100, S1, or public release.
+
 **Status:** Canonical product/engineering sequence, version 2.3-draft
 
 ## Outcome
