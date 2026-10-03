@@ -1,4 +1,4 @@
-﻿# CharityGraph Current State
+# CharityGraph Current State
 
 > **Current S0 control-plane override (3 October 2026):** `CG-S0-PO-ATTEMPT21-2026-10-03` is the sole current allocated authority: `attempt:s0:21` / `run:s0:attempt-21`, Builder `228066e00bc7dec07a00ddcd45fed07372f0bda7`, and pre-publication Data lineage anchor `e6b85e810847c0634e2936f8d5d139fd6ec35603`. It is A3-pending and non-executable. Attempt 20 is immutable, superseded, non-reusable history with zero crossings, reservations, or new exposure. The three governed subjects, USD 0.30 maximum new / USD 0.40 conservative aggregate exposure, Attempt-17 held USD 0.10, and provider project remain unchanged. See `SCALE_S0_ATTEMPT21_PRODUCT_OWNER_AUTHORITY_2026-10-03.md`.
 
@@ -53,21 +53,21 @@ The closeout update below governs current status. Earlier Phase 6 paragraphs in 
 snapshot are retained as point-in-time records and are superseded where they conflict
 with the final closeout.
 
-## Current product-value context update â€” 14 September 2026
+## Current product-value context update — 14 September 2026
 
-**Later adjudication update â€” 14 September 2026:** The candidate-generation snapshot immediately below is historical and has been superseded by the [proposition-level adjudication record](docs/history/product-value-context-adjudication-2026-09-14.md). Greg adjudicated the immutable 118-candidate inventory: 86 `ACCEPT`, 24 `REJECT_MISSINGNESS`, and 8 `ACCEPT_MINOR_CORRECTION`. The approved corrections produced 20 atoms. The private Builder namespace contains 106 proposition items and 105 scoped `not_processed` coverage states (211 items total), with no unresolved candidates and no canonical/public promotions. All eight subjects meet the exact `DETERMINISTIC_CONTEXT_READY_FOR_SEMANTIC_EXECUTION` threshold; this is not a finding of final integrated-context sufficiency. The five requests remain byte-frozen and `PREPARED_NOT_SENT`; the live provider gate remains `AWAITING_FRESH_OWNER_ATTESTATION`. This work made zero provider calls and acquired zero sources. At that 14 September 2026 snapshot, Phase 5 Top-100 was described as active; this was superseded on 15 September 2026 by Phase 5 North Star Completion; product-value projection review remains downstream of the bounded experiments.
+**Later adjudication update — 14 September 2026:** The candidate-generation snapshot immediately below is historical and has been superseded by the [proposition-level adjudication record](docs/history/product-value-context-adjudication-2026-09-14.md). Greg adjudicated the immutable 118-candidate inventory: 86 `ACCEPT`, 24 `REJECT_MISSINGNESS`, and 8 `ACCEPT_MINOR_CORRECTION`. The approved corrections produced 20 atoms. The private Builder namespace contains 106 proposition items and 105 scoped `not_processed` coverage states (211 items total), with no unresolved candidates and no canonical/public promotions. All eight subjects meet the exact `DETERMINISTIC_CONTEXT_READY_FOR_SEMANTIC_EXECUTION` threshold; this is not a finding of final integrated-context sufficiency. The five requests remain byte-frozen and `PREPARED_NOT_SENT`; the live provider gate remains `AWAITING_FRESH_OWNER_ATTESTATION`. This work made zero provider calls and acquired zero sources. At that 14 September 2026 snapshot, Phase 5 Top-100 was described as active; this was superseded on 15 September 2026 by Phase 5 North Star Completion; product-value projection review remains downstream of the bounded experiments.
 
 At the context-generation snapshot, after the baseline lock, Builder had locally extracted 118 deterministic field-level I/P/A candidates from the eight already-retained ACNC AIS records. The private adjudication packet and offline candidate-only preview from that point in time are recorded in the [deterministic context history](docs/history/product-value-deterministic-context-2026-09-14.md); its zero-governed-item and unadjudicated-candidate statements are historical and are superseded by the later adjudication update above. The preview's `not_processed` labels described only that extraction pass; no source silence or substantive absence was inferred. No provider call, new source acquisition, semantic request, promotion, public-contract change, or Viewer change occurred at that snapshot. The source-only baseline lock remained unchanged and the five prepared requests remained byte-frozen and `PREPARED_NOT_SENT`. At that historical snapshot, the broader Phase 5 Top-100 objective was described as active; product-value projection review remains downstream of adjudication and the bounded experiments. The fixed Inspect sufficiency rule and additional Outcomes/Commitments requirement for the five semantic subjects are unchanged.
 
-## Current closeout update â€” 14 September 2026
+## Current closeout update — 14 September 2026
 
 The independent human review of Outcomes V6 is complete: World Vision Australia 2 ACCEPT / PASS; Bush Heritage Australia 10 ACCEPT / PASS. Outcomes advances with a bounded representation fix. The six-subject/four-of-six quantitative usefulness denominator is uncomputable after rights and transport attrition left two independently reviewable subjects; the quantitative gate was neither passed nor redefined. Commitments advances with a bounded representation fix (14 ACCEPT, 3 minor corrections, 1 reject; Greenpeace repeat stable at analyst-answer level). Capacity retains `CONFIRMATION_NOT_EXECUTED_INSUFFICIENT_AUTHORIZED_EVIDENCE` / `REPEAT_AFTER_SEMANTIC_FIX` and is deferred unresolved. Phase 6 is complete; see the [final closeout record](docs/history/phase6-closeout-2026-09-14.md).
 
 The model-assisted source-only baseline was accepted by Greg and locked before the later bounded deterministic context generation; the five-request packet is prepared offline only. At that earlier point, candidate generation had not started. The later context pass did not execute a semantic request and did not resolve the provider, rights, cost, or transport gates. At that earlier snapshot, Phase 5 Top-100 was described as active and scale was not authorized; this was superseded on 15 September 2026 by Phase 5 North Star Completion. There have been no product-value semantic slice executions, governed promotions, source acquisitions, Viewer changes or public v0.5 changes.
 
-**Product-value governance update â€” 14 September 2026:** The product owner approved bounded local analytical retention under `CG_BOUNDED_LOCAL_ANALYTICAL_RETENTION_V1` v1.0.0 and a separate private experiment-only governed namespace gated by independent proposition-level human adjudication. The updated [execution packet](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md) binds the proposed eight-subject cohort to 16 exact frozen representations and records the actual 8Ã—20 inventory: zero governed positives, zero governed coverage states, 15 section-mapped candidate-only cells, 145 unprocessed cells, and 21 additional Red Cross candidate observations that cannot be assigned to a North Star section without semantic interpretation. It predeclares Inspect, Compare A/B/C, Verify, human review, budget fields and stop controls. This is bounded integrated multi-section validation, not full North Star coverage. No slice has executed; no provider call, new acquisition or promotion occurred. At that 14 September 2026 snapshot, Phase 5 Top-100 was described as active and incomplete; this was superseded on 15 September 2026 by Phase 5 North Star Completion; the bounded campaign is approved in principle but has an accepted model-assisted baseline lock and offline five-request packet; execution remains blocked pending the gates recorded in the [baseline acceptance and preflight decision](docs/history/product-value-model-assisted-baseline-acceptance-2026-09-14.md).
+**Product-value governance update — 14 September 2026:** The product owner approved bounded local analytical retention under `CG_BOUNDED_LOCAL_ANALYTICAL_RETENTION_V1` v1.0.0 and a separate private experiment-only governed namespace gated by independent proposition-level human adjudication. The updated [execution packet](PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md) binds the proposed eight-subject cohort to 16 exact frozen representations and records the actual 8×20 inventory: zero governed positives, zero governed coverage states, 15 section-mapped candidate-only cells, 145 unprocessed cells, and 21 additional Red Cross candidate observations that cannot be assigned to a North Star section without semantic interpretation. It predeclares Inspect, Compare A/B/C, Verify, human review, budget fields and stop controls. This is bounded integrated multi-section validation, not full North Star coverage. No slice has executed; no provider call, new acquisition or promotion occurred. At that 14 September 2026 snapshot, Phase 5 Top-100 was described as active and incomplete; this was superseded on 15 September 2026 by Phase 5 North Star Completion; the bounded campaign is approved in principle but has an accepted model-assisted baseline lock and offline five-request packet; execution remains blocked pending the gates recorded in the [baseline acceptance and preflight decision](docs/history/product-value-model-assisted-baseline-acceptance-2026-09-14.md).
 
-**Product-value campaign approval update â€” 14 September 2026:** The product owner approved in principle a maximum conservative exposure of AUD 0.25 per physical provider attempt and AUD 2.00 aggregate for the fixed eight-subject/five-workflow slice. ChatGPT completed the locked baseline as `MODEL_ASSISTED_SOURCE_ONLY_REVIEWER`; Greg remains the primary HUMAN proposition adjudicator, and any later ChatGPT review is labelled `MODEL_ASSISTED_REVIEWER`. The private Builder packet is materialized at `phase5-execution-packet/work/product-value-baseline-2026-09-14/source-only/` with manifest SHA-256 `7204d5e696494064691a17def69210f0ef3985dd18fccca79c746f1b277c8f9f`, eight Inspect forms, three fixed Compare forms and 16 exact representations. The original blank packet remains unchanged; a separate model-assisted completed copy is locked. No candidate work exists. Execution stays blocked pending fresh exact-hash rights revalidation, Greg's Disabled-setting attestation immediately before first crossing, final price/FX and cost reservation, and all transport/semantic gates. Offline certification has fixed five requests with no Capacity request. A minimal future plan is five requests using separate Outcomes V6 and Commitments V5 schemas; three sparse controls receive no capacity request. See the [approval record](docs/history/product-value-campaign-approval-2026-09-14.md). This task made zero provider calls, source acquisitions, semantic executions, adjudications or governed promotions. The broader Phase 5 Top-100 objective remains active and product-value projection review remains downstream of these bounded experiments.
+**Product-value campaign approval update — 14 September 2026:** The product owner approved in principle a maximum conservative exposure of AUD 0.25 per physical provider attempt and AUD 2.00 aggregate for the fixed eight-subject/five-workflow slice. ChatGPT completed the locked baseline as `MODEL_ASSISTED_SOURCE_ONLY_REVIEWER`; Greg remains the primary HUMAN proposition adjudicator, and any later ChatGPT review is labelled `MODEL_ASSISTED_REVIEWER`. The private Builder packet is materialized at `phase5-execution-packet/work/product-value-baseline-2026-09-14/source-only/` with manifest SHA-256 `7204d5e696494064691a17def69210f0ef3985dd18fccca79c746f1b277c8f9f`, eight Inspect forms, three fixed Compare forms and 16 exact representations. The original blank packet remains unchanged; a separate model-assisted completed copy is locked. No candidate work exists. Execution stays blocked pending fresh exact-hash rights revalidation, Greg's Disabled-setting attestation immediately before first crossing, final price/FX and cost reservation, and all transport/semantic gates. Offline certification has fixed five requests with no Capacity request. A minimal future plan is five requests using separate Outcomes V6 and Commitments V5 schemas; three sparse controls receive no capacity request. See the [approval record](docs/history/product-value-campaign-approval-2026-09-14.md). This task made zero provider calls, source acquisitions, semantic executions, adjudications or governed promotions. The broader Phase 5 Top-100 objective remains active and product-value projection review remains downstream of these bounded experiments.
 
 **Model-assisted baseline and offline campaign snapshot -- 14 September 2026:** Greg accepted ChatGPT's source-only baseline for correctness, material completeness, evidence locators, missingness/coverage, comparability and later projection-versus-source answer comparison. It is explicitly not human-only. Human source-reading time, cognitive-effort reduction and source-only confidence are excluded from controlled comparison; projection-session time or effort, if collected, is descriptive only. The exact five-request packet (Outcomes V6: World Vision and Bush Heritage; Commitments V5: Red Cross, Greenpeace and Sunrise) is `PREPARED_NOT_SENT`; its configured conservative exposure is AUD 0.106815, subject to final pricing/FX reconfirmation. Provider status remains `AWAITING_FRESH_OWNER_ATTESTATION`; calls, acquisitions, adjudications and governed promotions remain zero. At baseline acceptance, integrated context was `INTEGRATED_CONTEXT_INSUFFICIENT`: the governed inventory had zero positive items and zero coverage states and none of the eight ABNs appeared in current public release files. The later deterministic context pass created candidate evidence only; it did not change the governed-state assessment. Whether adjudicated I/P/A candidates and explicit coverage satisfy fixed Inspect remains open. See the [acceptance and offline preflight decision](docs/history/product-value-model-assisted-baseline-acceptance-2026-09-14.md) and [later context history](docs/history/product-value-deterministic-context-2026-09-14.md).
 
@@ -203,11 +203,11 @@ Semantic validity, semantic repeatability, graph/structural repeatability and in
 
 The project is not ready for an unbounded fresh paid cohort. Reliability methodology, durable cross-store authorization continuity, accounting telemetry and source-role/grain evaluation remain active topics. Builder PR #15 remains frozen/open/unmerged archaeology. Private evidence, raw responses, runtime databases and repeatability artefacts remain private. No automatic public subject promotion is implied by Fresh-18 output.
 
-## Historical snapshot â€” North Star realignment and halted Top-100 run
+## Historical snapshot — North Star realignment and halted Top-100 run
 
 Program/service v3/v3.1 is one foundation-domain implementation, not the whole product. Model-routing evidence remains bounded rather than product policy: Luna-like lower-cost models are candidates for constrained/high-volume semantic labour, Terra-like stronger models for difficult adjudication/abstraction where justified, Builder/Python for deterministic authority, supervisory reasoning for experiment integration, and humans for objective, priority, sufficiency and stopping. Results do not establish universal Luna-versus-Terra superiority.
 
-A program/service-only Top-100 Terra run using literal ACNC donation ranks 1â€“100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
+A program/service-only Top-100 Terra run using literal ACNC donation ranks 1–100 was begun and intentionally halted during roadmap realignment. It produced 60 new Terra response artefacts and 3 exact prior Terra-A reuses: 60/63 structurally valid results, 54/63 whole-output quote-valid results and 287 parsed proposals. Under the program-task condition, 72 packets were `COMPLETE_ENOUGH` and 28 were `PARTIAL`; this was task-specific and is not whole-card completeness. One in-flight attempt had indeterminate billing state. Valid results remain reusable Section-3 material where semantic identity permits. No exact cost total is asserted for the interrupted run.
 
 At this historical snapshot, the active Builder objective was Phase 5 Top-100 full-card claim-family build. That framing is superseded by the 15 September 2026 North Star Completion decision above. Phase 4 established a bounded hybrid bundle-by-difficulty Factory candidate; any later scaling remains subject to its applicable gates.
 
@@ -256,11 +256,11 @@ perform the corresponding V5RR discovery task.
 ## 11. Section 15 Semantic Lab disposition
 
 The paid Section 15 broad-lens campaign is complete and parked. Generic
-Compact â†’ specialist lenses remains the working semantic architecture. The
+Compact → specialist lenses remains the working semantic architecture. The
 historical permissive run demonstrated semantic-uplift/promiscuity risk; the
 corrected run demonstrated over-pruning risk. Neither experimental prompt set
 is production-canonical and further prompt polishing is deferred. Section 15
-is **ARCHITECTURE-VALIDATED / SEMANTIC-BOUNDARY-TESTED / PARKED â€” NOT
+is **ARCHITECTURE-VALIDATED / SEMANTIC-BOUNDARY-TESTED / PARKED — NOT
 PRODUCTION-COMPLETE**. The next project work is not automatically another
 Section 15 experiment.
 
@@ -279,12 +279,12 @@ spend including retained smoke was USD 0.707979.
 
 **NATIVE OVERLAY ARCHITECTURE + WORKSHOP LIFECYCLE REALITY-TESTED / HOLDOUT
 ELIGIBILITY ZERO UNDER EXECUTED CONTRACT / TRANSFER UNTESTED / VOCABULARY
-EXPERIMENTAL / PARKED â€” NOT PRODUCTION-COMPLETE**
+EXPERIMENTAL / PARKED — NOT PRODUCTION-COMPLETE**
 
 The zero discovery result does not prove that the corpus contains no possible
 Native abstractions.
 
-## Historical snapshot â€” Phase 3 closure
+## Historical snapshot — Phase 3 closure
 
 **PHASE 3 COMPLETE - BOUNDED COMPLETE-CARD GRAPH/PROJECTION ARCHITECTURE REALITY-TESTED; NOT PRODUCTION-COMPLETE**
 
@@ -304,7 +304,7 @@ bundle-by-difficulty Factory candidate remains an input. The Direct Service V1.2
 experimental tranche is complete, but this does not satisfy the Top-100 full-card
 exit objective, establish production scale, or authorize governed public promotion.
 
-## Historical snapshot â€” Phase 4 closeout and former Phase 5 boundary
+## Historical snapshot — Phase 4 closeout and former Phase 5 boundary
 
 **PHASE 4 COMPLETE - P4-E1 ANSWERED THE PACKAGING/ROUTING ECONOMICS QUESTION SUFFICIENTLY FOR FACTORY PROGRESSION**
 
@@ -353,7 +353,7 @@ a signal to reassess critical-path status. This is an implementation/current-
 state lesson, not product doctrine.
 # Phase 5 completion-gate candidate
 
-**PHASE 5 COMPLETE â€” NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. The bounded pass is defined in `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`; it does not authorise Top-100 scale, which remains subject to a separate product-owner decision.
+**PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. The bounded pass is defined in `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`; it does not authorise Top-100 scale, which remains subject to a separate product-owner decision.
 # Scale S0 policy update (2026-09-22)
 
 `CG-S0-PO-2026-09-22` is the current bounded S0 operating-policy decision. It
@@ -369,7 +369,7 @@ repository. `SCALE_S0_MANDATE_AUTHORISED_V3.yaml` is the current immutable broad
 S0 policy mandate; its ABN-valued `subject_ids` are population/history fields,
 not live CharityGraph subject identity.
 
-## Current amendment â€” 2026-09-26
+## Current amendment — 2026-09-26
 
 The Product Owner has superseded the prior S0 A3 duration rule: a factual Greg
 observation that `Share inputs and outputs with OpenAI = Disabled` is valid for

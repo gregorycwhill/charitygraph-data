@@ -1,4 +1,4 @@
-﻿# CharityGraph documentation authority
+# CharityGraph documentation authority
 
 **Status:** Canonical project-governance document
 
@@ -172,7 +172,7 @@ Historical naming may occur only where exact matching is unavoidable inside:
 - quarantined migration evidence; or
 - exact third-party historical citations.
 
-Active narrative uses neutral phrases such as â€œformer project nameâ€, â€œlegacy public keyâ€ or â€œpublic contract 0.5 compatibilityâ€. Historical documents SHALL live under a clearly marked history or evidence location and SHALL not contain executable current instructions.
+Active narrative uses neutral phrases such as “former project name”, “legacy public key” or “public contract 0.5 compatibility”. Historical documents SHALL live under a clearly marked history or evidence location and SHALL not contain executable current instructions.
 
 ## 9. Change control
 

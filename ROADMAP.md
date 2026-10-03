@@ -1,4 +1,4 @@
-﻿# CharityGraph Roadmap
+# CharityGraph Roadmap
 
 **S0 control-plane status (3 October 2026):** Attempt 21 (`CG-S0-PO-ATTEMPT21-2026-10-03`) is the current allocated authority, A3-pending and non-executable. Attempt 20 is immutable superseded history and cannot be resumed. This authorises no provider crossing, source acquisition, reservation, Top-100, S1, or public release.
 
@@ -6,7 +6,7 @@
 
 ## Outcome
 
-Build a one-stop shop for structured, governed Australian charity data: an integrated projection over linked evidence, observations, measurements, assertions, relationships, decisions and coverageâ€”not a single semantic slice or opaque charity record.
+Build a one-stop shop for structured, governed Australian charity data: an integrated projection over linked evidence, observations, measurements, assertions, relationships, decisions and coverage—not a single semantic slice or opaque charity record.
 
 ## Delivery sequencing principle
 
@@ -18,25 +18,25 @@ Acquire broadly once. Preserve source-native evidence. Freeze a reusable charity
 
 Acquisition is charity/source oriented; semantic interpretation is domain/profile oriented. A physical provider call may bundle compatible logical tasks for economics, but each logical output retains independent task identity, schema/profile identity, subject/scope, evidence binding, validation, lineage and governed disposition. The North Star card is a projection over governed knowledge, never a stored mega-record or raw model output.
 
-## Phase 0 â€” Documentation, authority and baseline
+## Phase 0 — Documentation, authority and baseline
 
 Retain the existing baseline intent. Exit requires authority and supersession to be explicit, immutable release 0.5 unchanged, `NORTH_STAR_TARGET_CARD.md` installed, and implementation sequencing visibly mapped to the complete product scope.
 
-## Phase 1 â€” Foundation spine
+## Phase 1 — Foundation spine
 
 North Star emphasis: 1 Identity & regulatory status; 2 Purpose, mandate & cause; 20 Evidence, coverage, freshness & corrections; plus shared subject, scope, relationship, measurement and taxonomy primitives. Existing program/service v3/v3.1 work is valuable foundation-domain work, not the product itself.
 
-## Phase 2 â€” Baseline source acquisition and reusable charity evidence corpus
+## Phase 2 — Baseline source acquisition and reusable charity evidence corpus
 
 For each charity, attempt a reusable baseline source set before domain-specific semantic work: ACNC Register, ACNC AIS, ATO DGR, official website, latest annual report, Wikipedia/Wikimedia context, and PFRA or another applicable fundraising-industry registry. Specialist sources remain claim-, risk- or domain-triggered by central sourcing governance; principal evidence families describe product needs and do not authorise a section to discover sources. Preserve source-native structured observations without routing regulator fields through an LLM merely for rediscovery.
 
-Architecture: acquire broadly once â†’ preserve source-native evidence â†’ freeze reusable charity evidence corpus â†’ assemble bounded semantic packets from that corpus. Corpus completeness is claim-family-specific. Record acquisition state (`attempted`, `acquired`, `unavailable`, `access_failed`, `parsing_failed`, `not_applicable`, `not_attempted`) by source family, claim family and subject/scope. `COMPLETE_ENOUGH` for program discovery is not whole-North-Star completeness.
+Architecture: acquire broadly once → preserve source-native evidence → freeze reusable charity evidence corpus → assemble bounded semantic packets from that corpus. Corpus completeness is claim-family-specific. Record acquisition state (`attempted`, `acquired`, `unavailable`, `access_failed`, `parsing_failed`, `not_applicable`, `not_attempted`) by source family, claim family and subject/scope. `COMPLETE_ENOUGH` for program discovery is not whole-North-Star completeness.
 
-## Phase 3 â€” Complete-card domain/graph hardening
+## Phase 3 — Complete-card domain/graph hardening
 
 CharityGraph completed the Phase 3 domain/graph-hardening stage at bounded
 reality-test level. It is not production-complete coverage of the North Star.
-complete-card reality slice. Use approximately 8â€“12 deliberately varied
+complete-card reality slice. Use approximately 8–12 deliberately varied
 charities and pressure-test the North Star claim families with explicit
 missingness when unavailable or deferred. Generic whole-card feasibility is
 substantially reality-tested, and the architecture can persist and project the
@@ -73,18 +73,18 @@ still required before paid cohort scaling.
 
 The completed Phase 3 objective was to assemble, persist and privately project the
 integrated cross-domain graph for a small number of existing rich reality
-charities, allowing actual integration gapsâ€”not a predetermined domain
-checklistâ€”to trigger further specialist hardening. Fundraising, workforce,
+charities, allowing actual integration gaps—not a predetermined domain
+checklist—to trigger further specialist hardening. Fundraising, workforce,
 ethos and notable context remain in scope but are not automatically next.
 
 The direct-service structure for sections 6/11/13 has been boundedly pressure-
 tested. Section 16 has a bounded conduct/compliance design and pressure-test
 history; its specialist regulator acquisition is experimental ground-truth
-material, not production sourcing precedent. The generic Compact â†’ specialist
+material, not production sourcing precedent. The generic Compact → specialist
 lens architecture for section 18 has also been reality-tested sufficiently to
 park the section, with bounded precision/recall questions remaining. Section 15
 positions/commitments/implementation has completed its broad V1E Semantic Lab
-and is now architecture-validated, semantic-boundary-tested and parkedâ€”not
+and is now architecture-validated, semantic-boundary-tested and parked—not
 production-complete. The permissive and corrected prompt sets are not
 canonical production prompts; further polishing is deferred. Paid
 interruption-safe/restart-safe execution remains a later Factory/scaling gate,
@@ -128,7 +128,7 @@ overlay/workshop lifecycle through catalogue freeze. The executed discovery
 contract produced no Native concepts, holdout transfer remains untested, and no
 production Native vocabulary exists.
 
-## Phase 4 â€” Cross-domain semantic packaging and economics
+## Phase 4 — Cross-domain semantic packaging and economics
 
 Given a viable cross-domain graph and North Star projection, determine how
 compatible semantic work should be packaged and routed to maximise useful
@@ -151,7 +151,7 @@ thresholds remain undefined, specialist domains may need later depth, Native
 remains parked and experimental. Phase 4 was subsequently run as the bounded
 P4-E1 experiment and is now complete.
 
-### Phase 4 closure â€” P4-E1 packaging/routing economics
+### Phase 4 closure — P4-E1 packaging/routing economics
 
 P4-E1 (`phase4-p4e1-packaging-routing-v1`) answered the Phase 4 question
 sufficiently for Factory progression. It tested the same frozen Compact v0.2
@@ -191,31 +191,31 @@ unresolved; Python does not infer semantic equivalence; Native remains parked;
 Viewer remains an inspector; and ranking, recommendation and grantmaking remain
 out of scope. This historical roadmap text did not authorise implementation beyond the then-current Top-100 full-card boundary.
 
-## Phase 5 â€” North Star Completion
+## Phase 5 — North Star Completion
 
 **Objective:** Demonstrate governed, traceable and honest bounded-cohort support for all 20 active North Star sections before a separate product-owner decision can authorise Top-100 scale. Top-100 is a downstream scale/industrialisation stage, not the environment in which missing architecture is first designed or proven.
 
 The exit gate requires bounded evidence that each active section has either (1) satisfactory governed acquisition, processing, representation and projection support, or (2) an explicit tested representation of why relevant knowledge is unavailable, unprocessed, source-silent, not applicable or genuinely unknown. Positive content is not required in every section or for every charity. Preserve the stricter distinctions among source silence, not found in reviewed sources, non-acquisition, unavailability, processing failure, unknown and not applicable. Reuse existing bounded evidence rather than repeating it because section numbering changed. Historical whole-card and specialist experiments are evidence inputs, not automatic proof of active-section equivalence.
 
-### Tranche A â€” North Star version cutover
+### Tranche A — North Star version cutover
 
 Establish a versioned active projection contract while preserving historical v0.1 section meanings, assignments and artifacts. See the Builder projection contract and the versioned target-card documents.
 
-### Tranche B â€” North Star completion ledger
+### Tranche B — North Star completion ledger
 
 Inventory each active section's required knowledge distinctions, existing evidence, disposition, exact missing proof, cheapest bounded next test and whether new source/provider work is actually needed. The initial [completion ledger](PHASE5_NORTH_STAR_COMPLETION_LEDGER.md) is incomplete and grants no execution authority. Do not infer equivalence from numeric section IDs.
 
-### Tranche C â€” gap-closing slices only
+### Tranche C — gap-closing slices only
 
 Design bounded work only for gaps established by the ledger. Candidate areas include direct service/capacity, fundraising, funding/dependencies, ethos/values, notable history and unresolved classification/search/AI discovery; governance, workforce and scale also require evidence before any gap is asserted. No gap-closing execution is authorised by the cutover itself.
 
-### Tranche D â€” North Star Completion Gate
+### Tranche D — North Star Completion Gate
 
 Compile an integrated bounded-cohort projection across all 20 active sections from governed knowledge and explicit missingness. Use Inspect, constrained Compare and Verify where appropriate. Only after this gate may a separate product-owner decision authorise Top-100 scale.
 
 The prior Top-100 framing and halted-run evidence below are historical snapshots; do not treat them as the current active sequence.
 
-### Direct Service V1.2 experimental tranche â€” complete
+### Direct Service V1.2 experimental tranche — complete
 
 The Direct Service V1.2 representation experiment is complete. V1.1 remains
 historical evidence; V1.2 is the selected section-array representation for future
@@ -249,11 +249,11 @@ downstream of adjudication and a further product-owner decision.
 
 ### Historical Phase 5 program-discovery run
 
-The recently halted run used literal ACNC donation ranks 1â€“100; it produced 60 new Terra response artefacts, reused 3 exact prior Terra-A results, and had 63 available semantic results in closeout analysis. It had 60 structurally valid results, 54 whole-output quote-valid results, 287 parsed proposals, 72 program-task `COMPLETE_ENOUGH` packets and 28 `PARTIAL` packets. One in-flight attempt (ABN `48321126727`) had no response artefact and indeterminate billing status. It was intentionally halted during roadmap realignment, did not start ranks 101â€“1000, made no validity/quality/impact/ROI/recommendation judgements, and changed no Builder, Data or Viewer files.
+The recently halted run used literal ACNC donation ranks 1–100; it produced 60 new Terra response artefacts, reused 3 exact prior Terra-A results, and had 63 available semantic results in closeout analysis. It had 60 structurally valid results, 54 whole-output quote-valid results, 287 parsed proposals, 72 program-task `COMPLETE_ENOUGH` packets and 28 `PARTIAL` packets. One in-flight attempt (ABN `48321126727`) had no response artefact and indeterminate billing status. It was intentionally halted during roadmap realignment, did not start ranks 101–1000, made no validity/quality/impact/ROI/recommendation judgements, and changed no Builder, Data or Viewer files.
 
 Here `COMPLETE_ENOUGH` was sufficient only for the program-discovery task. Valid outputs remain reusable Section-3 material where semantic identity permits; this run does not satisfy the future Top-100 full-card milestone and must not be rerun merely because sequencing changed.
 
-## Phase 6 â€” Risk-gated depth and specialist profiles
+## Phase 6 — Risk-gated depth and specialist profiles
 
 **Status: COMPLETE (14 September 2026).** Outcomes/evaluation and Commitments/implementation
 are selected for downstream product-value validation, both `ADVANCE_WITH_REPRESENTATION_FIX`.
@@ -273,37 +273,37 @@ its scale. Capacity/access/availability remains deferred.
 
 Deepen ethos/stance, conduct/adverse matters, commitments/implementation, outcomes/evaluation/causal claims, sensitive populations, Indigenous data governance, specialist capacity/availability and direct-observation profiles. These domains must already have been reality-tested at an appropriate bounded risk level in Phase 3.
 
-## Phase 7 â€” Correction and public vNext
+## Phase 7 — Correction and public vNext
 
 Align open-correction and public-release-candidate work while preserving immutable releases, contestability, correction lineage, coverage disclosure, rights/privacy/publication gates, simple Viewer projections and coordinated Data/Viewer acceptance.
 
-## Phase 8 â€” Scaled breadth
+## Phase 8 — Scaled breadth
 
 Scale next 1,000, then 10,000, then the demand-triggered national tail. Model tier, source breadth, semantic depth, review intensity and refresh cadence may vary by cohort, but lower cohorts must not silently become program-discovery-only without an explicit governed policy.
 
-## Parallel track â€” CharityGraph Playbooks
+## Parallel track — CharityGraph Playbooks
 
 Playbooks is a separate first-class product alongside Builder, Data and Viewer. It consumes governed CharityGraph public knowledge and is not generated as canonical knowledge by Builder. Viewer may later provide contextual Playbook launch affordances, while external AI execution remains user-selected and outside canonical CharityGraph knowledge. This track must not delay complete-card reality testing or public-vNext foundations, and Playbooks is not a release gate for Builder/Data vNext unless a future explicit decision says so.
 
-### Playbooks P0 â€” Product governance
+### Playbooks P0 — Product governance
 
 This work is approved and underway through the canonical product and governance documents. It establishes fourth-product status, method/invocation/output separation, model neutrality, open licensing intent, versioning and corrigibility, Official/Community distinction, contribution and attribution principles, and privacy and feedback boundaries. The initial Playbooks repository and contract were established at commit `6466e04`; no production catalogue is claimed.
 
-### Playbooks P1 â€” Establish product repository and contract
+### Playbooks P1 — Establish product repository and contract
 
 The initial `charitygraph-playbooks` product/repository, Playbook contract, base epistemic policy, versioning, CC BY 4.0 content licence, contribution model, machine-readable definition schema and Official/Community lifecycle are established at commit `6466e04`. Detailed invocation packaging, production release lifecycle and catalogue work remain future refinements in P1; this does not mark P2, P3 or P4 complete.
 
-### Playbooks P2 â€” Seed and evaluate a small official collection
+### Playbooks P2 — Seed and evaluate a small official collection
 
-Develop approximately 5â€“7 high-value Playbooks against representative CharityGraph use cases such as peer/competitor landscape, program differentiation, partnership discovery, service/ecosystem mapping, board or sector briefing, service-gap/growth exploration and a funder due-diligence starter. These are candidate jobs, not immutable scope.
+Develop approximately 5–7 high-value Playbooks against representative CharityGraph use cases such as peer/competitor landscape, program differentiation, partnership discovery, service/ecosystem mapping, board or sector briefing, service-gap/growth exploration and a funder due-diligence starter. These are candidate jobs, not immutable scope.
 
 Evaluation should test representative organisations/programs across several commodity AI systems. Measure retrieval of intended CharityGraph material; unsupported or overconfident conclusions; preservation of scope, provenance and uncertainty; parameter usability; useful analytical output; provider/model sensitivity; and failures attributable separately to Data, the Playbook method and external model/retrieval. No fixed thresholds are defined yet.
 
-### Playbooks P3 â€” Viewer integration
+### Playbooks P3 — Viewer integration
 
 After public vNext provides stable, addressable organisation/program/service representations, Viewer may expose contextual **Use with AI** affordances. These may suggest relevant Playbooks, pre-populate known CharityGraph context, ask only for missing parameters, generate portable invocations and optionally package relevant public context for models without reliable retrieval. Private strategic parameters should remain client-side where practical. Viewer is neither the Playbooks authority nor a hosted inference service.
 
-### Playbooks P4 â€” Community contribution
+### Playbooks P4 — Community contribution
 
 Introduce low-friction pathways to suggest analytical questions, submit methods or prompts, refine/evaluate candidates, propose corrections and contribute without GitHub/YAML/JSON knowledge. Preserve contributor attribution, affiliation/conflict disclosure, Community versus Official status, governed adoption/adaptation, evidence-over-voting and contribution lineage.
 
@@ -323,7 +323,7 @@ P0/P1 can proceed independently of full-card Builder implementation. P2 can use 
 - Playbook analytical-method evaluation, cross-model portability and method/version reproducibility
 - Playbook contribution, attribution, privacy of user parameters, feedback classification and epistemic-policy maintenance
 
-## Historical North Star v0.1 â†” roadmap matrix
+## Historical North Star v0.1 ↔ roadmap matrix
 
 This matrix records the former v0.1 numbering and first-scaled-phase assumptions. It is historical and must not be used to interpret active v0.2 section IDs.
 
@@ -375,7 +375,7 @@ than rebuilding lifecycle machinery. Native roadmap sequencing remains governed
 by the overlay architecture decision in [CHARITYGRAPH_NATIVE_ARCHITECTURE.md](CHARITYGRAPH_NATIVE_ARCHITECTURE.md): canonical semantic objects precede optional Native-overlay discovery and governed promotion.
 # Candidate Phase 5 status
 
-The canonical completion record states **PHASE 5 COMPLETE â€” NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. Top-100 scale remains unauthorised pending a separate product-owner decision.
+The canonical completion record states **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. Top-100 scale remains unauthorised pending a separate product-owner decision.
 # Scale S0 authorisation status
 
 The approved bounded operating policy is `CG-S0-PO-2026-09-22`. It changes no

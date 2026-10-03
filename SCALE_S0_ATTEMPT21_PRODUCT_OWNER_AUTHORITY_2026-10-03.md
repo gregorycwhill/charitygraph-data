@@ -1,4 +1,4 @@
-﻿# Scale S0 Attempt 21 product-owner authority â€” 2026-10-03
+# Scale S0 Attempt 21 product-owner authority — 2026-10-03
 
 **Authority ID:** `CG-S0-PO-ATTEMPT21-2026-10-03`  
 **Status:** allocated, A3-pending and non-executable  
@@ -12,7 +12,7 @@ Only `scale-s0-authorised-balanced-v3` is executable. It binds the exact v3 mand
 
 The ordered registered-charity locator subjects are unchanged: MSF / ABN 74068758654, Sunrise / ABN 37646526132, and Noongar Boodja Trust / ABN 47613674461. Candidate index 0 alone is executable; alternates require distinct authority. Provider project is `proj_vnAuU8uxocL0Rosg3SulgmRI`. The budget remains USD 0.10 per subject, USD 0.30 maximum new exposure, plus the unresolved Attempt-17 held USD 0.10: USD 0.40 conservative aggregate exposure.
 
-**Structured authority hash:** `9f7827515dfcbb7f6014e54419478369043c686477085b2ce01d4f78cb713097`  
+**Structured authority hash:** `93d57a7cc84776926ea6cf34ab6ec853ab5c553916b84ab87b0eddcee2eb31d1`  
 **Frozen material hash:** `53a68c778e298c91bc9bc2518fae65ecf9fd9082373a9143bea871df9ecddead`
 
 No A3 has been created. A fresh Greg-observed Disabled-setting A3, valid for exactly 24 hours at every send boundary, is required only after canonical Data publication and the eventual canonical Data merge SHA are known. No provider call, source acquisition, reservation/accounting mutation, candidate promotion, public release, Top-100, or S1 is authorised.
