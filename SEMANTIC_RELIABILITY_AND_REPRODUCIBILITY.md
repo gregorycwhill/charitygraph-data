@@ -45,3 +45,71 @@ A stable CharityGraph release does not imply a deterministic LLM API call. It me
 ## Public claims
 
 CharityGraph SHALL NOT claim deterministic or near-deterministic semantic extraction, a numeric reliability rate or “same answer every time” without an appropriately designed evaluation. Any empirical reliability claim must identify the task family, model snapshot, evidence protocol, cohort, replicate protocol, matching/adjudication method, sample size and limitations.
+
+## Prospective repeatability x validity experiment — 2026-08-28
+
+The first deliberately authorised prospective experiment used a frozen
+20-charity cohort and exactly two independent technical replicates per charity.
+It made 40 logical semantic calls and 40 HTTP requests. One measurement was
+terminal-invalid. The primary repeatability analysis therefore covered 19
+charities, excluding the single-measurement case without interpreting it as a
+failed replication.
+
+The aggregate validity cross-tab was:
+
+| Validity class | 2/2 | 1/2 |
+|---|---:|---:|
+| Clearly supported | 61 | 22 |
+| Plausible / grain ambiguous | 40 | 8 |
+| Likely artefact | 7 | 10 |
+| Evidence inadequate | 7 | 3 |
+| **Total** | **115** | **43** |
+
+There were 158 eligible semantic families: 115 recurring in both valid
+measurements (2/2) and 43 appearing in one valid measurement (1/2). The
+within-group proportions were clearly supported 53.0% versus 51.2%, clearly
+supported or plausible 87.8% versus 69.8%, and likely artefact 6.1% versus
+23.3%. Descriptive risk differences and ratios (2/2 relative to 1/2) were:
+
+- clearly supported: **+1.9 percentage points**, **RR 1.04**;
+- clearly supported or plausible: **+18.1 percentage points**, **RR 1.26**;
+- likely artefact: **-17.2 percentage points**, **RR 0.26**.
+
+Leave-one-charity-out clearly-supported risk differences ranged from **-5.85
+percentage points to +12.53 percentage points**. Seven likely artefacts were
+stable across both measurements, while 22 clearly supported singleton
+families were observed.
+
+Conditional on an approximately matched subject, disposition agreement was
+111/115 (96.5%), operational-status agreement was 93/115 (80.9%), mean
+subject-family Jaccard overlap was 0.516, and weighted structural overlap was
+0.379. The structural overlap statistic is retained as a separate descriptive
+measure from the reviewed-family mapping.
+
+These results support the following methodological conclusions:
+
+1. Repeatability and validity are independent dimensions.
+2. 2/2 recurrence did not materially predict clearly supported validity.
+3. 2/2 recurrence was associated with substantially lower artefact prevalence
+   and higher clearly-supported-or-plausible prevalence.
+4. Stable artefacts exist.
+5. Clearly supported singleton subjects exist.
+6. Replicate intersection MUST NOT be used as a validity or publication rule.
+7. Repeatability MAY be used as an uncertainty or review-prioritisation signal.
+8. Subject enumeration and grain remain less repeatable than attributes
+   conditional on approximately matching the subject.
+9. Operational status is less repeatable than disposition and remains an
+   independent reliability concern.
+
+The experiment also tested the review instrument. Excerpt-only blinded review
+produced widespread `EVIDENCE_INADEQUATE` judgements; providing the complete
+frozen evidence reduced evidence-inadequate cases substantially. In this review
+protocol, document-level evidence binding was insufficient for efficient
+proposition-level review. This motivates, but does not approve, a future
+proposition-level supporting-evidence locator.
+
+This prospective result supplements the retrospective/Fresh-18 observations
+recorded in [the 2026-08-28 baseline note](SEMANTIC_RELIABILITY_BASELINE_2026-08-28.md).
+That earlier note remains historical experimental context; neither experiment
+sets a product performance threshold. Charity-level validity classifications
+and unblinded family mappings remain private.
