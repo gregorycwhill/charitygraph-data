@@ -201,16 +201,16 @@ SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the 
 
 `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` is the canonical cross-cutting authority for semantic validity, repeatability, technical replication and reproducible replay. `SEMANTIC_RELIABILITY_BASELINE_2026-08-28.md` is reference experimental evidence subordinate to that policy; it establishes no product threshold.
 
-## Scale S0 Attempt 20 current authority
+## Scale S0 Attempt 20 historical authority
 
 > **Superseded by Attempt 21 on 3 October 2026.** `SCALE_S0_ATTEMPT21_PRODUCT_OWNER_AUTHORITY_2026-10-03.md` (`CG-S0-PO-ATTEMPT21-2026-10-03`) is the sole current attempt-specific S0 authority. It allocates `attempt:s0:21` / `run:s0:attempt-21`, binds Builder `228066e00bc7dec07a00ddcd45fed07372f0bda7` and Data lineage anchor `e6b85e810847c0634e2936f8d5d139fd6ec35603`, and is A3-pending/non-executable. Attempt 20 remains immutable historical evidence and is non-reusable; this replacement creates neither an A3 nor a provider crossing.
 
 `SCALE_S0_ATTEMPT20_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`
-(`CG-S0-PO-ATTEMPT20-2026-09-26`) is the sole current attempt-specific S0
-authority and supersedes Attempt 19 for future execution. The structured
+(`CG-S0-PO-ATTEMPT20-2026-09-26`) was the attempt-specific S0 authority that
+superseded Attempt 19 for future execution. The structured
 authority and frozen material JSON records beside it are the machine-readable
 control-plane inputs. `policies/scale-s0/locator-subject-bindings-v2.yaml`
-is the current governed subject-binding registry: locator subject refs identify
+was the governed subject-binding registry for that historical attempt: locator subject refs identify
 registered charity legal entities; ABNs are explicit external lookup identifiers
 only. It allocates exactly `attempt:s0:20` / `run:s0:attempt-20`, binds Builder
 `e538c1eccb8da6f29cc86ab7de8782b498a428c9`, binds Data lineage anchor
@@ -219,11 +219,10 @@ Attempt 18 is historical zero-crossing consumed authority and must not resume;
 Attempt 17 and its held USD 0.10 remain immutable.
 
 The [identity repair](SCALE_S0_IDENTITY_LINEAGE_REPAIR_2026-09-27.md) and
-[machine-readable lineage](SCALE_S0_IDENTITY_LINEAGE_V1.json) supersede the
-package references above for current loading. The committed Attempt-20
-structured authority is authoritative for the repaired Builder binding and
-pre-merge Data lineage anchor. Only `scale-s0-authorised-balanced-v3` is its
-executable mandate; historical v1/v2 artifacts are retained for verification.
+[machine-readable lineage](SCALE_S0_IDENTITY_LINEAGE_V1.json) preserve the
+repaired historical Attempt-20 bindings. Attempt 21 supersedes Attempt 20 for
+all future execution; only `scale-s0-authorised-balanced-v3` is its executable
+mandate, and historical v1/v2 artifacts are retained for verification.
 
 ## North Star planning anchor
 
@@ -254,7 +253,7 @@ repair is canonical may receive a new execution identity.
 not current authority. Its zero-crossing block consumed its number; it is
 non-resumable. `SCALE_S0_ATTEMPT19_PRODUCT_OWNER_AUTHORITY_2026-09-26.md` is
 also immutable history and is superseded for future execution. The current
-authority is the Attempt-20 authority above.
+authority is the Attempt-21 authority stated above.
 
 `NORTH_STAR_TARGET_CARD.md` defines the active v0.2 projection vocabulary and derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. `NORTH_STAR_TARGET_CARD_V0_1.md` preserves historical numbering and meanings. A section ID is interpretable only with its projection-contract version; no ID-based migration is implied. Neither document overrides product authorities or proposes a public schema. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against the active card without silently redefining product scope. The completion ledger is a subordinate evidence inventory, not execution authority.
 

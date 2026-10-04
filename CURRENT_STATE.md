@@ -4,7 +4,7 @@
 
 > **Identity lineage repair (27 September 2026):** Current loading uses the [pinned successor package](SCALE_S0_IDENTITY_LINEAGE_V1.json). Attempt 20 binds only `scale-s0-authorised-balanced-v3`. Historical Attempts 8/17/18/19 retain their original evidence. See [repair and supersession](SCALE_S0_IDENTITY_LINEAGE_REPAIR_2026-09-27.md).
 
-> **Current S0 control-plane override (26 September 2026):** `CG-S0-PO-ATTEMPT20-2026-09-26` is the sole current allocated authority. It allocates `attempt:s0:20` / `run:s0:attempt-20` for three governed locator subject bindings (registered charity legal entities) with explicit external ABN lookup identifiers; ABNs are never subjects. It binds Builder `e538c1eccb8da6f29cc86ab7de8782b498a428c9`, Data lineage anchor `0935d7e470b3702323107ab0c8d56b3d977d881f`, USD 0.30 maximum new exposure / USD 0.40 conservative aggregate exposure, and project `proj_vnAuU8uxocL0Rosg3SulgmRI`. It is allocated, unexecuted, A3-pending and non-executable until canonical Data publication, production reconciliation/checkpoint completion and a fresh matching A3; the eventual canonical Data merge SHA is intentionally not known in this pre-publication record. Attempt 17 remains immutable with USD 0.10 held; Attempts 18 and 19 are immutable historical, consumed/non-resumable or superseded as applicable. See `SCALE_S0_ATTEMPT20_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`.
+> **Historical S0 control-plane snapshot (26 September 2026; superseded):** `CG-S0-PO-ATTEMPT20-2026-09-26` allocated `attempt:s0:20` / `run:s0:attempt-20` for three governed locator subject bindings (registered charity legal entities) with explicit external ABN lookup identifiers; ABNs are never subjects. It bound Builder `e538c1eccb8da6f29cc86ab7de8782b498a428c9`, Data lineage anchor `0935d7e470b3702323107ab0c8d56b3d977d881f`, USD 0.30 maximum new exposure / USD 0.40 conservative aggregate exposure, and project `proj_vnAuU8uxocL0Rosg3SulgmRI`. Attempt 21 supersedes this immutable, non-reusable record; it creates no A3 or provider crossing. See `SCALE_S0_ATTEMPT20_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`.
 
 **Status date:** 18 September 2026
 
@@ -14,7 +14,7 @@
 
 **S0 authorisation (18 September 2026):** The human product owner accepted the canonical Balanced package in the controlling CharityGraph development conversation. `SCALE_S0_AUTHORISATION_DECISION_2026-09-18.md` and `SCALE_S0_MANDATE_AUTHORISED_V2.yaml` bind S0 only. Execution remains subject to its frozen source-rights, reservation, review, promotion and halt controls; no result has yet been executed or merged.
 
-**S0 Attempt 18 and 19 history (26 September 2026):** Attempt 18 is immutable historical evidence, blocked with zero provider crossings, zero reservations and zero new provider exposure; its number is consumed and non-resumable. Attempt 19 is immutable historical authority, superseded for future execution by Attempt 20 and not reusable. Attempt 17 remains immutable; its unresolved USD 0.10 remains held and unreconciled. The current authority is Attempt 20 above; the exact S0 USD 8.00 / USD 4.00 / 150-call / USD 0.25-reservation ceilings, A1--A5 controls, evidence boundary and public-release prohibition remain unchanged.
+**S0 Attempt 18 and 19 history (26 September 2026):** Attempt 18 is immutable historical evidence, blocked with zero provider crossings, zero reservations and zero new provider exposure; its number is consumed and non-resumable. Attempt 19 is immutable historical authority, superseded for future execution first by Attempt 20 and then by Attempt 21, and is not reusable. Attempt 17 remains immutable; its unresolved USD 0.10 remains held and unreconciled. The current authority is Attempt 21 above; the exact S0 USD 8.00 / USD 4.00 / 150-call / USD 0.25-reservation ceilings, A1--A5 controls, evidence boundary and public-release prohibition remain unchanged.
 
 **S0 runtime source authority (21 September 2026):** Migration 22 separates immutable policy mandate material from append-only concrete, attempt-bound source authority. Live reconstruction, governed transport, acquisition and provider preflight use the durable authority ledger only; offline fixtures require explicit opt-in. The bounded implementation/certification record is [SCALE_S0_RUNTIME_SOURCE_AUTHORITY_REPAIR_2026-09-21.md](SCALE_S0_RUNTIME_SOURCE_AUTHORITY_REPAIR_2026-09-21.md). This does not execute or resume S0, create an Attempt 3/4/5, or alter public contract 0.5.
 
@@ -356,14 +356,15 @@ state lesson, not product doctrine.
 **PHASE 5 COMPLETE — NORTH STAR v0.2 BOUNDED COMPLETION GATE PASSED**. The bounded pass is defined in `PHASE5_NORTH_STAR_COMPLETION_GATE_ATTEMPT2_2026-09-17.md`; it does not authorise Top-100 scale, which remains subject to a separate product-owner decision.
 # Scale S0 policy update (2026-09-22)
 
-`CG-S0-PO-2026-09-22` is the current bounded S0 operating-policy decision. It
+`CG-S0-PO-2026-09-22` was the current bounded S0 operating-policy decision at
+that dated policy snapshot. It
 preserves the eight-subject cohort, budget and prohibition on public release.
 Attempt 7 remains earlier immutable historical evidence; Attempt 8 is the
 latest immutable S0 execution evidence, and Attempt 9 is immutable zero-send
 blocked under Option A. Attempts 10 through 18 are consumed historical attempt
 numbers. Attempt 19 is immutable historical authority, superseded for future
-execution. Attempt 20 is the allocated current authority and remains A3-pending;
-it does not itself execute S0 or create A3. Its structured authority and
+execution. Attempt 20 was then the allocated authority and A3-pending; it did
+not itself execute S0 or create A3. Its structured authority and
 provider-free material are the two `SCALE_S0_ATTEMPT20_*` records in this
 repository. `SCALE_S0_MANDATE_AUTHORISED_V3.yaml` is the current immutable broad
 S0 policy mandate; its ABN-valued `subject_ids` are population/history fields,
@@ -371,12 +372,14 @@ not live CharityGraph subject identity.
 
 ## Current amendment — 2026-09-26
 
-The Product Owner has superseded the prior S0 A3 duration rule: a factual Greg
+The Product Owner superseded the prior S0 A3 duration rule: a factual Greg
 observation that `Share inputs and outputs with OpenAI = Disabled` is valid for
 exactly 24 hours from `observed_at`, subject to all existing fail-closed
-invalidators. Attempt 20 remains allocated, unexecuted and non-executable,
-pending final Builder/Data rebind and runtime reconciliation. No A3,
+invalidators. At this snapshot Attempt 20 was allocated, unexecuted and
+non-executable, pending final Builder/Data rebind and runtime reconciliation. No A3,
 reservation, provider send, Top-100/S1 execution or production-catalogue
 mutation is authorised by this amendment. After both policy commits merge, a
 follow-on rebind to the final canonical Builder and Data merge SHAs is required
-before any future Attempt-20 structured authority or A3 can be valid.
+before any future Attempt-20 structured authority or A3 could be valid. Attempt
+21 is now the sole current attempt-specific authority, as stated in the
+control-plane override above.
