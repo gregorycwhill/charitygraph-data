@@ -83,6 +83,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | CharityGraph Native architecture decisions | `CHARITYGRAPH_NATIVE_ARCHITECTURE.md` |
 | Domain ownership and research-design status | `DOMAIN_PROFILE_INDEX.md` |
 | Fundraising vocabulary and measurement bounded research gate | `FUNDRAISING_VOCABULARY_MEASUREMENT_RESEARCH_GATE_2026-10-04.md` (approved bounded gate; no acquisition, public-promotion or scale authority) |
+| Fundraising review-only implementation sequence and its completed local regression record | `FUNDRAISING_SUCCESSOR_MATRIX_2026-10-04.md` (active bounded plan/readout; no acquisition, public-promotion, public-contract, release, Viewer or scale authority) |
 | Current public release | `PUBLIC_CONTRACT_0_5.md`, its schemas and immutable manifest |
 | vNext product and future-contract decisions | `PUBLIC_VNEXT_DECISION_LOG.md` |
 | Current delivery state | `CURRENT_STATE.md` |

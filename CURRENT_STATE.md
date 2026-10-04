@@ -10,6 +10,8 @@ The bounded fundraising gate freezes evidence/time/scope and measurement safety 
 
 The executable, independently gated follow-on is recorded in the [fundraising successor matrix](FUNDRAISING_SUCCESSOR_MATRIX_2026-10-04.md). It preserves the research-only boundary and does not itself authorise ingestion, public promotion, release, Viewer work or scale.
 
+**Integrated regression update — 4 October 2026:** the provider-free Builder integration at `fc80c0e` passed its focused fundraising, projection, compatibility and contract suite (43 tests). A cleanroom full-suite rerun also completed without a product failure when given an isolated writable pytest base; the ordinary default Temp location is not readable in this environment. The implemented slice remains an internal/review-only projection: its tests and local fixtures do not constitute source acquisition, identity adjudication, production ingestion, a public card/release, Viewer work, or Top-100 evidence.
+
 ## Bounded commitment-content fix - 15 September 2026
 
 Builder's V5.1 commitment contract now requires a substantive WHAT for every `commitment_stated` candidate: either source text or a typed structured equivalent with both a committed action/state and its object/result. Metadata alone fails closed. The original V5 contract and historical campaign bytes remain available through a read-only historical parser; the six old V5 commitment candidates that lack the new field remain unchanged and are classified as predating this strengthened invariant. The completed product-value experiment and its human corrections were not rerun or altered.

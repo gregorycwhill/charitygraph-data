@@ -1,5 +1,7 @@
 # CharityGraph Fundraising Industry Source Design
 
+> **Current-status notice — 4 October 2026.** This historical experimental design is subordinate to `FUNDRAISING_VOCABULARY_MEASUREMENT_RESEARCH_GATE_2026-10-04.md` and `FUNDRAISING_SUCCESSOR_MATRIX_2026-10-04.md`. PFRA, FIA, Donor Republic and Funraisin adapters remain research-only; no production ingestion, targeted detail acquisition, canonical source record, public projection, release, or scale follows from this document. Vendor or promotional material never promotes an ROI, effectiveness, causal, quality, cost-share or profitability fact. Any retained research example remains evidence for review, not a CharityGraph production observation.
+
 **Status:** Approved experimental source-family design for review-only integration  
 **Date:** 2026-08-22  
 **Applies to:** Semantic Enrichment Benchmark v1 and subsequent fundraising-source evaluation  
