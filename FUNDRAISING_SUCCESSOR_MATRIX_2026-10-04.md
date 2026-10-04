@@ -1,0 +1,35 @@
+# Fundraising successor matrix — 4 October 2026
+
+**Status:** Active, bounded implementation plan
+
+**Authority:** This plan implements the bounded decisions in `FUNDRAISING_VOCABULARY_MEASUREMENT_RESEARCH_GATE_2026-10-04.md`. It does not amend product, source-rights, taxonomy, public-contract, release, or scale authority. It is the successor record for `CG-FUNDRAISING-VOCAB-MEASUREMENT-GATE-287`.
+
+## Entry conditions and inherited work
+
+The 287 research result is complete. Its focused suites reported 59 executions on 4 October (overlapping suites; not a unique-test count). The durable Builder research/implementation inputs are `dccc7ab` (F2F policy), `a54d526` (typed practice/campaign/provider contracts), `8a93cd9` (finance compatibility), `50af91b` (money-attribution study), `1d7ae85` (money-scope links), `fe0c0d4` (derivative gate), `2c8a331` (review profile), `08ba60c` (industry candidates), and `e384a5e` (cohort regression/readout). The archaeology/state map is `a7d2e66`.
+
+They live in isolated 287 worktrees/branches and are not silently copied into the dirty canonical Builder checkout. The current S0 Attempt-21 successor worktrees (`s0-attempt21-successor-builder` at `228066e` and `s0-attempt21-successor-data` at `cfb32b4`) concern fail-closed S0 authority, not fundraising; they are not a merge target for this slice.
+
+Before a Builder integration task starts, select a clean dedicated worktree, compare its base with the cited 287 commits, and record the exact cherry-pick/reimplementation decision. Do not mutate either current dirty canonical checkout or repeat 287 archaeology, research retrieval, or source acquisition.
+
+## Successor matrix
+
+| Lane | Disposition and deliverable | Builder integration / tests | Data/docs | Explicit gate basis |
+| --- | --- | --- | --- | --- |
+| A. Typed internal observations | **Approved review-only.** Versioned composable practice, campaign and explicit provider-relationship assertions; preserve wording, subject/scope, time, evidence/source role, production method, coverage and review state. | Start from `a54d526`; integrate beside legacy `models.py` method observations, then wire only a review projection near `north_star_projection.py`. Port positive, unknown, ambiguous-binding, historical, discontinued and scoped-nonfinding fixtures. | Keep the gate as semantic authority; add an implementation record after clean Builder integration. | Native facets, F2F policy, explicit provider relation and campaign separation are ready to freeze; visible projection is review-only. No public schema or Viewer. |
+| B. F2F lifecycle/currentness | **Approved deterministic governance only.** Decide lifecycle from structured source-supported inputs; no Boolean or universal freshness threshold. | Start from `dccc7ab`; test `current`, `recent`, `historical`, `discontinued`, `unknown`, scoped nonfinding, unresolved identity and source silence. | Link implementation readout; do not elevate source-specific interpretation to policy. | PFRA membership establishes membership only; historical material is not currentness; unstated setting, agency, regular-giving and continuity remain unknown. |
+| C. Finance measurement and money links | **Approved policy; representation review-only.** Preserve source-native money, entity, period, basis, component treatment and smallest explicit attribution grain. Direct disclosure → reconstruction → bounds → unavailable/null. | Start from `8a93cd9`, `1d7ae85` and `fe0c0d4`; reuse `MoneyObservation`, financial rows and `v05/fundraising.py`. Test incompatible entity/period/basis, finance-only, direct disclosure, missing component and no-forced-point controls. Quarantine new use of legacy `estimate_fundraising`/`CB-FUND-H03`; compatibility change needs its own tested migration. | Record source-native metric semantics and absence of method attribution in review fixtures. | Attribution grain and constrained ordering are frozen; bounds lack real available cohort cases and remain review-only. No ROI, cost share, net proceeds or aggregate allocation. |
+| D. Review-only local profile | **Approved review-only.** Reproduce the four-subject local profile only from retained lawful fixtures and governed observations. | Start from `2c8a331` and `e384a5e`; retain profile/regression negative cases and coverage/missingness. Do not attach to card/release renderers. | Retain concise result/readout and fixture provenance; no public examples or release manifest changes. | Local profile is reproducible but neither public card nor release surface. |
+| E. Vocabulary/crosswalk pressure | **Candidate/review-only.** Keep source term → candidate facet → provenance/crosswalk with non-equivalence. | Start from `3e80813`; reject flat mutually exclusive methods and source-term-as-truth. | Candidate vocabulary remains working evidence, not a public enum. | Contract can freeze internally; assignments and campaign type vocabulary remain review-only pending cohort pressure review. |
+| F. Industry/source adapters | **Research-only; blocked from production ingestion.** PFRA/FIA/Donor Republic/Funraisin only as bounded research fixtures. | Preserve `baseline_corpus.py` exact-domain membership behaviour; no practice/currentness/provider fact from membership alone. No new adapter or retrieval. | Record only lawful research evidence and exact gap; no canonical source record/publication. | Requires per-family rights, refresh, retention, republication, identity and time-semantics decision. Research retrieval is not acquisition. |
+| G. Public contract, Viewer, release and scale | **Blocked.** No schema, immutable release, Viewer, Top-100 or public projection work. | No code task enabled. | No public-contract/release edits. | Requires a 30–50-case rights-cleared cohort, independent identity review, measured error classes, real finance envelopes, vocabulary-pressure review and coordinated Builder/Data/Viewer decision. |
+
+## Independent execution and blocking rules
+
+Lanes A–E may proceed independently in clean local worktrees, subject to their row gate. A blocker in C does not block A/B/D/E. A source-rights or acquisition blocker in F does not block any fixture-only lane. G remains blocked regardless of progress elsewhere.
+
+Every projection or contract test must retain a source locator or fixture binding, wording, subject/scope, time, source role, coverage/missingness, production method and review state. Include refusal cases for ambiguous binding, source silence and incompatible financial dimensions. Deterministic validation may govern supplied fields; it may not infer unrestricted prose.
+
+## Explicit research gaps
+
+Do not convert these gaps into implementation assumptions: rights-cleared publishable campaign-row money; time-varying PFRA membership semantics; currentness strength of provider case studies; real finance disclosures supporting checked definite/possible/excluded envelopes; and campaign categories that survive cross-source mapping without flattening mechanics, channels or delivery details.

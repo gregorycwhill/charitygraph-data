@@ -8,6 +8,8 @@
 
 **Fundraising gate:** The 4 October 2026 [fundraising vocabulary and measurement gate](FUNDRAISING_VOCABULARY_MEASUREMENT_RESEARCH_GATE_2026-10-04.md) authorises only a bounded review-only follow-on after its listed source-rights, cohort, identity, finance-fixture and coordinated-contract preconditions. It does not authorise Top-100/public scale, acquisition, a public-schema change or Viewer work.
 
+**Fundraising successor sequencing:** The [successor matrix](FUNDRAISING_SUCCESSOR_MATRIX_2026-10-04.md) is the active implementation decomposition. Its internal typed-observation, lifecycle, finance-policy, review-profile and vocabulary-pressure lanes are independently gated; its adapter and public/scale lanes remain blocked.
+
 Earlier planning-scope statements below are retained as historical context and are superseded where they conflict with this current status. The Phase 5 Top-100 objective remains active and Phase 6 remains closed.
 
 ## 1. Delivery rule

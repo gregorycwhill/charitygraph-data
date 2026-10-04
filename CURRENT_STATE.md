@@ -8,6 +8,8 @@
 
 The bounded fundraising gate freezes evidence/time/scope and measurement safety policies, while leaving vocabulary assignments, source adapters and visible projection review-only. It does not authorise new source acquisition, a public schema/release, Viewer work, or Top-100 scale. See [the gate decision](FUNDRAISING_VOCABULARY_MEASUREMENT_RESEARCH_GATE_2026-10-04.md).
 
+The executable, independently gated follow-on is recorded in the [fundraising successor matrix](FUNDRAISING_SUCCESSOR_MATRIX_2026-10-04.md). It preserves the research-only boundary and does not itself authorise ingestion, public promotion, release, Viewer work or scale.
+
 ## Bounded commitment-content fix - 15 September 2026
 
 Builder's V5.1 commitment contract now requires a substantive WHAT for every `commitment_stated` candidate: either source text or a typed structured equivalent with both a committed action/state and its object/result. Metadata alone fails closed. The original V5 contract and historical campaign bytes remain available through a read-only historical parser; the six old V5 commitment candidates that lack the new field remain unchanged and are classified as predating this strengthened invariant. The completed product-value experiment and its human corrections were not rerun or altered.
