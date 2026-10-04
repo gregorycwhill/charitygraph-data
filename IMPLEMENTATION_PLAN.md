@@ -6,6 +6,8 @@
 
 **Active scope:** Preserve the completed bounded product-value evidence and private experiment-only namespace. The bounded commitment-content fix is complete; do not repeat semantic requests or promote experiment items to canonical/public knowledge. Any future work, including Top-100 scale, requires its own applicable authority. Phase 5 Top-100 remains active and is not authorized for scale.
 
+**Fundraising gate:** The 4 October 2026 [fundraising vocabulary and measurement gate](FUNDRAISING_VOCABULARY_MEASUREMENT_RESEARCH_GATE_2026-10-04.md) authorises only a bounded review-only follow-on after its listed source-rights, cohort, identity, finance-fixture and coordinated-contract preconditions. It does not authorise Top-100/public scale, acquisition, a public-schema change or Viewer work.
+
 Earlier planning-scope statements below are retained as historical context and are superseded where they conflict with this current status. The Phase 5 Top-100 objective remains active and Phase 6 remains closed.
 
 ## 1. Delivery rule
