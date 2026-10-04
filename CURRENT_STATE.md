@@ -10,6 +10,8 @@ The bounded fundraising gate freezes evidence/time/scope and measurement safety 
 
 The executable, independently gated follow-on is recorded in the [fundraising successor matrix](FUNDRAISING_SUCCESSOR_MATRIX_2026-10-04.md). It preserves the research-only boundary and does not itself authorise ingestion, public promotion, release, Viewer work or scale.
 
+**Overnight saturation update — 5 October 2026:** the 290 50-case deterministic fixture readout leaves all source-backed scale gates closed. The ranked local blocker-closure plan is [the fundraising overnight saturation backlog](FUNDRAISING_OVERNIGHT_SATURATION_BACKLOG_2026-10-05.md); it explicitly excludes duplicate fixture expansion, source acquisition and public work.
+
 **Integrated regression update — 4 October 2026:** the provider-free Builder integration at `fc80c0e` passed its focused fundraising, projection, compatibility and contract suite (43 tests). A cleanroom full-suite rerun also completed without a product failure when given an isolated writable pytest base; the ordinary default Temp location is not readable in this environment. The implemented slice remains an internal/review-only projection: its tests and local fixtures do not constitute source acquisition, identity adjudication, production ingestion, a public card/release, Viewer work, or Top-100 evidence.
 
 ## Bounded commitment-content fix - 15 September 2026
