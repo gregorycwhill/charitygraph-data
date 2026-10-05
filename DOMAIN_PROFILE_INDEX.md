@@ -6,6 +6,8 @@
 
 **Prospective note (5 October 2026):** Fundability/Giving Offers is a bounded §8 profile seam; its source, scope, finance, funding and coverage boundaries are specified in [FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md](FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md).
 
+**Productisation update (5 October 2026):** The F2-semantic-certified profile is now being productised. It preserves the independence of Program and Giving Offer, source-stated designation and legal restriction, appeal and underlying program, and historic finance and marginal allocation; unresolved destinations block finance joins.
+
 ## 1. Profile pattern
 
 Each domain profile will define:

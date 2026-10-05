@@ -12,6 +12,8 @@
 
 Earlier planning-scope statements below are retained as historical context and are superseded where they conflict with this current status. Phase 6 remains closed.
 
+**Fundability handoff (5 October 2026):** F2 semantics are certified and this tranche productises their ordinary Builder/Data architecture. The subsequent bounded coverage/acquisition reality slice is proposed only: it tests discovery recall, ordinary/sophisticated and third-party/offline routes, temporary appeals, dynamic-form gaps, identity resolution, freshness and coverage states. It does not execute here.
+
 ## Active Phase 5 sequence — North Star Completion
 
 1. **Tranche A — North Star version cutover:** this coordinated Data/Builder change creates an explicit vNext projection vocabulary while preserving the historical v0.1 mapping and artifacts.

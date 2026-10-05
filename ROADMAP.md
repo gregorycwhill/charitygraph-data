@@ -6,6 +6,8 @@
 
 **Prospective note (5 October 2026):** F0/F1 Fundability is a provider-free representation/evidence-proof tranche outside S0. It changes neither North Star v0.2 nor public v0.5; see [FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md](FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md).
 
+**Fundability handoff (5 October 2026):** Following F2 semantic certification and this productisation tranche, the next proposed phase is a bounded Fundability coverage/acquisition reality slice. It must measure discovery recall, forms/routes, identity resolution, freshness and explicit coverage-state production without payment, outreach, new public schema, or recommendation work.
+
 ## Outcome
 
 Build a one-stop shop for structured, governed Australian charity data: an integrated projection over linked evidence, observations, measurements, assertions, relationships, decisions and coverage—not a single semantic slice or opaque charity record.

@@ -10,6 +10,8 @@
 
 **Prospective note (5 October 2026):** Giving Offer/Fundability is a bounded §8 design seam, governed by [FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md](FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md); it does not amend public contract 0.5 or North Star v0.2.
 
+**Productisation update (5 October 2026):** F2 Giving Offer/Fundability semantics are certified and entering productisation as governed section-8 knowledge. They are not public, corpus-complete, a recommendation engine or payment capability; public v0.5 and North Star v0.2 remain unchanged.
+
 ## 1. Public promise
 
 > **CharityGraph is the one-stop shop for structured, governed Australian charity data.**
