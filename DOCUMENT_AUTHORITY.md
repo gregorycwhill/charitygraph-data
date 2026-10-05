@@ -88,7 +88,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Current delivery state | `CURRENT_STATE.md` |
 | Capability sequence | `ROADMAP.md` |
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
-| Active Phase 5 North Star v0.2 projection vocabulary and epistemic rules | `NORTH_STAR_TARGET_CARD.md` (active pointer to immutable `north-star-v0.2`; internal planning projection contract, not a public schema) and `NORTH_STAR_TARGET_CARD_V0_2.md` (durable version definition) |
+| Active North Star v0.3 projection vocabulary and epistemic rules | `NORTH_STAR_TARGET_CARD.md` (active pointer to immutable `north-star-v0.3`; internal planning projection contract, not a public schema) and `NORTH_STAR_TARGET_CARD_V0_3.md` (durable version definition); `NORTH_STAR_TARGET_CARD_V0_2.md` remains immutable historical authority |
 | Compact Builder machinery grounding map | Builder [`BUILDER_MACHINERY.md`](https://github.com/gregorycwhill/charitygraph/blob/main/BUILDER_MACHINERY.md), subordinate to Builder `ARCHITECTURE.md` and this repository's shared product authority |
 | Historical North Star v0.1 section numbering and meanings | `NORTH_STAR_TARGET_CARD_V0_1.md` (preserved historical contract; not active numbering) |
 | Phase 5 North Star section-by-section evidence inventory | `PHASE5_NORTH_STAR_COMPLETION_LEDGER.md` (initial Tranche B assessment; not empirically complete and grants no execution authority) |
