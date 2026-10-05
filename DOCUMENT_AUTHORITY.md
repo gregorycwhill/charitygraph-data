@@ -2,7 +2,7 @@
 
 **Status:** Canonical project-governance document
 
-**Version:** 2.1-draft
+**Version:** 2.1-draft; active North Star authority is north-star-v0.3
 
 **Date:** 28 August 2026
 
@@ -58,6 +58,7 @@ Every active document SHALL state its status, version/date, scope and material s
 
 | Subject | Authority |
 |---|---|
+| Active North Star target card | `NORTH_STAR_TARGET_CARD.md` and immutable `NORTH_STAR_TARGET_CARD_V0_3.md`; `NORTH_STAR_TARGET_CARD_V0_2.md` is preserved as historical immutable authority |
 | Product promise, boundary and users | `PRODUCT.md` |
 | Playbooks product purpose and boundaries | `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md` |
 | Product principles | `PRINCIPLES.md` |
