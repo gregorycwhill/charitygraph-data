@@ -8,6 +8,8 @@
 
 **Nature of this document:** Approved product and conceptual-data-model authority. It governs prospective Builder vNext design but does not amend the immutable public contract 0.5 or create a future public schema.
 
+**Prospective note (5 October 2026):** the separate Giving Offer design retains §8 offer facts independently from §3 destination identity, §13 finance, §14 historic funding and §20 coverage; see [FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md](FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md).
+
 ## 1. Executive conclusion
 
 The eleven design contracts form a coherent product architecture. They do not reveal a need to retreat from the current CharityGraph direction. They do reveal that the product documentation and common semantic contract are now materially narrower than the domain model that has grown around them.
