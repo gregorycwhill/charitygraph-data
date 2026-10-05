@@ -1,93 +1,134 @@
-﻿# CharityGraph North Star Target Card v0.3
+# CharityGraph North Star Target Card v0.3
 
-**Status:** Active internal product-planning projection contract
+**Status:** Active internal product-planning projection contract, adopted 15 September 2026.
 **Contract identity:** north-star-v0.3
-**Active pointer:** `NORTH_STAR_TARGET_CARD.md` contains this definition. `NORTH_STAR_TARGET_CARD_V0_2.md` remains immutable historical authority.
+**Active pointer:** NORTH_STAR_TARGET_CARD.md contains this same immutable v0.3 definition. `NORTH_STAR_TARGET_CARD_V0_2.md` remains immutable historical authority.
+**Authority:** Derived from the canonical CharityGraph product authorities; it does not override PRODUCT.md, PRINCIPLES.md, PUBLIC_COMMITMENTS.md, EXPERIENCES.md, INTEGRATED_PRODUCT_AND_DATA_MODEL.md, DOMAIN_PROFILE_INDEX.md, source governance or taxonomy governance.
 
-## Cross-cutting decision questions
+## How to use this card
 
-The 20 sections below are knowledge domains, not user questions. A governed projection may combine them to answer: what an organisation does; how it raises resources, including solicitation and delivery; what fundraising spend, raised and accounting amounts are evidenced and on what basis; what program, service, appeal, project or fund can currently receive a donor contribution and under what terms; and what compatible historical funding/expenditure context can be joined. Every contributing proposition retains subject, scope, time, source, metric basis, missingness and compatibility.
+This is a completeness and anti-drift anchor. The 20 sections are knowledge domains, not user questions. Every implementation or experiment must state: the current work; sections directly advanced; adjacent sections that can reuse evidence; untouched domains; forcing questions advanced; whether one slice is being mistaken for the product; whether independent tasks can share evidence; whether each task is deterministic, model-assisted or human-governed; and whether scale is premature.
+
+The card is a projection over linked subjects, scopes, observations, assertions, measurements, relationships, decisions, evidence and coverage. It is not a mega-record, model response or promise that every organisation has every field.
+
+### Anti-drift and cross-domain reuse
+
+Program and service discovery is one part of CharityGraph, not CharityGraph itself. When an evidence packet is acquired or processed, check for compatible independent observations for other sections without corrupting domain semantics, scope, source role or provenance. Bundling physical work does not merge logical contracts: each proposition retains its subject, scope, evidence, validation, lineage and disposition.
 
 ## Cross-cutting projection rules
 
-Current Giving Offers, historical funding flows and historical expenditure/allocation are distinct proposition families. A current Giving Offer creates no historical funding, restriction, revenue or expenditure fact; a historical finance/funding fact creates no current Giving Offer. Cross-domain projections join only when identity, scope, time and metric basis are compatible.
+Every material item exposes, where applicable: subject and scope, time, source role, evidence locator, production method, uncertainty or review state, missingness, correction status and projection-contract version.
 
-### Subject and destination scope
+### Subject and scope stack
 
-The scope stack includes legal entity, operating organisation/unit, group/branch/brand, program, service, project, campaign, appeal, fund, site, population, geography, event/transaction and reporting period. Donor-facing destinations resolve as **resolved**, **candidate-or-ambiguous** or **unresolved**; label similarity alone never justifies a join.
+Preserve the lowest evidence-supported scope: legal entity and registry identity; operating organisation and unit; group, branch, brand, subsidiary or predecessor/successor; program, project, campaign or intervention; service, site, facility or access point; population, community, geography or affected place; event, episode, transaction, assessment or reporting period; and relationship endpoint and role. An organisation card may project a program fact while retaining its narrower scope. Unknown scope is not permission to choose organisation.
 
-## Active v0.3 sections
+The subject/scope stack also includes appeals and funds plus donor-facing destination identity. Destination identity is resolved, candidate-or-ambiguous or unresolved; lexical or name-only similarity never justifies a join.
+
+### Evidence, epistemic status and missingness
+
+Keep source facts, first-party claims, model candidates or inferences, human decisions and governed knowledge distinct. A first-party statement is attributed evidence, not an independent fact. A model output is not governed knowledge without validation, review and promotion. Legal purpose is not current activity. A policy or commitment is not implementation. A service description is not current availability or capacity. Activity, output, outcome, impact, contribution and causation remain distinct.
+
+Missingness is not absence. Preserve evidence present, not found in reviewed sources, source silent, not processed, source unavailable, not acquired, processing failed, not reviewed, unknown, not applicable, withheld and stale, using existing governed vocabulary and basis rules. A correctly represented unavailable or unknowable item may satisfy bounded completeness without positive content. Relationships are directed and typed. Source-reported classification is separate from CharityGraph-assessed classification.
+
+## Active v0.2 sections
 
 ### 1. Identity / regulatory
-Legal entities, operating organisations, units, identifiers, legal form, registration, DGR, control, lifecycle and succession, with source and time scope.
+
+Legal entities, operating organisations, units, branches and brands; ABN, ACNC and other authority-scoped identifiers; legal form, registration, DGR status and scoped endorsements; reporting, control and group structures; lifecycle; rename, merger, split, succession and predecessor/successor history. Regulatory facts retain source and time scope. A registry identifier does not prove that every branded activity belongs to the entity.
 
 ### 2. Purpose / cause
-Purpose, mandate, mission, causes, intended change, classifications and separation of purpose, activity, intervention and outcome.
+
+Legal charitable purposes as regulator-reported facts; stated mandate, mission and objectives; causes, subject areas and intended change; goals and theories of change where stated; source-reported classifications; CharityGraph-assessed classifications; and separation of purpose, cause, activity, intervention and outcome. Purpose alone does not establish current activity, effectiveness or alignment.
 
 ### 3. Programs / services
-Programs, repeatable services, projects, campaigns, appeals and funds, with operating, delivery, funding, partnership and status evidence. These may be donor-facing destinations only where separately evidenced; current fundability is not an intrinsic program property and labels retain identity-resolution state.
+
+Programs, repeatable services, projects, campaigns, appeals, funds and interventions; parent/child structure; operating, delivery, funding, sponsorship, partnership and auspice roles; joint or externally operated work; current, historical, planned and winding-down status; delivery mode, sites, populations and geographies; referral paths; and links to participation, finance and outcomes. A program record does not establish current availability or an intrinsic donor-facing fundability property.
 
 ### 4. Activities / SDGs
-Activities, interventions, delivery actions, implementation events and source-reported or assessed taxonomy assignments, kept separate from outcomes.
+
+Activities, interventions, delivery actions and implementation events with period, setting, subject and program/service scope; source-reported SDG and taxonomy assignments; independently assessed assignments with scheme, version and method; and evidence for activity kept separate from outputs, outcomes and impact. Taxonomy labels do not prove activity.
 
 ### 5. Geography / beneficiaries
-Population roles, intended/eligible/reached/served/affected populations, delivery and funded geographies, sites and statistical editions.
+
+Intended, eligible, reached, served, represented, participating, consulted, mentioned and affected populations; population roles; human, community, place-based, ecological and other populations; registered, administrative, operating, delivery, catchment, advertised, funded, program and observed-reach geographies; sites and statistical geography editions. Mentioned does not mean served. Address does not establish service geography.
 
 ### 6. Participation
-Volunteering, membership, governance, co-design, consultation, advocacy, donor and fundraiser roles, opportunities, episodes and aggregate measures.
+
+Volunteering, membership, governance, co-design, consultation, advocacy, lived-experience contribution, events and peer support; participant, volunteer, member, donor, advocate, adviser and co-designer roles; advertised opportunity versus enduring relationship; bounded episode versus aggregate measure; eligibility, skills, setting, commitment, time pattern and current availability. An opportunity does not prove participation.
 
 ### 7. Direct service / capacity
-Service description, eligibility, referral, intake, access, availability, hours, capacity, throughput, waitlists, staffing, constraints and missingness states.
+
+Service description and function; eligibility, referral, intake and access; advertised availability, current availability and operating hours; geographic and channel access; capacity, throughput, waitlist, staffing and resource constraints; delivery evidence; and unknown, unavailable, not acquired and not processed states. A service page does not prove current capacity; silence does not prove unavailability. Section 11 capability is distinct from section 7 service capacity.
 
 ### 8. Fundraising
-Strategy, solicitation mechanism, channel, setting, resource sought, relationship stage, commitment, transfer, delivery party and compensation. Source-reported campaign/activity targets, amount raised, amount spent and participant/donor/fundraiser counts retain exact metric wording, period and source role; do not infer ROI, cost-to-raise, acquisition cost or effectiveness. A Giving Offer is a distinct current donor-facing proposition carrying accepting party, audience, destination, designation semantics, commitment pattern, conditions, excess/redirection where stated, action route and currentness. Distinguish unrestricted, source-stated designation, source-stated preference, source-reported restricted, contractual restriction, negotiated and unknown; source-stated designation does not establish legal restriction.
+
+Strategy, solicitation mechanism, channel, physical or digital setting, resource sought, donor/funder relationship stage, commitment pattern, payment or transfer instrument, delivery party and compensation model; campaign, appeal, creative, placement, encounter, commitment and transfer. Include residential door-knocking, public/private-site face-to-face, telephone, direct mail, digital, regular giving, bequests, major giving, workplace and corporate giving, community and peer-to-peer fundraising, shops, bins, collections, goods drives, television and out-of-home advertising. Method is not revenue or expenditure, and one observation does not prove a continuous organisation-wide practice. Source-reported targets, raised, spent and participant/donor/fundraiser counts retain exact metric basis and do not imply ROI or accounting truth. A current Giving Offer records accepting party, audience, destination, designation, commitment/terms, action route, currentness and stated redirection or excess treatment; source-stated designation does not imply legal restriction.
 
 ### 9. Governance / leadership
-Governing instruments, boards, positions, responsible persons, appointments, cessations, control and effective periods.
+
+Governing instruments, boards, committees, positions, offices, responsible persons, appointments and cessations; management, operational, service, clinical and community governance; appointment, control and decision relationships; changes, vacancies and effective periods; and source-reported register facts versus inferred structure. A responsible-person register is not automatically a complete management graph.
 
 ### 10. People / workforce
-Employees, contractors, volunteers, members and partner personnel, with role, relationship, location, scope and period.
+
+Employees, contractors, labour hire, volunteers, members, placements and relevant partner personnel; people, jobs, headcount, FTE, hours and period; workforce role, employment relationship, location and program/service scope; diversity or capability measures with source and method; and distinction from governance, participation and beneficiary populations. A volunteer count is not an employee count.
 
 ### 11. Scale / capability
-Scale measures, assets, credentials, capability, footprint, throughput, constraints and dependencies; do not infer capability from revenue, brand, staff or geography.
+
+Scale measures with period, unit, denominator and reporting scope; sites, infrastructure, systems, equipment and operating assets; credentials, qualifications, registrations, accreditations and specialist capability; workforce and partner capability; delivery footprint, operating history and demonstrated throughput; constraints, dependencies and unknowns. Do not infer capability from revenue, brand size, staff count or geography. Capability assets are distinct from service availability.
 
 ### 12. Relationships
-Directed typed relationships among organisations, programs, services, appeals, funds and endpoints, with source, time, direction and resolution.
+
+Directed typed roles between organisations, programs, services, sites and other endpoints: operator, deliverer, funder, sponsor, partner, auspice and network; source, temporal validity, direction, confidence and endpoint resolution; grants, contracts, affiliations, memberships and referrals. Shared branding, co-location or a common domain does not establish a relationship. Unknown endpoints remain unresolved.
 
 ### 13. Finances
-Entity/consolidation scope, period, currency, accounting basis, statements, line items, income, expenditure, assets, liabilities, donations, grants, fundraising, restrictions and allocations. Provider/campaign-reported raised/spend metrics retain source-native basis until reconciled to accounting concepts; derived shares/comparisons require compatible entity, period, currency, numerator, denominator and attribution scope, otherwise abstain.
+
+Reporting entity and consolidation scope; reporting period, currency, scale, accounting basis, statement, note, line item, unit and assurance context; income/revenue, expenditure, assets, liabilities, donations, bequests, grants, contracts, sponsorship, fundraising and employee expenditure; restrictions, funds, allocations, reserves, calculations, revisions and corrections. Distinguish award, commitment, payment, receipt, revenue recognition, expenditure/use and refund/return. Provider/campaign amount metrics retain source-native basis until governed accounting reconciliation; scoped calculations require compatible entity, period, currency, numerator, denominator and attribution scope or abstention. Promotional ROI is not assured financial fact.
 
 ### 14. Funding / dependencies
-Grants, contracts, sponsorships, donations, funders, recipients, award/commitment/payment/receipt stages, restriction, dependency and concentration. Historical funding to a destination does not establish a current public Giving Offer; a current Giving Offer does not establish receipt or legal restriction.
+
+Grants, contracts, sponsorships, donations and funding instruments; funder, recipient, intermediary and delivery roles; award, commitment, payment, receipt and reporting stages; restricted purpose, period, program, service and geography; dependency, concentration, conditionality and alternative funding; source silence and unknown dependency. Historical funding does not create a current Giving Offer, and a current Giving Offer does not create historical receipt, revenue, expenditure or legal restriction. A receipt alone does not prove dependency.
 
 ### 15. Ethos / values
-Values, principles, affiliation, commitments, policies, implementation evidence and source-versus-assessment distinction.
+
+Values, principles, ethos and institutional identity; affiliation, membership, scheme, registration and accreditation; public positions, commitments, policies and implementation evidence; codes and safeguarding/inclusion commitments; source-reported self-description versus CharityGraph assessment; effective period and scope. Aspirational commitment is not implementation or outcome.
 
 ### 16. Conduct / adverse
-Allegations, complaints, investigations, findings, responses, jurisdictions, statuses, remediation and currentness.
+
+Allegation, complaint, concern, investigation, finding, determination and response; status, jurisdiction, date, subject, program/service and source; regulator, court, auditor, organisation and third-party roles; substantiated, unsubstantiated, unresolved, withdrawn, corrected and unknown states; compliance, remediation and current status. Adverse silence is not a clean record.
 
 ### 17. Notable history
-Founding, changes, mergers, campaigns, crises, inquiries and milestones with event/source dates and uncertainty.
+
+Founding, major changes, mergers, splits, predecessor/successor events, notable programs, campaigns, crises, inquiries and milestones; institutional, legal, community and operating context; event date, source date, retrospective interpretation and uncertainty. History may explain structure but does not establish current activity, ethos, impact or risk.
 
 ### 18. Evaluation / outcomes
-Activity, output, outcome, impact, contribution, evaluation design, measures, results, limitations, attribution and causation.
+
+Activity, output, outcome, impact and contribution; evaluation question, design, comparator, baseline, measure and period; reported result, uncertainty, limitation and population scope; attribution, contribution and causation; implementation versus outcome evidence; first-party report, independent evaluation and CharityGraph assessment; correction, replication and unresolved result states. An output count is not an outcome; association is not causation.
 
 ### 19. Classification / search / AI discovery
-Source classifications, assessed assignments, schemes, methods, aliases, discovery signals, candidates, abstention, rejection and provenance.
+
+Source-reported regulator, legal, scheme and taxonomy classifications; CharityGraph-assessed assignments with scheme/version/method; search terms, aliases, lenses and authorised discovery signals; discovery candidate, reviewed assignment, abstention and rejection; provenance and non-equivalence controls. Retrieval relevance does not establish truth, identity or availability.
 
 ### 20. Evidence / coverage / freshness / corrections
-Source identity/role/rights/acquisition, locators, representations, proposition identity, contract identity, coverage basis, review/freshness, correction, audit and release boundaries. Support surface-scoped states such as `not_found_in_reviewed_public_giving_channels`, distinct from explicit unavailability, source silence, unknown and not processed. Use volatility-appropriate freshness for actionable Giving Offers, appeals and service availability while retaining historical observations.
+
+Source identity, source role, rights and acquisition state; exact locator, quote or structured field, representation method and hash; subject, scope, time, proposition identity and projection-contract identity; coverage state and basis; review date, freshness, stale state and supersession; correction, dispute, adjudication and audit history; release, publication, privacy and access boundaries. Surface-scoped `not_found_in_reviewed_public_giving_channels` is distinct from explicit unavailability, source silence, unknown and not processed. Use volatility-appropriate freshness for actionable Giving Offers and service availability. A section can be complete for a bounded cohort through evidence-backed support or honest tested missingness; this is not production completeness.
+
+## Cross-cutting governed knowledge families
+
+Memberships, schemes, registrations and accreditations; and positions, commitments and implementation remain governed knowledge families even though they no longer own standalone v0.2 sections. Their objects, scopes, evidence and identities are not rewritten. An explicit versioned projection may show them in identity/regulatory, ethos/values, capability, classification/search, conduct or evaluation when evidence supports that view. No automatic meaning is propagated.
 
 ## Fundable Universe projection
 
-The Fundable Universe is a parameterised projection over governed programs, services, appeals and funds, Giving Offers, evidence and coverage states. It is not a stored master list, recommendation, ranking, universal semantic, or claim that direct designation is normatively superior to unrestricted giving.
+The Fundable Universe is a parameterised governed projection over programs, services, appeals and funds, Giving Offers, evidence and coverage states. It is not stored master truth, ranking, recommendation or a claim that direct designation is normatively superior to unrestricted giving.
 
 ## Completion and review template
 
-Record the hypothesis, analyst question, active sections, subject/scope, retained evidence, source role/locator, deterministic/model-assisted/human steps, proposition and missingness states, mechanical/semantic criteria, failure taxonomy, cost, review load, stopping rule, stronger-model conditions, unresolved sections, whether new acquisition is required, forcing questions advanced, cross-section joins attempted and their compatibility outcome, and answerability outcome: **supported**, **bounded partial**, **tested missingness** or **unresolved**.
+For each tranche record the hypothesis and analyst question; active sections, subject/scope and retained evidence; source role and locator; deterministic, model-assisted and human steps; proposition and missingness states; mechanical and semantic acceptance criteria; failure taxonomy, cost and review load; stopping rule; stronger-model conditions; unresolved sections; whether new acquisition/provider work is required; forcing questions advanced; cross-section joins attempted and compatibility; and answerability outcome: supported, bounded partial, tested missingness or unresolved.
+
+North Star Completion requires bounded, governed and traceable support or honest missingness for all 20 v0.3 sections before a separate product-owner decision can authorise Top-100 scale. It does not require rich positive content for every organisation and does not silently migrate v0.1 assignments.
 
 ## Version history
 
-- `north-star-v0.1`: historical card.
-- `north-star-v0.2`: immutable historical card and prior active pointer.
-- `north-star-v0.3`: this immutable card and active pointer.
+- north-star-v0.1: historical card and section meanings in NORTH_STAR_TARGET_CARD_V0_1.md.
+- north-star-v0.2: immutable historical card and prior active pointer.
+- north-star-v0.3: this card and active pointer NORTH_STAR_TARGET_CARD.md.
