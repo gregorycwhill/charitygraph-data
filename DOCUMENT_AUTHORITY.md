@@ -1,8 +1,8 @@
-# CharityGraph documentation authority
+﻿# CharityGraph documentation authority
 
 **Status:** Canonical project-governance document
 
-**Version:** 2.1-draft
+**Version:** 2.1-draft; active North Star authority is north-star-v0.3
 
 **Date:** 28 August 2026
 
@@ -58,6 +58,7 @@ Every active document SHALL state its status, version/date, scope and material s
 
 | Subject | Authority |
 |---|---|
+| Active North Star target card | `NORTH_STAR_TARGET_CARD.md` and immutable `NORTH_STAR_TARGET_CARD_V0_3.md`; `NORTH_STAR_TARGET_CARD_V0_2.md` is preserved as historical immutable authority |
 | Product promise, boundary and users | `PRODUCT.md` |
 | Playbooks product purpose and boundaries | `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md` |
 | Product principles | `PRINCIPLES.md` |
@@ -66,7 +67,6 @@ Every active document SHALL state its status, version/date, scope and material s
 | Integrated conceptual model and domain seams | `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` |
 | Coverage, model economics and open curation | `COVERAGE_LLM_ECONOMICS_AND_OPEN_CURATION_POLICY.md` |
 | Source, evidence, provenance, adjudication and release governance | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` |
-| Governed knowledge temporal distinctions and bounded knowledge-at/valid-at reads | `BITEMPORAL_GOVERNED_KNOWLEDGE_ARCHITECTURE.md` (implemented contract; does not alter source, release or public-contract authority) |
 | Approved bounded local analytical-retention policy and independent-adjudication gate for the private product-value experiment namespace | `SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md` (policy authority); `PRODUCT_VALUE_VALIDATION_SLICE_DESIGN_2026-09-14.md` (experiment-specific execution packet; no execution authority) |
 | Source-rights historical audit for the frozen Phase 6 V3 corpus | `PHASE6_V3_SOURCE_RIGHTS_AUDIT_2026-09-13.md` (historical audit; not current execution authority) |
 | Phase 6 post-policy rights assessment for the frozen V3 inputs | `PHASE6_V3_POST_POLICY_RIGHTS_ASSESSMENT_2026-09-13.md` (offline assessment; no execution authority) |
@@ -83,15 +83,14 @@ Every active document SHALL state its status, version/date, scope and material s
 | Taxonomies, external schemes and native vocabularies | `TAXONOMY_AND_SCHEME_GOVERNANCE.md` |
 | CharityGraph Native architecture decisions | `CHARITYGRAPH_NATIVE_ARCHITECTURE.md` |
 | Domain ownership and research-design status | `DOMAIN_PROFILE_INDEX.md` |
+| Fundraising vocabulary and measurement bounded research gate | `FUNDRAISING_VOCABULARY_MEASUREMENT_RESEARCH_GATE_2026-10-04.md` (approved bounded gate; no acquisition, public-promotion or scale authority) |
+| Fundraising review-only implementation sequence and its completed local regression record | `FUNDRAISING_SUCCESSOR_MATRIX_2026-10-04.md` (active bounded plan/readout; no acquisition, public-promotion, public-contract, release, Viewer or scale authority) |
+| Fundraising scale/error backlog and downstream capability gate dispositions | `FUNDRAISING_SCALE_ERROR_GATE_REGISTER_2026-10-05.md` (active bounded plan; no acquisition, production ingestion, public-promotion, public-contract, release, Viewer or scale authority) |
 | Current public release | `PUBLIC_CONTRACT_0_5.md`, its schemas and immutable manifest |
 | vNext product and future-contract decisions | `PUBLIC_VNEXT_DECISION_LOG.md` |
 | Current delivery state | `CURRENT_STATE.md` |
 | Capability sequence | `ROADMAP.md` |
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
-| Active Phase 5 North Star v0.2 projection vocabulary and epistemic rules | `NORTH_STAR_TARGET_CARD.md` (active pointer to immutable `north-star-v0.2`; internal planning projection contract, not a public schema) and `NORTH_STAR_TARGET_CARD_V0_2.md` (durable version definition) |
-| Compact Builder machinery grounding map | Builder [`BUILDER_MACHINERY.md`](https://github.com/gregorycwhill/charitygraph/blob/main/BUILDER_MACHINERY.md), subordinate to Builder `ARCHITECTURE.md` and this repository's shared product authority |
-| Historical North Star v0.1 section numbering and meanings | `NORTH_STAR_TARGET_CARD_V0_1.md` (preserved historical contract; not active numbering) |
-| Phase 5 North Star section-by-section evidence inventory | `PHASE5_NORTH_STAR_COMPLETION_LEDGER.md` (initial Tranche B assessment; not empirically complete and grants no execution authority) |
 | Direct Service V1.2 representation experiment decision and Phase 5 tranche outcome | `PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md` |
 | Verification and release gates | `TEST_PLAN.md` |
 | Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |
@@ -201,62 +200,9 @@ SEMANTIC_HEURISTIC_APPROVALS.md is the canonical register for exceptions to the 
 
 `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` is the canonical cross-cutting authority for semantic validity, repeatability, technical replication and reproducible replay. `SEMANTIC_RELIABILITY_BASELINE_2026-08-28.md` is reference experimental evidence subordinate to that policy; it establishes no product threshold.
 
-## Scale S0 Attempt 20 current authority
-
-> **Superseded by Attempt 21 on 3 October 2026.** `SCALE_S0_ATTEMPT21_PRODUCT_OWNER_AUTHORITY_2026-10-03.md` (`CG-S0-PO-ATTEMPT21-2026-10-03`) is the sole current attempt-specific S0 authority. It allocates `attempt:s0:21` / `run:s0:attempt-21`, binds Builder `228066e00bc7dec07a00ddcd45fed07372f0bda7` and Data lineage anchor `e6b85e810847c0634e2936f8d5d139fd6ec35603`, and is A3-pending/non-executable. Attempt 20 remains immutable historical evidence and is non-reusable; this replacement creates neither an A3 nor a provider crossing.
-
-`SCALE_S0_ATTEMPT20_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`
-(`CG-S0-PO-ATTEMPT20-2026-09-26`) is the sole current attempt-specific S0
-authority and supersedes Attempt 19 for future execution. The structured
-authority and frozen material JSON records beside it are the machine-readable
-control-plane inputs. `policies/scale-s0/locator-subject-bindings-v2.yaml`
-is the current governed subject-binding registry: locator subject refs identify
-registered charity legal entities; ABNs are explicit external lookup identifiers
-only. It allocates exactly `attempt:s0:20` / `run:s0:attempt-20`, binds Builder
-`e538c1eccb8da6f29cc86ab7de8782b498a428c9`, binds Data lineage anchor
-`0935d7e470b3702323107ab0c8d56b3d977d881f`, and is A3-pending/non-executable.
-Attempt 18 is historical zero-crossing consumed authority and must not resume;
-Attempt 17 and its held USD 0.10 remain immutable.
-
-The [identity repair](SCALE_S0_IDENTITY_LINEAGE_REPAIR_2026-09-27.md) and
-[machine-readable lineage](SCALE_S0_IDENTITY_LINEAGE_V1.json) supersede the
-package references above for current loading. The committed Attempt-20
-structured authority is authoritative for the repaired Builder binding and
-pre-merge Data lineage anchor. Only `scale-s0-authorised-balanced-v3` is its
-executable mandate; historical v1/v2 artifacts are retained for verification.
-
 ## North Star planning anchor
 
-## Scale S0 operating-policy authority
-
-`SCALE_S0_PRODUCT_OWNER_AUTHORISATIONS_2026-09-22.md` is the controlling
-bounded operating-policy decision for Scale S0 authorisations A1--A5. It is
-subordinate to the product/rights/public-contract authorities and does not
-authorise public release or execution by itself.
-
-`SCALE_S0_LIVE_LOCATOR_ACTIVATION_2026-09-22.md` is the controlling additive
-product-owner activation for live use of the already-merged bounded locator-
-discovery mechanism in one future fresh S0 attempt. It changes only the
-implementation/fixture-only live-search gap; it does not amend the mandate,
-cohort, budgets, A1--A5 controls, Attempt 8 evidence or public-release
-prohibition.
-
-`SCALE_S0_ATTEMPT8_IDENTITY_RECONCILIATION_2026-09-22.md` is the additive,
-subordinate execution-history reconciliation record for the immutable Attempt 8
-binding. It is subordinate to the A1--A5 policy above and does not change that
-policy or create execution authority. `SCALE_S0_ATTEMPT9_OPTION_A_TERMINAL_CLOSURE_2026-09-24.md`
-is the discoverable current/latest history record: Attempt 9 is immutable
-zero-send blocked under Option A, and only a fresh Attempt 10 after the Builder
-repair is canonical may receive a new execution identity.
-
-`SCALE_S0_ATTEMPT18_PRODUCT_OWNER_AUTHORITY_2026-09-26.md`
-(`CG-S0-PO-ATTEMPT18-2026-09-26`) is immutable historical Attempt-18 evidence,
-not current authority. Its zero-crossing block consumed its number; it is
-non-resumable. `SCALE_S0_ATTEMPT19_PRODUCT_OWNER_AUTHORITY_2026-09-26.md` is
-also immutable history and is superseded for future execution. The current
-authority is the Attempt-20 authority above.
-
-`NORTH_STAR_TARGET_CARD.md` defines the active v0.2 projection vocabulary and derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. `NORTH_STAR_TARGET_CARD_V0_1.md` preserves historical numbering and meanings. A section ID is interpretable only with its projection-contract version; no ID-based migration is implied. Neither document overrides product authorities or proposes a public schema. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against the active card without silently redefining product scope. The completion ledger is a subordinate evidence inventory, not execution authority.
+`NORTH_STAR_TARGET_CARD.md` derives from `PRODUCT.md`, `PRINCIPLES.md`, `PUBLIC_COMMITMENTS.md`, `EXPERIENCES.md`, `INTEGRATED_PRODUCT_AND_DATA_MODEL.md` and `DOMAIN_PROFILE_INDEX.md`. It does not override those authorities and is not a public schema proposal. `ROADMAP.md` and `IMPLEMENTATION_PLAN.md` SHALL map delivery against it so a reality slice or domain implementation cannot silently redefine product scope.
 
 ## Semantic extraction decision propagation
 
