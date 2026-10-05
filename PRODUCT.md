@@ -8,6 +8,8 @@
 
 **Applies to:** Builder, Data, Viewer and Playbooks
 
+**Prospective note (5 October 2026):** Giving Offer/Fundability is a bounded §8 design seam, governed by [FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md](FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md); it does not amend public contract 0.5 or North Star v0.2.
+
 ## 1. Public promise
 
 > **CharityGraph is the one-stop shop for structured, governed Australian charity data.**

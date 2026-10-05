@@ -6,6 +6,8 @@
 
 **Active scope:** Reuse completed bounded evidence to assess the 20 active North Star sections. Do not repeat semantic requests or promote experiment items to canonical/public knowledge. North Star Completion can be satisfied by governed support or a tested, correctly scoped explanation of missingness; positive facts are not required everywhere. Any later Top-100 scale requires its own product-owner decision.
 
+**Prospective note (5 October 2026):** F0/F1 Giving Offer work is a distinct bounded §8 contract/reprojection proof. It is not S0 work, does not acquire sources, and cannot alter North Star v0.2 or public v0.5; see [FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md](FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md).
+
 **Implemented bounded architecture (19 September 2026):** internal catalogue support now distinguishes a governed knowledge cut-off from world-valid current belief and preserves non-positive coverage. It is specified in [BITEMPORAL_GOVERNED_KNOWLEDGE_ARCHITECTURE.md](BITEMPORAL_GOVERNED_KNOWLEDGE_ARCHITECTURE.md). This work has no source/provider/runtime crossing, no S0 recovery, no public-v0.5 change and no Top-100 authority; temporal UX and Semantica-derived research remain backlog-only.
 
 Earlier planning-scope statements below are retained as historical context and are superseded where they conflict with this current status. Phase 6 remains closed.

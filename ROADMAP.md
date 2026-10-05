@@ -4,6 +4,8 @@
 
 **Status:** Canonical product/engineering sequence, version 2.3-draft
 
+**Prospective note (5 October 2026):** F0/F1 Fundability is a provider-free representation/evidence-proof tranche outside S0. It changes neither North Star v0.2 nor public v0.5; see [FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md](FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md).
+
 ## Outcome
 
 Build a one-stop shop for structured, governed Australian charity data: an integrated projection over linked evidence, observations, measurements, assertions, relationships, decisions and coverage—not a single semantic slice or opaque charity record.

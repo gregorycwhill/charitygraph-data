@@ -4,6 +4,8 @@
 
 **Purpose:** Define the governed domain profiles to be specified and implemented incrementally
 
+**Prospective note (5 October 2026):** Fundability/Giving Offers is a bounded §8 profile seam; its source, scope, finance, funding and coverage boundaries are specified in [FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md](FUNDABILITY_AND_GIVING_OFFERS_DESIGN.md).
+
 ## 1. Profile pattern
 
 Each domain profile will define:
