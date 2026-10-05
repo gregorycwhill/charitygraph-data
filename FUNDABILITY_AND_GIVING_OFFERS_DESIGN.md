@@ -1,6 +1,6 @@
 # Fundability and Giving Offers design
 
-**Status:** Working design; bounded F0/F1 representation proof. **Date:** 5 October 2026. **Scope:** prospective Builder vNext only.
+**Status:** F2-semantic-certified; entering canonical productisation. **Date:** 5 October 2026. **Scope:** prospective Builder/Data architecture only; not public or corpus-complete.
 
 ## Decision and archaeology
 
@@ -36,10 +36,12 @@ The **Fundable Universe** is a parameterized query over governed offers plus exp
 
 Central source acquisition may represent Donate/Give, Ways to Give, program giving, appeal/campaign, form/FAQ/terms, major-giving, official third-party pages, annual/financial reports and formal gift/fund policies. Section code cannot crawl or parse English; dynamic-form representation is a separately scoped need.
 
-## F1 retained-evidence result and open decisions
+## F2 certification, productisation and next evidence boundary
 
-The canonical starting snapshots did not include an eligible retained, reviewable cross-charity evidence packet for an honest mini universe. F1 therefore proves representation with retained-locator-shaped adversarial fixtures only and makes no real-world charity claim. This is an evidence gap, not a negative fundability conclusion.
+F0 established typed representation and safety contracts; F1 supplied retained real-evidence review; F2 certified the end-to-end semantic distinctions using bounded official-source review evidence. Certification means the model has been pressure-tested for the stated cases, not that it is public, a stable public schema, corpus-complete, or operationally proven at scale. The retained review packets remain evidence fixtures, not production corpus records or special-case product logic.
 
-Product owner decisions needed before F2: durable `SubjectKind` treatment for funds/appeals; public top-level/nested projection; minimum evidence for "directly fundable"; sufficiency policy for official third-party forms; stale display/appeal refresh; charity submission workflow; and default visibility of major-gift offers.
+The settled internal rules are: fund/appeal may be governed scopes without mandatory durable-subject promotion; an official third-party endpoint is acceptable only with official-link provenance; stale or closed offers remain historical and are excluded from current views; and negotiated/major-donor routes are excluded from default retail views. A Fundable Universe is a parameterised query/projection, never stored master truth or a recommendation that direct program giving is normatively superior to unrestricted giving.
+
+The next bounded operational phase is a **Fundability coverage/acquisition reality slice**, not authorised by this document. Its acceptance bar is evidence for source-discovery recall across a heterogeneous cohort; ordinary and sophisticated donation surfaces; officially linked third-party and simple/offline routes; temporary appeals; dynamic-form gaps; destination-resolution rate; freshness/refresh needs; and explicit production coverage states. It must not execute payment, collect donor data, contact charities, or infer finance. A positive Giving Offer → governed destination → compatible historical-finance join remains deferred evidence unless an existing retained source supplies one; F2's incompatible/unresolved examples correctly abstain.
 
 The next versioned North Star may surface Fundability in §8, with cross-links to §§3/13/14/20, only after representative evidence proof. North Star v0.2 and public v0.5 remain immutable.
