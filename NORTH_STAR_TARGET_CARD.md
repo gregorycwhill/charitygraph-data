@@ -31,7 +31,7 @@ Keep source facts, first-party claims, model candidates or inferences, human dec
 
 Missingness is not absence. Preserve evidence present, not found in reviewed sources, source silent, not processed, source unavailable, not acquired, processing failed, not reviewed, unknown, not applicable, withheld and stale, using existing governed vocabulary and basis rules. A correctly represented unavailable or unknowable item may satisfy bounded completeness without positive content. Relationships are directed and typed. Source-reported classification is separate from CharityGraph-assessed classification.
 
-## Active v0.2 sections
+## Active v0.3 sections
 
 ### 1. Identity / regulatory
 
@@ -115,7 +115,11 @@ Source identity, source role, rights and acquisition state; exact locator, quote
 
 ## Cross-cutting governed knowledge families
 
-Memberships, schemes, registrations and accreditations; and positions, commitments and implementation remain governed knowledge families even though they no longer own standalone v0.2 sections. Their objects, scopes, evidence and identities are not rewritten. An explicit versioned projection may show them in identity/regulatory, ethos/values, capability, classification/search, conduct or evaluation when evidence supports that view. No automatic meaning is propagated.
+Memberships, schemes, registrations and accreditations; and positions, commitments and implementation remain governed knowledge families even though they no longer own standalone v0.3 sections. Their objects, scopes, evidence and identities are not rewritten. An explicit versioned projection may show them in identity/regulatory, ethos/values, capability, classification/search, conduct or evaluation when evidence supports that view. No automatic meaning is propagated.
+
+The sections are knowledge domains, not isolated user questions. Material product questions may span sections: representative questions include what an organisation does, how it raises resources, what amounts are actually evidenced and on what basis, what can be supported now and on what terms, and what compatible historical funding and expenditure context exists.
+
+Current Giving Offer/current opportunity, historical funding/restriction, and historical expenditure/allocation are distinct and join only where identity, scope, time and metric basis are compatible.
 
 ## Fundable Universe projection
 
