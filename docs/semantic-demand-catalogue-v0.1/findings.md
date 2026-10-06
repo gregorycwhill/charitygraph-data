@@ -1,5 +1,13 @@
 # Pilot curation and review findings
 
+## Completion review
+
+The actual 36-question pilot was inspected before extension: Tier A/B/C were 9/18/9, adversarial questions were 12 (33.3%), all 20 North Star domains and all eight canonical personas were represented, but there were zero single-domain questions and only one meaningful 3-6-domain workflow. Aggregation, governance/leadership, denominator compatibility, longitudinal reasoning and positive Tier-C decisions were thin.
+
+The diagnosed-gap pool contained 17 candidates; 15 were retained and 2 rejected. Rejections were a semantic-signature duplicate of the existing service cohort and an unbounded universal efficiency/ranking prompt. The original 36 were retained unchanged. Final diagnostics are 53 retained; Tier A/B/C 12/23/18; 14 adversarial (26.4%); all 20 domains; all eight personas; 0 single-domain, 5 two-domain and 48 three-to-six-domain questions. The added demands cover governance scope, compatible aggregation, denominator checks, temporal reproduction, referral exceptions, funding/relationship traces, appeal reconciliation, evaluation gaps and positive mandate/service decisions.
+
+Cross-domain additions are workflow-derived rather than section-pair combinatorics, including funder-organisation-service dependency tracing and funding-to-programme-to-evaluation evidence chains. Typed slots, semantic signatures, answerability states and forbidden inferences remain unchanged. No ontology, runtime, public contract, evidence or benchmark instance was added.
+
 ## Curation
 
 - Broad temporary pool: **78** semantic candidates; retained: **36**.
@@ -28,5 +36,7 @@ Residual risks: signature judgment remains partly human; actual coverage distrib
 Proposed later remote branch: `cg-semantic-demand-catalogue-pilot`; proposed PR title: `docs: add semantic demand catalogue v0.1 pilot`; no remote or PR action was performed.
 
 ## Decision
+
+Completion decision: **PILOT_COMPLETION_READY_FOR_REVIEW**. The expanded pilot is reviewable and supports a later guarded scale decision, subject to human review of signatures and separately adjudicated real-instance benchmarking.
 
 **PILOT_METHOD_READY_FOR_SCALE** — scale only after retaining this schema, demand-signature curation, typed-slot discipline and answerability outcomes; it does not authorise runtime, ontology, public-contract or evidence changes.
