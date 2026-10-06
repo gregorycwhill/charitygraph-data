@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharityGraph semantic demand pilot question",
+  "version": "0.1.0",
+  "required": ["id", "persona", "job", "tier", "template", "slots", "domains", "subject_scope", "propositions", "operations", "joins", "temporal", "freshness", "evidence_standard", "answerability", "forbidden_inferences", "output", "adversarial", "demand_signature", "rationale"],
+  "properties": {
+    "id": {"pattern": "^SDC-0[1-9]|SDC-[1-9][0-9]$"},
+    "persona": {"enum": ["cohort_analyst","service_system_planner","funder_ecosystem_user","fundraising_analyst","finance_comparator","evidence_evaluator","mandate_agent","repro_data_builder"]},
+    "tier": {"enum": ["A","B","C"]},
+    "template": {"type": "string"},
+    "slots": {"type": "object", "additionalProperties": {"enum": ["ORGANISATION","PROGRAM","SERVICE","APPEAL","FUND","CAUSE","INTERVENTION","POPULATION","GEOGRAPHY","FUNDER","PERIOD","DATE","METRIC","THRESHOLD","MANDATE_RULE","SOURCE","RELATIONSHIP_TYPE","SCHEME"]}},
+    "domains": {"type": "array", "minItems": 1, "maxItems": 6, "items": {"type": "integer", "minimum": 1, "maximum": 20}},
+    "subject_scope": {"type": "string"}, "propositions": {"type": "array", "items": {"type": "string"}},
+    "operations": {"type": "array", "items": {"enum": ["lookup","filter","compare","aggregate","rank","change","trace","explain","screen","audit","map","find_exception"]}},
+    "joins": {"type": "array", "items": {"type": "string"}}, "temporal": {"type": "string"}, "freshness": {"type": "string"}, "evidence_standard": {"type": "string"},
+    "answerability": {"type": "array", "items": {"enum": ["supported","bounded_partial","tested_missingness","unresolved"]}},
+    "forbidden_inferences": {"type": "array", "items": {"type": "string"}}, "output": {"type": "string"},
+    "adversarial": {"type": ["string", "null"]}, "demand_signature": {"type": "object"}, "rationale": {"type": "string"}
+  }
+}
