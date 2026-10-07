@@ -15,11 +15,16 @@ for r in records:
  if required-r.keys(): errors.append(f"{r.get('id')}: missing required fields")
  if not r["analytical_lenses"] or not r["primary_domains"]: errors.append(f"{r['id']}: empty lens or primary domain")
  if r["scenario_type"]=="correction_challenge" and "correction" not in r: errors.append(f"{r['id']}: missing correction")
-if len(questions)<60 or len(corrections)<12: errors.append("minimum corpus size")
+if len(questions)<60 or not 14 <= len(corrections) <= 16: errors.append("corpus size")
 if len({r['id'] for r in records})!=len(records): errors.append("duplicate ids")
 if set(range(1,21))-{d for r in questions for d in r['primary_domains']+r['supporting_domains']}: errors.append("domain coverage")
 if not {"public_donor_participant","charity_insider_adviser"} <= {r["persona"] for r in records}: errors.append("public and charity-insider demand")
 if len({r["semantic_signature"] for r in records}) != len(records): errors.append("duplicate semantic signatures")
+for r in records:
+ if r["id"] in r["semantic_signature"].lower() or any(x in r["semantic_signature"].lower() for x in ("nonce", "salt", "proof_id")): errors.append(f"{r['id']}: non-semantic signature material")
+ if r["scenario_type"] == "correction_challenge":
+  c=r["correction"]
+  if c.get("primary_correction_locus") not in c["correction_loci"]: errors.append(f"{r['id']}: primary locus missing from loci")
 if errors:
  for e in errors: print(getattr(e,"message",e))
  raise SystemExit(1)
