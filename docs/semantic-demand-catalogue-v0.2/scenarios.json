@@ -1157,9 +1157,10 @@
       ]
     },
     "primary_domains": [
-      7
+      20
     ],
     "supporting_domains": [
+      7,
       5
     ],
     "answerability": [
@@ -1389,7 +1390,8 @@
       7
     ],
     "supporting_domains": [
-      5
+      5,
+      20
     ],
     "answerability": [
       "supported",
@@ -2894,7 +2896,8 @@
     ],
     "supporting_domains": [
       5,
-      7
+      7,
+      20
     ],
     "answerability": [
       "supported",
@@ -3387,9 +3390,10 @@
       ]
     },
     "primary_domains": [
-      7
+      20
     ],
     "supporting_domains": [
+      7,
       5
     ],
     "answerability": [
@@ -3827,7 +3831,8 @@
       16
     ],
     "supporting_domains": [
-      1
+      1,
+      20
     ],
     "answerability": [
       "bounded_partial"
@@ -4280,7 +4285,8 @@
       16
     ],
     "supporting_domains": [
-      17
+      17,
+      20
     ],
     "answerability": [
       "held_for_governance"
@@ -4325,40 +4331,46 @@
       "reproducibility",
       "discovery"
     ],
-    "job_to_be_done": "A source's revised edition changes the effective dates and supersedes the earlier evidence version; what must be versioned and re-evaluated?",
+    "job_to_be_done": "version a revised source and re-evaluate affected assertions",
     "surface_question": "A source's revised edition changes the effective dates and supersedes the earlier evidence version; what must be versioned and re-evaluated?",
     "semantic_contract": {
       "parameter_slots": {
-        "ORGANISATION": "organisation",
-        "PERIOD": "reporting period"
+        "SOURCE": "source",
+        "EARLIER_VERSION": "earlier evidence version",
+        "REVISED_VERSION": "revised evidence version"
       },
       "required_subject_scope_types": [
-        "reporting entity",
-        "financial period"
+        "source edition",
+        "effective-date assertion"
       ],
       "required_proposition_families": [
-        "restricted income"
+        "source version",
+        "effective date",
+        "supersession"
       ],
       "analytical_operations": [
         "compare",
-        "change"
+        "trace",
+        "re-evaluate"
       ],
       "required_joins": [
-        "statement-to-source-version"
+        "source-version-to-assertion",
+        "assertion-to-projection"
       ],
-      "temporal_compatibility": "amended period supersedes prior representation",
-      "freshness": "latest governed source version",
-      "evidence_standard": "authoritative amended report",
-      "expected_output_shape": "supersession and revised projection",
+      "temporal_compatibility": "effective dates and version chronology",
+      "freshness": "revised edition review state",
+      "evidence_standard": "attributed revised source edition",
+      "expected_output_shape": "versioned supersession and affected-projection review",
       "forbidden_non_inferences": [
-        "do not silently overwrite prior report"
+        "revised edition silently erases earlier evidence",
+        "publication date alone establishes effective date"
       ]
     },
     "primary_domains": [
-      19
+      20
     ],
     "supporting_domains": [
-      20
+      19
     ],
     "answerability": [
       "supported"
@@ -4367,22 +4379,22 @@
     "semantic_signature": "{\"class\": \"source_version_change\", \"intent\": \"correction challenge\", \"primary_locus\": \"source_version\"}",
     "distinctiveness_rationale": "Explicit missing correction class with a distinct originating governed error.",
     "correction": {
-      "challenge_statement": "A source's revised edition changes the effective dates and supersedes the earlier evidence version; what must be versioned and re-evaluated?",
+      "challenge_statement": "A revised source edition changes effective dates and supersedes an earlier evidence version.",
       "challenge_actor_affiliation": "source owner",
       "challenged_target": {
-        "subject": "organisation",
-        "scope": "reporting period",
-        "predicate": "restricted income"
+        "subject": "source edition",
+        "scope": "effective-date assertions and dependent projections",
+        "predicate": "current source version"
       },
-      "proposed_replacement_or_qualification": "supersede value with amended value",
-      "challenge_basis": "amended annual report",
+      "proposed_replacement_or_qualification": "version the revised edition, retain the earlier edition as superseded, and re-evaluate affected assertions",
+      "challenge_basis": "attributed revised source edition",
       "correction_class": "source_version_change",
       "correction_loci": [
         "source_version"
       ],
       "governance_disposition": "accept_governed_replacement",
       "lineage_effects": [
-        "retain prior observation as superseded"
+        "retain earlier source edition and its assertions as superseded"
       ],
       "invalidation_reprojection": [
         "identify affected projections and reproject after governed correction; this is downstream, not an additional correction locus"
@@ -4390,7 +4402,8 @@
       "revised_answerability": "supported",
       "forbidden_behaviours": [
         "silent overwrite",
-        "erase history"
+        "treat publication date as effective date",
+        "erase earlier source version"
       ],
       "primary_correction_locus": "source_version"
     }
@@ -4403,33 +4416,39 @@
       "reproducibility",
       "discovery"
     ],
-    "job_to_be_done": "A source-reported service category was overwritten by a CharityGraph assessment; how should the two classifications be preserved and corrected?",
+    "job_to_be_done": "preserve source-reported and assessed classifications without conflation",
     "surface_question": "A source-reported service category was overwritten by a CharityGraph assessment; how should the two classifications be preserved and corrected?",
     "semantic_contract": {
       "parameter_slots": {
-        "ORGANISATION": "organisation",
-        "PERIOD": "reporting period"
+        "SOURCE": "source",
+        "SERVICE": "service",
+        "SCHEME": "classification scheme"
       },
       "required_subject_scope_types": [
-        "reporting entity",
-        "financial period"
+        "service classification assertion",
+        "assessment assignment"
       ],
       "required_proposition_families": [
-        "restricted income"
+        "source-reported classification",
+        "assessed classification",
+        "classification provenance"
       ],
       "analytical_operations": [
         "compare",
-        "change"
+        "trace",
+        "qualify"
       ],
       "required_joins": [
-        "statement-to-source-version"
+        "source-to-classification",
+        "assessment-to-classification"
       ],
-      "temporal_compatibility": "amended period supersedes prior representation",
-      "freshness": "latest governed source version",
-      "evidence_standard": "authoritative amended report",
-      "expected_output_shape": "supersession and revised projection",
+      "temporal_compatibility": "classification assertion and assessment dates",
+      "freshness": "state source and assessment review dates",
+      "evidence_standard": "attributed source assertion and governed assessment basis",
+      "expected_output_shape": "parallel attributed classifications with correction lineage",
       "forbidden_non_inferences": [
-        "do not silently overwrite prior report"
+        "assessment silently replaces source-reported classification",
+        "source category establishes assessed classification"
       ]
     },
     "primary_domains": [
@@ -4445,30 +4464,30 @@
     "semantic_signature": "{\"class\": \"classification_error\", \"intent\": \"correction challenge\", \"primary_locus\": \"classification\"}",
     "distinctiveness_rationale": "Explicit missing correction class with a distinct originating governed error.",
     "correction": {
-      "challenge_statement": "A source-reported service category was overwritten by a CharityGraph assessment; how should the two classifications be preserved and corrected?",
+      "challenge_statement": "A source-reported service category was overwritten by a CharityGraph assessment.",
       "challenge_actor_affiliation": "source owner",
       "challenged_target": {
-        "subject": "organisation",
-        "scope": "reporting period",
-        "predicate": "restricted income"
+        "subject": "service classification assertion",
+        "scope": "source-reported and assessed classification",
+        "predicate": "classification assignment"
       },
-      "proposed_replacement_or_qualification": "supersede value with amended value",
-      "challenge_basis": "amended annual report",
+      "proposed_replacement_or_qualification": "restore the attributed source classification and retain the separately attributed assessment with its basis",
+      "challenge_basis": "source classification record and assessment lineage",
       "correction_class": "classification_error",
       "correction_loci": [
         "classification"
       ],
-      "governance_disposition": "accept_governed_replacement",
+      "governance_disposition": "accept_qualification",
       "lineage_effects": [
-        "retain prior observation as superseded"
+        "preserve source assertion and assessment as distinct governed assertions"
       ],
       "invalidation_reprojection": [
         "identify affected projections and reproject after governed correction; this is downstream, not an additional correction locus"
       ],
       "revised_answerability": "supported",
       "forbidden_behaviours": [
-        "silent overwrite",
-        "erase history"
+        "conflate source assertion with assessment",
+        "erase either classification provenance"
       ],
       "primary_correction_locus": "classification"
     }
