@@ -318,3 +318,7 @@ The product communicates:
 - not applicable.
 
 These are useful states. They do not collapse into a blank field or a negative conclusion.
+
+## Contestable answers and correction pressure
+
+A challenger should not need to diagnose an internal pipeline layer. CharityGraph should classify whether the challenge concerns identity, scope, evidence, interpretation, classification, currentness, methodology, coverage or projection, then route it through the governed knowledge path. Public/donor and charity-insider demand are distinct decision roles, while affiliation does not confer editorial authority. A correction challenge is an evaluation scenario, not a correction authority or final-output override.

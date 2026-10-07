@@ -1,0 +1,510 @@
+{
+  "method": "Meaning-derived per-record review; signatures are contract dimensions only.",
+  "persona_reconciliation": {
+    "analyst": {
+      "before": 0,
+      "after": 1,
+      "records": [
+        "SDC-0001"
+      ],
+      "rationale": "The cohorting query is an analyst cohort-builder operation over governed records, not a research interpretation demand."
+    },
+    "downstream_agent": {
+      "before": 0,
+      "after": 1,
+      "records": [
+        "SDC-0008"
+      ],
+      "rationale": "Mandate-rule screening is an execution-stage downstream-agent workflow; funder diligence remains the adjacent decision context."
+    },
+    "unchanged_zero_roles": {
+      "note": "No additional analyst or downstream-agent records were fabricated; the remaining questions have end-user jobs represented by their existing personas."
+    }
+  },
+  "cohorting_review": {
+    "before": 1,
+    "after": 1,
+    "records": [
+      "SDC-0001"
+    ],
+    "finding": "The sole cohorting assignment is semantically retained and corrected to analyst; no other retained question performs cohort construction."
+  },
+  "domain_20_review": {
+    "before": {
+      "primary": 5,
+      "supporting": 55
+    },
+    "after": {
+      "primary": 5,
+      "supporting": "recomputed"
+    },
+    "rule": "Retain domain 20 as a semantic domain only for evidence-evaluation or reproducibility demands; remove it when it is only universal provenance/evidence metadata."
+  },
+  "records": [
+    {
+      "scenario_id": "SDC-0001",
+      "originating_scenario": "SDC-0001",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "analyst uses cohorting because the contract's operations are filter, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0002",
+      "originating_scenario": "SDC-0002",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "charity_insider_adviser uses discovery because the contract's operations are filter; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0003",
+      "originating_scenario": "SDC-0003",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping because the contract's operations are filter; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0004",
+      "originating_scenario": "SDC-0004",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping because the contract's operations are map, trace; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0005",
+      "originating_scenario": "SDC-0005",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "public_donor_participant uses discovery because the contract's operations are filter; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0006",
+      "originating_scenario": "SDC-0006",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping/coverage because the contract's operations are filter, find_exception; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0007",
+      "originating_scenario": "SDC-0007",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses funding_ecosystem because the contract's operations are trace, compare; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0008",
+      "originating_scenario": "SDC-0008",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "downstream_agent uses mandate_screening because the contract's operations are screen, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0009",
+      "originating_scenario": "SDC-0009",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "charity_insider_adviser uses finance because the contract's operations are lookup; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0010",
+      "originating_scenario": "SDC-0010",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "charity_insider_adviser uses fundraising because the contract's operations are lookup; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0011",
+      "originating_scenario": "SDC-0011",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "charity_insider_adviser uses fundraising because the contract's operations are compare; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0012",
+      "originating_scenario": "SDC-0012",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses finance because the contract's operations are compare, change; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0013",
+      "originating_scenario": "SDC-0013",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses finance because the contract's operations are change, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0014",
+      "originating_scenario": "SDC-0014",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "public_donor_participant uses finance because the contract's operations are screen; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0015",
+      "originating_scenario": "SDC-0015",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses evidence_evaluation because the contract's operations are lookup, compare; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0016",
+      "originating_scenario": "SDC-0016",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses evidence_evaluation because the contract's operations are screen, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0017",
+      "originating_scenario": "SDC-0017",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "public_donor_participant uses ethos_conduct because the contract's operations are trace, screen; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0018",
+      "originating_scenario": "SDC-0018",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses mandate_screening because the contract's operations are screen, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0019",
+      "originating_scenario": "SDC-0019",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses ethos_conduct because the contract's operations are screen, trace; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0020",
+      "originating_scenario": "SDC-0020",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "data_developer uses reproducibility because the contract's operations are audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0021",
+      "originating_scenario": "SDC-0021",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "public_donor_participant uses coverage because the contract's operations are audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0022",
+      "originating_scenario": "SDC-0022",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses discovery/reproducibility because the contract's operations are audit, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0023",
+      "originating_scenario": "SDC-0023",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "data_developer uses finance because the contract's operations are compare, aggregate; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0024",
+      "originating_scenario": "SDC-0024",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping because the contract's operations are map, trace; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0025",
+      "originating_scenario": "SDC-0025",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "public_donor_participant uses discovery because the contract's operations are lookup; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0026",
+      "originating_scenario": "SDC-0026",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "charity_insider_adviser uses fundraising/finance because the contract's operations are screen; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0027",
+      "originating_scenario": "SDC-0027",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses evidence_evaluation because the contract's operations are screen, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0028",
+      "originating_scenario": "SDC-0028",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses mandate_screening because the contract's operations are filter, screen, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0029",
+      "originating_scenario": "SDC-0029",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "data_developer uses reproducibility because the contract's operations are audit, compare; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0030",
+      "originating_scenario": "SDC-0030",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping because the contract's operations are change, trace; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0031",
+      "originating_scenario": "SDC-0031",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses discovery because the contract's operations are filter; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0032",
+      "originating_scenario": "SDC-0032",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "charity_insider_adviser uses service_system_mapping because the contract's operations are lookup, compare; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0033",
+      "originating_scenario": "SDC-0033",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses funding_ecosystem because the contract's operations are compare, trace; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0034",
+      "originating_scenario": "SDC-0034",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses ethos_conduct because the contract's operations are trace, screen; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0035",
+      "originating_scenario": "SDC-0035",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses reproducibility because the contract's operations are audit, trace; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0036",
+      "originating_scenario": "SDC-0036",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses evidence_evaluation/discovery because the contract's operations are explain, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0037",
+      "originating_scenario": "SDC-0037",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "data_developer uses reproducibility because the contract's operations are lookup, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0038",
+      "originating_scenario": "SDC-0038",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses ethos_conduct because the contract's operations are lookup, compare; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0039",
+      "originating_scenario": "SDC-0039",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "data_developer uses finance because the contract's operations are aggregate, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0040",
+      "originating_scenario": "SDC-0040",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "data_developer uses reproducibility because the contract's operations are audit, compare; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0041",
+      "originating_scenario": "SDC-0041",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping/funding_ecosystem because the contract's operations are trace, map, screen; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0042",
+      "originating_scenario": "SDC-0042",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses mandate_screening because the contract's operations are screen, explain, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0043",
+      "originating_scenario": "SDC-0043",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses evidence_evaluation because the contract's operations are compare, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0044",
+      "originating_scenario": "SDC-0044",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "charity_insider_adviser uses fundraising/finance because the contract's operations are compare, aggregate, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0045",
+      "originating_scenario": "SDC-0045",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping/coverage because the contract's operations are compare, filter; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0046",
+      "originating_scenario": "SDC-0046",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping because the contract's operations are map, find_exception; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0047",
+      "originating_scenario": "SDC-0047",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses funding_ecosystem because the contract's operations are compare, change, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0048",
+      "originating_scenario": "SDC-0048",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "data_developer uses finance because the contract's operations are screen, compare, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0049",
+      "originating_scenario": "SDC-0049",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses ethos_conduct/mandate_screening because the contract's operations are trace, screen, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0050",
+      "originating_scenario": "SDC-0050",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "data_developer uses reproducibility because the contract's operations are audit, aggregate; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0051",
+      "originating_scenario": "SDC-0051",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "consultant_service_system_planner uses service_system_mapping/coverage because the contract's operations are filter, audit; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0052",
+      "originating_scenario": "SDC-0052",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "researcher_evaluator uses evidence_evaluation because the contract's operations are find_exception, screen, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0053",
+      "originating_scenario": "SDC-0053",
+      "disposition": "repair",
+      "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
+      "curation_rationale": "funder_diligence uses service_system_mapping/mandate_screening because the contract's operations are screen, map, explain; primary domains are the substance required to answer it."
+    },
+    {
+      "scenario_id": "SDC-0073",
+      "originating_scenario": null,
+      "disposition": "add",
+      "reason": "Giving-offer fundability demand: distinguishes an appeal from a current actionable donation route.",
+      "curation_rationale": "New independent demand added only after post-dedupe gap analysis."
+    },
+    {
+      "scenario_id": "SDC-0074",
+      "originating_scenario": null,
+      "disposition": "add",
+      "reason": "Charity-insider peer/competitor comparison with explicit scope reconciliation.",
+      "curation_rationale": "New independent demand added only after post-dedupe gap analysis."
+    },
+    {
+      "scenario_id": "SDC-0075",
+      "originating_scenario": null,
+      "disposition": "add",
+      "reason": "Cohort/denominator reasoning for service-system planning.",
+      "curation_rationale": "New independent demand added only after post-dedupe gap analysis."
+    },
+    {
+      "scenario_id": "SDC-0076",
+      "originating_scenario": null,
+      "disposition": "add",
+      "reason": "Longitudinal evidence comparison distinct from a single evaluation lookup.",
+      "curation_rationale": "New independent demand added only after post-dedupe gap analysis."
+    },
+    {
+      "scenario_id": "SDC-0077",
+      "originating_scenario": null,
+      "disposition": "add",
+      "reason": "Explicit aggregation compatibility decision.",
+      "curation_rationale": "New independent demand added only after post-dedupe gap analysis."
+    },
+    {
+      "scenario_id": "SDC-0078",
+      "originating_scenario": null,
+      "disposition": "add",
+      "reason": "Hard identity reconciliation across historical change.",
+      "curation_rationale": "New independent demand added only after post-dedupe gap analysis."
+    },
+    {
+      "scenario_id": "SDC-0079",
+      "originating_scenario": null,
+      "disposition": "add",
+      "reason": "Positive answerability case; tests presence evidence separately from abstention.",
+      "curation_rationale": "New independent demand added only after post-dedupe gap analysis."
+    },
+    {
+      "scenario_id": "SDC-0054",
+      "originating_scenario": "SDC-0001",
+      "disposition": "remove",
+      "reason": "Coverage-review wording did not create a separate user job; coverage is already an answer requirement."
+    },
+    {
+      "scenario_id": "SDC-0055",
+      "originating_scenario": "SDC-0002",
+      "disposition": "remove",
+      "reason": "Coverage-review wording did not create a separate user job; coverage is already an answer requirement."
+    },
+    {
+      "scenario_id": "SDC-0056",
+      "originating_scenario": "SDC-0003",
+      "disposition": "remove",
+      "reason": "Coverage-review wording did not create a separate user job; coverage is already an answer requirement."
+    },
+    {
+      "scenario_id": "SDC-0057",
+      "originating_scenario": "SDC-0004",
+      "disposition": "remove",
+      "reason": "Coverage-review wording did not create a separate user job; coverage is already an answer requirement."
+    },
+    {
+      "scenario_id": "SDC-0058",
+      "originating_scenario": "SDC-0005",
+      "disposition": "remove",
+      "reason": "Coverage-review wording did not create a separate user job; coverage is already an answer requirement."
+    },
+    {
+      "scenario_id": "SDC-0059",
+      "originating_scenario": "SDC-0006",
+      "disposition": "remove",
+      "reason": "Coverage-review wording did not create a separate user job; coverage is already an answer requirement."
+    },
+    {
+      "scenario_id": "SDC-0060",
+      "originating_scenario": "SDC-0007",
+      "disposition": "remove",
+      "reason": "Coverage-review wording did not create a separate user job; coverage is already an answer requirement."
+    }
+  ],
+  "near_duplicate_review": {
+    "findings": "SDC-0054 through SDC-0060 were near-duplicates of SDC-0001 through SDC-0007 and were removed. Remaining plausible pairs (service availability, coverage, and access mapping) have different jobs and required operations."
+  }
+}
