@@ -1,0 +1,4372 @@
+[
+  {
+    "id": "SDC-0001",
+    "scenario_type": "question",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "discovery"
+    ],
+    "tier": "A",
+    "job_to_be_done": "build a reproducible inclusion cohort",
+    "surface_question": "Which {ORGANISATION} records have a current {SCHEME} designation as of {DATE}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "SCHEME": "SCHEME",
+        "DATE": "DATE"
+      },
+      "required_subject_scope_types": [
+        "legal entity and designation scope"
+      ],
+      "required_proposition_families": [
+        "identifier",
+        "designation"
+      ],
+      "analytical_operations": [
+        "filter",
+        "audit"
+      ],
+      "required_joins": [
+        "entity-to-designation"
+      ],
+      "temporal_compatibility": "as-of date",
+      "freshness": "state review date",
+      "evidence_standard": "authority-scoped designation evidence",
+      "expected_output_shape": "cohort with evidence state",
+      "forbidden_non_inferences": [
+        "designation proves legal restriction or service quality"
+      ]
+    },
+    "primary_domains": [
+      1,
+      19,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"authority scoped\", \"intent\": \"cohort designation\", \"operation\": \"filter\", \"scope\": \"entity\"}",
+    "distinctiveness_rationale": "Atomic identity/classification inclusion."
+  },
+  {
+    "id": "SDC-0002",
+    "scenario_type": "question",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "cohorting"
+    ],
+    "tier": "A",
+    "job_to_be_done": "build a reproducible inclusion cohort",
+    "surface_question": "Which {ORGANISATION} have an evidenced purpose concerning {CAUSE} for {POPULATION}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "CAUSE": "CAUSE",
+        "POPULATION": "POPULATION"
+      },
+      "required_subject_scope_types": [
+        "organisation purpose and population role"
+      ],
+      "required_proposition_families": [
+        "purpose",
+        "population"
+      ],
+      "analytical_operations": [
+        "filter"
+      ],
+      "required_joins": [
+        "purpose-to-population"
+      ],
+      "temporal_compatibility": "source effective period",
+      "freshness": "report review date",
+      "evidence_standard": "attributed purpose or governed assignment",
+      "expected_output_shape": "cohort with attribution",
+      "forbidden_non_inferences": [
+        "purpose proves current delivery"
+      ]
+    },
+    "primary_domains": [
+      2,
+      5,
+      19
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"attributed\", \"intent\": \"cause cohort\", \"operation\": \"filter\", \"scope\": \"purpose\"}",
+    "distinctiveness_rationale": "Separates stated purpose from activity."
+  },
+  {
+    "id": "SDC-0003",
+    "scenario_type": "question",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "service_system_mapping"
+    ],
+    "tier": "B",
+    "job_to_be_done": "construct an evidenced service cohort",
+    "surface_question": "Find {SERVICE} for {POPULATION} with delivery geography {GEOGRAPHY} during {PERIOD}.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "service and delivery geography"
+      ],
+      "required_proposition_families": [
+        "service",
+        "eligibility",
+        "geography"
+      ],
+      "analytical_operations": [
+        "filter"
+      ],
+      "required_joins": [
+        "service-to-population",
+        "service-to-delivery geography"
+      ],
+      "temporal_compatibility": "service period",
+      "freshness": "show availability/freshness state",
+      "evidence_standard": "service-scoped evidence",
+      "expected_output_shape": "service cohort map",
+      "forbidden_non_inferences": [
+        "headquarters equals delivery geography"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      19,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"service scoped\", \"intent\": \"service cohort\", \"operation\": \"filter\", \"scope\": \"service\"}",
+    "distinctiveness_rationale": "Workflow cohort, not a tag union."
+  },
+  {
+    "id": "SDC-0004",
+    "scenario_type": "question",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "funding_ecosystem"
+    ],
+    "tier": "B",
+    "job_to_be_done": "map supply-side access paths",
+    "surface_question": "Map {SERVICE} access routes for {POPULATION} in {GEOGRAPHY} as of {DATE}.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "DATE": "DATE"
+      },
+      "required_subject_scope_types": [
+        "service/site/channel access"
+      ],
+      "required_proposition_families": [
+        "service",
+        "access",
+        "referral"
+      ],
+      "analytical_operations": [
+        "map",
+        "trace"
+      ],
+      "required_joins": [
+        "service-to-site",
+        "service-to-access condition",
+        "service-to-referral relationship"
+      ],
+      "temporal_compatibility": "as-of date",
+      "freshness": "currentness must be evidenced",
+      "evidence_standard": "time-bound service/access observation",
+      "expected_output_shape": "bounded supply map",
+      "forbidden_non_inferences": [
+        "listed service is currently available",
+        "supply establishes unmet need"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      12,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"time bound\", \"intent\": \"access mapping\", \"operation\": \"map\", \"scope\": \"service/site\"}",
+    "distinctiveness_rationale": "Real planner workflow preserves supply/need boundary."
+  },
+  {
+    "id": "SDC-0005",
+    "scenario_type": "question",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "fundraising"
+    ],
+    "tier": "A",
+    "job_to_be_done": "inspect participation routes",
+    "surface_question": "What {SERVICE} participation opportunities accept {POPULATION} with {THRESHOLD} commitment?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "THRESHOLD": "THRESHOLD"
+      },
+      "required_subject_scope_types": [
+        "advertised opportunity"
+      ],
+      "required_proposition_families": [
+        "opportunity",
+        "eligibility",
+        "time pattern"
+      ],
+      "analytical_operations": [
+        "filter"
+      ],
+      "required_joins": [
+        "opportunity-to-service"
+      ],
+      "temporal_compatibility": "advertised effective period",
+      "freshness": "show review state",
+      "evidence_standard": "opportunity evidence",
+      "expected_output_shape": "opportunity list",
+      "forbidden_non_inferences": [
+        "advertisement proves enduring participation"
+      ]
+    },
+    "primary_domains": [
+      6,
+      7,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"advertised\", \"intent\": \"opportunity discovery\", \"operation\": \"filter\", \"scope\": \"opportunity\"}",
+    "distinctiveness_rationale": "Participation is distinct from workforce and service use."
+  },
+  {
+    "id": "SDC-0006",
+    "scenario_type": "question",
+    "persona": "researcher_evaluator",
+    "analytical_lenses": [
+      "finance"
+    ],
+    "tier": "B",
+    "job_to_be_done": "identify constrained supply",
+    "surface_question": "Which {SERVICE} report a {METRIC} constraint for {POPULATION} in {GEOGRAPHY} during {PERIOD}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "METRIC": "METRIC",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "service capacity measure"
+      ],
+      "required_proposition_families": [
+        "capacity",
+        "constraint",
+        "workforce"
+      ],
+      "analytical_operations": [
+        "filter",
+        "find_exception"
+      ],
+      "required_joins": [
+        "measure-to-service",
+        "constraint-to-period"
+      ],
+      "temporal_compatibility": "reporting period",
+      "freshness": "state staleness",
+      "evidence_standard": "service-scoped measure",
+      "expected_output_shape": "constraint register",
+      "forbidden_non_inferences": [
+        "organisation size proves service capacity"
+      ]
+    },
+    "primary_domains": [
+      5,
+      7,
+      10
+    ],
+    "supporting_domains": [
+      11,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"measured\", \"intent\": \"capacity exception\", \"operation\": \"exception\", \"scope\": \"service\"}",
+    "distinctiveness_rationale": "Connects capacity with evidence rather than reputation."
+  },
+  {
+    "id": "SDC-0007",
+    "scenario_type": "question",
+    "persona": "downstream_agent",
+    "analytical_lenses": [
+      "evidence_evaluation"
+    ],
+    "tier": "B",
+    "job_to_be_done": "trace resource dependencies",
+    "surface_question": "Trace reported {FUNDER} awards, commitments and payments to {PROGRAM} during {PERIOD}.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "FUNDER": "FUNDER",
+        "PROGRAM": "PROGRAM",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "program and financial-flow scope"
+      ],
+      "required_proposition_families": [
+        "award",
+        "commitment",
+        "payment",
+        "revenue"
+      ],
+      "analytical_operations": [
+        "trace",
+        "compare"
+      ],
+      "required_joins": [
+        "funder-to-flow",
+        "flow-to-program",
+        "flow-to-financial line"
+      ],
+      "temporal_compatibility": "transaction/reporting period",
+      "freshness": "report source period",
+      "evidence_standard": "flow-specific authoritative evidence",
+      "expected_output_shape": "typed flow trace",
+      "forbidden_non_inferences": [
+        "award equals payment or revenue",
+        "payment proves durable relationship"
+      ]
+    },
+    "primary_domains": [
+      3,
+      12,
+      13
+    ],
+    "supporting_domains": [
+      14,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"flow specific\", \"intent\": \"funding trace\", \"operation\": \"trace\", \"scope\": \"program flow\"}",
+    "distinctiveness_rationale": "Prevents ecosystem double-counting."
+  },
+  {
+    "id": "SDC-0008",
+    "scenario_type": "question",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "ethos_conduct"
+    ],
+    "tier": "C",
+    "job_to_be_done": "conduct bounded diligence",
+    "surface_question": "Screen {PROGRAM} against {MANDATE_RULE} using evidenced purpose, delivery, funding dependency and evaluation limits.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "PROGRAM": "PROGRAM",
+        "MANDATE_RULE": "MANDATE_RULE"
+      },
+      "required_subject_scope_types": [
+        "resolved program"
+      ],
+      "required_proposition_families": [
+        "purpose",
+        "activity",
+        "dependency",
+        "evaluation"
+      ],
+      "analytical_operations": [
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "program-to-evidence",
+        "program-to-funder",
+        "program-to-study"
+      ],
+      "temporal_compatibility": "rule-specified period",
+      "freshness": "flag stale inputs",
+      "evidence_standard": "rule-specific cited evidence",
+      "expected_output_shape": "explainable decision packet",
+      "forbidden_non_inferences": [
+        "evidence proves universal mandate fit",
+        "missing data fails rule"
+      ]
+    },
+    "primary_domains": [
+      2,
+      3,
+      14
+    ],
+    "supporting_domains": [
+      18,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"rule specific\", \"intent\": \"mandate diligence\", \"operation\": \"screen\", \"scope\": \"program\"}",
+    "distinctiveness_rationale": "Decision tier keeps downstream judgment explicit."
+  },
+  {
+    "id": "SDC-0009",
+    "scenario_type": "question",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "mandate_screening"
+    ],
+    "tier": "A",
+    "job_to_be_done": "inspect organisational capability",
+    "surface_question": "What evidenced {METRIC} capability and constraints apply to {ORGANISATION} during {PERIOD}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "organisation capability measure"
+      ],
+      "required_proposition_families": [
+        "capability",
+        "constraint",
+        "workforce"
+      ],
+      "analytical_operations": [
+        "lookup"
+      ],
+      "required_joins": [
+        "measure-to-organisation"
+      ],
+      "temporal_compatibility": "reporting period",
+      "freshness": "state reporting date",
+      "evidence_standard": "measure with scope/unit",
+      "expected_output_shape": "scoped capability profile",
+      "forbidden_non_inferences": [
+        "revenue or accreditation proves capacity"
+      ]
+    },
+    "primary_domains": [
+      10,
+      11,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"measure scoped\", \"intent\": \"capability lookup\", \"operation\": \"lookup\", \"scope\": \"organisation\"}",
+    "distinctiveness_rationale": "Capability is not availability."
+  },
+  {
+    "id": "SDC-0010",
+    "scenario_type": "question",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "reproducibility"
+    ],
+    "tier": "A",
+    "job_to_be_done": "review appeal activity",
+    "surface_question": "What attributed activity and time window are reported for {APPEAL}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "APPEAL": "APPEAL"
+      },
+      "required_subject_scope_types": [
+        "appeal"
+      ],
+      "required_proposition_families": [
+        "appeal",
+        "activity",
+        "period"
+      ],
+      "analytical_operations": [
+        "lookup"
+      ],
+      "required_joins": [
+        "appeal-to-source"
+      ],
+      "temporal_compatibility": "appeal period",
+      "freshness": "state source date",
+      "evidence_standard": "attributed campaign evidence",
+      "expected_output_shape": "appeal evidence card",
+      "forbidden_non_inferences": [
+        "appeal existence proves current fundability"
+      ]
+    },
+    "primary_domains": [
+      8,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"attributed\", \"intent\": \"appeal lookup\", \"operation\": \"lookup\", \"scope\": \"appeal\"}",
+    "distinctiveness_rationale": "Atomic fundraising question."
+  },
+  {
+    "id": "SDC-0011",
+    "scenario_type": "question",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "discovery"
+    ],
+    "tier": "B",
+    "job_to_be_done": "compare mobilisation evidence",
+    "surface_question": "Compare reported fundraising activity for {APPEAL} across {PERIOD} with its stated channel and beneficiary scope.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "APPEAL": "APPEAL",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "appeal and reporting entity"
+      ],
+      "required_proposition_families": [
+        "fundraising activity",
+        "channel",
+        "financial line"
+      ],
+      "analytical_operations": [
+        "compare"
+      ],
+      "required_joins": [
+        "appeal-to-program",
+        "appeal-to-financial line"
+      ],
+      "temporal_compatibility": "two stated periods",
+      "freshness": "preserve source dates",
+      "evidence_standard": "attributed evidence and compatible financial context",
+      "expected_output_shape": "comparison with compatibility warnings",
+      "forbidden_non_inferences": [
+        "campaign wording equals audited revenue"
+      ]
+    },
+    "primary_domains": [
+      3,
+      8,
+      13
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"compatible\", \"intent\": \"appeal comparison\", \"operation\": \"compare\", \"scope\": \"appeal\"}",
+    "distinctiveness_rationale": "Cross-domain only because workflow needs it."
+  },
+  {
+    "id": "SDC-0012",
+    "scenario_type": "question",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "cohorting"
+    ],
+    "tier": "B",
+    "job_to_be_done": "compare compatible finances",
+    "surface_question": "Compare {METRIC} for {ORGANISATION} across {PERIOD}, retaining reporting scope, currency and accounting basis.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "reporting entity"
+      ],
+      "required_proposition_families": [
+        "financial measure",
+        "reporting scope",
+        "accounting basis"
+      ],
+      "analytical_operations": [
+        "compare",
+        "change"
+      ],
+      "required_joins": [
+        "entity-to-statement",
+        "line-to-period"
+      ],
+      "temporal_compatibility": "specified reporting periods",
+      "freshness": "reported not current",
+      "evidence_standard": "statement/note evidence",
+      "expected_output_shape": "compatibility-qualified table",
+      "forbidden_non_inferences": [
+        "incompatible lines are comparable"
+      ]
+    },
+    "primary_domains": [
+      1,
+      13,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"statement\", \"intent\": \"finance comparison\", \"operation\": \"compare\", \"scope\": \"reporting entity\"}",
+    "distinctiveness_rationale": "Core finance job."
+  },
+  {
+    "id": "SDC-0013",
+    "scenario_type": "question",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "service_system_mapping"
+    ],
+    "tier": "C",
+    "job_to_be_done": "explain a reported financial change",
+    "surface_question": "Explain the evidenced change in {METRIC} for {ORGANISATION} between {PERIOD}, distinguishing reported cause from analyst inference.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "reporting entity and period"
+      ],
+      "required_proposition_families": [
+        "financial change",
+        "reported explanation",
+        "history"
+      ],
+      "analytical_operations": [
+        "change",
+        "explain"
+      ],
+      "required_joins": [
+        "financial line-to-note",
+        "event-to-period"
+      ],
+      "temporal_compatibility": "bounded comparison",
+      "freshness": "source/report dates",
+      "evidence_standard": "statement notes or attributed explanation",
+      "expected_output_shape": "attributed explanation",
+      "forbidden_non_inferences": [
+        "correlated event caused change"
+      ]
+    },
+    "primary_domains": [
+      13,
+      17,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"attributed\", \"intent\": \"finance explanation\", \"operation\": \"explain\", \"scope\": \"financial line\"}",
+    "distinctiveness_rationale": "Decision explanation is not causal proof."
+  },
+  {
+    "id": "SDC-0014",
+    "scenario_type": "question",
+    "persona": "researcher_evaluator",
+    "analytical_lenses": [
+      "funding_ecosystem"
+    ],
+    "tier": "C",
+    "job_to_be_done": "test a tempting allocation claim",
+    "surface_question": "Can historical {METRIC} expenditure determine the marginal destination of the next dollar for {ORGANISATION}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION"
+      },
+      "required_subject_scope_types": [
+        "reporting entity"
+      ],
+      "required_proposition_families": [
+        "historical expenditure",
+        "marginal allocation"
+      ],
+      "analytical_operations": [
+        "screen"
+      ],
+      "required_joins": [
+        "historical line-to-proposed allocation"
+      ],
+      "temporal_compatibility": "historical versus future",
+      "freshness": "not applicable to inference",
+      "evidence_standard": "explicit future allocation decision required",
+      "expected_output_shape": "bounded refusal with evidence requirement",
+      "forbidden_non_inferences": [
+        "historical expenditure proves marginal destination"
+      ]
+    },
+    "primary_domains": [
+      13,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"future decision\", \"intent\": \"non-inference test\", \"operation\": \"screen\", \"scope\": \"financial allocation\"}",
+    "distinctiveness_rationale": "Deliberate abstention success."
+  },
+  {
+    "id": "SDC-0015",
+    "scenario_type": "question",
+    "persona": "downstream_agent",
+    "analytical_lenses": [
+      "fundraising"
+    ],
+    "tier": "B",
+    "job_to_be_done": "review intervention evidence",
+    "surface_question": "What evaluation evidence addresses {INTERVENTION} for {POPULATION} during {PERIOD}, including design, comparator and limitations?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "INTERVENTION": "INTERVENTION",
+        "POPULATION": "POPULATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "intervention and study population"
+      ],
+      "required_proposition_families": [
+        "evaluation",
+        "outcome",
+        "study design"
+      ],
+      "analytical_operations": [
+        "lookup",
+        "compare"
+      ],
+      "required_joins": [
+        "intervention-to-study",
+        "study-to-population"
+      ],
+      "temporal_compatibility": "study period",
+      "freshness": "state publication/review date",
+      "evidence_standard": "study-scoped cited evidence",
+      "expected_output_shape": "structured evidence review",
+      "forbidden_non_inferences": [
+        "study result applies to all populations"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      18
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"study scoped\", \"intent\": \"evaluation review\", \"operation\": \"lookup\", \"scope\": \"intervention/study\"}",
+    "distinctiveness_rationale": "Keeps population and method attached."
+  },
+  {
+    "id": "SDC-0016",
+    "scenario_type": "question",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "finance"
+    ],
+    "tier": "C",
+    "job_to_be_done": "test outcome language",
+    "surface_question": "Does an output measure {METRIC} support an outcome or causal-effect claim for {INTERVENTION}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "INTERVENTION": "INTERVENTION"
+      },
+      "required_subject_scope_types": [
+        "intervention measurement"
+      ],
+      "required_proposition_families": [
+        "activity",
+        "output",
+        "outcome",
+        "causation"
+      ],
+      "analytical_operations": [
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "output-to-outcome claim"
+      ],
+      "temporal_compatibility": "measure period",
+      "freshness": "state evidence date",
+      "evidence_standard": "outcome design/comparator evidence",
+      "expected_output_shape": "claim-boundary explanation",
+      "forbidden_non_inferences": [
+        "output proves outcome or effectiveness"
+      ]
+    },
+    "primary_domains": [
+      4,
+      18,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "tested_missingness",
+      "unresolved",
+      "supported"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"causal design\", \"intent\": \"claim boundary\", \"operation\": \"screen\", \"scope\": \"intervention measure\"}",
+    "distinctiveness_rationale": "Explicitly adversarial evaluation test."
+  },
+  {
+    "id": "SDC-0017",
+    "scenario_type": "question",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "evidence_evaluation"
+    ],
+    "tier": "B",
+    "job_to_be_done": "inspect institutional commitments",
+    "surface_question": "What implementation evidence, if any, supports {ORGANISATION}'s stated {MANDATE_RULE} commitment during {PERIOD}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "MANDATE_RULE": "MANDATE_RULE",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "organisation commitment"
+      ],
+      "required_proposition_families": [
+        "commitment",
+        "implementation",
+        "evaluation"
+      ],
+      "analytical_operations": [
+        "trace",
+        "screen"
+      ],
+      "required_joins": [
+        "commitment-to-implementation observation",
+        "implementation-to-evaluation"
+      ],
+      "temporal_compatibility": "effective period",
+      "freshness": "review date",
+      "evidence_standard": "separate commitment and implementation evidence",
+      "expected_output_shape": "two-layer evidence record",
+      "forbidden_non_inferences": [
+        "policy publication proves implementation"
+      ]
+    },
+    "primary_domains": [
+      15,
+      18,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"separate evidence\", \"intent\": \"commitment implementation\", \"operation\": \"trace\", \"scope\": \"organisation\"}",
+    "distinctiveness_rationale": "Ethos is not practice."
+  },
+  {
+    "id": "SDC-0018",
+    "scenario_type": "question",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "ethos_conduct"
+    ],
+    "tier": "C",
+    "job_to_be_done": "screen legal/regulatory constraints",
+    "surface_question": "Screen {ORGANISATION} against {MANDATE_RULE}; identify only authority-scoped restrictions and unresolved jurisdictional questions.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "MANDATE_RULE": "MANDATE_RULE"
+      },
+      "required_subject_scope_types": [
+        "legal entity and jurisdiction"
+      ],
+      "required_proposition_families": [
+        "designation",
+        "restriction",
+        "conduct"
+      ],
+      "analytical_operations": [
+        "screen",
+        "audit"
+      ],
+      "required_joins": [
+        "designation-to-authority",
+        "rule-to-jurisdiction"
+      ],
+      "temporal_compatibility": "rule effective date",
+      "freshness": "authority retrieval/review state",
+      "evidence_standard": "authoritative legal/regulatory evidence",
+      "expected_output_shape": "rule-bound decision packet",
+      "forbidden_non_inferences": [
+        "designation alone proves legal restriction"
+      ]
+    },
+    "primary_domains": [
+      1,
+      15,
+      16
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"authority\", \"intent\": \"legal mandate screen\", \"operation\": \"screen\", \"scope\": \"entity/jurisdiction\"}",
+    "distinctiveness_rationale": "Avoids legal conclusion from label."
+  },
+  {
+    "id": "SDC-0019",
+    "scenario_type": "question",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "mandate_screening"
+    ],
+    "tier": "C",
+    "job_to_be_done": "review adverse-context evidence",
+    "surface_question": "What authoritative conduct or correction record is relevant to {MANDATE_RULE} for {ORGANISATION} as of {DATE}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "MANDATE_RULE": "MANDATE_RULE",
+        "ORGANISATION": "ORGANISATION",
+        "DATE": "DATE"
+      },
+      "required_subject_scope_types": [
+        "organisation and event"
+      ],
+      "required_proposition_families": [
+        "formal finding",
+        "allegation",
+        "correction"
+      ],
+      "analytical_operations": [
+        "screen",
+        "trace"
+      ],
+      "required_joins": [
+        "event-to-authority",
+        "correction-to-assertion"
+      ],
+      "temporal_compatibility": "as-of date",
+      "freshness": "state review coverage",
+      "evidence_standard": "authoritative status/context",
+      "expected_output_shape": "status-qualified evidence packet",
+      "forbidden_non_inferences": [
+        "source silence proves clean record",
+        "allegation equals finding"
+      ]
+    },
+    "primary_domains": [
+      16,
+      17,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"authoritative\", \"intent\": \"conduct screen\", \"operation\": \"screen\", \"scope\": \"event\"}",
+    "distinctiveness_rationale": "High-consequence abstention is valid."
+  },
+  {
+    "id": "SDC-0020",
+    "scenario_type": "question",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "reproducibility"
+    ],
+    "tier": "A",
+    "job_to_be_done": "reproduce a projection",
+    "surface_question": "Return lineage for the {METRIC} assertion about {ORGANISATION} in {PERIOD}.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "assertion and reporting entity"
+      ],
+      "required_proposition_families": [
+        "assertion",
+        "evidence",
+        "coverage"
+      ],
+      "analytical_operations": [
+        "audit"
+      ],
+      "required_joins": [
+        "assertion-to-evidence-to-source"
+      ],
+      "temporal_compatibility": "valid, reported, acquired and reviewed times",
+      "freshness": "all dates separately",
+      "evidence_standard": "reconstructible provenance",
+      "expected_output_shape": "lineage record",
+      "forbidden_non_inferences": [
+        "retrieval time equals validity"
+      ]
+    },
+    "primary_domains": [
+      13,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"provenance\", \"intent\": \"lineage audit\", \"operation\": \"audit\", \"scope\": \"assertion\"}",
+    "distinctiveness_rationale": "Atomic reproducibility demand."
+  },
+  {
+    "id": "SDC-0021",
+    "scenario_type": "question",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "discovery"
+    ],
+    "tier": "A",
+    "job_to_be_done": "audit coverage",
+    "surface_question": "What does tested missingness mean for {SERVICE} current availability in {GEOGRAPHY} as of {DATE}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "DATE": "DATE"
+      },
+      "required_subject_scope_types": [
+        "service availability"
+      ],
+      "required_proposition_families": [
+        "coverage",
+        "availability",
+        "missingness"
+      ],
+      "analytical_operations": [
+        "audit"
+      ],
+      "required_joins": [
+        "coverage-to-service proposition"
+      ],
+      "temporal_compatibility": "as-of date",
+      "freshness": "coverage review date",
+      "evidence_standard": "applicable coverage observation",
+      "expected_output_shape": "coverage-basis explanation",
+      "forbidden_non_inferences": [
+        "source silence proves unavailability"
+      ]
+    },
+    "primary_domains": [
+      5,
+      7,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "tested_missingness",
+      "unresolved",
+      "supported",
+      "bounded_partial"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"coverage\", \"intent\": \"missingness audit\", \"operation\": \"audit\", \"scope\": \"service availability\"}",
+    "distinctiveness_rationale": "Non-inference is intended answer."
+  },
+  {
+    "id": "SDC-0022",
+    "scenario_type": "question",
+    "persona": "researcher_evaluator",
+    "analytical_lenses": [
+      "cohorting"
+    ],
+    "tier": "B",
+    "job_to_be_done": "audit classification provenance",
+    "surface_question": "Which {SCHEME} assignments for {PROGRAM} are source-reported, assessed, rejected or abstained, and why?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SCHEME": "SCHEME",
+        "PROGRAM": "PROGRAM"
+      },
+      "required_subject_scope_types": [
+        "program classification"
+      ],
+      "required_proposition_families": [
+        "classification",
+        "assessment",
+        "abstention"
+      ],
+      "analytical_operations": [
+        "audit",
+        "explain"
+      ],
+      "required_joins": [
+        "program-to-assignment",
+        "assignment-to-evidence"
+      ],
+      "temporal_compatibility": "assignment version",
+      "freshness": "review date",
+      "evidence_standard": "scheme/version/method provenance",
+      "expected_output_shape": "classification audit",
+      "forbidden_non_inferences": [
+        "retrieval relevance establishes truth"
+      ]
+    },
+    "primary_domains": [
+      3,
+      4,
+      19
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"method provenance\", \"intent\": \"classification audit\", \"operation\": \"audit\", \"scope\": \"program\"}",
+    "distinctiveness_rationale": "Makes abstention first-class."
+  },
+  {
+    "id": "SDC-0023",
+    "scenario_type": "question",
+    "persona": "downstream_agent",
+    "analytical_lenses": [
+      "service_system_mapping"
+    ],
+    "tier": "B",
+    "job_to_be_done": "compare organisational structures",
+    "surface_question": "Compare {ORGANISATION} reporting/group scope across {PERIOD} before aggregating {METRIC}.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD",
+        "METRIC": "METRIC"
+      },
+      "required_subject_scope_types": [
+        "legal entity/reporting group"
+      ],
+      "required_proposition_families": [
+        "group structure",
+        "governance",
+        "financial measure"
+      ],
+      "analytical_operations": [
+        "compare",
+        "aggregate"
+      ],
+      "required_joins": [
+        "entity-to-group",
+        "group-to-statement"
+      ],
+      "temporal_compatibility": "reporting periods",
+      "freshness": "period-labelled",
+      "evidence_standard": "reporting-scope evidence",
+      "expected_output_shape": "scope-compatibility table",
+      "forbidden_non_inferences": [
+        "brand/entity data may be aggregated"
+      ]
+    },
+    "primary_domains": [
+      1,
+      9,
+      13
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"reporting scope\", \"intent\": \"scope comparison\", \"operation\": \"aggregate\", \"scope\": \"group/entity\"}",
+    "distinctiveness_rationale": "Cohort aggregation requires identity seam."
+  },
+  {
+    "id": "SDC-0024",
+    "scenario_type": "question",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "funding_ecosystem"
+    ],
+    "tier": "B",
+    "job_to_be_done": "map ecosystem relationships",
+    "surface_question": "Map evidenced {RELATIONSHIP_TYPE} relationships affecting {SERVICE} for {POPULATION} during {PERIOD}.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "RELATIONSHIP_TYPE": "RELATIONSHIP_TYPE",
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "relationship endpoints and service"
+      ],
+      "required_proposition_families": [
+        "relationship",
+        "service",
+        "funding dependency"
+      ],
+      "analytical_operations": [
+        "map",
+        "trace"
+      ],
+      "required_joins": [
+        "endpoint-to-relationship",
+        "relationship-to-service"
+      ],
+      "temporal_compatibility": "relationship interval",
+      "freshness": "evidence/review date",
+      "evidence_standard": "directed typed relationship evidence",
+      "expected_output_shape": "directed ecosystem map",
+      "forbidden_non_inferences": [
+        "co-occurrence establishes relationship"
+      ]
+    },
+    "primary_domains": [
+      5,
+      7,
+      12
+    ],
+    "supporting_domains": [
+      14,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"direct evidence\", \"intent\": \"relationship mapping\", \"operation\": \"map\", \"scope\": \"typed edge\"}",
+    "distinctiveness_rationale": "Network use without worth ranking."
+  },
+  {
+    "id": "SDC-0025",
+    "scenario_type": "question",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "fundraising"
+    ],
+    "tier": "A",
+    "job_to_be_done": "inspect direct-service access",
+    "surface_question": "Is {SERVICE} evidenced as currently available to {POPULATION} in {GEOGRAPHY} as of {DATE}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "DATE": "DATE"
+      },
+      "required_subject_scope_types": [
+        "service availability"
+      ],
+      "required_proposition_families": [
+        "availability",
+        "eligibility",
+        "access"
+      ],
+      "analytical_operations": [
+        "lookup"
+      ],
+      "required_joins": [
+        "service-to-availability observation"
+      ],
+      "temporal_compatibility": "as-of date",
+      "freshness": "current observation required",
+      "evidence_standard": "time-bound availability evidence",
+      "expected_output_shape": "availability state with basis",
+      "forbidden_non_inferences": [
+        "service page proves current availability"
+      ]
+    },
+    "primary_domains": [
+      5,
+      7,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"current observation\", \"intent\": \"availability lookup\", \"operation\": \"lookup\", \"scope\": \"service\"}",
+    "distinctiveness_rationale": "Direct adversarial availability check."
+  },
+  {
+    "id": "SDC-0026",
+    "scenario_type": "question",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "finance"
+    ],
+    "tier": "C",
+    "job_to_be_done": "test fundraising accounting boundary",
+    "surface_question": "Can total donation revenue for {ORGANISATION} establish method-specific proceeds for {APPEAL} in {PERIOD}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "APPEAL": "APPEAL",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "appeal versus reporting entity"
+      ],
+      "required_proposition_families": [
+        "donation revenue",
+        "appeal proceeds",
+        "method"
+      ],
+      "analytical_operations": [
+        "screen"
+      ],
+      "required_joins": [
+        "appeal-to-financial line"
+      ],
+      "temporal_compatibility": "reporting period",
+      "freshness": "report period",
+      "evidence_standard": "method-specific reconciliation",
+      "expected_output_shape": "bounded refusal or reconciled result",
+      "forbidden_non_inferences": [
+        "total donation revenue equals method-specific proceeds"
+      ]
+    },
+    "primary_domains": [
+      8,
+      13,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "tested_missingness",
+      "unresolved",
+      "supported"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"reconciliation\", \"intent\": \"fundraising boundary\", \"operation\": \"screen\", \"scope\": \"appeal/financial line\"}",
+    "distinctiveness_rationale": "Tests accounting/channel distinction."
+  },
+  {
+    "id": "SDC-0027",
+    "scenario_type": "question",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "evidence_evaluation"
+    ],
+    "tier": "C",
+    "job_to_be_done": "prevent scope overreach",
+    "surface_question": "Can evidence scoped to {PROGRAM} support an organisation-wide proposition about {ORGANISATION}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "PROGRAM": "PROGRAM",
+        "ORGANISATION": "ORGANISATION"
+      },
+      "required_subject_scope_types": [
+        "program versus organisation"
+      ],
+      "required_proposition_families": [
+        "program evidence",
+        "organisation proposition"
+      ],
+      "analytical_operations": [
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "program-to-organisation"
+      ],
+      "temporal_compatibility": "evidence interval",
+      "freshness": "state scope and date",
+      "evidence_standard": "organisation-wide evidence or explicit generalisation basis",
+      "expected_output_shape": "scope-boundary explanation",
+      "forbidden_non_inferences": [
+        "program-scoped evidence establishes organisation-wide claim"
+      ]
+    },
+    "primary_domains": [
+      1,
+      3,
+      18
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "tested_missingness",
+      "unresolved",
+      "supported"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"organisation wide\", \"intent\": \"scope boundary\", \"operation\": \"screen\", \"scope\": \"program/org\"}",
+    "distinctiveness_rationale": "Core epistemic restraint."
+  },
+  {
+    "id": "SDC-0028",
+    "scenario_type": "question",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "ethos_conduct"
+    ],
+    "tier": "C",
+    "job_to_be_done": "make a qualified selection decision",
+    "surface_question": "Select candidates for {MANDATE_RULE} from {ORGANISATION} records, explaining evidence, missingness and rule exclusions.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "MANDATE_RULE": "MANDATE_RULE",
+        "ORGANISATION": "ORGANISATION"
+      },
+      "required_subject_scope_types": [
+        "resolved organisation"
+      ],
+      "required_proposition_families": [
+        "identity",
+        "purpose",
+        "finance",
+        "ethos",
+        "conduct",
+        "classification"
+      ],
+      "analytical_operations": [
+        "filter",
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "rule-to-proposition evidence"
+      ],
+      "temporal_compatibility": "rule-defined time",
+      "freshness": "per-field freshness",
+      "evidence_standard": "rule-specific evidence/coverage",
+      "expected_output_shape": "explainable candidate set",
+      "forbidden_non_inferences": [
+        "missingness is a failed criterion",
+        "universal values score"
+      ]
+    },
+    "primary_domains": [
+      1,
+      2,
+      13
+    ],
+    "supporting_domains": [
+      15,
+      16,
+      19,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"rule specific\", \"intent\": \"multi-criterion selection\", \"operation\": \"screen\", \"scope\": \"organisation\"}",
+    "distinctiveness_rationale": "Workflow-driven six-domain decision."
+  },
+  {
+    "id": "SDC-0029",
+    "scenario_type": "question",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "mandate_screening"
+    ],
+    "tier": "B",
+    "job_to_be_done": "audit temporal semantics",
+    "surface_question": "For {SOURCE}, distinguish valid time, publication time, acquisition time and review time for a {METRIC} assertion.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SOURCE": "SOURCE",
+        "METRIC": "METRIC"
+      },
+      "required_subject_scope_types": [
+        "source/assertion"
+      ],
+      "required_proposition_families": [
+        "temporal provenance",
+        "assertion"
+      ],
+      "analytical_operations": [
+        "audit",
+        "compare"
+      ],
+      "required_joins": [
+        "source-to-acquisition-to-assertion"
+      ],
+      "temporal_compatibility": "four named clocks",
+      "freshness": "not a substitute for validity",
+      "evidence_standard": "lineage timestamps",
+      "expected_output_shape": "temporal lineage table",
+      "forbidden_non_inferences": [
+        "acquisition time equals world-valid time"
+      ]
+    },
+    "primary_domains": [
+      13,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"lineage timestamps\", \"intent\": \"temporal audit\", \"operation\": \"audit\", \"scope\": \"assertion\"}",
+    "distinctiveness_rationale": "Reproducibility seam."
+  },
+  {
+    "id": "SDC-0030",
+    "scenario_type": "question",
+    "persona": "researcher_evaluator",
+    "analytical_lenses": [
+      "reproducibility"
+    ],
+    "tier": "B",
+    "job_to_be_done": "trace a historical service change",
+    "surface_question": "What dated change in {SERVICE} access is evidenced in {GEOGRAPHY} between {PERIOD}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "service access event"
+      ],
+      "required_proposition_families": [
+        "service",
+        "access",
+        "historical event"
+      ],
+      "analytical_operations": [
+        "change",
+        "trace"
+      ],
+      "required_joins": [
+        "service-to-event",
+        "event-to-geography"
+      ],
+      "temporal_compatibility": "bounded period",
+      "freshness": "historical status retained",
+      "evidence_standard": "dated observation/event evidence",
+      "expected_output_shape": "dated change log",
+      "forbidden_non_inferences": [
+        "historical access proves current access"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      17,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"dated evidence\", \"intent\": \"service change\", \"operation\": \"change\", \"scope\": \"service access\"}",
+    "distinctiveness_rationale": "History is not current availability."
+  },
+  {
+    "id": "SDC-0031",
+    "scenario_type": "question",
+    "persona": "downstream_agent",
+    "analytical_lenses": [
+      "discovery"
+    ],
+    "tier": "A",
+    "job_to_be_done": "construct a discovery cohort",
+    "surface_question": "Which {ORGANISATION} have a governed discovery assignment for {CAUSE} under {SCHEME}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "CAUSE": "CAUSE",
+        "SCHEME": "SCHEME"
+      },
+      "required_subject_scope_types": [
+        "organisation classification"
+      ],
+      "required_proposition_families": [
+        "discovery assignment",
+        "cause"
+      ],
+      "analytical_operations": [
+        "filter"
+      ],
+      "required_joins": [
+        "organisation-to-assignment"
+      ],
+      "temporal_compatibility": "scheme version",
+      "freshness": "assignment review date",
+      "evidence_standard": "governed assignment with method",
+      "expected_output_shape": "discovery cohort",
+      "forbidden_non_inferences": [
+        "discovery assignment proves operational activity"
+      ]
+    },
+    "primary_domains": [
+      2,
+      19,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"governed assignment\", \"intent\": \"discovery cohort\", \"operation\": \"filter\", \"scope\": \"classification\"}",
+    "distinctiveness_rationale": "Search is not truth assertion."
+  },
+  {
+    "id": "SDC-0032",
+    "scenario_type": "question",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "cohorting"
+    ],
+    "tier": "B",
+    "job_to_be_done": "understand participation-linked capacity",
+    "surface_question": "What volunteer or member contribution is evidenced for {SERVICE} during {PERIOD}, separate from employee capacity?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "service workforce/participation"
+      ],
+      "required_proposition_families": [
+        "volunteering",
+        "membership",
+        "workforce",
+        "capacity"
+      ],
+      "analytical_operations": [
+        "lookup",
+        "compare"
+      ],
+      "required_joins": [
+        "participant-to-service",
+        "workforce-to-service"
+      ],
+      "temporal_compatibility": "period",
+      "freshness": "reported period",
+      "evidence_standard": "role-specific measure",
+      "expected_output_shape": "role-separated capacity view",
+      "forbidden_non_inferences": [
+        "volunteer count equals employee capacity"
+      ]
+    },
+    "primary_domains": [
+      6,
+      7,
+      10
+    ],
+    "supporting_domains": [
+      11,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"role specific\", \"intent\": \"contribution capacity\", \"operation\": \"compare\", \"scope\": \"service\"}",
+    "distinctiveness_rationale": "Cross-domain workforce boundary."
+  },
+  {
+    "id": "SDC-0033",
+    "scenario_type": "question",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "service_system_mapping"
+    ],
+    "tier": "B",
+    "job_to_be_done": "compare financial dependencies",
+    "surface_question": "Compare dependency on {FUNDER} for {ORGANISATION} across {PERIOD}, distinguishing commitment, receipt and recognised revenue.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "FUNDER": "FUNDER",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "organisation financial dependency"
+      ],
+      "required_proposition_families": [
+        "commitment",
+        "receipt",
+        "revenue",
+        "relationship"
+      ],
+      "analytical_operations": [
+        "compare",
+        "trace"
+      ],
+      "required_joins": [
+        "funder-to-flow",
+        "flow-to-revenue line"
+      ],
+      "temporal_compatibility": "reporting periods",
+      "freshness": "report date",
+      "evidence_standard": "typed flow/financial evidence",
+      "expected_output_shape": "dependency comparison",
+      "forbidden_non_inferences": [
+        "commitment equals recognised revenue"
+      ]
+    },
+    "primary_domains": [
+      12,
+      13,
+      14
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"typed flow\", \"intent\": \"dependency comparison\", \"operation\": \"compare\", \"scope\": \"organisation/funder flow\"}",
+    "distinctiveness_rationale": "Financial ecosystem workflow."
+  },
+  {
+    "id": "SDC-0034",
+    "scenario_type": "question",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "funding_ecosystem"
+    ],
+    "tier": "B",
+    "job_to_be_done": "screen notable history carefully",
+    "surface_question": "What dated {METRIC} history is relevant to {MANDATE_RULE} for {ORGANISATION}, with succession scope stated?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "MANDATE_RULE": "MANDATE_RULE",
+        "ORGANISATION": "ORGANISATION"
+      },
+      "required_subject_scope_types": [
+        "entity/predecessor/successor"
+      ],
+      "required_proposition_families": [
+        "history",
+        "succession",
+        "identity"
+      ],
+      "analytical_operations": [
+        "trace",
+        "screen"
+      ],
+      "required_joins": [
+        "event-to-subject",
+        "subject-to-successor"
+      ],
+      "temporal_compatibility": "dated historical event",
+      "freshness": "not current by default",
+      "evidence_standard": "event and identity lineage evidence",
+      "expected_output_shape": "dated history packet",
+      "forbidden_non_inferences": [
+        "predecessor history automatically applies to successor"
+      ]
+    },
+    "primary_domains": [
+      1,
+      17,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"identity lineage\", \"intent\": \"history screen\", \"operation\": \"trace\", \"scope\": \"succession\"}",
+    "distinctiveness_rationale": "Historical relevance is scoped."
+  },
+  {
+    "id": "SDC-0035",
+    "scenario_type": "question",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "fundraising"
+    ],
+    "tier": "B",
+    "job_to_be_done": "audit correction handling",
+    "surface_question": "Show correction, dispute and supersession state for the {METRIC} proposition about {ORGANISATION}.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION"
+      },
+      "required_subject_scope_types": [
+        "governed proposition"
+      ],
+      "required_proposition_families": [
+        "correction",
+        "dispute",
+        "supersession"
+      ],
+      "analytical_operations": [
+        "audit",
+        "trace"
+      ],
+      "required_joins": [
+        "proposition-to-decision-to-evidence"
+      ],
+      "temporal_compatibility": "decision chronology",
+      "freshness": "current governed state plus history",
+      "evidence_standard": "adjudication lineage",
+      "expected_output_shape": "correction lineage",
+      "forbidden_non_inferences": [
+        "newer source silently erases contrary evidence"
+      ]
+    },
+    "primary_domains": [
+      13,
+      16,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"adjudication\", \"intent\": \"correction audit\", \"operation\": \"audit\", \"scope\": \"proposition\"}",
+    "distinctiveness_rationale": "Correction is a first-class answer state."
+  },
+  {
+    "id": "SDC-0036",
+    "scenario_type": "question",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "finance"
+    ],
+    "tier": "B",
+    "job_to_be_done": "review classification/evaluation seam",
+    "surface_question": "What evidence supports classifying {INTERVENTION} under {SCHEME}, and what does that classification not establish about outcomes?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "INTERVENTION": "INTERVENTION",
+        "SCHEME": "SCHEME"
+      },
+      "required_subject_scope_types": [
+        "intervention classification"
+      ],
+      "required_proposition_families": [
+        "classification",
+        "activity",
+        "outcome"
+      ],
+      "analytical_operations": [
+        "explain",
+        "audit"
+      ],
+      "required_joins": [
+        "intervention-to-assignment",
+        "assignment-to-evidence"
+      ],
+      "temporal_compatibility": "scheme/version and evidence period",
+      "freshness": "review date",
+      "evidence_standard": "scheme/method and outcome evidence separated",
+      "expected_output_shape": "classification boundary note",
+      "forbidden_non_inferences": [
+        "classification proves effectiveness"
+      ]
+    },
+    "primary_domains": [
+      4,
+      18,
+      19
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"separate outcome evidence\", \"intent\": \"classification boundary\", \"operation\": \"explain\", \"scope\": \"intervention\"}",
+    "distinctiveness_rationale": "Completes domain coverage without ontology expansion."
+  },
+  {
+    "id": "SDC-0037",
+    "scenario_type": "question",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "evidence_evaluation"
+    ],
+    "tier": "A",
+    "job_to_be_done": "resolve reporting identity",
+    "surface_question": "Which {ORGANISATION} identifier and reporting scope apply to this record?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION"
+      },
+      "required_subject_scope_types": [
+        "entity identity"
+      ],
+      "required_proposition_families": [
+        "identifier",
+        "scope"
+      ],
+      "analytical_operations": [
+        "lookup",
+        "audit"
+      ],
+      "required_joins": [
+        "record-to-identifier"
+      ],
+      "temporal_compatibility": "effective period",
+      "freshness": "identity review date",
+      "evidence_standard": "authority-scoped identity",
+      "expected_output_shape": "identity record",
+      "forbidden_non_inferences": [
+        "name match proves same entity"
+      ]
+    },
+    "primary_domains": [
+      1,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"authority\", \"intent\": \"identity resolution\", \"operation\": \"lookup\", \"scope\": \"entity\"}",
+    "distinctiveness_rationale": "Atomic identity gap."
+  },
+  {
+    "id": "SDC-0038",
+    "scenario_type": "question",
+    "persona": "researcher_evaluator",
+    "analytical_lenses": [
+      "ethos_conduct"
+    ],
+    "tier": "B",
+    "job_to_be_done": "inspect governance for access decisions",
+    "surface_question": "Who held the relevant {METRIC} role for {ORGANISATION} during {PERIOD}, and what scope did it cover?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "governance role"
+      ],
+      "required_proposition_families": [
+        "role",
+        "scope"
+      ],
+      "analytical_operations": [
+        "lookup",
+        "compare"
+      ],
+      "required_joins": [
+        "role-to-organisation",
+        "role-to-period"
+      ],
+      "temporal_compatibility": "tenure interval",
+      "freshness": "governance review date",
+      "evidence_standard": "dated governance evidence",
+      "expected_output_shape": "scoped role record",
+      "forbidden_non_inferences": [
+        "office holding proves operational responsibility"
+      ]
+    },
+    "primary_domains": [
+      1,
+      9,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"dated\", \"intent\": \"governance lookup\", \"operation\": \"lookup\", \"scope\": \"role\"}",
+    "distinctiveness_rationale": "Fills governance coverage."
+  },
+  {
+    "id": "SDC-0039",
+    "scenario_type": "question",
+    "persona": "downstream_agent",
+    "analytical_lenses": [
+      "mandate_screening"
+    ],
+    "tier": "B",
+    "job_to_be_done": "aggregate compatible reporting lines",
+    "surface_question": "Aggregate {METRIC} for {ORGANISATION} across {PERIOD}, showing scope, currency and accounting basis first.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "reporting entities"
+      ],
+      "required_proposition_families": [
+        "measure",
+        "scope",
+        "currency",
+        "basis"
+      ],
+      "analytical_operations": [
+        "aggregate",
+        "audit"
+      ],
+      "required_joins": [
+        "entity-to-statement",
+        "statement-to-period"
+      ],
+      "temporal_compatibility": "reporting periods",
+      "freshness": "reported period",
+      "evidence_standard": "compatible statement evidence",
+      "expected_output_shape": "qualified aggregate",
+      "forbidden_non_inferences": [
+        "same label proves compatible line"
+      ]
+    },
+    "primary_domains": [
+      1,
+      13,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"compatible\", \"intent\": \"finance aggregation\", \"operation\": \"aggregate\", \"scope\": \"reporting group\"}",
+    "distinctiveness_rationale": "Adds missing aggregation."
+  },
+  {
+    "id": "SDC-0040",
+    "scenario_type": "question",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "reproducibility"
+    ],
+    "tier": "A",
+    "job_to_be_done": "reproduce a historical projection",
+    "surface_question": "Reproduce the {METRIC} projection for {ORGANISATION} at {DATE}, preserving release and source versions.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "DATE": "DATE"
+      },
+      "required_subject_scope_types": [
+        "projection release"
+      ],
+      "required_proposition_families": [
+        "projection",
+        "release",
+        "version"
+      ],
+      "analytical_operations": [
+        "audit",
+        "compare"
+      ],
+      "required_joins": [
+        "projection-to-release",
+        "release-to-source"
+      ],
+      "temporal_compatibility": "projection and release dates",
+      "freshness": "versioned review state",
+      "evidence_standard": "versioned lineage",
+      "expected_output_shape": "reproduction packet",
+      "forbidden_non_inferences": [
+        "latest release recreates historical view"
+      ]
+    },
+    "primary_domains": [
+      13,
+      17,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"versioned\", \"intent\": \"historical reproduction\", \"operation\": \"audit\", \"scope\": \"projection\"}",
+    "distinctiveness_rationale": "Adds longitudinal reproducibility."
+  },
+  {
+    "id": "SDC-0041",
+    "scenario_type": "question",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "discovery"
+    ],
+    "tier": "C",
+    "job_to_be_done": "trace multi-party delivery dependency",
+    "surface_question": "Which {FUNDER}, {ORGANISATION} and {SERVICE} links form an evidenced delivery dependency for {POPULATION} during {PERIOD}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "FUNDER": "FUNDER",
+        "ORGANISATION": "ORGANISATION",
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "funder-service chain"
+      ],
+      "required_proposition_families": [
+        "funding",
+        "delivery",
+        "dependency"
+      ],
+      "analytical_operations": [
+        "trace",
+        "map",
+        "screen"
+      ],
+      "required_joins": [
+        "funder-to-organisation",
+        "organisation-to-service",
+        "service-to-population"
+      ],
+      "temporal_compatibility": "relationship intervals",
+      "freshness": "per-edge review",
+      "evidence_standard": "typed edge evidence",
+      "expected_output_shape": "multi-hop map",
+      "forbidden_non_inferences": [
+        "funding proves delivery dependency"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      12,
+      14,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"typed edges\", \"intent\": \"multi-hop dependency\", \"operation\": \"trace\", \"scope\": \"funder/service\"}",
+    "distinctiveness_rationale": "Meaningful six-domain workflow."
+  },
+  {
+    "id": "SDC-0042",
+    "scenario_type": "question",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "cohorting"
+    ],
+    "tier": "C",
+    "job_to_be_done": "make a time-bounded mandate decision",
+    "surface_question": "Does {ORGANISATION} satisfy {MANDATE_RULE} for {PERIOD} when evidence is time-compatible?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "MANDATE_RULE": "MANDATE_RULE",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "organisation and rule period"
+      ],
+      "required_proposition_families": [
+        "identity",
+        "finance",
+        "dependency",
+        "conduct",
+        "evaluation"
+      ],
+      "analytical_operations": [
+        "screen",
+        "explain",
+        "audit"
+      ],
+      "required_joins": [
+        "rule-to-evidence",
+        "evidence-to-period"
+      ],
+      "temporal_compatibility": "compatible interval",
+      "freshness": "per-field review",
+      "evidence_standard": "rule-specific evidence",
+      "expected_output_shape": "time-qualified packet",
+      "forbidden_non_inferences": [
+        "different periods prove current fit"
+      ]
+    },
+    "primary_domains": [
+      1,
+      13,
+      14
+    ],
+    "supporting_domains": [
+      16,
+      18,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"compatible\", \"intent\": \"temporal mandate\", \"operation\": \"screen\", \"scope\": \"organisation\"}",
+    "distinctiveness_rationale": "Positive Tier C decision."
+  },
+  {
+    "id": "SDC-0043",
+    "scenario_type": "question",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "service_system_mapping"
+    ],
+    "tier": "C",
+    "job_to_be_done": "compare intervention evidence",
+    "surface_question": "Which of two {INTERVENTION} evaluations provides stronger bounded evidence for {POPULATION}, considering design and limitations?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "INTERVENTION": "INTERVENTION",
+        "POPULATION": "POPULATION"
+      },
+      "required_subject_scope_types": [
+        "intervention evaluations"
+      ],
+      "required_proposition_families": [
+        "design",
+        "outcome",
+        "limitation"
+      ],
+      "analytical_operations": [
+        "compare",
+        "explain"
+      ],
+      "required_joins": [
+        "intervention-to-study",
+        "study-to-population"
+      ],
+      "temporal_compatibility": "study periods",
+      "freshness": "publication review date",
+      "evidence_standard": "comparable study evidence",
+      "expected_output_shape": "qualified comparison",
+      "forbidden_non_inferences": [
+        "stronger study proves universal effectiveness"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      18
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"design\", \"intent\": \"evaluation comparison\", \"operation\": \"compare\", \"scope\": \"study\"}",
+    "distinctiveness_rationale": "Answerable evaluative comparison."
+  },
+  {
+    "id": "SDC-0044",
+    "scenario_type": "question",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "funding_ecosystem"
+    ],
+    "tier": "C",
+    "job_to_be_done": "reconcile an appeal to reported finance",
+    "surface_question": "Can {APPEAL} activity be reconciled to the relevant {METRIC} line for {ORGANISATION} during {PERIOD}, with unmatched amounts shown?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "APPEAL": "APPEAL",
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "appeal and financial line"
+      ],
+      "required_proposition_families": [
+        "activity",
+        "financial line",
+        "unmatched amount"
+      ],
+      "analytical_operations": [
+        "compare",
+        "aggregate",
+        "audit"
+      ],
+      "required_joins": [
+        "appeal-to-financial line",
+        "line-to-period"
+      ],
+      "temporal_compatibility": "appeal/reporting periods",
+      "freshness": "source dates",
+      "evidence_standard": "method-specific reconciliation",
+      "expected_output_shape": "reconciliation exceptions",
+      "forbidden_non_inferences": [
+        "unmatched total proves missing proceeds"
+      ]
+    },
+    "primary_domains": [
+      8,
+      13,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"reconciled\", \"intent\": \"appeal reconciliation\", \"operation\": \"aggregate\", \"scope\": \"appeal/line\"}",
+    "distinctiveness_rationale": "Positive fundraising reconciliation."
+  },
+  {
+    "id": "SDC-0045",
+    "scenario_type": "question",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "fundraising"
+    ],
+    "tier": "B",
+    "job_to_be_done": "compare beneficiary cohorts",
+    "surface_question": "Compare evidenced {POPULATION} coverage for {SERVICE} across {GEOGRAPHY} and {PERIOD}, separating intended from reached.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "POPULATION": "POPULATION",
+        "SERVICE": "SERVICE",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "service population geography"
+      ],
+      "required_proposition_families": [
+        "coverage",
+        "intended",
+        "reached"
+      ],
+      "analytical_operations": [
+        "compare",
+        "filter"
+      ],
+      "required_joins": [
+        "service-to-population",
+        "service-to-geography"
+      ],
+      "temporal_compatibility": "comparison periods",
+      "freshness": "coverage review date",
+      "evidence_standard": "population-scoped evidence",
+      "expected_output_shape": "coverage comparison",
+      "forbidden_non_inferences": [
+        "intended equals reached"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"population\", \"intent\": \"coverage comparison\", \"operation\": \"compare\", \"scope\": \"service cohort\"}",
+    "distinctiveness_rationale": "Positive cohort comparison."
+  },
+  {
+    "id": "SDC-0046",
+    "scenario_type": "question",
+    "persona": "researcher_evaluator",
+    "analytical_lenses": [
+      "finance"
+    ],
+    "tier": "B",
+    "job_to_be_done": "find referral bottlenecks",
+    "surface_question": "Where do evidenced {SERVICE} referral routes break for {POPULATION} in {GEOGRAPHY} during {PERIOD}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "service referral path"
+      ],
+      "required_proposition_families": [
+        "referral",
+        "access",
+        "bottleneck"
+      ],
+      "analytical_operations": [
+        "map",
+        "find_exception"
+      ],
+      "required_joins": [
+        "service-to-referral",
+        "referral-to-endpoint"
+      ],
+      "temporal_compatibility": "route observation period",
+      "freshness": "route review date",
+      "evidence_standard": "observed route evidence",
+      "expected_output_shape": "bottleneck map",
+      "forbidden_non_inferences": [
+        "missing route proves no route"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      12,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"observed\", \"intent\": \"referral exception\", \"operation\": \"find_exception\", \"scope\": \"service route\"}",
+    "distinctiveness_rationale": "Distinct planner operation."
+  },
+  {
+    "id": "SDC-0047",
+    "scenario_type": "question",
+    "persona": "downstream_agent",
+    "analytical_lenses": [
+      "evidence_evaluation"
+    ],
+    "tier": "C",
+    "job_to_be_done": "compare funding dependency",
+    "surface_question": "Which {ORGANISATION} show a material change in dependency on {FUNDER} across {PERIOD}, separating concentration from continuity?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "FUNDER": "FUNDER",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "organisation-funder dependency"
+      ],
+      "required_proposition_families": [
+        "dependency",
+        "concentration",
+        "continuity",
+        "change"
+      ],
+      "analytical_operations": [
+        "compare",
+        "change",
+        "explain"
+      ],
+      "required_joins": [
+        "funder-to-flow",
+        "flow-to-revenue",
+        "dependency-to-service"
+      ],
+      "temporal_compatibility": "multiple reporting periods",
+      "freshness": "period review state",
+      "evidence_standard": "typed flow evidence",
+      "expected_output_shape": "dependency analysis",
+      "forbidden_non_inferences": [
+        "concentration proves fragility"
+      ]
+    },
+    "primary_domains": [
+      3,
+      12,
+      13
+    ],
+    "supporting_domains": [
+      14,
+      17,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"typed\", \"intent\": \"dependency change\", \"operation\": \"change\", \"scope\": \"funder flow\"}",
+    "distinctiveness_rationale": "Longitudinal funding reasoning."
+  },
+  {
+    "id": "SDC-0048",
+    "scenario_type": "question",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "ethos_conduct"
+    ],
+    "tier": "C",
+    "job_to_be_done": "test denominator compatibility",
+    "surface_question": "Is {METRIC} for {ORGANISATION} comparable across {PERIOD} after checking denominator, scope, currency and basis?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "financial metric denominator"
+      ],
+      "required_proposition_families": [
+        "metric",
+        "denominator",
+        "scope",
+        "basis"
+      ],
+      "analytical_operations": [
+        "screen",
+        "compare",
+        "audit"
+      ],
+      "required_joins": [
+        "metric-to-denominator",
+        "metric-to-statement"
+      ],
+      "temporal_compatibility": "reporting periods",
+      "freshness": "statement dates",
+      "evidence_standard": "metric-definition evidence",
+      "expected_output_shape": "comparability decision",
+      "forbidden_non_inferences": [
+        "same name proves same denominator"
+      ]
+    },
+    "primary_domains": [
+      1,
+      10,
+      13
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"definition\", \"intent\": \"denominator compatibility\", \"operation\": \"screen\", \"scope\": \"financial metric\"}",
+    "distinctiveness_rationale": "Explicit denominator gap."
+  },
+  {
+    "id": "SDC-0049",
+    "scenario_type": "question",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "mandate_screening"
+    ],
+    "tier": "C",
+    "job_to_be_done": "review governance and conduct together",
+    "surface_question": "Does dated {METRIC} history for {ORGANISATION} create a relevant issue under {MANDATE_RULE}, separating findings from allegations?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "MANDATE_RULE": "MANDATE_RULE"
+      },
+      "required_subject_scope_types": [
+        "governance conduct history"
+      ],
+      "required_proposition_families": [
+        "role",
+        "event",
+        "finding",
+        "history"
+      ],
+      "analytical_operations": [
+        "trace",
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "role-to-event",
+        "event-to-authority",
+        "event-to-rule"
+      ],
+      "temporal_compatibility": "dated intervals",
+      "freshness": "authority review date",
+      "evidence_standard": "authority-scoped status",
+      "expected_output_shape": "qualified conduct packet",
+      "forbidden_non_inferences": [
+        "allegation equals finding"
+      ]
+    },
+    "primary_domains": [
+      1,
+      9,
+      16
+    ],
+    "supporting_domains": [
+      17,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"authority\", \"intent\": \"governance conduct\", \"operation\": \"screen\", \"scope\": \"role/event\"}",
+    "distinctiveness_rationale": "Governance/conduct workflow."
+  },
+  {
+    "id": "SDC-0050",
+    "scenario_type": "question",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "reproducibility"
+    ],
+    "tier": "B",
+    "job_to_be_done": "audit a reproducible aggregate",
+    "surface_question": "Show the source, filter, denominator and release lineage used to aggregate {METRIC} for {ORGANISATION} during {PERIOD}.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "ORGANISATION": "ORGANISATION",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "aggregate assertion"
+      ],
+      "required_proposition_families": [
+        "aggregate",
+        "filter",
+        "denominator",
+        "lineage"
+      ],
+      "analytical_operations": [
+        "audit",
+        "aggregate"
+      ],
+      "required_joins": [
+        "aggregate-to-input",
+        "input-to-source",
+        "release-to-assertion"
+      ],
+      "temporal_compatibility": "period and release clocks",
+      "freshness": "all lineage dates",
+      "evidence_standard": "reconstructible lineage",
+      "expected_output_shape": "aggregate audit record",
+      "forbidden_non_inferences": [
+        "reproducible proves completeness"
+      ]
+    },
+    "primary_domains": [
+      1,
+      13,
+      19
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"reconstructible\", \"intent\": \"aggregate lineage\", \"operation\": \"audit\", \"scope\": \"assertion\"}",
+    "distinctiveness_rationale": "Developer aggregation demand."
+  },
+  {
+    "id": "SDC-0051",
+    "scenario_type": "question",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "discovery"
+    ],
+    "tier": "A",
+    "job_to_be_done": "select a service cohort with exclusions",
+    "surface_question": "Return {SERVICE} records for {POPULATION} in {GEOGRAPHY}, showing inclusion, exclusion and missingness reasons.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY"
+      },
+      "required_subject_scope_types": [
+        "service cohort"
+      ],
+      "required_proposition_families": [
+        "service",
+        "population",
+        "geography",
+        "missingness"
+      ],
+      "analytical_operations": [
+        "filter",
+        "audit"
+      ],
+      "required_joins": [
+        "service-to-population",
+        "service-to-geography",
+        "record-to-coverage"
+      ],
+      "temporal_compatibility": "service period",
+      "freshness": "cohort review date",
+      "evidence_standard": "service-scoped evidence",
+      "expected_output_shape": "explainable cohort",
+      "forbidden_non_inferences": [
+        "excluded means not real"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"coverage\", \"intent\": \"explainable cohort\", \"operation\": \"filter\", \"scope\": \"service\"}",
+    "distinctiveness_rationale": "Positive cohort with exclusions."
+  },
+  {
+    "id": "SDC-0052",
+    "scenario_type": "question",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "cohorting"
+    ],
+    "tier": "C",
+    "job_to_be_done": "identify evidence gaps in a decision",
+    "surface_question": "Which missing {METRIC} or design elements prevent a bounded decision about {INTERVENTION} for {POPULATION}?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "METRIC": "METRIC",
+        "INTERVENTION": "INTERVENTION",
+        "POPULATION": "POPULATION"
+      },
+      "required_subject_scope_types": [
+        "evaluation decision"
+      ],
+      "required_proposition_families": [
+        "metric",
+        "design",
+        "population",
+        "missingness"
+      ],
+      "analytical_operations": [
+        "find_exception",
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "intervention-to-study",
+        "study-to-population",
+        "claim-to-evidence"
+      ],
+      "temporal_compatibility": "decision evidence period",
+      "freshness": "review date",
+      "evidence_standard": "study-scoped gap evidence",
+      "expected_output_shape": "decision gap register",
+      "forbidden_non_inferences": [
+        "missing design proves failure"
+      ]
+    },
+    "primary_domains": [
+      4,
+      5,
+      18
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"study scoped\", \"intent\": \"evaluation gap\", \"operation\": \"find_exception\", \"scope\": \"decision evidence\"}",
+    "distinctiveness_rationale": "Tier C evidence-gap decision."
+  },
+  {
+    "id": "SDC-0053",
+    "scenario_type": "question",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "service_system_mapping"
+    ],
+    "tier": "C",
+    "job_to_be_done": "plan a bounded service response",
+    "surface_question": "Which evidenced {SERVICE} access gaps for {POPULATION} in {GEOGRAPHY} warrant review under {MANDATE_RULE}, and what evidence is missing?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "MANDATE_RULE": "MANDATE_RULE"
+      },
+      "required_subject_scope_types": [
+        "service access gap"
+      ],
+      "required_proposition_families": [
+        "access",
+        "gap",
+        "population",
+        "rule",
+        "missingness"
+      ],
+      "analytical_operations": [
+        "screen",
+        "map",
+        "explain"
+      ],
+      "required_joins": [
+        "service-to-population",
+        "service-to-geography",
+        "gap-to-rule"
+      ],
+      "temporal_compatibility": "rule-defined period",
+      "freshness": "access review date",
+      "evidence_standard": "time-bound access evidence",
+      "expected_output_shape": "bounded response review",
+      "forbidden_non_inferences": [
+        "absence proves unmet need"
+      ]
+    },
+    "primary_domains": [
+      2,
+      3,
+      5
+    ],
+    "supporting_domains": [
+      7,
+      15,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"rule scoped\", \"intent\": \"service gap decision\", \"operation\": \"screen\", \"scope\": \"access gap\"}",
+    "distinctiveness_rationale": "Positive planner Tier C decision."
+  },
+  {
+    "id": "SDC-0054",
+    "scenario_type": "question",
+    "persona": "researcher_evaluator",
+    "analytical_lenses": [
+      "funding_ecosystem"
+    ],
+    "tier": "B",
+    "job_to_be_done": "build a reproducible inclusion cohort with evidence coverage review",
+    "surface_question": "Which {ORGANISATION} records have a current {SCHEME} designation as of {DATE}? State coverage and review date.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "SCHEME": "SCHEME",
+        "DATE": "DATE"
+      },
+      "required_subject_scope_types": [
+        "legal entity and designation scope"
+      ],
+      "required_proposition_families": [
+        "identifier",
+        "designation"
+      ],
+      "analytical_operations": [
+        "filter",
+        "audit"
+      ],
+      "required_joins": [
+        "entity-to-designation"
+      ],
+      "temporal_compatibility": "as-of date",
+      "freshness": "state review date",
+      "evidence_standard": "authority-scoped designation evidence",
+      "expected_output_shape": "cohort with evidence state",
+      "forbidden_non_inferences": [
+        "designation proves legal restriction or service quality"
+      ]
+    },
+    "primary_domains": [
+      1,
+      19,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"authority scoped\", \"intent\": \"cohort designation\", \"operation\": \"filter\", \"scope\": \"entity\"}|coverage-review|SDC-0054",
+    "distinctiveness_rationale": "Atomic identity/classification inclusion. Materialized distinct coverage-review variant."
+  },
+  {
+    "id": "SDC-0055",
+    "scenario_type": "question",
+    "persona": "downstream_agent",
+    "analytical_lenses": [
+      "fundraising"
+    ],
+    "tier": "B",
+    "job_to_be_done": "build a reproducible inclusion cohort with evidence coverage review",
+    "surface_question": "Which {ORGANISATION} have an evidenced purpose concerning {CAUSE} for {POPULATION}? State coverage and review date.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "ORGANISATION",
+        "CAUSE": "CAUSE",
+        "POPULATION": "POPULATION"
+      },
+      "required_subject_scope_types": [
+        "organisation purpose and population role"
+      ],
+      "required_proposition_families": [
+        "purpose",
+        "population"
+      ],
+      "analytical_operations": [
+        "filter"
+      ],
+      "required_joins": [
+        "purpose-to-population"
+      ],
+      "temporal_compatibility": "source effective period",
+      "freshness": "report review date",
+      "evidence_standard": "attributed purpose or governed assignment",
+      "expected_output_shape": "cohort with attribution",
+      "forbidden_non_inferences": [
+        "purpose proves current delivery"
+      ]
+    },
+    "primary_domains": [
+      2,
+      5,
+      19
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"attributed\", \"intent\": \"cause cohort\", \"operation\": \"filter\", \"scope\": \"purpose\"}|coverage-review|SDC-0055",
+    "distinctiveness_rationale": "Separates stated purpose from activity. Materialized distinct coverage-review variant."
+  },
+  {
+    "id": "SDC-0056",
+    "scenario_type": "question",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "finance"
+    ],
+    "tier": "B",
+    "job_to_be_done": "construct an evidenced service cohort with evidence coverage review",
+    "surface_question": "Find {SERVICE} for {POPULATION} with delivery geography {GEOGRAPHY} during {PERIOD}. State coverage and review date.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "service and delivery geography"
+      ],
+      "required_proposition_families": [
+        "service",
+        "eligibility",
+        "geography"
+      ],
+      "analytical_operations": [
+        "filter"
+      ],
+      "required_joins": [
+        "service-to-population",
+        "service-to-delivery geography"
+      ],
+      "temporal_compatibility": "service period",
+      "freshness": "show availability/freshness state",
+      "evidence_standard": "service-scoped evidence",
+      "expected_output_shape": "service cohort map",
+      "forbidden_non_inferences": [
+        "headquarters equals delivery geography"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      19,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"service scoped\", \"intent\": \"service cohort\", \"operation\": \"filter\", \"scope\": \"service\"}|coverage-review|SDC-0056",
+    "distinctiveness_rationale": "Workflow cohort, not a tag union. Materialized distinct coverage-review variant."
+  },
+  {
+    "id": "SDC-0057",
+    "scenario_type": "question",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "evidence_evaluation"
+    ],
+    "tier": "B",
+    "job_to_be_done": "map supply-side access paths with evidence coverage review",
+    "surface_question": "Map {SERVICE} access routes for {POPULATION} in {GEOGRAPHY} as of {DATE}. State coverage and review date.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "DATE": "DATE"
+      },
+      "required_subject_scope_types": [
+        "service/site/channel access"
+      ],
+      "required_proposition_families": [
+        "service",
+        "access",
+        "referral"
+      ],
+      "analytical_operations": [
+        "map",
+        "trace"
+      ],
+      "required_joins": [
+        "service-to-site",
+        "service-to-access condition",
+        "service-to-referral relationship"
+      ],
+      "temporal_compatibility": "as-of date",
+      "freshness": "currentness must be evidenced",
+      "evidence_standard": "time-bound service/access observation",
+      "expected_output_shape": "bounded supply map",
+      "forbidden_non_inferences": [
+        "listed service is currently available",
+        "supply establishes unmet need"
+      ]
+    },
+    "primary_domains": [
+      3,
+      5,
+      7
+    ],
+    "supporting_domains": [
+      12,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": true,
+    "semantic_signature": "{\"bar\": \"time bound\", \"intent\": \"access mapping\", \"operation\": \"map\", \"scope\": \"service/site\"}|coverage-review|SDC-0057",
+    "distinctiveness_rationale": "Real planner workflow preserves supply/need boundary. Materialized distinct coverage-review variant."
+  },
+  {
+    "id": "SDC-0058",
+    "scenario_type": "question",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "ethos_conduct"
+    ],
+    "tier": "B",
+    "job_to_be_done": "inspect participation routes with evidence coverage review",
+    "surface_question": "What {SERVICE} participation opportunities accept {POPULATION} with {THRESHOLD} commitment? State coverage and review date.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "POPULATION": "POPULATION",
+        "THRESHOLD": "THRESHOLD"
+      },
+      "required_subject_scope_types": [
+        "advertised opportunity"
+      ],
+      "required_proposition_families": [
+        "opportunity",
+        "eligibility",
+        "time pattern"
+      ],
+      "analytical_operations": [
+        "filter"
+      ],
+      "required_joins": [
+        "opportunity-to-service"
+      ],
+      "temporal_compatibility": "advertised effective period",
+      "freshness": "show review state",
+      "evidence_standard": "opportunity evidence",
+      "expected_output_shape": "opportunity list",
+      "forbidden_non_inferences": [
+        "advertisement proves enduring participation"
+      ]
+    },
+    "primary_domains": [
+      6,
+      7,
+      20
+    ],
+    "supporting_domains": [],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"advertised\", \"intent\": \"opportunity discovery\", \"operation\": \"filter\", \"scope\": \"opportunity\"}|coverage-review|SDC-0058",
+    "distinctiveness_rationale": "Participation is distinct from workforce and service use. Materialized distinct coverage-review variant."
+  },
+  {
+    "id": "SDC-0059",
+    "scenario_type": "question",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "mandate_screening"
+    ],
+    "tier": "B",
+    "job_to_be_done": "identify constrained supply with evidence coverage review",
+    "surface_question": "Which {SERVICE} report a {METRIC} constraint for {POPULATION} in {GEOGRAPHY} during {PERIOD}? State coverage and review date.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "SERVICE",
+        "METRIC": "METRIC",
+        "POPULATION": "POPULATION",
+        "GEOGRAPHY": "GEOGRAPHY",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "service capacity measure"
+      ],
+      "required_proposition_families": [
+        "capacity",
+        "constraint",
+        "workforce"
+      ],
+      "analytical_operations": [
+        "filter",
+        "find_exception"
+      ],
+      "required_joins": [
+        "measure-to-service",
+        "constraint-to-period"
+      ],
+      "temporal_compatibility": "reporting period",
+      "freshness": "state staleness",
+      "evidence_standard": "service-scoped measure",
+      "expected_output_shape": "constraint register",
+      "forbidden_non_inferences": [
+        "organisation size proves service capacity"
+      ]
+    },
+    "primary_domains": [
+      5,
+      7,
+      10
+    ],
+    "supporting_domains": [
+      11,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"measured\", \"intent\": \"capacity exception\", \"operation\": \"exception\", \"scope\": \"service\"}|coverage-review|SDC-0059",
+    "distinctiveness_rationale": "Connects capacity with evidence rather than reputation. Materialized distinct coverage-review variant."
+  },
+  {
+    "id": "SDC-0060",
+    "scenario_type": "question",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "reproducibility"
+    ],
+    "tier": "B",
+    "job_to_be_done": "trace resource dependencies with evidence coverage review",
+    "surface_question": "Trace reported {FUNDER} awards, commitments and payments to {PROGRAM} during {PERIOD}. State coverage and review date.",
+    "semantic_contract": {
+      "parameter_slots": {
+        "FUNDER": "FUNDER",
+        "PROGRAM": "PROGRAM",
+        "PERIOD": "PERIOD"
+      },
+      "required_subject_scope_types": [
+        "program and financial-flow scope"
+      ],
+      "required_proposition_families": [
+        "award",
+        "commitment",
+        "payment",
+        "revenue"
+      ],
+      "analytical_operations": [
+        "trace",
+        "compare"
+      ],
+      "required_joins": [
+        "funder-to-flow",
+        "flow-to-program",
+        "flow-to-financial line"
+      ],
+      "temporal_compatibility": "transaction/reporting period",
+      "freshness": "report source period",
+      "evidence_standard": "flow-specific authoritative evidence",
+      "expected_output_shape": "typed flow trace",
+      "forbidden_non_inferences": [
+        "award equals payment or revenue",
+        "payment proves durable relationship"
+      ]
+    },
+    "primary_domains": [
+      3,
+      12,
+      13
+    ],
+    "supporting_domains": [
+      14,
+      20
+    ],
+    "answerability": [
+      "supported",
+      "bounded_partial",
+      "tested_missingness",
+      "unresolved"
+    ],
+    "adversarial": false,
+    "semantic_signature": "{\"bar\": \"flow specific\", \"intent\": \"funding trace\", \"operation\": \"trace\", \"scope\": \"program flow\"}|coverage-review|SDC-0060",
+    "distinctiveness_rationale": "Prevents ecosystem double-counting. Materialized distinct coverage-review variant."
+  },
+  {
+    "id": "SDC-0061",
+    "scenario_type": "correction_challenge",
+    "persona": "charity_insider_adviser",
+    "analytical_lenses": [
+      "finance",
+      "reproducibility"
+    ],
+    "job_to_be_done": "correct an amended annual-report finance fact",
+    "surface_question": "The amended annual report changes the reported restricted-income total; what must be corrected?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "organisation",
+        "PERIOD": "reporting period"
+      },
+      "required_subject_scope_types": [
+        "reporting entity",
+        "financial period"
+      ],
+      "required_proposition_families": [
+        "restricted income"
+      ],
+      "analytical_operations": [
+        "compare",
+        "change"
+      ],
+      "required_joins": [
+        "statement-to-source-version"
+      ],
+      "temporal_compatibility": "amended period supersedes prior representation",
+      "freshness": "latest governed source version",
+      "evidence_standard": "authoritative amended report",
+      "expected_output_shape": "supersession and revised projection",
+      "forbidden_non_inferences": [
+        "do not silently overwrite prior report"
+      ]
+    },
+    "primary_domains": [
+      13
+    ],
+    "supporting_domains": [
+      17,
+      20
+    ],
+    "answerability": [
+      "supported"
+    ],
+    "adversarial": false,
+    "semantic_signature": "amended-report|finance|supersede",
+    "distinctiveness_rationale": "source-version change with historical preservation",
+    "correction": {
+      "challenge_statement": "Amended report corrects restricted income.",
+      "challenge_actor_affiliation": "source owner",
+      "challenged_target": {
+        "subject": "organisation",
+        "scope": "reporting period",
+        "predicate": "restricted income"
+      },
+      "proposed_replacement_or_qualification": "supersede value with amended value",
+      "challenge_basis": "amended annual report",
+      "correction_class": "amended_evidence",
+      "correction_loci": [
+        "source_version",
+        "canonical_observation",
+        "projection"
+      ],
+      "governance_disposition": "accept_governed_replacement",
+      "lineage_effects": [
+        "retain prior observation as superseded"
+      ],
+      "invalidation_reprojection": [
+        "invalidate finance projection",
+        "reproject current view"
+      ],
+      "revised_answerability": "supported",
+      "forbidden_behaviours": [
+        "silent overwrite",
+        "erase history"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0062",
+    "scenario_type": "correction_challenge",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "reproducibility"
+    ],
+    "job_to_be_done": "repair a source-correct extraction",
+    "surface_question": "The source table is correct but the extracted column was shifted; how should the fact be repaired?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SOURCE": "source"
+      },
+      "required_subject_scope_types": [
+        "source table"
+      ],
+      "required_proposition_families": [
+        "extracted fact"
+      ],
+      "analytical_operations": [
+        "audit"
+      ],
+      "required_joins": [
+        "representation-to-source"
+      ],
+      "temporal_compatibility": "source version unchanged",
+      "freshness": "extraction run",
+      "evidence_standard": "replayable source representation",
+      "expected_output_shape": "corrected observation with extraction lineage",
+      "forbidden_non_inferences": [
+        "do not blame or alter source"
+      ]
+    },
+    "primary_domains": [
+      20
+    ],
+    "supporting_domains": [
+      17
+    ],
+    "answerability": [
+      "supported"
+    ],
+    "adversarial": false,
+    "semantic_signature": "extraction-shift|representation",
+    "distinctiveness_rationale": "same evidence, wrong representation",
+    "correction": {
+      "challenge_statement": "Column extraction shifted one position.",
+      "challenge_actor_affiliation": "researcher",
+      "challenged_target": {
+        "subject": "source table",
+        "scope": "row and column",
+        "predicate": "extracted value"
+      },
+      "proposed_replacement_or_qualification": "re-extract correct column",
+      "challenge_basis": "source-to-representation comparison",
+      "correction_class": "extraction_representation_error",
+      "correction_loci": [
+        "representation",
+        "evidence_extraction",
+        "canonical_observation"
+      ],
+      "governance_disposition": "accept_governed_replacement",
+      "lineage_effects": [
+        "retain faulty extraction as superseded"
+      ],
+      "invalidation_reprojection": [
+        "invalidate dependent observations",
+        "reproject"
+      ],
+      "revised_answerability": "supported",
+      "forbidden_behaviours": [
+        "edit projection only"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0063",
+    "scenario_type": "correction_challenge",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "discovery",
+      "reproducibility"
+    ],
+    "job_to_be_done": "correct an entity identity binding",
+    "surface_question": "Two organisations share a name; the observation was bound to the wrong entity. What is the governed correction?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "organisation"
+      },
+      "required_subject_scope_types": [
+        "entity identity"
+      ],
+      "required_proposition_families": [
+        "identity binding"
+      ],
+      "analytical_operations": [
+        "audit"
+      ],
+      "required_joins": [
+        "external identifier-to-subject"
+      ],
+      "temporal_compatibility": "identity binding effective date",
+      "freshness": "identity registry review",
+      "evidence_standard": "authoritative identifier evidence",
+      "expected_output_shape": "rebound observation and invalidation",
+      "forbidden_non_inferences": [
+        "name similarity is identity"
+      ]
+    },
+    "primary_domains": [
+      1
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "supported"
+    ],
+    "adversarial": false,
+    "semantic_signature": "wrong-entity|identity",
+    "distinctiveness_rationale": "identity locus differs from evidence truth",
+    "correction": {
+      "challenge_statement": "Observation belongs to a different legal entity.",
+      "challenge_actor_affiliation": "subject organisation",
+      "challenged_target": {
+        "subject": "organisation",
+        "scope": "entity binding",
+        "predicate": "observation owner"
+      },
+      "proposed_replacement_or_qualification": "bind to verified subject",
+      "challenge_basis": "identifier mismatch",
+      "correction_class": "identity_binding_error",
+      "correction_loci": [
+        "identity_binding",
+        "canonical_observation",
+        "projection"
+      ],
+      "governance_disposition": "accept_governed_replacement",
+      "lineage_effects": [
+        "mark wrong binding contradicted"
+      ],
+      "invalidation_reprojection": [
+        "invalidate all dependent projections"
+      ],
+      "revised_answerability": "supported",
+      "forbidden_behaviours": [
+        "infer authority from affiliation",
+        "erase wrong binding history"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0064",
+    "scenario_type": "correction_challenge",
+    "persona": "consultant_service_system_planner",
+    "analytical_lenses": [
+      "service_system_mapping"
+    ],
+    "job_to_be_done": "correct a program scope binding",
+    "surface_question": "The evidence describes a national organisation, but the answer assigned it to one local program. What should change?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "PROGRAM": "program",
+        "GEOGRAPHY": "geography"
+      },
+      "required_subject_scope_types": [
+        "program scope",
+        "geography"
+      ],
+      "required_proposition_families": [
+        "delivery geography"
+      ],
+      "analytical_operations": [
+        "audit",
+        "map"
+      ],
+      "required_joins": [
+        "program-to-geography"
+      ],
+      "temporal_compatibility": "program period",
+      "freshness": "scope review date",
+      "evidence_standard": "program-scoped evidence",
+      "expected_output_shape": "qualified geography projection",
+      "forbidden_non_inferences": [
+        "organisation headquarters equals program delivery"
+      ]
+    },
+    "primary_domains": [
+      3,
+      7
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "bounded_partial"
+    ],
+    "adversarial": true,
+    "semantic_signature": "wrong-scope|program-geography",
+    "distinctiveness_rationale": "scope binding correction",
+    "correction": {
+      "challenge_statement": "National evidence was incorrectly scoped to one program.",
+      "challenge_actor_affiliation": "unaffiliated community member",
+      "challenged_target": {
+        "subject": "program",
+        "scope": "delivery geography",
+        "predicate": "operates in"
+      },
+      "proposed_replacement_or_qualification": "remove unsupported local binding",
+      "challenge_basis": "evidence scope",
+      "correction_class": "scope_binding_error",
+      "correction_loci": [
+        "scope_binding",
+        "canonical_observation",
+        "projection"
+      ],
+      "governance_disposition": "accept_qualification",
+      "lineage_effects": [
+        "preserve national evidence"
+      ],
+      "invalidation_reprojection": [
+        "invalidate local map edge",
+        "reproject bounded map"
+      ],
+      "revised_answerability": "bounded_partial",
+      "forbidden_behaviours": [
+        "treat challenge as authority"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0065",
+    "scenario_type": "correction_challenge",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "discovery",
+      "finance"
+    ],
+    "job_to_be_done": "correct a historical currentness claim",
+    "surface_question": "A service ended last year but is still shown as current; how should the answer change?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SERVICE": "service",
+        "DATE": "date"
+      },
+      "required_subject_scope_types": [
+        "service",
+        "effective period"
+      ],
+      "required_proposition_families": [
+        "current availability"
+      ],
+      "analytical_operations": [
+        "change"
+      ],
+      "required_joins": [
+        "service-to-effective-period"
+      ],
+      "temporal_compatibility": "as-of query date",
+      "freshness": "currentness check",
+      "evidence_standard": "dated closure evidence",
+      "expected_output_shape": "historical state plus current unresolved state",
+      "forbidden_non_inferences": [
+        "historical listing proves current service"
+      ]
+    },
+    "primary_domains": [
+      3,
+      7
+    ],
+    "supporting_domains": [
+      17,
+      20
+    ],
+    "answerability": [
+      "bounded_partial"
+    ],
+    "adversarial": true,
+    "semantic_signature": "stale-service|currentness",
+    "distinctiveness_rationale": "temporal correction",
+    "correction": {
+      "challenge_statement": "Service ended before current query date.",
+      "challenge_actor_affiliation": "subject organisation",
+      "challenged_target": {
+        "subject": "service",
+        "scope": "current availability",
+        "predicate": "available"
+      },
+      "proposed_replacement_or_qualification": "close historical availability at dated closure",
+      "challenge_basis": "dated closure notice",
+      "correction_class": "temporal_currentness_error",
+      "correction_loci": [
+        "source_version",
+        "canonical_observation",
+        "projection"
+      ],
+      "governance_disposition": "accept_qualification",
+      "lineage_effects": [
+        "retain historical availability"
+      ],
+      "invalidation_reprojection": [
+        "invalidate current availability card"
+      ],
+      "revised_answerability": "bounded_partial",
+      "forbidden_behaviours": [
+        "erase historical knowledge"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0066",
+    "scenario_type": "correction_challenge",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "mandate_screening",
+      "ethos_conduct"
+    ],
+    "job_to_be_done": "separate designation from legal restriction",
+    "surface_question": "A source-stated designation was interpreted as a legal restriction; what is the proper correction?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "organisation",
+        "MANDATE_RULE": "rule"
+      },
+      "required_subject_scope_types": [
+        "designation",
+        "jurisdiction"
+      ],
+      "required_proposition_families": [
+        "designation",
+        "legal restriction"
+      ],
+      "analytical_operations": [
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "designation-to-authority"
+      ],
+      "temporal_compatibility": "authority effective date",
+      "freshness": "authority review",
+      "evidence_standard": "authority-scoped legal evidence",
+      "expected_output_shape": "qualification or unresolved restriction",
+      "forbidden_non_inferences": [
+        "designation alone proves restriction"
+      ]
+    },
+    "primary_domains": [
+      15,
+      16
+    ],
+    "supporting_domains": [
+      1
+    ],
+    "answerability": [
+      "bounded_partial"
+    ],
+    "adversarial": true,
+    "semantic_signature": "designation-not-restriction|semantic-mapping",
+    "distinctiveness_rationale": "semantic definition correction",
+    "correction": {
+      "challenge_statement": "Designation is not itself a legal restriction.",
+      "challenge_actor_affiliation": "researcher",
+      "challenged_target": {
+        "subject": "organisation",
+        "scope": "jurisdiction",
+        "predicate": "restricted"
+      },
+      "proposed_replacement_or_qualification": "remove legal conclusion and cite designation only",
+      "challenge_basis": "source wording and authority absence",
+      "correction_class": "semantic_mapping_error",
+      "correction_loci": [
+        "semantic_mapping",
+        "governance_adjudication",
+        "projection"
+      ],
+      "governance_disposition": "accept_qualification",
+      "lineage_effects": [
+        "retain source designation"
+      ],
+      "invalidation_reprojection": [
+        "invalidate legal restriction claim"
+      ],
+      "revised_answerability": "bounded_partial",
+      "forbidden_behaviours": [
+        "upgrade label to law"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0067",
+    "scenario_type": "correction_challenge",
+    "persona": "public_donor_participant",
+    "analytical_lenses": [
+      "fundraising",
+      "coverage"
+    ],
+    "job_to_be_done": "correct missing giving-channel coverage",
+    "surface_question": "No giving channel was acquired, but the answer says the organisation accepts no donations. What should happen?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "organisation"
+      },
+      "required_subject_scope_types": [
+        "giving channel",
+        "coverage state"
+      ],
+      "required_proposition_families": [
+        "giving offer",
+        "coverage"
+      ],
+      "analytical_operations": [
+        "audit",
+        "explain"
+      ],
+      "required_joins": [
+        "channel-to-coverage"
+      ],
+      "temporal_compatibility": "coverage as-of date",
+      "freshness": "acquisition review",
+      "evidence_standard": "channel-specific evidence or tested missingness",
+      "expected_output_shape": "tested missingness, not absence claim",
+      "forbidden_non_inferences": [
+        "missing acquisition is no channel"
+      ]
+    },
+    "primary_domains": [
+      8
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "tested_missingness"
+    ],
+    "adversarial": true,
+    "semantic_signature": "coverage-not-absence|giving",
+    "distinctiveness_rationale": "coverage/acquisition correction",
+    "correction": {
+      "challenge_statement": "Giving-channel acquisition was absent, not negative.",
+      "challenge_actor_affiliation": "unaffiliated community member",
+      "challenged_target": {
+        "subject": "organisation",
+        "scope": "giving channel",
+        "predicate": "has no channel"
+      },
+      "proposed_replacement_or_qualification": "replace absence with tested missingness",
+      "challenge_basis": "coverage ledger",
+      "correction_class": "coverage_acquisition_error",
+      "correction_loci": [
+        "coverage",
+        "projection"
+      ],
+      "governance_disposition": "accept_qualification",
+      "lineage_effects": [
+        "preserve acquisition gap"
+      ],
+      "invalidation_reprojection": [
+        "invalidate negative giving claim"
+      ],
+      "revised_answerability": "tested_missingness",
+      "forbidden_behaviours": [
+        "convert missingness to negative fact"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0068",
+    "scenario_type": "correction_challenge",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "evidence_evaluation"
+    ],
+    "job_to_be_done": "reject an unsupported challenge",
+    "surface_question": "A challenger supplies no evidence and asks to remove a supported observation; should the governed state change?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SOURCE": "source"
+      },
+      "required_subject_scope_types": [
+        "proposition"
+      ],
+      "required_proposition_families": [
+        "supported observation"
+      ],
+      "analytical_operations": [
+        "audit"
+      ],
+      "required_joins": [],
+      "temporal_compatibility": "existing observation period",
+      "freshness": "unchanged",
+      "evidence_standard": "material challenge basis required",
+      "expected_output_shape": "held or rejected challenge",
+      "forbidden_non_inferences": [
+        "submission is evidence"
+      ]
+    },
+    "primary_domains": [
+      18
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "rejected",
+      "held_for_governance"
+    ],
+    "adversarial": true,
+    "semantic_signature": "unsupported-challenge|reject",
+    "distinctiveness_rationale": "insufficient challenge case",
+    "correction": {
+      "challenge_statement": "Remove fact because it is inconvenient, without basis.",
+      "challenge_actor_affiliation": "subject organisation",
+      "challenged_target": {
+        "subject": "supported proposition",
+        "scope": "current observation",
+        "predicate": "claim"
+      },
+      "proposed_replacement_or_qualification": "none",
+      "challenge_basis": "assertion only",
+      "correction_class": "unsupported_inference",
+      "correction_loci": [
+        "governance_adjudication"
+      ],
+      "governance_disposition": "reject_insufficient",
+      "lineage_effects": [
+        "retain challenge disposition"
+      ],
+      "invalidation_reprojection": [
+        "none"
+      ],
+      "revised_answerability": "rejected",
+      "forbidden_behaviours": [
+        "accept assertion merely because submitted",
+        "infer authority from affiliation"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0069",
+    "scenario_type": "correction_challenge",
+    "persona": "data_developer",
+    "analytical_lenses": [
+      "reproducibility"
+    ],
+    "job_to_be_done": "repair an erroneous projection",
+    "surface_question": "The governed observation is correct but the rendered card has the wrong label; what changes?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "PROJECTION": "projection"
+      },
+      "required_subject_scope_types": [
+        "projection"
+      ],
+      "required_proposition_families": [
+        "rendered label"
+      ],
+      "analytical_operations": [
+        "audit"
+      ],
+      "required_joins": [
+        "observation-to-projection"
+      ],
+      "temporal_compatibility": "current release",
+      "freshness": "build run",
+      "evidence_standard": "projection replay",
+      "expected_output_shape": "reprojected card with unchanged observation",
+      "forbidden_non_inferences": [
+        "do not alter governed observation"
+      ]
+    },
+    "primary_domains": [
+      20
+    ],
+    "supporting_domains": [
+      17
+    ],
+    "answerability": [
+      "supported"
+    ],
+    "adversarial": false,
+    "semantic_signature": "projection-label|render",
+    "distinctiveness_rationale": "projection-only correction",
+    "correction": {
+      "challenge_statement": "Renderer labels a supported value incorrectly.",
+      "challenge_actor_affiliation": "data developer",
+      "challenged_target": {
+        "subject": "projection",
+        "scope": "card field",
+        "predicate": "label"
+      },
+      "proposed_replacement_or_qualification": "fix renderer and rebuild",
+      "challenge_basis": "observation/projection comparison",
+      "correction_class": "projection_rendering_error",
+      "correction_loci": [
+        "projection"
+      ],
+      "governance_disposition": "accept_governed_replacement",
+      "lineage_effects": [
+        "preserve observation unchanged"
+      ],
+      "invalidation_reprojection": [
+        "invalidate rendered card",
+        "reproject"
+      ],
+      "revised_answerability": "supported",
+      "forbidden_behaviours": [
+        "patch final output only"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0070",
+    "scenario_type": "correction_challenge",
+    "persona": "researcher_evaluator",
+    "analytical_lenses": [
+      "reproducibility",
+      "evidence_evaluation"
+    ],
+    "job_to_be_done": "escalate repeated corrections to systemic remediation",
+    "surface_question": "Ten extraction corrections share the same parser root; when should the issue become systemic remediation?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "SOURCE": "source",
+        "PERIOD": "period"
+      },
+      "required_subject_scope_types": [
+        "repeated observations",
+        "parser rule"
+      ],
+      "required_proposition_families": [
+        "root cause"
+      ],
+      "analytical_operations": [
+        "audit",
+        "aggregate"
+      ],
+      "required_joins": [
+        "correction-to-common-root"
+      ],
+      "temporal_compatibility": "affected run window",
+      "freshness": "rule version",
+      "evidence_standard": "correction cluster with reproducible root",
+      "expected_output_shape": "bounded repair plus regression scenario",
+      "forbidden_non_inferences": [
+        "do not silently rewrite all history"
+      ]
+    },
+    "primary_domains": [
+      20
+    ],
+    "supporting_domains": [
+      17
+    ],
+    "answerability": [
+      "held_for_governance"
+    ],
+    "adversarial": false,
+    "semantic_signature": "repeated-root|systemic-remediation",
+    "distinctiveness_rationale": "systemic error class",
+    "correction": {
+      "challenge_statement": "Repeated individual fixes share one parser defect.",
+      "challenge_actor_affiliation": "researcher",
+      "challenged_target": {
+        "subject": "parser rule",
+        "scope": "affected extraction runs",
+        "predicate": "mapping"
+      },
+      "proposed_replacement_or_qualification": "govern bounded upstream remediation and regression",
+      "challenge_basis": "clustered correction lineage",
+      "correction_class": "extraction_representation_error",
+      "correction_loci": [
+        "evidence_extraction",
+        "governance_adjudication"
+      ],
+      "governance_disposition": "escalate_systemic_remediation",
+      "lineage_effects": [
+        "link individual supersessions to root cause"
+      ],
+      "invalidation_reprojection": [
+        "bounded affected-run invalidation"
+      ],
+      "revised_answerability": "held_for_governance",
+      "forbidden_behaviours": [
+        "broad reprocess without scope",
+        "create second semantic store"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0071",
+    "scenario_type": "correction_challenge",
+    "persona": "funder_diligence",
+    "analytical_lenses": [
+      "funding_ecosystem"
+    ],
+    "job_to_be_done": "correct an unsupported fundability conclusion",
+    "surface_question": "An appeal is real but the projection claims current fundability without a giving offer; what is corrected?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "APPEAL": "appeal"
+      },
+      "required_subject_scope_types": [
+        "giving offer",
+        "fundability"
+      ],
+      "required_proposition_families": [
+        "appeal",
+        "giving channel"
+      ],
+      "analytical_operations": [
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "appeal-to-giving-offer"
+      ],
+      "temporal_compatibility": "current offer date",
+      "freshness": "offer review date",
+      "evidence_standard": "explicit current giving evidence",
+      "expected_output_shape": "qualification",
+      "forbidden_non_inferences": [
+        "appeal history proves current fundability"
+      ]
+    },
+    "primary_domains": [
+      8
+    ],
+    "supporting_domains": [
+      20
+    ],
+    "answerability": [
+      "bounded_partial"
+    ],
+    "adversarial": true,
+    "semantic_signature": "appeal-not-fundability|giving",
+    "distinctiveness_rationale": "Giving Offer semantics",
+    "correction": {
+      "challenge_statement": "Historical appeal evidence does not establish a current giving offer.",
+      "challenge_actor_affiliation": "funder",
+      "challenged_target": {
+        "subject": "organisation",
+        "scope": "current fundability",
+        "predicate": "fundable"
+      },
+      "proposed_replacement_or_qualification": "qualify as historical appeal only",
+      "challenge_basis": "missing current channel evidence",
+      "correction_class": "unsupported_inference",
+      "correction_loci": [
+        "semantic_mapping",
+        "projection"
+      ],
+      "governance_disposition": "accept_qualification",
+      "lineage_effects": [
+        "retain appeal evidence"
+      ],
+      "invalidation_reprojection": [
+        "invalidate fundability boolean"
+      ],
+      "revised_answerability": "bounded_partial",
+      "forbidden_behaviours": [
+        "collapse appeal into giving offer"
+      ]
+    }
+  },
+  {
+    "id": "SDC-0072",
+    "scenario_type": "correction_challenge",
+    "persona": "analyst",
+    "analytical_lenses": [
+      "evidence_evaluation"
+    ],
+    "job_to_be_done": "hold a governance-sensitive challenge",
+    "surface_question": "A conduct allegation conflicts with an authoritative finding but the status is unresolved; what disposition is safe?",
+    "semantic_contract": {
+      "parameter_slots": {
+        "ORGANISATION": "organisation"
+      },
+      "required_subject_scope_types": [
+        "conduct event",
+        "authority status"
+      ],
+      "required_proposition_families": [
+        "allegation",
+        "finding"
+      ],
+      "analytical_operations": [
+        "screen",
+        "explain"
+      ],
+      "required_joins": [
+        "event-to-authority"
+      ],
+      "temporal_compatibility": "status as-of date",
+      "freshness": "authority status review",
+      "evidence_standard": "status-qualified authoritative record",
+      "expected_output_shape": "held status-qualified record",
+      "forbidden_non_inferences": [
+        "allegation equals finding"
+      ]
+    },
+    "primary_domains": [
+      16
+    ],
+    "supporting_domains": [
+      17
+    ],
+    "answerability": [
+      "held_for_governance"
+    ],
+    "adversarial": true,
+    "semantic_signature": "conduct-status|hold",
+    "distinctiveness_rationale": "governance/adjudication hold",
+    "correction": {
+      "challenge_statement": "Allegation status is disputed and authority record is unresolved.",
+      "challenge_actor_affiliation": "source owner",
+      "challenged_target": {
+        "subject": "organisation",
+        "scope": "conduct event",
+        "predicate": "formal finding"
+      },
+      "proposed_replacement_or_qualification": "retain allegation with unresolved status",
+      "challenge_basis": "conflicting authority records",
+      "correction_class": "governance_adjudication",
+      "correction_loci": [
+        "governance_adjudication",
+        "projection"
+      ],
+      "governance_disposition": "hold_for_evidence",
+      "lineage_effects": [
+        "preserve both attributed records"
+      ],
+      "invalidation_reprojection": [
+        "qualify conduct projection"
+      ],
+      "revised_answerability": "held_for_governance",
+      "forbidden_behaviours": [
+        "promote allegation to finding",
+        "erase dispute history"
+      ]
+    }
+  }
+]

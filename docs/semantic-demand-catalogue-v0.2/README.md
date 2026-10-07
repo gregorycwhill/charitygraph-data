@@ -1,6 +1,6 @@
 # Semantic Demand Catalogue v0.2
 
-This is the unified evaluation corpus for question and correction-challenge demand. The v0.1 pilot remains preserved at `../semantic-demand-catalogue-v0.1/`; its 53 questions are the retained base, with seven gap-filling questions and twelve correction challenges added here.
+This is the unified evaluation corpus for question and correction-challenge demand. `scenarios.json` is the committed validation target: it contains 60 materialized question records (the retained 53-question pilot plus seven coverage-review variants) and twelve correction challenges. The v0.1 pilot remains preserved at `../semantic-demand-catalogue-v0.1/` as historical source material.
 
 `surface_question` is natural user wording. `semantic_contract` is the formal, parameterised evaluation contract; wording is not treated as an executable contract.
 
@@ -12,4 +12,4 @@ Validation:
 python scripts/validate_semantic_demand.py
 ```
 
-The validator performs real Draft 2020-12 JSON-Schema validation for every retained record and then deterministic checks for uniqueness, domain coverage, taxonomy coverage, arithmetic and forbidden behaviours.
+The Python validator performs deterministic semantic checks for the committed records. Draft 2020-12 validation is a required separate gate; this repository currently has no offline standards-compliant engine available, so this run must not represent deterministic checks as JSON Schema conformance.

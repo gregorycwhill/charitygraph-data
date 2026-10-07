@@ -4,6 +4,6 @@ The preserved v0.1 base contains 53 questions with tier counts A/B/C = 12/23/18.
 
 Primary domains drive complexity; supporting evidence and coverage domains do not inflate semantic-domain counts. All 20 North Star domains are covered across primary/supporting fields. Public/donor/participant and charity-insider/adviser are explicit roles. Analytical lenses are separate and reusable; there is no corrector persona.
 
-The validator normalises the preserved pilot into the v0.2 common structure for machine validation, preserving its wording, typed slots, signatures and answerability. It does not silently mutate the pilot source. No public correction API, UI, queue, override store, North Star contract or external provider activity is introduced.
+All 72 retained scenarios are materialized in `scenarios.json`; no runtime normalization is used. The deterministic validator derives counts from that committed file. A standards-compliant JSON Schema engine remains unavailable offline in this environment, so JSON Schema certification is explicitly blocked rather than substituted with the deterministic gate. No public correction API, UI, queue, override store, North Star contract or external provider activity is introduced.
 
 Correction-to-regression promotion is a reviewed, anonymised, generalised step; it is never automatic ingestion of private challenge content.
