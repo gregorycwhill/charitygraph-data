@@ -99,15 +99,26 @@ All profiles use the integrated primitives in `INTEGRATED_PRODUCT_AND_DATA_MODEL
 
 **Risk:** Separate self-description, external allegation, formal finding and CharityGraph synthesis. Consequence-aware review and precise evidence are mandatory.
 
+**Implemented bounded foundation:** `ETHOS_NOTABLE_FOUNDATIONS_V1.md` defines
+the v0.3 observation-first Ethos v1 roles and preserves commitment,
+implementation, practice and completion as separate lifecycle evidence.
+
 **Priority:** Staged after foundation, with strict risk policy.
 
-## 12. Notability and information demand
+## 12. Notable history and information demand
 
-**Questions:** Which subjects warrant greater acquisition, refresh or review effort?
+**Questions:** Which dated institutional events provide useful context at a
+bounded subject and scope, and where is evidence coverage incomplete?
 
 **Design:** Reproducible features may include scale, public prominence, network position, information volume and user demand. This is processing prioritisation—not merit, impact or trustworthiness.
 
 **Priority:** Required early for cohort allocation.
+
+**Foundation constraint:** The v0.3 history foundation supersedes any reading
+of the preceding exploratory design as a notability or reputation score. It
+authorises only typed, source-bound event context; it does not authorise a
+ranking, automatic acquisition priority, or inference from discovery-source
+absence.
 
 ## 13. Outcomes, evaluation and evidence
 
