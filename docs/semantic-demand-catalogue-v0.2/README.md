@@ -1,6 +1,6 @@
 # Semantic Demand Catalogue v0.2
 
-This is the unified evaluation corpus for question and correction-challenge demand. `scenarios.json` is the committed validation target: it contains 60 materialized question records (the retained 53-question pilot plus seven coverage-review variants) and twelve correction challenges. The v0.1 pilot remains preserved at `../semantic-demand-catalogue-v0.1/` as historical source material.
+This is the unified evaluation corpus for question and correction-challenge demand. `scenarios.json` is the committed validation target: it contains 60 semantically curated question records and fourteen correction challenges. The seven 325 coverage-review variants were removed as non-distinct; seven independently justified demand gaps were added. See `CURATION_REVIEW.md` and `curation-audit.json`. The v0.1 pilot remains preserved at `../semantic-demand-catalogue-v0.1/` as historical source material.
 
 `surface_question` is natural user wording. `semantic_contract` is the formal, parameterised evaluation contract; wording is not treated as an executable contract.
 
