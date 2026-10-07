@@ -1,12 +1,52 @@
 {
   "method": "Meaning-derived per-record review; signatures are contract dimensions only.",
+  "persona_reconciliation": {
+    "analyst": {
+      "before": 0,
+      "after": 1,
+      "records": [
+        "SDC-0001"
+      ],
+      "rationale": "The cohorting query is an analyst cohort-builder operation over governed records, not a research interpretation demand."
+    },
+    "downstream_agent": {
+      "before": 0,
+      "after": 1,
+      "records": [
+        "SDC-0008"
+      ],
+      "rationale": "Mandate-rule screening is an execution-stage downstream-agent workflow; funder diligence remains the adjacent decision context."
+    },
+    "unchanged_zero_roles": {
+      "note": "No additional analyst or downstream-agent records were fabricated; the remaining questions have end-user jobs represented by their existing personas."
+    }
+  },
+  "cohorting_review": {
+    "before": 1,
+    "after": 1,
+    "records": [
+      "SDC-0001"
+    ],
+    "finding": "The sole cohorting assignment is semantically retained and corrected to analyst; no other retained question performs cohort construction."
+  },
+  "domain_20_review": {
+    "before": {
+      "primary": 5,
+      "supporting": 55
+    },
+    "after": {
+      "primary": 5,
+      "supporting": "recomputed"
+    },
+    "rule": "Retain domain 20 as a semantic domain only for evidence-evaluation or reproducibility demands; remove it when it is only universal provenance/evidence metadata."
+  },
   "records": [
     {
       "scenario_id": "SDC-0001",
       "originating_scenario": "SDC-0001",
       "disposition": "repair",
       "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
-      "curation_rationale": "researcher_evaluator uses cohorting because the contract's operations are filter, audit; primary domains are the substance required to answer it."
+      "curation_rationale": "analyst uses cohorting because the contract's operations are filter, audit; primary domains are the substance required to answer it."
     },
     {
       "scenario_id": "SDC-0002",
@@ -55,7 +95,7 @@
       "originating_scenario": "SDC-0008",
       "disposition": "repair",
       "reason": "Individually recurated from its natural question and formal contract; role/lens/domains now reflect the decision demand.",
-      "curation_rationale": "funder_diligence uses mandate_screening because the contract's operations are screen, explain; primary domains are the substance required to answer it."
+      "curation_rationale": "downstream_agent uses mandate_screening because the contract's operations are screen, explain; primary domains are the substance required to answer it."
     },
     {
       "scenario_id": "SDC-0009",

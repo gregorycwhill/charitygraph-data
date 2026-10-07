@@ -2,7 +2,7 @@
   {
     "id": "SDC-0001",
     "scenario_type": "question",
-    "persona": "researcher_evaluator",
+    "persona": "analyst",
     "analytical_lenses": [
       "cohorting"
     ],
@@ -41,8 +41,7 @@
       19
     ],
     "supporting_domains": [
-      1,
-      20
+      1
     ],
     "answerability": [
       "supported",
@@ -96,8 +95,7 @@
     ],
     "supporting_domains": [
       5,
-      19,
-      20
+      19
     ],
     "answerability": [
       "supported",
@@ -155,8 +153,7 @@
     ],
     "supporting_domains": [
       7,
-      19,
-      20
+      19
     ],
     "answerability": [
       "supported",
@@ -217,8 +214,7 @@
     ],
     "supporting_domains": [
       5,
-      12,
-      20
+      12
     ],
     "answerability": [
       "supported",
@@ -272,8 +268,7 @@
       6
     ],
     "supporting_domains": [
-      7,
-      20
+      7
     ],
     "answerability": [
       "supported",
@@ -335,8 +330,7 @@
       3,
       5,
       10,
-      11,
-      20
+      11
     ],
     "answerability": [
       "supported",
@@ -397,8 +391,7 @@
     ],
     "supporting_domains": [
       3,
-      14,
-      20
+      14
     ],
     "answerability": [
       "supported",
@@ -413,7 +406,7 @@
   {
     "id": "SDC-0008",
     "scenario_type": "question",
-    "persona": "funder_diligence",
+    "persona": "downstream_agent",
     "analytical_lenses": [
       "mandate_screening"
     ],
@@ -459,8 +452,7 @@
       2,
       3,
       14,
-      18,
-      20
+      18
     ],
     "answerability": [
       "supported",
@@ -514,9 +506,7 @@
       10,
       11
     ],
-    "supporting_domains": [
-      20
-    ],
+    "supporting_domains": [],
     "answerability": [
       "supported",
       "bounded_partial",
@@ -566,9 +556,7 @@
     "primary_domains": [
       8
     ],
-    "supporting_domains": [
-      20
-    ],
+    "supporting_domains": [],
     "answerability": [
       "supported",
       "bounded_partial",
@@ -622,8 +610,7 @@
     ],
     "supporting_domains": [
       3,
-      13,
-      20
+      13
     ],
     "answerability": [
       "supported",
@@ -680,8 +667,7 @@
     ],
     "supporting_domains": [
       1,
-      13,
-      20
+      13
     ],
     "answerability": [
       "supported",
@@ -737,8 +723,7 @@
       13
     ],
     "supporting_domains": [
-      17,
-      20
+      17
     ],
     "answerability": [
       "supported",
@@ -789,9 +774,7 @@
     "primary_domains": [
       13
     ],
-    "supporting_domains": [
-      20
-    ],
+    "supporting_domains": [],
     "answerability": [
       "tested_missingness",
       "unresolved"
@@ -957,8 +940,7 @@
       15
     ],
     "supporting_domains": [
-      18,
-      20
+      18
     ],
     "answerability": [
       "supported",
@@ -1014,8 +996,7 @@
       16
     ],
     "supporting_domains": [
-      1,
-      20
+      1
     ],
     "answerability": [
       "supported",
@@ -1072,9 +1053,7 @@
       16,
       17
     ],
-    "supporting_domains": [
-      20
-    ],
+    "supporting_domains": [],
     "answerability": [
       "supported",
       "bounded_partial",
@@ -1181,8 +1160,7 @@
       7
     ],
     "supporting_domains": [
-      5,
-      20
+      5
     ],
     "answerability": [
       "tested_missingness",
@@ -1297,8 +1275,7 @@
     ],
     "supporting_domains": [
       1,
-      9,
-      20
+      9
     ],
     "answerability": [
       "supported",
@@ -1357,8 +1334,7 @@
     "supporting_domains": [
       5,
       7,
-      14,
-      20
+      14
     ],
     "answerability": [
       "supported",
@@ -1413,8 +1389,7 @@
       7
     ],
     "supporting_domains": [
-      5,
-      20
+      5
     ],
     "answerability": [
       "supported",
@@ -1469,8 +1444,7 @@
       8
     ],
     "supporting_domains": [
-      13,
-      20
+      13
     ],
     "answerability": [
       "tested_missingness",
@@ -1586,8 +1560,7 @@
       2,
       13,
       16,
-      19,
-      20
+      19
     ],
     "answerability": [
       "supported",
@@ -1698,8 +1671,7 @@
     "supporting_domains": [
       3,
       5,
-      17,
-      20
+      17
     ],
     "answerability": [
       "supported",
@@ -1752,8 +1724,7 @@
       19
     ],
     "supporting_domains": [
-      2,
-      20
+      2
     ],
     "answerability": [
       "supported",
@@ -1811,8 +1782,7 @@
     "supporting_domains": [
       7,
       10,
-      11,
-      20
+      11
     ],
     "answerability": [
       "supported",
@@ -1870,8 +1840,7 @@
     ],
     "supporting_domains": [
       13,
-      14,
-      20
+      14
     ],
     "answerability": [
       "supported",
@@ -1927,8 +1896,7 @@
       17
     ],
     "supporting_domains": [
-      1,
-      20
+      1
     ],
     "answerability": [
       "supported",
@@ -2148,8 +2116,7 @@
       9
     ],
     "supporting_domains": [
-      1,
-      20
+      1
     ],
     "answerability": [
       "supported",
@@ -2206,8 +2173,7 @@
       13
     ],
     "supporting_domains": [
-      1,
-      20
+      1
     ],
     "answerability": [
       "supported",
@@ -2328,8 +2294,7 @@
       3,
       5,
       7,
-      14,
-      20
+      14
     ],
     "answerability": [
       "supported",
@@ -2392,8 +2357,7 @@
       13,
       14,
       16,
-      18,
-      20
+      18
     ],
     "answerability": [
       "supported",
@@ -2509,8 +2473,7 @@
       8
     ],
     "supporting_domains": [
-      13,
-      20
+      13
     ],
     "answerability": [
       "supported",
@@ -2569,8 +2532,7 @@
     ],
     "supporting_domains": [
       3,
-      5,
-      20
+      5
     ],
     "answerability": [
       "supported",
@@ -2629,8 +2591,7 @@
     "supporting_domains": [
       3,
       5,
-      12,
-      20
+      12
     ],
     "answerability": [
       "supported",
@@ -2692,8 +2653,7 @@
       3,
       13,
       14,
-      17,
-      20
+      17
     ],
     "answerability": [
       "supported",
@@ -2752,8 +2712,7 @@
     ],
     "supporting_domains": [
       1,
-      13,
-      20
+      13
     ],
     "answerability": [
       "supported",
@@ -2815,8 +2774,7 @@
     "supporting_domains": [
       1,
       9,
-      17,
-      20
+      17
     ],
     "answerability": [
       "supported",
@@ -2936,8 +2894,7 @@
     ],
     "supporting_domains": [
       5,
-      7,
-      20
+      7
     ],
     "answerability": [
       "supported",
@@ -3063,8 +3020,7 @@
       2,
       3,
       5,
-      15,
-      20
+      15
     ],
     "answerability": [
       "supported",
@@ -3116,8 +3072,7 @@
       8
     ],
     "supporting_domains": [
-      7,
-      20
+      7
     ],
     "answerability": [
       "supported",
@@ -3170,8 +3125,7 @@
     ],
     "supporting_domains": [
       5,
-      7,
-      20
+      7
     ],
     "answerability": [
       "supported",
@@ -3224,8 +3178,7 @@
     ],
     "supporting_domains": [
       3,
-      7,
-      20
+      7
     ],
     "answerability": [
       "supported",
@@ -3330,8 +3283,7 @@
       10
     ],
     "supporting_domains": [
-      13,
-      20
+      13
     ],
     "answerability": [
       "supported",
@@ -3438,8 +3390,7 @@
       7
     ],
     "supporting_domains": [
-      5,
-      20
+      5
     ],
     "answerability": [
       "supported",
@@ -4434,7 +4385,7 @@
         "retain prior observation as superseded"
       ],
       "invalidation_reprojection": [
-        "reproject affected answers only after the governed successor is accepted"
+        "identify affected projections and reproject after governed correction; this is downstream, not an additional correction locus"
       ],
       "revised_answerability": "supported",
       "forbidden_behaviours": [
@@ -4512,7 +4463,7 @@
         "retain prior observation as superseded"
       ],
       "invalidation_reprojection": [
-        "reproject affected answers only after the governed successor is accepted"
+        "identify affected projections and reproject after governed correction; this is downstream, not an additional correction locus"
       ],
       "revised_answerability": "supported",
       "forbidden_behaviours": [

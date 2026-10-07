@@ -1,4 +1,4 @@
-# Semantic Demand and Correction Challenge curation review (326)
+# Semantic Demand and Correction Challenge curation review (327)
 
 The curated pilot contains 60 questions and 14 correction challenges.  This is a review corpus, not a correction workflow or authority.
 
@@ -11,5 +11,9 @@ New demands are SDC-0073 giving-offer fundability; SDC-0074 peer/service compari
 Correction coverage includes amended evidence, source-version change (SDC-0080), extraction, identity, scope, currentness, semantic mapping, classification (SDC-0081), coverage, unsupported/rejected challenge, projection-only error, and systemic remediation. `primary_correction_locus` is the first governed layer known wrong. `invalidation_reprojection` records downstream consequences; it is not a correction locus except for the projection-only record.
 
 Signatures use only semantic-contract dimensions: intent, subject/scope types, proposition families, operations, joins, temporal compatibility, evidence standard, and forbidden inference. They contain no scenario identifier, nonce, salt, or proof ID. Exact duplicate detection passes. The near-duplicate review removed the seven clones; remaining service/access and evidence questions have distinct operations or decision jobs.
+
+Final semantic review: SDC-0001 is assigned to `analyst` because its job is cohort construction over governed records. SDC-0008 is assigned to `downstream_agent` because it executes mandate screening; no other question warranted either role, so no quota padding was added. Cohorting remains represented exactly once.
+
+Domain 20 was audited record by record. It remains primary for the five reproducibility questions and remains supporting only where evidence evaluation or reproducibility makes provenance materially part of the demand. It is removed from supporting domains where the contract's evidence standard is only answer metadata. This is a semantic distinction, not a target percentage.
 
 Draft 2020-12 JSON Schema validation remains unavailable locally: deterministic validation is deliberately reported separately and is not represented as schema conformance.
