@@ -1,0 +1,49 @@
+{
+  "reference_id": "cg354-experimental-adjudication-v1",
+  "status": "EXPERIMENTAL_ADJUDICATION",
+  "purpose": "Independent source-only scoring reference; not governed knowledge and not a promotion input.",
+  "frozen_source_corpus": {
+    "corpus_id": "empirical-ethos-notability-rich-v2",
+    "corpus_sha256": "120e20160adbfd27a53b526b200e85841850ded612a839dd4381110295300644",
+    "cohort_sha256": "8f2de067b29c1834b5d9307ed580fd2cfb42045fa633104dfab1a6512b2222e4",
+    "rich_attempt_manifest_sha256": "1be844837b6c80ae919605f92a4859867b84c88eac7d43f942fa7eae54956b38",
+    "lineage": "C:/CharityGraph-runtime/cg353-frozen-rich-v2/frozen-corpus.json"
+  },
+  "independence": {
+    "product_semantic_outputs_read": false,
+    "candidate_bundles_read": false,
+    "raw_provider_responses_read": false,
+    "provider_calls": 0,
+    "method": "Human adjudication against retained source captures and canonical Compact Knowledge / sections 15 and 17 boundaries. Mechanical files, hashes and coverage metadata were used only for transport and provenance."
+  },
+  "adjudication_rules": {
+    "ethos": "Record an organisation's explicit self-description only; do not transfer a beneficiary, parent, network, contributor or regulator characteristic to the subject.",
+    "history": "Record an event only where the retained source itself supports event identity and date/lineage; do not turn source publication/retrieval dates into event dates.",
+    "source_role": "Official self-description can support attributed current self-description, not independent recognition. Regulatory filing/profile can support only its stated structured fact. Neither alone establishes independent notability.",
+    "section_16_boundary": "No conduct, compliance, virtue, trust, quality, ideology or religion taxonomy label is expected.",
+    "duplicate_event": "A repeated statement in two captures is one possible event, never two events merely because two sources exist."
+  },
+  "cases": [
+    {"case_id":"EEN-01","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"Retained captures are regulatory filings whose stored representations are non-text PDF bytes; no source-readable self-description was available for a bounded §15 item."},"history":{"status":"NOT_EVALUABLE","reason":"No source-readable dated event/lineage in the retained packet."}},
+    {"case_id":"EEN-02","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"No resolved retained source binding; explicit central coverage gap."},"history":{"status":"NOT_EVALUABLE","reason":"No resolved retained source binding; explicit central coverage gap."}},
+    {"case_id":"EEN-03","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"No resolved retained source binding; explicit central coverage gap."},"history":{"status":"NOT_EVALUABLE","reason":"No resolved retained source binding; explicit central coverage gap."}},
+    {"case_id":"EEN-04","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"No resolved retained source binding; explicit central coverage gap."},"history":{"status":"NOT_EVALUABLE","reason":"No resolved retained source binding; explicit central coverage gap."}},
+    {"case_id":"EEN-05","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"Only non-text PDF filing representations; an inferred religious identity is forbidden."},"history":{"status":"NOT_EVALUABLE","reason":"No readable event/lineage evidence."}},
+    {"case_id":"EEN-06","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"Only non-text PDF filing representations; worldview/network inferences are forbidden."},"history":{"status":"NOT_EVALUABLE","reason":"No readable event/lineage evidence."}},
+    {"case_id":"EEN-07","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"Only non-text PDF filing representations; community identity transfer is forbidden."},"history":{"status":"NOT_EVALUABLE","reason":"No readable event/lineage evidence."}},
+    {"case_id":"EEN-08","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"Only non-text PDF filing representations; no independent characterisation was retained."},"history":{"status":"NOT_EVALUABLE","reason":"No readable dated event or independent-recognition evidence."}},
+    {"case_id":"EEN-09","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"Official-site capture is a Facebook login/error page; filings are non-text PDF bytes. Parent/network transfer is forbidden."},"history":{"status":"NOT_EVALUABLE","reason":"No readable event/lineage evidence."}},
+    {"case_id":"EEN-10","split":"workshop","ethos":{"status":"NOT_EVALUABLE","reason":"Only non-text PDF filing representations."},"history":{"status":"NOT_EVALUABLE","reason":"No readable rename, predecessor or successor evidence; do not infer from organisation name."}},
+    {"case_id":"EEN-11","split":"blind","ethos":{"status":"NOT_EVALUABLE","reason":"No retained non-regulatory readable capture."},"history":{"status":"NOT_EVALUABLE","reason":"No readable event/lineage evidence."}},
+    {"case_id":"EEN-12","split":"blind","ethos":{"status":"EVALUABLE","items":[{"kind":"organisation_self_description","text":"The organisation says its services are provided free of charge and that it welcomes and supports families regardless of culture, ethnicity, religion, beliefs, disability, gender identity, sexual orientation or family structure.","subject_scope":"Angel Gowns Australia Incorporated","time":"current-at-capture","source_role":"official_self_description","evidence_representation_sha256":"5bd8f3cec778e9b0a5db7842b49d1fa9b26a0984d48de7e404cb840c68831705","qualification":"Attributed self-description only; not a conduct, quality, trust or ideology label."}]},"history":{"status":"NOT_EVALUABLE","reason":"The homepage gives publication metadata but no event identity/date/lineage sufficient for §17."}},
+    {"case_id":"EEN-13","split":"blind","ethos":{"status":"NOT_EVALUABLE","reason":"Official-site capture was retained, but no bounded ethos item was adjudicated without over-reading organisational purpose into ethos."},"history":{"status":"NOT_EVALUABLE","reason":"No readable event identity and event date/lineage sufficient for §17."}},
+    {"case_id":"EEN-14","split":"blind","ethos":{"status":"NOT_EVALUABLE","reason":"Official homepage contains an acknowledgement, but it is not an evaluable organisation-level ethos role without an unsupported taxonomy/identity inference."},"history":{"status":"NOT_EVALUABLE","reason":"Copyright/footer date is a source date, not a §17 event date."}},
+    {"case_id":"EEN-15","split":"blind","ethos":{"status":"NOT_EVALUABLE","reason":"Only non-text PDF filing representations."},"history":{"status":"NOT_EVALUABLE","reason":"No readable event/lineage evidence."}}
+  ],
+  "evaluable_counts": {
+    "workshop":{"cases":10,"ethos_items":0,"history_events":0,"not_evaluable_domain_cases":20},
+    "blind":{"cases":5,"ethos_items":1,"history_events":0,"not_evaluable_domain_cases":9},
+    "all":{"cases":15,"ethos_items":1,"history_events":0,"not_evaluable_domain_cases":29}
+  },
+  "gate_disposition": "INSUFFICIENT_EVIDENCE: no workshop positive and no §17 reference event is evaluable. Precision/recall, duplicate-event and dangerous-category gates cannot be scored. The one blind §15 attributed item may be inspected for provenance/abstention behaviour only, not used to establish non-inferiority."
+}
