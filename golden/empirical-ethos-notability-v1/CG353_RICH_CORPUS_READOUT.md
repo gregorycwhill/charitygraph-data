@@ -23,3 +23,15 @@ substitution occurred.  The private retained runtime is
 
 No semantic extraction, candidate production, promotion, public-schema change,
 or API spend occurred.  This is acquisition lineage evidence only.
+
+## CG353 t05 workshop evidence record
+
+The acquisition corpus remains unchanged.  Builder's bounded t05 workshop
+record is `docs/CG353_T05_UNIFIED_TUNING_FREEZE.md` on its continuous
+campaign chain.  It made one prompt-only unified-C clarification, re-ran one
+challenge case through `openai.responses` / `gpt-5.6-luna`, and did not access
+any blind output.  The shared ledger reached US$0.088276 of the US$2.00 cap.
+The frozen v2 prompt, schema, packet-selection identities and blind decision
+gates are recorded there; t06 may compare them on the five retained controls
+without further tuning.  No candidate in this Data worktree was promoted or
+altered.
