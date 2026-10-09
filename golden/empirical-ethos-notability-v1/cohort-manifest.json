@@ -1,0 +1,27 @@
+{
+  "cohort_id": "empirical-ethos-notability-v1-cohort",
+  "frozen_at": "2026-10-09T00:00:00Z",
+  "selection_precedes_acquisition": true,
+  "replacement_rule": "No replacement for sparse, unavailable, or failed sources. Replacement is permitted only for an objectively invalid registry identity, with a separately recorded reason and deterministic re-run of the blind rule.",
+  "blind_selection": {
+    "seed": "CG-ETHOS-NOTABILITY-EMPIRICAL-ACQUISITION-352-TERRA:blind-v1",
+    "rule": "From all current organisation subjects in subject-registry.json excluding the ten listed challenge IDs, sort ascending by SHA-256(UTF-8(seed + '|' + causebase_id)); select the first five. The source outcome is not an input."
+  },
+  "cases": [
+    {"case_id":"EEN-01","arm":"challenge","subject_id":"cb_df4c1eb4847c4d599df1e3eae3b5af5f","display_name":"Australian Red Cross Society","challenge_coverage":["network identity","inquiry boundary","rich public history"]},
+    {"case_id":"EEN-02","arm":"challenge","subject_id":"cb_f6ef760e59854e3dbb5ca2a48506feff","display_name":"Merri Creek Management Committee","challenge_coverage":["community identity non-transfer","sparse Wikimedia"]},
+    {"case_id":"EEN-03","arm":"challenge","subject_id":"cb_096f07b16a764578ab209ec7ace6ed5e","display_name":"Fitted for Work","challenge_coverage":["beneficiary identity non-transfer","missingness"]},
+    {"case_id":"EEN-04","arm":"challenge","subject_id":"cb_cd0521b6ac784ad883c41b2c91024001","display_name":"The Australian Koala Foundation","challenge_coverage":["historical orientation","sparse/absent Wikimedia"]},
+    {"case_id":"EEN-05","arm":"challenge","subject_id":"cb_9189b95844484dc0afb6cd57cd6e1507","display_name":"Access Church Limited","challenge_coverage":["current religious self-description","formal affiliation"]},
+    {"case_id":"EEN-06","arm":"challenge","subject_id":"cb_1e178c334fd34e86a145aec2e6f2d33e","display_name":"Australia Chung Tai Buddhist Foundation Inc","challenge_coverage":["current worldview self-description","network identity"]},
+    {"case_id":"EEN-07","arm":"challenge","subject_id":"cb_999209b0ed6d4b708b34bc58beee22e8","display_name":"Aboriginal Legal Rights Movement","challenge_coverage":["independent characterisation","community identity"]},
+    {"case_id":"EEN-08","arm":"challenge","subject_id":"cb_dfde509267854aa8866f6f904215b7e9","display_name":"Australian Conservation Foundation Incorporated","challenge_coverage":["independent characterisation","notable movement"]},
+    {"case_id":"EEN-09","arm":"challenge","subject_id":"cb_469175eaa539491a857a9f75a664cc09","display_name":"Catholic Missions","challenge_coverage":["parent/network non-transfer","founding history"]},
+    {"case_id":"EEN-10","arm":"challenge","subject_id":"cb_604da7f26c6c48dd934e713edc493e9f","display_name":"Environmental Justice Australia","challenge_coverage":["rename/predecessor/successor","recognition"]},
+    {"case_id":"EEN-11","arm":"blind","subject_id":"cb_c4b9f95b7a08480781a470f5e1ce6eb8","display_name":"ACTIVE FRIENDS LIMITED"},
+    {"case_id":"EEN-12","arm":"blind","subject_id":"cb_e0f83d5305ed4544a95e72a97c8c424a","display_name":"Angel Gowns Australia Incorporated"},
+    {"case_id":"EEN-13","arm":"blind","subject_id":"cb_4434434d6c6e425faf0dd56cb29ef8bf","display_name":"APNIC FOUNDATION LIMITED"},
+    {"case_id":"EEN-14","arm":"blind","subject_id":"cb_24bd80e16e6d44dbbcf15482bc82ed93","display_name":"DEMOCRACY IN COLOUR LIMITED"},
+    {"case_id":"EEN-15","arm":"blind","subject_id":"cb_ebdd87f80f1d42a781c746a6741b4201","display_name":"Haileybury Rendall School"}
+  ]
+}
