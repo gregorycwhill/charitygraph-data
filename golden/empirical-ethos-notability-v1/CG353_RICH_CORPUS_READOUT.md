@@ -35,3 +35,15 @@ The frozen v2 prompt, schema, packet-selection identities and blind decision
 gates are recorded there; t06 may compare them on the five retained controls
 without further tuning.  No candidate in this Data worktree was promoted or
 altered.
+
+## CG353 t07 architecture-decision evidence
+
+The all-five-control t06 release found each control's referenced immutable
+representation absent or hash-mismatched before a provider call.  It recorded
+five local packet failures for each comparison arm, zero calls, tokens and
+USD; no locator was substituted and no source was reacquired.  Consequently
+the campaign's shared spend remains US$0.088276 (33 Luna provider calls), and
+the Builder decision is `INSUFFICIENT_EVIDENCE`, not unified integration.
+The independently prepared reference labels are all `NOT_EVALUABLE`, so they
+cannot establish the frozen non-inferiority and dangerous-category gates.
+The corpus/cohort remains unchanged and no candidate or public data changed.
