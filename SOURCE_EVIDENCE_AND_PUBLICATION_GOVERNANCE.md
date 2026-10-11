@@ -40,6 +40,49 @@ Each source family is registered before routine acquisition. Registration record
 
 Sources include official registries, regulators, charity publications, industry shadow registries, academic datasets, media and direct observations. “Shadow registry” is a first-class source role where an industry body authoritatively records participation, fees, codes or accreditation within its remit.
 
+### 3.1 Source-class admission authority
+
+The Builder evidence universe is closed by default. A new source family, or a
+material expansion of an existing source-family acquisition rule, requires
+explicit Product Owner approval before implementation or acquisition. An
+unapproved class is `DECISION_REQUIRED`; a coverage gap or semantic-demand
+failure does not authorise open-web research or acquisition.
+
+Evaluation may inspect the open world, but Builder operates only inside the
+admitted universe. Recognised source roles and architectural support for
+other registries are not acquisition authority.
+
+### 3.2 Source Universe v1: admitted routine Builder families
+
+By Product Owner decision on 11 October 2026, routine Builder acquisition is
+admitted for exactly these seven families:
+
+1. `acnc_register`
+2. `acnc_ais_bundle`
+3. `ato_abr_dgr`
+4. `official_website`
+5. `annual_report`
+6. `wikipedia_wikimedia`
+7. `pfra`
+
+This list is exhaustive. ASIC, GrantConnect, courts, specialist regulators,
+tender systems, general media/news, academic sources as a general family,
+service directories, direct observations, independently discovered websites
+or social accounts, search-engine results and LLM/web-search summaries are
+non-admitted; they fail closed and require Product Owner approval. PFRA is
+admitted specifically and does not admit other shadow or industry registries.
+
+For `official_website`, the governed organisation-specific locator is normally
+the ACNC Website field. Safe repair is limited to scheme, `www`, slash/syntax
+normalisation, ordinary redirects, and a very small deterministic set of
+locator-derived adjacency variants (such as a structurally plausible `org.au`
+versus `org/au` variant). The result must be identity-verified as the intended
+Australian charity/site. Never silently substitute an international parent,
+overseas branch, sister affiliate, similarly named entity or
+federation/network site. Preserve locator-repair lineage. If bounded repair
+fails or identity remains unresolved, leave acquisition unresolved; open-web
+discovery is prohibited.
+
 ## 4. Authority is proposition-specific
 
 A source is not globally authoritative. Authority depends on the proposition, time and scope. For example:
