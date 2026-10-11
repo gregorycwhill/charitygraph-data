@@ -31,6 +31,10 @@ Keep source facts, first-party claims, model candidates or inferences, human dec
 
 Missingness is not absence. Preserve evidence present, not found in reviewed sources, source silent, not processed, source unavailable, not acquired, processing failed, not reviewed, unknown, not applicable, withheld and stale, using existing governed vocabulary and basis rules. A correctly represented unavailable or unknowable item may satisfy bounded completeness without positive content. Relationships are directed and typed. Source-reported classification is separate from CharityGraph-assessed classification.
 
+### Semantic losslessness and progressive refinement
+
+Preserve the **least-specific defensible truth** supported by the evidence when finer specificity is unresolved. Semantic vagueness or ambiguity is not evidentiary absence: a broad source-supported assertion remains governed knowledge, and unknown detail must not erase known fact. For example, evidence saying “Baptist” may support a governed Baptist assertion while ownership, governance, operation, principles, beneficiary orientation, service restriction and denomination remain unresolved; none of those finer relationships may be inferred without evidence. Later refinement must preserve the original source support and lineage while qualifying, superseding or decomposing the assertion.
+
 ## Active v0.3 sections
 
 ### 1. Identity / regulatory
@@ -120,6 +124,10 @@ Memberships, schemes, registrations and accreditations; and positions, commitmen
 The sections are knowledge domains, not isolated user questions. Material product questions may span sections: representative questions include what an organisation does, how it raises resources, what amounts are actually evidenced and on what basis, what can be supported now and on what terms, and what compatible historical funding and expenditure context exists.
 
 Current Giving Offer/current opportunity, historical funding/restriction, and historical expenditure/allocation are distinct and join only where identity, scope, time and metric basis are compatible.
+
+### Coverage and semantic resolution
+
+Coverage distinguishes **no governed evidence** from **governed evidence exists but finer semantic decomposition is unresolved**. The latter is not missingness; supported broad assertions remain available to appropriate search, discovery and comparison projections with unresolved detail visible.
 
 ## Fundable Universe projection
 
