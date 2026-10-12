@@ -24,6 +24,12 @@ The dated status entries below record the state at their stated point in time. E
 
 The active projection vocabulary is [North Star Target Card vNext](NORTH_STAR_TARGET_CARD.md); historical section meanings are preserved in [North Star v0.1](NORTH_STAR_TARGET_CARD_V0_1.md). The initial section-by-section evidence inventory is the [Phase 5 North Star Completion Ledger](PHASE5_NORTH_STAR_COMPLETION_LEDGER.md); it is incomplete and authorizes no experiment.
 
+## Semantic Demand Catalogue — Campaign 399
+
+The current machine-readable semantic demand catalogue is [semantic-demand-catalogue.v1.json](docs/semantic-demand-catalogue-399/semantic-demand-catalogue.v1.json), with its authoritative legacy migration map in [legacy-migration-map.v1.json](docs/semantic-demand-catalogue-399/legacy-migration-map.v1.json). Recovery provenance and the 53 exact historical meanings are retained in [legacy-demand-recovery-399](docs/history/legacy-demand-recovery-399/). SDC-0061 through SDC-0081 are explicitly `UNRECOVERABLE_LEGACY_SEMANTICS` with no successor continuity claim; the accepted clean semantic break preserves no fabricated meaning.
+
+This catalogue installation records the accepted semantic boundary only. Gate 2 remains ACTIVE at 12%; Source Universe v1, evidence adjudication policy, acquisition policy, gate weights and progress are unchanged. The next Gate-2 activity is a bounded model-semantic evidence proof and has not been executed.
+
 ## Bounded commitment-content fix - 15 September 2026
 
 Builder's V5.1 commitment contract now requires a substantive WHAT for every `commitment_stated` candidate: either source text or a typed structured equivalent with both a committed action/state and its object/result. Metadata alone fails closed. The original V5 contract and historical campaign bytes remain available through a read-only historical parser; the six old V5 commitment candidates that lack the new field remain unchanged and are classified as predating this strengthened invariant. The completed product-value experiment and its human corrections were not rerun or altered.

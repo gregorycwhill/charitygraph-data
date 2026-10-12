@@ -101,6 +101,7 @@ Every active document SHALL state its status, version/date, scope and material s
 | Playbook contribution and Official/Community status workflow | [`CONTRIBUTING.md`](https://github.com/gregorycwhill/charitygraph-playbooks/blob/main/CONTRIBUTING.md), within shared CharityGraph boundaries |
 | Semantic reliability, technical replication and reproducible semantic replay | `SEMANTIC_RELIABILITY_AND_REPRODUCIBILITY.md` |
 | Complete-card semantic extraction and independent mapping decisions | `SEMANTIC_EXTRACTION_AND_MAPPING_DECISIONS_2026-08-31.md`, propagated conservatively to the canonical documents above |
+| Current Semantic Demand Catalogue and legacy migration boundary | `docs/semantic-demand-catalogue-399/semantic-demand-catalogue.v1.json` and `docs/semantic-demand-catalogue-399/legacy-migration-map.v1.json`, with recovery provenance in `docs/history/legacy-demand-recovery-399/` |
 | Current development method | `DEVELOPMENT_METHOD.md` |
 | Historical task-specific coding handoff | `docs/history/codex-to-chatgpt-handoff-before-2026-08-23-product-docs-rewrite.md` |
 | Review/navigation snapshot | `PROJECT_SNAPSHOT_2026-09-11.md` |
