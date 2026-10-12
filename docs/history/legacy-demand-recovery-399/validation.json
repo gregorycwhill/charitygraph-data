@@ -1,0 +1,18 @@
+{
+  "schema": "charitygraph.legacy-demand-recovery-validation/v1",
+  "ledger": "docs/history/legacy-demand-recovery-399/legacy-demand-recovery-ledger.v1.json",
+  "ledger_sha256": "504492c6cc6293ac15350ca55d35917111589cf01bea530f77737417b300d236",
+  "row_count": 74,
+  "unique_id_count": 74,
+  "status_counts": {
+    "HINT_ONLY": 21,
+    "RECOVERED_EXACT": 53
+  },
+  "checks": {
+    "all_74_unique": true,
+    "known_statuses_only": true,
+    "evidence_present_for_claimed_rows": true,
+    "provenance_present_for_every_hint_or_variant": true,
+    "semantic_authorship": "none; script copies explicit source fields and performs enumeration/hashing/validation only"
+  }
+}
