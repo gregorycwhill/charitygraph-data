@@ -1,0 +1,27 @@
+{
+  "schema":"charitygraph.semantic-demand-catalogue-validation/v1",
+  "status":"PASS",
+  "checks":{
+    "catalogue_json_parseable":true,
+    "candidate_count":20,
+    "candidate_ids_unique":true,
+    "required_semantic_fields_present":true,
+    "provenance_present_for_every_candidate":true,
+    "migration_json_parseable":true,
+    "legacy_row_count":74,
+    "legacy_ids_unique":true,
+    "all_recovery_rows_consumed_exactly_once":true,
+    "recovery_status_counts":{"RECOVERED_EXACT":53,"HINT_ONLY":21},
+    "valid_disposition_vocabulary":true,
+    "valid_successor_references":true,
+    "north_star_domains_1_to_20_covered":true,
+    "hint_only_promoted_to_exact":false,
+    "semantic_authorship":"manual Luna authorship; mechanical checks only",
+    "git_diff_check":"PASS"
+  },
+  "inputs":{
+    "terra_commit":"b082d30784494b7d8570edbd5e05da36e040d2c4",
+    "canonical_current_commit":"b108746be5f9de7775996533535fe522fa651a88",
+    "ledger_sha256":"504492c6cc6293ac15350ca55d35917111589cf01be530f77737417b300d236"
+  }
+}
