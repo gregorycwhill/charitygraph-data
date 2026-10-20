@@ -1,5 +1,7 @@
 # CharityGraph Roadmap
 
+> **Current Builder-to-65k gate state (20 October 2026):** Gates 1–3 are `CLOSED` (Gate 3 accepted with limitations); Gate 4, Builder industrialisation, is `ACTIVE` at 20% and not yet earned. Earned progress is 40%; 60% remains. This current decision supersedes older dated milestone snapshots below without rewriting them. See the [authoritative Gate 3 closure and Gate 4 activation handoff](docs/gates/GATE3_CLOSURE_GATE4_ACTIVATION_2026-10-20.md) and the [Builder-to-65k scorecard](BUILDER_TO_65K_PLAN.md).
+
 **S0 control-plane status (3 October 2026):** Attempt 21 (`CG-S0-PO-ATTEMPT21-2026-10-03`) is the current allocated authority, A3-pending and non-executable. Attempt 20 is immutable superseded history and cannot be resumed. This authorises no provider crossing, source acquisition, reservation, Top-100, S1, or public release.
 
 **Status:** Canonical product/engineering sequence, version 2.3-draft
