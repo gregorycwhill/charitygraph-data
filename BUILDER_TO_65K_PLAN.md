@@ -22,7 +22,7 @@ Progress is earned only when a gate closes against its exit evidence. Work on a
 later stage may proceed opportunistically when it does not distract from the
 active dependency path, but earns no percentage until that gate closes.
 
-**Current position: Gate 1 CLOSED; Gate 2 ACTIVE; 12% complete / 88% remaining.**
+**Current position (20 October 2026): Gates 1, 2 and 3 CLOSED; Gate 3 accepted with limitations; Gate 4 ACTIVE; 40% earned / 60% remaining.** See [the Gate 3 closure and Gate 4 activation handoff](docs/gates/GATE3_CLOSURE_GATE4_ACTIVATION_2026-10-20.md). Gate 4's 20% is not yet earned.
 
 Source Universe v1 is a documentation prerequisite for Gate 2, not Gate 2
 evidence and not fractional progress. Its seven admitted routine Builder
@@ -33,7 +33,7 @@ families and bounded acquisition rules are canonical in
 
 The durable supervisory chain is **product objective -> 65k gate/evidence state -> tranche -> run/campaign/tasks -> handoff evidence -> semantic review -> Product Owner/Sol gate decision -> next tranche**. This plan is the canonical definition of that chain; bridge documents describe transport and execution only.
 
-Each gate is `OPEN`, `ACTIVE`, `CLOSED`, or `REOPENED`. Exactly one normal critical-path gate is `ACTIVE`; later-gate work may accumulate evidence opportunistically but cannot earn progress. Earned progress is the fixed sum of weights of `CLOSED` gates only: there is no fractional activity credit. A gate cannot close while a critical dependency or exit-evidence item remains unsatisfied. A materially invalidated closed gate may be `REOPENED`; its weight is immediately removed from earned progress until it is closed again. The live state remains **Gate 1 CLOSED; Gate 2 ACTIVE; 12% earned; 88% remaining**.
+Each gate is `OPEN`, `ACTIVE`, `CLOSED`, or `REOPENED`. Exactly one normal critical-path gate is `ACTIVE`; later-gate work may accumulate evidence opportunistically but cannot earn progress. Earned progress is the fixed sum of weights of `CLOSED` gates only: there is no fractional activity credit. A gate cannot close while a critical dependency or exit-evidence item remains unsatisfied. A materially invalidated closed gate may be `REOPENED`; its weight is immediately removed from earned progress until it is closed again. The live state is **Gates 1–3 CLOSED; Gate 4 ACTIVE; 40% earned; 60% remaining**. Gate 3's accepted-with-limitations closure and the Gate 4 activation are recorded in [the 20 October handoff](docs/gates/GATE3_CLOSURE_GATE4_ACTIVATION_2026-10-20.md).
 
 The contract-level gate-evidence ledger records, per gate: satisfied exit evidence; outstanding exit evidence; invalidated or weakened evidence; supporting tranche/run references; closure recommendation; closure decision; closure authority; and decision date. This is a documentation contract only: the runtime does not yet store or enforce this ledger.
 
