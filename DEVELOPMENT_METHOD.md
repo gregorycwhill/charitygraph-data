@@ -57,6 +57,16 @@ authority changes, governed promotion, publication and merge, and destructive
 state mutation are explicit boundaries. Their authority is checked separately
 from ordinary local implementation and testing.
 
+Source-class expansion is an explicit Product Owner decision gate outside
+normal tranche autonomy. Finding that an unapproved source class would improve
+coverage, or that a semantic-demand evaluation fails because evidence is
+missing, does not expand authority to search, crawl or acquire that class.
+Record the candidate, evidence and proposed acquisition rule as a source-policy
+decision request; continue other authorised work where possible. Product Owner
+approval is required before source-family admission or material acquisition-rule
+expansion. Evaluation may explore the open world. Product Owner admits source
+classes. Builder operates inside the admitted evidence universe.
+
 ## ChatGPT/Codex handoff
 
 ```text

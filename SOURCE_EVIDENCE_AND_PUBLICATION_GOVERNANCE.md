@@ -40,6 +40,33 @@ Each source family is registered before routine acquisition. Registration record
 
 Sources include official registries, regulators, charity publications, industry shadow registries, academic datasets, media and direct observations. “Shadow registry” is a first-class source role where an industry body authoritatively records participation, fees, codes or accreditation within its remit.
 
+### 3.1 Source-class admission authority
+
+The Builder evidence universe is closed by default. A new source family, or a
+material expansion of an existing source-family acquisition rule, requires
+explicit Product Owner approval before implementation or acquisition. Approval
+is normally at source-class and acquisition-rule level, not one URL or PDF at
+a time. Builder may enumerate, retrieve and process individual source
+instances only within an already-approved source-family rule.
+
+Agents, models, Builder runs, semantic-demand evaluations, campaigns and
+implementation tasks may identify, evaluate and recommend candidate source
+families, but none may admit one to the governed evidence universe. A
+source-family registration records an approved product decision; registration
+itself is not the approval. An unapproved class is `DECISION_REQUIRED`: record
+it as a source-policy proposal with evidence and expected coverage benefit.
+
+Evaluation may explore the open world. Product Owner admits source classes.
+Builder operates inside the admitted evidence universe. A coverage gap or
+semantic-demand failure is permission to report or propose a source-policy
+decision, not permission to acquire a new class of evidence.
+
+Recognised source roles or examples, including media and direct observation,
+do not automatically constitute currently approved source families. Same-origin
+navigation, links or sitemaps are acquisition mechanisms within an approved
+first-party/source-family policy, not blanket authority to crawl arbitrary
+same-origin pages.
+
 ## 4. Authority is proposition-specific
 
 A source is not globally authoritative. Authority depends on the proposition, time and scope. For example:
@@ -242,7 +269,9 @@ independent lens while preserving the original artefact and lineage.
 Where an official site serves a network, brand, federation or auspice
 arrangement, domain provenance is not subject ownership. Assertions attach to
 the lowest evidence-supported scope. Bounded same-origin sitemap/navigation
-acquisition is permitted; open-ended relevance remains a model task, not a
+acquisition is permitted only within an already-approved first-party/source-
+family policy; it is not blanket authority to crawl arbitrary same-origin
+pages. Open-ended relevance remains a model task, not a
 keyword or semantic Python rule. Downstream taxonomy tasks normally consume
 governed semantic knowledge and follow evidence lineage rather than rereading
 raw source bodies.

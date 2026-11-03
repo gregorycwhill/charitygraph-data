@@ -45,7 +45,15 @@ The coverage-first acceptance, cohort budgets, model-economics boundaries and op
 
 **BUILDER DOESN'T DO DISCOVERY.** Builder and semantic sections consume the
 centrally governed evidence universe and persisted representations; sparse
-evidence may expose a coverage gap but does not authorise new acquisition.
+evidence may expose a coverage gap but does not authorise external search,
+open-web wandering or new acquisition. The shared evidence universe is closed
+by default: only the Product Owner may admit a new source family or materially
+expand an acquisition rule. Tasks, campaigns, agents, models and evaluations
+may recommend candidate source families, but may not admit them. A task may
+authorise source instances only under an already-approved source-family rule;
+an unapproved class is `DECISION_REQUIRED` and a source-policy proposal, not
+implementation authority. Evaluation may explore the open world; Builder and
+Data work operates inside the admitted evidence universe.
 
 ## SEMANTIC HEURISTIC GATE -- STOP BEFORE CODING
 
