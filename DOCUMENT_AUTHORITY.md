@@ -91,6 +91,8 @@ Every active document SHALL state its status, version/date, scope and material s
 | Current delivery state | `CURRENT_STATE.md` |
 | Capability sequence | `ROADMAP.md` |
 | Approved execution sequence | `IMPLEMENTATION_PLAN.md` |
+| Builder-to-65k production scorecard and high-level activity/dependency plan | `BUILDER_TO_65K_PLAN.md` (sole canonical scorecard; does not override higher-level product, semantic, source or release authority) |
+| Builder supervisory gate/evidence, tranche lifecycle, work-class, closure-authority and canonicality contract | `BUILDER_TO_65K_PLAN.md` (contract-level semantics; runtime support is a future propagation tranche) |
 | Direct Service V1.2 representation experiment decision and Phase 5 tranche outcome | `PHASE5_DIRECT_SERVICE_V1_2_DECISION_2026-09-12.md` |
 | Verification and release gates | `TEST_PLAN.md` |
 | Machine and agent distribution | `AGENT_DATA_DISTRIBUTION_CONTRACT.md` |

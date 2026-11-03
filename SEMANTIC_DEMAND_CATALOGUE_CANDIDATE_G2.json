@@ -1,0 +1,348 @@
+﻿{
+    "schema":  "charitygraph.semantic-demand-catalogue-candidate/v1",
+    "status":  "candidate_supervisor_review",
+    "count":  20,
+    "source_document":  "SEMANTIC_DEMAND_CATALOGUE_CANDIDATE_G2.md",
+    "demands":  [
+                    {
+                        "id":  "SDC-C01",
+                        "domain":  "Identity / regulatory",
+                        "family":  "Identity-regulatory",
+                        "semantic_definition":  "Identity-regulatory; establish the named entity, identifiers, legal form, registration, DGR/control and lifecycle/succession without conflating entities.",
+                        "execution":  "Required: subject, scope, time. Optional: identifier scheme, jurisdiction. Applies to an identifiable organisation or unit.",
+                        "proposition":  "â€œFor `{subject}` in `{scope}` during `{time}`, is `{identity or regulatory attribute}` evidenced?â€ Example: â€œFor Example Community Trust, is its registration identifier evidenced for 2025?â€",
+                        "evidence_provenance":  "Competent registry or official organisational record, proposition-specific. Basis: `NORTH_STAR_TARGET_CARD_V0_3.md Â§1`; `PRODUCT.md Â§8`; `INTEGRATED_PRODUCT_AND_DATA_MODEL.md Â§Â§6,8`.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C02",
+                        "domain":  "Purpose / cause",
+                        "family":  "Purpose-cause",
+                        "semantic_definition":  "Purpose-cause; distinguish purpose/mission/cause from activity, intervention and outcome.",
+                        "execution":  "Required subject, scope, time. Optional cause scheme. Applies where purpose language or mandate is in scope.",
+                        "proposition":  "â€œDoes `{subject}` state `{purpose/cause}` for `{scope}` at `{time}`?â€ Example: â€œDoes Example Community Trust state a youth-housing purpose in its 2025 governing description?â€",
+                        "evidence_provenance":  "Governing/official purpose statement; assessment cannot be presented as source fact. Basis: NS Â§2; PRODUCT Â§10.2.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C03",
+                        "domain":  "Programs / services",
+                        "family":  "Program-service",
+                        "semantic_definition":  "Program-service; identify a program, repeatable service, project, campaign, appeal or fund and its operating/status/delivery semantics.",
+                        "execution":  "Required subject, destination scope, time. Optional object type/status. Applies when a named destination is asserted.",
+                        "proposition":  "â€œIs `{destination}` a distinct `{program/service/project/campaign/appeal/fund}` operated or delivered by `{subject}` in `{time}`?â€ Example: â€œIs Example Trustâ€™s â€˜Warm Nightsâ€™ a distinct service in 2025?â€",
+                        "evidence_provenance":  "Official program/service material and competent partner/funder record as applicable. Basis: NS Â§3; integrated model Â§11.1.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C04",
+                        "domain":  "Activities / SDGs",
+                        "family":  "Activity-taxonomy",
+                        "semantic_definition":  "Activity-taxonomy; capture activities/interventions/delivery actions and keep taxonomy assignments separate from outcomes.",
+                        "execution":  "Required subject, activity scope, time. Optional scheme and method. Applies to an activity or assignment.",
+                        "proposition":  "â€œDid `{subject}` perform `{activity/intervention}` in `{scope}` during `{time}`, and is `{scheme}:{code}` source-reported or assessed?â€ Example: â€œDid Example Trust run meal deliveries in 2025?â€",
+                        "evidence_provenance":  "Activity record; taxonomy source or explicit assessment method. Basis: NS Â§4; integrated Â§Â§7.6,12.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C05",
+                        "domain":  "Geography / beneficiaries",
+                        "family":  "Population-geography",
+                        "semantic_definition":  "Population-geography; identify intended/eligible/reached/served/affected populations, delivery/funded geographies and sites.",
+                        "execution":  "Required subject, population/geography scope, time. Optional population role and statistical edition.",
+                        "proposition":  "â€œFor `{subject}` and `{time}`, is `{population role}` in `{geography}` evidenced?â€ Example: â€œWere older residents in North District an intended population in 2025?â€",
+                        "evidence_provenance":  "Service/program record or official population/geography source, role-specific. Basis: NS Â§5; integrated Â§11.1.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C06",
+                        "domain":  "Participation",
+                        "family":  "Participation",
+                        "semantic_definition":  "Participation; capture volunteer, member, governance, co-design, consultation, advocacy, donor and fundraiser roles/opportunities/episodes/measures.",
+                        "execution":  "Required subject, participation scope, time. Optional role and aggregate measure.",
+                        "proposition":  "â€œDid `{subject}` offer or record `{participation role/opportunity}` in `{scope}` during `{time}`?â€ Example: â€œDid Example Trust record volunteer participation in 2025?â€",
+                        "evidence_provenance":  "Role-competent organisational or event record; counts retain source metric wording. Basis: NS Â§6; PRODUCT Â§10.3.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C07",
+                        "domain":  "Direct service / capacity",
+                        "family":  "Service-capacity",
+                        "semantic_definition":  "Service-capacity; establish eligibility, referral/intake/access, availability, hours, capacity, throughput, waitlists, staffing and constraints.",
+                        "execution":  "Required subject, service scope, time. Optional eligibility, geography, capacity metric.",
+                        "proposition":  "â€œFor `{service}` of `{subject}` in `{scope}` at `{time}`, is `{access/capacity condition}` evidenced?â€ Example: â€œWas intake by referral required for Example Trustâ€™s service in 2025?â€",
+                        "evidence_provenance":  "Service operator or competent referral/access record; absence is not unavailability. Basis: NS Â§7; integrated Â§11.7.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C08",
+                        "domain":  "Fundraising",
+                        "family":  "Fundraising/giving-offer",
+                        "semantic_definition":  "Fundraising/giving-offer; distinguish solicitation activity, raised/spent metrics and current Giving Offers; preserve designation/restriction distinctions.",
+                        "execution":  "Required subject and fundraising/destination scope, time. Optional channel, audience, designation, commitment, accepting party.",
+                        "proposition":  "â€œDid `{subject}` solicit or present `{offer/activity}` to `{audience}` for `{destination}` during `{time}`, with `{terms}`?â€ Example: â€œDid Example Trust present a current unrestricted online offer in 2025?â€",
+                        "evidence_provenance":  "Official offer/campaign/financial source according to proposition; no inferred ROI or legal restriction. Basis: NS Â§8; PRODUCT Â§10.4.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C09",
+                        "domain":  "Governance / leadership",
+                        "family":  "Governance",
+                        "semantic_definition":  "Governance; identify governing instruments, board/positions, responsible persons, appointments/cessations, control and effective periods.",
+                        "execution":  "Required subject, governance scope, effective time. Optional role/person/jurisdiction.",
+                        "proposition":  "â€œWas `{person/position/instrument}` governing or responsible for `{subject}` in `{time}`?â€ Example: â€œWas Alex Example a board director of Example Trust during 2025?â€",
+                        "evidence_provenance":  "Governing instrument, registry or official appointment record. Basis: NS Â§9; integrated Â§11.7.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C10",
+                        "domain":  "People / workforce",
+                        "family":  "Workforce",
+                        "semantic_definition":  "Workforce; identify employees, contractors, volunteers, members and partner personnel with role, relationship, location, scope and period.",
+                        "execution":  "Required subject, workforce scope, time. Optional worker type, role, location.",
+                        "proposition":  "â€œDid `{subject}` have `{worker type/role}` within `{scope}` during `{time}`?â€ Example: â€œDid Example Trust report volunteer personnel in 2025?â€",
+                        "evidence_provenance":  "Workforce or organisational report; aggregate and person-level propositions remain distinct. Basis: NS Â§10.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C11",
+                        "domain":  "Scale / capability",
+                        "family":  "Capability-scale",
+                        "semantic_definition":  "Capability-scale; capture scale measures, assets, credentials, footprint, throughput, constraints and dependencies without inferring capability from proxies.",
+                        "execution":  "Required subject, capability scope, time. Optional measure/unit, credential, constraint.",
+                        "proposition":  "â€œDid `{subject}` evidence `{capability/scale measure}` for `{scope}` during `{time}`?â€ Example: â€œDid Example Trust evidence a 200-client annual service capacity in 2025?â€",
+                        "evidence_provenance":  "Source competent for the measure; metric basis and denominator retained. Basis: NS Â§11; integrated Â§7.5.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C12",
+                        "domain":  "Relationships",
+                        "family":  "Directed relationship",
+                        "semantic_definition":  "Directed relationship; record typed, directed relationships among organisations, programs, services, appeals, funds and endpoints with resolution/time.",
+                        "execution":  "Required subject, related subject, relationship type, scope, time. Optional resolution state.",
+                        "proposition":  "â€œDid `{subject}` have directed `{relationship type}` to `{related subject}` for `{scope}` during `{time}`?â€ Example: â€œDid Example Trust deliver Example Clinicâ€™s program in 2025?â€",
+                        "evidence_provenance":  "Relationship-competent source; label similarity never joins entities. Basis: NS Â§12; integrated Â§Â§7.3,10.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C13",
+                        "domain":  "Finances",
+                        "family":  "Finance",
+                        "semantic_definition":  "Finance; capture entity/consolidation scope, period, currency, basis, statements, line items, income, expenditure, assets, liabilities, donations, grants, restrictions and allocations.",
+                        "execution":  "Required subject, accounting scope, reporting period. Optional currency, basis, line item.",
+                        "proposition":  "â€œFor `{subject}` and `{period}`, is `{financial measure}` reported as `{amount/unit}` on `{basis}`?â€ Example: â€œDid Example Trust report 2025 donations of AUD 1m?â€",
+                        "evidence_provenance":  "Financial statement or provider/campaign record matching metric basis; no unqualified reconciliation. Basis: NS Â§13; integrated Â§11.4.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C14",
+                        "domain":  "Funding / dependencies",
+                        "family":  "Funding-flow",
+                        "semantic_definition":  "Funding-flow; identify grants/contracts/sponsorships/donations, stages, funders/recipients, restrictions, dependencies/concentration.",
+                        "execution":  "Required subject, funding relationship, time. Optional stage, destination, restriction, concentration metric.",
+                        "proposition":  "â€œDid `{funder}` provide or commit `{funding}` to `{recipient/destination}` at `{stage}` in `{time}`?â€ Example: â€œDid Example Foundation award a grant to Example Trust in 2025?â€",
+                        "evidence_provenance":  "Award/contract/payment/receipt source according to stage; no current-offer inference. Basis: NS Â§14; integrated Â§Â§7.8,11.4.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C15",
+                        "domain":  "Ethos / values",
+                        "family":  "Ethos-values",
+                        "semantic_definition":  "Ethos-values; capture values, principles, affiliation, commitments, policies and implementation evidence, separating source from assessment.",
+                        "execution":  "Required subject, scope, time. Optional policy/affiliation/implementation criterion.",
+                        "proposition":  "â€œDid `{subject}` state or implement `{value/commitment/policy}` in `{scope}` during `{time}`?â€ Example: â€œDid Example Trust publish a safeguarding commitment in 2025?â€",
+                        "evidence_provenance":  "Official policy/commitment; implementation requires separate evidence. Basis: NS Â§15; PRODUCT Â§10.8.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C16",
+                        "domain":  "Conduct / adverse",
+                        "family":  "Conduct-adverse",
+                        "semantic_definition":  "Conduct-adverse; distinguish allegation, complaint, investigation, finding, response, jurisdiction, status, remediation and currentness.",
+                        "execution":  "Required subject, matter/jurisdiction, time. Optional procedural status and response.",
+                        "proposition":  "â€œWas `{matter}` alleged/investigated/found/responded to regarding `{subject}` in `{jurisdiction}` at `{time}`?â€ Example: â€œWas a 2025 complaint against Example Trust formally investigated?â€",
+                        "evidence_provenance":  "Competent procedural/regulatory/court source; allegation is not finding. Basis: NS Â§16; integrated Â§11.5.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C17",
+                        "domain":  "Notable history",
+                        "family":  "History",
+                        "semantic_definition":  "History; capture founding, changes, mergers, campaigns, crises, inquiries and milestones with event/source dates and uncertainty.",
+                        "execution":  "Required subject, event, event time. Optional source date and uncertainty.",
+                        "proposition":  "â€œDid `{event}` involving `{subject}` occur in `{time}`?â€ Example: â€œDid Example Trust merge with Example Aid in 2024?â€",
+                        "evidence_provenance":  "Historical official record or contemporaneous authoritative source. Basis: NS Â§17.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C18",
+                        "domain":  "Evaluation / outcomes",
+                        "family":  "Outcomes-evaluation",
+                        "semantic_definition":  "Outcomes-evaluation; distinguish activity, output, outcome, impact, contribution, evaluation design, measures, results, limits, attribution and causation.",
+                        "execution":  "Required subject, intervention/program, evaluation time. Optional outcome measure, design, attribution claim.",
+                        "proposition":  "â€œDoes an evaluation of `{intervention}` by `{subject}` report `{outcome/result}` for `{period}`, with `{design/limitation}`?â€ Example: â€œDid Example Trustâ€™s 2025 evaluation report improved housing stability?â€",
+                        "evidence_provenance":  "Evaluation/report source; causation not inferred from activity or output. Basis: NS Â§18; integrated Â§11.6.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C19",
+                        "domain":  "Classification / discovery",
+                        "family":  "Classification-discovery",
+                        "semantic_definition":  "Classification-discovery; capture source classifications, assessed assignments, schemes, methods, aliases, discovery signals, candidates, abstention and rejection.",
+                        "execution":  "Required subject, scheme/method context, time. Optional code/alias/signal/state.",
+                        "proposition":  "â€œIs `{subject}` assigned or discovered as `{classification/alias}` under `{scheme/method}` at `{time}`, with state `{state}`?â€ Example: â€œIs Example Trust assigned to a community-health class under Scheme X?â€",
+                        "evidence_provenance":  "Scheme authority or explicit assessment provenance; candidate is not accepted classification. Basis: NS Â§19; integrated Â§12.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    },
+                    {
+                        "id":  "SDC-C20",
+                        "domain":  "Evidence / coverage / freshness / corrections",
+                        "family":  "Evidence-governance",
+                        "semantic_definition":  "Evidence-governance; establish source identity/role/rights, locator, proposition identity, coverage basis, review/freshness, correction and release boundaries.",
+                        "execution":  "Required proposition, reviewed universe, review time. Optional freshness policy, correction ID, rights status.",
+                        "proposition":  "â€œFor proposition `{p}`, what governed evidence/coverage state exists in `{reviewed universe}` as of `{review time}`, and is it fresh/corrected?â€ Example: â€œAs of 2025-12-31, was Example Trustâ€™s service-hours proposition covered by a reviewed official source?â€",
+                        "evidence_provenance":  "Source/evidence governance record, proposition-specific. States include all shared states plus scoped surface states; no absence inference. Basis: NS Â§20; SOURCE_EVIDENCE_AND_PUBLICATION_GOVERNANCE.md; integrated Â§Â§6,7.13,11.9.",
+                        "states":  [
+                                       "SUPPORTS",
+                                       "PARTIAL",
+                                       "CONFLICTS",
+                                       "NOT_FOUND_IN_REVIEWED_UNIVERSE",
+                                       "NOT_APPLICABLE",
+                                       "UNRESOLVED_PROCESSING_FAILURE"
+                                   ]
+                    }
+                ]
+}

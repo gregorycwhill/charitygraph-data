@@ -1,0 +1,1117 @@
+﻿{
+    "schema":  "charitygraph.legacy-demand-inventory/v1",
+    "source":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+    "legacy_count":  74,
+    "items":  [
+                  {
+                      "legacy_id":  "SDC-0001",
+                      "legacy_family":  "designation",
+                      "scaffold_instances":  [
+                                                 "CG395-001",
+                                                 "CG395-002",
+                                                 "CG395-003"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0002",
+                      "legacy_family":  "population",
+                      "scaffold_instances":  [
+                                                 "CG395-004",
+                                                 "CG395-005",
+                                                 "CG395-006"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0003",
+                      "legacy_family":  "eligibility",
+                      "scaffold_instances":  [
+                                                 "CG395-007",
+                                                 "CG395-008",
+                                                 "CG395-009"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0004",
+                      "legacy_family":  "access",
+                      "scaffold_instances":  [
+                                                 "CG395-010",
+                                                 "CG395-011",
+                                                 "CG395-012"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0005",
+                      "legacy_family":  "eligibility",
+                      "scaffold_instances":  [
+                                                 "CG395-013",
+                                                 "CG395-014",
+                                                 "CG395-015"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0006",
+                      "legacy_family":  "capacity",
+                      "scaffold_instances":  [
+                                                 "CG395-016",
+                                                 "CG395-017",
+                                                 "CG395-018"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0007",
+                      "legacy_family":  "award",
+                      "scaffold_instances":  [
+                                                 "CG395-019",
+                                                 "CG395-020",
+                                                 "CG395-021"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0008",
+                      "legacy_family":  "activity",
+                      "scaffold_instances":  [
+                                                 "CG395-022",
+                                                 "CG395-023",
+                                                 "CG395-024"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0009",
+                      "legacy_family":  "capability",
+                      "scaffold_instances":  [
+                                                 "CG395-025",
+                                                 "CG395-026",
+                                                 "CG395-027"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0010",
+                      "legacy_family":  "activity",
+                      "scaffold_instances":  [
+                                                 "CG395-028",
+                                                 "CG395-029",
+                                                 "CG395-030"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0011",
+                      "legacy_family":  "channel",
+                      "scaffold_instances":  [
+                                                 "CG395-031",
+                                                 "CG395-032",
+                                                 "CG395-033"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0012",
+                      "legacy_family":  "accounting basis",
+                      "scaffold_instances":  [
+                                                 "CG395-034",
+                                                 "CG395-035",
+                                                 "CG395-036"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0013",
+                      "legacy_family":  "financial change",
+                      "scaffold_instances":  [
+                                                 "CG395-037",
+                                                 "CG395-038",
+                                                 "CG395-039"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0014",
+                      "legacy_family":  "historical expenditure",
+                      "scaffold_instances":  [
+                                                 "CG395-040",
+                                                 "CG395-041",
+                                                 "CG395-042"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0015",
+                      "legacy_family":  "evaluation",
+                      "scaffold_instances":  [
+                                                 "CG395-043",
+                                                 "CG395-044",
+                                                 "CG395-045"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0016",
+                      "legacy_family":  "activity",
+                      "scaffold_instances":  [
+                                                 "CG395-046",
+                                                 "CG395-047",
+                                                 "CG395-048"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0017",
+                      "legacy_family":  "commitment",
+                      "scaffold_instances":  [
+                                                 "CG395-049",
+                                                 "CG395-050",
+                                                 "CG395-051"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0018",
+                      "legacy_family":  "conduct",
+                      "scaffold_instances":  [
+                                                 "CG395-052",
+                                                 "CG395-053",
+                                                 "CG395-054"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0019",
+                      "legacy_family":  "allegation",
+                      "scaffold_instances":  [
+                                                 "CG395-055",
+                                                 "CG395-056",
+                                                 "CG395-057"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0020",
+                      "legacy_family":  "assertion",
+                      "scaffold_instances":  [
+                                                 "CG395-058",
+                                                 "CG395-059",
+                                                 "CG395-060"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0021",
+                      "legacy_family":  "availability",
+                      "scaffold_instances":  [
+                                                 "CG395-061",
+                                                 "CG395-062",
+                                                 "CG395-063"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0022",
+                      "legacy_family":  "abstention",
+                      "scaffold_instances":  [
+                                                 "CG395-064",
+                                                 "CG395-065",
+                                                 "CG395-066"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0023",
+                      "legacy_family":  "financial measure",
+                      "scaffold_instances":  [
+                                                 "CG395-067",
+                                                 "CG395-068",
+                                                 "CG395-069"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0024",
+                      "legacy_family":  "funding dependency",
+                      "scaffold_instances":  [
+                                                 "CG395-070",
+                                                 "CG395-071",
+                                                 "CG395-072"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0025",
+                      "legacy_family":  "access",
+                      "scaffold_instances":  [
+                                                 "CG395-073",
+                                                 "CG395-074",
+                                                 "CG395-075"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0026",
+                      "legacy_family":  "appeal proceeds",
+                      "scaffold_instances":  [
+                                                 "CG395-076",
+                                                 "CG395-077",
+                                                 "CG395-078"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0027",
+                      "legacy_family":  "organisation proposition",
+                      "scaffold_instances":  [
+                                                 "CG395-079",
+                                                 "CG395-080",
+                                                 "CG395-081"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0028",
+                      "legacy_family":  "classification",
+                      "scaffold_instances":  [
+                                                 "CG395-082",
+                                                 "CG395-083",
+                                                 "CG395-084"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0029",
+                      "legacy_family":  "assertion",
+                      "scaffold_instances":  [
+                                                 "CG395-085",
+                                                 "CG395-086",
+                                                 "CG395-087"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0030",
+                      "legacy_family":  "access",
+                      "scaffold_instances":  [
+                                                 "CG395-088",
+                                                 "CG395-089",
+                                                 "CG395-090"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0031",
+                      "legacy_family":  "cause",
+                      "scaffold_instances":  [
+                                                 "CG395-091",
+                                                 "CG395-092",
+                                                 "CG395-093"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0032",
+                      "legacy_family":  "capacity",
+                      "scaffold_instances":  [
+                                                 "CG395-094",
+                                                 "CG395-095",
+                                                 "CG395-096"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0033",
+                      "legacy_family":  "commitment",
+                      "scaffold_instances":  [
+                                                 "CG395-097",
+                                                 "CG395-098",
+                                                 "CG395-099"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0034",
+                      "legacy_family":  "history",
+                      "scaffold_instances":  [
+                                                 "CG395-100",
+                                                 "CG395-101",
+                                                 "CG395-102"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0035",
+                      "legacy_family":  "correction",
+                      "scaffold_instances":  [
+                                                 "CG395-103",
+                                                 "CG395-104",
+                                                 "CG395-105"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0036",
+                      "legacy_family":  "activity",
+                      "scaffold_instances":  [
+                                                 "CG395-106",
+                                                 "CG395-107",
+                                                 "CG395-108"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0037",
+                      "legacy_family":  "identifier",
+                      "scaffold_instances":  [
+                                                 "CG395-109",
+                                                 "CG395-110",
+                                                 "CG395-111"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0038",
+                      "legacy_family":  "role",
+                      "scaffold_instances":  [
+                                                 "CG395-112",
+                                                 "CG395-113",
+                                                 "CG395-114"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0039",
+                      "legacy_family":  "basis",
+                      "scaffold_instances":  [
+                                                 "CG395-115",
+                                                 "CG395-116",
+                                                 "CG395-117"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0040",
+                      "legacy_family":  "projection",
+                      "scaffold_instances":  [
+                                                 "CG395-118",
+                                                 "CG395-119",
+                                                 "CG395-120"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0041",
+                      "legacy_family":  "delivery",
+                      "scaffold_instances":  [
+                                                 "CG395-121",
+                                                 "CG395-122",
+                                                 "CG395-123"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0042",
+                      "legacy_family":  "conduct",
+                      "scaffold_instances":  [
+                                                 "CG395-124",
+                                                 "CG395-125",
+                                                 "CG395-126"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0043",
+                      "legacy_family":  "design",
+                      "scaffold_instances":  [
+                                                 "CG395-127",
+                                                 "CG395-128",
+                                                 "CG395-129"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0044",
+                      "legacy_family":  "activity",
+                      "scaffold_instances":  [
+                                                 "CG395-130",
+                                                 "CG395-131",
+                                                 "CG395-132"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0045",
+                      "legacy_family":  "coverage",
+                      "scaffold_instances":  [
+                                                 "CG395-133",
+                                                 "CG395-134",
+                                                 "CG395-135"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0046",
+                      "legacy_family":  "access",
+                      "scaffold_instances":  [
+                                                 "CG395-136",
+                                                 "CG395-137",
+                                                 "CG395-138"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0047",
+                      "legacy_family":  "change",
+                      "scaffold_instances":  [
+                                                 "CG395-139",
+                                                 "CG395-140",
+                                                 "CG395-141"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0048",
+                      "legacy_family":  "basis",
+                      "scaffold_instances":  [
+                                                 "CG395-142",
+                                                 "CG395-143",
+                                                 "CG395-144"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0049",
+                      "legacy_family":  "event",
+                      "scaffold_instances":  [
+                                                 "CG395-145",
+                                                 "CG395-146",
+                                                 "CG395-147"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0050",
+                      "legacy_family":  "aggregate",
+                      "scaffold_instances":  [
+                                                 "CG395-148",
+                                                 "CG395-149",
+                                                 "CG395-150"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0051",
+                      "legacy_family":  "geography",
+                      "scaffold_instances":  [
+                                                 "CG395-151",
+                                                 "CG395-152",
+                                                 "CG395-153"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0052",
+                      "legacy_family":  "design",
+                      "scaffold_instances":  [
+                                                 "CG395-154",
+                                                 "CG395-155",
+                                                 "CG395-156"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0053",
+                      "legacy_family":  "access",
+                      "scaffold_instances":  [
+                                                 "CG395-157",
+                                                 "CG395-158",
+                                                 "CG395-159"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0061",
+                      "legacy_family":  "restricted income",
+                      "scaffold_instances":  [
+                                                 "CG395-160",
+                                                 "CG395-161",
+                                                 "CG395-162"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0062",
+                      "legacy_family":  "extracted fact",
+                      "scaffold_instances":  [
+                                                 "CG395-163",
+                                                 "CG395-164",
+                                                 "CG395-165"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0063",
+                      "legacy_family":  "identity binding",
+                      "scaffold_instances":  [
+                                                 "CG395-166",
+                                                 "CG395-167",
+                                                 "CG395-168"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0064",
+                      "legacy_family":  "delivery geography",
+                      "scaffold_instances":  [
+                                                 "CG395-169",
+                                                 "CG395-170",
+                                                 "CG395-171"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0065",
+                      "legacy_family":  "current availability",
+                      "scaffold_instances":  [
+                                                 "CG395-172",
+                                                 "CG395-173",
+                                                 "CG395-174"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0066",
+                      "legacy_family":  "designation",
+                      "scaffold_instances":  [
+                                                 "CG395-175",
+                                                 "CG395-176",
+                                                 "CG395-177"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0067",
+                      "legacy_family":  "coverage",
+                      "scaffold_instances":  [
+                                                 "CG395-178",
+                                                 "CG395-179",
+                                                 "CG395-180"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0068",
+                      "legacy_family":  "supported observation",
+                      "scaffold_instances":  [
+                                                 "CG395-181",
+                                                 "CG395-182",
+                                                 "CG395-183"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0069",
+                      "legacy_family":  "rendered label",
+                      "scaffold_instances":  [
+                                                 "CG395-184",
+                                                 "CG395-185",
+                                                 "CG395-186"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0070",
+                      "legacy_family":  "root cause",
+                      "scaffold_instances":  [
+                                                 "CG395-187",
+                                                 "CG395-188",
+                                                 "CG395-189"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0071",
+                      "legacy_family":  "appeal",
+                      "scaffold_instances":  [
+                                                 "CG395-190",
+                                                 "CG395-191",
+                                                 "CG395-192"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0072",
+                      "legacy_family":  "allegation",
+                      "scaffold_instances":  [
+                                                 "CG395-193",
+                                                 "CG395-194",
+                                                 "CG395-195"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0073",
+                      "legacy_family":  "giving-offer fundability demand: distinguishes an appeal from a current actionable donation route.",
+                      "scaffold_instances":  [
+                                                 "CG395-196",
+                                                 "CG395-197",
+                                                 "CG395-198"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0074",
+                      "legacy_family":  "charity-insider peer/competitor comparison with explicit scope reconciliation.",
+                      "scaffold_instances":  [
+                                                 "CG395-199",
+                                                 "CG395-200",
+                                                 "CG395-201"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0075",
+                      "legacy_family":  "cohort/denominator reasoning for service-system planning.",
+                      "scaffold_instances":  [
+                                                 "CG395-202",
+                                                 "CG395-203",
+                                                 "CG395-204"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0076",
+                      "legacy_family":  "longitudinal evidence comparison distinct from a single evaluation lookup.",
+                      "scaffold_instances":  [
+                                                 "CG395-205",
+                                                 "CG395-206",
+                                                 "CG395-207"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0077",
+                      "legacy_family":  "explicit aggregation compatibility decision.",
+                      "scaffold_instances":  [
+                                                 "CG395-208",
+                                                 "CG395-209",
+                                                 "CG395-210"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0078",
+                      "legacy_family":  "hard identity reconciliation across historical change.",
+                      "scaffold_instances":  [
+                                                 "CG395-211",
+                                                 "CG395-212",
+                                                 "CG395-213"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0079",
+                      "legacy_family":  "positive answerability case",
+                      "scaffold_instances":  [
+                                                 "CG395-214",
+                                                 "CG395-215",
+                                                 "CG395-216"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0080",
+                      "legacy_family":  "effective date",
+                      "scaffold_instances":  [
+                                                 "CG395-217",
+                                                 "CG395-218",
+                                                 "CG395-219"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  },
+                  {
+                      "legacy_id":  "SDC-0081",
+                      "legacy_family":  "assessed classification",
+                      "scaffold_instances":  [
+                                                 "CG395-220",
+                                                 "CG395-221",
+                                                 "CG395-222"
+                                             ],
+                      "provenance":  "artifacts/g2-proposition-adjudication-benchmark-395/demand-coverage-matrix.json",
+                      "disposition":  "REPLACED_BY",
+                      "successor_ids":  [
+
+                                        ],
+                      "rationale":  "Legacy scaffold has family/coverage identity but no authoritative executable semantics; successor mapping requires semantic reconciliation."
+                  }
+              ]
+}

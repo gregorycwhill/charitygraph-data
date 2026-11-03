@@ -16,6 +16,12 @@ Current Giving Offers, historical funding flows and historical expenditure/alloc
 
 The scope stack includes legal entity, operating organisation/unit, group/branch/brand, program, service, project, campaign, appeal, fund, site, population, geography, event/transaction and reporting period. Donor-facing destinations resolve as **resolved**, **candidate-or-ambiguous** or **unresolved**; label similarity alone never justifies a join.
 
+### Semantic losslessness and graceful degradation
+
+CharityGraph preserves materially useful, source-supported meaning even when it is broader, vaguer or less decomposed than the preferred target model. **Unknown detail must not erase known fact.** A coarse source-supported assertion is valid governed knowledge when finer distinctions are unresolved; later evidence may refine, qualify, supersede or decompose it, while canonicalisation remains information-preserving and provenance/lineage retain what the source originally supported.
+
+Semantic vagueness is not evidentiary absence. “Source says Baptist; relationship unspecified” is governed knowledge with unresolved specificity, not equivalent to “no governed evidence”. A source-supported “Baptist” assertion may remain valid while ownership, governance, operation, principles, beneficiary orientation, service restriction and denomination remain unresolved; none of those finer relationships may be inferred without evidence. Search, discovery and comparison projections may use broad governed assertions appropriately without presenting them as more specific than their evidence supports.
+
 ## Active v0.3 sections
 
 ### 1. Identity / regulatory
